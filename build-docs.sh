@@ -1,9 +1,10 @@
 #!/bin/sh
 
-rm -rf /tmp/taiga-doc-dist
-cp dist /tmp/taiga-doc-dist
-git checkout gh-pages;
-rm -rf dist
-mv /tmp/taiga-doc-dist dist
-git add --all dist
-git commit -a -m "Update doc"
+make || exit 1
+rm -rf /tmp/taiga-doc-dist || exit 1
+cp -r dist /tmp/taiga-doc-dist || exit 1
+git checkout gh-pages || exit 1
+rm -rf dist || exit 1
+mv /tmp/taiga-doc-dist dist || exit 1
+git add --all dist || exit 1
+git commit -a -m "Update doc" || exit 1
