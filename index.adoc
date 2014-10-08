@@ -13,7 +13,7 @@ Your Agile, Free and Open Source Project Management Tool
 Project Maturity
 ----------------
 
-Because_taiga_ is still a young project we consider it is currently in alpha state.
+Because _taiga_ is still a young project we consider it is currently in alpha state.
 
 
 How it works
@@ -41,17 +41,17 @@ Requirements
 
 This is a list of major taiga dependencies:
 
+Runtime:
+
 - Python 3.4
 - PostgreSQL > 9.2
-- Ruby 2.1 (only for sass)
-- NodeJS 0.10 (with npm, gulp and bower)
+- RabbitMQ (optional if you dont want async notifications)
 
+Compile time:
 
-Setup development environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can see link:setup-development.html[here] the complete documentation on how to setup
-a proper development environment.
+- GCC & Development Headers
+- Ruby 2.1 (only for compile sass)
+- NodeJS 0.10 (with npm, gulp and bower for download dependencies and compile coffeescript)
 
 
 Setup production environment
@@ -60,6 +60,12 @@ Setup production environment
 You can see link:setup-production.html[here] the complete documentation on how to setup
 a proper development environment.
 
+
+Setup development environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can see link:setup-development.html[here] the complete documentation on how to setup
+a proper development environment.
 
 How to contribute
 -----------------
