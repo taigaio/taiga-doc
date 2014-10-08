@@ -49,9 +49,9 @@ C compiller and development headers.
 
 [source,bash]
 ----
-apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
-apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
-apt-get install -y automake libtool libffi-dev curl git tmux
+sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
+sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
+sudo apt-get install -y automake libtool libffi-dev curl git tmux
 ----
 
 Setup a database
@@ -63,8 +63,8 @@ Install postgresql:
 
 [source,bash]
 ----
-apt-get install -y postgresql-9.3 postgresql-contrib-9.3
-apt-get install -y postgresql-doc-9.3 postgresql-server-dev-9.3
+sudo apt-get install -y postgresql-9.3 postgresql-contrib-9.3
+sudo apt-get install -y postgresql-doc-9.3 postgresql-server-dev-9.3
 ----
 
 And setup initial user and database:
@@ -83,7 +83,7 @@ libraries. As first step, let start installing python:
 
 [source,bash]
 ----
-apt-get install -y python3 python3-pip python-dev python3-dev python-pip
+sudo apt-get install -y python3 python3-pip python-dev python3-dev python-pip
 ----
 
 Afterward, install **virtualenvwrapper**:
@@ -93,7 +93,7 @@ Afterward, install **virtualenvwrapper**:
 pip3 install --user virtualenvwrapper
 ----
 
-**virtualenvwrapper** helps mantain system clean from third party libraries installed
+**virtualenvwrapper** helps maintain system clean from third party libraries installed
 with language package manager. Before use virtualevwrapper, you should configure it.
 
 Create a shell configuration file:
