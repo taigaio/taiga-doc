@@ -321,7 +321,7 @@ web server. For this purpose we'll go to use **nginx**.
 Circus and gunicorn
 ~~~~~~~~~~~~~~~~~~~
 
-Circus is a process manager written by **Mozilla** and we will be use it for execute **gunicorn**.
+Circus is a process manager written by **Mozilla** and we will use it for execute **gunicorn**.
 Circus, not only serves for execute processes, it also has utils for monitorize them, collect logs,
 restar process if something happens and start processes on system boot.
 
