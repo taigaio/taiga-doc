@@ -1,8 +1,6 @@
 Taiga documentation
 ===================
-2014-09-28
-
-:toc:
+:toc: left
 :numbered:
 
 

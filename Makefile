@@ -1,3 +1,3 @@
 all: doc
 doc:
-	asciidoc -b html5 -o dist/index.html index.asc
+	asciidoctor -o dist/index.html index.adoc
