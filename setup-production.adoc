@@ -1,0 +1,210 @@
+Setup production environment
+============================
+:toc: left
+:numbered:
+
+Introduction
+------------
+
+This documentation should explain how to deploy a taiga service (each module part of taiga platform).
+
+Taiga platform consists in mainly three components:
+
+- **taiga-back** (backend/api)
+- **taiga-front** (frontend)
+- **taiga-events** (websockets gateway) (optional)
+
+And each one has their own dependencies, at compile time and runtime.
+
+Each component can run on one unique machine or split each component in different machines. In
+this tutorial we go to setup everything in one unique machine. It should be enought for small/medium
+production environments.
+
+Before start
+------------
+
+This tutorial assumes that you are using a clean, recently updated, **ubuntu 14.04** image.
+
+Due the nature of frontend application, we should know that is the domain/public-ip though
+the service will be used. This is because, the frontend application will run on your browser
+and it should communicate with backend/api.
+
+We go supose this:
+
+- **ip:** `80.88.23.45`
+- **hostname:** `example.com` (that points to 80.88.23.45)
+- **username:** `taiga`
+
+
+Backend installation
+--------------------
+
+This section helps to install the backend (api) taiga service.
+
+Install dependencies
+~~~~~~~~~~~~~~~~~~~~
+
+Backend is mainly written in python (3.4) but for some third party libraries we need install a
+C compiller and development headers.
+
+[source,bash]
+----
+apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
+apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
+apt-get install -y automake libtool libffi-dev curl git tmux
+----
+
+Setup a database
+~~~~~~~~~~~~~~~~
+
+**taiga-back** also requires a database
+
+Install postgresql:
+
+[source,bash]
+----
+apt-get install -y postgresql-9.3 postgresql-contrib-9.3
+apt-get install -y postgresql-doc-9.3 postgresql-server-dev-9.3
+----
+
+And setup initial user and database:
+
+[source,bash]
+----
+sudo -u postgres createuser --superuser taiga
+sudo -u postgres createdb taiga
+----
+
+Setup python environment
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+For run **taiga-back** you should have python (3.4) installed with some other third party
+libraries. As first step, let start installing python:
+
+[source,bash]
+----
+apt-get install -y python3 python3-pip python-dev python3-dev python-pip
+----
+
+Afterward, install **virtualenvwrapper**:
+
+[source,bash]
+----
+pip3 install --user virtualenvwrapper
+----
+
+**virtualenvwrapper** helps mantain system clean from third party libraries installed
+with language package manager. Before use virtualevwrapper, you should configure it. 
+
+Create a shell configuration file:
+
+.~/.virtualenvwrapper-conf.sh
+[source, bash]
+----
+export PYTHONPATH="/home/ubuntu/.local/lib/python3.4/site-packages"
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python3.4"
+export PATH=~/.local/bin:$PATH
+source ~/.local/bin/virtualenvwrapper.sh
+----
+
+Include it from you shell configuration file, in case of ubuntu, we are using *bash* and the 
+configuration file is `~/.bashrc`.
+
+.Add this line at the end of **~/.bashrc**
+[source, bash]
+----
+source ~/.virtualenvwrapper-conf.sh
+----
+
+Restart your shell or execute `source ~/.virtualenvwrapper-conf.sh`.
+
+Having virtualenvwrapper ready, you can start downloading the **taiga-base** source code from
+its repository and setup all third party libraryes required by it:
+
+.Download the code
+[source,bash]
+----
+cd ~
+git clone https://github.com/taigaio/taiga-back.git taiga-back
+cd taiga-back
+git checkout stable
+----
+
+.Create new virtualenv
+[source,bash]
+----
+mkvirtualenv taiga
+----
+
+.Install dependencies
+[source, bash]
+----
+pip install -r requirements.txt
+----
+
+.Populate the database with initial basic data
+[source,bash]
+----
+python manage.py migrate --noinput
+python manage.py loaddata initial_user
+python manage.py loaddata initial_project_templates
+python manage.py loaddata initial_role
+----
+
+This creates new user **admin** with password **123123**.
+
+If you want some example data, you can execute this command, that populates the database
+with sample projects with random data, very usefull for demos:
+
+[source,bash]
+----
+python manage.py sample_data
+----
+
+And as final step for setup **taiga-back**, we should create some intial configuration
+for proper static/media files resolution and optionally, email sending support:
+
+.Put this on ~/taiga-back/settings/local.py
+[source,python]
+----
+from .common import *
+
+MEDIA_URL = "http://example.com/media/"
+STATIC_URL = "http://example.com/static/"
+ADMIN_MEDIA_PREFIX = "http://example.com/static/admin/"
+SITES["front"]["domain"] = "example.com"
+
+DEBUG = False
+TEMPLATE_DEBUG = False
+PUBLIC_REGISTER_ENABLED = True
+
+DEFAULT_FROM_EMAIL = "no-reply@example.com"
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
+
+# Uncomment this if you want activate email sending
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_USE_TLS = False
+# EMAIL_HOST = "localhost"
+# EMAIL_HOST_USER = ""
+# EMAIL_HOST_PASSWORD = ""
+# EMAIL_PORT = 25
+----
+
+[NOTE]
+Now we have backend installed and setup successful. Obviously this is not finished here, because python
+in production environments should run in one application server. This details are explained on the last
+section of this document.
+
+
+Frontend installation
+---------------------
+
+TODO
+
+
+Events installation
+-------------------
+
+**This step is completelly optional and can be skeeped**
+
