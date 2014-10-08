@@ -150,6 +150,7 @@ python manage.py migrate --noinput
 python manage.py loaddata initial_user
 python manage.py loaddata initial_project_templates
 python manage.py loaddata initial_role
+python manage.py collectstatic --noinput
 ----
 
 This creates new user **admin** with password **123123**.
@@ -174,6 +175,8 @@ MEDIA_URL = "http://example.com/media/"
 STATIC_URL = "http://example.com/static/"
 ADMIN_MEDIA_PREFIX = "http://example.com/static/admin/"
 SITES["front"]["domain"] = "example.com"
+
+SECRET_KEY = "theveryultratopsecretkey"
 
 DEBUG = False
 TEMPLATE_DEBUG = False
