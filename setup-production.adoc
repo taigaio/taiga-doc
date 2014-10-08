@@ -94,7 +94,7 @@ pip3 install --user virtualenvwrapper
 ----
 
 **virtualenvwrapper** helps mantain system clean from third party libraries installed
-with language package manager. Before use virtualevwrapper, you should configure it. 
+with language package manager. Before use virtualevwrapper, you should configure it.
 
 Create a shell configuration file:
 
@@ -108,10 +108,10 @@ export PATH=~/.local/bin:$PATH
 source ~/.local/bin/virtualenvwrapper.sh
 ----
 
-Include it from you shell configuration file, in case of ubuntu, we are using *bash* and the 
-configuration file is `~/.bashrc`.
+Include it from you shell configuration file, in case of ubuntu, we are using *bash* and the
+configuration file is `~/.bash_profile`.
 
-.Add this line at the end of **~/.bashrc**
+.Add this line at the end of **~/.bash_profile**
 [source, bash]
 ----
 source ~/.virtualenvwrapper-conf.sh
@@ -200,8 +200,99 @@ section of this document.
 Frontend installation
 ---------------------
 
-TODO
+This section helps to install the frontend application
 
+Install dependencies
+~~~~~~~~~~~~~~~~~~~~
+
+Frontend application runs entirelly on browser, and it should be writed using javascript, css and html.
+In case of **taiga-front** we have used other languaes. Because of it, we should install some
+additional dependencies that compiles **taiga-front** code intro something that browser can understand.
+
+
+Ruby and Gems
+^^^^^^^^^^^^^
+
+Ruby is used mainly for compile *sass* (css preprocessor). It also used for sass linting but that
+is only on development environments.
+
+.Install ruby
+[source,bash]
+----
+sudo apt-get install -y ruby
+----
+
+.Install required gems
+[source,bash]
+----
+gem install --user-install sass scss-lint
+----
+
+.Make gems scripts available in path putting this on *~/.bash_profile*
+[source,bash]
+----
+export PATH=~/.gem/ruby/1.9.1/bin:$PATH
+----
+
+Restart the shell for make path changes available.
+
+
+NodeJS and friends
+^^^^^^^^^^^^^^^^^^
+
+NodeJS is used for execute **gulp** and **bower**:
+
+- **gulp**: task execution tool. Used mainly for execute deploy and compile tasks.
+- **bower**: javascript dependencies management tool. Used mainly for download third party libraries
+  used by **taiga-front**.
+
+.Install nodejs
+[source,bash]
+----
+sudo apt-get install -y nodejs npm
+----
+
+.Install **gulp** and **bower** using recently installed npm
+[source,bash]
+----
+sudo npm install -g gulp bower
+----
+
+.Install all dependencies needed for run gulp and compile taiga-front
+[source,bash]
+----
+cd ~/taiga-front
+npm install
+bower install
+----
+
+Final steps
+~~~~~~~~~~~
+
+Having installed all dependencies, it only left two steps: create configuration and compile.
+
+.Create intial configuration on ~/taiga-front/conf/main.json
+[source,json]
+----
+{
+    "api": "http://example.com/api/v1/",
+    "eventsUrl": "ws://example.com/events",
+    "debug": "true",
+    "publicRegisterEnabled": true,
+    "privacyPolicyUrl": null,
+    "termsOfServiceUrl": null
+}
+----
+
+.Run gulp task for compile
+[source,bash]
+----
+cd ~/taiga-front
+gulp deploy
+----
+
+Now, having compiled **taiga-front**, the only missing step is expose the code under static
+file web server: **nginx**. That process is explained in the last section of this tutorial.
 
 Events installation
 -------------------
