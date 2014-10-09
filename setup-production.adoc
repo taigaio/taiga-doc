@@ -57,7 +57,7 @@ sudo apt-get install -y automake libtool libffi-dev curl git tmux
 Setup a database
 ~~~~~~~~~~~~~~~~
 
-**taiga-back** also requires a database
+**taiga-back** also requires postgresql (>= 9.3) as database
 
 Install postgresql:
 
@@ -71,8 +71,8 @@ And setup initial user and database:
 
 [source,bash]
 ----
-sudo -u postgres createuser --superuser taiga
-sudo -u postgres createdb taiga
+sudo -u postgres createuser taiga
+sudo -u postgres createdb taiga -O taiga
 ----
 
 Setup python environment
@@ -194,6 +194,19 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 # EMAIL_PORT = 25
 ----
 
+Verification
+~~~~~~~~~~~~
+
+To make sure everything is working, you can run the backend in development mode with:
+
+[source,bash]
+----
+python manage.py runserver
+----
+
+Then you must be able to see a json representing the list of endpoints in the url http://localhost:8000/api/v1/ .
+
+
 [NOTE]
 Now we have backend installed and setup successful. Obviously this is not finished here, because python
 in production environments should run in one application server. This details are explained on the last
@@ -237,7 +250,7 @@ gem install --user-install sass scss-lint
 export PATH=~/.gem/ruby/1.9.1/bin:$PATH
 ----
 
-Restart the shell for make path changes available.
+Restart the shell or run bash for make path changes available.
 
 
 NodeJS and friends
@@ -261,10 +274,18 @@ sudo apt-get install -y nodejs npm
 sudo npm install -g gulp bower
 ----
 
+.Download the code
+[source,bash]
+----
+cd ~
+git clone https://github.com/taigaio/taiga-front.git taiga-front
+cd taiga-front
+git checkout stable
+----
+
 .Install all dependencies needed for run gulp and compile taiga-front
 [source,bash]
 ----
-cd ~/taiga-front
 npm install
 bower install
 ----
@@ -294,9 +315,16 @@ cd ~/taiga-front
 gulp deploy
 ----
 
-Now, having compiled **taiga-front**, the only missing step is expose the code under static
-file web server: **nginx**. That process is explained in the last section of this tutorial.
+Now, having compiled **taiga-front**, the only missing step is expose the generated code
+(in **dist** directory) under static file web server: we use **nginx**. That process is
+explained in the last section of this tutorial.
 
+Verification
+~~~~~~~~~~~~
+
+To make sure everything is ok, you can check the **dist** directory and you'll see an
+**index.html** file and **fonts**, **images**, **js**, **partials**, **plugins**,
+**styles** and **svg** directories.
 
 Events installation
 -------------------
@@ -323,7 +351,7 @@ Circus and gunicorn
 
 Circus is a process manager written by **Mozilla** and we will use it for execute **gunicorn**.
 Circus, not only serves for execute processes, it also has utils for monitorize them, collect logs,
-restar process if something happens and start processes on system boot.
+restars process if something happens and start processes on system boot.
 
 .Install circus
 [source,bash]
@@ -395,48 +423,7 @@ Nginx is used as static file web server for serve **taiga-front** and proxy requ
 
 Let start configuring it.
 
-.Overwrite the */etc/nginx/nginx.conf* with this content
-[source,nginx]
-----
-user www-data;
-worker_processes 2;
-pid /var/run/nginx.pid;
-
-events {
-    worker_connections 1024;
-}
-
-http {
-    sendfile on;
-    tcp_nopush on;
-    tcp_nodelay on;
-    keepalive_timeout 15;
-    types_hash_max_size 2048;
-
-    include /etc/nginx/mime.types;
-    default_type application/octet-stream;
-
-    access_log /var/log/nginx/access.log;
-    error_log /var/log/nginx/error.log;
-
-    gzip on;
-    gzip_disable "msie6";
-
-    gzip_vary on;
-    gzip_proxied any;
-    gzip_comp_level 6;
-    gzip_buffers 16 8k;
-    gzip_http_version 1.1;
-    gzip_types text/plain text/css application/json application/x-javascript
-                    text/xml application/xml application/xml+rss text/javascript;
-
-    include /etc/nginx/conf.d/*.conf;
-    include /etc/nginx/sites-enabled/*;
-}
-----
-
-.Add specific configuration for **taiga-front** and **taiga-back** on
-/etc/nginx/sites-available/default overwriting the file if it exists.
+.Add specific configuration for **taiga-front** and **taiga-back** on /etc/nginx/sites-available/taiga.
 [source,nginx]
 ----
 server {
@@ -479,9 +466,21 @@ server {
 }
 ----
 
+[NOTE]
+====
+You can configure it as a virtual host, if you want to have various webs in the same nginx.
+====
+
+.Remove the link on /etc/nginx/sites-enabled/default and add /etc/nginx/sites-enabled/taiga
+[source,nginx]
+----
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
+----
+
 And finally, restart nginx with `sudo service nginx restart`
 
-**Now you should have service up and running on `http://example.com/`*
+**Now you should have service up and running on `http://example.com/`**
 
 FAQ
 ---
