@@ -220,7 +220,7 @@ sudo apt-get install -y ruby
 gem install --user-install sass scss-lint
 ----
 
-.Make gems scripts available in path putting this on *~/.bash_profile*
+.Make gems scripts available in path putting this on *~/.bashrc*
 [source,bash]
 ----
 export PATH=~/.gem/ruby/1.9.1/bin:$PATH
