@@ -1,0 +1,137 @@
+Taiga REST API
+==============
+:toc: left
+:numbered:
+
+Objects Summary
+---------------
+
+User
+~~~~
+include::snippets/login.response.json.adoc[]
+
+Endpoints Summary
+-----------------
+
+Auth
+~~~~
+
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /auth
+| POST
+| Login
+
+| /auth/register
+| POST
+| Register user
+|===
+
+Resolver
+~~~~~~~~
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /resolver?project=<project-slug>[&us=<ref>][&task=<ref>][&issue=<ref>][&milestone=<milestone-slug>][&wikipage=<wiki-page-slug>]
+| GET
+| Resolve references and slugs
+|===
+
+Projects
+~~~~~~~~
+
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /projects
+| GET
+| List projects
+
+| /projects
+| POST
+| Create project
+
+| /projects/<projectId>
+| GET
+| Get project
+
+| /projects/<projectId>
+| PUT
+| Modify project
+
+| /projects/<projectId>
+| PATCH
+| Modify partialy a project
+
+| /projects/<projectId>
+| DELETE
+| Delete a project
+|===
+
+Auth
+----
+
+Normal Login
+~~~~~~~~~~~~
+
+[cols="h,5a"]
+|===
+| URL
+| /auth
+
+| Method
+| POST
+
+| Request Body
+| include::snippets/login.request.json.adoc[]
+
+| Response Body
+| include::snippets/login.response.json.adoc[]
+|===
+
+Github Login
+~~~~~~~~~~~~
+
+[cols="h,5a"]
+|===
+| URL
+| /auth
+
+| Method
+| POST
+
+| Request Body
+| include::snippets/github-login.request.json.adoc[]
+
+| Response Body
+| include::snippets/login.response.json.adoc[]
+|===
+
+Register
+~~~~~~~~
+
+[cols="h,5a"]
+|===
+| URL
+| /auth/register
+
+| Method
+| POST
+
+| Request Body
+| include::snippets/login.request.json.adoc[]
+
+| Response Body
+| include::snippets/login.response.json.adoc[]
+|===
+

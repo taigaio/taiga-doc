@@ -1,0 +1,7 @@
+[source,json]
+----
+{
+    type: "github",
+    token: "github-valid-token",
+}
+----
