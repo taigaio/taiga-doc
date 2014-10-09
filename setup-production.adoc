@@ -351,7 +351,7 @@ Circus and gunicorn
 
 Circus is a process manager written by **Mozilla** and we will use it for execute **gunicorn**.
 Circus, not only serves for execute processes, it also has utils for monitorize them, collect logs,
-restars process if something happens and start processes on system boot.
+restart process if something happens and start processes on system boot.
 
 .Install circus
 [source,bash]
