@@ -41,6 +41,7 @@ Backend installation
 
 This section helps with the installation of the backend (api) taiga service.
 
+
 Install dependencies
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -79,48 +80,21 @@ Setup python environment
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 For run **taiga-back** you should have python (3.4) installed with some other third party
-libraries. As a first step, start installing python:
+libraries. As a first step, start installing python and virtualenvwrapper:
 
 [source,bash]
 ----
-sudo apt-get install -y python3 python3-pip python-dev python3-dev python-pip
+sudo apt-get install -y python3 python3-pip python-dev python3-dev python-pip virtualenvwrapper
 ----
 
-Afterward, install **virtualenvwrapper**:
-
-[source,bash]
-----
-pip3 install --user virtualenvwrapper
-----
-
+[NOTE]
 **virtualenvwrapper** helps maintain the system clean of third party libraries installed
-with language package manager. Before you use virtualevwrapper, you should configure it.
+with language package manager, installing them in isolated virtual environment.
 
-Create a shell configuration file:
+Restart the shell or run `bash` again, for reload the bash environment with virtualenvwrapper
+variables and functions.
 
-.~/.virtualenvwrapper-conf.sh
-[source, bash]
-----
-export PYTHONPATH="/home/ubuntu/.local/lib/python3.4/site-packages"
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON="/usr/bin/python3.4"
-export PATH=~/.local/bin:$PATH
-source ~/.local/bin/virtualenvwrapper.sh
-----
-
-Include it from you shell configuration file, in case of ubuntu, we are using *bash* and the
-configuration file is `~/.bash_profile`.
-
-.Add this line at the end of **~/.bash_profile**
-[source, bash]
-----
-source ~/.virtualenvwrapper-conf.sh
-----
-
-Restart your shell or execute `source ~/.virtualenvwrapper-conf.sh`.
-
-Having virtualenvwrapper ready, you can start downloading the **taiga-base** source code from
-its repository and setup all the third party libraries it requires:
+The next step is donload the code from github and install their dependencies:
 
 .Download the code
 [source,bash]
@@ -131,7 +105,7 @@ cd taiga-back
 git checkout stable
 ----
 
-.Create new virtualenv
+.Create new virtualenv named **taiga**
 [source,bash]
 ----
 mkvirtualenv taiga
@@ -185,7 +159,8 @@ PUBLIC_REGISTER_ENABLED = True
 DEFAULT_FROM_EMAIL = "no-reply@example.com"
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
-# Uncomment this if you want activate email sending
+# Uncomment and populate with proper connection parameters
+# for enable email sending.
 # EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 # EMAIL_USE_TLS = False
 # EMAIL_HOST = "localhost"
@@ -217,6 +192,7 @@ Frontend installation
 ---------------------
 
 This section helps you install the frontend application
+
 
 Install dependencies
 ~~~~~~~~~~~~~~~~~~~~
