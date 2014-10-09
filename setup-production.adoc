@@ -20,6 +20,7 @@ Each component can run on one unique machine or they can each be installed in a 
 this tutorial we will setup everything in one single machine. This setup should suffce should for small/medium
 production environments.
 
+
 Before start
 ------------
 

@@ -29,15 +29,8 @@ and link:https://github.com/taigaio/taiga-back[taiga-back]
 
 Taiga has some other modules, but they are optional and documented in other sections.
 
-Install
--------
-
-This section details everythign you need to know to get taiga up and running
-on both development and production environments.
-
-
 Requirements
-~~~~~~~~~~~~
+------------
 
 This is a list of major taiga dependencies:
 
@@ -54,11 +47,18 @@ Compile time:
 - NodeJS 0.10 (with npm, gulp and bower for download dependencies and compile coffeescript)
 
 
+Installation Guide
+------------------
+
+This section details everythign you need to know to get taiga up and running
+on both development and production environments.
+
+
 Setup production environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can see link:setup-production.html[here] the complete documentation on how to setup
-a proper development environment.
+link:setup-production.html[This document] contains the complete, step by step tutorial of how
+to setup properly taiga for low traffic production environment.
 
 
 Setup development environment
@@ -66,6 +66,15 @@ Setup development environment
 
 You can see link:setup-development.html[here] the complete documentation on how to setup
 a proper development environment.
+
+
+Other ways to setup initial environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Additionally to traditional step by step manuals, taiga comes with some other tools like
+collection of provisioning scripts and vagrant support, and the complete documentation
+of how to use them is link:setup-alternatives.html[here].
+
 
 How to contribute
 -----------------
