@@ -94,7 +94,7 @@ with language package manager, installing them in isolated virtual environment.
 Restart the shell or run `bash` again, for reload the bash environment with virtualenvwrapper
 variables and functions.
 
-The next step is donload the code from github and install their dependencies:
+The next step is download the code from github and install their dependencies:
 
 .Download the code
 [source,bash]
