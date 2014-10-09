@@ -397,7 +397,7 @@ Nginx
 
 Nginx is used as a static file web server to serve **taiga-front** and send proxy requests to **taiga-back**.
 
-Let start configuring it.
+Let start configuring it:
 
 .Add specific configuration for **taiga-front** and **taiga-back** on /etc/nginx/sites-available/taiga.
 [source,nginx]
@@ -442,15 +442,16 @@ server {
 }
 ----
 
-[NOTE]
-====
-You can configure it as a virtual host, if you want to have various webs in the same nginx.
-====
-
-.Remove the link on /etc/nginx/sites-enabled/default and add /etc/nginx/sites-enabled/taiga
+.Disable the default nginx site (virtualhosT)
 [source,nginx]
 ----
 sudo rm /etc/nginx/sites-enabled/default
+----
+
+
+.Enable the recently created taiga site (virtualhost)
+[source,nginx]
+----
 sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
 ----
 
