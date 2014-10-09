@@ -6,18 +6,18 @@ Setup production environment
 Introduction
 ------------
 
-This documentation should explain how to deploy a taiga service (each module part of taiga platform).
+This documentation explains how to deploy a taiga service (each module part of taiga platform).
 
-Taiga platform consists in mainly three components:
+The Taiga platform consists of three main components:
 
 - **taiga-back** (backend/api)
 - **taiga-front** (frontend)
 - **taiga-events** (websockets gateway) (optional)
 
-And each one has their own dependencies, at compile time and runtime.
+And each one has its own dependencies, at compile time and runtime.
 
-Each component can run on one unique machine or split each component in different machines. In
-this tutorial we go to setup everything in one unique machine. It should be enought for small/medium
+Each component can run on one unique machine or they can each be installed in a different machine. In
+this tutorial we will setup everything in one single machine. This setup should suffce should for small/medium
 production environments.
 
 Before start
@@ -25,26 +25,26 @@ Before start
 
 This tutorial assumes that you are using a clean, recently updated, **ubuntu 14.04** image.
 
-Due the nature of frontend application, we should know that is the domain/public-ip though
-the service will be used. This is because, the frontend application will run on your browser
-and it should communicate with backend/api.
+Due the nature of frontend application, you should know that this service will be used 
+through the domain/public-ip. This is because, the frontend application will run on your browser
+and it should communicate with the backend/api.
 
-We go supose this:
+We assume the following:
 
 - **ip:** `80.88.23.45`
-- **hostname:** `example.com` (that points to 80.88.23.45)
+- **hostname:** `example.com` (which points to 80.88.23.45)
 - **username:** `taiga`
 
 
 Backend installation
 --------------------
 
-This section helps to install the backend (api) taiga service.
+This section helps with the installation of the backend (api) taiga service.
 
 Install dependencies
 ~~~~~~~~~~~~~~~~~~~~
 
-Backend is mainly written in python (3.4) but for some third party libraries we need install a
+The Backend is written mainly in python (3.4) but for some third party libraries we need to install a
 C compiller and development headers.
 
 [source,bash]
@@ -57,7 +57,7 @@ sudo apt-get install -y automake libtool libffi-dev curl git tmux
 Setup a database
 ~~~~~~~~~~~~~~~~
 
-**taiga-back** also requires postgresql (>= 9.3) as database
+**taiga-back** also requires postgresql (>= 9.3) as a database
 
 Install postgresql:
 
@@ -67,7 +67,7 @@ sudo apt-get install -y postgresql-9.3 postgresql-contrib-9.3
 sudo apt-get install -y postgresql-doc-9.3 postgresql-server-dev-9.3
 ----
 
-And setup initial user and database:
+And setup teh initial user and database:
 
 [source,bash]
 ----
@@ -79,7 +79,7 @@ Setup python environment
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 For run **taiga-back** you should have python (3.4) installed with some other third party
-libraries. As first step, let start installing python:
+libraries. As a first step, start installing python:
 
 [source,bash]
 ----
@@ -93,8 +93,8 @@ Afterward, install **virtualenvwrapper**:
 pip3 install --user virtualenvwrapper
 ----
 
-**virtualenvwrapper** helps maintain system clean from third party libraries installed
-with language package manager. Before use virtualevwrapper, you should configure it.
+**virtualenvwrapper** helps maintain the system clean of third party libraries installed
+with language package manager. Before you use virtualevwrapper, you should configure it.
 
 Create a shell configuration file:
 
@@ -120,7 +120,7 @@ source ~/.virtualenvwrapper-conf.sh
 Restart your shell or execute `source ~/.virtualenvwrapper-conf.sh`.
 
 Having virtualenvwrapper ready, you can start downloading the **taiga-base** source code from
-its repository and setup all third party libraryes required by it:
+its repository and setup all the third party libraries it requires:
 
 .Download the code
 [source,bash]
@@ -153,17 +153,17 @@ python manage.py loaddata initial_role
 python manage.py collectstatic --noinput
 ----
 
-This creates new user **admin** with password **123123**.
+This creates a new user **admin** with password **123123**.
 
-If you want some example data, you can execute this command, that populates the database
-with sample projects with random data, very usefull for demos:
+If you want some example data, you can execute the following command, which populates the database
+with sample projects and random data, usefull for demos:
 
 [source,bash]
 ----
 python manage.py sample_data
 ----
 
-And as final step for setup **taiga-back**, we should create some intial configuration
+And as final step for setup **taiga-back**, we should create the intial configuration
 for proper static/media files resolution and optionally, email sending support:
 
 .Put this on ~/taiga-back/settings/local.py
@@ -216,20 +216,20 @@ section of this document.
 Frontend installation
 ---------------------
 
-This section helps to install the frontend application
+This section helps you install the frontend application
 
 Install dependencies
 ~~~~~~~~~~~~~~~~~~~~
 
-Frontend application runs entirelly on browser, and it should be writed using javascript, css and html.
-In case of **taiga-front** we have used other languaes. Because of it, we should install some
-additional dependencies that compiles **taiga-front** code intro something that browser can understand.
+The Frontend application runs entirelly on a browser, and it should be written using javascript, css and html.
+In case of **taiga-front** we have used other languaes. Because of this, you should install some
+additional dependencies that compiles **taiga-front** code intro something that the browser can understand.
 
 
 Ruby and Gems
 ^^^^^^^^^^^^^
 
-Ruby is used mainly for compile *sass* (css preprocessor). It also used for sass linting but that
+Ruby is used mainly for compiling *sass* (css preprocessor). It is also used for sass linting but that
 is only on development environments.
 
 .Install ruby
@@ -250,16 +250,16 @@ gem install --user-install sass scss-lint
 export PATH=~/.gem/ruby/1.9.1/bin:$PATH
 ----
 
-Restart the shell or run bash for make path changes available.
+Restart the shell or run bash to make the path changes available.
 
 
 NodeJS and friends
 ^^^^^^^^^^^^^^^^^^
 
-NodeJS is used for execute **gulp** and **bower**:
+NodeJS is used to execute **gulp** and **bower**:
 
-- **gulp**: task execution tool. Used mainly for execute deploy and compile tasks.
-- **bower**: javascript dependencies management tool. Used mainly for download third party libraries
+- **gulp**: task execution tool. Used mainly for executing deploying and compiling tasks.
+- **bower**: javascript dependencies management tool. Used mainly for downloading third party libraries
   used by **taiga-front**.
 
 .Install nodejs
@@ -293,7 +293,7 @@ bower install
 Final steps
 ~~~~~~~~~~~
 
-Having installed all dependencies, it only left two steps: create configuration and compile.
+Having installed all dependencies, only two steps are left: creating the configuration and compiling.
 
 .Create intial configuration on ~/taiga-front/conf/main.json
 [source,json]
@@ -315,7 +315,7 @@ cd ~/taiga-front
 gulp deploy
 ----
 
-Now, having compiled **taiga-front**, the only missing step is expose the generated code
+Now, having compiled **taiga-front**, the next step is to expose the generated code
 (in **dist** directory) under static file web server: we use **nginx**. That process is
 explained in the last section of this tutorial.
 
@@ -329,29 +329,29 @@ To make sure everything is ok, you can check the **dist** directory and you'll s
 Events installation
 -------------------
 
-**This step is completelly optional and can be skeeped**
+**This step is completelly optional and can be skipped**
 
 TODO
 
 Final steps
 -----------
 
-If you are here, it probable that you are compleded the installation of **taiga-back** and
-**taiga-front**. Having installed them is insufficient.
+If you are here, it's probable that you completed the installation of **taiga-back** and
+**taiga-front**. However, having installed them is insufficient.
 
 **taiga-back** should run under application server which in turn should be executed and monitored
 by one process manager. For this task we will use **gunicorn** and **circus** respectivelly.
 
 **taiga-front** and **taiga-back** should be exposed to the outside, using good proxy/static-file
-web server. For this purpose we'll go to use **nginx**.
+web server. For this purpose we'll use **nginx**.
 
 
 Circus and gunicorn
 ~~~~~~~~~~~~~~~~~~~
 
-Circus is a process manager written by **Mozilla** and we will use it for execute **gunicorn**.
-Circus, not only serves for execute processes, it also has utils for monitorize them, collect logs,
-restart process if something happens and start processes on system boot.
+Circus is a process manager written by **Mozilla** and we will use it to execute **gunicorn**.
+Circus not only serves to execute processes, it also has utils for monitoring them, collecting logs,
+restarting processes if something goes wrong, and starting processes on system boot.
 
 .Install circus
 [source,bash]
@@ -391,8 +391,8 @@ PATH = $PATH:/home/taiga/.virtualenvs/taiga/bin
 
 [NOTE]
 ====
-We store logs on user home, making them available and inmediate access when
-you enters in a machine. For make everything works, make sure you have the logs directory
+We store logs on the user home, making them available and immediately accessible when
+you enter a machine. To make everything work, make sure you have the logs directory
 created.
 
 You can create it with: `mkdir -p ~/logs`
@@ -419,7 +419,7 @@ sudo service circus start
 Nginx
 ~~~~~
 
-Nginx is used as static file web server for serve **taiga-front** and proxy requests to **taiga-back**.
+Nginx is used as a static file web server to serve **taiga-front** and send proxy requests to **taiga-back**.
 
 Let start configuring it.
 
@@ -480,7 +480,7 @@ sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
 
 And finally, restart nginx with `sudo service nginx restart`
 
-**Now you should have service up and running on `http://example.com/`**
+**Now you should have the service up and running on `http://example.com/`**
 
 FAQ
 ---
@@ -488,31 +488,31 @@ FAQ
 How I can change the domain name?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The domain name it mainly affects to frontend application, because it needs comunicate with the
+The domain name mainly affects the frontend application, because it needs to comunicate with the
 backend through the domain/public-ip.
 
-For it you should update the `url` value on frontend config file and rebuild frontend with
-`gulp deploy`. Also you should update domain related configuration on the backend
+To do this you should update the `url` value on frontend config file and rebuild frontend with
+`gulp deploy`. Also you should update the domain related configuration on the backend
 settings file: `settings/local.py`.
 
-And finally reload backend config with: `circusctl reload taiga`
+And finally reload the backend config with: `circusctl reload taiga`
 
-How I can restart backend application?
+How can I restart backend application?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Very simple. Backend application is running under circus, and restart any application running
-with circus is  through `circusctl` command:
+The Backend application is running under circus. To restart any application running
+with circus use the `circusctl` command:
 
 [source,bash]
 ----
 circusctl restart taiga
 ----
 
-How I can maintain my app update with last taiga version?
+How I can maintain my app up to date with the most recent taiga version?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Taiga platform is developed on github. For consistences you should alway maintain the same version
-in time of *stable* branch of git repository.
+The Taiga platform is developed on github. For consistences you should alway maintain the same version
+in time with the *stable* branch of git repository.
 
 **No packaged version of taiga is available at this moment.**
 
