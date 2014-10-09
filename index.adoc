@@ -44,7 +44,7 @@ This is a list of major taiga dependencies:
 Runtime:
 
 - Python 3.4
-- PostgreSQL > 9.2
+- PostgreSQL >= 9.3
 - RabbitMQ (optional if you dont want async notifications)
 
 Compile time:
