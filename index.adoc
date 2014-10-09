@@ -13,7 +13,7 @@ Your Agile, Free and Open Source Project Management Tool
 Project Maturity
 ----------------
 
-Because _taiga_ is still a young project we consider it is currently in alpha state.
+Because _taiga_ is still a young project we consider it is currently in beta state.
 
 
 How it works
