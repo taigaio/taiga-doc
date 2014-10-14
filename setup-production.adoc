@@ -460,9 +460,11 @@ And finally, restart nginx with `sudo service nginx restart`
 
 **Now you should have the service up and running on `http://example.com/`**
 
+
 FAQ
 ---
 
+[[faq-change-domain]]
 How I can change the domain name?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -475,6 +477,7 @@ settings file: `settings/local.py`.
 
 And finally reload the backend config with: `circusctl reload taiga`
 
+
 How can I restart backend application?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -486,11 +489,12 @@ with circus use the `circusctl` command:
 circusctl restart taiga
 ----
 
+[[faq-maintain-update]]
 How I can maintain my app up to date with the most recent taiga version?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Taiga platform is developed on github. For consistences you should alway maintain the same version
-in time with the *stable* branch of git repository.
+in time with the *stable* branch of git or use the last major version of each component.
 
 **No packaged version of taiga is available at this moment.**
 
@@ -498,6 +502,7 @@ in time with the *stable* branch of git repository.
 [source,bash]
 ----
 cd ~/taiga-front
+git checkout stable
 git pull
 gulp deploy
 ----
@@ -505,6 +510,7 @@ gulp deploy
 .Backend application
 ----
 cd ~/taiga-back
+git checkout stable
 workon taiga
 git pull
 pip install --upgrade -r requirements.txt
@@ -512,4 +518,3 @@ python manage.py migrate --noinput
 python manage.py collectstatic --noinput
 circusctl reload taiga
 ----
-
