@@ -10,19 +10,19 @@ Setup using **taiga-scripts**
 Introduction
 ~~~~~~~~~~~~
 
-**taiga-scrips** follows mainly the standard installation process, but makes it more automatic. If
-something wrong happens in the process, should try fix them following the manual deploy process.
+**taiga-scrips** primarily follows the standard installation process, but makes it more automatic. If
+something goes wrong in the process, you should try fix them following the manual deploy process.
 
-**taiga-scripts** always installs a concrete (last) version of taiga (taiga-front and taiga-back)
+**taiga-scripts** always installs a specific (most recent) version of taiga (taiga-front and taiga-back)
 
 
 Important notes about using **taiga-scripts**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Is in alpha state. Not heavy tested in differents environments
-- Designed for work with taiga-vagrant (see next section of this documentation)
-- Not supports reprovisioning (updating) at this moment, it still in development.
-- Does not supports installation with root user.
+- They are in alpha state. Not heavy tested in differents environments
+- Designed to work with taiga-vagrant (see next section of this documentation)
+- Does not supports reprovisioning (updating) at this moment, it still in development.
+- Does not support installation with root user.
 - The installation is not 100% ready for production.
 
 
@@ -37,7 +37,7 @@ Requirements
 Setup server-like environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Having fresh and updated ubuntu 14.04 machine or virtual image:
+Make sure you have a fresh and updated ubuntu 14.04 machine or virtual image:
 
 [source, txt]
 ----
@@ -50,12 +50,12 @@ $ bash setup-server.sh
 Setup development-like environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This setup is much like the previous but with a few differences:
+This setup is much like the previous one but with a few differences:
 
-- Do not install services like nginx, because they are only necessary for production
+- Do not install services like nginx, as they are only necessary for production
 - Set all hostnames to localhost to easily run everything on localhost
 
-Having fresh and updated ubuntu 14.04 machine or virtual image:
+Make sure you have a fresh and updated ubuntu 14.04 machine or virtual image:
 
 [source, txt]
 ----
@@ -71,14 +71,14 @@ Setup using **taiga-vagrant**
 Introduction
 ~~~~~~~~~~~~
 
-**taiga-vagrant** offers a Vagrantfile for make easy turn up an virtual machine completelly
-provisioned. **taiga-vagrant** uses **taiga-scripts** as provisioning scripts.
+**taiga-vagrant** offers a Vagrantfile for make easy turn on a fully provisioned virtual 
+machine. **taiga-vagrant** uses **taiga-scripts** to provision scripts.
 
 
 Important notes about using **taiga-vagrant**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- The installation is not 100% ready for production, it is designed for use as demostration.
+- The installation is not 100% ready for production, it is designed for use as a demostration.
 - Does not support reprovisioning at this momment.
 
 Dependencies
@@ -98,7 +98,7 @@ cd taiga-vagrant
 vagrant up
 ----
 
-After installing, the taiga service should be up and running. You can access it going
+After installing, the taiga service should be up and running. You can access it by going
 to http://localhost:8000 with you browser.
 
 You can use the following credentials for login in recently created taiga instance:
