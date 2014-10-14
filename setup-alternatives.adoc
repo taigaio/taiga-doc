@@ -3,6 +3,7 @@ Other ways to setup initial environment
 :toc: left
 :numbered:
 
+[[setup-taiga-scripts]]
 Setup using **taiga-scripts**
 -----------------------------
 
@@ -63,6 +64,7 @@ $ cd taiga-scripts
 $ bash setup-devel.sh
 ----
 
+[[setup-taiga-vagrant]]
 Setup using **taiga-vagrant**
 -----------------------------
 
