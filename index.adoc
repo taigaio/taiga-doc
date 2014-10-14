@@ -57,7 +57,7 @@ on both development and production environments.
 Setup production environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-link:setup-production.html[This document] contains the complete, step by step tutorial of how
+link:setup-production.html[This document contains the complete, step by step tutorial] of how
 to setup properly taiga for low traffic production environment.
 
 
@@ -72,8 +72,8 @@ Other ways to setup initial environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Additionally to traditional step by step manuals, taiga comes with some other tools like
-collection of provisioning scripts and vagrant support, and the complete documentation
-of how to use them is link:setup-alternatives.html[here].
+collection of provisioning scripts and vagrant support, and the
+link:setup-alternatives.html[complete documentation of how to use them is here].
 
 
 How to contribute
@@ -101,6 +101,16 @@ Before reporting a bug or requesting a new feature, please consider these genera
 - Do ask on link:http://groups.google.com/d/forum/taigaio[mailing list] first if you're not sure if what you're seeing is a bug.
 - Don't use the github issues system to ask support questions. Use the link:http://groups.google.com/d/forum/taigaio[mailing list] for that.
 - Don’t use the github issues for lengthy discussions, because they're likely to get lost. If a particular ticket is controversial, please move the discussion to the link:http://groups.google.com/d/forum/taigaio[mailing list].
+
+Community
+~~~~~~~~~
+
+link:http://groups.google.com/d/forum/taigaio[Taiga has a mailing list]. Feel free to join it
+and ask any questions you may have.
+
+To subscribe for announcements of releases, important changes and so on, please follow
+link:https://twitter.com/taigaio[@taigaio] on Twitter.
+
 
 License
 ~~~~~~~
