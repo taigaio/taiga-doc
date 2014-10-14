@@ -66,4 +66,47 @@ $ bash setup-devel.sh
 Setup using **taiga-vagrant**
 -----------------------------
 
-TODO
+Introduction
+~~~~~~~~~~~~
+
+**taiga-vagrant** offers a Vagrantfile for make easy turn up an virtual machine completelly
+provisioned. **taiga-vagrant** uses **taiga-scripts** as provisioning scripts.
+
+
+Important notes about using **taiga-vagrant**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- The installation is not 100% ready for production, it is designed for use as demostration.
+- Does not support reprovisioning at this momment.
+
+Dependencies
+~~~~~~~~~~~~
+
+- link:https://www.virtualbox.org/wiki/Downloads[VirtualBox]
+- link:http://downloads.vagrantup.com/[Vagrant]
+
+
+Installation
+~~~~~~~~~~~~
+
+[source, bash]
+----
+git clone https://github.com/taigaio/taiga-vagrant.git
+cd taiga-vagrant
+vagrant up
+----
+
+After installing, the taiga service should be up and running. You can access it going
+to http://localhost:8000 with you browser.
+
+You can use the following credentials for login in recently created taiga instance:
+
+- Username: `admin`
+- Password: `123123`
+
+You can access to the machine using ssh, if you would make some tweaks:
+
+[source, bash]
+----
+vagrant ssh
+----
