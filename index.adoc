@@ -91,6 +91,7 @@ Examples of contributions include:
 Before starting to develope a big feature (intending to be included on the taiga code base), it is
 strongly recommended that you reach out to us at link:http://groups.google.com/d/forum/taigaio[mailing list].
 
+
 Reporting bugs
 ~~~~~~~~~~~~~~
 

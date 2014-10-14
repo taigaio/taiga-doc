@@ -1,0 +1,69 @@
+Other ways to setup initial environment
+=======================================
+:toc: left
+:numbered:
+
+Setup using **taiga-scripts**
+-----------------------------
+
+Introduction
+~~~~~~~~~~~~
+
+**taiga-scrips** follows mainly the standard installation process, but makes it more automatic. If
+something wrong happens in the process, should try fix them following the manual deploy process.
+
+**taiga-scripts** always installs a concrete (last) version of taiga (taiga-front and taiga-back)
+
+
+Important notes about using **taiga-scripts**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Is in alpha state. Not heavy tested in differents environments
+- Designed for work with taiga-vagrant (see next section of this documentation)
+- Not supports reprovisioning (updating) at this moment, it still in development.
+- Does not supports installation with root user.
+- The installation is not 100% ready for production.
+
+
+Requirements
+~~~~~~~~~~~~
+
+- Fresh installed and updated Ubuntu 14.04
+- Bash shell
+- Git
+
+
+Setup server-like environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Having fresh and updated ubuntu 14.04 machine or virtual image:
+
+[source, txt]
+----
+$ git clone https://github.com/taigaio/taiga-scripts.git
+$ cd taiga-scripts
+$ bash setup-server.sh
+----
+
+
+Setup development-like environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This setup is much like the previous but with a few differences:
+
+- Do not install services like nginx, because they are only necessary for production
+- Set all hostnames to localhost to easily run everything on localhost
+
+Having fresh and updated ubuntu 14.04 machine or virtual image:
+
+[source, txt]
+----
+$ git clone https://github.com/taigaio/taiga-scripts.git
+$ cd taiga-scripts
+$ bash setup-devel.sh
+----
+
+Setup using **taiga-vagrant**
+-----------------------------
+
+TODO
