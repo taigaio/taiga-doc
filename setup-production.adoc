@@ -109,7 +109,7 @@ git checkout stable
 .Create new virtualenv named **taiga**
 [source,bash]
 ----
-mkvirtualenv taiga
+mkvirtualenv -p /usr/bin/python3.4 taiga
 ----
 
 .Install dependencies
