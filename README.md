@@ -1,3 +1,3 @@
 # Taiga documentation source #
 
-Status: It still work in progress.
+Status: Still a work in Progress
