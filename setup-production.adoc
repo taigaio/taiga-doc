@@ -6,7 +6,7 @@ Setup production environment
 Introduction
 ------------
 
-This documentation explains how to deploy a taiga service (each module part of taiga platform).
+This documentation explains how to deploy a taiga service (each module is part of the taiga platform).
 
 The Taiga platform consists of three main components:
 
@@ -16,13 +16,13 @@ The Taiga platform consists of three main components:
 
 And each one has its own dependencies, at compile time and runtime.
 
-Each component can run on one unique machine or they can each be installed in a different machine. In
-this tutorial we will setup everything in one single machine. This setup should suffce should for small/medium
-production environments.
+Each component can run on one unique machine or each can be installed in a different machine. In
+this tutorial we will setup everything in one single machine. This type of setup should suffce should 
+for small/medium production environments.
 
 
-Before start
-------------
+Before starting
+---------------
 
 This tutorial assumes that you are using a clean, recently updated, **ubuntu 14.04** image.
 
@@ -69,7 +69,7 @@ sudo apt-get install -y postgresql-9.3 postgresql-contrib-9.3
 sudo apt-get install -y postgresql-doc-9.3 postgresql-server-dev-9.3
 ----
 
-And setup teh initial user and database:
+And setup the initial user and database:
 
 [source,bash]
 ----
@@ -92,10 +92,10 @@ sudo apt-get install -y python3 python3-pip python-dev python3-dev python-pip vi
 **virtualenvwrapper** helps maintain the system clean of third party libraries installed
 with language package manager, installing them in isolated virtual environment.
 
-Restart the shell or run `bash` again, for reload the bash environment with virtualenvwrapper
+Restart the shell or run `bash` again, to reload the bash environment with virtualenvwrapper
 variables and functions.
 
-The next step is download the code from github and install their dependencies:
+The next step is to download the code from github and install their dependencies:
 
 .Download the code
 [source,bash]
@@ -131,14 +131,14 @@ python manage.py collectstatic --noinput
 This creates a new user **admin** with password **123123**.
 
 If you want some example data, you can execute the following command, which populates the database
-with sample projects and random data, usefull for demos:
+with sample projects and random data; useful for demos:
 
 [source,bash]
 ----
 python manage.py sample_data
 ----
 
-And as final step for setup **taiga-back**, we should create the intial configuration
+And as final step for setup **taiga-back**, you should create the intial configuration
 for proper static/media files resolution and optionally, email sending support:
 
 .Put this on ~/taiga-back/settings/local.py
@@ -184,8 +184,8 @@ Then you must be able to see a json representing the list of endpoints in the ur
 
 
 [NOTE]
-Now we have backend installed and setup successful. Obviously this is not finished here, because python
-in production environments should run in one application server. This details are explained on the last
+At this stage the backend has been installed successfully. But you're not done yet. Because python
+in production environments, should run on an application server. The details for this are explained in the final
 section of this document.
 
 
@@ -199,8 +199,8 @@ Install dependencies
 ~~~~~~~~~~~~~~~~~~~~
 
 The Frontend application runs entirelly on a browser, and it should be written using javascript, css and html.
-In case of **taiga-front** we have used other languaes. Because of this, you should install some
-additional dependencies that compiles **taiga-front** code intro something that the browser can understand.
+In case of **taiga-front** we have used other languages. Because of this, you should install some
+additional dependencies that compile **taiga-front** code intro something the browser can understand.
 
 
 Ruby and Gems
@@ -270,7 +270,7 @@ bower install
 Final steps
 ~~~~~~~~~~~
 
-Having installed all dependencies, only two steps are left: creating the configuration and compiling.
+Having installed all dependencies, only two steps remain: creating the configuration and compiling.
 
 .Create intial configuration on ~/taiga-front/conf/main.json
 [source,json]
@@ -294,7 +294,7 @@ gulp deploy
 
 Now, having compiled **taiga-front**, the next step is to expose the generated code
 (in **dist** directory) under static file web server: we use **nginx**. That process is
-explained in the last section of this tutorial.
+explained in the final section of this tutorial.
 
 Verification
 ~~~~~~~~~~~~
@@ -316,8 +316,8 @@ Final steps
 If you are here, it's probable that you completed the installation of **taiga-back** and
 **taiga-front**. However, having installed them is insufficient.
 
-**taiga-back** should run under application server which in turn should be executed and monitored
-by one process manager. For this task we will use **gunicorn** and **circus** respectivelly.
+**taiga-back** should run under an application server which in turn should be executed and monitored
+by a process manager. For this task we will use **gunicorn** and **circus** respectivelly.
 
 **taiga-front** and **taiga-back** should be exposed to the outside, using good proxy/static-file
 web server. For this purpose we'll use **nginx**.
@@ -326,7 +326,7 @@ web server. For this purpose we'll use **nginx**.
 Circus and gunicorn
 ~~~~~~~~~~~~~~~~~~~
 
-Circus is a process manager written by **Mozilla** and we will use it to execute **gunicorn**.
+Circus is a process manager written by **Mozilla** and you will use it to execute **gunicorn**.
 Circus not only serves to execute processes, it also has utils for monitoring them, collecting logs,
 restarting processes if something goes wrong, and starting processes on system boot.
 
@@ -368,7 +368,7 @@ PATH = $PATH:/home/taiga/.virtualenvs/taiga/bin
 
 [NOTE]
 ====
-We store logs on the user home, making them available and immediately accessible when
+Taiga stores logs on the user home, making them available and immediately accessible when
 you enter a machine. To make everything work, make sure you have the logs directory
 created.
 
@@ -465,7 +465,7 @@ FAQ
 ---
 
 [[faq-change-domain]]
-How I can change the domain name?
+How can I change the domain name?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The domain name mainly affects the frontend application, because it needs to comunicate with the
@@ -478,8 +478,8 @@ settings file: `settings/local.py`.
 And finally reload the backend config with: `circusctl reload taiga`
 
 
-How can I restart backend application?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How can I restart the backend application?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Backend application is running under circus. To restart any application running
 with circus use the `circusctl` command:
@@ -490,8 +490,8 @@ circusctl restart taiga
 ----
 
 [[faq-maintain-update]]
-How I can maintain my app up to date with the most recent taiga version?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How I can keep my app up to date with the most recent taiga version?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Taiga platform is developed on github. For consistences you should alway maintain the same version
 in time with the *stable* branch of git or use the last major version of each component.
