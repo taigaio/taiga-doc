@@ -17,7 +17,7 @@ The Taiga platform consists of three main components:
 And each one has its own dependencies, at compile time and runtime.
 
 Each component can run on one unique machine or each can be installed in a different machine. In
-this tutorial we will setup everything in one single machine. This type of setup should suffce should 
+this tutorial we will setup everything in one single machine. This type of setup should suffce should
 for small/medium production environments.
 
 
@@ -26,7 +26,7 @@ Before starting
 
 This tutorial assumes that you are using a clean, recently updated, **ubuntu 14.04** image.
 
-Due the nature of frontend application, you should know that this service will be used 
+Due the nature of frontend application, you should know that this service will be used
 through the domain/public-ip. This is because, the frontend application will run on your browser
 and it should communicate with the backend/api.
 
@@ -282,7 +282,8 @@ Having installed all dependencies, only two steps remain: creating the configura
     "publicRegisterEnabled": true,
     "feedbackEnabled": true,
     "privacyPolicyUrl": null,
-    "termsOfServiceUrl": null
+    "termsOfServiceUrl": null,
+    "maxUploadFileSize": null
 }
 ----
 
