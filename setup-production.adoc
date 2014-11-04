@@ -466,6 +466,21 @@ And finally, restart nginx with `sudo service nginx restart`
 FAQ
 ---
 
+[[faq-npm-error]]
+Are you having npm errors when executing gulp?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Delete the tmp files and install the dependencies again:
+
+[source,text]
+----
+mv ~/tmp ~/tmp_old
+cd ~/taiga-front/
+rm -rf ~/.npm; rm -rf node_modules
+npm install
+bower install
+gulp deploy
+----
+
 [[faq-change-domain]]
 How can I change the domain name?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
