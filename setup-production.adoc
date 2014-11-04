@@ -400,7 +400,14 @@ Nginx
 
 Nginx is used as a static file web server to serve **taiga-front** and send proxy requests to **taiga-back**.
 
-Let start configuring it:
+First install it:
+
+[source,bash]
+----
+sudo apt-get install -y nginx
+----
+
+And now let start configuring it:
 
 .Add specific configuration for **taiga-front** and **taiga-back** on /etc/nginx/sites-available/taiga.
 [source,nginx]
