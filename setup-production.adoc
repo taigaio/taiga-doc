@@ -2,6 +2,8 @@ Setup production environment
 ============================
 :toc: left
 :numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
 
 Introduction
 ------------
