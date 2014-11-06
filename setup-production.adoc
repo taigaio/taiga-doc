@@ -247,6 +247,17 @@ NodeJS is used to execute **gulp** and **bower**:
 sudo apt-get install -y nodejs npm
 ----
 
+.Make sure your bash responds to node command to have a smooth installation of gulp and bower
+[source, bash]
+----
+node
+----
+If you get a "Command not found" error, then run 
+[source, bash]
+----
+sudo apt-get install -y node nodejs-legacy
+----
+
 .Install **gulp** and **bower** using recently installed npm
 [source,bash]
 ----
