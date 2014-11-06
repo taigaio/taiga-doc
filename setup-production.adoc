@@ -255,7 +255,7 @@ node
 If you get a "Command not found" error, then run 
 [source, bash]
 ----
-sudo apt-get install -y node nodejs-legacy
+sudo ln -s /usr/bin/nodejs /usr/bin/node
 ----
 
 .Install **gulp** and **bower** using recently installed npm
