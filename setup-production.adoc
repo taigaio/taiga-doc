@@ -547,6 +547,8 @@ in time with the *stable* branch of git or use the last major version of each co
 cd ~/taiga-front
 git checkout stable
 git pull
+npm install
+bower install
 gulp deploy
 ----
 
