@@ -1,8 +1,0 @@
-[source,json]
-----
-{
-    type: "normal",
-    username: "admin",
-    password: "123123"
-}
-----

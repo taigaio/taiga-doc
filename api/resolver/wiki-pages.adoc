@@ -1,0 +1,22 @@
+To resolve the id of a wiki page send a GET request with the following parameters:
+
+- *project* (required): the project slug trying to be resolved
+- *wikipage*(required): the wiki-page slug trying to be resolved
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ayJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfq:0Xmdha:x8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  https://api.taiga.io/api/v1/resolver?project=taiga&wikipage=home
+----
+
+The response body is a JSON object containing the project and the wiki page ids
+
+[source,json]
+----
+{
+    "wikipage": 2,
+    "project": 1
+}
+----

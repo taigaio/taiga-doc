@@ -1,0 +1,47 @@
+To add a user into a project via invitation send a POST request containing the following data:
+
+- *type* with value "private"
+- *existing* (required): indicates if the user is member or not
+- *token* (required): generated when creating a project's membership
+- *username* (required)
+- *password* (required)
+- *email* (required only if the user doesn't exist in the platform)
+- *full_name* (required only if the user doesn't exist in the platform)
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+          "type": "private",
+          "existing": false,
+          "token": "e8ea658e-6655-11e4-9d95-b499ba562790",
+          "username": "${USERNAME}",
+          "password": "${PASSWORD}",
+          "email": "${EMAIL}",
+          "full_name": "${FULL_NAME}"
+      }' \
+  https://api.taiga.io/api/v1/auth/register
+----
+
+When the registration is successful, the HTTP response is a 201 CREATED and the response body is a JSON object containg the user info
+
+[source,json]
+----
+{
+    "auth_token": "eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxMX0:1XmeTA:b_axX4aYmgFV7DbRglSoEwo88SI",
+    "big_photo": "//www.gravatar.com/avatar/60af582744e3007137e31a9fa1ccd566?size=80",
+    "bio": "",
+    "color": "#ddd779",
+    "default_language": "",
+    "default_timezone": "",
+    "email": "beta.testerrr@taiga.io",
+    "full_name": "Beta Tester",
+    "full_name_display": "Beta Tester",
+    "github_id": null,
+    "id": 11,
+    "is_active": true,
+    "photo": "//www.gravatar.com/avatar/60af582744e3007137e31a9fa1ccd566?size=80",
+    "username": "beta.testerrr"
+}
+----

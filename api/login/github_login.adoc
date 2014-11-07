@@ -1,0 +1,15 @@
+To login a user  via GITHUB send a POST request containing the following data:
+
+- *type* with value "github"
+- *token* (required): your github authentication token
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+          "type": "github",
+          "token": "${GITHUB_TOKEN}"
+      }' \
+  https://api.taiga.io/api/v1/auth
+----

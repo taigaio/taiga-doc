@@ -2,13 +2,9 @@ Taiga REST API
 ==============
 :toc: left
 :numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
 
-Objects Summary
----------------
-
-User
-~~~~
-include::snippets/login.response.json.adoc[]
 
 Endpoints Summary
 -----------------
@@ -22,11 +18,11 @@ Auth
 | Method
 | Functionality
 
-| /auth
+| /api/v1/auth
 | POST
 | Login
 
-| /auth/register
+| /api/v1/auth/register
 | POST
 | Register user
 |===
@@ -39,7 +35,7 @@ Resolver
 | Method
 | Functionality
 
-| /resolver?project=<project-slug>[&us=<ref>][&task=<ref>][&issue=<ref>][&milestone=<milestone-slug>][&wikipage=<wiki-page-slug>]
+| /api/v1/resolver
 | GET
 | Resolve references and slugs
 |===
@@ -53,19 +49,19 @@ Projects
 | Method
 | Functionality
 
-| /projects
+| /api/v1/projects
 | GET
 | List projects
 
-| /projects
+| /api/v1/projects
 | POST
 | Create project
 
-| /projects/<projectId>
+| /api/v1/projects/<projectId>
 | GET
 | Get project
 
-| /projects/<projectId>
+| /api/v1/projects/<projectId>
 | PUT
 | Modify project
 
@@ -73,7 +69,7 @@ Projects
 | PATCH
 | Modify partialy a project
 
-| /projects/<projectId>
+| /api/v1/projects/<projectId>
 | DELETE
 | Delete a project
 |===
@@ -81,57 +77,46 @@ Projects
 Auth
 ----
 
-Normal Login
+Normal login
 ~~~~~~~~~~~~
+include::login/normal_login.adoc[]
 
-[cols="h,5a"]
-|===
-| URL
-| /auth
-
-| Method
-| POST
-
-| Request Body
-| include::snippets/login.request.json.adoc[]
-
-| Response Body
-| include::snippets/login.response.json.adoc[]
-|===
-
-Github Login
+Github login
 ~~~~~~~~~~~~
+include::login/github_login.adoc[]
 
-[cols="h,5a"]
-|===
-| URL
-| /auth
+Public registry
+~~~~~~~~~~~~~~~
+include::login/public_registry.adoc[]
 
-| Method
-| POST
+Private registry
+~~~~~~~~~~~~~~~~
+include::login/private_registry.adoc[]
 
-| Request Body
-| include::snippets/github-login.request.json.adoc[]
 
-| Response Body
-| include::snippets/login.response.json.adoc[]
-|===
+Resolver
+--------
 
-Register
+Projects
 ~~~~~~~~
+include::resolver/projects.adoc[]
 
-[cols="h,5a"]
-|===
-| URL
-| /auth/register
+User stories
+~~~~~~~~~~~~
+include::resolver/user-stories.adoc[]
 
-| Method
-| POST
+Issues
+~~~~~~
+include::resolver/issues.adoc[]
 
-| Request Body
-| include::snippets/login.request.json.adoc[]
+Tasks
+~~~~~
+include::resolver/tasks.adoc[]
 
-| Response Body
-| include::snippets/login.response.json.adoc[]
-|===
+Milestones
+~~~~~~~~~~
+include::resolver/milestones.adoc[]
 
+Wiki pages
+~~~~~~~~~~
+include::resolver/wiki-pages.adoc[]

@@ -1,0 +1,22 @@
+To resolve the id of an issue send a GET request with the following parameters:
+
+- *project* (required): the project slug trying to be resolved
+- *issue* (required): the issue ref trying to be resolved
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ayJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfq:0Xmdha:x8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  https://api.taiga.io/api/v1/resolver?project=taiga&issue=1485
+----
+
+The response body is a JSON object containing the project and the issue ids
+
+[source,json]
+----
+{
+    "issue": 5209,
+    "project": 1
+}
+----
