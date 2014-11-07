@@ -1,16 +1,12 @@
-Taiga REST API
-==============
+= Taiga REST API
 :toc: left
 :numbered:
 :source-highlighter: pygments
 :pygments-style: friendly
 
+== Endpoints Summary
 
-Endpoints Summary
------------------
-
-Auth
-~~~~
+=== Auth
 
 [cols="3*", options="header"]
 |===
@@ -27,8 +23,8 @@ Auth
 | Register user
 |===
 
-Resolver
-~~~~~~~~
+=== Resolver
+
 [cols="3*", options="header"]
 |===
 | URL
@@ -40,8 +36,7 @@ Resolver
 | Resolve references and slugs
 |===
 
-Projects
-~~~~~~~~
+=== Projects
 
 [cols="3*", options="header"]
 |===
@@ -65,7 +60,7 @@ Projects
 | PUT
 | Modify project
 
-| /projects/<projectId>
+| /api/v1//projects/<projectId>
 | PATCH
 | Modify partialy a project
 
@@ -74,53 +69,64 @@ Projects
 | Delete a project
 |===
 
-Auth
-----
+== Auth
 
-Normal login
-~~~~~~~~~~~~
+=== Normal login
 include::login/normal_login.adoc[]
 
-Github login
-~~~~~~~~~~~~
+=== Github login
 include::login/github_login.adoc[]
 
-Public registry
-~~~~~~~~~~~~~~~
+=== Public registry
 include::login/public_registry.adoc[]
 
-Private registry
-~~~~~~~~~~~~~~~~
+=== Private registry
 include::login/private_registry.adoc[]
 
 
-Resolver
---------
+== Resolver
 
-Projects
-~~~~~~~~
+===  Projects
 include::resolver/projects.adoc[]
 
-User stories
-~~~~~~~~~~~~
+=== User stories
 include::resolver/user-stories.adoc[]
 
-Issues
-~~~~~~
+=== Issues
 include::resolver/issues.adoc[]
 
-Tasks
-~~~~~
+=== Tasks
 include::resolver/tasks.adoc[]
 
-Milestones
-~~~~~~~~~~
+=== Milestones
 include::resolver/milestones.adoc[]
 
-Wiki pages
-~~~~~~~~~~
+=== Wiki pages
 include::resolver/wiki-pages.adoc[]
 
-Multiple resolution
-~~~~~~~~~~
+=== Multiple resolution
 include::resolver/multiple.adoc[]
+
+
+== Projects
+
+=== List
+include::projects/list.adoc[]
+
+=== Create
+include::projects/create.adoc[]
+
+
+== Objects Summary
+
+=== Project
+
+[[object-project-list-entry]]
+====  Project list entry
+
+include::projects/list_entry_response.adoc[]
+
+[[object-project-detail]]
+====  Project detail
+
+include::projects/detail_response.adoc[]

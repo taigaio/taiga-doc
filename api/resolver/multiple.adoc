@@ -1,0 +1,21 @@
+To resolve the multiple ids you can send a GET mixing parameters from the previous examples:
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ayJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfq:0Xmdha:x8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  https://api.taiga.io/api/v1/resolver?project=taiga&task=915&us=1&wikipage=home
+----
+
+The response body is a JSON object containing the project and the task ids
+
+[source,json]
+----
+{
+    "project": 1,
+    "task": 1336,
+    "us": 26,
+    "wikipage": 2
+}
+----

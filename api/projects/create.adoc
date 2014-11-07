@@ -1,0 +1,47 @@
+To list projects send a GET request with the following data:
+
+- *name* (required)
+- *description* (required)
+- *is_backlog_activated*
+- *is_issues_activated"*
+- *is_kanban_activated*
+- *is_private*
+- *is_wiki_activated*
+- *videoconferences*: appear-in or talky, the third party used for meetups if enabled
+- *videoconferences_salt*: string used for the videoconference chat url generation
+- *total_milestones*
+- *total_story_points*
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+          "name": "Beta project",
+          "description": "Beta description"
+      }' \
+  https://api.taiga.io/api/v1/projects
+----
+
+[source,bash]
+----
+curl -v -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfQ:1Xmdha:b8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -d '{
+          "name": "Beta project",
+          "description": "Taiga",
+          "is_backlog_activated": false,
+          "is_issues_activated": true,
+          "is_kanban_activated": true,
+          "is_private": false,
+          "is_wiki_activated": true,
+          "videoconferences": "appear-in",
+          "videoconferences_salt": null,
+          "total_milestones": 3,
+          "total_story_points": 20.0
+      }' \
+  https://api.taiga.io/api/v1/projects
+----
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-project-detail[project detail object]
