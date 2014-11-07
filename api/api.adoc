@@ -120,3 +120,7 @@ include::resolver/milestones.adoc[]
 Wiki pages
 ~~~~~~~~~~
 include::resolver/wiki-pages.adoc[]
+
+Multiple resolution
+~~~~~~~~~~
+include::resolver/multiple.adoc[]
