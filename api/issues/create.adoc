@@ -9,8 +9,8 @@ To create issues send a POST request with the following data:
 - *project* (required): project id
 - *status*: status id
 - *severity*: severity id
-- *priority": priority id
-- *type": type id
+- *priority*: priority id
+- *type*: type id
 - *subject* (required)
 - *tags*: array of strings
 - *watchers*: array of watcher id's

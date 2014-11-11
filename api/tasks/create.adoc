@@ -8,9 +8,6 @@ To create tasks send a POST request with the following data:
 - *milestone*: milestone id
 - *project* (required): project id
 - *status*: status id
-- *severity*: severity id
-- *priority": priority id
-- *type": type id
 - *subject* (required)
 - *tags*: array of strings
 - *watchers*: array of watcher id's
@@ -30,9 +27,6 @@ curl -X POST \
           "milestone": null,
           "project": 3,
           "status": 13,
-          "severity": 2,
-          "priority": 3,
-          "type": 1,
           "subject": "Customer personal data",
           "tags": [
               "service catalog",
