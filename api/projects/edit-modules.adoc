@@ -5,7 +5,7 @@ To edit a project modules send a PATCH specifying the project id in the url.
 ----
 curl -X PATCH \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfQ:1Xmdha:b8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   -d '{
           "github": {
               "secret": "new_secret"

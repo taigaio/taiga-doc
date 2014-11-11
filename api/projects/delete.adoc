@@ -3,7 +3,7 @@ To delete projects send a DELETE specifying the project id in the url
 [source,bash]
 ----
 curl -X DELETE \
-  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfQ:1Xmdha:b8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   https://api.taiga.io/api/v1/projects/1
 ----
 

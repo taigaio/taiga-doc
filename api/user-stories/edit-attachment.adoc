@@ -5,7 +5,7 @@ In a PATCH request you just need to send the modified data, in a PUT one the who
 ----
 curl -X PATCH \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfQ:1Xmdha:b8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   -d '{
           "subject": "Patching subject"
       }' \

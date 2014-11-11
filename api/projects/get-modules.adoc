@@ -4,7 +4,7 @@ To get a project modules configuration send a GET request specifying the project
 ----
 curl -X GET \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ayJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfq:0Xmdha:x8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   https://api.taiga.io/api/v1/projects/1/modules
 ----
 

@@ -16,7 +16,7 @@ To create projects send a POST request with the following data:
 ----
 curl -X POST \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfQ:1Xmdha:b8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   -d '{
           "name": "Beta project",
           "description": "Beta description"
@@ -28,7 +28,7 @@ curl -X POST \
 ----
 curl -v -X POST \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfQ:1Xmdha:b8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   -d '{
           "name": "Beta project",
           "description": "Taiga",

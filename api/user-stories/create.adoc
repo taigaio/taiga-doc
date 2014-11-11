@@ -24,7 +24,7 @@ To create user stories send a POST request with the following data:
 ----
 curl -X POST \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfQ:1Xmdha:b8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   -d '{
           "assigned_to": null,
           "backlog_order": 2,
@@ -60,7 +60,7 @@ curl -X POST \
 ----
 curl -X POST \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfQ:1Xmdha:b8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   -d '{
           "project": 3,
           "subject": "Customer personal data"

@@ -4,7 +4,7 @@ In a PATCH request you just need to send the modified data, in a PUT one the who
 [source,bash]
 ----
 curl -X PATCH \
-  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfQ:1Xmdha:b8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   -F "description=patching description" \
   https://api.taiga.io/api/v1/userstories/attachments/417
 ----

@@ -4,7 +4,7 @@ To resolve the multiple ids you can send a GET mixing parameters from the previo
 ----
 curl -X GET \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ayJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfq:0Xmdha:x8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   https://api.taiga.io/api/v1/resolver?project=taiga&task=915&us=1&wikipage=home
 ----
 

@@ -10,7 +10,7 @@ To create user story attachments send a POST request with the following data:
 [source,bash]
 ----
 curl -X POST \
-  -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxfQ:1Xo8Ci:MdplZFPT6sZAiWMehZxKhWvC1MM" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
   -F "object_id=81" \
   -F "project=3" \
   -F "attached_file=@/tmp/test.png" \
