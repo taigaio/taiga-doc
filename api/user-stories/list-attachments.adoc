@@ -1,0 +1,14 @@
+To list user story attachments send a GET request with the following parameters:
+
+- *project*: project id
+- *object_id*: user story id
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ayJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfq:0Xmdha:x8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  https://api.taiga.io/api/v1/userstories/attachments?object_id=81&project=3
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-attachment-detail[attachment detail objects]

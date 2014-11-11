@@ -1,0 +1,11 @@
+To list user stories send a GET request with the following parameters:
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ayJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfq:0Xmdha:x8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  https://api.taiga.io/api/v1/userstories
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-userstory-detail[user story detail objects]

@@ -109,6 +109,81 @@
 | Create project template
 |===
 
+
+=== User stories
+
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/userstories
+| GET
+| List user stories
+
+| /api/v1/userstories
+| POST
+| Create user story
+
+| /api/v1/userstories/<userStoryId>
+| GET
+| Get user story
+
+| /api/v1/userstories/<userStoryId>
+| PUT
+| Modify user story
+
+| /api/v1/userstories/<userStoryId>
+| PATCH
+| Modify partially a user story
+
+| /api/v1/userstories/<userStoryId>
+| DELETE
+| Delete a user story
+
+| /api/v1/userstories/bulk_create
+| POST
+| Create user stories un bulk mode
+
+| /api/v1/userstories/bulk_update_backlog_order
+| POST
+| Update user stories order for backlog in bulk mode
+
+| /api/v1/userstories/bulk_update_kanban_order
+| POST
+| Update user stories order for kanban in bulk mode
+
+| /api/v1/userstories/bulk_update_sprint_order
+| POST
+| Update user stories order for sprint in bulk mode
+
+| /api/v1/userstories/attachments
+| GET
+| List user story attachments
+
+| /api/v1/userstories/attachments
+| POST
+| Create user story attachments
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| GET
+| Get user story attachments
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| PUT
+| Modify user story attachments
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| PATCH
+| Modify partially a user story attachments
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| DELETE
+| Delete a user story attachments
+|===
+
+
 == Auth
 
 === Normal login
@@ -146,7 +221,6 @@ include::resolver/wiki-pages.adoc[]
 
 === Multiple resolution
 include::resolver/multiple.adoc[]
-
 
 
 == Projects
@@ -197,7 +271,56 @@ include::projects/fans.adoc[]
 include::projects/create-template.adoc[]
 
 
+== User stories
+
+=== List
+include::user-stories/list.adoc[]
+
+=== Create
+include::user-stories/create.adoc[]
+
+=== Get
+include::user-stories/get.adoc[]
+
+=== Edit
+include::user-stories/edit.adoc[]
+
+=== Delete
+include::user-stories/delete.adoc[]
+
+=== Bulk creation
+include::user-stories/bulk-create.adoc[]
+
+=== Bulk update backlog order
+include::user-stories/bulk-update-backlog-order.adoc[]
+
+=== Bulk update kanban order
+include::user-stories/bulk-update-kanban-order.adoc[]
+
+=== Bulk update sprint order
+include::user-stories/bulk-update-sprint-order.adoc[]
+
+=== List attachments
+include::user-stories/list-attachments.adoc[]
+
+=== Create attachment
+include::user-stories/create-attachment.adoc[]
+
+=== Get attachment
+include::user-stories/get-attachment.adoc[]
+
+=== Edit attachment
+include::user-stories/edit-attachment.adoc[]
+
+=== Delete attachment
+include::user-stories/delete-attachment.adoc[]
+
+
 == Objects Summary
+
+[[object-attachment-detail]]
+===  Attachment
+include::attachments/detail-response.adoc[]
 
 [[object-user-detail]]
 ===  User detail
@@ -238,3 +361,7 @@ include::projects/voter-detail-response.adoc[]
 [[object-project-template-detail]]
 ===  Project template detail
 include::projects/template-detail-response.adoc[]
+
+[[object-userstory-detail]]
+=== User story detail
+include::user-stories/detail-response.adoc[]
