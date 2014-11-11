@@ -1,0 +1,14 @@
+To list task attachments send a GET request with the following parameters:
+
+- *project*: project id
+- *object_id*: task id
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  https://api.taiga.io/api/v1/tasks/attachments?object_id=81&project=3
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-attachment-detail[attachment detail objects]
