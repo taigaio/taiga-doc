@@ -1,0 +1,11 @@
+To get a project modules configuration send a GET request specifying the project id in the url
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ayJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoyfq:0Xmdha:x8FZ8GdrDYmbdSBs1aDM2Ts35sg" \
+  https://api.taiga.io/api/v1/projects/1/modules
+----
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-project-modules-detail[project modules object]

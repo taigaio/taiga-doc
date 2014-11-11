@@ -1,0 +1,200 @@
+[source,json]
+----
+{
+    "assigned_points": 331.5,
+    "assigned_points_per_role": {
+        "43": 3.0,
+        "44": 10.5,
+        "45": 140.0,
+        "46": 178.0
+    },
+    "closed_points": 310.5,
+    "closed_points_per_role": {
+        "43": 3.0,
+        "44": 7.5,
+        "45": 133.0,
+        "46": 167.0
+    },
+    "defined_points": 342.5,
+    "defined_points_per_role": {
+        "43": 3.5,
+        "44": 12.0,
+        "45": 146.0,
+        "46": 181.0
+    },
+    "milestones": [
+        {
+            "client-increment": 0,
+            "evolution": 400.0,
+            "name": "Sprint 0",
+            "optimal": 400.0,
+            "team-increment": 0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 400.0,
+            "name": "Sprint 1",
+            "optimal": 380.0,
+            "team-increment": 0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 388.5,
+            "name": "Sprint 2",
+            "optimal": 360.0,
+            "team-increment": 0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 373.5,
+            "name": "Sprint 3",
+            "optimal": 340.0,
+            "team-increment": 0.5
+        },
+        {
+            "client-increment": 0,
+            "evolution": 361.5,
+            "name": "Sprint 4",
+            "optimal": 320.0,
+            "team-increment": 0.5
+        },
+        {
+            "client-increment": 0,
+            "evolution": 357.0,
+            "name": "Sprint 5",
+            "optimal": 300.0,
+            "team-increment": 3.5
+        },
+        {
+            "client-increment": 0,
+            "evolution": 351.5,
+            "name": "Sprint 6",
+            "optimal": 280.0,
+            "team-increment": 5.0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 347.0,
+            "name": "Sprint 7",
+            "optimal": 260.0,
+            "team-increment": 5.0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 346.5,
+            "name": "Sprint 8",
+            "optimal": 240.0,
+            "team-increment": 5.0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 325.5,
+            "name": "Sprint 9",
+            "optimal": 220.0,
+            "team-increment": 6.0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 308.0,
+            "name": "Sprint 10 (new-taiga)",
+            "optimal": 200.0,
+            "team-increment": 7.0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 199.5,
+            "name": "Sprint 11 (new-taiga)",
+            "optimal": 180.0,
+            "team-increment": 7.0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 192.5,
+            "name": "Sprint 13 (new-taiga)",
+            "optimal": 160.0,
+            "team-increment": 7.0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 157.0,
+            "name": "Sprint 14",
+            "optimal": 140.0,
+            "team-increment": 8.0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 141.0,
+            "name": "Sprint 15",
+            "optimal": 120.0,
+            "team-increment": 8.0
+        },
+        {
+            "client-increment": 0,
+            "evolution": 108.5,
+            "name": "Sprint 16",
+            "optimal": 100.0,
+            "team-increment": 8.0
+        },
+        {
+            "client-increment": [
+                0
+            ],
+            "evolution": 89.5,
+            "name": "Future sprint",
+            "optimal": 80.0,
+            "team-increment": [
+                8.0
+            ]
+        },
+        {
+            "client-increment": [
+                0
+            ],
+            "evolution": null,
+            "name": "Future sprint",
+            "optimal": 60.0,
+            "team-increment": [
+                8.0
+            ]
+        },
+        {
+            "client-increment": [
+                0
+            ],
+            "evolution": null,
+            "name": "Future sprint",
+            "optimal": 40.0,
+            "team-increment": [
+                8.0
+            ]
+        },
+        {
+            "client-increment": [
+                0
+            ],
+            "evolution": null,
+            "name": "Future sprint",
+            "optimal": 20.0,
+            "team-increment": [
+                8.0
+            ]
+        },
+        {
+            "client-increment": [
+                0
+            ],
+            "evolution": null,
+            "name": "Project End",
+            "optimal": 0.0,
+            "team-increment": [
+                8.0
+            ]
+        }
+    ],
+    "name": "Taiga",
+    "speed": 20.7,
+    "total_milestones": 20,
+    "total_points": 400.0
+}
+
+----
