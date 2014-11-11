@@ -1,7 +1,7 @@
 To update the sprint order of multiple user stories at the same time send a POST request with the following data:
 
 - *project_id* (required)
-- *bulk_stories*: list where each element is a json object with two attributes, the user status id and the new order
+- *bulk_stories*: list where each element is a json object with two attributes, the user story id and the new order
 
 
 [source,bash]
