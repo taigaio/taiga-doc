@@ -316,6 +316,43 @@ include::user-stories/edit-attachment.adoc[]
 include::user-stories/delete-attachment.adoc[]
 
 
+== Issues
+
+=== List
+include::issues/list.adoc[]
+
+=== Create
+include::issues/create.adoc[]
+
+=== Get
+include::issues/get.adoc[]
+
+=== Edit
+include::issues/edit.adoc[]
+
+=== Delete
+include::issues/delete.adoc[]
+
+=== Bulk creation
+include::issues/bulk-create.adoc[]
+
+=== List attachments
+include::issues/list-attachments.adoc[]
+
+=== Create attachment
+include::issues/create-attachment.adoc[]
+
+=== Get attachment
+include::issues/get-attachment.adoc[]
+
+=== Edit attachment
+include::issues/edit-attachment.adoc[]
+
+=== Delete attachment
+include::issues/delete-attachment.adoc[]
+
+
+
 == Objects Summary
 
 [[object-attachment-detail]]
@@ -365,3 +402,7 @@ include::projects/template-detail-response.adoc[]
 [[object-userstory-detail]]
 === User story detail
 include::user-stories/detail-response.adoc[]
+
+[[object-issue-detail]]
+=== Issue detail
+include::issues/detail-response.adoc[]

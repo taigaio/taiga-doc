@@ -1,0 +1,11 @@
+To list issues send a GET request with the following parameters:
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  https://api.taiga.io/api/v1/issues
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-issue-detail[issue detail objects]
