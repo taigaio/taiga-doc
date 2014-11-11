@@ -352,6 +352,41 @@ include::issues/edit-attachment.adoc[]
 include::issues/delete-attachment.adoc[]
 
 
+== Tasks
+
+=== List
+include::tasks/list.adoc[]
+
+=== Create
+include::tasks/create.adoc[]
+
+=== Get
+include::tasks/get.adoc[]
+
+=== Edit
+include::tasks/edit.adoc[]
+
+=== Delete
+include::tasks/delete.adoc[]
+
+=== Bulk creation
+include::tasks/bulk-create.adoc[]
+
+=== List attachments
+include::tasks/list-attachments.adoc[]
+
+=== Create attachment
+include::tasks/create-attachment.adoc[]
+
+=== Get attachment
+include::tasks/get-attachment.adoc[]
+
+=== Edit attachment
+include::tasks/edit-attachment.adoc[]
+
+=== Delete attachment
+include::tasks/delete-attachment.adoc[]
+
 
 == Objects Summary
 
@@ -406,3 +441,7 @@ include::user-stories/detail-response.adoc[]
 [[object-issue-detail]]
 === Issue detail
 include::issues/detail-response.adoc[]
+
+[[object-task-detail]]
+=== Task detail
+include::tasks/detail-response.adoc[]
