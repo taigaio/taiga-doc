@@ -8,181 +8,27 @@
 
 === Auth
 
-[cols="3*", options="header"]
-|===
-| URL
-| Method
-| Functionality
-
-| /api/v1/auth
-| POST
-| Login
-
-| /api/v1/auth/register
-| POST
-| Register user
-|===
+include::login/endpoints.adoc[]
 
 === Resolver
 
-[cols="3*", options="header"]
-|===
-| URL
-| Method
-| Functionality
-
-| /api/v1/resolver
-| GET
-| Resolve references and slugs
-|===
+include::resolver/endpoints.adoc[]
 
 === Projects
 
-[cols="3*", options="header"]
-|===
-| URL
-| Method
-| Functionality
-
-| /api/v1/projects
-| GET
-| List projects
-
-| /api/v1/projects
-| POST
-| Create project
-
-| /api/v1/projects/<projectId>
-| GET
-| Get project
-
-| /api/v1/projects/<projectId>
-| PUT
-| Modify project
-
-| /api/v1/projects/<projectId>
-| PATCH
-| Modify partially a project
-
-| /api/v1/projects/<projectId>
-| DELETE
-| Delete a project
-
-| /api/v1/projects/<projectId>/modules
-| GET
-| Get project modules configuration
-
-| /api/v1/projects/<projectId>/modules
-| PATCH
-| Modify partially a project modules configuration
-
-| /api/v1/projects/<projectId>/stats
-| GET
-| Get project stats
-
-| /api/v1/projects/<projectId>/issues_stats
-| GET
-| Get project issue stats
-
-| /api/v1/projects/<projectId>/issue_filters_data
-| GET
-| Get project issue filters data
-
-| /api/v1/projects/<projectId>/tags_colors
-| GET
-| Get project tags colors
-
-| /api/v1/projects/<projectId>/star
-| POST
-| Add star to a project
-
-| /api/v1/projects/<projectId>/unstar
-| POST
-| Remove star from project
-
-| /api/v1/projects/<projectId>/fans
-| GET
-| Get project fans
-
-| /api/v1/projects/<projectId>/create_template
-| POST
-| Create project template
-|===
-
+include::projects/endpoints.adoc[]
 
 === User stories
 
-[cols="3*", options="header"]
-|===
-| URL
-| Method
-| Functionality
+include::user-stories/endpoints.adoc[]
 
-| /api/v1/userstories
-| GET
-| List user stories
+=== Tasks
 
-| /api/v1/userstories
-| POST
-| Create user story
+include::tasks/endpoints.adoc[]
 
-| /api/v1/userstories/<userStoryId>
-| GET
-| Get user story
+=== Issues
 
-| /api/v1/userstories/<userStoryId>
-| PUT
-| Modify user story
-
-| /api/v1/userstories/<userStoryId>
-| PATCH
-| Modify partially a user story
-
-| /api/v1/userstories/<userStoryId>
-| DELETE
-| Delete a user story
-
-| /api/v1/userstories/bulk_create
-| POST
-| Create user stories un bulk mode
-
-| /api/v1/userstories/bulk_update_backlog_order
-| POST
-| Update user stories order for backlog in bulk mode
-
-| /api/v1/userstories/bulk_update_kanban_order
-| POST
-| Update user stories order for kanban in bulk mode
-
-| /api/v1/userstories/bulk_update_sprint_order
-| POST
-| Update user stories order for sprint in bulk mode
-
-| /api/v1/userstories/attachments
-| GET
-| List user story attachments
-
-| /api/v1/userstories/attachments
-| POST
-| Create user story attachments
-
-| /api/v1/userstories/attachments/<userStoryAttachmentId>
-| GET
-| Get user story attachments
-
-| /api/v1/userstories/attachments/<userStoryAttachmentId>
-| PUT
-| Modify user story attachments
-
-| /api/v1/userstories/attachments/<userStoryAttachmentId>
-| PATCH
-| Modify partially a user story attachments
-
-| /api/v1/userstories/attachments/<userStoryAttachmentId>
-| DELETE
-| Delete a user story attachments
-|===
-
+include::issues/endpoints.adoc[]
 
 == Auth
 
@@ -316,42 +162,6 @@ include::user-stories/edit-attachment.adoc[]
 include::user-stories/delete-attachment.adoc[]
 
 
-== Issues
-
-=== List
-include::issues/list.adoc[]
-
-=== Create
-include::issues/create.adoc[]
-
-=== Get
-include::issues/get.adoc[]
-
-=== Edit
-include::issues/edit.adoc[]
-
-=== Delete
-include::issues/delete.adoc[]
-
-=== Bulk creation
-include::issues/bulk-create.adoc[]
-
-=== List attachments
-include::issues/list-attachments.adoc[]
-
-=== Create attachment
-include::issues/create-attachment.adoc[]
-
-=== Get attachment
-include::issues/get-attachment.adoc[]
-
-=== Edit attachment
-include::issues/edit-attachment.adoc[]
-
-=== Delete attachment
-include::issues/delete-attachment.adoc[]
-
-
 == Tasks
 
 === List
@@ -386,6 +196,42 @@ include::tasks/edit-attachment.adoc[]
 
 === Delete attachment
 include::tasks/delete-attachment.adoc[]
+
+
+== Issues
+
+=== List
+include::issues/list.adoc[]
+
+=== Create
+include::issues/create.adoc[]
+
+=== Get
+include::issues/get.adoc[]
+
+=== Edit
+include::issues/edit.adoc[]
+
+=== Delete
+include::issues/delete.adoc[]
+
+=== Bulk creation
+include::issues/bulk-create.adoc[]
+
+=== List attachments
+include::issues/list-attachments.adoc[]
+
+=== Create attachment
+include::issues/create-attachment.adoc[]
+
+=== Get attachment
+include::issues/get-attachment.adoc[]
+
+=== Edit attachment
+include::issues/edit-attachment.adoc[]
+
+=== Delete attachment
+include::issues/delete-attachment.adoc[]
 
 
 == Objects Summary
@@ -438,10 +284,11 @@ include::projects/template-detail-response.adoc[]
 === User story detail
 include::user-stories/detail-response.adoc[]
 
+[[object-task-detail]]
+=== Task detail
+include::tasks/detail-response.adoc[]
+
 [[object-issue-detail]]
 === Issue detail
 include::issues/detail-response.adoc[]
 
-[[object-task-detail]]
-=== Task detail
-include::tasks/detail-response.adoc[]

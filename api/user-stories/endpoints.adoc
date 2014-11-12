@@ -1,0 +1,70 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/userstories
+| GET
+| List user stories
+
+| /api/v1/userstories
+| POST
+| Create user story
+
+| /api/v1/userstories/<userStoryId>
+| GET
+| Get user story
+
+| /api/v1/userstories/<userStoryId>
+| PUT
+| Modify user story
+
+| /api/v1/userstories/<userStoryId>
+| PATCH
+| Modify partially a user story
+
+| /api/v1/userstories/<userStoryId>
+| DELETE
+| Delete a user story
+
+| /api/v1/userstories/bulk_create
+| POST
+| Create user stories un bulk mode
+
+| /api/v1/userstories/bulk_update_backlog_order
+| POST
+| Update user stories order for backlog in bulk mode
+
+| /api/v1/userstories/bulk_update_kanban_order
+| POST
+| Update user stories order for kanban in bulk mode
+
+| /api/v1/userstories/bulk_update_sprint_order
+| POST
+| Update user stories order for sprint in bulk mode
+
+| /api/v1/userstories/attachments
+| GET
+| List user story attachments
+
+| /api/v1/userstories/attachments
+| POST
+| Create user story attachments
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| GET
+| Get user story attachments
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| PUT
+| Modify user story attachments
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| PATCH
+| Modify partially a user story attachments
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| DELETE
+| Delete a user story attachments
+|===

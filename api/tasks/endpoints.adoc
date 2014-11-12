@@ -1,0 +1,70 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/tasks
+| GET
+| List tasks
+
+| /api/v1/tasks
+| POST
+| Create task
+
+| /api/v1/tasks/<taskId>
+| GET
+| Get task
+
+| /api/v1/tasks/<taskId>
+| PUT
+| Modify task
+
+| /api/v1/tasks/<taskId>
+| PATCH
+| Modify partially a task
+
+| /api/v1/tasks/<taskId>
+| DELETE
+| Delete a task
+
+| /api/v1/tasks/bulk_create
+| POST
+| Create tasks un bulk mode
+
+| /api/v1/tasks/bulk_update_backlog_order
+| POST
+| Update tasks order for backlog in bulk mode
+
+| /api/v1/tasks/bulk_update_kanban_order
+| POST
+| Update tasks order for kanban in bulk mode
+
+| /api/v1/tasks/bulk_update_sprint_order
+| POST
+| Update tasks order for sprint in bulk mode
+
+| /api/v1/tasks/attachments
+| GET
+| List task attachments
+
+| /api/v1/tasks/attachments
+| POST
+| Create task attachments
+
+| /api/v1/tasks/attachments/<taskAttachmentId>
+| GET
+| Get task attachments
+
+| /api/v1/tasks/attachments/<taskAttachmentId>
+| PUT
+| Modify task attachments
+
+| /api/v1/tasks/attachments/<taskAttachmentId>
+| PATCH
+| Modify partially a task attachments
+
+| /api/v1/tasks/attachments/<taskAttachmentId>
+| DELETE
+| Delete a task attachments
+|===

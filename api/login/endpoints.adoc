@@ -1,0 +1,14 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/auth
+| POST
+| Login
+
+| /api/v1/auth/register
+| POST
+| Register user
+|===
