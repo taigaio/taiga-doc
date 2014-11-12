@@ -9,3 +9,25 @@ curl -X GET \
 ----
 
 The HTTP response is a 200 OK and the response body is a JSON list of link:#object-issue-detail[issue detail objects]
+
+You can filter your results by project using the url param "project" and the value projectId:
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  https://api.taiga.io/api/v1/issues?project=1
+----
+
+You can order your results using the url param "order_by" and as value one of
+"type", "severity", "status", "priority", "created_date", "modified_date",
+"owner", "assigned_to", "subject":
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  https://api.taiga.io/api/v1/issues?project=1&order_by=priority
+----
