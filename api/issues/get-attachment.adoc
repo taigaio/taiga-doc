@@ -1,4 +1,4 @@
-To get a issue attachment send a GET request specifying the issue attachment id in the url
+To get an issue attachment send a GET request specifying the issue attachment id in the url
 
 [source,bash]
 ----

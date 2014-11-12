@@ -1,4 +1,4 @@
-To get a issue send a GET request specifying the issue id in the url
+To get an issue send a GET request specifying the issue id in the url
 
 [source,bash]
 ----

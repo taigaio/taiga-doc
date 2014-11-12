@@ -22,11 +22,19 @@
 
 | /api/v1/issues/<issueId>
 | PATCH
-| Modify partially a issue
+| Modify partially an issue
 
 | /api/v1/issues/<issueId>
 | DELETE
-| Delete a issue
+| Delete an issue
+
+| /api/v1/issues/<issueId>/upvote
+| POST
+| Add a vote to an issue
+
+| /api/v1/issues/<issueId>/downvote
+| POST
+| Remove your vote to an issue
 
 | /api/v1/issues/bulk_create
 | POST
@@ -50,9 +58,9 @@
 
 | /api/v1/issues/attachments/<issueAttachmentId>
 | PATCH
-| Modify partially a issue attachments
+| Modify partially an issue attachments
 
 | /api/v1/issues/attachments/<issueAttachmentId>
 | DELETE
-| Delete a issue attachments
+| Delete an issue attachments
 |===
