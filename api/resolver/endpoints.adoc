@@ -6,5 +6,5 @@
 
 | /api/v1/resolver
 | GET
-| Resolve references and slugs
+| link:#resolver[Resolve references and slugs]
 |===

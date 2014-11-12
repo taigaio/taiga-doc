@@ -6,9 +6,9 @@
 
 | /api/v1/auth
 | POST
-| Login
+| link:#auth-normal-login[Login]
 
 | /api/v1/auth/register
 | POST
-| Register user
+| link:#auth-public-registry[Register user]
 |===

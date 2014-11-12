@@ -32,204 +32,274 @@ include::issues/endpoints.adoc[]
 
 == Auth
 
+[[auth-normal-login]]
 === Normal login
 include::login/normal-login.adoc[]
 
+[[auth-github-login]]
 === Github login
 include::login/github-login.adoc[]
 
+[[auth-public-registry]]
 === Public registry
 include::login/public-registry.adoc[]
 
+[[auth-private-registry]]
 === Private registry
 include::login/private-registry.adoc[]
 
 
+[[resolver]]
 == Resolver
 
+[[resolver-projects]]
 ===  Projects
 include::resolver/projects.adoc[]
 
+[[resolver-user-stories]]
 === User stories
 include::resolver/user-stories.adoc[]
 
+[[resolver-issues]]
 === Issues
 include::resolver/issues.adoc[]
 
+[[resolver-tasks]]
 === Tasks
 include::resolver/tasks.adoc[]
 
+[[resolver-milestones]]
 === Milestones
 include::resolver/milestones.adoc[]
 
+[[resolver-wiki-pages]]
 === Wiki pages
 include::resolver/wiki-pages.adoc[]
 
+[[resolver-multiple-resolution]]
 === Multiple resolution
 include::resolver/multiple.adoc[]
 
 
+[[projects]]
 == Projects
 
+[[projects-list]]
 === List
 include::projects/list.adoc[]
 
+[[projects-create]]
 === Create
 include::projects/create.adoc[]
 
+[[projects-get]]
 === Get
 include::projects/get.adoc[]
 
+[[projects-edit]]
 === Edit
 include::projects/edit.adoc[]
 
+[[projects-delete]]
 === Delete
 include::projects/delete.adoc[]
 
+[[projects-get-modules]]
 === Get modules
 include::projects/get-modules.adoc[]
 
+[[projects-edit-modules]]
 === Edit modules
 include::projects/edit-modules.adoc[]
 
+[[projects-stats]]
 === Stats
 include::projects/stats.adoc[]
 
+[[projects-issue-stats]]
 === Issue stats
 include::projects/issues-stats.adoc[]
 
+[[projects-issue-filters-data]]
 === Issue filters data
 include::projects/issue-filters-data.adoc[]
 
+[[projects-tag-colors]]
 === Tag colors
 include::projects/tags-colors.adoc[]
 
+[[projects-star]]
 === Star
 include::projects/star.adoc[]
 
+[[projects-unstar]]
 === Unstar
 include::projects/unstar.adoc[]
 
+[[projects-fans]]
 === Fans
 include::projects/fans.adoc[]
 
+[[projects-create-template]]
 === Create template
 include::projects/create-template.adoc[]
 
 
+[[user-stories]]
 == User stories
 
+[[user-stories-list]]
 === List
 include::user-stories/list.adoc[]
 
+[[user-stories-create]]
 === Create
 include::user-stories/create.adoc[]
 
+[[user-stories-get]]
 === Get
 include::user-stories/get.adoc[]
 
+[[user-stories-edit]]
 === Edit
 include::user-stories/edit.adoc[]
 
+[[user-stories-delete]]
 === Delete
 include::user-stories/delete.adoc[]
 
+[[user-stories-bulk-create]]
 === Bulk creation
 include::user-stories/bulk-create.adoc[]
 
+[[user-stories-bulk-update-backlog-order]]
 === Bulk update backlog order
 include::user-stories/bulk-update-backlog-order.adoc[]
 
+[[user-stories-bulk-update-kanban-order]]
 === Bulk update kanban order
 include::user-stories/bulk-update-kanban-order.adoc[]
 
+[[user-stories-bulk-update-sprint-order]]
 === Bulk update sprint order
 include::user-stories/bulk-update-sprint-order.adoc[]
 
+[[user-stories-list-attachments]]
 === List attachments
 include::user-stories/list-attachments.adoc[]
 
+[[user-stories-create-attachment]]
 === Create attachment
 include::user-stories/create-attachment.adoc[]
 
+[[user-stories-get-attachment]]
 === Get attachment
 include::user-stories/get-attachment.adoc[]
 
+[[user-stories-edit-attachment]]
 === Edit attachment
 include::user-stories/edit-attachment.adoc[]
 
+[[user-stories-delete-attachment]]
 === Delete attachment
 include::user-stories/delete-attachment.adoc[]
 
 
+[[tasks]]
 == Tasks
 
+[[tasks-list]]
 === List
 include::tasks/list.adoc[]
 
+[[tasks-create]]
 === Create
 include::tasks/create.adoc[]
 
+[[tasks-get]]
 === Get
 include::tasks/get.adoc[]
 
+[[tasks-edit]]
 === Edit
 include::tasks/edit.adoc[]
 
+[[tasks-delete]]
 === Delete
 include::tasks/delete.adoc[]
 
+[[tasks-bulk-create]]
 === Bulk creation
 include::tasks/bulk-create.adoc[]
 
+[[tasks-list-attachments]]
 === List attachments
 include::tasks/list-attachments.adoc[]
 
+[[tasks-create-attachment]]
 === Create attachment
 include::tasks/create-attachment.adoc[]
 
+[[tasks-get-attachment]]
 === Get attachment
 include::tasks/get-attachment.adoc[]
 
+[[tasks-edit-attachment]]
 === Edit attachment
 include::tasks/edit-attachment.adoc[]
 
+[[tasks-delete-attachment]]
 === Delete attachment
 include::tasks/delete-attachment.adoc[]
 
-
+[[issues]]
 == Issues
 
+[[issues-list]]
 === List
 include::issues/list.adoc[]
 
+[[issues-create]]
 === Create
 include::issues/create.adoc[]
 
+[[issues-get]]
 === Get
 include::issues/get.adoc[]
 
+[[issues-edit]]
 === Edit
 include::issues/edit.adoc[]
 
+[[issues-delete]]
 === Delete
 include::issues/delete.adoc[]
 
-=== Bulk creation
-include::issues/bulk-create.adoc[]
+[[issues-upvote]]
+=== Vote to an issue
+include::issues/upvote.adoc[]
 
+[[issues-downvote]]
+=== Remove vote to an issue
+include::issues/downvote.adoc[]
+
+[[issues-list-attachments]]
 === List attachments
 include::issues/list-attachments.adoc[]
 
+[[issues-create-attachment]]
 === Create attachment
 include::issues/create-attachment.adoc[]
 
+[[issues-get-attachment]]
 === Get attachment
 include::issues/get-attachment.adoc[]
 
+[[issues-edit-attachment]]
 === Edit attachment
 include::issues/edit-attachment.adoc[]
 
+[[issues-delete-attachment]]
 === Delete attachment
 include::issues/delete-attachment.adoc[]
 

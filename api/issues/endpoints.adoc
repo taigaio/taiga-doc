@@ -6,61 +6,61 @@
 
 | /api/v1/issues
 | GET
-| List issues
+| link:#issues-list[List issues]
 
 | /api/v1/issues
 | POST
-| Create issue
+| link:#issues-create[Create issue]
 
 | /api/v1/issues/<issueId>
 | GET
-| Get issue
+| link:#issues-get[Get issue]
 
 | /api/v1/issues/<issueId>
 | PUT
-| Modify issue
+| link:#issues-edit[Modify issue]
 
 | /api/v1/issues/<issueId>
 | PATCH
-| Modify partially an issue
+| link:#issues-edit[Modify partially an issue]
 
 | /api/v1/issues/<issueId>
 | DELETE
-| Delete an issue
+| link:#issues-delete[Delete an issue]
 
 | /api/v1/issues/<issueId>/upvote
 | POST
-| Add a vote to an issue
+| link:#issues-upvote[Add a vote to an issue]
 
 | /api/v1/issues/<issueId>/downvote
 | POST
-| Remove your vote to an issue
+| link:#issues-downvote[Remove your vote to an issue]
 
 | /api/v1/issues/bulk_create
 | POST
-| Create issues un bulk mode
+| link:#issues-bulk-create[Create issues un bulk mode]
 
 | /api/v1/issues/attachments
 | GET
-| List issue attachments
+| link:#issues-list-attachments[List issue attachments]
 
 | /api/v1/issues/attachments
 | POST
-| Create issue attachments
+| link:#issues-create-attachment[Create issue attachments]
 
 | /api/v1/issues/attachments/<issueAttachmentId>
 | GET
-| Get issue attachments
+| link:#issues-get-attachment[Get issue attachments]
 
 | /api/v1/issues/attachments/<issueAttachmentId>
 | PUT
-| Modify issue attachments
+| link:#issues-edit-attachment[Modify issue attachments]
 
 | /api/v1/issues/attachments/<issueAttachmentId>
 | PATCH
-| Modify partially an issue attachments
+| link:#issues-edit-attachment[Modify partially an issue attachments]
 
 | /api/v1/issues/attachments/<issueAttachmentId>
 | DELETE
-| Delete an issue attachments
+| link:#issues-delete-attachment[Delete an issue attachments]
 |===

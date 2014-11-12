@@ -6,65 +6,65 @@
 
 | /api/v1/userstories
 | GET
-| List user stories
+| link:#user-stories-list[List user stories]
 
 | /api/v1/userstories
 | POST
-| Create user story
+| link:#user-stories-create[Create user story]
 
 | /api/v1/userstories/<userStoryId>
 | GET
-| Get user story
+| link:#user-stories-get[Get user story]
 
 | /api/v1/userstories/<userStoryId>
 | PUT
-| Modify user story
+| link:#user-stories-edit[Modify user story]
 
 | /api/v1/userstories/<userStoryId>
 | PATCH
-| Modify partially a user story
+| link:#user-stories-edit[Modify partially a user story]
 
 | /api/v1/userstories/<userStoryId>
 | DELETE
-| Delete a user story
+| link:#user-stories-delete[Delete a user story]
 
 | /api/v1/userstories/bulk_create
 | POST
-| Create user stories un bulk mode
+| link:#user-stories-bulk-create[Create user stories un bulk mode]
 
 | /api/v1/userstories/bulk_update_backlog_order
 | POST
-| Update user stories order for backlog in bulk mode
+| link:#user-stories-bulk-update-backlog-order[Update user stories order for backlog in bulk mode]
 
 | /api/v1/userstories/bulk_update_kanban_order
 | POST
-| Update user stories order for kanban in bulk mode
+| link:#user-stories-bulk-update-kanban-order[Update user stories order for kanban in bulk mode]
 
 | /api/v1/userstories/bulk_update_sprint_order
 | POST
-| Update user stories order for sprint in bulk mode
+| link:#user-stories-bulk-udate-sprint-order[Update user stories order for sprint in bulk mode]
 
 | /api/v1/userstories/attachments
 | GET
-| List user story attachments
+| link:#user-stories-list-attachments[List user story attachments]
 
 | /api/v1/userstories/attachments
 | POST
-| Create user story attachments
+| link:#user-stories-create-attachment[Create user story attachments]
 
 | /api/v1/userstories/attachments/<userStoryAttachmentId>
 | GET
-| Get user story attachments
+| link:#user-stories-get-attachment[Get user story attachments]
 
 | /api/v1/userstories/attachments/<userStoryAttachmentId>
 | PUT
-| Modify user story attachments
+| link:#user-stories-edit-attachment[Modify user story attachments]
 
 | /api/v1/userstories/attachments/<userStoryAttachmentId>
 | PATCH
-| Modify partially a user story attachments
+| link:#user-stories-edit-attachment[Modify partially a user story attachments]
 
 | /api/v1/userstories/attachments/<userStoryAttachmentId>
 | DELETE
-| Delete a user story attachments
+| link:#user-stories-delete-attachment[Delete a user story attachments]
 |===

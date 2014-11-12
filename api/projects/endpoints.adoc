@@ -6,65 +6,65 @@
 
 | /api/v1/projects
 | GET
-| List projects
+| link:#projects-list[List projects]
 
 | /api/v1/projects
 | POST
-| Create project
+| link:#projects-create[Create project]
 
 | /api/v1/projects/<projectId>
 | GET
-| Get project
+| link:#projects-get[Get project]
 
 | /api/v1/projects/<projectId>
 | PUT
-| Modify project
+| link:#projects-edit[Modify project]
 
 | /api/v1/projects/<projectId>
 | PATCH
-| Modify partially a project
+| link:#projects-edit[Modify partially a project]
 
 | /api/v1/projects/<projectId>
 | DELETE
-| Delete a project
+| link:#projects-delete[Delete a project]
 
 | /api/v1/projects/<projectId>/modules
 | GET
-| Get project modules configuration
+| link:#projects-get-modules[Get project modules configuration]
 
 | /api/v1/projects/<projectId>/modules
 | PATCH
-| Modify partially a project modules configuration
+| link:#projects-edit-modules[Modify partially a project modules configuration]
 
 | /api/v1/projects/<projectId>/stats
 | GET
-| Get project stats
+| link:#projects-stats[Get project stats]
 
 | /api/v1/projects/<projectId>/issues_stats
 | GET
-| Get project issue stats
+| link:#projects-issue-stats[Get project issue stats]
 
 | /api/v1/projects/<projectId>/issue_filters_data
 | GET
-| Get project issue filters data
+| link:#projects-issue-filters-data[Get project issue filters data]
 
 | /api/v1/projects/<projectId>/tags_colors
 | GET
-| Get project tags colors
+| link:#projects-tag-colors[Get project tags colors]
 
 | /api/v1/projects/<projectId>/star
 | POST
-| Add star to a project
+| link:#projects-star[Add star to a project]
 
 | /api/v1/projects/<projectId>/unstar
 | POST
-| Remove star from project
+| link:#projects-unstar[Remove star from project]
 
 | /api/v1/projects/<projectId>/fans
 | GET
-| Get project fans
+| link:#projects-fans[Get project fans]
 
 | /api/v1/projects/<projectId>/create_template
 | POST
-| Create project template
+| link:#projects-create-template[Create project template]
 |===
