@@ -4,7 +4,7 @@ To list projects send a GET request with the following parameters:
 ----
 curl -X GET \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
   https://api.taiga.io/api/v1/projects
 ----
 

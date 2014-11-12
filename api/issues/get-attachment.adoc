@@ -4,7 +4,7 @@ To get an issue attachment send a GET request specifying the issue attachment id
 ----
 curl -X GET \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
   https://api.taiga.io/api/v1/issues/attachments/415
 ----
 

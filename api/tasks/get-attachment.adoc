@@ -4,7 +4,7 @@ To get a task attachment send a GET request specifying the task attachment id in
 ----
 curl -X GET \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
   https://api.taiga.io/api/v1/tasks/attachments/415
 ----
 

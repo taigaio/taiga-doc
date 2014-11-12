@@ -4,7 +4,7 @@ To edit projects send a PUT or a PATCH specifying the project id in the url. In 
 ----
 curl -X PUT \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
   -d '{
           "name": "Beta project put",
           "description": "Beta description"
@@ -16,7 +16,7 @@ curl -X PUT \
 ----
 curl -X PATCH \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
   -d '{
           "name": "Beta project patch"
       }' \

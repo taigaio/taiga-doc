@@ -8,7 +8,7 @@ To create a template from a selected project send a POST request specifying the 
 ----
 curl -X POST \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
   -d '{
           "template_name": "Beta template",
           "template_description": "Beta template description"

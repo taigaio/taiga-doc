@@ -3,7 +3,7 @@ To delete issues send a DELETE specifying the issue id in the url
 [source,bash]
 ----
 curl -X DELETE \
-  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
   https://api.taiga.io/api/v1/issues/1
 ----
 

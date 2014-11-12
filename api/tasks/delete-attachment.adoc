@@ -3,7 +3,7 @@ To delete task attachments send a DELETE specifying the task attachment id in th
 [source,bash]
 ----
 curl -X DELETE \
-  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
   https://api.taiga.io/api/v1/tasks/attachments/415
 ----
 

@@ -3,7 +3,7 @@ To delete issue attachments send a DELETE specifying the issue attachment id in 
 [source,bash]
 ----
 curl -X DELETE \
-  -H "Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:YYYYYY:ZZZZZZZZZZZZZZZZZZZZZZZZZZZ" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
   https://api.taiga.io/api/v1/issues/attachments/415
 ----
 
