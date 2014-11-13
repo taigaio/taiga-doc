@@ -25,6 +25,9 @@ include::user-stories/endpoints.adoc[]
 === User story status
 include::user-story-statuses/endpoints.adoc[]
 
+=== Points
+include::points/endpoints.adoc[]
+
 === Tasks
 include::tasks/endpoints.adoc[]
 
@@ -70,6 +73,10 @@ include::user-stories/summary.adoc[]
 [[user-story-statuses]]
 == User story status
 include::user-story-statuses/summary.adoc[]
+
+[[points]]
+== Points
+include::points/summary.adoc[]
 
 [[tasks]]
 == Tasks
@@ -160,6 +167,10 @@ include::user-stories/detail-response.adoc[]
 [[object-userstory-status-detail]]
 === User story status detail
 include::user-story-statuses/detail-response.adoc[]
+
+[[object-point-detail]]
+=== Point detail
+include::points/detail-response.adoc[]
 
 [[object-task-detail]]
 === Task detail

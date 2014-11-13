@@ -1,0 +1,11 @@
+[source, json]
+----
+{
+    "color": "#669933",
+    "id": 143,
+    "name": "Huge",
+    "order": 8,
+    "value": 40,
+    "project": 3
+}
+----
