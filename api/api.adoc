@@ -7,59 +7,39 @@
 == Endpoints Summary
 
 === Auth
-
 include::login/endpoints.adoc[]
 
 === Resolver
-
 include::resolver/endpoints.adoc[]
 
 === Projects
-
 include::projects/endpoints.adoc[]
 
 === User stories
-
 include::user-stories/endpoints.adoc[]
 
 === User story status
-
 include::user-story-statuses/endpoints.adoc[]
 
 === Tasks
-
 include::tasks/endpoints.adoc[]
 
 === Task status
-
 include::task-statuses/endpoints.adoc[]
 
 === Issues
-
 include::issues/endpoints.adoc[]
 
 === Issue status
-
 include::issue-statuses/endpoints.adoc[]
 
+=== Issue types
+include::issue-types/endpoints.adoc[]
+
+
+[[auth]]
 == Auth
-
-[[auth-normal-login]]
-=== Normal login
-include::login/normal-login.adoc[]
-
-[[auth-github-login]]
-=== Github login
-include::login/github-login.adoc[]
-
-[[auth-public-registry]]
-=== Public registry
-include::login/public-registry.adoc[]
-
-[[auth-private-registry]]
-=== Private registry
-include::login/private-registry.adoc[]
-
+include::login/summary.adoc[]
 
 [[resolver]]
 == Resolver
@@ -92,6 +72,10 @@ include::issues/summary.adoc[]
 [[issue-statuses]]
 == Issue status
 include::issue-statuses/summary.adoc[]
+
+[[issue-types]]
+== Issue types
+include::issue-types/summary.adoc[]
 
 
 == Objects Summary
@@ -163,3 +147,7 @@ include::issues/detail-response.adoc[]
 [[object-issue-status-detail]]
 === Issue status detail
 include::issue-statuses/detail-response.adoc[]
+
+[[object-issue-type-detail]]
+=== Issue type detail
+include::issue-types/detail-response.adoc[]

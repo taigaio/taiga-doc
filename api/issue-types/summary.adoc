@@ -1,0 +1,23 @@
+[[issue-types-list]]
+=== List
+include::../issue-types/list.adoc[]
+
+[[issue-types-create]]
+=== Create
+include::../issue-types/create.adoc[]
+
+[[issue-types-get]]
+=== Get
+include::../issue-types/get.adoc[]
+
+[[issue-types-edit]]
+=== Edit
+include::../issue-types/edit.adoc[]
+
+[[issue-types-delete]]
+=== Delete
+include::../issue-types/delete.adoc[]
+
+[[issue-types-bulk-update-order]]
+=== Bulk update order
+include::../issue-types/bulk-update-order.adoc[]
