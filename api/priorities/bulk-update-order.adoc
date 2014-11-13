@@ -1,7 +1,7 @@
 To update the order of multiple priorities at the same time send a POST request with the following data:
 
 - *project* (required)
-- *bulk_issue_types*: list where each element is a list, the first element is the status id and the second the new order
+- *bulk_priorities*: list where each element is a list, the first element is the status id and the second the new order
 
 [source,bash]
 ----
@@ -10,7 +10,7 @@ curl -X POST \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
   -d '{
           "project_id": 3,
-          "bulk_issue_types": [[1,10], [2,5]]
+          "bulk_priorities": [[1,10], [2,5]]
       }' \
   https://api.taiga.io/api/v1/priorities/bulk_update_order
 ----

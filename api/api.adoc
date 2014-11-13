@@ -43,6 +43,10 @@ include::issue-types/endpoints.adoc[]
 === Priorities
 include::priorities/endpoints.adoc[]
 
+=== Severities
+include::severities/endpoints.adoc[]
+
+
 [[auth]]
 == Auth
 include::login/summary.adoc[]
@@ -90,6 +94,10 @@ include::issue-types/summary.adoc[]
 [[priorities]]
 == Prioritues
 include::priorities/summary.adoc[]
+
+[[severities]]
+== Severities
+include::severities/summary.adoc[]
 
 == Objects Summary
 
@@ -168,3 +176,7 @@ include::issue-types/detail-response.adoc[]
 [[object-priority-detail]]
 === Priority detail
 include::priorities/detail-response.adoc[]
+
+[[object-severity-detail]]
+=== Severity detail
+include::severities/detail-response.adoc[]

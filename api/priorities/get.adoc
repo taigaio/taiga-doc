@@ -1,4 +1,4 @@
-To get an priority send a GET request specifying the priority id in the url
+To get a priority send a GET request specifying the priority id in the url
 
 [source,bash]
 ----
