@@ -22,6 +22,10 @@ include::projects/endpoints.adoc[]
 
 include::user-stories/endpoints.adoc[]
 
+=== User story status
+
+include::user-story-statuses/endpoints.adoc[]
+
 === Tasks
 
 include::tasks/endpoints.adoc[]
@@ -205,6 +209,34 @@ include::user-stories/edit-attachment.adoc[]
 include::user-stories/delete-attachment.adoc[]
 
 
+[[user-story-statuses]]
+== User story status
+
+[[user-story-statuses-list]]
+=== List
+include::user-story-statuses/list.adoc[]
+
+[[user-story-statuses-create]]
+=== Create
+include::user-story-statuses/create.adoc[]
+
+[[user-story-statuses-get]]
+=== Get
+include::user-story-statuses/get.adoc[]
+
+[[user-story-statuses-edit]]
+=== Edit
+include::user-story-statuses/edit.adoc[]
+
+[[user-story-statuses-delete]]
+=== Delete
+include::user-story-statuses/delete.adoc[]
+
+[[user-story-statuses-bulk-create]]
+=== Bulk update order
+include::user-story-statuses/bulk-update-order.adoc[]
+
+
 [[tasks]]
 == Tasks
 
@@ -354,6 +386,10 @@ include::projects/template-detail-response.adoc[]
 === User story detail
 include::user-stories/detail-response.adoc[]
 
+[[object-userstory-status-detail]]
+=== User story status detail
+include::user-story-statuses/detail-response.adoc[]
+
 [[object-task-detail]]
 === Task detail
 include::tasks/detail-response.adoc[]
@@ -361,4 +397,3 @@ include::tasks/detail-response.adoc[]
 [[object-issue-detail]]
 === Issue detail
 include::issues/detail-response.adoc[]
-
