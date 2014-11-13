@@ -1,4 +1,4 @@
-To create issues send a POST request with the following data:
+To create wiki pages send a POST request with the following data:
 
 - *project* (required): project id
 - *slug* (required): slug
