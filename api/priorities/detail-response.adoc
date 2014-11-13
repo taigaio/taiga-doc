@@ -3,7 +3,7 @@
 {
     "color": "#669933",
     "id": 143,
-    "name": "Enhancement",
+    "name": "High",
     "order": 1,
     "project": 40
 }

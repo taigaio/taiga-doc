@@ -1,5 +1,6 @@
 To create issue types send a POST request with the following data:
 
+- *color*: in hexadecimal
 - *name* (required)
 - *order*: integer
 - *project*: (required): project id

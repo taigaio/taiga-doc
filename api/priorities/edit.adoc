@@ -1,0 +1,15 @@
+To edit priorities send a PUT or a PATCH specifying the priority id in the url.
+In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
+
+[source,bash]
+----
+curl -X PATCH \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "name": "Patch name"
+      }' \
+  https://api.taiga.io/api/v1/priorities/1
+----
+
+When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-priority-detail[priority detail object]

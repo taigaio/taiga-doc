@@ -40,6 +40,8 @@ include::issue-statuses/endpoints.adoc[]
 === Issue types
 include::issue-types/endpoints.adoc[]
 
+=== Priorities
+include::priorities/endpoints.adoc[]
 
 [[auth]]
 == Auth
@@ -85,6 +87,9 @@ include::issue-statuses/summary.adoc[]
 == Issue types
 include::issue-types/summary.adoc[]
 
+[[priorities]]
+== Prioritues
+include::priorities/summary.adoc[]
 
 == Objects Summary
 
@@ -159,3 +164,7 @@ include::issue-statuses/detail-response.adoc[]
 [[object-issue-type-detail]]
 === Issue type detail
 include::issue-types/detail-response.adoc[]
+
+[[object-priority-detail]]
+=== Priority detail
+include::priorities/detail-response.adoc[]
