@@ -1,0 +1,11 @@
+To list user storage data send a GET request with the following parameters:
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/user-storage
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-user-storage-detail[user storage data objects]

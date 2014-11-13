@@ -15,6 +15,9 @@ include::resolver/endpoints.adoc[]
 === Searches
 include::searches/endpoints.adoc[]
 
+=== User storage
+include::user-storage/endpoints.adoc[]
+
 === Projects
 include::projects/endpoints.adoc[]
 
@@ -70,6 +73,10 @@ include::resolver/summary.adoc[]
 [[searches]]
 == Searches
 include::searches/summary.adoc[]
+
+[[user-storage]]
+== User storage
+include::user-storage/summary.adoc[]
 
 [[projects]]
 == Projects
@@ -140,6 +147,10 @@ include::login/user-detail-response.adoc[]
 [[object-search-results-detail]]
 ===  Search results detail
 include::searches/detail-response.adoc[]
+
+[[object-user-storage-detail]]
+== User storage data
+include::user-storage/detail-response.adoc[]
 
 [[object-project-list-entry]]
 ===  Project list entry

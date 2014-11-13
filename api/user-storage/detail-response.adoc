@@ -1,0 +1,9 @@
+[source,json]
+----
+{
+    "key": "favorite-forest",
+    "value": "Taiga",
+    "created_date": "2014-11-13T16:58:35+0000",
+    "modified_date": "2014-11-13T16:58:35+0000"
+}
+----
