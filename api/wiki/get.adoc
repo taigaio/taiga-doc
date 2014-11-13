@@ -1,4 +1,4 @@
-To get an wiki page send a GET request specifying the wiki page id in the url
+To get a wiki page send a GET request specifying the wiki page id in the url
 
 [source,bash]
 ----
