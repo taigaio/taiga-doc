@@ -1,0 +1,3 @@
+[[searches-search]]
+=== Search
+include::search.adoc[]
