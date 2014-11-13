@@ -16,15 +16,15 @@
 | GET
 | link:#wiki-get[Get wiki page]
 
-| /api/v1/wiki/<wikiPageSlug>
+| /api/v1/wiki/<wikiPageId>
 | PUT
 | link:#wiki-edit[Modify wiki page]
 
-| /api/v1/wiki/<wikiPageSlug>
+| /api/v1/wiki/<wikiPageId>
 | PATCH
 | link:#wiki-edit[Modify partially an wiki page]
 
-| /api/v1/wiki/<wikiPageSlug>
+| /api/v1/wiki/<wikiPageId>
 | DELETE
 | link:#wiki-delete[Delete an wiki page]
 
