@@ -49,6 +49,9 @@ include::priorities/endpoints.adoc[]
 === Severities
 include::severities/endpoints.adoc[]
 
+=== Wiki pages
+include::wiki/endpoints.adoc[]
+
 
 [[auth]]
 == Auth
@@ -105,6 +108,10 @@ include::priorities/summary.adoc[]
 [[severities]]
 == Severities
 include::severities/summary.adoc[]
+
+[[wiki]]
+== Wiki pages
+include::wiki/summary.adoc[]
 
 == Objects Summary
 
@@ -203,3 +210,7 @@ include::priorities/detail-response.adoc[]
 [[object-severity-detail]]
 === Severity detail
 include::severities/detail-response.adoc[]
+
+[[object-wiki-detail]]
+=== Wiki page
+include::wiki/detail-response.adoc[]
