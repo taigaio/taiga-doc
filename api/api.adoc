@@ -52,6 +52,9 @@ include::severities/endpoints.adoc[]
 === Wiki pages
 include::wiki/endpoints.adoc[]
 
+=== Wiki links
+include::wikilinks/endpoints.adoc[]
+
 
 [[auth]]
 == Auth
@@ -112,6 +115,10 @@ include::severities/summary.adoc[]
 [[wiki]]
 == Wiki pages
 include::wiki/summary.adoc[]
+
+[[wikilinks]]
+== Wiki links
+include::wikilinks/summary.adoc[]
 
 == Objects Summary
 
@@ -214,3 +221,7 @@ include::severities/detail-response.adoc[]
 [[object-wiki-detail]]
 === Wiki page
 include::wiki/detail-response.adoc[]
+
+[[object-wiki-link-detail]]
+=== Wiki link
+include::wikilinks/detail-response.adoc[]
