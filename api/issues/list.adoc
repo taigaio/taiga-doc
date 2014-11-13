@@ -12,14 +12,14 @@ The HTTP response is a 200 OK and the response body is a JSON list of link:#obje
 
 The results can be filtered using the following parameters:
 
-- project: project id
-- status: status id
-- severity: severity id
-- priority: priority id
-- owner: owner user id
-- assigned_to: assigned to user id
-- tags: separated by ","
-- type: issue type id
+- *project*: project id
+- *status*: status id
+- *severity*: severity id
+- *priority*: priority id
+- *owner*: owner user id
+- *assigned_to*: assigned to user id
+- *tags*: separated by ","
+- *type*: issue type id
 
 [source,bash]
 ----
@@ -31,15 +31,15 @@ curl -X GET \
 
 The results can be ordered using the order_by parameter with the values:
 
-- type
-- severity
-- status
-- priority
-- created_date
-- modified_date
-- owner
-- assigned_to
-- subject":
+- *type*
+- *severity*
+- *status*
+- *priority*
+- *created_date*
+- *modified_date*
+- *owner*
+- *assigned_to*
+- *subject*
 
 [source,bash]
 ----

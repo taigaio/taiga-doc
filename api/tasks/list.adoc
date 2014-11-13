@@ -12,9 +12,9 @@ The HTTP response is a 200 OK and the response body is a JSON list of link:#obje
 
 The results can be filtered using the following parameters:
 
-- project: project id
-- user_story: user story id
-- milestone: milestone id
+- *project*: project id
+- *user_story*: user story id
+- *milestone*: milestone id
 
 [source,bash]
 ----

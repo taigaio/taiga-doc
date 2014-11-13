@@ -12,11 +12,11 @@ The HTTP response is a 200 OK and the response body is a JSON list of link:#obje
 
 The results can be filtered using the following parameters:
 
-- project: project id
-- milestone: milestone id
-- milestone__isnull: (true|false) if you are looking for user stories associated with a milestone or not
-- status: status id
-- is_archived: (true|false)
+- *project*: project id
+- *milestone*: milestone id
+- *milestone__isnull*: (true|false) if you are looking for user stories associated with a milestone or not
+- *status*: status id
+- *is_archived*: (true|false)
 
 [source,bash]
 ----
