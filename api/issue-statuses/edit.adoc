@@ -1,4 +1,4 @@
-To edit issue issues send a PUT or a PATCH specifying the issue status id in the url.
+To edit issue statuses send a PUT or a PATCH specifying the issue status id in the url.
 In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
 
 [source,bash]

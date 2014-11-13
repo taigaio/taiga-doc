@@ -1,4 +1,4 @@
-To create issue statuses send a POST request with the following data:
+To create task statuses send a POST request with the following data:
 
 - *is_closed*: (true|false)
 - *name* (required)
@@ -18,7 +18,7 @@ curl -X POST \
         "order": 8,
         "project": 3,
     }' \
-  https://api.taiga.io/api/v1/issue-statuses
+  https://api.taiga.io/api/v1/task-statuses
 ----
 
 [source,bash]
@@ -30,7 +30,7 @@ curl -X POST \
           "project": 3,
           "name": "New status name"
       }' \
-  https://api.taiga.io/api/v1/issue-statuses
+  https://api.taiga.io/api/v1/task-statuses
 ----
 
-When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-issue-status-detail[issue status detail object]
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-task-status-detail[task status detail object]

@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/task-statuses
+| GET
+| link:#task-statuses-list[List task statuses]
+
+| /api/v1/task-statuses
+| POST
+| link:#task-statuses-create[Create task status]
+
+| /api/v1/task-statuses/<taskStatusId>
+| GET
+| link:#task-statuses-get[Get task status]
+
+| /api/v1/task-statuses/<taskStatusId>
+| PUT
+| link:#task-statuses-edit[Modify task status]
+
+| /api/v1/task-statuses/<taskStatusId>
+| PATCH
+| link:#task-statuses-edit[Modify partially a task status]
+
+| /api/v1/task-statuses/<taskStatusId>
+| DELETE
+| link:#task-statuses-delete[Delete a task status]
+
+| /api/v1/task-statuses/bulk_update_order
+| POST
+| link:#task-statuses-bulk-update-order[Update task statuses order in bulk mode]
+|===
