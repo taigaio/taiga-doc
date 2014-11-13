@@ -1,0 +1,44 @@
+To create milestone send a POST request with the following data:
+
+- *project* (required): project id
+- *name* (required): string
+- *estimated_start* (required): iso date (YYYY-MM-DD)
+- *estimated_finish* (required): iso date (YYYY-MM-DD)
+- *disponibility*: float
+- *slug*: slug
+- *order*: integer
+- *watchers*: array of watcher id's
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "project": 3,
+          "name": "Sprint 1",
+          "estimated_start": "2014-10-20",
+          "estimated_finish": "2014-11-04",
+          "disponibility": 30,
+          "slug": "sprint-1",
+          "order": 1,
+          "watchers": []
+      }' \
+  https://api.taiga.io/api/v1/milestones
+----
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "project": 3,
+          "name": "Sprint 3",
+          "estimated_start": "2014-10-20",
+          "estimated_finish": "2014-11-04"
+      }' \
+  https://api.taiga.io/api/v1/milestones
+----
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-milestone-detail[milestone detail object]

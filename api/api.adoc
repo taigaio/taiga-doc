@@ -15,6 +15,10 @@ include::resolver/endpoints.adoc[]
 === Projects
 include::projects/endpoints.adoc[]
 
+=== Milestones
+
+include::milestones/endpoints.adoc[]
+
 === User stories
 include::user-stories/endpoints.adoc[]
 
@@ -48,6 +52,10 @@ include::resolver/summary.adoc[]
 [[projects]]
 == Projects
 include::projects/summary.adoc[]
+
+[[milestones]]
+== Milestones
+include::milestones/summary.adoc[]
 
 [[user-stories]]
 == User stories

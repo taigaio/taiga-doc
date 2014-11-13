@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/milestones
+| GET
+| link:#milestones-list[List milestones]
+
+| /api/v1/milestones
+| POST
+| link:#milestones-create[Create milestone]
+
+| /api/v1/milestones/<milestoneId>
+| GET
+| link:#milestones-get[Get milestone]
+
+| /api/v1/milestones/<milestoneId>
+| PUT
+| link:#milestones-edit[Modify milestone]
+
+| /api/v1/milestones/<milestoneId>
+| PATCH
+| link:#milestones-edit[Modify partially a milestone]
+
+| /api/v1/milestones/<milestoneId>
+| DELETE
+| link:#milestones-delete[Delete a milestone]
+
+| /api/v1/milestones/<milestoneId>/stats
+| GET
+| link:#milestones-stats[Get a milestone stats]
+|===
