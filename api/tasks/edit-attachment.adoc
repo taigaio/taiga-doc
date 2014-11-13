@@ -1,15 +1,12 @@
-To edit tasks send a PUT or a PATCH specifying the task id in the url.
+To edit task attachments send a PUT or a PATCH specifying the task attachment id in the url.
 In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
 
 [source,bash]
 ----
 curl -X PATCH \
-  -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "subject": "Patching subject"
-      }' \
-  https://api.taiga.io/api/v1/tasks/1
+  -F "description=patching description" \
+  https://api.taiga.io/api/v1/tasks/attachments/417
 ----
 
-When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-task-detail[task detail object]
+When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-attachment-detail[attachment detail object]
