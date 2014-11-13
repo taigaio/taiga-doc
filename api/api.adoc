@@ -149,7 +149,7 @@ include::login/user-detail-response.adoc[]
 include::searches/detail-response.adoc[]
 
 [[object-user-storage-detail]]
-== User storage data
+=== User storage data
 include::user-storage/detail-response.adoc[]
 
 [[object-project-list-entry]]
