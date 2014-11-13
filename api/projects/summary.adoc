@@ -1,0 +1,59 @@
+[[projects-list]]
+=== List
+include::../projects/list.adoc[]
+
+[[projects-create]]
+=== Create
+include::../projects/create.adoc[]
+
+[[projects-get]]
+=== Get
+include::../projects/get.adoc[]
+
+[[projects-edit]]
+=== Edit
+include::../projects/edit.adoc[]
+
+[[projects-delete]]
+=== Delete
+include::../projects/delete.adoc[]
+
+[[projects-get-modules]]
+=== Get modules
+include::../projects/get-modules.adoc[]
+
+[[projects-edit-modules]]
+=== Edit modules
+include::../projects/edit-modules.adoc[]
+
+[[projects-stats]]
+=== Stats
+include::../projects/stats.adoc[]
+
+[[projects-issue-stats]]
+=== Issue stats
+include::../projects/issues-stats.adoc[]
+
+[[projects-issue-filters-data]]
+=== Issue filters data
+include::../projects/issue-filters-data.adoc[]
+
+[[projects-tag-colors]]
+=== Tag colors
+include::../projects/tags-colors.adoc[]
+
+[[projects-star]]
+=== Star
+include::../projects/star.adoc[]
+
+[[projects-unstar]]
+=== Unstar
+include::../projects/unstar.adoc[]
+
+[[projects-fans]]
+=== Fans
+include::../projects/fans.adoc[]
+
+[[projects-create-template]]
+=== Create template
+include::../projects/create-template.adoc[]
