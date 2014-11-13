@@ -184,6 +184,10 @@ include::task-statuses/detail-response.adoc[]
 === Issue detail
 include::issues/detail-response.adoc[]
 
+[[object-issue-voters-detail]]
+=== Issue voters detail
+include::issues/voters-detail-response.adoc[]
+
 [[object-issue-status-detail]]
 === Issue status detail
 include::issue-statuses/detail-response.adoc[]

@@ -36,6 +36,10 @@
 | POST
 | link:#issues-downvote[Remove your vote to an issue]
 
+| /api/v1/issues/<issueId>/voters
+| GET
+| link:#issues-voters[Get issue voters list]
+
 | /api/v1/issues/bulk_create
 | POST
 | link:#issues-bulk-create[Create issues un bulk mode]

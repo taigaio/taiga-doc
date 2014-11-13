@@ -26,6 +26,10 @@ include::../issues/upvote.adoc[]
 === Remove vote to an issue
 include::../issues/downvote.adoc[]
 
+[[issues-voters]]
+=== Get issue voters list
+include::../issues/voters.adoc[]
+
 [[issues-list-attachments]]
 === List attachments
 include::../issues/list-attachments.adoc[]
