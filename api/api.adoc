@@ -145,6 +145,14 @@ include::projects/voter-detail-response.adoc[]
 ===  Project template detail
 include::projects/template-detail-response.adoc[]
 
+[[object-milestone-detail]]
+===  Milestone detail
+include::milestones/detail-response.adoc[]
+
+[[object-milestone-stats-detail]]
+===  Milestone stats detail
+include::milestones/stats-detail-response.adoc[]
+
 [[object-userstory-detail]]
 === User story detail
 include::user-stories/detail-response.adoc[]
