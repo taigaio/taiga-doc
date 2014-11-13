@@ -10,12 +10,13 @@ curl -X GET \
 
 The HTTP response is a 200 OK and the response body is a JSON list of link:#object-userstory-detail[user story detail objects]
 
-You can filter your results by project using the url param "project" and the
-value projectId, by milestone using the url param "milestone" and the value
-milestoneId, by no-milestone using the url param "milestone__isnull" and the
-value true or false, by status using the url param "status" and the value
-statusId and by archived using the url param "is_archived" and the value true
-or false:
+The results can be filtered using the following parameters:
+
+- project: project id
+- milestone: milestone id
+- milestone__isnull: (true|false) if you are looking for user stories associated with a milestone or not
+- status: status id
+- is_archived: (true|false)
 
 [source,bash]
 ----
