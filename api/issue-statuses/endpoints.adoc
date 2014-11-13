@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/issue-statuses
+| GET
+| link:#issue-statuses-list[List issue statuses]
+
+| /api/v1/issue-statuses
+| POST
+| link:#issue-statuses-create[Create issue status]
+
+| /api/v1/issue-statuses/<userStoryStatusId>
+| GET
+| link:#issue-statuses-get[Get issue status]
+
+| /api/v1/issue-statuses/<userStoryStatusId>
+| PUT
+| link:#issue-statuses-edit[Modify issue status]
+
+| /api/v1/issue-statuses/<userStoryStatusId>
+| PATCH
+| link:#issue-statuses-edit[Modify partially a issue status]
+
+| /api/v1/issue-statuses/<userStoryStatusId>
+| DELETE
+| link:#issue-statuses-delete[Delete a issue status]
+
+| /api/v1/issue-statuses/bulk_update_order
+| POST
+| link:#issue-statuses-bulk-update-order[Update issue statuses order in bulk mode]
+|===
