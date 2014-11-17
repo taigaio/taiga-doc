@@ -1,0 +1,10 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/feedback
+| POST
+| link:#feedback-create[Send feedback]
+|===
