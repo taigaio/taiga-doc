@@ -1,0 +1,11 @@
+[[notify-policies-list]]
+=== List
+include::../notify-policies/list.adoc[]
+
+[[notify-policies-get]]
+=== Get
+include::../notify-policies/get.adoc[]
+
+[[notify-policies-edit]]
+=== Edit
+include::../notify-policies/edit.adoc[]

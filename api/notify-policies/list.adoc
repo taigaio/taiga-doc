@@ -1,0 +1,11 @@
+To list the notify policies of the current user send a GET request with the following parameters:
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/notify-policies
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-notify-policy-detail[notify policy detail objects]

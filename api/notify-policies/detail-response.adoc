@@ -1,0 +1,9 @@
+[source,json]
+----
+{
+    "id": 97,
+    "notify_level": 1,
+    "project": 3,
+    "project_name": "Testing project"
+}
+----

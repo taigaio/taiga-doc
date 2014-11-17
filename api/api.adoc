@@ -63,6 +63,9 @@ include::wikilinks/endpoints.adoc[]
 === Users
 include::users/endpoints.adoc[]
 
+=== Notify policies
+include::notify-policies/endpoints.adoc[]
+
 
 [[auth]]
 == Auth
@@ -128,7 +131,6 @@ include::priorities/summary.adoc[]
 == Severities
 include::severities/summary.adoc[]
 
-<<<<<<< HEAD
 [[wiki]]
 == Wiki pages
 include::wiki/summary.adoc[]
@@ -136,13 +138,16 @@ include::wiki/summary.adoc[]
 [[wikilinks]]
 == Wiki links
 include::wikilinks/summary.adoc[]
-=======
+
 [[users]]
 == Users
 include::users/summary.adoc[]
 
+[[notify-policies]]
+== Notify policies
+include::notify-policies/summary.adoc[]
 
->>>>>>> Addin user API doc
+
 
 == Objects Summary
 
@@ -261,3 +266,8 @@ include::wiki/detail-response.adoc[]
 [[object-wiki-link-detail]]
 === Wiki link
 include::wikilinks/detail-response.adoc[]
+
+
+[[object-notify-policy-detail]]
+=== Notify policy
+include::notify-policies/detail-response.adoc[]
