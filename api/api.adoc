@@ -22,7 +22,6 @@ include::user-storage/endpoints.adoc[]
 include::projects/endpoints.adoc[]
 
 === Milestones
-
 include::milestones/endpoints.adoc[]
 
 === User stories
@@ -60,6 +59,9 @@ include::wiki/endpoints.adoc[]
 
 === Wiki links
 include::wikilinks/endpoints.adoc[]
+
+=== Users
+include::users/endpoints.adoc[]
 
 
 [[auth]]
@@ -126,6 +128,7 @@ include::priorities/summary.adoc[]
 == Severities
 include::severities/summary.adoc[]
 
+<<<<<<< HEAD
 [[wiki]]
 == Wiki pages
 include::wiki/summary.adoc[]
@@ -133,6 +136,13 @@ include::wiki/summary.adoc[]
 [[wikilinks]]
 == Wiki links
 include::wikilinks/summary.adoc[]
+=======
+[[users]]
+== Users
+include::users/summary.adoc[]
+
+
+>>>>>>> Addin user API doc
 
 == Objects Summary
 
@@ -142,7 +152,11 @@ include::attachments/detail-response.adoc[]
 
 [[object-user-detail]]
 ===  User detail
-include::login/user-detail-response.adoc[]
+include::users/detail-response.adoc[]
+
+[[object-auth-user-detail]]
+===  User authentication-detail
+include::users/auth-detail-response.adoc[]
 
 [[object-search-results-detail]]
 ===  Search results detail

@@ -1,0 +1,18 @@
+[source,json]
+----
+{
+    "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80"
+    "bio": "",
+    "color": "black",
+    "default_language": "",
+    "default_timezone": "",
+    "email": "beta.testing@taiga.io",
+    "full_name": "Beta testing",
+    "full_name_display": "Beta testing",
+    "github_id": null,
+    "id": 1,
+    "is_active": true,
+    "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+    "username": "beta.tester",
+}
+----

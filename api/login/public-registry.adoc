@@ -20,4 +20,4 @@ curl -X POST \
   https://api.taiga.io/api/v1/auth/register
 ----
 
-When the registration is successful, the HTTP response is a 201 CREATED and the response body is a JSON link:#object-user-detail[user detail object]
+When the registration is successful, the HTTP response is a 201 CREATED and the response body is a JSON link:#object-auth-user-detail[user auth detail object]
