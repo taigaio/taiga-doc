@@ -4,6 +4,10 @@
 :source-highlighter: pygments
 :pygments-style: friendly
 
+== General notes
+include::general-notes.adoc[]
+
+
 == Endpoints Summary
 
 === Auth

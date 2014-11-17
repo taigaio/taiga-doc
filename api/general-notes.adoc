@@ -1,0 +1,26 @@
+=== Authentication
+To authenticate requests an http header called "Authorization" should be added. Its format should be:
+
+[source]
+----
+Authorization: Bearer ${AUTH_TOKEN}
+----
+
+This token can be received through the link:#auth-normal-login[login API ]
+
+=== Pagination
+By default the API allways return paginated results and includes the following headers in the response:
+
+- x-paginated: boolean indicating if pagination is being used for the request
+- x-paginated-by: number of results per page
+- x-pagination-count: total number of results
+- x-pagination-current: current page
+- X-Pagination-Next: next results
+- X-Pagination-Prev: previous results
+
+*Disabling pagination* can be accomplished by setting an extra http header:
+
+[source]
+----
+Authorization: Bearer ${AUTH_TOKEN}
+----
