@@ -184,6 +184,7 @@ To make sure everything is working, you can run the backend in development mode 
 
 [source,bash]
 ----
+workon taiga
 python manage.py runserver
 ----
 
