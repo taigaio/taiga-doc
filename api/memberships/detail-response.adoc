@@ -1,0 +1,21 @@
+[source, json]
+----
+{
+    "role_name": "Front",
+    "full_name": "Alicia Diaz",
+    "user_email": "accusamus@doloribus.net",
+    "email": "accusamus@doloribus.net",
+    "color": "#C0FF33",
+    "photo": "//www.gravatar.com/avatar/e2cc11c9138524224f87aa72c1a343db?size=80",
+    "project_name": "Project Example 0",
+    "project_slug": "user6532909695705815086-project-example-0",
+    "invited_by": null,
+    "id": 7,
+    "user": 8,
+    "project": 1,
+    "role": 3,
+    "is_owner": true,
+    "created_at": "2014-11-17T16:19:04+0000",
+    "invitation_extra_text": null
+}
+----

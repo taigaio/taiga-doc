@@ -1,0 +1,42 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/memberships
+| GET
+| link:#memberships-list[List memberships]
+
+| /api/v1/memberships
+| POST
+| link:#memberships-create[Create membership]
+
+| /api/v1/memberships/bulk_create
+| POST
+| link:#memberships-bulk-create[Create a bulk of memberships]
+
+| /api/v1/memberships/<membershipId>
+| GET
+| link:#memberships-get[Get membership]
+
+| /api/v1/memberships/<membershipId>
+| PUT
+| link:#memberships-edit[Modify membership]
+
+| /api/v1/memberships/<membershipId>
+| PATCH
+| link:#memberships-edit[Modify partially a membership]
+
+| /api/v1/memberships/<membershipId>
+| DELETE
+| link:#memberships-delete[Delete a membership]
+
+| /api/v1/memberships/<membershipId>/resend_invitation
+| POST
+| link:#memberships-resend-invitation[Resend invitation]
+
+| /api/v1/invitations/<invitationUuid>
+| POST
+| link:#memberships-invitations[Get invitation by anonymous user]
+|===

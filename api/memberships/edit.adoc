@@ -1,0 +1,15 @@
+To edit memberships send a PUT or a PATCH specifying the membership id in the url.
+In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
+
+[source,bash]
+----
+curl -X PATCH \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "role": 10
+      }' \
+  https://api.taiga.io/api/v1/memberships/1
+----
+
+When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-membership-detail[membership detail object]

@@ -25,6 +25,9 @@ include::user-storage/endpoints.adoc[]
 === Projects
 include::projects/endpoints.adoc[]
 
+=== Memberships/Invitations
+include::memberships/endpoints.adoc[]
+
 === Milestones
 include::milestones/endpoints.adoc[]
 
@@ -93,6 +96,9 @@ include::user-storage/summary.adoc[]
 [[projects]]
 == Projects
 include::projects/summary.adoc[]
+
+== Memberships/Invitations
+include::memberships/summary.adoc[]
 
 [[milestones]]
 == Milestones
@@ -217,6 +223,10 @@ include::projects/voter-detail-response.adoc[]
 [[object-project-template-detail]]
 ===  Project template detail
 include::projects/template-detail-response.adoc[]
+
+[[object-membership-detail]]
+===  Membership detail
+include::memberships/detail-response.adoc[]
 
 [[object-milestone-detail]]
 ===  Milestone detail
