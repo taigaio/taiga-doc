@@ -13,4 +13,4 @@ curl -X POST \
   https://api.taiga.io/api/v1/feedback
 ----
 
-When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-feedback-detail[feedback object]
+When created successfully, the HTTP response is a 201 Created and the response body is a JSON link:#object-feedback-detail[feedback object]
