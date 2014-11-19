@@ -7,4 +7,4 @@ curl -X POST \
   https://api.taiga.io/api/v1/history/userstory/1/undelete_comment?id=10
 ----
 
-When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response
+When deleted succesfully, the HTTP response is a 204 NO CONTENT with an empty body response
