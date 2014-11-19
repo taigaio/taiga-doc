@@ -1,4 +1,4 @@
-To delete issue satuses send a DELETE specifying the issue type id in the url
+To delete issue statuses send a DELETE specifying the issue type id in the url
 
 [source,bash]
 ----
