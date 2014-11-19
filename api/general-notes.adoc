@@ -9,7 +9,7 @@ Authorization: Bearer ${AUTH_TOKEN}
 This token can be received through the link:#auth-normal-login[login API ]
 
 === Pagination
-By default the API allways return paginated results and includes the following headers in the response:
+By default the API will always return paginated results and includes the following headers in the response:
 
 - x-paginated: boolean indicating if pagination is being used for the request
 - x-paginated-by: number of results per page
