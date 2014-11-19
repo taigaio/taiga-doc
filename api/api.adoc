@@ -70,6 +70,9 @@ include::wiki/endpoints.adoc[]
 === Wiki links
 include::wikilinks/endpoints.adoc[]
 
+=== History
+include::history/endpoints.adoc[]
+
 === Users
 include::users/endpoints.adoc[]
 
@@ -159,6 +162,10 @@ include::wiki/summary.adoc[]
 [[wikilinks]]
 == Wiki links
 include::wikilinks/summary.adoc[]
+
+[[history]]
+== History
+include::history/summary.adoc[]
 
 [[users]]
 == Users
@@ -299,6 +306,10 @@ include::wiki/detail-response.adoc[]
 [[object-wiki-link-detail]]
 === Wiki link
 include::wikilinks/detail-response.adoc[]
+
+[[object-history-entry-detail]]
+=== History entry
+include::history/detail-response.adoc[]
 
 [[object-notify-policy-detail]]
 === Notify policy
