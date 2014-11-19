@@ -15,8 +15,8 @@ By default the API will always return paginated results and includes the followi
 - x-paginated-by: number of results per page
 - x-pagination-count: total number of results
 - x-pagination-current: current page
-- X-Pagination-Next: next results
-- X-Pagination-Prev: previous results
+- x-Pagination-Next: next results
+- x-Pagination-Prev: previous results
 
 *Disabling pagination* can be accomplished by setting an extra http header:
 
