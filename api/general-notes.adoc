@@ -22,5 +22,5 @@ By default the API allways return paginated results and includes the following h
 
 [source]
 ----
-Authorization: Bearer ${AUTH_TOKEN}
+x-disable-pagination: True
 ----
