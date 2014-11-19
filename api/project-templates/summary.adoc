@@ -1,0 +1,19 @@
+[[project-templates-list]]
+=== List
+include::list.adoc[]
+
+[[project-templates-create]]
+=== Create
+include::create.adoc[]
+
+[[project-templates-get]]
+=== Get
+include::get.adoc[]
+
+[[project-templates-edit]]
+=== Edit
+include::edit.adoc[]
+
+[[project-templates-delete]]
+=== Delete
+include::delete.adoc[]

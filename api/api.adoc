@@ -22,6 +22,9 @@ include::searches/endpoints.adoc[]
 === User storage
 include::user-storage/endpoints.adoc[]
 
+=== Project templates
+include::project-templates/endpoints.adoc[]
+
 === Projects
 include::projects/endpoints.adoc[]
 
@@ -93,10 +96,15 @@ include::searches/summary.adoc[]
 == User storage
 include::user-storage/summary.adoc[]
 
+[[project-templates]]
+== Project templates
+include::project-templates/summary.adoc[]
+
 [[projects]]
 == Projects
 include::projects/summary.adoc[]
 
+[[memberships]]
 == Memberships/Invitations
 include::memberships/summary.adoc[]
 
@@ -187,6 +195,10 @@ include::searches/detail-response.adoc[]
 [[object-user-storage-detail]]
 === User storage data
 include::user-storage/detail-response.adoc[]
+
+[[object-project-template-detail]]
+== Project templates detail
+include::project-templates/detail-response.adoc[]
 
 [[object-project-list-entry]]
 ===  Project list entry
