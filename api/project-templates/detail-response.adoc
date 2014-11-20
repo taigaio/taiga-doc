@@ -15,6 +15,7 @@
             "wip_limit": null,
             "color": "#999999",
             "name": "New",
+            "slug": "new",
             "order": 1,
             "is_closed": false
         },
@@ -22,6 +23,7 @@
             "wip_limit": null,
             "color": "#f57900",
             "name": "Ready",
+            "slug": "ready",
             "order": 2,
             "is_closed": false
         },
@@ -29,6 +31,7 @@
             "wip_limit": null,
             "color": "#729fcf",
             "name": "In progress",
+            "slug": "in-progress",
             "order": 3,
             "is_closed": false
         },
@@ -36,6 +39,7 @@
             "wip_limit": null,
             "color": "#4e9a06",
             "name": "Ready for test",
+            "slug": "ready-for-test",
             "order": 4,
             "is_closed": false
         },
@@ -43,6 +47,7 @@
             "wip_limit": null,
             "color": "#cc0000",
             "name": "Done",
+            "slug": "done",
             "order": 5,
             "is_closed": true
         }
@@ -113,30 +118,35 @@
         {
             "color": "#999999",
             "name": "New",
+            "slug": "new",
             "order": 1,
             "is_closed": false
         },
         {
             "color": "#729fcf",
             "name": "In progress",
+            "slug": "in-progress",
             "order": 2,
             "is_closed": false
         },
         {
             "color": "#f57900",
             "name": "Ready for test",
+            "slug": "ready-for-test",
             "order": 3,
             "is_closed": true
         },
         {
             "color": "#4e9a06",
             "name": "Closed",
+            "slug": "closed",
             "order": 4,
             "is_closed": true
         },
         {
             "color": "#cc0000",
             "name": "Needs Info",
+            "slug": "needs-info",
             "order": 5,
             "is_closed": false
         }
@@ -145,42 +155,49 @@
         {
             "color": "#999999",
             "name": "New",
+            "slug": "new",
             "order": 1,
             "is_closed": false
         },
         {
             "color": "#729fcf",
             "name": "In progress",
+            "slug": "in-progress",
             "order": 2,
             "is_closed": false
         },
         {
             "color": "#f57900",
             "name": "Ready for test",
+            "slug": "ready-for-test",
             "order": 3,
             "is_closed": true
         },
         {
             "color": "#4e9a06",
             "name": "Closed",
+            "slug": "closed",
             "order": 4,
             "is_closed": true
         },
         {
             "color": "#cc0000",
             "name": "Needs Info",
+            "slug": "needs-info",
             "order": 5,
             "is_closed": false
         },
         {
             "color": "#d3d7cf",
             "name": "Rejected",
+            "slug": "rejected",
             "order": 6,
             "is_closed": true
         },
         {
             "color": "#75507b",
             "name": "Postponed",
+            "slug": "postponed",
             "order": 7,
             "is_closed": false
         }
