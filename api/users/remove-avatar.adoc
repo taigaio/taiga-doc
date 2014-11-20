@@ -1,0 +1,10 @@
+To remove your user avatar send a POST with the following data
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/users/remove_avatar
+----
+
+When the change is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-user-detail[user detail object]

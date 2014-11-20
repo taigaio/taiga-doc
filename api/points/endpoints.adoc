@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/points
+| GET
+| link:#points-list[List points]
+
+| /api/v1/points
+| POST
+| link:#points-create[Create point]
+
+| /api/v1/points/<pointId>
+| GET
+| link:#points-get[Get point]
+
+| /api/v1/points/<pointId>
+| PUT
+| link:#points-edit[Modify point]
+
+| /api/v1/points/<pointId>
+| PATCH
+| link:#points-edit[Modify partially a point]
+
+| /api/v1/points/<pointId>
+| DELETE
+| link:#points-delete[Delete a point]
+
+| /api/v1/points/bulk_update_order
+| POST
+| link:#points-bulk-update-order[Update points order in bulk mode]
+|===

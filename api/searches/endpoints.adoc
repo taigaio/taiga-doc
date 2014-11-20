@@ -1,0 +1,10 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/search
+| GET
+| link:#searches-search[Search in a project]
+|===

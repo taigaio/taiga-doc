@@ -1,0 +1,70 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/issues
+| GET
+| link:#issues-list[List issues]
+
+| /api/v1/issues
+| POST
+| link:#issues-create[Create issue]
+
+| /api/v1/issues/<issueId>
+| GET
+| link:#issues-get[Get issue]
+
+| /api/v1/issues/<issueId>
+| PUT
+| link:#issues-edit[Modify issue]
+
+| /api/v1/issues/<issueId>
+| PATCH
+| link:#issues-edit[Modify partially an issue]
+
+| /api/v1/issues/<issueId>
+| DELETE
+| link:#issues-delete[Delete an issue]
+
+| /api/v1/issues/<issueId>/upvote
+| POST
+| link:#issues-upvote[Add a vote to an issue]
+
+| /api/v1/issues/<issueId>/downvote
+| POST
+| link:#issues-downvote[Remove your vote to an issue]
+
+| /api/v1/issues/<issueId>/voters
+| GET
+| link:#issues-voters[Get issue voters list]
+
+| /api/v1/issues/bulk_create
+| POST
+| link:#issues-bulk-create[Create issues un bulk mode]
+
+| /api/v1/issues/attachments
+| GET
+| link:#issues-list-attachments[List issue attachments]
+
+| /api/v1/issues/attachments
+| POST
+| link:#issues-create-attachment[Create issue attachments]
+
+| /api/v1/issues/attachments/<issueAttachmentId>
+| GET
+| link:#issues-get-attachment[Get issue attachments]
+
+| /api/v1/issues/attachments/<issueAttachmentId>
+| PUT
+| link:#issues-edit-attachment[Modify issue attachments]
+
+| /api/v1/issues/attachments/<issueAttachmentId>
+| PATCH
+| link:#issues-edit-attachment[Modify partially an issue attachments]
+
+| /api/v1/issues/attachments/<issueAttachmentId>
+| DELETE
+| link:#issues-delete-attachment[Delete an issue attachments]
+|===

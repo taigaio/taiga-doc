@@ -1,0 +1,10 @@
+[source,json]
+----
+{
+    "wikipages": [{ <Wiki Page> }, ...],
+    "userstories":  [{ <User Story> }, ...],
+    "issues":  [{ <Issue> }, ...],
+    "tasks":  [{ <Task> }, ...],
+    "count": 1
+}
+----

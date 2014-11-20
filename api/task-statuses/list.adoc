@@ -1,0 +1,23 @@
+To list task status send a GET request with the following parameters:
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/task-statuses
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-task-status-detail[task status detail objects]
+
+The results can be filtered using the following parameters:
+
+- *project*: project id
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/task-statuses?project=1
+----

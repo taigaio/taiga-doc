@@ -1,0 +1,47 @@
+[[users-list]]
+=== List
+include::../users/list.adoc[]
+
+[[users-get]]
+=== Get
+include::../users/get.adoc[]
+
+[[users-starred]]
+=== Get starred projects
+include::../users/starred.adoc[]
+
+[[users-edit]]
+=== Edit
+include::../users/edit.adoc[]
+
+[[users-delete]]
+=== Delete
+include::../users/delete.adoc[]
+
+[[users-cancel]]
+=== Cancel
+include::../users/cancel.adoc[]
+
+[[users-change-avatar]]
+=== Change avatar
+include::../users/change-avatar.adoc[]
+
+[[users-remove-avatar]]
+=== Remove avatar
+include::../users/remove-avatar.adoc[]
+
+[[users-change-email]]
+=== Change email
+include::../users/change-email.adoc[]
+
+[[users-change-password]]
+=== Change password
+include::../users/change-password.adoc[]
+
+[[users-password-recovery]]
+=== Password recovery
+include::../users/password-recovery.adoc[]
+
+[[users-change-password-from-recovery]]
+=== Change password from recovery
+include::../users/change-password-from-recovery.adoc[]

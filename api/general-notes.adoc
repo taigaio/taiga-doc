@@ -1,0 +1,37 @@
+.About Taiga instance and URLs used in this document
+[NOTE]
+===============================
+All API calls used in the documentation are refered to Taiga.io instance, so if you use another
+instance remember to change the url.
+
+For example, if you have installed Taiga on your own PC, you must perform the tests using
+_http://localhost:8000/api/v1_ instead of _https://taiga.io/api/v1_.
+===============================
+
+=== Authentication
+To authenticate requests an http header called "Authorization" should be added. Its format should be:
+
+[source]
+----
+Authorization: Bearer ${AUTH_TOKEN}
+----
+
+This token can be received through the link:#auth-normal-login[login API ]
+
+=== Pagination
+By default the API will always return paginated results and includes the following headers in the response:
+
+- x-paginated: boolean indicating if pagination is being used for the request
+- x-paginated-by: number of results per page
+- x-pagination-count: total number of results
+- x-pagination-current: current page
+- x-Pagination-Next: next results
+- x-Pagination-Prev: previous results
+
+*Disabling pagination* can be accomplished by setting an extra http header:
+
+[source]
+----
+x-disable-pagination: True
+----
+

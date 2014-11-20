@@ -1,0 +1,34 @@
+[source,json]
+----
+{
+    "name": "Sprint 1",
+    "estimated_start": "2014-10-20",
+    "estimated_finish": "2014-10-21",
+    "total_points": {
+        "11": 10,
+        "12": 40,
+        "13": 30,
+        "14": 20
+    },
+    "completed_points": 40,
+    "total_userstories": 10,
+    "completed_userstories": 4,
+    "total_tasks": 40,
+    "completed_tasks": 12,
+    "iocaine_doses": 3,
+    "days": [
+        {
+            "day": "2014-10-20",
+            "name": "21",
+            "open_points": 100,
+            "optimal_points": 50
+        },
+        {
+            "day": "2014-10-21",
+            "name": "21"
+            "open_points": 60,
+            "optimal_points": 0
+        }
+    ]
+}
+----

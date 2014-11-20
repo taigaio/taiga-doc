@@ -1,0 +1,54 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/wiki
+| GET
+| link:#wiki-list[List wiki pages]
+
+| /api/v1/wiki
+| POST
+| link:#wiki-create[Create wiki page]
+
+| /api/v1/wiki/<wikiId>
+| GET
+| link:#wiki-get[Get wiki page]
+
+| /api/v1/wiki/<wikiPageId>
+| PUT
+| link:#wiki-edit[Modify wiki page]
+
+| /api/v1/wiki/<wikiPageId>
+| PATCH
+| link:#wiki-edit[Modify partially an wiki page]
+
+| /api/v1/wiki/<wikiPageId>
+| DELETE
+| link:#wiki-delete[Delete an wiki page]
+
+| /api/v1/wiki/attachments
+| GET
+| link:#wiki-list-attachments[List wiki page attachments]
+
+| /api/v1/wiki/attachments
+| POST
+| link:#wiki-create-attachment[Create wiki page attachments]
+
+| /api/v1/wiki/attachments/<wikiPageAttachmentId>
+| GET
+| link:#wiki-get-attachment[Get wiki page attachments]
+
+| /api/v1/wiki/attachments/<wikiPageAttachmentId>
+| PUT
+| link:#wiki-edit-attachment[Modify wiki page attachments]
+
+| /api/v1/wiki/attachments/<wikiPageAttachmentId>
+| PATCH
+| link:#wiki-edit-attachment[Modify partially an wiki page attachments]
+
+| /api/v1/wiki/attachments/<wikiPageAttachmentId>
+| DELETE
+| link:#wiki-delete-attachment[Delete an wiki page attachments]
+|===

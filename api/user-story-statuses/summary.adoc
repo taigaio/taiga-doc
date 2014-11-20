@@ -1,0 +1,23 @@
+[[user-story-statuses-list]]
+=== List
+include::../user-story-statuses/list.adoc[]
+
+[[user-story-statuses-create]]
+=== Create
+include::../user-story-statuses/create.adoc[]
+
+[[user-story-statuses-get]]
+=== Get
+include::../user-story-statuses/get.adoc[]
+
+[[user-story-statuses-edit]]
+=== Edit
+include::../user-story-statuses/edit.adoc[]
+
+[[user-story-statuses-delete]]
+=== Delete
+include::../user-story-statuses/delete.adoc[]
+
+[[user-story-statuses-bulk-update-order]]
+=== Bulk update order
+include::../user-story-statuses/bulk-update-order.adoc[]

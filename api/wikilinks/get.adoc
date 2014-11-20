@@ -1,0 +1,11 @@
+To get a wiki link send a GET request specifying the wiki link id in the url
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/wiki-links/1
+----
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-wiki-link-detail[wiki link detail object]

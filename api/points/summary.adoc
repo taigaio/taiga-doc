@@ -1,0 +1,23 @@
+[[points-list]]
+=== List
+include::../points/list.adoc[]
+
+[[points-create]]
+=== Create
+include::../points/create.adoc[]
+
+[[points-get]]
+=== Get
+include::../points/get.adoc[]
+
+[[points-edit]]
+=== Edit
+include::../points/edit.adoc[]
+
+[[points-delete]]
+=== Delete
+include::../points/delete.adoc[]
+
+[[points-bulk-update-order]]
+=== Bulk update order
+include::../points/bulk-update-order.adoc[]

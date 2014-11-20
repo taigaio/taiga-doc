@@ -1,0 +1,19 @@
+[[wikilinks-list]]
+=== List
+include::list.adoc[]
+
+[[wikilinks-create]]
+=== Create
+include::create.adoc[]
+
+[[wikilinks-get]]
+=== Get
+include::get.adoc[]
+
+[[wikilinks-edit]]
+=== Edit
+include::edit.adoc[]
+
+[[wikilinks-delete]]
+=== Delete
+include::delete.adoc[]

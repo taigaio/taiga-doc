@@ -1,0 +1,39 @@
+[[wiki-list]]
+=== List
+include::list.adoc[]
+
+[[wiki-create]]
+=== Create
+include::create.adoc[]
+
+[[wiki-get]]
+=== Get
+include::get.adoc[]
+
+[[wiki-edit]]
+=== Edit
+include::edit.adoc[]
+
+[[wiki-delete]]
+=== Delete
+include::delete.adoc[]
+
+[[wiki-list-attachments]]
+=== List attachments
+include::list-attachments.adoc[]
+
+[[wiki-create-attachment]]
+=== Create attachment
+include::create-attachment.adoc[]
+
+[[wiki-get-attachment]]
+=== Get attachment
+include::get-attachment.adoc[]
+
+[[wiki-edit-attachment]]
+=== Edit attachment
+include::edit-attachment.adoc[]
+
+[[wiki-delete-attachment]]
+=== Delete attachment
+include::delete-attachment.adoc[]

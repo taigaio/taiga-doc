@@ -1,0 +1,27 @@
+To list user stories send a GET request with the following parameters:
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/userstories
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-userstory-detail[user story detail objects]
+
+The results can be filtered using the following parameters:
+
+- *project*: project id
+- *milestone*: milestone id
+- *milestone__isnull*: (true|false) if you are looking for user stories associated with a milestone or not
+- *status*: status id
+- *is_archived*: (true|false)
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/userstories?project=1
+----

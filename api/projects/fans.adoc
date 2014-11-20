@@ -1,0 +1,11 @@
+To get the list of fans from a project send a GET request specifying the project id in the url
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/projects/1/fans
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-project-voter-detail[project voter object]

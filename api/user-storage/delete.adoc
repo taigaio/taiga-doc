@@ -1,0 +1,10 @@
+To delete user storage data send a DELETE specifying the user storage key in the url
+
+[source,bash]
+----
+curl -X DELETE \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/user-storage/favorite-forest
+----
+
+When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

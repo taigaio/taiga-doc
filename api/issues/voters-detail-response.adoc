@@ -1,0 +1,15 @@
+[source,json]
+----
+[
+    {
+        "id": 1,
+        "username": "user-1",
+        "full_name": "John Doe"
+    },
+    {
+        "id": 2,
+        "username": "user-2",
+        "full_name": "User 2"
+    }
+]
+----

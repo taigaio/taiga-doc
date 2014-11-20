@@ -1,0 +1,43 @@
+[[tasks-list]]
+=== List
+include::../tasks/list.adoc[]
+
+[[tasks-create]]
+=== Create
+include::../tasks/create.adoc[]
+
+[[tasks-get]]
+=== Get
+include::../tasks/get.adoc[]
+
+[[tasks-edit]]
+=== Edit
+include::../tasks/edit.adoc[]
+
+[[tasks-delete]]
+=== Delete
+include::../tasks/delete.adoc[]
+
+[[tasks-bulk-create]]
+=== Bulk creation
+include::../tasks/bulk-create.adoc[]
+
+[[tasks-list-attachments]]
+=== List attachments
+include::../tasks/list-attachments.adoc[]
+
+[[tasks-create-attachment]]
+=== Create attachment
+include::../tasks/create-attachment.adoc[]
+
+[[tasks-get-attachment]]
+=== Get attachment
+include::../tasks/get-attachment.adoc[]
+
+[[tasks-edit-attachment]]
+=== Edit attachment
+include::../tasks/edit-attachment.adoc[]
+
+[[tasks-delete-attachment]]
+=== Delete attachment
+include::../tasks/delete-attachment.adoc[]

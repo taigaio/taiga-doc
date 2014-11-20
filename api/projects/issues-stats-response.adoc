@@ -1,0 +1,660 @@
+[source,json]
+----
+{
+    "closed_issues": 560,
+    "issues_per_assigned_to": {
+        "0": {
+            "color": "black",
+            "count": 185,
+            "id": 0,
+            "name": "Unassigned",
+            "username": "Unassigned"
+        },
+        "111": {
+            "color": "#6427c0",
+            "count": 2,
+            "id": 111,
+            "name": "Juan de la Cruz Garcia",
+            "username": "juan.delacruz"
+        },
+        "13": {
+            "color": "#CC0000",
+            "count": 100,
+            "id": 13,
+            "name": "Xavier Juli\u00e1n",
+            "username": "xavier.julian"
+        },
+        "2": {
+            "color": "#007000",
+            "count": 93,
+            "id": 2,
+            "name": "Jes\u00fas Espino",
+            "username": "jesus.espino"
+        },
+        "24": {
+            "color": "#d9ff2f",
+            "count": 3,
+            "id": 24,
+            "name": "Enrique Posner",
+            "username": "eposner"
+        },
+        "38": {
+            "color": "#FF9900",
+            "count": 8,
+            "id": 38,
+            "name": "Mario Garcia",
+            "username": "mario.garcia"
+        },
+        "5": {
+            "color": "#761CEC",
+            "count": 3,
+            "id": 5,
+            "name": "Pablo Ruiz M\u00fazquiz",
+            "username": "pablo.ruiz"
+        },
+        "6": {
+            "color": "#40826D",
+            "count": 85,
+            "id": 6,
+            "name": "Juanfran",
+            "username": "juanfran.alcantara"
+        },
+        "7": {
+            "color": "#FC8EAC",
+            "count": 76,
+            "id": 7,
+            "name": "Alejandro Alonso",
+            "username": "alejandro.alonso"
+        },
+        "8": {
+            "color": "#A5694F",
+            "count": 16,
+            "id": 8,
+            "name": "Andrey Antukh",
+            "username": "andrei.antoukh"
+        },
+        "9": {
+            "color": "#FFF8E7",
+            "count": 97,
+            "id": 9,
+            "name": "David Barrag\u00e1n Merino",
+            "username": "david.barragan"
+        }
+    },
+    "issues_per_owner": {
+        "11": {
+            "color": "#8f0030",
+            "count": 1,
+            "id": 11,
+            "name": "Anler Hern\u00e1ndez Peral",
+            "username": "anler.hernandez"
+        },
+        "111": {
+            "color": "#6427c0",
+            "count": 1,
+            "id": 111,
+            "name": "Juan de la Cruz Garcia",
+            "username": "juan.delacruz"
+        },
+        "13": {
+            "color": "#CC0000",
+            "count": 64,
+            "id": 13,
+            "name": "Xavier Juli\u00e1n",
+            "username": "xavier.julian"
+        },
+        "17": {
+            "color": "#FFFF00",
+            "count": 6,
+            "id": 17,
+            "name": "Alonso Torres",
+            "username": "alonso.torres"
+        },
+        "18": {
+            "color": "#C0FF33",
+            "count": 14,
+            "id": 18,
+            "name": "Miguel de la Cruz",
+            "username": "miguel.delacruz"
+        },
+        "19": {
+            "color": "#67CF00",
+            "count": 7,
+            "id": 19,
+            "name": "Antonio de la Torre",
+            "username": "antonio.delatorre"
+        },
+        "2": {
+            "color": "#007000",
+            "count": 50,
+            "id": 2,
+            "name": "Jes\u00fas Espino",
+            "username": "jesus.espino"
+        },
+        "24": {
+            "color": "#d9ff2f",
+            "count": 135,
+            "id": 24,
+            "name": "Enrique Posner",
+            "username": "eposner"
+        },
+        "3": {
+            "color": "#4B0082",
+            "count": 80,
+            "id": 3,
+            "name": "Iv\u00e1n L\u00f3pez",
+            "username": "ivan.lopez"
+        },
+        "38": {
+            "color": "#FF9900",
+            "count": 6,
+            "id": 38,
+            "name": "Mario Garcia",
+            "username": "mario.garcia"
+        },
+        "4": {
+            "color": "#708090",
+            "count": 13,
+            "id": 4,
+            "name": "Pablo Alba",
+            "username": "pablo.alba"
+        },
+        "5": {
+            "color": "#761CEC",
+            "count": 16,
+            "id": 5,
+            "name": "Pablo Ruiz M\u00fazquiz",
+            "username": "pablo.ruiz"
+        },
+        "6": {
+            "color": "#40826D",
+            "count": 20,
+            "id": 6,
+            "name": "Juanfran",
+            "username": "juanfran.alcantara"
+        },
+        "7": {
+            "color": "#FC8EAC",
+            "count": 106,
+            "id": 7,
+            "name": "Alejandro Alonso",
+            "username": "alejandro.alonso"
+        },
+        "8": {
+            "color": "#A5694F",
+            "count": 11,
+            "id": 8,
+            "name": "Andrey Antukh",
+            "username": "andrei.antoukh"
+        },
+        "9": {
+            "color": "#FFF8E7",
+            "count": 138,
+            "id": 9,
+            "name": "David Barrag\u00e1n Merino",
+            "username": "david.barragan"
+        }
+    },
+    "issues_per_priority": {
+        "1": {
+            "color": "#888a85",
+            "count": 50,
+            "id": 1,
+            "name": "Low"
+        },
+        "2": {
+            "color": "#4e9a06",
+            "count": 397,
+            "id": 2,
+            "name": "Normal"
+        },
+        "3": {
+            "color": "#a40000",
+            "count": 221,
+            "id": 3,
+            "name": "High"
+        }
+    },
+    "issues_per_severity": {
+        "1": {
+            "color": "#888a85",
+            "count": 9,
+            "id": 1,
+            "name": "Wishlist"
+        },
+        "2": {
+            "color": "#4e9a06",
+            "count": 21,
+            "id": 2,
+            "name": "Minor"
+        },
+        "3": {
+            "color": "#204a87",
+            "count": 464,
+            "id": 3,
+            "name": "Normal"
+        },
+        "4": {
+            "color": "#ce5c00",
+            "count": 118,
+            "id": 4,
+            "name": "Important"
+        },
+        "5": {
+            "color": "#a40000",
+            "count": 56,
+            "id": 5,
+            "name": "Critical"
+        }
+    },
+    "issues_per_status": {
+        "1": {
+            "color": "#8C2318",
+            "count": 90,
+            "id": 1,
+            "name": "New"
+        },
+        "2": {
+            "color": "#5E8C6A",
+            "count": 7,
+            "id": 2,
+            "name": "In progress"
+        },
+        "3": {
+            "color": "#88A65E",
+            "count": 370,
+            "id": 3,
+            "name": "Ready for test"
+        },
+        "4": {
+            "color": "#BFB35A",
+            "count": 89,
+            "id": 4,
+            "name": "Closed"
+        },
+        "5": {
+            "color": "#89BAB4",
+            "count": 2,
+            "id": 5,
+            "name": "Needs Info"
+        },
+        "6": {
+            "color": "#CC0000",
+            "count": 101,
+            "id": 6,
+            "name": "Rejected"
+        },
+        "7": {
+            "color": "#666666",
+            "count": 9,
+            "id": 7,
+            "name": "Postponed"
+        }
+    },
+    "issues_per_type": {
+        "1": {
+            "color": "#f57900",
+            "count": 501,
+            "id": 1,
+            "name": "Bug"
+        },
+        "6": {
+            "color": "#4e9a06",
+            "count": 167,
+            "id": 6,
+            "name": "Enhancement"
+        }
+    },
+    "last_four_weeks_days": {
+        "by_open_closed": {
+            "closed": [
+                8,
+                3,
+                2,
+                0,
+                0,
+                4,
+                5,
+                2,
+                3,
+                3,
+                0,
+                0,
+                2,
+                4,
+                4,
+                10,
+                6,
+                0,
+                0,
+                12,
+                0,
+                4,
+                5,
+                5,
+                0,
+                0,
+                0,
+                0
+            ],
+            "open": [
+                7,
+                3,
+                2,
+                0,
+                0,
+                4,
+                9,
+                8,
+                1,
+                1,
+                3,
+                0,
+                5,
+                4,
+                5,
+                17,
+                4,
+                6,
+                0,
+                9,
+                6,
+                10,
+                9,
+                10,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "by_priority": {
+            "1": {
+                "color": "#888a85",
+                "data": [
+                    18,
+                    17,
+                    17,
+                    17,
+                    17,
+                    17,
+                    17,
+                    17,
+                    17,
+                    17,
+                    17,
+                    17,
+                    17,
+                    17,
+                    18,
+                    18,
+                    19,
+                    18,
+                    18,
+                    18,
+                    18,
+                    19,
+                    22,
+                    22,
+                    22,
+                    22,
+                    22,
+                    22
+                ],
+                "id": 1,
+                "name": "Low"
+            },
+            "2": {
+                "color": "#4e9a06",
+                "data": [
+                    33,
+                    30,
+                    28,
+                    27,
+                    27,
+                    29,
+                    28,
+                    28,
+                    28,
+                    27,
+                    27,
+                    27,
+                    30,
+                    32,
+                    32,
+                    38,
+                    36,
+                    39,
+                    39,
+                    43,
+                    43,
+                    49,
+                    49,
+                    58,
+                    55,
+                    55,
+                    55,
+                    55
+                ],
+                "id": 2,
+                "name": "Normal"
+            },
+            "3": {
+                "color": "#a40000",
+                "data": [
+                    23,
+                    22,
+                    23,
+                    22,
+                    22,
+                    24,
+                    30,
+                    33,
+                    32,
+                    31,
+                    31,
+                    31,
+                    33,
+                    33,
+                    33,
+                    40,
+                    35,
+                    33,
+                    33,
+                    38,
+                    32,
+                    35,
+                    37,
+                    33,
+                    31,
+                    31,
+                    31,
+                    31
+                ],
+                "id": 3,
+                "name": "High"
+            }
+        },
+        "by_severity": {
+            "1": {
+                "color": "#888a85",
+                "data": [
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8,
+                    8
+                ],
+                "id": 1,
+                "name": "Wishlist"
+            },
+            "2": {
+                "color": "#4e9a06",
+                "data": [
+                    6,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    2,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    3,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "id": 2,
+                "name": "Minor"
+            },
+            "3": {
+                "color": "#204a87",
+                "data": [
+                    52,
+                    51,
+                    48,
+                    46,
+                    46,
+                    48,
+                    48,
+                    51,
+                    51,
+                    52,
+                    52,
+                    52,
+                    55,
+                    56,
+                    54,
+                    61,
+                    59,
+                    63,
+                    63,
+                    66,
+                    63,
+                    70,
+                    74,
+                    82,
+                    79,
+                    79,
+                    79,
+                    79
+                ],
+                "id": 3,
+                "name": "Normal"
+            },
+            "4": {
+                "color": "#ce5c00",
+                "data": [
+                    7,
+                    7,
+                    8,
+                    8,
+                    8,
+                    10,
+                    13,
+                    14,
+                    13,
+                    11,
+                    10,
+                    10,
+                    12,
+                    12,
+                    13,
+                    16,
+                    12,
+                    10,
+                    10,
+                    11,
+                    14,
+                    16,
+                    16,
+                    15,
+                    14,
+                    14,
+                    14,
+                    14
+                ],
+                "id": 4,
+                "name": "Important"
+            },
+            "5": {
+                "color": "#a40000",
+                "data": [
+                    1,
+                    0,
+                    1,
+                    1,
+                    1,
+                    1,
+                    3,
+                    3,
+                    3,
+                    2,
+                    3,
+                    3,
+                    3,
+                    4,
+                    5,
+                    8,
+                    8,
+                    6,
+                    6,
+                    11,
+                    5,
+                    5,
+                    6,
+                    4,
+                    3,
+                    3,
+                    3,
+                    3
+                ],
+                "id": 5,
+                "name": "Critical"
+            }
+        },
+        "by_status": {}
+    },
+    "opened_issues": 108,
+    "total_issues": 668
+}
+----

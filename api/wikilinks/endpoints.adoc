@@ -1,0 +1,30 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/wiki-links
+| GET
+| link:#wikilinks-list[List wiki links]
+
+| /api/v1/wiki-links
+| POST
+| link:#wikilinks-create[Create wiki link]
+
+| /api/v1/wiki-links/<wikiId>
+| GET
+| link:#wikilinks-get[Get wiki link]
+
+| /api/v1/wiki-links/<wikiLinkId>
+| PUT
+| link:#wikilinks-edit[Modify wiki link]
+
+| /api/v1/wiki-links/<wikiLinkId>
+| PATCH
+| link:#wikilinks-edit[Modify partially an wiki link]
+
+| /api/v1/wiki-links/<wikiLinkId>
+| DELETE
+| link:#wikilinks-delete[Delete an wiki link]
+|===

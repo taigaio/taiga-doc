@@ -1,0 +1,58 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/tasks
+| GET
+| link:#tasks-list[List tasks]
+
+| /api/v1/tasks
+| POST
+| link:#tasks-create[Create task]
+
+| /api/v1/tasks/<taskId>
+| GET
+| link:#tasks-get[Get task]
+
+| /api/v1/tasks/<taskId>
+| PUT
+| link:#tasks-edit[Modify task]
+
+| /api/v1/tasks/<taskId>
+| PATCH
+| link:#tasks-edit[Modify partially a task]
+
+| /api/v1/tasks/<taskId>
+| DELETE
+| link:#tasks-delete[Delete a task]
+
+| /api/v1/tasks/bulk_create
+| POST
+| link:#tasks-bulk-create[Create tasks on bulk mode]
+
+| /api/v1/tasks/attachments
+| GET
+| link:#tasks-list-attachments[List task attachments]
+
+| /api/v1/tasks/attachments
+| POST
+| link:#tasks-create-attachment[Create task attachments]
+
+| /api/v1/tasks/attachments/<taskAttachmentId>
+| GET
+| link:#tasks-get-attachment[Get task attachments]
+
+| /api/v1/tasks/attachments/<taskAttachmentId>
+| PUT
+| link:#tasks-edit-attachment[Modify task attachments]
+
+| /api/v1/tasks/attachments/<taskAttachmentId>
+| PATCH
+| link:#tasks-edit-attachment[Modify partially a task attachments]
+
+| /api/v1/tasks/attachments/<taskAttachmentId>
+| DELETE
+| link:#tasks-delete-attachment[Delete a task attachments]
+|===

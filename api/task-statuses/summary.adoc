@@ -1,0 +1,23 @@
+[[task-statuses-list]]
+=== List
+include::../task-statuses/list.adoc[]
+
+[[task-statuses-create]]
+=== Create
+include::../task-statuses/create.adoc[]
+
+[[task-statuses-get]]
+=== Get
+include::../task-statuses/get.adoc[]
+
+[[task-statuses-edit]]
+=== Edit
+include::../task-statuses/edit.adoc[]
+
+[[task-statuses-delete]]
+=== Delete
+include::../task-statuses/delete.adoc[]
+
+[[task-statuses-bulk-update-order]]
+=== Bulk update order
+include::../task-statuses/bulk-update-order.adoc[]

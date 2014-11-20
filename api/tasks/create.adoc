@@ -1,0 +1,62 @@
+To create tasks send a POST request with the following data:
+
+- *assigned_to*: user id
+- *blocked_note*: reason why the task is blocked
+- *description*: string
+- *is_blocked*: boolean
+- *is_closed*: boolean
+- *milestone*: milestone id
+- *project* (required): project id
+- *user_story*: user story id
+- *status*: status id
+- *subject* (required)
+- *tags*: array of strings
+- *us_order*: order in the user story,
+- *taskboard_order*: order in the taskboard,
+- *is_iocaine*: boolean,
+- *external_reference*: tuple of ("service", serviceId),
+- *watchers*: array of watcher id's
+
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "assigned_to": null,
+          "blocked_note": "blocking reason",
+          "description": "Implement API CALL",
+          "is_blocked": false,
+          "is_closed": true,
+          "milestone": null,
+          "project": 3,
+          "user_story": 17,
+          "status": 13,
+          "subject": "Customer personal data",
+          "tags": [
+              "service catalog",
+              "customer"
+          ],
+          "us_order": 1,
+          "taskboard_order": 1,
+          "is_iocaine": false,
+          "external_reference": null,
+          "watchers": []
+      }' \
+  https://api.taiga.io/api/v1/tasks
+----
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "project": 3,
+          "subject": "Customer personal data"
+      }' \
+  https://api.taiga.io/api/v1/tasks
+----
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-task-detail[task detail object]

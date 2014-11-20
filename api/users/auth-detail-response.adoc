@@ -1,0 +1,19 @@
+[source,json]
+----
+{
+    "auth_token": "eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjo3fq:1XmPud:LKXVD9Z0rmHJjiyy0m4YaaHlQS1",
+    "bio": "",
+    "is_active": true,
+    "email": "beta.testing@taiga.io",
+    "github_id": null,
+    "color": "#FC8EAC",
+    "default_language": "",
+    "full_name_display": "Beta testing",
+    "default_timezone": "",
+    "id": 7,
+    "full_name": "Beta testing",
+    "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+    "username": "beta.tester",
+    "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80"
+}
+----

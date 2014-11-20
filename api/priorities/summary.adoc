@@ -1,0 +1,23 @@
+[[priorities-list]]
+=== List
+include::../priorities/list.adoc[]
+
+[[priorities-create]]
+=== Create
+include::../priorities/create.adoc[]
+
+[[priorities-get]]
+=== Get
+include::../priorities/get.adoc[]
+
+[[priorities-edit]]
+=== Edit
+include::../priorities/edit.adoc[]
+
+[[priorities-delete]]
+=== Delete
+include::../priorities/delete.adoc[]
+
+[[priorities-bulk-update-order]]
+=== Bulk update order
+include::../priorities/bulk-update-order.adoc[]

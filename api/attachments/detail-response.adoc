@@ -1,0 +1,18 @@
+[source, json]
+----
+{
+    "id": 415,
+    "project": 3,
+    "owner": 2,
+    "name": "img_20141102_214512.jpg",
+    "attached_file": "attachments/8/1/6/e/68a8e4edb4ba422d201d65406b161be03e052d9b63e265aaa826179497c8/img_20141102_214512.jpg",
+    "size": 173780,
+    "url": "https://media.taiga.io/attachments/8/1/6/e/68a8e4edb4ba422d201d65406b161be03e052d9b63e265aaa826179497c8/img_20141102_214512.jpg",
+    "description": "asdasd",
+    "is_deprecated": false,
+    "created_date": "2014-11-11T14:22:29+0000",
+    "modified_date": "2014-11-11T14:22:43+0000",
+    "object_id": 81,
+    "order": 0
+}
+----

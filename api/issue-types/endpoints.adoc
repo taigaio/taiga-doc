@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/issue-types
+| GET
+| link:#issue-types-list[List issue types]
+
+| /api/v1/issue-types
+| POST
+| link:#issue-types-create[Create issue type]
+
+| /api/v1/issue-types/<issueTypeId>
+| GET
+| link:#issue-types-get[Get issue type]
+
+| /api/v1/issue-types/<issueTypeId>
+| PUT
+| link:#issue-types-edit[Modify issue type]
+
+| /api/v1/issue-types/<issueTypeId>
+| PATCH
+| link:#issue-types-edit[Modify partially a issue type]
+
+| /api/v1/issue-types/<issueTypeId>
+| DELETE
+| link:#issue-types-delete[Delete a issue type]
+
+| /api/v1/issue-types/bulk_update_order
+| POST
+| link:#issue-types-bulk-update-order[Update issue types order in bulk mode]
+|===

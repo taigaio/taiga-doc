@@ -1,0 +1,27 @@
+[[resolver-projects]]
+===  Projects
+include::../resolver/projects.adoc[]
+
+[[resolver-user-stories]]
+=== User stories
+include::../resolver/user-stories.adoc[]
+
+[[resolver-issues]]
+=== Issues
+include::../resolver/issues.adoc[]
+
+[[resolver-tasks]]
+=== Tasks
+include::../resolver/tasks.adoc[]
+
+[[resolver-milestones]]
+=== Milestones
+include::../resolver/milestones.adoc[]
+
+[[resolver-wiki-pages]]
+=== Wiki pages
+include::../resolver/wiki-pages.adoc[]
+
+[[resolver-multiple-resolution]]
+=== Multiple resolution
+include::../resolver/multiple.adoc[]

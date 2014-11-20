@@ -1,0 +1,10 @@
+To add a star to a project send a POST request specifying the project id in the url
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/projects/1/star
+----
+
+The HTTP response is a 200 OK with an empty body response

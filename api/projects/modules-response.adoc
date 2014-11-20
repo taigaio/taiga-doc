@@ -1,0 +1,9 @@
+[source,json]
+----
+{
+    "github": {
+        "secret": "b7a95570051a49ad8fb9482b5ef40262",
+        "webhooks_url": "https://api.taiga.io/api/v1/github-hook?project=3"
+    }
+}
+----

@@ -1,0 +1,58 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/users
+| GET
+| link:#users-list[List users]
+
+| /api/v1/users/<userId>
+| GET
+| link:#users-get[Get user]
+
+| /api/v1/users/<userId>
+| PUT
+| link:#users-edit[Modify user]
+
+| /api/v1/users/<userId>
+| PATCH
+| link:#users-edit[Modify partially a user]
+
+| /api/v1/users/<userId>/starred
+| GET
+| link:#users-starred[Get user starred projects]
+
+| /api/v1/users/<userId>
+| DELETE
+| link:#users-delete[Delete a user]
+
+| /api/v1/users/cancel
+| POST
+| link:#users-cancel[Cancel user]
+
+| /api/v1/users/change_avatar
+| POST
+| link:#users-change-avatar[Change avatar]
+
+| /api/v1/users/remove_avatar
+| POST
+| link:#users-remove-avatar[Remove avatar]
+
+| /api/v1/users/change_email
+| POST
+| link:#users-change-email[Change email]
+
+| /api/v1/users/change_password
+| POST
+| link:#users-change-password[Change password]
+
+| /api/v1/users/password_recovery
+| POST
+| link:#users-password-recovery[Password recovery]
+
+| /api/v1/users/change_password_from_recovery
+| POST
+| link:#users-change-password-from-recovery[Change password from recovery]
+|===

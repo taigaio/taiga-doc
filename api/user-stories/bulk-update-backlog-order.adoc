@@ -1,0 +1,28 @@
+To update the backlog order of multiple user stories at the same time send a POST request with the following data:
+
+- *project_id* (required)
+- *bulk_stories*: list where each element is a json object with two attributes, the user story id and the new order
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "project_id": 3,
+          "bulk_stories": [
+              {
+                  "us_id": 123,
+                  "order": 2
+              },
+              {
+                  "us_id": 456,
+                  "order": 2
+              }
+          ]
+      }' \
+  https://api.taiga.io/api/v1/userstories/bulk_update_backlog_order
+----
+
+
+When the update is successful, the HTTP response is a 200 OK and the response body is a JSON list of link:#object-userstory-detail[user story detail object]

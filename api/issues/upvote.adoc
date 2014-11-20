@@ -1,0 +1,10 @@
+To vote issues send a POST specifying the issue id in the url
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/issues/1/upvote
+----
+
+When vote succeeded, the HTTP response is a 200 OK with an empty body response

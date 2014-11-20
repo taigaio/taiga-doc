@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/userstory-statuses
+| GET
+| link:#user-story-statuses-list[List user story status]
+
+| /api/v1/userstory-statuses
+| POST
+| link:#user-story-statuses-create[Create user story status]
+
+| /api/v1/userstory-statuses/<userStoryStatusId>
+| GET
+| link:#user-story-statuses-get[Get user story status]
+
+| /api/v1/userstory-statuses/<userStoryStatusId>
+| PUT
+| link:#user-story-statuses-edit[Modify user story status]
+
+| /api/v1/userstory-statuses/<userStoryStatusId>
+| PATCH
+| link:#user-story-statuses-edit[Modify partially a user story status]
+
+| /api/v1/userstory-statuses/<userStoryStatusId>
+| DELETE
+| link:#user-story-statuses-delete[Delete a user story status]
+
+| /api/v1/userstory-statuses/bulk_update_order
+| POST
+| link:#user-story-statuses-bulk-update-order[Update user story statuses order in bulk mode]
+|===

@@ -1,0 +1,19 @@
+[[user-storage-list]]
+=== List
+include::list.adoc[]
+
+[[user-storage-create]]
+=== Create
+include::create.adoc[]
+
+[[user-storage-get]]
+=== Get
+include::get.adoc[]
+
+[[user-storage-edit]]
+=== Edit
+include::edit.adoc[]
+
+[[user-storage-delete]]
+=== Delete
+include::delete.adoc[]

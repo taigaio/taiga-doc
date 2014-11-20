@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/severities
+| GET
+| link:#severities-list[List severities]
+
+| /api/v1/severities
+| POST
+| link:#severities-create[Create severity]
+
+| /api/v1/severities/<severityId>
+| GET
+| link:#severities-get[Get severity]
+
+| /api/v1/severities/<severityId>
+| PUT
+| link:#severities-edit[Modify severity]
+
+| /api/v1/severities/<severityId>
+| PATCH
+| link:#severities-edit[Modify partially a severity]
+
+| /api/v1/severities/<severityId>
+| DELETE
+| link:#severities-delete[Delete a severity]
+
+| /api/v1/severities/bulk_update_order
+| POST
+| link:#severities-bulk-update-order[Update severities order in bulk mode]
+|===

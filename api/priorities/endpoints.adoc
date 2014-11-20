@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/priorities
+| GET
+| link:#priorities-list[List priorities]
+
+| /api/v1/priorities
+| POST
+| link:#priorities-create[Create priority]
+
+| /api/v1/priorities/<priorityId>
+| GET
+| link:#priorities-get[Get priority]
+
+| /api/v1/priorities/<priorityId>
+| PUT
+| link:#priorities-edit[Modify priority]
+
+| /api/v1/priorities/<priorityId>
+| PATCH
+| link:#priorities-edit[Modify partially a priority]
+
+| /api/v1/priorities/<priorityId>
+| DELETE
+| link:#priorities-delete[Delete a priority]
+
+| /api/v1/priorities/bulk_update_order
+| POST
+| link:#priorities-bulk-update-order[Update priorities order in bulk mode]
+|===

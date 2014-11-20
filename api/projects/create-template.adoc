@@ -1,0 +1,19 @@
+To create a template from a selected project send a POST request specifying the project id in the url with the following parameters:
+
+- *name* (required)
+- *description* (required)
+
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "template_name": "Beta template",
+          "template_description": "Beta template description"
+      }' \
+  https://api.taiga.io/api/v1/projects/1/create_template
+----
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-project-template-detail[project template detail object]

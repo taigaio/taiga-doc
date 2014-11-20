@@ -1,0 +1,12 @@
+To edit issue attachments send a PUT or a PATCH specifying the issue attachment id in the url.
+In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
+
+[source,bash]
+----
+curl -X PATCH \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -F "description=patching description" \
+  https://api.taiga.io/api/v1/issues/attachments/417
+----
+
+When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-attachment-detail[attachment detail object]

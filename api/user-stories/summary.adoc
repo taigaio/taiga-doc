@@ -1,0 +1,55 @@
+[[user-stories-list]]
+=== List
+include::../user-stories/list.adoc[]
+
+[[user-stories-create]]
+=== Create
+include::../user-stories/create.adoc[]
+
+[[user-stories-get]]
+=== Get
+include::../user-stories/get.adoc[]
+
+[[user-stories-edit]]
+=== Edit
+include::../user-stories/edit.adoc[]
+
+[[user-stories-delete]]
+=== Delete
+include::../user-stories/delete.adoc[]
+
+[[user-stories-bulk-create]]
+=== Bulk creation
+include::../user-stories/bulk-create.adoc[]
+
+[[user-stories-bulk-update-backlog-order]]
+=== Bulk update backlog order
+include::../user-stories/bulk-update-backlog-order.adoc[]
+
+[[user-stories-bulk-update-kanban-order]]
+=== Bulk update kanban order
+include::../user-stories/bulk-update-kanban-order.adoc[]
+
+[[user-stories-bulk-update-sprint-order]]
+=== Bulk update sprint order
+include::../user-stories/bulk-update-sprint-order.adoc[]
+
+[[user-stories-list-attachments]]
+=== List attachments
+include::../user-stories/list-attachments.adoc[]
+
+[[user-stories-create-attachment]]
+=== Create attachment
+include::../user-stories/create-attachment.adoc[]
+
+[[user-stories-get-attachment]]
+=== Get attachment
+include::../user-stories/get-attachment.adoc[]
+
+[[user-stories-edit-attachment]]
+=== Edit attachment
+include::../user-stories/edit-attachment.adoc[]
+
+[[user-stories-delete-attachment]]
+=== Delete attachment
+include::../user-stories/delete-attachment.adoc[]

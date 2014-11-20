@@ -1,0 +1,11 @@
+To get a wiki page send a GET request specifying the wiki page id in the url
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/wiki/1
+----
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-wiki-detail[wiki page detail object]

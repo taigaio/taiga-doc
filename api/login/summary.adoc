@@ -1,0 +1,15 @@
+[[auth-normal-login]]
+=== Normal login
+include::../login/normal-login.adoc[]
+
+[[auth-github-login]]
+=== Github login
+include::../login/github-login.adoc[]
+
+[[auth-public-registry]]
+=== Public registry
+include::../login/public-registry.adoc[]
+
+[[auth-private-registry]]
+=== Private registry
+include::../login/private-registry.adoc[]

@@ -1,0 +1,26 @@
+To edit projects send a PUT or a PATCH specifying the project id in the url. In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
+
+[source,bash]
+----
+curl -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "name": "Beta project put",
+          "description": "Beta description"
+      }' \
+  https://api.taiga.io/api/v1/projects/1
+----
+
+[source,bash]
+----
+curl -X PATCH \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "name": "Beta project patch"
+      }' \
+  https://api.taiga.io/api/v1/projects/1
+----
+
+When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-project-detail[project detail object]

@@ -1,0 +1,31 @@
+[[memberships-list]]
+=== List
+include::list.adoc[]
+
+[[memberships-create]]
+=== Create
+include::create.adoc[]
+
+[[memberships-bulk-create]]
+=== Bulk creation
+include::bulk-create.adoc[]
+
+[[memberships-get]]
+=== Get
+include::get.adoc[]
+
+[[memberships-edit]]
+=== Edit
+include::edit.adoc[]
+
+[[memberships-delete]]
+=== Delete
+include::delete.adoc[]
+
+[[memberships-resend-invitation]]
+=== Resend invitation
+include::resend-invitation.adoc[]
+
+[[memberships-invitations]]
+=== Get Invitation (by token)
+include::invitations.adoc[]

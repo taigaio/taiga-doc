@@ -1,0 +1,11 @@
+[[history-get]]
+=== Get user story, task, issue or wiki page history
+include::get-history.adoc[]
+
+[[history-delete-comment]]
+=== Delete comment
+include::delete-comment.adoc[]
+
+[[history-undelete-comment]]
+=== Undelete comment
+include::undelete-comment.adoc[]

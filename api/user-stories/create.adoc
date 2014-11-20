@@ -1,0 +1,71 @@
+To create user stories send a POST request with the following data:
+
+- *assigned_to*: user id
+- *backlog_order*: order in the backlog
+- *blocked_note*: reason why the user story is blocked
+- *client_requirement*: boolean
+- *description*: string
+- *is_archived*: boolean
+- *is_blocked*: boolean
+- *is_closed*: boolean
+- *kanban_order*: order in the kanban
+- *milestone*: milestone id
+- *points*: dictionary of points
+- *project* (required): project id
+- *sprint_order*: order in the milestone
+- *status*: status id
+- *subject* (required)
+- *tags*: array of strings
+- *team_requirement*: boolean
+- *watchers*: array of watcher id's
+
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "assigned_to": null,
+          "backlog_order": 2,
+          "blocked_note": "blocking reason",
+          "client_requirement": false,
+          "description": "Implement API CALL",
+          "is_archived": false,
+          "is_blocked": false,
+          "is_closed": true,
+          "kanban_order": 37,
+          "milestone": null,
+          "points": {
+              "129": 361,
+              "130": 361,
+              "131": 361,
+              "132": 364
+          },
+          "project": 3,
+          "sprint_order": 2,
+          "status": 13,
+          "subject": "Customer personal data",
+          "tags": [
+              "service catalog",
+              "customer"
+          ],
+          "team_requirement": false,
+          "watchers": []
+      }' \
+  https://api.taiga.io/api/v1/userstories
+----
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "project": 3,
+          "subject": "Customer personal data"
+      }' \
+  https://api.taiga.io/api/v1/userstories
+----
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-userstory-detail[user story detail object]

@@ -1,0 +1,10 @@
+To undelete history comment send a POST specifying the history entry id in the url
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/history/userstory/1/undelete_comment?id=10
+----
+
+When deleted succesfully, the HTTP response is a 204 NO CONTENT with an empty body response

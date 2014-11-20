@@ -1,0 +1,39 @@
+To create user story statuses send a POST request with the following data:
+
+- *color*: in hexadecimal
+- *is_closed*: (true|false)
+- *name* (required)
+- *order*: integer
+- *project*: (required): project id
+- *wip_limit*: integer representing the max number of user stories in this status
+
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+        "color": "#AAAAAA",
+        "is_closed": true,
+        "name": "New status",
+        "order": 8,
+        "project": 3,
+        "wip_limit": 6
+    }' \
+  https://api.taiga.io/api/v1/userstory-statuses
+----
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "project": 3,
+          "name": "New status name"
+      }' \
+  https://api.taiga.io/api/v1/userstory-statuses
+----
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-userstory-status-detail[user story status detail object]

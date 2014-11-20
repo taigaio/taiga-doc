@@ -1,0 +1,23 @@
+[[milestones-list]]
+=== List
+include::list.adoc[]
+
+[[milestones-create]]
+=== Create
+include::create.adoc[]
+
+[[milestones-get]]
+=== Get
+include::get.adoc[]
+
+[[milestones-edit]]
+=== Edit
+include::edit.adoc[]
+
+[[milestones-delete]]
+=== Delete
+include::delete.adoc[]
+
+[[milestones-stats]]
+=== Stats
+include::stats.adoc[]

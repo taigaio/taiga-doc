@@ -1,0 +1,30 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/user-storage
+| GET
+| link:#user-storage-list[List user storage data]
+
+| /api/v1/user-storage
+| POST
+| link:#user-storage-create[Create user storage data]
+
+| /api/v1/user-storage/<key>
+| GET
+| link:#user-storage-get[Get user storage data]
+
+| /api/v1/user-storage/<key>
+| PUT
+| link:#user-storage-edit[Modify user storage data]
+
+| /api/v1/user-storage/<key>
+| PATCH
+| link:#user-storage-edit[Modify partially an user storage data]
+
+| /api/v1/user-storage/<key>
+| DELETE
+| link:#user-storage-delete[Delete user storage data]
+|===

@@ -1,0 +1,70 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/userstories
+| GET
+| link:#user-stories-list[List user stories]
+
+| /api/v1/userstories
+| POST
+| link:#user-stories-create[Create user story]
+
+| /api/v1/userstories/<userStoryId>
+| GET
+| link:#user-stories-get[Get user story]
+
+| /api/v1/userstories/<userStoryId>
+| PUT
+| link:#user-stories-edit[Modify user story]
+
+| /api/v1/userstories/<userStoryId>
+| PATCH
+| link:#user-stories-edit[Modify partially a user story]
+
+| /api/v1/userstories/<userStoryId>
+| DELETE
+| link:#user-stories-delete[Delete a user story]
+
+| /api/v1/userstories/bulk_create
+| POST
+| link:#user-stories-bulk-create[Create user stories un bulk mode]
+
+| /api/v1/userstories/bulk_update_backlog_order
+| POST
+| link:#user-stories-bulk-update-backlog-order[Update user stories order for backlog in bulk mode]
+
+| /api/v1/userstories/bulk_update_kanban_order
+| POST
+| link:#user-stories-bulk-update-kanban-order[Update user stories order for kanban in bulk mode]
+
+| /api/v1/userstories/bulk_update_sprint_order
+| POST
+| link:#user-stories-bulk-udate-sprint-order[Update user stories order for sprint in bulk mode]
+
+| /api/v1/userstories/attachments
+| GET
+| link:#user-stories-list-attachments[List user story attachments]
+
+| /api/v1/userstories/attachments
+| POST
+| link:#user-stories-create-attachment[Create user story attachments]
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| GET
+| link:#user-stories-get-attachment[Get user story attachments]
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| PUT
+| link:#user-stories-edit-attachment[Modify user story attachments]
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| PATCH
+| link:#user-stories-edit-attachment[Modify partially a user story attachments]
+
+| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| DELETE
+| link:#user-stories-delete-attachment[Delete a user story attachments]
+|===

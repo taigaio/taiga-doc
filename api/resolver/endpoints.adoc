@@ -1,0 +1,10 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/resolver
+| GET
+| link:#resolver[Resolve references and slugs]
+|===

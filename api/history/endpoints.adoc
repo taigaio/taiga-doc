@@ -1,0 +1,54 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/history/userstory/<usId>
+| GET
+| link:#history-get[Get user story history]
+
+| /api/v1/history/userstory/<usId>/delete_comment?id=<commentId>
+| POST
+| link:#history-delete-comment[Delete user story comment]
+
+| /api/v1/history/userstory/<usId>/undelete_comment?id=<commentId>
+| POST
+| link:#history-undelete-comment[Undelete user story comment]
+
+| /api/v1/history/issue/<issueId>
+| GET
+| link:#history-get[Get issue history]
+
+| /api/v1/history/issue/<usId>/delete_comment?id=<commentId>
+| POST
+| link:#history-delete-comment[Delete issue comment]
+
+| /api/v1/history/issue/<usId>/undelete_comment?id=<commentId>
+| POST
+| link:#history-undelete-comment[Undelete issue comment]
+
+| /api/v1/history/task/<taskId>
+| GET
+| link:#history-get[Get task history]
+
+| /api/v1/history/task/<usId>/delete_comment?id=<commentId>
+| POST
+| link:#history-delete-comment[Delete task comment]
+
+| /api/v1/history/task/<usId>/undelete_comment?id=<commentId>
+| POST
+| link:#history-undelete-comment[Undelete task comment]
+
+| /api/v1/history/wiki/<wikiId>
+| GET
+| link:#history-get[Get wiki history]
+
+| /api/v1/history/wiki/<usId>/delete_comment?id=<commentId>
+| POST
+| link:#history-delete-comment[Delete wiki comment]
+
+| /api/v1/history/wiki/<usId>/undelete_comment?id=<commentId>
+| POST
+| link:#history-undelete-comment[Undelete wiki comment]
+|===

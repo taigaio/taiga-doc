@@ -1,0 +1,51 @@
+[[issues-list]]
+=== List
+include::../issues/list.adoc[]
+
+[[issues-create]]
+=== Create
+include::../issues/create.adoc[]
+
+[[issues-get]]
+=== Get
+include::../issues/get.adoc[]
+
+[[issues-edit]]
+=== Edit
+include::../issues/edit.adoc[]
+
+[[issues-delete]]
+=== Delete
+include::../issues/delete.adoc[]
+
+[[issues-upvote]]
+=== Vote to an issue
+include::../issues/upvote.adoc[]
+
+[[issues-downvote]]
+=== Remove vote to an issue
+include::../issues/downvote.adoc[]
+
+[[issues-voters]]
+=== Get issue voters list
+include::../issues/voters.adoc[]
+
+[[issues-list-attachments]]
+=== List attachments
+include::../issues/list-attachments.adoc[]
+
+[[issues-create-attachment]]
+=== Create attachment
+include::../issues/create-attachment.adoc[]
+
+[[issues-get-attachment]]
+=== Get attachment
+include::../issues/get-attachment.adoc[]
+
+[[issues-edit-attachment]]
+=== Edit attachment
+include::../issues/edit-attachment.adoc[]
+
+[[issues-delete-attachment]]
+=== Delete attachment
+include::../issues/delete-attachment.adoc[]

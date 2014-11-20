@@ -1,0 +1,23 @@
+[[severities-list]]
+=== List
+include::../severities/list.adoc[]
+
+[[severities-create]]
+=== Create
+include::../severities/create.adoc[]
+
+[[severities-get]]
+=== Get
+include::../severities/get.adoc[]
+
+[[severities-edit]]
+=== Edit
+include::../severities/edit.adoc[]
+
+[[severities-delete]]
+=== Delete
+include::../severities/delete.adoc[]
+
+[[severities-bulk-update-order]]
+=== Bulk update order
+include::../severities/bulk-update-order.adoc[]

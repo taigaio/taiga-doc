@@ -1,0 +1,11 @@
+To resend an invitation send a POST request specifying the membership id in the url
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/memberships/1/resend_invitation
+----
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-membership-detail[membership detail object]

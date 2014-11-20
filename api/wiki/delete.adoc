@@ -1,0 +1,10 @@
+To delete wiki page send a DELETE specifying the wiki page id in the url
+
+[source,bash]
+----
+curl -X DELETE \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/wiki/1
+----
+
+When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

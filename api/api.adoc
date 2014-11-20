@@ -1,0 +1,320 @@
+= Taiga REST API
+:toc: left
+:numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
+
+== General notes
+include::general-notes.adoc[]
+
+
+== Endpoints Summary
+
+=== Auth
+include::login/endpoints.adoc[]
+
+=== Resolver
+include::resolver/endpoints.adoc[]
+
+=== Searches
+include::searches/endpoints.adoc[]
+
+=== User storage
+include::user-storage/endpoints.adoc[]
+
+=== Project templates
+include::project-templates/endpoints.adoc[]
+
+=== Projects
+include::projects/endpoints.adoc[]
+
+=== Memberships/Invitations
+include::memberships/endpoints.adoc[]
+
+=== Milestones
+include::milestones/endpoints.adoc[]
+
+=== User stories
+include::user-stories/endpoints.adoc[]
+
+=== User story status
+include::user-story-statuses/endpoints.adoc[]
+
+=== Points
+include::points/endpoints.adoc[]
+
+=== Tasks
+include::tasks/endpoints.adoc[]
+
+=== Task status
+include::task-statuses/endpoints.adoc[]
+
+=== Issues
+include::issues/endpoints.adoc[]
+
+=== Issue status
+include::issue-statuses/endpoints.adoc[]
+
+=== Issue types
+include::issue-types/endpoints.adoc[]
+
+=== Priorities
+include::priorities/endpoints.adoc[]
+
+=== Severities
+include::severities/endpoints.adoc[]
+
+=== Wiki pages
+include::wiki/endpoints.adoc[]
+
+=== Wiki links
+include::wikilinks/endpoints.adoc[]
+
+=== History
+include::history/endpoints.adoc[]
+
+=== Users
+include::users/endpoints.adoc[]
+
+=== Notify policies
+include::notify-policies/endpoints.adoc[]
+
+=== Feedback
+include::feedback/endpoints.adoc[]
+
+
+[[auth]]
+== Auth
+include::login/summary.adoc[]
+
+[[resolver]]
+== Resolver
+include::resolver/summary.adoc[]
+
+[[searches]]
+== Searches
+include::searches/summary.adoc[]
+
+[[user-storage]]
+== User storage
+include::user-storage/summary.adoc[]
+
+[[project-templates]]
+== Project templates
+include::project-templates/summary.adoc[]
+
+[[projects]]
+== Projects
+include::projects/summary.adoc[]
+
+[[memberships]]
+== Memberships/Invitations
+include::memberships/summary.adoc[]
+
+[[milestones]]
+== Milestones
+include::milestones/summary.adoc[]
+
+[[user-stories]]
+== User stories
+include::user-stories/summary.adoc[]
+
+[[user-story-statuses]]
+== User story status
+include::user-story-statuses/summary.adoc[]
+
+[[points]]
+== Points
+include::points/summary.adoc[]
+
+[[tasks]]
+== Tasks
+include::tasks/summary.adoc[]
+
+[[task-statuses]]
+== Task status
+include::task-statuses/summary.adoc[]
+
+[[issues]]
+== Issues
+include::issues/summary.adoc[]
+
+[[issue-statuses]]
+== Issue status
+include::issue-statuses/summary.adoc[]
+
+[[issue-types]]
+== Issue types
+include::issue-types/summary.adoc[]
+
+[[priorities]]
+== Prioritues
+include::priorities/summary.adoc[]
+
+[[severities]]
+== Severities
+include::severities/summary.adoc[]
+
+[[wiki]]
+== Wiki pages
+include::wiki/summary.adoc[]
+
+[[wikilinks]]
+== Wiki links
+include::wikilinks/summary.adoc[]
+
+[[history]]
+== History
+include::history/summary.adoc[]
+
+[[users]]
+== Users
+include::users/summary.adoc[]
+
+[[notify-policies]]
+== Notify policies
+include::notify-policies/summary.adoc[]
+
+[[feedback]]
+== Feedback
+include::feedback/summary.adoc[]
+
+
+
+== Objects Summary
+
+[[object-attachment-detail]]
+===  Attachment
+include::attachments/detail-response.adoc[]
+
+[[object-user-detail]]
+===  User detail
+include::users/detail-response.adoc[]
+
+[[object-auth-user-detail]]
+===  User authentication-detail
+include::users/auth-detail-response.adoc[]
+
+[[object-search-results-detail]]
+===  Search results detail
+include::searches/detail-response.adoc[]
+
+[[object-user-storage-detail]]
+=== User storage data
+include::user-storage/detail-response.adoc[]
+
+[[object-project-template-detail]]
+== Project templates detail
+include::project-templates/detail-response.adoc[]
+
+[[object-project-list-entry]]
+===  Project list entry
+include::projects/list-entry-response.adoc[]
+
+[[object-project-detail]]
+===  Project detail
+include::projects/detail-response.adoc[]
+
+[[object-project-modules-detail]]
+===  Project modules detail
+include::projects/modules-response.adoc[]
+
+[[object-project-stats-detail]]
+===  Project stats detail
+include::projects/stats-response.adoc[]
+
+[[object-project-issue-stats-detail]]
+===  Project issue stats detail
+include::projects/issues-stats-response.adoc[]
+
+[[object-project-issue-filters-data-detail]]
+===  Project issue filters data detail
+include::projects/issue-filters-data-response.adoc[]
+
+[[object-project-tags-colors-detail]]
+===  Project tag colors data detail
+include::projects/tags-colors-response.adoc[]
+
+[[object-project-voter-detail]]
+===  Project voter detail
+include::projects/voter-detail-response.adoc[]
+
+[[object-project-template-detail]]
+===  Project template detail
+include::projects/template-detail-response.adoc[]
+
+[[object-membership-detail]]
+===  Membership detail
+include::memberships/detail-response.adoc[]
+
+[[object-milestone-detail]]
+===  Milestone detail
+include::milestones/detail-response.adoc[]
+
+[[object-milestone-stats-detail]]
+===  Milestone stats detail
+include::milestones/stats-detail-response.adoc[]
+
+[[object-userstory-detail]]
+=== User story detail
+include::user-stories/detail-response.adoc[]
+
+[[object-userstory-status-detail]]
+=== User story status detail
+include::user-story-statuses/detail-response.adoc[]
+
+[[object-point-detail]]
+=== Point detail
+include::points/detail-response.adoc[]
+
+[[object-task-detail]]
+=== Task detail
+include::tasks/detail-response.adoc[]
+
+[[object-task-status-detail]]
+=== Task status detail
+include::task-statuses/detail-response.adoc[]
+
+[[object-issue-detail]]
+=== Issue detail
+include::issues/detail-response.adoc[]
+
+[[object-issue-voters-detail]]
+=== Issue voters detail
+include::issues/voters-detail-response.adoc[]
+
+[[object-issue-status-detail]]
+=== Issue status detail
+include::issue-statuses/detail-response.adoc[]
+
+[[object-issue-type-detail]]
+=== Issue type detail
+include::issue-types/detail-response.adoc[]
+
+[[object-priority-detail]]
+=== Priority detail
+include::priorities/detail-response.adoc[]
+
+[[object-severity-detail]]
+=== Severity detail
+include::severities/detail-response.adoc[]
+
+[[object-wiki-detail]]
+=== Wiki page
+include::wiki/detail-response.adoc[]
+
+[[object-wiki-link-detail]]
+=== Wiki link
+include::wikilinks/detail-response.adoc[]
+
+[[object-history-entry-detail]]
+=== History entry
+include::history/detail-response.adoc[]
+
+[[object-notify-policy-detail]]
+=== Notify policy
+include::notify-policies/detail-response.adoc[]
+
+[[object-feedback-detail]]
+=== Feedback
+include::feedback/detail-response.adoc[]

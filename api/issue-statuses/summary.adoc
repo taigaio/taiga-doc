@@ -1,0 +1,23 @@
+[[issue-statuses-list]]
+=== List
+include::../issue-statuses/list.adoc[]
+
+[[issue-statuses-create]]
+=== Create
+include::../issue-statuses/create.adoc[]
+
+[[issue-statuses-get]]
+=== Get
+include::../issue-statuses/get.adoc[]
+
+[[issue-statuses-edit]]
+=== Edit
+include::../issue-statuses/edit.adoc[]
+
+[[issue-statuses-delete]]
+=== Delete
+include::../issue-statuses/delete.adoc[]
+
+[[issue-statuses-bulk-update-order]]
+=== Bulk update order
+include::../issue-statuses/bulk-update-order.adoc[]

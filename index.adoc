@@ -16,6 +16,11 @@ Project Maturity
 Because _taiga_ is still a young project we consider it is currently in beta state.
 
 
+API
+---
+Taiga has a complete REST API (the one used by the web app), check the full API documentation link:api.html[here].
+
+
 How it works
 ------------
 

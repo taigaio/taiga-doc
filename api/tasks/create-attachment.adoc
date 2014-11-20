@@ -1,0 +1,21 @@
+To create task attachments send a POST request with the following data:
+
+- *object_id* (required): task id
+- *project* (required): project id
+- *attached_file* (required): attaching file
+- *description*
+- *is_deprecated*
+
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -F "object_id=81" \
+  -F "project=3" \
+  -F "attached_file=@/tmp/test.png" \
+  https://api.taiga.io/api/v1/tasks/attachments
+----
+
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-attachment-detail[attachment detail object]
