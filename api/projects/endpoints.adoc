@@ -67,4 +67,8 @@
 | /api/v1/projects/<projectId>/create_template
 | POST
 | link:#projects-create-template[Create project template]
+
+| /api/v1/projects/<projectId>/leave
+| POST
+| link:#projects-create-template[Leave project]
 |===

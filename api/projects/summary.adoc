@@ -57,3 +57,7 @@ include::../projects/fans.adoc[]
 [[projects-create-template]]
 === Create template
 include::../projects/create-template.adoc[]
+
+[[projects-leave]]
+=== Leave
+include::../projects/leave.adoc[]
