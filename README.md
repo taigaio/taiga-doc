@@ -1,6 +1,7 @@
 # Taiga documentation source #
 
-Status: Still a work in Progress   
+> *Status:* _Still a work in progress_
+
 Web: http://taigaio.github.io/taiga-doc/dist/   
 
 ### Setup initial environment (for developers)
