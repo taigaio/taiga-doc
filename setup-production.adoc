@@ -8,7 +8,7 @@ Setup production environment
 Introduction
 ------------
 
-This documentation explains how to deploy a taiga service (each module is part of the taiga platform).
+This documentation explains how to deploy a Taiga service (each module is part of the Taiga platform).
 
 The Taiga platform consists of three main components:
 
