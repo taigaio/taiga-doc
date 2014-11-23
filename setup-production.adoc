@@ -42,7 +42,7 @@ We assume the following:
 Backend installation
 --------------------
 
-This section helps with the installation of the backend (api) taiga service.
+This section helps with the installation of the backend (api) Taiga service.
 
 
 Install dependencies
@@ -485,7 +485,7 @@ sudo rm /etc/nginx/sites-enabled/default
 ----
 
 
-.Enable the recently created taiga site (virtualhost)
+.Enable the recently created Taiga site (virtualhost)
 [source,nginx]
 ----
 sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
@@ -540,13 +540,13 @@ circusctl restart taiga
 ----
 
 [[faq-maintain-update]]
-How I can keep my app up to date with the most recent taiga version?
+How I can keep my app up to date with the most recent Taiga version?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Taiga platform is developed on github. For consistences you should alway maintain the same version
 in time with the *stable* branch of git or use the last major version of each component.
 
-**No packaged version of taiga is available at this moment.**
+**No packaged version of Taiga is available at this moment.**
 
 .Frontend application
 [source,bash]
