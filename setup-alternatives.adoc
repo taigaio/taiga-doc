@@ -13,7 +13,7 @@ Introduction
 **taiga-scrips** primarily follows the standard installation process, but makes it more automatic. If
 something goes wrong in the process, you should try fix them following the manual deploy process.
 
-**taiga-scripts** always installs a specific (most recent) version of taiga (taiga-front and taiga-back)
+**taiga-scripts** always installs a specific (most recent) version of Taiga (taiga-front and taiga-back)
 
 
 Important notes about using **taiga-scripts**
@@ -98,10 +98,10 @@ cd taiga-vagrant
 vagrant up
 ----
 
-After installing, the taiga service should be up and running. You can access it by going
+After installing, the Taiga service should be up and running. You can access it by going
 to http://localhost:8000 with you browser.
 
-You can use the following credentials for login in recently created taiga instance:
+You can use the following credentials for login in recently created Taiga instance:
 
 - Username: `admin`
 - Password: `123123`
