@@ -93,7 +93,7 @@ Examples of contributions include:
 - Bug reports.
 - Patch reviews.
 
-Before starting to develope a big feature (intending to be included on the taiga code base), it is
+Before starting to develope a big feature (intending to be included on the Taiga code base), it is
 strongly recommended that you reach out to us at link:http://groups.google.com/d/forum/taigaio[mailing list].
 
 
