@@ -115,7 +115,7 @@ link:http://groups.google.com/d/forum/taigaio[Taiga has a mailing list]. Feel fr
 and ask any questions you may have.
 
 To subscribe for announcements of releases, important changes and so on, please follow
-link:https://twitter.com/taigaio[@taigaio] on Twitter.
+link:https://twitter.com/taigaio[@taigaio] on Twitter or read our link:https://blog.taiga.io[blog].
 
 
 License
