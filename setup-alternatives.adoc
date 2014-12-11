@@ -99,7 +99,7 @@ vagrant up
 ----
 
 After installing, the Taiga service should be up and running. You can access it by going
-to http://localhost:8000 with you browser.
+to http://localhost:8000 with your browser.
 
 You can use the following credentials for login in recently created Taiga instance:
 
