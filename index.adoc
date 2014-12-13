@@ -7,24 +7,27 @@ Taiga documentation
 Introduction
 ------------
 
-Your Agile, Free and Open Source Project Management Tool
+Free. Open Source. Powerful. _Taiga_ is a project management platform for startups
+and agile developers & designers who want a simple, beautiful tool that makes work
+truly enjoyable.
 
 
 Project Maturity
 ----------------
 
-Because _taiga_ is still a young project we consider it is currently in beta state.
+Because _Taiga_ is still a young project we consider it is currently in beta state.
 
 
 API
 ---
-Taiga has a complete REST API (the one used by the web app), check the full API documentation link:api.html[here].
+_Taiga_ has a complete REST API (the one used by the web app), check the full API
+documentation link:api.html[here].
 
 
 How it works
 ------------
 
-Taiga is made up of two components: link:https://github.com/taigaio/taiga-front[taiga-front]
+_Taiga_ is made up of two components: link:https://github.com/taigaio/taiga-front[taiga-front]
 and link:https://github.com/taigaio/taiga-back[taiga-back]
 
 - *taiga-front* has the front related code built with *angularjs* and *coffescript*.
@@ -32,12 +35,12 @@ and link:https://github.com/taigaio/taiga-back[taiga-back]
 - *taiga-back* has the backend related code consisting of an api, built using *django*
   and *python3*.
 
-Taiga has some other modules, but they are optional and documented in other sections.
+_Taiga_ has some other modules, but they are optional and documented in other sections.
 
 Requirements
 ------------
 
-This is a list of major taiga dependencies:
+This is a list of major _Taiga_ dependencies:
 
 Runtime:
 
@@ -55,7 +58,7 @@ Compile time:
 Installation Guide
 ------------------
 
-This section details everythign you need to know to get taiga up and running
+This section details everythign you need to know to get _Taiga_ up and running
 on both development and production environments.
 
 
@@ -63,7 +66,7 @@ Setup production environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 link:setup-production.html[This document contains the complete, step by step tutorial] of how
-to setup properly taiga for low traffic production environment.
+to setup properly _Taiga_ for low traffic production environment.
 
 
 Setup development environment
@@ -76,7 +79,7 @@ a proper development environment.
 Other ways to setup initial environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Additionally to traditional step by step manuals, taiga comes with some other tools like
+Additionally to traditional step by step manuals, _Taiga_ comes with some other tools like
 collection of provisioning scripts and vagrant support, and the
 link:setup-alternatives.html[complete documentation of how to use them is here].
 
@@ -84,7 +87,7 @@ link:setup-alternatives.html[complete documentation of how to use them is here].
 How to contribute
 -----------------
 
-Because Taiga is an open source project, we gratefully accept contributions in various forms.
+Because _Taiga_ is an open source project, we gratefully accept contributions in various forms.
 
 Examples of contributions include:
 
@@ -93,7 +96,7 @@ Examples of contributions include:
 - Bug reports.
 - Patch reviews.
 
-Before starting to develope a big feature (intending to be included on the Taiga code base), it is
+Before starting to develope a big feature (intending to be included on the _Taiga_ code base), it is
 strongly recommended that you reach out to us at link:http://groups.google.com/d/forum/taigaio[mailing list].
 
 
@@ -102,11 +105,17 @@ Reporting bugs
 
 Before reporting a bug or requesting a new feature, please consider these general points:
 
-- Check that someone hasn't already filed the bug or feature request by searching our running custom queries in the ticket tracker.
-- Check the right repository to use for report a issue: bugs related to UI should go to *taiga-front*, if something is broken on backend, the issue should be opened on *taiga-back* repository.
-- Do ask on link:http://groups.google.com/d/forum/taigaio[mailing list] first if you're not sure if what you're seeing is a bug.
-- Don't use the github issues system to ask support questions. Use the link:http://groups.google.com/d/forum/taigaio[mailing list] for that.
-- Don’t use the github issues for lengthy discussions, because they're likely to get lost. If a particular ticket is controversial, please move the discussion to the link:http://groups.google.com/d/forum/taigaio[mailing list].
+- Check that someone hasn't already filed the bug or feature request by searching our running custom
+  queries in the ticket tracker.
+- Check the right repository to use for report a issue: bugs related to UI should go to *taiga-front*,
+  if something is broken on backend, the issue should be opened on *taiga-back* repository.
+- Do ask on link:http://groups.google.com/d/forum/taigaio[mailing list] first if you're not sure if
+  what you're seeing is a bug.
+- Don't use the github issues system to ask support questions. Use the
+  link:http://groups.google.com/d/forum/taigaio[mailing list] for that.
+- Don’t use the github issues for lengthy discussions, because they're likely to get lost. If a particular
+  ticket is controversial, please move the discussion to the
+  link:http://groups.google.com/d/forum/taigaio[mailing list].
 
 Community
 ~~~~~~~~~
