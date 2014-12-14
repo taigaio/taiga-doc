@@ -37,6 +37,7 @@ and link:https://github.com/taigaio/taiga-back[taiga-back]
 
 _Taiga_ has some other modules, but they are optional and documented in other sections.
 
+
 Requirements
 ------------
 
@@ -61,20 +62,17 @@ Installation Guide
 This section details everythign you need to know to get _Taiga_ up and running
 on both development and production environments.
 
-
 Setup production environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 link:setup-production.html[This document contains the complete, step by step tutorial] of how
 to setup properly _Taiga_ for low traffic production environment.
 
-
 Setup development environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can see link:setup-development.html[here] the complete documentation on how to setup
 a proper development environment.
-
 
 Other ways to setup initial environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -98,7 +96,6 @@ Examples of contributions include:
 
 Before starting to develope a big feature (intending to be included on the _Taiga_ code base), it is
 strongly recommended that you reach out to us at link:http://groups.google.com/d/forum/taigaio[mailing list].
-
 
 Reporting bugs
 ~~~~~~~~~~~~~~
@@ -126,9 +123,8 @@ and ask any questions you may have.
 To subscribe for announcements of releases, important changes and so on, please follow
 link:https://twitter.com/taigaio[@taigaio] on Twitter or read our link:https://blog.taiga.io[blog].
 
-
 Donations
----------
+~~~~~~~~~
 
 We are grateful for your emails volunteering donations to _Taiga_. We feel comfortable accepting them under
 these conditions: The first that we will only do so while we are in the current beta / pre-revenue stage
@@ -138,7 +134,6 @@ donations to reward people working alongside us.
 
 If you wish to make a donation to this Taiga fund, you can do so via link:http://www.paypal.com[PayPal]
 using the email: eposner@taiga.io
-
 
 License
 ~~~~~~~
