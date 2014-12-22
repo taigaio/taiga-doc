@@ -71,7 +71,7 @@ Setup using **taiga-vagrant**
 Introduction
 ~~~~~~~~~~~~
 
-**taiga-vagrant** offers a Vagrantfile for make easy turn on a fully provisioned virtual 
+**taiga-vagrant** offers a Vagrantfile for make easy turn on a fully provisioned virtual
 machine. **taiga-vagrant** uses **taiga-scripts** to provision scripts.
 
 
@@ -112,3 +112,13 @@ You can access to the machine using ssh, if you would make some tweaks:
 ----
 vagrant ssh
 ----
+
+[[setup-taiga-docker]]
+Setup using **taiga-docker**
+-----------------------------
+
+
+Important notes about using **taiga-docker**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Docker is not officially supported by the Taiga development team but a link:https://github.com/ipedrazas/taiga-docker[docker script] has been developed by link:https://github.com/ipedrazas[Iván Pedrazas]
