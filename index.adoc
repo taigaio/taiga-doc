@@ -138,7 +138,7 @@ using the email: eposner@taiga.io
 License
 ~~~~~~~
 
-Every code patch accepted in the taiga codebase is acceoted under the AGPL v3.0 license. It is important that you
+Every code patch accepted in the taiga codebase is accepted under the AGPL v3.0 license. It is important that you
 not include any code that can not be licensed under AGPL v3.0.
 
 You can see the complete license on `LICENSE` file on the root of repository.
