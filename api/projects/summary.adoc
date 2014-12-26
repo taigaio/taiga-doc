@@ -10,6 +10,10 @@ include::../projects/create.adoc[]
 === Get
 include::../projects/get.adoc[]
 
+[[projects-get-by-slug]]
+=== Get by slug
+include::../projects/get-by-slug.adoc[]
+
 [[projects-edit]]
 === Edit
 include::../projects/edit.adoc[]

@@ -16,6 +16,10 @@
 | GET
 | link:#issues-get[Get issue]
 
+| /api/v1/issues/by_ref?ref=<issueRef>&project=<projectId>
+| GET
+| link:#issues-get-by-ref[Get issue]
+
 | /api/v1/issues/<issueId>
 | PUT
 | link:#issues-edit[Modify issue]

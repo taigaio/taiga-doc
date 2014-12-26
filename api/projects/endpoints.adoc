@@ -16,6 +16,10 @@
 | GET
 | link:#projects-get[Get project]
 
+| /api/v1/projects/by_slug?slug=<projectSlug>
+| GET
+| link:#projects-get-by-slug[Get project]
+
 | /api/v1/projects/<projectId>
 | PUT
 | link:#projects-edit[Modify project]

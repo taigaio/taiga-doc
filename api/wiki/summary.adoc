@@ -10,6 +10,10 @@ include::create.adoc[]
 === Get
 include::get.adoc[]
 
+[[wiki-get-by-slug]]
+=== Get by slug
+include::get-by-slug.adoc[]
+
 [[wiki-edit]]
 === Edit
 include::edit.adoc[]

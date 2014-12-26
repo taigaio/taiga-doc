@@ -16,6 +16,10 @@
 | GET
 | link:#user-stories-get[Get user story]
 
+| /api/v1/userstories/by_ref?ref=<userStoryRef>&project=<projectId>
+| GET
+| link:#user-stories-get-by-ref[Get user story]
+
 | /api/v1/userstories/<userStoryId>
 | PUT
 | link:#user-stories-edit[Modify user story]

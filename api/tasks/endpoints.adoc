@@ -16,6 +16,10 @@
 | GET
 | link:#tasks-get[Get task]
 
+| /api/v1/tasks/by_ref?ref=<taskRef>&project=<projectId>
+| GET
+| link:#tasks-get-by-ref[Get task]
+
 | /api/v1/tasks/<taskId>
 | PUT
 | link:#tasks-edit[Modify task]

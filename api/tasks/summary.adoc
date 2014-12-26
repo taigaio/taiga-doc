@@ -10,6 +10,10 @@ include::../tasks/create.adoc[]
 === Get
 include::../tasks/get.adoc[]
 
+[[tasks-get-by-ref]]
+=== Get by ref
+include::../tasks/get-by-ref.adoc[]
+
 [[tasks-edit]]
 === Edit
 include::../tasks/edit.adoc[]

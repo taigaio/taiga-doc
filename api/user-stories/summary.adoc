@@ -10,6 +10,10 @@ include::../user-stories/create.adoc[]
 === Get
 include::../user-stories/get.adoc[]
 
+[[user-stories-get-by-ref]]
+=== Get by ref
+include::../user-stories/get-by-ref.adoc[]
+
 [[user-stories-edit]]
 === Edit
 include::../user-stories/edit.adoc[]

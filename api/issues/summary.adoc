@@ -10,6 +10,10 @@ include::../issues/create.adoc[]
 === Get
 include::../issues/get.adoc[]
 
+[[issues-get-by-ref]]
+=== Get by ref
+include::../issues/get-by-ref.adoc[]
+
 [[issues-edit]]
 === Edit
 include::../issues/edit.adoc[]

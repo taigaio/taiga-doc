@@ -16,6 +16,10 @@
 | GET
 | link:#wiki-get[Get wiki page]
 
+| /api/v1/wiki/by_slug?slug=<wikiPageSlug>&project=<projectId>
+| GET
+| link:#wiki-get-by-slug[Get wiki page]
+
 | /api/v1/wiki/<wikiPageId>
 | PUT
 | link:#wiki-edit[Modify wiki page]
