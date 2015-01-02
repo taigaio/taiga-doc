@@ -506,6 +506,81 @@ And finally, restart nginx with `sudo service nginx restart`
 
 **Now you should have the service up and running on `http://example.com/`**
 
+HTTPS support
+^^^^^^^^^
+Place your SSL certificates in `/etc/nginx/ssl/`. It is recommended to replace
+the configuration for port 80  so that users are redirected to HTTPS
+automatically and append the configuration for the SSL site after that.
+
+.New configuration in /etc/nginx/sites-available/taiga
+[source,nginx]
+----
+server {                                                                           
+    listen 80;                                                                     
+    server_name _;                                               
+    return 301 https://$server_name$request_uri;                            
+}
+
+server {
+    listen 443 ssl;
+    server_name _;
+
+    large_client_header_buffers 4 32k;
+    client_max_body_size 50M;
+    charset utf-8;
+    index index.html;
+
+    # Frontend
+    location / {
+        root /home/taiga/taiga-front/dist/;
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Backend                                                                      
+    location /api {                                                                
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8001/api;
+        proxy_redirect off;                                                        
+    }                                                                              
+  
+    location /admin {                                                              
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8001$request_uri;
+        proxy_redirect off;
+    }
+
+    # Static files
+    location /static {
+        alias /home/taiga/taiga-back/static;
+    }
+
+    # Media files
+    location /media {
+        alias /home/taiga/taiga-back/media;
+    }
+
+    ssl on;
+    ssl_certificate /etc/nginx/ssl/example.com.crt;
+    ssl_certificate_key /etc/nginx/ssl/example.com.key;
+
+    ssl_session_timeout 5m;
+
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+    ssl_prefer_server_ciphers on;                              
+
+}
+----
+
+Next, the URLs in the configuration files have to be updated.
 
 FAQ
 ---
