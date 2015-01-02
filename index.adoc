@@ -136,7 +136,7 @@ If you wish to make a donation to this Taiga fund, you can do so via link:http:/
 using the email: eposner@taiga.io
 
 License
-~~~~~~~
+-------
 
 Every code patch accepted in the taiga codebase is accepted under the AGPL v3.0 license. It is important that you
 not include any code that can not be licensed under AGPL v3.0.
