@@ -370,7 +370,7 @@ statsd = true
 [watcher:taiga]
 working_dir = /home/taiga/taiga-back
 cmd = gunicorn
-args = -w 3 -t 60 --pythonpath=. -b 0.0.0.0:8001 taiga.wsgi
+args = -w 3 -t 60 --pythonpath=. -b 127.0.0.1:8001 taiga.wsgi
 uid = taiga
 numprocesses = 1
 autostart = true
@@ -433,7 +433,7 @@ First install it:
 sudo apt-get install -y nginx
 ----
 
-And now let start configuring it:
+And now let us start configuring it:
 
 .Add specific configuration for **taiga-front** and **taiga-back** on /etc/nginx/sites-available/taiga.
 [source,nginx]
@@ -465,6 +465,17 @@ server {
         proxy_pass http://127.0.0.1:8001/api;
         proxy_redirect off;
     }
+    
+    # Django admin access (/admin/)
+    location /admin {
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8001$request_uri;
+        proxy_redirect off;
+    }
 
     # Static files
     location /static {
@@ -478,7 +489,7 @@ server {
 }
 ----
 
-.Disable the default nginx site (virtualhosT)
+.Disable the default nginx site (virtualhost)
 [source,nginx]
 ----
 sudo rm /etc/nginx/sites-enabled/default
@@ -494,6 +505,157 @@ sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
 And finally, restart nginx with `sudo service nginx restart`
 
 **Now you should have the service up and running on `http://example.com/`**
+
+Serving HTTPS
+^^^^^^^^^^^^^
+Place your SSL certificates in `/etc/nginx/ssl`. It is recommended to replace
+the original configuration for port 80 so that users are redirected to the HTTPS
+version automatically.
+
+.New configuration in /etc/nginx/sites-available/taiga
+[source,nginx]
+----
+server {
+    listen 80 default_server;
+    server_name _;
+    return 301 https://$server_name$request_uri;
+}
+
+server {
+    listen 443 ssl default_server;
+    server_name _;
+
+    large_client_header_buffers 4 32k;
+    client_max_body_size 50M;
+    charset utf-8;
+
+    index index.html;
+
+    # Frontend
+    location / {
+        root /home/taiga/taiga-front/dist/;
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Backend
+    location /api {
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8001/api;
+        proxy_redirect off;
+    }
+
+    location /admin {
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8001$request_uri;
+        proxy_redirect off;
+    }
+
+    # Static files
+    location /static {
+        alias /home/taiga/taiga-back/static;
+    }
+
+    # Media files
+    location /media {
+        alias /home/taiga/taiga-back/media;
+    }
+
+
+    ssl on;
+    ssl_certificate /etc/nginx/ssl/example.com.crt;
+    ssl_certificate_key /etc/nginx/ssl/example.com.key;
+
+    ssl_session_timeout 5m;
+
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers "HIGH:!aNULL:!MD5 or HIGH:!aNULL:!MD5:!3DES";
+    ssl_prefer_server_ciphers on;
+
+}
+----
+
+Before activating the HTTPS site, the configuration for the front-end and back-end have to be updated;
+change the scheme from `http` to `https`.
+
+.Update ~/taiga-back/settings/local.py
+[source,python]
+----
+from .common import *
+
+MEDIA_URL = "https://example.com/media/"
+STATIC_URL = "https://example.com/static/"
+ADMIN_MEDIA_PREFIX = "https://example.com/static/admin/"
+SITES["front"]["domain"] = "example.com"
+
+SECRET_KEY = "theveryultratopsecretkey"
+
+DEBUG = False
+TEMPLATE_DEBUG = False
+PUBLIC_REGISTER_ENABLED = True
+
+DEFAULT_FROM_EMAIL = "no-reply@example.com"
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
+
+# Uncomment and populate with proper connection parameters
+# for enable email sending.
+#EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+#EMAIL_USE_TLS = False
+#EMAIL_HOST = "localhost"
+#EMAIL_HOST_USER = ""
+#EMAIL_HOST_PASSWORD = ""
+#EMAIL_PORT = 25
+
+# Uncomment and populate with proper connection parameters
+# for enable github login/singin.
+#GITHUB_API_CLIENT_ID = "yourgithubclientid"
+#GITHUB_API_CLIENT_SECRET = "yourgithubclientsecret"
+----
+
+.Restart circus after updating the configuration
+[source,bash]
+----
+sudo service circus restart
+----
+
+.Update ~/taiga-front/conf/main.json
+[source,json]
+----
+{
+    "api": "https://example.com/api/v1/",
+    "eventsUrl": "ws://example.com/events",
+    "debug": "true",
+    "publicRegisterEnabled": true,
+    "feedbackEnabled": true,
+    "privacyPolicyUrl": null,
+    "termsOfServiceUrl": null,
+    "maxUploadFileSize": null,
+    "gitHubClientId": null
+}
+----
+
+.Run gulp task for compile
+[source,bash]
+----
+cd ~/taiga-front
+gulp deploy
+----
+
+And nginx:
+
+.Reload the nginx configuration
+[source,bash]
+----
+sudo service nginx reload
+----
+
 
 
 FAQ
