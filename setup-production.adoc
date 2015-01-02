@@ -433,7 +433,7 @@ First install it:
 sudo apt-get install -y nginx
 ----
 
-And now let start configuring it:
+And now let us start configuring it:
 
 .Add specific configuration for **taiga-front** and **taiga-back** on /etc/nginx/sites-available/taiga.
 [source,nginx]
@@ -489,7 +489,7 @@ server {
 }
 ----
 
-.Disable the default nginx site (virtualhosT)
+.Disable the default nginx site (virtualhost)
 [source,nginx]
 ----
 sudo rm /etc/nginx/sites-enabled/default
