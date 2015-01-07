@@ -59,27 +59,27 @@ Compile time:
 Installation Guide
 ------------------
 
-This section details everythign you need to know to get _Taiga_ up and running
+This section details everything you need to know to get _Taiga_ up and running
 on both development and production environments.
 
 Setup production environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 link:setup-production.html[This document contains the complete, step by step tutorial] of how
-to setup properly _Taiga_ for low traffic production environment.
+to properly setup _Taiga_ for a low traffic production environment.
 
 Setup development environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can see link:setup-development.html[here] the complete documentation on how to setup
-a proper development environment.
+You can viewthe complete documentation on how to link:setup-development.html[setup a proper
+development environment].
 
 Other ways to setup initial environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Additionally to traditional step by step manuals, _Taiga_ comes with some other tools like
-collection of provisioning scripts and vagrant support, and the
-link:setup-alternatives.html[complete documentation of how to use them is here].
+Additional to traditional step by step manuals, _Taiga_ comes with a
+collection of provisioning scripts and Vagrant support, and the
+link:setup-alternatives.html[complete documentation of how to use them].
 
 
 How to contribute
@@ -89,13 +89,13 @@ Because _Taiga_ is an open source project, we gratefully accept contributions in
 
 Examples of contributions include:
 
-- Code patches.
-- Improvemnent.
-- Bug reports.
-- Patch reviews.
+- Code patches
+- Improvements
+- Bug reports
+- Patch reviews
 
 Before starting to develope a big feature (intending to be included on the _Taiga_ code base), it is
-strongly recommended that you reach out to us at link:http://groups.google.com/d/forum/taigaio[mailing list].
+strongly recommended that you reach out to us on the link:http://groups.google.com/d/forum/taigaio[mailing list].
 
 Reporting bugs
 ~~~~~~~~~~~~~~
@@ -104,9 +104,9 @@ Before reporting a bug or requesting a new feature, please consider these genera
 
 - Check that someone hasn't already filed the bug or feature request by searching our running custom
   queries in the ticket tracker.
-- Check the right repository to use for report a issue: bugs related to UI should go to *taiga-front*,
-  if something is broken on backend, the issue should be opened on *taiga-back* repository.
-- Do ask on link:http://groups.google.com/d/forum/taigaio[mailing list] first if you're not sure if
+- Check the right repository to use for report an issue: bugs related to UI should go to *taiga-front*,
+  if something is broken on the backend, an issue should be opened on *taiga-back* repository.
+- First ask on the link:http://groups.google.com/d/forum/taigaio[mailing list] first if you're not sure if
   what you're seeing is a bug.
 - Don't use the github issues system to ask support questions. Use the
   link:http://groups.google.com/d/forum/taigaio[mailing list] for that.
@@ -127,7 +127,7 @@ Donations
 ~~~~~~~~~
 
 We are grateful for your emails volunteering donations to _Taiga_. We feel comfortable accepting them under
-these conditions: The first that we will only do so while we are in the current beta / pre-revenue stage
+these conditions: The first is that we will only do so while we are in the current beta / pre-revenue stage
 and that whatever money is donated will go towards a bounty fund. Starting Q2 2015 we will be engaging
 much more actively with our community to help further the development of Taiga, and we will use these
 donations to reward people working alongside us.
@@ -138,7 +138,7 @@ using the email: eposner@taiga.io
 License
 -------
 
-Every code patch accepted in the taiga codebase is accepted under the AGPL v3.0 license. It is important that you
-not include any code that can not be licensed under AGPL v3.0.
+Every code patch accepted in the Taiga codebase is accepted under the AGPL v3.0 license. It is important that you
+not include any code which cannot be licensed under AGPL v3.0.
 
-You can see the complete license on `LICENSE` file on the root of repository.
+You can see the complete license in the `LICENSE` file in the root of repository.
