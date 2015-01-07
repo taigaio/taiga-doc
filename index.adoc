@@ -71,7 +71,7 @@ to properly setup _Taiga_ for a low traffic production environment.
 Setup development environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can viewthe complete documentation on how to link:setup-development.html[setup a proper
+You can view the complete documentation on how to link:setup-development.html[setup a proper
 development environment].
 
 Other ways to setup initial environment
