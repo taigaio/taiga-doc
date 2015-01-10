@@ -3,7 +3,7 @@ To create projects send a POST request with the following data:
 - *name* (required)
 - *description* (required)
 - *is_backlog_activated*
-- *is_issues_activated"*
+- *is_issues_activated*
 - *is_kanban_activated*
 - *is_private*
 - *is_wiki_activated*
