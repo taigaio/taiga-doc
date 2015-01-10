@@ -8,7 +8,7 @@ To resolve the id of a task send a GET request with the following parameters:
 curl -X GET \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/resolver?project=taiga&task=915
+  https://api.taiga.io/api/v1/resolver?project=taiga\&task=915
 ----
 
 The response body is a JSON object containing the project and the task ids

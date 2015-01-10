@@ -8,7 +8,7 @@ To resolve the id of a wiki page send a GET request with the following parameter
 curl -X GET \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/resolver?project=taiga&wikipage=home
+  https://api.taiga.io/api/v1/resolver?project=taiga\&wikipage=home
 ----
 
 The response body is a JSON object containing the project and the wiki page ids
