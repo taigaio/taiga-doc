@@ -8,7 +8,7 @@ To list wiki page attachments send a GET request with the following parameters:
 curl -X GET \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/wiki/attachments?object_id=81&project=3
+  https://api.taiga.io/api/v1/wiki/attachments?object_id=81\&project=3
 ----
 
 The HTTP response is a 200 OK and the response body is a JSON list of link:#object-attachment-detail[attachment detail objects]

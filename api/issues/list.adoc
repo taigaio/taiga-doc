@@ -46,5 +46,5 @@ The results can be ordered using the order_by parameter with the values:
 curl -X GET \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/issues?project=1&order_by=priority
+  https://api.taiga.io/api/v1/issues?project=1\&order_by=priority
 ----

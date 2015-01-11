@@ -8,7 +8,7 @@ To resolve the id of an issue send a GET request with the following parameters:
 curl -X GET \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/resolver?project=taiga&issue=1485
+  https://api.taiga.io/api/v1/resolver?project=taiga\&issue=1485
 ----
 
 The response body is a JSON object containing the project and the issue ids

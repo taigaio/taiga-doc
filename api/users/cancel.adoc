@@ -5,7 +5,7 @@ To cancel a user account send a POST with the following data
 curl -X POST \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
   -d '{
-          "cancel_token": "${CANCEL_TOKEN}"
+          "cancel_token": "'${CANCEL_TOKEN}'"
       }' \
   https://api.taiga.io/api/v1/users/cancel
 ----

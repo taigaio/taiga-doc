@@ -432,7 +432,7 @@ curl -X POST \
           "description": "Sample description",
           "default_owner_role": "product-owner"
       }' \
-  HTTPS://api.taiga.io/api/v1/project-templates
+  https://api.taiga.io/api/v1/project-templates
 ----
 
-WHEN THE creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-project-template-detail[project template detail object]
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-project-template-detail[project template detail object]

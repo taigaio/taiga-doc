@@ -10,7 +10,7 @@ curl -X POST \
   -H "Content-Type: application/json" \
   -d '{
           "type": "github",
-          "code": "${GITHUB_CODE}"
+          "code": "'${GITHUB_CODE}'"
       }' \
   https://api.taiga.io/api/v1/auth
 ----
