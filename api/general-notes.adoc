@@ -16,7 +16,56 @@ To authenticate requests an http header called "Authorization" should be added. 
 Authorization: Bearer ${AUTH_TOKEN}
 ----
 
-This token can be received through the link:#auth-normal-login[login API ]
+This token can be received through the link:#auth-normal-login[login API]
+
+To provide an example, the following can be used within a Bash script running on Ubuntu - customise as appropriate for your system configuration.
+
+- Install `jq` (a command-line JSON processor):
+
+[source,bash]
+----
+$ sudo apt-get install jq
+----
+
+- Bash snippet:
+
+[source,bash]
+----
+#!/bin/bash
+# Request username and password for connecting to Taiga
+read -p "Username: " USERNAME
+read -s -p "Password: " PASSWORD
+
+# Get AUTH_TOKEN
+USER_AUTH_DETAIL=$( curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+          "type": "normal",
+          "username": "'${USERNAME}'",
+          "password": "'${PASSWORD}'"
+      }' \
+  https://api.taiga.io/api/v1/auth 2>/dev/null )
+
+AUTH_TOKEN=$( echo ${USER_AUTH_DETAIL} | jq -r '.auth_token' )
+
+# Exit if AUTH_TOKEN is not available
+if [ -z ${AUTH_TOKEN} ]; then
+    echo "Error: Incorrect username and/or password supplied"
+    exit 1
+else
+    echo "auth_token is ${AUTH_TOKEN}"
+fi
+
+# Proceed to use API calls as desired
+...
+----
+
+- If unable to install `jq`, it is possible (but not recommended) to use `grep` and `cut` to extract the value of `auth_token` from the JSON link:#object-auth-user-detail[user auth detail object] - use the following line instead:
+
+[source,bash]
+----
+AUTH_TOKEN=$( echo ${USER_AUTH_DETAIL} | grep -Po '"auth_token":.*?[^\\]",' | cut -d\" -f4 )
+----
 
 === Pagination
 By default the API will always return paginated results and includes the following headers in the response:
