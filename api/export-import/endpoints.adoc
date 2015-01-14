@@ -1,0 +1,14 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/exporter/<projectId>
+| GET
+| link:#export-import-export-dump[Export a project dump]
+
+| /api/v1/importer/load_dump
+| POST
+| link:#export-import-import-dump[Import a project dump]
+|===
