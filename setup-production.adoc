@@ -683,7 +683,7 @@ How can I change the domain name?
 The domain name mainly affects the frontend application, because it needs to comunicate with the
 backend through the domain/public-ip.
 
-To do this you should update the `url` value on frontend config file and rebuild frontend with
+To do this you should update the `url` value on frontend config file (conf/main.json) and rebuild frontend with
 `gulp deploy`. Also you should update the domain related configuration on the backend
 settings file: `settings/local.py`.
 
