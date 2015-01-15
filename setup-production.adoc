@@ -196,6 +196,78 @@ At this stage the backend has been installed successfully. But you're not done y
 in production environments, should run on an application server. The details for this are explained in the final
 section of this document.
 
+Async tasks (Optional)
+~~~~~~~~~~~~~~~~~~~~~~
+
+The default behavior in Taiga is to do all tasks syncronously, but some of then
+may be completelly asyncronous (for example webhooks or import/export). To do
+this, you have to configure celery and install the celery service requirements.
+
+Install `rabbitmq-server` and `redis-server`:
+
+[source,bash]
+----
+sudo apt-get install -y rabbitmq-server redis-server
+----
+
+For run celery with taiga you have to include in your local.py the lines:
+
+[source,python]
+----
+from .celery import *
+
+BROKER_URL = 'amqp://guest:guest@localhost:5672//'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_ENABLED = True
+----
+
+You can configure other broker or results backends. You can se more about celery
+broker/results backends configuration in the celery documentation web page:
+http://docs.celeryproject.org/en/latest/index.html
+
+Once you have configured celery on Taiga, you have to add celery to run in
+circus. See link:#circus-and-gunicorn[Circus and gunicorn] section.
+
+.Taiga celery configuration block for circus on ~/circus.ini
+[source,ini]
+----
+[watcher:taiga-celery]
+working_dir = /home/taiga/taiga-back
+cmd = celery
+args = -A taiga worker -c 4
+uid = taiga
+numprocesses = 1
+autostart = true
+send_hup = true
+stdout_stream.class = FileStream
+stdout_stream.filename = /home/taiga/logs/celery.stdout.log
+stdout_stream.max_bytes = 10485760
+stdout_stream.backup_count = 4
+stderr_stream.class = FileStream
+stderr_stream.filename = /home/taiga/logs/celery.stderr.log
+stderr_stream.max_bytes = 10485760
+stderr_stream.backup_count = 4
+
+[env:taiga-celery]
+PATH = $PATH:/home/taiga/.virtualenvs/taiga/bin
+TERM=rxvt-256color
+SHELL=/bin/bash
+USER=taiga
+LANG=en_US.UTF-8
+HOME=/home/taiga
+PYTHONPATH=/home/taiga/.local/lib/python3.4/site-packages
+----
+
+Then you have to reload your circus configuration, restart taiga and start
+taiga-celery:
+
+[source,bash]
+----
+circusctl reloadconfig
+circusctl restart taiga
+circusctl start taiga-celery
+----
+
 
 Frontend installation
 ---------------------
@@ -345,6 +417,7 @@ by a process manager. For this task we will use **gunicorn** and **circus** resp
 web server. For this purpose we'll use **nginx**.
 
 
+[[circus-and-gunicorn]]
 Circus and gunicorn
 ~~~~~~~~~~~~~~~~~~~
 
