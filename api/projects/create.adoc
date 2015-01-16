@@ -2,6 +2,7 @@ To create projects send a POST request with the following data:
 
 - *name* (required)
 - *description* (required)
+- *creation_template*: base template for the project
 - *is_backlog_activated*
 - *is_issues_activated*
 - *is_kanban_activated*
