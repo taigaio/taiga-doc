@@ -199,9 +199,9 @@ section of this document.
 Async tasks (Optional)
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The default behavior in Taiga is to do all tasks syncronously, but some of then
-may be completelly asyncronous (for example webhooks or import/export). To do
-this, you have to configure celery and install the celery service requirements.
+The default behavior in Taiga is to do all tasks in a synchronous way, but some of them
+can be completely asynchronous (for example webhooks or import/export). To do
+this, you have to configure and install the celery service requirements.
 
 Install `rabbitmq-server` and `redis-server`:
 
@@ -210,7 +210,7 @@ Install `rabbitmq-server` and `redis-server`:
 sudo apt-get install -y rabbitmq-server redis-server
 ----
 
-For run celery with taiga you have to include in your local.py the lines:
+To run celery with taiga you have to include in your local.py the lines:
 
 [source,python]
 ----
@@ -221,12 +221,10 @@ CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 CELERY_ENABLED = True
 ----
 
-You can configure other broker or results backends. You can se more about celery
-broker/results backends configuration in the celery documentation web page:
+You can configure other broker or results backend. If you need more info about it you can check the celery documentation web page:
 http://docs.celeryproject.org/en/latest/index.html
 
-Once you have configured celery on Taiga, you have to add celery to run in
-circus. See link:#circus-and-gunicorn[Circus and gunicorn] section.
+Once you have configured celery on Taiga, you have to add celery to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
 
 .Taiga celery configuration block for circus on ~/circus.ini
 [source,ini]
