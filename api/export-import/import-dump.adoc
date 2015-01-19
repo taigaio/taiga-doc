@@ -1,0 +1,17 @@
+To load a project dump send a POST request with the following file:
+
+- *dump* (required)
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -F 'dump=@my-dump-file.json' \
+  https://api.taiga.io/api/v1/importer/load_dump
+----
+
+Depending on server configuration it can return two results:
+
+* A 202 Accepted and as response body a JSON of link:#object-import-accepted[import request accepted].
+* A 204 No Content.

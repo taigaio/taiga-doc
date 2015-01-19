@@ -84,3 +84,8 @@ By default the API will always return paginated results and includes the followi
 x-disable-pagination: True
 ----
 
+=== Throttling
+
+If the api is configured with throttling you have to take care on responses
+with 429 (Too many requests) status code, that mean you reach the throttling
+limit.

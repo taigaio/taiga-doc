@@ -82,6 +82,9 @@ include::notify-policies/endpoints.adoc[]
 === Feedback
 include::feedback/endpoints.adoc[]
 
+=== Export/Import
+include::export-import/endpoints.adoc[]
+
 
 [[auth]]
 == Auth
@@ -178,6 +181,10 @@ include::notify-policies/summary.adoc[]
 [[feedback]]
 == Feedback
 include::feedback/summary.adoc[]
+
+[[export-import]]
+== Export/Import
+include::export-import/summary.adoc[]
 
 
 
@@ -318,3 +325,15 @@ include::notify-policies/detail-response.adoc[]
 [[object-feedback-detail]]
 === Feedback
 include::feedback/detail-response.adoc[]
+
+[[object-export-dump]]
+=== Export dump
+include::export-import/detail-export-dump.adoc[]
+
+[[object-export-accepted]]
+=== Export accepted response
+include::export-import/detail-export-accepted.adoc[]
+
+[[object-import-accepted]]
+=== Import accepted response
+include::export-import/detail-import-accepted.adoc[]
