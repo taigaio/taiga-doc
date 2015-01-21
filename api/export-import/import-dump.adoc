@@ -14,4 +14,4 @@ curl -X POST \
 Depending on server configuration it can return two results:
 
 * A 202 Accepted and as response body a JSON of link:#object-import-accepted[import request accepted].
-* A 204 No Content.
+* A 201 Created and the response body is a JSON of link:#object-project-detail[project detail object]
