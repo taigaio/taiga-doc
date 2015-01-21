@@ -326,9 +326,9 @@ include::notify-policies/detail-response.adoc[]
 === Feedback
 include::feedback/detail-response.adoc[]
 
-[[object-export-dump]]
-=== Export dump
-include::export-import/detail-export-dump.adoc[]
+[[object-export-synch]]
+=== Export detail for synch mode
+include::export-import/detail-export-synch.adoc[]
 
 [[object-export-accepted]]
 === Export accepted response

@@ -11,4 +11,4 @@ curl -X GET \
 Depending on server configuration it can return two results:
 
 * A 202 Accepted and as response body a JSON of link:#object-export-accepted[export request accepted].
-* A 200 OK and as response body a JSON of link:#object-export-dump[project dump].
+* A 200 OK and as response body a JSON of link:#object-export-synch[export detail for synch mode].
