@@ -5,7 +5,7 @@ Webhooks
 :source-highlighter: pygments
 :pygments-style: friendly
 
-The taiga webhooks notify changes on milestones, user stories, tasks, issues
+Taiga webhooks notify changes on milestones, user stories, tasks, issues
 and wiki pages sending POST requests signed with a private key, to the
 configured urls.
 
@@ -14,16 +14,15 @@ Each project can have any number of webhooks configured on it.
 Request
 -------
 
-The request made by the Taiga webhooks can be sync or async (depends on the
-Taiga configuration, for example tree.taiga.io is async), then the request to
-your url can have a delay of some seconds.
+The request made by the Taiga webhooks can be synchronous or asynchronous (it depends on the
+Taiga configuration, for example tree.taiga.io is async). In asynchronous mode those requests to
+your configured url can have a delay of some seconds.
 
-All request send to the URL are POST with the header `Content-Type` equals to
+All request send to the URL are POST with header `Content-Type` equals to
 `application/json` and a signature of the message in the
 `X-TAIGA-WEBHOOK-SIGNATURE` HTTP header.
 
-The body of the request will be directly the JSON with the corresponding
-payload.
+The body of the POST request is just a JSON with the corresponding payload.
 
 Verify signature
 ----------------
@@ -33,7 +32,7 @@ the signature generated with
 [HMAC](http://en.wikipedia.org/wiki/Hash-based_message_authentication_code)
 using sha1 hash.
 
-You can verify it in python, for example, with:
+An example of signature verification in python:
 
 [source,python]
 ----
@@ -42,7 +41,7 @@ def verify_signature(key, data, signature):
     return mac.hexdigest() == signature
 ----
 
-or in php:
+in php:
 
 [source,php]
 ----
@@ -56,7 +55,7 @@ or in php:
 Payloads
 --------
 
-The request sended depends on the object and the type of change, all payloads
+The sended request depends on the object type and the kind of change, all payloads
 have the same base structure
 
 [source,json]
@@ -69,10 +68,10 @@ have the same base structure
 }
 ----
 
-* The `data` field has the current object information.
-* The `action` field has notification type, may be "create", "delete", "change" or "test".
-* The `type` field has the type of object, may be "milestone", "userstory", "task", "issue", "wikipage" or "test".
-* The `change` field (only present on change notifications) have the information about the changes made.
+* The `data` field contains the current object information.
+* The `action` field contains notification type with values: "create", "delete", "change" or "test".
+* The `type` field contains the type of object with values:  "milestone", "userstory", "task", "issue", "wikipage" or "test".
+* The `change` field (only present on change notifications) contains the information about the changes made.
 
 Test payload
 ~~~~~~~~~~~~
