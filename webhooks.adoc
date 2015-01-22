@@ -1,0 +1,655 @@
+Webhooks
+========
+:toc: left
+:numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
+
+Taiga webhooks notify changes on milestones, user stories, tasks, issues
+and wiki pages sending POST requests signed with a private key, to the
+configured urls.
+
+Each project can have any number of webhooks configured on it.
+
+Request
+-------
+
+The request made by the Taiga webhooks can be synchronous or asynchronous (it depends on the
+Taiga configuration, for example tree.taiga.io is async). In asynchronous mode those requests to
+your configured url can have a delay of some seconds.
+
+All request send to the URL are POST with header `Content-Type` equals to
+`application/json` and a signature of the message in the
+`X-TAIGA-WEBHOOK-SIGNATURE` HTTP header.
+
+The body of the POST request is just a JSON with the corresponding payload.
+
+Verify signature
+----------------
+
+Every request have a header called `X-TAIGA-WEBHOOK-SIGNATURE` that contains
+the signature generated with
+[HMAC](http://en.wikipedia.org/wiki/Hash-based_message_authentication_code)
+using sha1 hash.
+
+An example of signature verification in python:
+
+[source,python]
+----
+def verify_signature(key, data, signature):
+    mac = hmac.new(key.encode("utf-8"), msg=data, digestmod=hashlib.sha1)
+    return mac.hexdigest() == signature
+----
+
+in php:
+
+[source,php]
+----
+<?php
+    function verify_signature($key, $data, $signature) {
+        return hash_hmac("sha1", $data , $key) == $signature
+    }
+?>
+----
+
+Payloads
+--------
+
+The sended request depends on the object type and the kind of change, all payloads
+have the same base structure
+
+[source,json]
+----
+{
+    "data": {},
+    "action": "",
+    "type": "",
+    "change": {}
+}
+----
+
+* The `data` field contains the current object information.
+* The `action` field contains notification type with values: "create", "delete", "change" or "test".
+* The `type` field contains the type of object with values:  "milestone", "userstory", "task", "issue", "wikipage" or "test".
+* The `change` field (only present on change notifications) contains the information about the changes made.
+
+Test payload
+~~~~~~~~~~~~
+
+[source,json]
+----
+{
+    "data": {"test": "test"},
+    "action": "test",
+    "type": "test",
+}
+----
+
+Milestone payloads
+~~~~~~~~~~~~~~~~~~
+
+#### Create
+
+[source,json]
+----
+{
+    "data": {
+        "owner": {"id": 4, "name": "Test User"},
+        "id": 16,
+        "name": "Test",
+        "slug": "test",
+        "project": 1,
+        "estimated_start": "2015-02-17",
+        "estimated_finish": "2015-03-03",
+        "created_date": "2015-01-21T17:52:47+0000",
+        "modified_date": "2015-01-21T17:52:47+0000",
+        "closed": false,
+        "disponibility": 0.0
+    },
+    "action": "create",
+    "type": "milestone"
+}
+----
+
+#### Delete
+
+[source,json]
+----
+{
+    "data": {
+        "owner": {"id": 4, "name": "Test User"},
+        "id": 16,
+        "name": "Test",
+        "slug": "test",
+        "project": 1,
+        "estimated_start": "2015-02-17",
+        "estimated_finish": "2015-03-03",
+        "created_date": "2015-01-21T17:52:47+0000",
+        "modified_date": "2015-01-21T17:52:47+0000",
+        "closed": false,
+        "disponibility": 0.0
+    },
+    "action": "delete",
+    "type": "milestone"
+}
+----
+
+#### Change
+
+[source,json]
+----
+{
+    "data": {
+        "owner": {"id": 4, "name": "Test User"},
+        "id": 16,
+        "name": "Test2",
+        "slug": "test",
+        "project": 1,
+        "estimated_start": "2015-02-17",
+        "estimated_finish": "2015-03-03",
+        "created_date": "2015-01-21T17:52:47+0000",
+        "modified_date": "2015-01-21T17:54:14+0000",
+        "closed": false,
+        "disponibility": 0.0
+    },
+    "action": "change",
+    "type": "milestone",
+    "change": {
+        "diff": {
+            "estimated_finish": {"from": "2015-03-03", "to": "2015-03-03"},
+            "estimated_start": {"from": "2015-02-17", "to": "2015-02-17"},
+            "name": {"from": "Test", "to": "Test2"}
+        },
+        "snapshot": null,
+        "values": {},
+        "user": {"name": "admin", "pk": 4},
+        "delete_comment_user": null,
+        "id": "8355e08c-a196-11e4-9a81-68f72800ab2e",
+        "created_at": "2015-01-21T17:54:14+0000",
+        "type": 1,
+        "key": "milestones.milestone:16",
+        "comment": "",
+        "comment_html": "",
+        "delete_comment_date": null,
+        "is_hidden": false,
+        "is_snapshot": false
+    }
+}
+----
+
+User story data information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#### Create
+
+[source,json]
+----
+{
+    "data": {
+        "tags": ["nulla"],
+        "external_reference": null,
+        "owner": {"id": 14, "name": "Teresa Gallardo"},
+        "assigned_to": {"id": 9, "name": "Alicia Flores"},
+        "watchers": [],
+        "points": [
+            {"id": 3, "name": "1/2", "value": 0.5},
+            {"id": 4, "name": "1", "value": 1.0},
+            {"id": 9, "name": "10", "value": 10.0},
+            {"id": 9, "name": "10", "value": 10.0}
+        ],
+        "id": 31,
+        "is_blocked": false,
+        "blocked_note": "",
+        "ref": 80,
+        "milestone": null,
+        "project": 1,
+        "status": 3,
+        "is_closed": false,
+        "created_date": "2015-01-14T12:37:02+0000",
+        "modified_date": "2015-01-14T12:37:02+0000",
+        "finish_date": null,
+        "subject": "Implement the form",
+        "description": "Deleniti sunt tempora? Amet molestias...",
+        "client_requirement": false,
+        "team_requirement": false,
+        "generated_from_issue": null
+    },
+    "action": "create",
+    "type": "userstory"
+}
+----
+
+#### Delete
+
+[source,json]
+----
+{
+    "data": {
+        "tags": ["nulla"],
+        "external_reference": null,
+        "owner": {"id": 14, "name": "Teresa Gallardo"},
+        "assigned_to": {"id": 9, "name": "Alicia Flores"},
+        "watchers": [],
+        "points": [
+            {"id": 3, "name": "1/2", "value": 0.5},
+            {"id": 4, "name": "1", "value": 1.0},
+            {"id": 9, "name": "10", "value": 10.0},
+            {"id": 9, "name": "10", "value": 10.0}
+        ],
+        "id": 31,
+        "is_blocked": false,
+        "blocked_note": "",
+        "ref": 80,
+        "milestone": null,
+        "project": 1,
+        "status": 3,
+        "is_closed": false,
+        "created_date": "2015-01-14T12:37:02+0000",
+        "modified_date": "2015-01-14T12:37:02+0000",
+        "finish_date": null,
+        "subject": "Implement the form",
+        "description": "Deleniti sunt tempora? Amet molestias...",
+        "client_requirement": false,
+        "team_requirement": false,
+        "generated_from_issue": null
+    },
+    "action": "delete",
+    "type": "userstory"
+}
+----
+
+#### Change
+
+[source,json]
+----
+{
+    "data": {
+        "tags": ["nulla"],
+        "external_reference": null,
+        "owner": {"id": 14, "name": "Teresa Gallardo"},
+        "assigned_to": {"id": 9, "name": "Alicia Flores"},
+        "watchers": [],
+        "points": [
+            {"id": 3, "name": "1/2", "value": 0.5},
+            {"id": 4, "name": "1", "value": 1.0},
+            {"id": 9, "name": "10", "value": 10.0},
+            {"id": 9, "name": "10", "value": 10.0}
+        ],
+        "id": 19,
+        "is_blocked": false,
+        "blocked_note": "",
+        "ref": 80,
+        "milestone": null,
+        "project": 1,
+        "status": 5,
+        "is_closed": true,
+        "created_date": "2015-01-14T12:37:02+0000",
+        "modified_date": "2015-01-14T12:37:02+0000",
+        "finish_date": "2015-01-21 18:04:02.344463+00:00",
+        "subject": "Implement the form",
+        "description": "Deleniti sunt tempora? Amet molestias...",
+        "client_requirement": false,
+        "team_requirement": false,
+        "generated_from_issue": null
+    },
+    "type": "userstory",
+    "change": {
+        "diff": {
+            "finish_date": {"to": "2015-01-21 18:04:02.344463+00:00", "from": "None"},
+            "status": {"to": 5, "from": 2},
+            "is_closed": {"to": true, "from": false}
+        },
+        "snapshot": null,
+        "values": {
+            "status": {"2": "Ready", "5": "Done"}
+        },
+        "user": {"name": "admin", "pk": 4},
+        "delete_comment_user": null,
+        "id": "e196cce6-a197-11e4-b20b-68f72800ab2e",
+        "created_at": "2015-01-21T18:04:02+0000",
+        "type": 1,
+        "key": "userstories.userstory:19",
+        "comment": "",
+        "comment_html": "",
+        "delete_comment_date": null,
+        "is_hidden": false,
+        "is_snapshot": false
+    },
+    "action": "change"
+}
+----
+
+Task data information
+~~~~~~~~~~~~~~~~~~~~~
+
+#### Create
+
+[source,json]
+----
+{
+    "data": {
+        "tags": ["beatae", "veritatis"],
+        "owner": {"id": 14, "name": "Teresa Gallardo"},
+        "assigned_to": {"id": 6, "name": "Josefa Serrano"},
+        "watchers": [],
+        "id": 36,
+        "version": 2,
+        "is_blocked": false,
+        "blocked_note": "",
+        "user_story": 14,
+        "ref": 50,
+        "status": 4,
+        "project": 1,
+        "milestone": 5,
+        "created_date": "2015-01-14T12:36:58+0000",
+        "modified_date": "2015-01-14T12:36:58+0000",
+        "finished_date": null,
+        "subject": "Lighttpd x-sendfile support",
+        "us_order": 1,
+        "taskboard_order": 0,
+        "description": "Eos reiciendis ipsum voluptatem est, unde maxime...",
+        "is_iocaine": false,
+        "external_reference": null
+    },
+    "action": "create",
+    "type": "task"
+}
+----
+
+#### Delete
+
+[source,json]
+----
+{
+    "data": {
+        "tags": ["beatae", "veritatis"],
+        "owner": {"id": 14, "name": "Teresa Gallardo"},
+        "assigned_to": {"id": 6, "name": "Josefa Serrano"},
+        "watchers": [],
+        "id": 36,
+        "version": 2,
+        "is_blocked": false,
+        "blocked_note": "",
+        "user_story": 14,
+        "ref": 50,
+        "status": 4,
+        "project": 1,
+        "milestone": 5,
+        "created_date": "2015-01-14T12:36:58+0000",
+        "modified_date": "2015-01-22T09:10:59+0000",
+        "finished_date": null,
+        "subject": "Lighttpd x-sendfile support",
+        "us_order": 1,
+        "taskboard_order": 0,
+        "description": "Eos reiciendis ipsum voluptatem est, unde maxime...",
+        "is_iocaine": false,
+        "external_reference": null
+    },
+    "action": "delete",
+    "type": "task"
+}
+----
+
+#### Change
+
+[source,json]
+----
+{
+    "data": {
+        "tags": ["beatae", "veritatis"],
+        "owner": {"id": 14, "name": "Teresa Gallardo"},
+        "assigned_to": {"id": 6, "name": "Josefa Serrano"},
+        "watchers": [],
+        "id": 36,
+        "version": 2,
+        "is_blocked": false,
+        "blocked_note": "",
+        "user_story": 14,
+        "ref": 50,
+        "status": 4,
+        "project": 1,
+        "milestone": 5,
+        "created_date": "2015-01-14T12:36:58+0000",
+        "modified_date": "2015-01-22T09:10:59+0000",
+        "finished_date": null,
+        "subject": "Lighttpd x-sendfile support",
+        "us_order": 1,
+        "taskboard_order": 0,
+        "description": "Eos reiciendis ipsum voluptatem est, unde maxime...",
+        "is_iocaine": false,
+        "external_reference": null
+    },
+    "change": {
+        "diff": {
+            "milestone": {"from": 4, "to": 5},
+            "taskboard_order": {"from": 1, "to": 0},
+            "status": {"from": 3, "to": 4}
+        },
+        "snapshot": null,
+        "values": {
+            "milestone": {"5": "Sprint 2015-1-18", "4": "Sprint 2015-1-4"},
+            "status": {"4": "Closed", "3": "Ready for test"}
+        },
+        "user": {"name": "admin", "pk": 4},
+        "delete_comment_user": null,
+        "id": "94c13602-a216-11e4-830a-68f72800ab2e",
+        "created_at": "2015-01-22T09:10:59+0000",
+        "type": 1,
+        "key": "tasks.task:36",
+        "comment": "",
+        "comment_html": "",
+        "delete_comment_date": null,
+        "is_hidden": false,
+        "is_snapshot": false
+    },
+    "action": "change",
+    "type": "task"
+}
+----
+
+Issue data information
+~~~~~~~~~~~~~~~~~~~~~~
+
+#### Create
+
+[source,json]
+----
+{
+    "data": {
+        "tags": ["velit", "voluptatem"],
+        "owner": {"id": 10, "name": "Alicia Diaz"},
+        "assigned_to": {"id": 12, "name": "Josefina Reyes"},
+        "watchers": [],
+        "id": 22,
+        "version": 2,
+        "is_blocked": false,
+        "blocked_note": "",
+        "ref": 105,
+        "status": 2,
+        "severity": 3,
+        "priority": 2,
+        "type": 3,
+        "milestone": null,
+        "project": 1,
+        "created_date": "2015-01-14T12:37:04+0000",
+        "modified_date": "2015-01-14T12:37:04+0000",
+        "finished_date": null,
+        "subject": "Lighttpd x-sendfile support",
+        "description": "Nemo quo eveniet quibusdam laboriosam non...",
+        "external_reference": null
+    },
+    "action": "create",
+    "type": "issue"
+}
+----
+
+#### Delete
+
+[source,json]
+----
+{
+    "data": {
+        "tags": ["velit", "voluptatem"],
+        "owner": {"id": 10, "name": "Alicia Diaz"},
+        "assigned_to": {"id": 12, "name": "Josefina Reyes"},
+        "watchers": [],
+        "id": 22,
+        "version": 2,
+        "is_blocked": false,
+        "blocked_note": "",
+        "ref": 105,
+        "status": 2,
+        "severity": 3,
+        "priority": 2,
+        "type": 3,
+        "milestone": null,
+        "project": 1,
+        "created_date": "2015-01-14T12:37:04+0000",
+        "modified_date": "2015-01-22T09:14:04+0000",
+        "finished_date": null,
+        "subject": "Lighttpd x-sendfile support",
+        "description": "Nemo quo eveniet quibusdam laboriosam non...",
+        "external_reference": null
+    },
+    "action": "delete",
+    "type": "issue"
+}
+----
+
+#### Change
+
+[source,json]
+----
+{
+    "data": {
+        "tags": ["velit", "voluptatem"],
+        "owner": {"id": 10, "name": "Alicia Diaz"},
+        "assigned_to": {"id": 12, "name": "Josefina Reyes"},
+        "watchers": [],
+        "id": 22,
+        "version": 2,
+        "is_blocked": false,
+        "blocked_note": "",
+        "ref": 105,
+        "status": 2,
+        "severity": 3,
+        "priority": 2,
+        "type": 3,
+        "milestone": null,
+        "project": 1,
+        "created_date": "2015-01-14T12:37:04+0000",
+        "modified_date": "2015-01-22T09:14:04+0000",
+        "finished_date": null,
+        "subject": "Lighttpd x-sendfile support",
+        "description": "Nemo quo eveniet quibusdam laboriosam non...",
+        "external_reference": null
+    },
+    "change": {
+        "diff": {
+            "status": {"from": 1, "to": 2}
+        },
+        "snapshot": null,
+        "values": {
+            "status": {"2": "In progress", "1": "New"}
+        },
+        "user": {"name": "admin", "pk": 4},
+        "delete_comment_user": null,
+        "id": "031469a8-a217-11e4-a515-68f72800ab2e",
+        "created_at": "2015-01-22T09:14:04+0000",
+        "type": 1,
+        "key": "issues.issue:22",
+        "comment": "",
+        "comment_html": "",
+        "delete_comment_date": null,
+        "is_hidden": false,
+        "is_snapshot": false
+    },
+    "action": "change",
+    "type": "issue"
+}
+----
+
+Wiki page data information
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#### Create
+
+[source,json]
+----
+{
+    "data": {
+        "owner": {"id": 4, "name": "Test User"},
+        "last_modifier": {"id": 4, "name": "Test User"},
+        "id": 8,
+        "project": 1,
+        "slug": "test",
+        "content": "Test wiki page",
+        "created_date": "2015-01-21T17:57:03+0000",
+        "modified_date": "2015-01-21T17:57:03+0000"
+    },
+    "action": "create",
+    "type": "wikipage"
+}
+----
+
+#### Delete
+
+[source,json]
+----
+{
+    "data": {
+        "owner": {"id": 4, "name": "Test User"},
+        "last_modifier": {"id": 4, "name": "Test User"},
+        "id": 8,
+        "project": 1,
+        "slug": "test",
+        "content": "Test wiki page",
+        "created_date": "2015-01-21T17:57:03+0000",
+        "modified_date": "2015-01-21T17:57:03+0000"
+    },
+    "action": "delete",
+    "type": "milestone"
+}
+----
+
+#### Change
+
+[source,json]
+----
+{
+    "data": {
+        "owner": {"id": 4, "name": ""},
+        "last_modifier": {"id": 4, "name": ""},
+        "id": 8,
+        "project": 1,
+        "slug": "test",
+        "content": "Test wiki page changed",
+        "created_date": "2015-01-21T17:57:03+0000",
+        "modified_date": "2015-01-21T17:58:11+0000"
+    },
+    "action": "change",
+    "type": "wikipage",
+    "change": {
+        "diff": {
+            "content_html": {
+                "from": "<p>Test wiki page</p>",
+                "to": "<p>Test wiki page changed</p>"
+            },
+            "content": {"from": "Test wiki page", "to": "Test wiki page changed"}
+        },
+        "snapshot": null,
+        "values": {},
+        "user": {"name": "admin", "pk": 4},
+        "delete_comment_user": null,
+        "id": "10a7c0cc-a197-11e4-8f0c-68f72800ab2e",
+        "created_at": "2015-01-21T17:58:11+0000",
+        "type": 1,
+        "key": "wiki.wikipage:8",
+        "comment": "",
+        "comment_html": "",
+        "delete_comment_date": null,
+        "is_hidden": false,
+        "is_snapshot": false
+    }
+}
+----
