@@ -1,0 +1,23 @@
+[source,json]
+----
+{
+    "request_data": {... payload data ...},
+    "request_headers": {
+        "Content-Length": "1573",
+        "X-TAIGA-WEBHOOK-SIGNATURE": "32b30381523eda3df76854e84865467574fcc085"
+    },
+    "response_headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Length": "2",
+        "Server": "WSGIServer/0.2 CPython/3.4.2",
+        "Date": "Thu, 22 Jan 2015 10:43:56 GMT"
+    },
+    "id": 159,
+    "webhook": 1,
+    "url": "http://localhost:8080/test",
+    "status": 200,
+    "response_data": "OK",
+    "duration": 0.002326,
+    "created": "2015-01-22T10:43:56+0000"
+}
+----
