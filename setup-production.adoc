@@ -270,98 +270,22 @@ circusctl start taiga-celery
 Frontend installation
 ---------------------
 
-This section helps you install the frontend application
-
-
-Install dependencies
-~~~~~~~~~~~~~~~~~~~~
-
-The Frontend application runs entirelly on a browser, and it should be written using javascript, css and html.
-In case of **taiga-front** we have used other languages. Because of this, you should install some
-additional dependencies that compile **taiga-front** code intro something the browser can understand.
-
-
-Ruby and Gems
-^^^^^^^^^^^^^
-
-Ruby is used mainly for compiling *sass* (css preprocessor). It is also used for sass linting but that
-is only on development environments.
-
-.Install ruby
-[source,bash]
-----
-sudo apt-get install -y ruby
-----
-
-.Install required gems
-[source,bash]
-----
-gem install --user-install sass scss-lint
-----
-
-.Make gems scripts available in path putting this on *~/.bashrc*
-[source,bash]
-----
-export PATH=~/.gem/ruby/1.9.1/bin:$PATH
-----
-
-Restart the shell or run bash to make the path changes available.
-
-
-NodeJS and friends
-^^^^^^^^^^^^^^^^^^
-
-NodeJS is used to execute **gulp** and **bower**:
-
-- **gulp**: task execution tool. Used mainly for executing deploying and compiling tasks.
-- **bower**: javascript dependencies management tool. Used mainly for downloading third party libraries
-  used by **taiga-front**.
-
-.Install nodejs
-[source,bash]
-----
-sudo apt-get install -y nodejs npm
-----
-
-.Make sure your bash responds to node command to have a smooth installation of gulp and bower
-[source, bash]
-----
-node
-----
-If you get a "Command not found" error, then run 
-[source, bash]
-----
-sudo ln -s /usr/bin/nodejs /usr/bin/node
-----
-
-.Install **gulp** and **bower** using recently installed npm
-[source,bash]
-----
-sudo npm install -g gulp bower
-----
+Download the code from github:
 
 .Download the code
 [source,bash]
 ----
 cd ~
-git clone https://github.com/taigaio/taiga-front.git taiga-front
+git clone https://github.com/taigaio/taiga-front-dist.git taiga-front
 cd taiga-front
 git checkout stable
 ----
 
-.Install all dependencies needed for run gulp and compile taiga-front
-[source,bash]
-----
-npm install
-bower install
-----
+And now, you can configure it coping the
+`taiga-front/dist/js/conf.example.json` to `taiga-front/dist/js/conf.json`
+and editing it.
 
-Final steps
-~~~~~~~~~~~
-
-Having installed all dependencies, only two steps remain: creating the configuration and compiling.
-
-.Create intial configuration on ~/taiga-front/conf/main.json
+.Copy and edit initial configuration on ~/taiga-front/dist/js/conf.json
 [source,json]
 ----
 {
@@ -373,27 +297,14 @@ Having installed all dependencies, only two steps remain: creating the configura
     "privacyPolicyUrl": null,
     "termsOfServiceUrl": null,
     "maxUploadFileSize": null,
-    "gitHubClientId": null
+    "gitHubClientId": null,
+    "contribPlugins": []
 }
 ----
 
-.Run gulp task for compile
-[source,bash]
-----
-cd ~/taiga-front
-gulp deploy
-----
-
-Now, having compiled **taiga-front**, the next step is to expose the generated code
+Now, having **taiga-front** downloaded and configured, the next step is to expose the code
 (in **dist** directory) under static file web server: we use **nginx**. That process is
 explained in the final section of this tutorial.
-
-Verification
-~~~~~~~~~~~~
-
-To make sure everything is ok, you can check the **dist** directory and you'll see an
-**index.html** file and **fonts**, **images**, **js**, **partials**, **plugins**,
-**styles** and **svg** directories.
 
 Events installation
 -------------------
