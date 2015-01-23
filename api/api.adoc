@@ -151,7 +151,7 @@ include::issue-statuses/summary.adoc[]
 include::issue-types/summary.adoc[]
 
 [[priorities]]
-== Prioritues
+== Priorities
 include::priorities/summary.adoc[]
 
 [[severities]]

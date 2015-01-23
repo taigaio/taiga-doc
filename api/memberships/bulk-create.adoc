@@ -1,7 +1,7 @@
-To create multiple memberhips at the same time send a POST request with the following data:
+To create multiple memberships at the same time send a POST request with the following data:
 
 * *project_id* (required)
-* *bulk_memberhips* (required): a list of dicts with
+* *bulk_memberships* (required): a list of dicts with
 ** *role_id*
 ** *email*
 * *invitation_extra_text*: string
@@ -23,4 +23,4 @@ curl -X POST \
 ----
 
 
-When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON list of link:#object-mebership-detail[mebership detail object]
+When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON list of link:#object-membership-detail[membership detail object]

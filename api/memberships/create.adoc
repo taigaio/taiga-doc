@@ -1,4 +1,4 @@
-To create memberhips/invitation send a POST request with the following data:
+To create memberships/invitations send a POST request with the following data:
 
 - *project* (required)
 - *role* (required): Role to the membership
@@ -17,4 +17,4 @@ curl -X POST \
   https://api.taiga.io/api/v1/memberships
 ----
 
-When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-mebership-detail[mebership detail object]
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-membership-detail[membership detail object]
