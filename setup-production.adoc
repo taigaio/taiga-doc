@@ -281,7 +281,7 @@ cd taiga-front
 git checkout stable
 ----
 
-And now, you can configure it coping the
+And now, you can configure it copying the
 `taiga-front/dist/js/conf.example.json` to `taiga-front/dist/js/conf.json`
 and editing it.
 
