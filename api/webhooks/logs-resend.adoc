@@ -1,0 +1,11 @@
+To resend a request from a webhook log send a POST request specifying the webhook log id in the url
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/webhooklogs/1/resend
+----
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-webhook-log-detail[webhook log detail object] with the resault of the resend.

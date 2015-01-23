@@ -85,6 +85,9 @@ include::feedback/endpoints.adoc[]
 === Export/Import
 include::export-import/endpoints.adoc[]
 
+=== Webhooks
+include::webhooks/endpoints.adoc[]
+
 
 [[auth]]
 == Auth
@@ -186,6 +189,9 @@ include::feedback/summary.adoc[]
 == Export/Import
 include::export-import/summary.adoc[]
 
+[[webhooks]]
+== Webhooks
+include::webhooks/summary.adoc[]
 
 
 == Objects Summary
@@ -337,3 +343,11 @@ include::export-import/detail-export-accepted.adoc[]
 [[object-import-accepted]]
 === Import accepted response
 include::export-import/detail-import-accepted.adoc[]
+
+[[object-webhook-detail]]
+=== Webhook
+include::webhooks/detail-response.adoc[]
+
+[[object-webhook-log-detail]]
+=== Webhook log
+include::webhooks/log-detail-response.adoc[]

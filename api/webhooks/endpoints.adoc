@@ -1,0 +1,46 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/webhooks
+| GET
+| link:#webhooks-list[List webhooks]
+
+| /api/v1/webhooks
+| POST
+| link:#webhooks-create[Create webhook]
+
+| /api/v1/webhooks/<webhookId>
+| GET
+| link:#webhooks-get[Get webhook]
+
+| /api/v1/webhooks/<webhookId>
+| PUT
+| link:#webhooks-edit[Modify webhook]
+
+| /api/v1/webhooks/<webhookId>
+| PATCH
+| link:#webhooks-edit[Modify partially an webhook]
+
+| /api/v1/webhooks/<webhookId>
+| DELETE
+| link:#webhooks-delete[Delete an webhook]
+
+| /api/v1/webhooks/<webhookId>/test
+| POST
+| link:#webhooks-test[Test webhook]
+
+| /api/v1/webhooklogs
+| GET
+| link:#webhooks-list[List webhooks logs]
+
+| /api/v1/webhooklogs/<webhookLogId>
+| GET
+| link:#webhooks-get[Get webhook log]
+
+| /api/v1/webhooklogs/<webhookLogId>/resend
+| POST
+| link:#webhooklogs-resend[Resend webhook log request]
+|===

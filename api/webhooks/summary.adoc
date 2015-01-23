@@ -1,0 +1,35 @@
+[[webhooks-list]]
+=== List
+include::list.adoc[]
+
+[[webhooks-create]]
+=== Create
+include::create.adoc[]
+
+[[webhooks-get]]
+=== Get
+include::get.adoc[]
+
+[[webhooks-edit]]
+=== Edit
+include::edit.adoc[]
+
+[[webhooks-delete]]
+=== Delete
+include::delete.adoc[]
+
+[[webhooks-test]]
+=== Test
+include::test.adoc[]
+
+[[webhooklogs-list]]
+=== Logs list
+include::logs-list.adoc[]
+
+[[webhooklogs-get]]
+=== Log get
+include::logs-get.adoc[]
+
+[[webhooklogs-resend]]
+=== Resend request
+include::logs-resend.adoc[]
