@@ -33,6 +33,7 @@ curl -v -X POST \
   -d '{
           "name": "Beta project",
           "description": "Taiga",
+          "creation_template": 1,
           "is_backlog_activated": false,
           "is_issues_activated": true,
           "is_kanban_activated": true,
