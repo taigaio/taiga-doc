@@ -50,6 +50,10 @@ guard :shell do
     `eval $( grep setup-production.adoc Makefile )`
   }
 
+  watch(/^setup-development\.adoc$/) {
+    `eval $( grep setup-development.adoc Makefile )`
+  }
+
   watch(/^setup-alternatives\.adoc$/) {
     `eval $( grep setup-alternatives.adoc Makefile )`
   }
