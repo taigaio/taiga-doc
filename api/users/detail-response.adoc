@@ -13,6 +13,6 @@
     "id": 1,
     "is_active": true,
     "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-    "username": "beta.tester",
+    "username": "beta.tester"
 }
 ----

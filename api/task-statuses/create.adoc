@@ -17,7 +17,7 @@ curl -X POST \
         "is_closed": true,
         "name": "New status",
         "order": 8,
-        "project": 3,
+        "project": 3
     }' \
   https://api.taiga.io/api/v1/task-statuses
 ----
