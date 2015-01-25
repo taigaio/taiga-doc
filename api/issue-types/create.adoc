@@ -15,7 +15,7 @@ curl -X POST \
         "color": "#AAAAAA",
         "name": "New type",
         "order": 8,
-        "project": 3,
+        "project": 3
     }' \
   https://api.taiga.io/api/v1/issue-types
 ----

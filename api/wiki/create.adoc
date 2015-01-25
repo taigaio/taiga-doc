@@ -27,7 +27,7 @@ curl -X POST \
   -d '{
           "project": 1,
           "slug": "home",
-          "content": "Lorem ipsum dolor.",
+          "content": "Lorem ipsum dolor."
       }' \
   https://api.taiga.io/api/v1/wiki
 ----

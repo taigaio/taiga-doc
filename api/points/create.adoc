@@ -17,7 +17,7 @@ curl -X POST \
         "name": "Huge",
         "order": 8,
         "value": 40,
-        "project": 3,
+        "project": 3
     }' \
   https://api.taiga.io/api/v1/points
 ----
