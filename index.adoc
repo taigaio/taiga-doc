@@ -90,6 +90,7 @@ Because _Taiga_ is an open source project, we gratefully accept contributions in
 Examples of contributions include:
 
 - Code patches
+- link:#contrib-plugins[Code contrib plugins]
 - Improvements
 - Bug reports
 - Patch reviews
@@ -134,6 +135,17 @@ donations to reward people working alongside us.
 
 If you wish to make a donation to this Taiga fund, you can do so via link:http://www.paypal.com[PayPal]
 using the email: eposner@taiga.io
+
+[[contrib-plugins]]
+Contrib plugins
+---------------
+
+Taiga support the inclusion of contrib plugins, each plugin has its own
+documentation and repository. The current supported plugins are:
+
+* link:http://github.com/taigaio/taiga-contrib-gogs[taiga-contrib-gogs]: Gogs integration
+* link:http://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration
+* link:http://github.com/taigaio/taiga-contrib-hall[taiga-contrib-hall]: Hall.com integration
 
 License
 -------
