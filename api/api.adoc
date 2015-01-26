@@ -354,10 +354,10 @@ include::webhooks/log-detail-response.adoc[]
 
 == Contrib plugins
 
-Taiga allow add functionality through contrib plugins, each plugin can add new
+Taiga allows adding features through contrib plugins, each plugin can add new
 API endpoints, and has its own documentation.
 
-The current supported contrib plugins that add endpoints are:
+Current supported contrib plugins that adding endpoints:
 
 * taiga-contrib-slack: Slack integration
   (link:http://taigaio.github.io/taiga-contrib-slack/dist/index.html[documentation])
