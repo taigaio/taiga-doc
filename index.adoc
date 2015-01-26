@@ -140,7 +140,7 @@ using the email: eposner@taiga.io
 Contrib plugins
 ---------------
 
-Taiga support the inclusion of contrib plugins, each plugin has its own
+Taiga supports the inclusion of contrib plugins, each plugin has its own
 documentation and repository. The current supported plugins are:
 
 * link:http://github.com/taigaio/taiga-contrib-gogs[taiga-contrib-gogs]: Gogs integration
