@@ -1,0 +1,12 @@
+# Purpose:
+# - list of files to ignore when checking for JSON trailing commas
+# - particular use case is to ignore false-positives
+# - excludes files by base name only (not full or relative path)
+# - DO NOT precede the listed files with a space or they will not be excluded
+# - 1 file per line
+#
+# Examples:
+# - Uncomment the following examples to exclude them from being tested
+#
+#webhooks.adoc
+#normal-login.adoc
