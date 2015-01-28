@@ -81,7 +81,7 @@ Test payload
 {
     "data": {"test": "test"},
     "action": "test",
-    "type": "test",
+    "type": "test"
 }
 ----
 
