@@ -13,7 +13,7 @@ This documentation explains how to deploy a Taiga service (each module is part o
 The Taiga platform consists of three main components:
 
 - **taiga-back** (backend/api)
-- **taiga-front** (frontend)
+- **taiga-front-dist** (frontend)
 - **taiga-events** (websockets gateway) (optional)
 
 And each one has its own dependencies, at compile time and runtime.
@@ -277,16 +277,16 @@ Download the code from github:
 [source,bash]
 ----
 cd ~
-git clone https://github.com/taigaio/taiga-front-dist.git taiga-front
-cd taiga-front
+git clone https://github.com/taigaio/taiga-front-dist.git taiga-front-dist
+cd taiga-front-dist
 git checkout stable
 ----
 
 And now, you can configure it copying the
-`taiga-front/dist/js/conf.example.json` to `taiga-front/dist/js/conf.json`
+`taiga-front-dist/dist/js/conf.example.json` to `taiga-front-dist/dist/js/conf.json`
 and editing it.
 
-.Copy and edit initial configuration on ~/taiga-front/dist/js/conf.json
+.Copy and edit initial configuration on ~/taiga-front-dist/dist/js/conf.json
 [source,json]
 ----
 {
@@ -303,7 +303,7 @@ and editing it.
 }
 ----
 
-Now, having **taiga-front** downloaded and configured, the next step is to expose the code
+Now, having **taiga-front-dist** downloaded and configured, the next step is to expose the code
 (in **dist** directory) under static file web server: we use **nginx**. That process is
 explained in the final section of this tutorial.
 
@@ -318,12 +318,12 @@ Final steps
 -----------
 
 If you are here, it's probable that you completed the installation of **taiga-back** and
-**taiga-front**. However, having installed them is insufficient.
+**taiga-front-dist**. However, having installed them is insufficient.
 
 **taiga-back** should run under an application server which in turn should be executed and monitored
 by a process manager. For this task we will use **gunicorn** and **circus** respectivelly.
 
-**taiga-front** and **taiga-back** should be exposed to the outside, using good proxy/static-file
+**taiga-front-dist** and **taiga-back** should be exposed to the outside, using good proxy/static-file
 web server. For this purpose we'll use **nginx**.
 
 
@@ -407,7 +407,7 @@ sudo service circus start
 Nginx
 ~~~~~
 
-Nginx is used as a static file web server to serve **taiga-front** and send proxy requests to **taiga-back**.
+Nginx is used as a static file web server to serve **taiga-front-dist** and send proxy requests to **taiga-back**.
 
 First install it:
 
@@ -418,7 +418,7 @@ sudo apt-get install -y nginx
 
 And now let us start configuring it:
 
-.Add specific configuration for **taiga-front** and **taiga-back** on /etc/nginx/sites-available/taiga.
+.Add specific configuration for **taiga-front-dist** and **taiga-back** on /etc/nginx/sites-available/taiga.
 [source,nginx]
 ----
 server {
@@ -434,7 +434,7 @@ server {
 
     # Frontend
     location / {
-        root /home/taiga/taiga-front/dist/;
+        root /home/taiga/taiga-front-dist/dist/;
         try_files $uri $uri/ /index.html;
     }
 
@@ -448,7 +448,7 @@ server {
         proxy_pass http://127.0.0.1:8001/api;
         proxy_redirect off;
     }
-    
+
     # Django admin access (/admin/)
     location /admin {
         proxy_set_header Host $http_host;
@@ -516,7 +516,7 @@ server {
 
     # Frontend
     location / {
-        root /home/taiga/taiga-front/dist/;
+        root /home/taiga/taiga-front-dist/dist/;
         try_files $uri $uri/ /index.html;
     }
 
@@ -608,7 +608,7 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 sudo service circus restart
 ----
 
-.Update ~/taiga-front/conf/main.json
+.Update ~/taiga-front-dist/dist/js/conf.json
 [source,json]
 ----
 {
@@ -624,13 +624,6 @@ sudo service circus restart
 }
 ----
 
-.Run gulp task for compile
-[source,bash]
-----
-cd ~/taiga-front
-gulp deploy
-----
-
 And nginx:
 
 .Reload the nginx configuration
@@ -643,21 +636,6 @@ sudo service nginx reload
 
 FAQ
 ---
-
-[[faq-npm-error]]
-Are you having npm errors when executing gulp?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Delete the tmp files and install the dependencies again:
-
-[source,text]
-----
-mv ~/tmp ~/tmp_old
-cd ~/taiga-front/
-rm -rf ~/.npm; rm -rf node_modules
-npm install
-bower install
-gulp deploy
-----
 
 [[faq-change-domain]]
 How can I change the domain name?
@@ -696,12 +674,9 @@ in time with the *stable* branch of git or use the last major version of each co
 .Frontend application
 [source,bash]
 ----
-cd ~/taiga-front
+cd ~/taiga-front-dist
 git checkout stable
 git pull
-npm install
-bower install
-gulp deploy
 ----
 
 .Backend application
