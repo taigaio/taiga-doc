@@ -16,27 +16,27 @@
 | POST
 | link:#memberships-bulk-create[Create a bulk of memberships]
 
-| /api/v1/memberships/<membershipId>
+| /api/v1/memberships/\{membershipId}
 | GET
 | link:#memberships-get[Get membership]
 
-| /api/v1/memberships/<membershipId>
+| /api/v1/memberships/\{membershipId}
 | PUT
 | link:#memberships-edit[Modify membership]
 
-| /api/v1/memberships/<membershipId>
+| /api/v1/memberships/\{membershipId}
 | PATCH
 | link:#memberships-edit[Modify partially a membership]
 
-| /api/v1/memberships/<membershipId>
+| /api/v1/memberships/\{membershipId}
 | DELETE
 | link:#memberships-delete[Delete a membership]
 
-| /api/v1/memberships/<membershipId>/resend_invitation
+| /api/v1/memberships/\{membershipId}/resend_invitation
 | POST
 | link:#memberships-resend-invitation[Resend invitation]
 
-| /api/v1/invitations/<invitationUuid>
+| /api/v1/invitations/\{invitationUuid}
 | POST
 | link:#memberships-invitations[Get invitation by anonymous user]
 |===
