@@ -12,19 +12,19 @@
 | POST
 | link:#task-statuses-create[Create task status]
 
-| /api/v1/task-statuses/<taskStatusId>
+| /api/v1/task-statuses/\{taskStatusId}
 | GET
 | link:#task-statuses-get[Get task status]
 
-| /api/v1/task-statuses/<taskStatusId>
+| /api/v1/task-statuses/\{taskStatusId}
 | PUT
 | link:#task-statuses-edit[Modify task status]
 
-| /api/v1/task-statuses/<taskStatusId>
+| /api/v1/task-statuses/\{taskStatusId}
 | PATCH
 | link:#task-statuses-edit[Modify partially a task status]
 
-| /api/v1/task-statuses/<taskStatusId>
+| /api/v1/task-statuses/\{taskStatusId}
 | DELETE
 | link:#task-statuses-delete[Delete a task status]
 
