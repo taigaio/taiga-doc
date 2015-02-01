@@ -79,6 +79,23 @@
     },
     "total_milestones": 3,
     "total_story_points": 20.0,
+    "users":[
+        {
+            "id":2,
+            "username":"user6532909695705815086",
+            "full_name":"Silvia Soto",
+            "full_name_display":"Silvia Soto",
+            "email":"expedita@sequi.org",
+            "github_id":null,
+            "color":"#2099DB",
+            "bio":"",
+            "default_language":"",
+            "default_timezone":"",
+            "is_active":true,
+            "photo":"//www.gravatar.com/avatar/f64db24896b923753d440e23faa856aa?size=80",
+            "big_photo":"//www.gravatar.com/avatar/f64db24896b923753d440e23faa856aa?size=80"
+        }
+    ],
     "videoconferences": "appear-in",
     "videoconferences_salt": null
 }
