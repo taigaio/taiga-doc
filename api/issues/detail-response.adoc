@@ -28,7 +28,7 @@
         "customer"
     ],
     "version": 8,
-    "watchers": []
+    "watchers": [],
     "generated_user_stories": [
     ],
     "votes": null,
