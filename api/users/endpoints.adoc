@@ -12,6 +12,10 @@
 | GET
 | link:#users-get[Get user]
 
+| /api/v1/users/me
+| GET
+| link:#users-me[Get myself]
+
 | /api/v1/users/<userId>
 | PUT
 | link:#users-edit[Modify user]
