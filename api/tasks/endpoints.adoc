@@ -12,23 +12,23 @@
 | POST
 | link:#tasks-create[Create task]
 
-| /api/v1/tasks/<taskId>
+| /api/v1/tasks/\{taskId}
 | GET
 | link:#tasks-get[Get task]
 
-| /api/v1/tasks/by_ref?ref=<taskRef>&project=<projectId>
+| /api/v1/tasks/by_ref?ref=\{taskRef}&project=\{projectId}
 | GET
 | link:#tasks-get-by-ref[Get task]
 
-| /api/v1/tasks/<taskId>
+| /api/v1/tasks/\{taskId}
 | PUT
 | link:#tasks-edit[Modify task]
 
-| /api/v1/tasks/<taskId>
+| /api/v1/tasks/\{taskId}
 | PATCH
 | link:#tasks-edit[Modify partially a task]
 
-| /api/v1/tasks/<taskId>
+| /api/v1/tasks/\{taskId}
 | DELETE
 | link:#tasks-delete[Delete a task]
 
@@ -44,19 +44,19 @@
 | POST
 | link:#tasks-create-attachment[Create task attachments]
 
-| /api/v1/tasks/attachments/<taskAttachmentId>
+| /api/v1/tasks/attachments/\{taskAttachmentId}
 | GET
 | link:#tasks-get-attachment[Get task attachments]
 
-| /api/v1/tasks/attachments/<taskAttachmentId>
+| /api/v1/tasks/attachments/\{taskAttachmentId}
 | PUT
 | link:#tasks-edit-attachment[Modify task attachments]
 
-| /api/v1/tasks/attachments/<taskAttachmentId>
+| /api/v1/tasks/attachments/\{taskAttachmentId}
 | PATCH
 | link:#tasks-edit-attachment[Modify partially a task attachments]
 
-| /api/v1/tasks/attachments/<taskAttachmentId>
+| /api/v1/tasks/attachments/\{taskAttachmentId}
 | DELETE
 | link:#tasks-delete-attachment[Delete a task attachments]
 |===

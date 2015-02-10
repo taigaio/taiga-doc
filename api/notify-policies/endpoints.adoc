@@ -8,15 +8,15 @@
 | GET
 | link:#notify-policies-list[List notify policies]
 
-| /api/v1/notify-policies/<policyId>
+| /api/v1/notify-policies/\{policyId}
 | GET
 | link:#notify-policies-get[Get notify policy]
 
-| /api/v1/notify-policies/<policyId>
+| /api/v1/notify-policies/\{policyId}
 | PUT
 | link:#notify-policies-edit[Modify notify policy]
 
-| /api/v1/notify-policies/<policyId>
+| /api/v1/notify-policies/\{policyId}
 | PATCH
 | link:#notify-policies-edit[Modify partially a notify policy]
 |===

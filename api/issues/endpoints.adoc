@@ -12,35 +12,35 @@
 | POST
 | link:#issues-create[Create issue]
 
-| /api/v1/issues/<issueId>
+| /api/v1/issues/\{issueId}
 | GET
 | link:#issues-get[Get issue]
 
-| /api/v1/issues/by_ref?ref=<issueRef>&project=<projectId>
+| /api/v1/issues/by_ref?ref=\{issueRef}&project=\{projectId}
 | GET
 | link:#issues-get-by-ref[Get issue]
 
-| /api/v1/issues/<issueId>
+| /api/v1/issues/\{issueId}
 | PUT
 | link:#issues-edit[Modify issue]
 
-| /api/v1/issues/<issueId>
+| /api/v1/issues/\{issueId}
 | PATCH
 | link:#issues-edit[Modify partially an issue]
 
-| /api/v1/issues/<issueId>
+| /api/v1/issues/\{issueId}
 | DELETE
 | link:#issues-delete[Delete an issue]
 
-| /api/v1/issues/<issueId>/upvote
+| /api/v1/issues/\{issueId}/upvote
 | POST
 | link:#issues-upvote[Add a vote to an issue]
 
-| /api/v1/issues/<issueId>/downvote
+| /api/v1/issues/\{issueId}/downvote
 | POST
 | link:#issues-downvote[Remove your vote to an issue]
 
-| /api/v1/issues/<issueId>/voters
+| /api/v1/issues/\{issueId}/voters
 | GET
 | link:#issues-voters[Get issue voters list]
 
@@ -56,19 +56,19 @@
 | POST
 | link:#issues-create-attachment[Create issue attachments]
 
-| /api/v1/issues/attachments/<issueAttachmentId>
+| /api/v1/issues/attachments/\{issueAttachmentId}
 | GET
 | link:#issues-get-attachment[Get issue attachments]
 
-| /api/v1/issues/attachments/<issueAttachmentId>
+| /api/v1/issues/attachments/\{issueAttachmentId}
 | PUT
 | link:#issues-edit-attachment[Modify issue attachments]
 
-| /api/v1/issues/attachments/<issueAttachmentId>
+| /api/v1/issues/attachments/\{issueAttachmentId}
 | PATCH
 | link:#issues-edit-attachment[Modify partially an issue attachments]
 
-| /api/v1/issues/attachments/<issueAttachmentId>
+| /api/v1/issues/attachments/\{issueAttachmentId}
 | DELETE
 | link:#issues-delete-attachment[Delete an issue attachments]
 |===

@@ -4,7 +4,7 @@
 | Method
 | Functionality
 
-| /api/v1/exporter/<projectId>
+| /api/v1/exporter/\{projectId}
 | GET
 | link:#export-import-export-dump[Export a project dump]
 
