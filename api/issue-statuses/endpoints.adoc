@@ -12,19 +12,19 @@
 | POST
 | link:#issue-statuses-create[Create issue status]
 
-| /api/v1/issue-statuses/<issueStatusId>
+| /api/v1/issue-statuses/\{issueStatusId}
 | GET
 | link:#issue-statuses-get[Get issue status]
 
-| /api/v1/issue-statuses/<issueStatusId>
+| /api/v1/issue-statuses/\{issueStatusId}
 | PUT
 | link:#issue-statuses-edit[Modify issue status]
 
-| /api/v1/issue-statuses/<issueStatusId>
+| /api/v1/issue-statuses/\{issueStatusId}
 | PATCH
 | link:#issue-statuses-edit[Modify partially a issue status]
 
-| /api/v1/issue-statuses/<issueStatusId>
+| /api/v1/issue-statuses/\{issueStatusId}
 | DELETE
 | link:#issue-statuses-delete[Delete a issue status]
 

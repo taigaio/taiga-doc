@@ -12,19 +12,19 @@
 | POST
 | link:#project-templates-create[Create project template]
 
-| /api/v1/project-templates/<projectTemplateId>
+| /api/v1/project-templates/\{projectTemplateId}
 | GET
 | link:#project-templates-get[Get project template]
 
-| /api/v1/project-templates/<projectTemplateId>
+| /api/v1/project-templates/\{projectTemplateId}
 | PUT
 | link:#project-templates-edit[Modify project template]
 
-| /api/v1/project-templates/<projectTemplateId>
+| /api/v1/project-templates/\{projectTemplateId}
 | PATCH
 | link:#project-templates-edit[Modify partially an project template]
 
-| /api/v1/project-templates/<projectTemplateId>
+| /api/v1/project-templates/\{projectTemplateId}
 | DELETE
 | link:#project-templates-delete[Delete an project template]
 |===

@@ -12,23 +12,23 @@
 | POST
 | link:#user-stories-create[Create user story]
 
-| /api/v1/userstories/<userStoryId>
+| /api/v1/userstories/\{userStoryId}
 | GET
 | link:#user-stories-get[Get user story]
 
-| /api/v1/userstories/by_ref?ref=<userStoryRef>&project=<projectId>
+| /api/v1/userstories/by_ref?ref=\{userStoryRef}&project=\{userStoryId}
 | GET
 | link:#user-stories-get-by-ref[Get user story]
 
-| /api/v1/userstories/<userStoryId>
+| /api/v1/userstories/\{userStoryId}
 | PUT
 | link:#user-stories-edit[Modify user story]
 
-| /api/v1/userstories/<userStoryId>
+| /api/v1/userstories/\{userStoryId}
 | PATCH
 | link:#user-stories-edit[Modify partially a user story]
 
-| /api/v1/userstories/<userStoryId>
+| /api/v1/userstories/\{userStoryId}
 | DELETE
 | link:#user-stories-delete[Delete a user story]
 
@@ -56,19 +56,19 @@
 | POST
 | link:#user-stories-create-attachment[Create user story attachments]
 
-| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| /api/v1/userstories/attachments/\{userStoryAttachmentId}
 | GET
 | link:#user-stories-get-attachment[Get user story attachments]
 
-| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| /api/v1/userstories/attachments/\{userStoryAttachmentId}
 | PUT
 | link:#user-stories-edit-attachment[Modify user story attachments]
 
-| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| /api/v1/userstories/attachments/\{userStoryAttachmentId}
 | PATCH
 | link:#user-stories-edit-attachment[Modify partially a user story attachments]
 
-| /api/v1/userstories/attachments/<userStoryAttachmentId>
+| /api/v1/userstories/attachments/\{userStoryAttachmentId}
 | DELETE
 | link:#user-stories-delete-attachment[Delete a user story attachments]
 |===

@@ -8,7 +8,7 @@
 | GET
 | link:#users-list[List users]
 
-| /api/v1/users/<userId>
+| /api/v1/users/\{userId}
 | GET
 | link:#users-get[Get user]
 
@@ -16,19 +16,19 @@
 | GET
 | link:#users-me[Get myself]
 
-| /api/v1/users/<userId>
+| /api/v1/users/\{userId}
 | PUT
 | link:#users-edit[Modify user]
 
-| /api/v1/users/<userId>
+| /api/v1/users/\{userId}
 | PATCH
 | link:#users-edit[Modify partially a user]
 
-| /api/v1/users/<userId>/starred
+| /api/v1/users/\{userId}/starred
 | GET
 | link:#users-starred[Get user starred projects]
 
-| /api/v1/users/<userId>
+| /api/v1/users/\{userId}
 | DELETE
 | link:#users-delete[Delete a user]
 
