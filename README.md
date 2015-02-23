@@ -1,5 +1,8 @@
 # Taiga documentation source #
 
+![Kaleidos Project](http://kaleidos.net/static/img/badge.png "Kaleidos Project")
+[![Managed with Taiga](https://taiga.io/media/support/attachments/article-22/banner-gh.png)](https://taiga.io "Managed with Taiga")
+
 > *Status:* _Still a work in progress_
 
 Web: http://taigaio.github.io/taiga-doc/dist/   
