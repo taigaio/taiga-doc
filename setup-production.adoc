@@ -696,7 +696,7 @@ circusctl reload taiga
 How I can add extra functionality to Taiga?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Taiga allows adding functionality through contrib plugins. The instalation of each
+Taiga allows adding functionality through contrib plugins. The installation of each
 plugin depends on the plugin itself and must be documented in the plugin
 repository.
 
