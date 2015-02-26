@@ -1,0 +1,23 @@
+To list issue custom attributes send a GET request with the following parameters:
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/issue-custom-attributes
+----
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-issue-custom-attribute-detail[issue custom attribute detail objects]
+
+The results can be filtered using the following parameters:
+
+- *project*: project id
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/issue-custom-attributes?project=1
+----

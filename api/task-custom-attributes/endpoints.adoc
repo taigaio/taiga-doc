@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/task-custom-attributes
+| GET
+| link:#task-custom-attributes-list[List task custom attributes]
+
+| /api/v1/task-custom-attributes
+| POST
+| link:#task-custom-attributes-create[Create task custom attribute]
+
+| /api/v1/task-custom-attributes/\{taskCustomAttributeId}
+| GET
+| link:#task-custom-attributes-get[Get task custom attribute]
+
+| /api/v1/task-custom-attributes/\{taskCustomAttributeId}
+| PUT
+| link:#task-custom-attributes-edit[Modify task custom attribute]
+
+| /api/v1/task-custom-attributes/\{taskCustomAttributeId}
+| PATCH
+| link:#task-custom-attributes-edit[Modify partially a task custom attribute]
+
+| /api/v1/task-custom-attributes/\{taskCustomAttributeId}
+| DELETE
+| link:#task-custom-attributes-delete[Delete a task custom attribute]
+
+| /api/v1/task-custom-attributes/bulk_update_order
+| POST
+| link:#task-custom-attributes-bulk-update-order[Update task custom attributes order in bulk mode]
+|===

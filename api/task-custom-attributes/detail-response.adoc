@@ -1,0 +1,10 @@
+[source, json]
+----
+{
+    "id": 1,
+    "name": "Duration",
+    "description": "Duration in minutes",
+    "order": 1,
+    "project": 1
+}
+----

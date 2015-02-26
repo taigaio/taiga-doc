@@ -1,0 +1,23 @@
+[[task-custom-attributes-list]]
+=== List
+include::../task-custom-attributes/list.adoc[]
+
+[[task-custom-attributes-create]]
+=== Create
+include::../task-custom-attributes/create.adoc[]
+
+[[task-custom-attributes-get]]
+=== Get
+include::../task-custom-attributes/get.adoc[]
+
+[[task-custom-attributes-edit]]
+=== Edit
+include::../task-custom-attributes/edit.adoc[]
+
+[[task-custom-attributes-delete]]
+=== Delete
+include::../task-custom-attributes/delete.adoc[]
+
+[[task-custom-attributes-bulk-update-order]]
+=== Bulk update order
+include::../task-custom-attributes/bulk-update-order.adoc[]

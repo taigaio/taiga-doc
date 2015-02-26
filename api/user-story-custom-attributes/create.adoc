@@ -1,0 +1,35 @@
+To create user story custom attributes send a POST request with the following data:
+
+- *name*: (required) text
+- *description*: text
+- *order*: integer
+- *project*: (required) integer, project id
+
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+        "name": "Duration",
+        "description": "Duration in minutes",
+        "order": 8,
+        "project": 3,
+    }' \
+  https://api.taiga.io/api/v1/userstory-custom-attributes
+----
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "name": "Duration",
+          "project": 3,
+      }' \
+  https://api.taiga.io/api/v1/userstory-custom-attributes
+----
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-userstory-custom-attribute-detail[user story custom attribute detail object]

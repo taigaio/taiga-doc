@@ -1,0 +1,18 @@
+To update the order of multiple issue custom attributes at the same time send a POST request with the following data:
+
+- *project* (required)
+- *bulk_issue_custom_attributes*: list where each element is a list, the first element is the custom attribute id and the second the new order
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "project_id": 3,
+          "bulk_issue_custom_attributes": [[1,10], [2,5]]
+      }' \
+  https://api.taiga.io/api/v1/issue-custom-attributes/bulk_update_order
+----
+
+When the update is successful, the HTTP response is a 204 NO CONTENT with an empty body response

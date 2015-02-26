@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/issue-custom-attributes
+| GET
+| link:#issue-custom-attributes-list[List issue custom attributes]
+
+| /api/v1/issue-custom-attributes
+| POST
+| link:#issue-custom-attributes-create[Create issue custom attribute]
+
+| /api/v1/issue-custom-attributes/\{issueCustomAttributeId}
+| GET
+| link:#issue-custom-attributes-get[Get issue custom attribute]
+
+| /api/v1/issue-custom-attributes/\{issueCustomAttributeId}
+| PUT
+| link:#issue-custom-attributes-edit[Modify issue custom attribute]
+
+| /api/v1/issue-custom-attributes/\{issueCustomAttributeId}
+| PATCH
+| link:#issue-custom-attributes-edit[Modify partially a issue custom attribute]
+
+| /api/v1/issue-custom-attributes/\{issueCustomAttributeId}
+| DELETE
+| link:#issue-custom-attributes-delete[Delete a issue custom attribute]
+
+| /api/v1/issue-custom-attributes/bulk_update_order
+| POST
+| link:#issue-custom-attributes-bulk-update-order[Update issue custom attributes order in bulk mode]
+|===

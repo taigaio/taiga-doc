@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/userstory-custom-attributes
+| GET
+| link:#user-story-custom-attributes-list[List user story custom attributes]
+
+| /api/v1/userstory-custom-attributes
+| POST
+| link:#user-story-custom-attributes-create[Create user story custom attribute]
+
+| /api/v1/userstory-custom-attributes/\{userStoryCustomAttributeId}
+| GET
+| link:#user-story-custom-attributes-get[Get user story custom attribute]
+
+| /api/v1/userstory-custom-attributes/\{userStoryCustomAttributeId}
+| PUT
+| link:#user-story-custom-attributes-edit[Modify user story custom attribute]
+
+| /api/v1/userstory-custom-attributes/\{userStoryCustomAttributeId}
+| PATCH
+| link:#user-story-custom-attributes-edit[Modify partially a user story custom attribute]
+
+| /api/v1/userstory-custom-attributes/\{userStoryCustomAttributeId}
+| DELETE
+| link:#user-story-custom-attributes-delete[Delete a user story custom attribute]
+
+| /api/v1/userstory-custom-attributes/bulk_update_order
+| POST
+| link:#user-story-custom-attributes-bulk-update-order[Update user story custom attributes order in bulk mode]
+|===

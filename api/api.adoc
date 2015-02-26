@@ -43,11 +43,17 @@ include::user-story-statuses/endpoints.adoc[]
 === Points
 include::points/endpoints.adoc[]
 
+=== User story custom attribute
+include::user-story-custom-attributes/endpoints.adoc[]
+
 === Tasks
 include::tasks/endpoints.adoc[]
 
 === Task status
 include::task-statuses/endpoints.adoc[]
+
+=== Task custom attribute
+include::task-custom-attributes/endpoints.adoc[]
 
 === Issues
 include::issues/endpoints.adoc[]
@@ -63,6 +69,9 @@ include::priorities/endpoints.adoc[]
 
 === Severities
 include::severities/endpoints.adoc[]
+
+=== Issue custom attribute
+include::issue-custom-attributes/endpoints.adoc[]
 
 === Wiki pages
 include::wiki/endpoints.adoc[]
@@ -133,6 +142,10 @@ include::user-story-statuses/summary.adoc[]
 == Points
 include::points/summary.adoc[]
 
+[[user-story-custom-attributes]]
+== User story custom attribute
+include::user-story-custom-attributes/summary.adoc[]
+
 [[tasks]]
 == Tasks
 include::tasks/summary.adoc[]
@@ -140,6 +153,10 @@ include::tasks/summary.adoc[]
 [[task-statuses]]
 == Task status
 include::task-statuses/summary.adoc[]
+
+[[task-custom-attributes]]
+== Task custom attribute
+include::task-custom-attributes/summary.adoc[]
 
 [[issues]]
 == Issues
@@ -160,6 +177,10 @@ include::priorities/summary.adoc[]
 [[severities]]
 == Severities
 include::severities/summary.adoc[]
+
+[[issue-custom-attributes]]
+== Issue custom attribute
+include::issue-custom-attributes/summary.adoc[]
 
 [[wiki]]
 == Wiki pages
@@ -280,6 +301,10 @@ include::user-story-statuses/detail-response.adoc[]
 === Point detail
 include::points/detail-response.adoc[]
 
+[[object-userstory-custom-attribute-detail]]
+=== User story custom attribute detail
+include::user-story-custom-attributes/detail-response.adoc[]
+
 [[object-task-detail]]
 === Task detail
 include::tasks/detail-response.adoc[]
@@ -287,6 +312,10 @@ include::tasks/detail-response.adoc[]
 [[object-task-status-detail]]
 === Task status detail
 include::task-statuses/detail-response.adoc[]
+
+[[object-task-custom-attribute-detail]]
+=== Task custom attribute detail
+include::task-custom-attributes/detail-response.adoc[]
 
 [[object-issue-detail]]
 === Issue detail
@@ -311,6 +340,10 @@ include::priorities/detail-response.adoc[]
 [[object-severity-detail]]
 === Severity detail
 include::severities/detail-response.adoc[]
+
+[[object-issue-custom-attribute-detail]]
+=== Issue custom attribute detail
+include::issue-custom-attributes/detail-response.adoc[]
 
 [[object-wiki-detail]]
 === Wiki page
