@@ -5,7 +5,7 @@
 
 > *Status:* _Still a work in progress_
 
-Web: http://taigaio.github.io/taiga-doc/dist/   
+Web: http://taigaio.github.io/taiga-doc/dist/
 
 ### Setup initial environment (for developers)
 
@@ -16,9 +16,10 @@ You can install Ruby through the apt package manager, pacman, rbenv, or rvm.
 Confirm that `Gemfile` is in the base `taiga-doc` directory and then perform the installation from that directory:
 
     $ cd taiga-doc
+    $ export PATH=$(ruby -e "print Gem.user_dir")"/bin:$PATH"
+    $ export GEM_HOME=$(ruby -e 'print Gem.user_dir')
     $ gem install bundler
     $ bundle
-    $ export PATH="~/.gem/ruby/2.1.0/bin:$PATH"
     $ asciidoctor -v // should return Asciidoctor 1.5.1 ...
 
 ### (Optional) Setup live preview in browser
@@ -45,6 +46,10 @@ For notifications to work properly:
 For example, on a Debian-based system:
 
     $ sudo apt-get install libnotify-bin
+
+Or in Arch
+
+    $ yaourt -S libnotify
 
 #### Ensure Guard is working
 
