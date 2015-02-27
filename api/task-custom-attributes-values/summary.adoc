@@ -1,0 +1,7 @@
+[[task-custom-attributes-values-get]]
+=== Get
+include::../task-custom-attributes-values/get.adoc[]
+
+[[task-custom-attributes-values-edit]]
+=== Edit
+include::../task-custom-attributes-values/edit.adoc[]

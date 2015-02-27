@@ -1,0 +1,17 @@
+To edit task custom attributes values send a PUT or a PATCH specifying the task id in the url.
+"attribute_values" must be a JSON object with pairs task custom atribute id - value.
+In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
+
+[source,bash]
+----
+curl -X PATCH \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "attributes_values": {"1": "240 min"},
+          "version": 2
+      }' \
+  https://api.taiga.io/api/v1/tasks/custom-attributes-values/1
+----
+
+When the update is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-task-custom-attributes-values-detail[task custom attribute detail object]

@@ -1,0 +1,11 @@
+To get a issue custom attribute send a GET request specifying the issue custom attribute id in the url
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/issues/custom-attributes-values/1
+----
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-issue-custom-attribute-detail[issue custom attribute detail object]
