@@ -1,0 +1,18 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/issues/custom-attributes-values/\{issueId}
+| GET
+| link:#issue-custom-attributes-values-get[Get issue custom attributes values]
+
+| /api/v1/issues/custom-attributes-values/\{issueId}
+| PUT
+| link:#issue-custom-attributes-values-edit[Modify issue custom attributes values]
+
+| /api/v1/issues/custom-attributes-values/\{issueId}
+| PATCH
+| link:#issue-custom-attributes-values-edit[Modify partially a issue custom attributes values]
+|===

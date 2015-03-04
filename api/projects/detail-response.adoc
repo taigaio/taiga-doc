@@ -20,6 +20,15 @@
     "is_kanban_activated": false,
     "is_private": false,
     "is_wiki_activated": true,
+    "issue_custom_attributes": [
+        {
+            "id": 1,
+            "name": "Duration",
+            "description": "Duration in minutes",
+            "order": 1,
+            "project": 9
+        }
+    ],
     "issue_statuses": [
         {
             "color": "#8C2318",
@@ -361,6 +370,15 @@
     "stars": 0,
     "tags": null,
     "tags_colors": {},
+    "task_custom_attributes": [
+        {
+            "id": 1,
+            "name": "Duration",
+            "description": "Duration in minutes",
+            "order": 1,
+            "project": 9
+        }
+    ],
     "task_statuses": [
         {
             "color": "#999999",
@@ -477,6 +495,15 @@
             "is_active":true,
             "photo":"//www.gravatar.com/avatar/f64db24896b923753d440e23faa856aa?size=80",
             "big_photo":"//www.gravatar.com/avatar/f64db24896b923753d440e23faa856aa?size=80"
+        }
+    ],
+    "userstory_custom_attributes": [
+        {
+            "id": 1,
+            "name": "Duration",
+            "description": "Duration in minutes",
+            "order": 1,
+            "project": 9
         }
     ],
     "videoconferences": null,

@@ -1,0 +1,23 @@
+[[issue-custom-attributes-list]]
+=== List
+include::../issue-custom-attributes/list.adoc[]
+
+[[issue-custom-attributes-create]]
+=== Create
+include::../issue-custom-attributes/create.adoc[]
+
+[[issue-custom-attributes-get]]
+=== Get
+include::../issue-custom-attributes/get.adoc[]
+
+[[issue-custom-attributes-edit]]
+=== Edit
+include::../issue-custom-attributes/edit.adoc[]
+
+[[issue-custom-attributes-delete]]
+=== Delete
+include::../issue-custom-attributes/delete.adoc[]
+
+[[issue-custom-attributes-bulk-update-order]]
+=== Bulk update order
+include::../issue-custom-attributes/bulk-update-order.adoc[]

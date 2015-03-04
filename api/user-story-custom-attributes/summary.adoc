@@ -1,0 +1,23 @@
+[[user-story-custom-attributes-list]]
+=== List
+include::../user-story-custom-attributes/list.adoc[]
+
+[[user-story-custom-attributes-create]]
+=== Create
+include::../user-story-custom-attributes/create.adoc[]
+
+[[user-story-custom-attributes-get]]
+=== Get
+include::../user-story-custom-attributes/get.adoc[]
+
+[[user-story-custom-attributes-edit]]
+=== Edit
+include::../user-story-custom-attributes/edit.adoc[]
+
+[[user-story-custom-attributes-delete]]
+=== Delete
+include::../user-story-custom-attributes/delete.adoc[]
+
+[[user-story-custom-attributes-bulk-update-order]]
+=== Bulk update order
+include::../user-story-custom-attributes/bulk-update-order.adoc[]

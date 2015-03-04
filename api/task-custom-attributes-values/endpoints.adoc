@@ -1,0 +1,18 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/tasks/custom-attributes-values/\{taskId}
+| GET
+| link:#task-custom-attributes-values-get[Get task custom attributes values]
+
+| /api/v1/tasks/custom-attributes-values/\{taskId}
+| PUT
+| link:#task-custom-attributes-values-edit[Modify task custom attributes values]
+
+| /api/v1/tasks/custom-attributes-values/\{taskId}
+| PATCH
+| link:#task-custom-attributes-values-edit[Modify partially a task custom attributes values]
+|===

@@ -1,0 +1,18 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/userstories/custom-attributes-values/\{userStoryId}
+| GET
+| link:#user-story-custom-attributes-values-get[Get user story custom attributes values]
+
+| /api/v1/userstories/custom-attributes-values/\{userStoryId}
+| PUT
+| link:#user-story-custom-attributes-values-edit[Modify user story custom attributes values]
+
+| /api/v1/userstories/custom-attributes-values/\{userStoryId}
+| PATCH
+| link:#user-story-custom-attributes-values-edit[Modify partially a user story custom attributes values]
+|===

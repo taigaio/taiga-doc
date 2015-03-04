@@ -1,0 +1,7 @@
+[[user-story-custom-attributes-values-get]]
+=== Get
+include::../user-story-custom-attributes-values/get.adoc[]
+
+[[user-story-custom-attributes-values-edit]]
+=== Edit
+include::../user-story-custom-attributes-values/edit.adoc[]

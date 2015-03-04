@@ -1,0 +1,7 @@
+[[issue-custom-attributes-values-get]]
+=== Get
+include::../issue-custom-attributes-values/get.adoc[]
+
+[[issue-custom-attributes-values-edit]]
+=== Edit
+include::../issue-custom-attributes-values/edit.adoc[]

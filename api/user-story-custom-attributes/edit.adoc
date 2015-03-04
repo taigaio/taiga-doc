@@ -1,0 +1,15 @@
+To edit user story custom attributes send a PUT or a PATCH specifying the user story custom attribute id in the url.
+In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
+
+[source,bash]
+----
+curl -X PATCH \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "name": "Duration"
+      }' \
+  https://api.taiga.io/api/v1/userstory-custom-attributes/1
+----
+
+When the update is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-userstory-custom-attribute-detail[user story custom attribute detail object]

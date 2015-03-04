@@ -1,0 +1,11 @@
+To get a task custom attribute send a GET request specifying the task custom attribute id in the url
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/task-custom-attributes/1
+----
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-task-custom-attribute-detail[task custom attribute detail object]
