@@ -299,7 +299,6 @@ and editing it.
     "privacyPolicyUrl": null,
     "termsOfServiceUrl": null,
     "maxUploadFileSize": null,
-    "gitHubClientId": null,
     "contribPlugins": []
 }
 ----
@@ -620,8 +619,7 @@ sudo service circus restart
     "feedbackEnabled": true,
     "privacyPolicyUrl": null,
     "termsOfServiceUrl": null,
-    "maxUploadFileSize": null,
-    "gitHubClientId": null
+    "maxUploadFileSize": null
 }
 ----
 
