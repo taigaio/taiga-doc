@@ -15,7 +15,7 @@ curl -X POST \
         "name": "Duration",
         "description": "Duration in minutes",
         "order": 8,
-        "project": 3,
+        "project": 3
     }' \
   https://api.taiga.io/api/v1/task-custom-attributes
 ----
@@ -27,7 +27,7 @@ curl -X POST \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
   -d '{
           "name": "Duration",
-          "project": 3,
+          "project": 3
       }' \
   https://api.taiga.io/api/v1/task-custom-attributes
 ----
