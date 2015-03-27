@@ -37,6 +37,7 @@ We assume the following:
 - **ip:** `80.88.23.45`
 - **hostname:** `example.com` (which points to 80.88.23.45)
 - **username:** `taiga`
+- **system ram** `>=1GB` (needed for compilation of lxml)
 
 
 Backend installation
