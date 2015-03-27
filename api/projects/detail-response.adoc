@@ -490,8 +490,8 @@
             "github_id":null,
             "color":"#2099DB",
             "bio":"",
-            "default_language":"",
-            "default_timezone":"",
+            "lang":"",
+            "timezone":"",
             "is_active":true,
             "photo":"//www.gravatar.com/avatar/f64db24896b923753d440e23faa856aa?size=80",
             "big_photo":"//www.gravatar.com/avatar/f64db24896b923753d440e23faa856aa?size=80"
