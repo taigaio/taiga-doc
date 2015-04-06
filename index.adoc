@@ -62,20 +62,17 @@ Installation Guide
 This section details everything you need to know to get _Taiga_ up and running
 in both development and production environments.
 
-Setup Production Environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Setup Production Environment
 
 link:setup-production.html[This document contains the complete, step by step tutorial] of how
 to properly setup _Taiga_ for a low traffic production environment.
 
-Setup Development Environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Setup Development Environment
 
 You can view the complete documentation on how to link:setup-development.html[setup a proper
 development environment].
 
-Other Ways to Setup an Initial Environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Other Ways to Setup an Initial Environment
 
 In addition to the traditional step-by-step manuals, _Taiga_ comes with a
 collection of provisioning scripts and Vagrant support, and
