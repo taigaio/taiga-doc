@@ -313,7 +313,68 @@ Events installation
 
 **This step is completelly optional and can be skipped**
 
-TODO
+
+Taiga events needs rabbitmq (the message broker) to be installed
+
+.Installing rabbitmq
+[source,bash]
+----
+sudo  apt-get install rabbitmq-server
+----
+
+The next step is downloading the code from github and installing their dependencies:
+
+.Download the code
+[source,bash]
+----
+cd ~
+git clone https://github.com/taigaio/taiga-events.git taiga-events
+cd taiga-events
+----
+
+.Install all the javascript dependencies needed
+[source,bash]
+----
+npm install
+sudo npm install -g coffee-script
+----
+
+.Copy and edit the config.json file you should update your rabbitmq uri and the secret key.
+[source,bash]
+----
+cp config.example.json config.json
+----
+
+Now you have to add taiga-events to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
+
+.Taiga taiga-events configuration block for circus on ~/circus.ini
+[source,ini]
+----
+[watcher:taiga-events]
+working_dir = /home/taiga/taiga/taiga-events
+cmd = node_modules/coffee-script/bin/coffee
+args = index.coffee
+uid = taiga
+numprocesses = 1
+autostart = true
+send_hup = true
+stdout_stream.class = FileStream
+stdout_stream.filename = /home/taiga/logs/taigaevents.stdout.log
+stdout_stream.max_bytes = 10485760
+stdout_stream.backup_count = 12
+stderr_stream.class = FileStream
+stderr_stream.filename = /home/taiga/logs/taigaevents.stderr.log
+stderr_stream.max_bytes = 10485760
+stderr_stream.backup_count = 12
+----
+
+Then you have to reload your circus configuration and start taiga-events:
+
+[source,bash]
+----
+circusctl reloadconfig
+circusctl start taiga-events
+----
 
 Final steps
 -----------

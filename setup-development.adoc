@@ -301,4 +301,39 @@ Events installation
 
 **This step is completelly optional and can be skipped**
 
-TODO
+Taiga events needs rabbitmq (the message broker) to be installed
+
+.Installing rabbitmq
+[source,bash]
+----
+sudo  apt-get install rabbitmq-server
+----
+
+The next step is downloading the code from github and installing their dependencies:
+
+.Download the code
+[source,bash]
+----
+cd ~
+git clone https://github.com/taigaio/taiga-events.git taiga-events
+cd taiga-events
+----
+
+.Install all the javascript dependencies needed
+[source,bash]
+----
+npm install
+sudo npm install -g coffee-script
+----
+
+.Copy and edit the config.json file you should update your rabbitmq uri and the secret key.
+[source,bash]
+----
+cp config.example.json config.json
+----
+
+.Now run the taiga events service
+[source,bash]
+----
+coffee index.coffee
+----
