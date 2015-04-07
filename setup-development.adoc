@@ -309,6 +309,21 @@ Taiga events needs rabbitmq (the message broker) to be installed
 sudo  apt-get install rabbitmq-server
 ----
 
+.Creating a taiga user and virtualhost for rabbitmq
+[source,bash]
+----
+sudo rabbitmqctl add_user taiga PASSWORD
+sudo rabbitmqctl add_vhost taiga
+sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
+----
+
+.Update your taiga-back settings to include in your local.py the lines:
+[source,python]
+----
+EVENTS_PUSH_BACKEND = "taiga.events.backends.rabbitmq.EventsPushBackend"
+EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD@localhost:5672/taiga"}
+----
+
 The next step is downloading the code from github and installing their dependencies:
 
 .Download the code
@@ -330,6 +345,18 @@ sudo npm install -g coffee-script
 [source,bash]
 ----
 cp config.example.json config.json
+----
+
+.Your config.json should be like:
+[source,json]
+----
+{
+    "url": "amqp://taiga:PASSWORD@localhost:5672/taiga",
+    "secret": "mysecret",
+    "webSocketServer": {
+        "port": 8888
+    }
+}
 ----
 
 .Now run the taiga events service

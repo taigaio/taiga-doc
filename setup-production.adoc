@@ -322,6 +322,21 @@ Taiga events needs rabbitmq (the message broker) to be installed
 sudo  apt-get install rabbitmq-server
 ----
 
+.Creating a taiga user and virtualhost for rabbitmq
+[source,bash]
+----
+sudo rabbitmqctl add_user taiga PASSWORD
+sudo rabbitmqctl add_vhost taiga
+sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
+----
+
+.Update your taiga-back settings to include in your local.py the lines:
+[source,python]
+----
+EVENTS_PUSH_BACKEND = "taiga.events.backends.rabbitmq.EventsPushBackend"
+EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD@localhost:5672/taiga"}
+----
+
 The next step is downloading the code from github and installing their dependencies:
 
 .Download the code
@@ -345,13 +360,25 @@ sudo npm install -g coffee-script
 cp config.example.json config.json
 ----
 
+.Your config.json should be like:
+[source,json]
+----
+{
+    "url": "amqp://taiga:PASSWORD@localhost:5672/taiga",
+    "secret": "mysecret",
+    "webSocketServer": {
+        "port": 8888
+    }
+}
+----
+
 Now you have to add taiga-events to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
 
 .Taiga taiga-events configuration block for circus on ~/circus.ini
 [source,ini]
 ----
 [watcher:taiga-events]
-working_dir = /home/taiga/taiga/taiga-events
+working_dir = /home/taiga/taiga-events
 cmd = node_modules/coffee-script/bin/coffee
 args = index.coffee
 uid = taiga
@@ -368,13 +395,38 @@ stderr_stream.max_bytes = 10485760
 stderr_stream.backup_count = 12
 ----
 
-Then you have to reload your circus configuration and start taiga-events:
+Then you have to reload your circus configuration restart the other services and start taiga-events:
 
 [source,bash]
 ----
 circusctl reloadconfig
+circusctl restart taiga
+circusctl restart taiga-celery
 circusctl start taiga-events
 ----
+
+Nginx need extra configuration too for taiga-events
+
+.Add specific configuration for **taiga-events** on /etc/nginx/sites-available/taiga.
+[source,nginx]
+----
+server {
+    ...
+    location /events {
+       proxy_pass http://127.0.0.1:8888/events;
+       proxy_http_version 1.1;
+       proxy_set_header Upgrade $http_upgrade;
+       proxy_set_header Connection "upgrade";
+       proxy_connect_timeout 7d;
+       proxy_send_timeout 7d;
+       proxy_read_timeout 7d;
+    }
+    ...
+}
+----
+
+And finally, reload nginx with `sudo service nginx reload`
+
 
 Final steps
 -----------
