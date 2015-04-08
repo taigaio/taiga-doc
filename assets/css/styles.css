@@ -1,0 +1,42 @@
+body {
+  font-family:"Open Sans","DejaVu Sans",sans-serif;
+}
+
+::selection {
+  background: #70aa7d;
+  color: #fff;
+  text-shadow: none; }
+
+::-moz-selection {
+  background: #70aa7d;
+  color: #fff;
+  text-shadow: none; }
+
+a {
+  color: #50A5B7;
+}
+
+.mp-level > ul > li > a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#toctitle {
+  color: #1d0b33;
+}
+
+.header1 {
+  padding: 2rem 1rem 0;
+  text-align: center; }
+h2 {
+    color: #1d0b33;
+    text-transform: uppercase; 
+}
+h3 {
+    color: #1D0B33;
+}
+h4{
+    color: #474354;
+}
+p {
+    color: #81bf89;
+}
