@@ -55,6 +55,9 @@ Compile time:
 - Ruby 2.1 (only for compiling sass)
 - NodeJS 0.10 (with npm, gulp and bower for downloading dependencies and compiling coffeescript)
 
+Hardware
+
+- The main Taiga hardware restriction is having **at least 0.75 GB of RAM memory**. When installing the python requirements the package lxml will use gcc for building it and fail if not enough memory.
 
 Installation Guide
 ------------------
