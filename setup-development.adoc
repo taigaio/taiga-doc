@@ -22,19 +22,20 @@ Before starting
 ---------------
 
 This tutorial assumes that you are using a clean, recently updated, **ubuntu 14.04** image.
+Notes for a Debian stable (wheezy) install are included at the end of the appropriate sections.
 
 
 Backend environment
 -------------------
 
-This section helps with the download an run of the backend (api) Taiga service.
+This section helps with the download and configuration of the backend (api) Taiga service.
 
 
 Install dependencies
 ~~~~~~~~~~~~~~~~~~~~
 
-The Backend is written mainly in python (3.4) but for some third party libraries we need to install a
-C compiller and development headers.
+The backend is written mainly in python (3.4) but for some third party libraries we need to install a
+C compiler and development headers.
 
 [source,bash]
 ----
@@ -67,7 +68,7 @@ sudo -u postgres createdb taiga -O taiga
 Setup python environment
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-For run **taiga-back** you should have python (3.4) installed with some other third party
+To run **taiga-back** you should have python (3.4) installed along with some other third party
 libraries. As a first step, start installing python and virtualenvwrapper:
 
 [source,bash]
@@ -77,13 +78,13 @@ sudo apt-get install libxml2-dev libxslt-dev
 ----
 
 [NOTE]
-**virtualenvwrapper** helps maintain the system clean of third party libraries installed
-with language package manager, installing them in isolated virtual environment.
+**virtualenvwrapper** helps keep the system clean from third party libraries installed
+with the language's package manager by installing them in isolated virtual environments.
 
-Restart the shell or run `bash` again, to reload the bash environment with virtualenvwrapper
+Restart the shell or run `bash` again, to reload the bash environment with virtualenvwrapper's
 variables and functions.
 
-The next step is to download the code from github and install their dependencies:
+The next step is to download the code from GitHub and install its dependencies:
 
 .Download the code
 [source,bash]
@@ -94,7 +95,7 @@ cd taiga-back
 git checkout stable
 ----
 
-.Create new virtualenv named **taiga**
+.Create a new virtualenv named **taiga**
 [source,bash]
 ----
 mkvirtualenv -p /usr/bin/python3.4 taiga
@@ -119,10 +120,10 @@ python manage.py sample_data
 
 This creates a new user **admin** with password **123123** and some sample data.
 
-You can tune your own environment configuration editing the `settings/local.py`
+You can tune your own environment configuration by editing the `settings/local.py`
 configuration file to overwrite any setting in `settings/common.py`.
 
-.Put this on ~/taiga-back/settings/local.py
+.Put this in ~/taiga-back/settings/local.py
 [source,python]
 ----
 from .common import *
@@ -141,12 +142,12 @@ workon taiga  # enable the taiga virtualenv
 python manage.py runserver
 ----
 
-Then you must be able to see a json representing the list of endpoints in the url http://localhost:8000/api/v1/ .
+Then you should be able to see a json represention of the list of endpoints at the url http://localhost:8000/api/v1/
 
 Async tasks (Optional)
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The default behavior in Taiga is to do all tasks in a synchronous way, but some of them
+The default behavior in Taiga is to do all tasks synchronously, but some of them
 can be completely asynchronous (for example webhooks or import/export). To do
 this, you have to configure and install the celery service requirements.
 
@@ -157,7 +158,7 @@ Install `rabbitmq-server` and `redis-server`:
 sudo apt-get install -y rabbitmq-server redis-server
 ----
 
-To run celery with taiga you have to include in your local.py the lines:
+To run celery with Taiga you have to include the following lines in your local.py:
 
 [source,python]
 ----
@@ -168,8 +169,8 @@ CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 CELERY_ENABLED = True
 ----
 
-You can configure other broker or results backend. If you need more info about
-it you can check the celery documentation web page:
+You can configure other broker or results backends as needed. If you need more
+info about configuration you can check the celery documentation web page:
 http://docs.celeryproject.org/en/latest/index.html
 
 Once you have configured celery on Taiga, you have to run celery to process the
@@ -181,6 +182,28 @@ workon taiga  # enable the taiga virtualenv
 celery -A taiga worker -l info -E
 ----
 
+Debian installation notes
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The latest Python available from Stable/Wheezy's apt repositories is only 3.1, which is not sufficient for taiga-back.
+Python 3.4 is available from Debian Testing (jessie) if you are comfortable using mixed versions in your apt sources.
+Otherwise, you must build Python 3.4 from source (see https://www.python.org/downloads/source/ for links).
+When building from source, if the bz2 development libraries are not already present on your system, then you must first:
+[source,bash]
+----
+sudo apt-get install libbz2-dev
+----
+Or else Python will build without the bz2 module necessary for some pip installed requirements.
+
+The latest Postgresql available for Stable/Wheezy is 9.1, but a fully Wheezy-compatible 9.3 build is available from
+the official Postgresql apt repositories, however:
+[source,bash]
+----
+echo "deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main" | sudo tee -a /etc/apt/sources.list
+sudo apt-get update
+----
+
+
 Frontend installation
 ---------------------
 
@@ -190,16 +213,16 @@ This section helps you install the frontend application
 Install dependencies
 ~~~~~~~~~~~~~~~~~~~~
 
-The Frontend application runs entirelly on a browser, and it should be written using javascript, css and html.
-In case of **taiga-front** we have used other languages. Because of this, you should install some
-additional dependencies that compile **taiga-front** code intro something the browser can understand.
+The frontend application runs entirely in a browser, and thus must be deployed as javascript, css and html.
+In the case of **taiga-front** we have used other languages. Because of this, you will need to install some
+additional dependencies that compile **taiga-front** code into something the browser can understand.
 
 
 Ruby and Gems
 ^^^^^^^^^^^^^
 
 Ruby is used mainly for compiling *sass* (css preprocessor). It is also used for sass linting but that
-is only on development environments.
+is only in development environments.
 
 .Install ruby
 [source,bash]
@@ -213,13 +236,13 @@ sudo apt-get install -y ruby
 gem install --user-install sass scss-lint
 ----
 
-.Make gems scripts available in path putting this on *~/.bashrc*
+.Make gems' scripts available from your path by putting this in your *~/.bashrc*
 [source,bash]
 ----
 export PATH=~/.gem/ruby/1.9.1/bin:$PATH
 ----
 
-Restart the shell or run bash to make the path changes available.
+Restart the shell, source ~/.bashrc, or run bash again to make the path changes available.
 
 
 NodeJS and friends
@@ -227,8 +250,8 @@ NodeJS and friends
 
 NodeJS is used to execute **gulp** and **bower**:
 
-- **gulp**: task execution tool. Used mainly for executing deploying and compiling tasks.
-- **bower**: javascript dependencies management tool. Used mainly for downloading third party libraries
+- **gulp**: task execution tool. Used mainly for executing deployment and compilation tasks.
+- **bower**: javascript dependency management tool. Used mainly for downloading third party libraries
   used by **taiga-front**.
 
 .Install nodejs
@@ -237,7 +260,7 @@ NodeJS is used to execute **gulp** and **bower**:
 sudo apt-get install -y nodejs npm
 ----
 
-.Make sure your bash responds to node command to have a smooth installation of gulp and bower
+.Make sure your bash responds to the node command to have a smooth installation of gulp and bower
 [source, bash]
 ----
 node
@@ -248,7 +271,9 @@ If you get a "Command not found" error, then run
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ----
 
-.Install **gulp** and **bower** using recently installed npm
+(If you're on Debian, see the Debian-specific installation notes below.)
+
+.Install **gulp** and **bower** using the recently installed npm
 [source,bash]
 ----
 sudo npm install -g gulp bower
@@ -263,17 +288,49 @@ cd taiga-front
 git checkout stable
 ----
 
-.Install all dependencies needed for run gulp and compile taiga-front
+.Install all dependencies needed to run gulp and compile taiga-front
 [source,bash]
 ----
 npm install
 bower install
 ----
 
+Debian installation notes
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+While Debian Testing (jessie), provides a nodejs package out of the box, Debian Stable (wheezy) does not.
+You can access one via the wheezy-backports apt repository, however, which can be added to your system as follows:
+[source,bash]
+----
+echo "deb http://ftp.us.debian.org/debian wheezy-backports main" | sudo tee -a /etc/apt/sources.list
+----
+Then, after a:
+[source,bash]
+----
+sudo apt-get update
+----
+You can:
+[source,bash]
+----
+sudo apt-get install nodejs
+----
+Note that Debian installs the executable as nodejs not node, so you will need to provide this alias by issuing the following command:
+[source,bash]
+----
+sudo update-alternatives --install /usr/bin/node nodejs /usr/bin/nodejs 100
+----
+
+Testing (jessie) also provides an npm package, but npm is not available for Stable (wheezy), not even from wheezy-backports.
+Thus, you will need to install it manually via:
+[source,bash]
+----
+curl https://www.npmjs.com/install.sh | sudo sh
+----
+
 Final steps
 ~~~~~~~~~~~
 
-Having installed all dependencies you only have to run the code.
+Having installed all the dependencies, all you have left to do is to run the code itself.
 
 .Run gulp
 [source,bash]
@@ -282,7 +339,7 @@ cd ~/taiga-front
 gulp
 ----
 
-Now, you can access to http://localhost:9001 port for access to taiga-front.
+Now, you can access http://localhost:9001 for access to taiga-front.
 
 [NOTE]
 If you have npm errors when executing gulp delete the tmp files and install the
@@ -317,14 +374,14 @@ sudo rabbitmqctl add_vhost taiga
 sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
 ----
 
-.Update your taiga-back settings to include in your local.py the lines:
+.Update your taiga-back settings to include the following lines in your local.py:
 [source,python]
 ----
 EVENTS_PUSH_BACKEND = "taiga.events.backends.rabbitmq.EventsPushBackend"
 EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD@localhost:5672/taiga"}
 ----
 
-The next step is downloading the code from github and installing their dependencies:
+The next step is downloading the code from GitHub and installing the dependencies:
 
 .Download the code
 [source,bash]
@@ -341,13 +398,13 @@ npm install
 sudo npm install -g coffee-script
 ----
 
-.Copy and edit the config.json file you should update your rabbitmq uri and the secret key.
+.Copy config.example.json to config.json and edit it to update the values for your rabbitmq uri and secret key.
 [source,bash]
 ----
 cp config.example.json config.json
 ----
 
-.Your config.json should be like:
+.Your config.json should look something like:
 [source,json]
 ----
 {
