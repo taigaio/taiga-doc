@@ -10,18 +10,18 @@ Setup using **taiga-scripts**
 Introduction
 ~~~~~~~~~~~~
 
-**taiga-scrips** primarily follows the standard installation process, but makes it more automatic. If
-something goes wrong in the process, you should try fix them following the manual deploy process.
+**taiga-scripts** primarily follows the standard installation process, but makes it more automatic. If
+something goes wrong in the process, you should try to fix it by following the manual deploy process.
 
-**taiga-scripts** always installs a specific (most recent) version of Taiga (taiga-front and taiga-back)
+**taiga-scripts** always installs a specific (the most recent) version of Taiga (taiga-front and taiga-back)
 
 
-Important notes about using **taiga-scripts**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Important notes about **taiga-scripts**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- They are in alpha state. Not heavy tested in differents environments
-- Designed to work with taiga-vagrant (see next section of this documentation)
-- Does not supports reprovisioning (updating) at this moment, it still in development.
+- In an alpha state, and has not been heavily tested in different environments.
+- Designed to work with taiga-vagrant (see next section of this documentation).
+- Does not support reprovisioning (updating) at this moment, that is still in development.
 - Does not support installation with root user.
 - The installation is not 100% ready for production.
 
@@ -29,7 +29,7 @@ Important notes about using **taiga-scripts**
 Requirements
 ~~~~~~~~~~~~
 
-- Fresh installed and updated Ubuntu 14.04
+- Freshly installed and updated Ubuntu 14.04
 - Bash shell
 - Git
 
@@ -37,7 +37,7 @@ Requirements
 Setup server-like environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Make sure you have a fresh and updated ubuntu 14.04 machine or virtual image:
+Make sure you have a fresh and updated Ubuntu 14.04 machine or virtual image:
 
 [source, txt]
 ----
@@ -52,10 +52,10 @@ Setup development-like environment
 
 This setup is much like the previous one but with a few differences:
 
-- Do not install services like nginx, as they are only necessary for production
-- Set all hostnames to localhost to easily run everything on localhost
+- It does not install services like nginx, as they are only necessary for production
+- It sets all hostnames to localhost to easily run everything on localhost
 
-Make sure you have a fresh and updated ubuntu 14.04 machine or virtual image:
+Make sure you have a fresh and updated Ubuntu 14.04 machine or virtual image:
 
 [source, txt]
 ----
@@ -71,15 +71,15 @@ Setup using **taiga-vagrant**
 Introduction
 ~~~~~~~~~~~~
 
-**taiga-vagrant** offers a Vagrantfile for make easy turn on a fully provisioned virtual
-machine. **taiga-vagrant** uses **taiga-scripts** to provision scripts.
+**taiga-vagrant** offers a Vagrantfile which makes it easy to turn on a fully provisioned
+virtual machine. **taiga-vagrant** uses **taiga-scripts** for its provisioning scripts.
 
 
 Important notes about using **taiga-vagrant**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - The installation is not 100% ready for production, it is designed for use as a demostration.
-- Does not support reprovisioning at this momment.
+- Does not support reprovisioning at this moment.
 
 Dependencies
 ~~~~~~~~~~~~
@@ -101,12 +101,12 @@ vagrant up
 After installing, the Taiga service should be up and running. You can access it by going
 to http://localhost:8000 with your browser.
 
-You can use the following credentials for login in recently created Taiga instance:
+You can use the following credentials to login to the recently created Taiga instance:
 
 - Username: `admin`
 - Password: `123123`
 
-You can access to the machine using ssh, if you would make some tweaks:
+You can access the machine using ssh, if you would like to make some tweaks:
 
 [source, bash]
 ----
@@ -121,4 +121,6 @@ Setup using **taiga-docker**
 Important notes about using **taiga-docker**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Docker is not officially supported by the Taiga development team but a link:https://github.com/ipedrazas/taiga-docker[docker script] has been developed by link:https://github.com/ipedrazas[Iván Pedrazas]
+Docker is not officially supported by the Taiga development team but a link:https://github.com/ipedrazas/taiga-docker[docker script]
+has been developed by link:https://github.com/ipedrazas[Iván Pedrazas], and link:https://github.com/htdvisser/taiga-docker[another docker script]
+has been developed by link:https://github.com/htdvisser[Hylke Visser]
