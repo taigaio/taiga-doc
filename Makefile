@@ -24,11 +24,13 @@
 #   - OK: Modifying asciidoctor command line switches
 #   - OK: Changing path/name for HTML output
 #
+
 all: doc
 doc:
-	asciidoctor -o dist/index.html index.adoc
-	asciidoctor -o dist/setup-production.html setup-production.adoc
-	asciidoctor -o dist/setup-development.html setup-development.adoc
-	asciidoctor -o dist/setup-alternatives.html setup-alternatives.adoc
-	asciidoctor -o dist/api.html api/api.adoc
-	asciidoctor -o dist/webhooks.html webhooks.adoc
+	asciidoctor -T custom-html5 -o dist/index.html index.adoc
+	asciidoctor -T custom-html5 -o dist/setup-production.html setup-production.adoc
+	asciidoctor -T custom-html5 -o dist/setup-development.html setup-development.adoc
+	asciidoctor -T custom-html5 -o dist/setup-alternatives.html setup-alternatives.adoc
+	asciidoctor -T custom-html5 -o dist/api.html api/api.adoc
+	asciidoctor -T custom-html5 -o dist/webhooks.html webhooks.adoc
+	cp -r assets/* dist || exit 1

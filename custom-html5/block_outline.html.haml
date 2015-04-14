@@ -1,0 +1,19 @@
+- unless sections.empty?
+  - toclevels ||= (document.attr 'toclevels', 2).to_i
+  - slevel = section_level sections.first
+  - if (slevel > 1)
+    .mp-level
+      %a{:class=>"mp-back", :href=>"#"}back
+      %ul{:class=>"sectlevel#{slevel}"}
+        - sections.each do |sec|
+          %li
+            %a{:href=>"##{sec.id}"}= section_title sec
+            - if (sec.level < toclevels) && (child_toc = converter.convert sec, 'outline')
+              = child_toc
+  - else
+    %ul{:class=>"sectlevel#{slevel}"}
+      - sections.each do |sec|
+        %li
+          %a{:href=>"##{sec.id}"}= section_title sec
+          - if (sec.level < toclevels) && (child_toc = converter.convert sec, 'outline')
+            = child_toc
