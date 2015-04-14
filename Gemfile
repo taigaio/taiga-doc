@@ -7,4 +7,6 @@ group :development do
   gem 'guard-shell'
   gem 'rb-inotify'
   gem 'libnotify'
+  gem 'thread_safe'
+  gem 'haml'
 end
