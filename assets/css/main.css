@@ -1,0 +1,31 @@
+@media only screen and (min-width:0px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+
+
+@media only screen and (min-width:0px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+
+
+@media only screen and (min-width:0px){.sect1{padding-bottom:1.25em}}
+
+@media only screen and (min-width:0px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+
+ul,ol,dl{margin-bottom:0em;}
+
+#toc.toc2 ul ul{padding-left:0em !important;}
+#toctitle{margin-left:1.1em;margin-top:1em !important;}
+#toc.toc2{background:none;border-right:none;}
+#toc{width:15em !important;border-bottom:none !important;}
+body {padding-left:0px !important;}
+#toc.toc2{left:-15em}
+.scroller,.scroller-inner {position: relative;}

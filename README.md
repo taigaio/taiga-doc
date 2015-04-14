@@ -20,6 +20,8 @@ Confirm that `Gemfile` is in the base `taiga-doc` directory and then perform the
     $ export GEM_HOME=$(ruby -e 'print Gem.user_dir')
     $ gem install bundler
     $ bundle
+    $ gem install thread_safe
+    $ gem install haml
     $ asciidoctor -v // should return Asciidoctor 1.5.1 ...
 
 ### (Optional) Setup live preview in browser
