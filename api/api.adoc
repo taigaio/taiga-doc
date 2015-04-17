@@ -106,6 +106,9 @@ include::export-import/endpoints.adoc[]
 === Webhooks
 include::webhooks/endpoints.adoc[]
 
+=== Timelines
+include::timelines/endpoints.adoc[]
+
 
 [[auth]]
 == Auth
@@ -235,6 +238,9 @@ include::export-import/summary.adoc[]
 == Webhooks
 include::webhooks/summary.adoc[]
 
+[[timelines]]
+== Timelines
+include::timelines/summary.adoc[]
 
 == Objects Summary
 
@@ -417,6 +423,10 @@ include::webhooks/detail-response.adoc[]
 [[object-webhook-log-detail]]
 === Webhook log
 include::webhooks/log-detail-response.adoc[]
+
+[[object-timeline-detail]]
+=== Timeline entry detail
+include::timelines/detail-response.adoc[]
 
 == Contrib plugins
 

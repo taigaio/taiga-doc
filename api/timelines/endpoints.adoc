@@ -1,0 +1,18 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/timeline/user/\{userId}
+| GET
+| link:#timeline-user-list[List user timeline]
+
+| /api/v1/timeline/profile/\{userId}
+| GET
+| link:#timeline-profile-list[List profile timeline]
+
+| /api/v1/timeline/project/\{projectId}
+| GET
+| link:#timeline-project-list[List project timeline]
+|===

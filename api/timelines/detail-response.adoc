@@ -1,0 +1,41 @@
+[source,json]
+----
+{
+    "data": {
+        "comment_html": "<p>Hic cum voluptatibus et quaerat suscipit incidunt, quasi enim porro corrupti, accusantium accusamus quam odit deserunt ducimus, atque libero inventore fuga numquam aspernatur dolorem pariatur fugiat cumque quas ad? Incidunt rem ut dolore quidem sequi non neque esse quos sunt ea, quisquam non officia quidem minima a est eaque dolorem esse impedit, minus deserunt repellendus. Quae dolores obcaecati iste voluptatum facilis delectus quod aperiam totam possimus eum, totam voluptas quis temporibus sint debitis aliquid in quae nulla, aspernatur voluptate velit amet, incidunt recusandae repudiandae, culpa iure commodi corrupti modi excepturi? Omnis voluptas et assumenda, ex nostrum qui iste commodi adipisci laborum, quaerat quasi enim, corporis laborum aliquid eum.</p>",
+        "values_diff": {
+            "status": [
+                "Rejected",
+                "New"
+            ]
+        },
+        "comment": "Hic cum voluptatibus et quaerat suscipit incidunt, quasi enim porro corrupti, accusantium accusamus quam odit deserunt ducimus, atque libero inventore fuga numquam aspernatur dolorem pariatur fugiat cumque quas ad? Incidunt rem ut dolore quidem sequi non neque esse quos sunt ea, quisquam non officia quidem minima a est eaque dolorem esse impedit, minus deserunt repellendus. Quae dolores obcaecati iste voluptatum facilis delectus quod aperiam totam possimus eum, totam voluptas quis temporibus sint debitis aliquid in quae nulla, aspernatur voluptate velit amet, incidunt recusandae repudiandae, culpa iure commodi corrupti modi excepturi? Omnis voluptas et assumenda, ex nostrum qui iste commodi adipisci laborum, quaerat quasi enim, corporis laborum aliquid eum.",
+        "user": {
+            "id": 7,
+            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80&default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png",
+            "big_photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "name": "Purificacion Montero",
+            "username": "user1"
+        },
+        "project": {
+            "description": "Project example 3 description",
+            "id": 4,
+            "slug": "user9-project-example-3",
+            "name": "Project Example 3"
+        },
+        "issue": {
+            "id": 83,
+            "ref": 106,
+            "subject": "Added file copying and processing of images (resizing)"
+        }
+    },
+    "id": 4336,
+    "content_type": 3,
+    "object_id": 7,
+    "namespace": "user:7",
+    "event_type": "issues.issue.change",
+    "project": 4,
+    "data_content_type": 39,
+    "created": "2015-04-16T06:57:21+0000"
+}
+----
