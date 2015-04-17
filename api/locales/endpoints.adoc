@@ -1,0 +1,10 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/locales
+| GET
+| link:#locales-list[List locales]
+|===

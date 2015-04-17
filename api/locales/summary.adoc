@@ -1,0 +1,3 @@
+[[locales-list]]
+=== List
+include::../locales/list.adoc[]
