@@ -32,6 +32,10 @@
 | DELETE
 | link:#projects-delete[Delete a project]
 
+| /api/v1/projects/bulk_update_order
+| POST
+| link:#projects-bulk-update-order[Update projects order for logged in user]
+
 | /api/v1/projects/\{projectId}/modules
 | GET
 | link:#projects-get-modules[Get project modules configuration]

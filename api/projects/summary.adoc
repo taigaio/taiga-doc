@@ -22,6 +22,10 @@ include::../projects/edit.adoc[]
 === Delete
 include::../projects/delete.adoc[]
 
+[[projects-bulk-update-order]]
+=== Bulk update order
+include::../projects/bulk-update-order.adoc[]
+
 [[projects-get-modules]]
 === Get modules
 include::../projects/get-modules.adoc[]

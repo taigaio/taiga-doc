@@ -1,0 +1,21 @@
+To update the projects order for the logged in user send a POST request with a json list where each element is a json object with two attributes, the project id and the new order
+
+[source,bash]
+----
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '[
+          {
+              "project_id": 123,
+              "order": 2
+          },
+          {
+              "project_id": 456,
+              "order": 2
+          }
+      ]' \
+  https://api.taiga.io/api/v1/projects/bulk_update_order
+----
+
+When the update is successful, the HTTP response is a 200 OK and the response body is empty
