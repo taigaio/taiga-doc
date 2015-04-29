@@ -20,6 +20,8 @@ The results can be filtered using the following parameters:
 - *assigned_to*: assigned to user id
 - *tags*: separated by ","
 - *type*: issue type id
+- *watchers*: watching user id
+- *status__is_closed*: (true|false)
 
 [source,bash]
 ----

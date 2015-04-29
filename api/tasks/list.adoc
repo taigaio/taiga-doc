@@ -15,6 +15,9 @@ The results can be filtered using the following parameters:
 - *project*: project id
 - *user_story*: user story id
 - *milestone*: milestone id
+- *watchers*: watching user id
+- *assigned_to*: assigned to user id
+- *status__is_closed*: (true|false)
 
 [source,bash]
 ----
