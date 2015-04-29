@@ -42,6 +42,19 @@
             "ref": 77,
             "subject": "Feature/improved image admin"
         }
+    },
+    "status_extra_info": {
+        "name": "In progress",
+        "color": "#5E8C6A"
+    },
+    "assigned_to_extra_info": {
+        "username": "beta.tester",
+        "full_name_display": "Beta testing",
+        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80""
     }
 }
 ----
+
+[NOTE]
+us_extra_info and assigned_to_extra_info are read only fields
