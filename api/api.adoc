@@ -246,6 +246,10 @@ include::attachments/detail-response.adoc[]
 ===  User detail
 include::users/detail-response.adoc[]
 
+[[object-contact-detail]]
+===  User contact detail
+include::users/contact-response.adoc[]
+
 [[object-auth-user-detail]]
 ===  User authentication-detail
 include::users/auth-detail-response.adoc[]

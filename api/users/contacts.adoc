@@ -1,0 +1,11 @@
+To get a user contacts send a GET request specifying the user id in the url
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/users/1/contacts
+----
+
+The HTTP response is a 200 OK and the response body is a list of JSON link:#object-contact-detail[contact detail object]

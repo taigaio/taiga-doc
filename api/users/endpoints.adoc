@@ -32,6 +32,10 @@
 | DELETE
 | link:#users-delete[Delete a user]
 
+| /api/v1/users/\{userId}/contacts
+| GET
+| link:#users-get-contacts[Get user contacts]
+
 | /api/v1/users/cancel
 | POST
 | link:#users-cancel[Cancel user]

@@ -1,0 +1,20 @@
+[source,json]
+----
+{
+    "id": 32090,
+    "username": "beta.tester"
+    "full_name": "Beta testing",
+    "full_name_display": "Beta testing",
+    "color": "#2c3e58",
+    "bio": "",
+    "lang": "",
+    "timezone": "",
+    "is_active": true,
+    "photo": "http//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+    "big_photo": "http//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+    "roles": [
+        "Product Owner"
+    ],
+    "projects_with_me": []
+}
+----

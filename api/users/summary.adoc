@@ -22,6 +22,10 @@ include::../users/edit.adoc[]
 === Delete
 include::../users/delete.adoc[]
 
+[[users-get-contacts]]
+=== Get contacts
+include::../users/contacts.adoc[]
+
 [[users-cancel]]
 === Cancel
 include::../users/cancel.adoc[]
