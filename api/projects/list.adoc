@@ -9,3 +9,29 @@ curl -X GET \
 ----
 
 The HTTP response is a 200 OK and the response body is a JSON list of link:#object-project-list-entry[project list entry objects]
+
+The results can be filtered using the following parameters:
+
+- *member*: member id
+
+- *members*: member ids
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/projects?member=1
+----
+
+The results can be ordered using the order_by parameter with the values:
+
+- *memberships__user_order*: the project order specified by the user
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/projects?member=1&order_by=memberships__user_order
+----
