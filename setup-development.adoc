@@ -57,12 +57,14 @@ sudo apt-get install -y postgresql-9.3 postgresql-contrib-9.3
 sudo apt-get install -y postgresql-doc-9.3 postgresql-server-dev-9.3
 ----
 
-And setup the initial user and database:
+And setup the initial user, database, and permissions:
 
 [source,bash]
 ----
-sudo -u postgres createuser taiga
+sudo -u postgres psql -c "CREATE ROLE taiga LOGIN PASSWORD 'changeme';"
 sudo -u postgres createdb taiga -O taiga
+echo 'local all taiga peer' | sudo -u postgres tee -a /etc/postgresql/9.3/main/pg_hba.conf > /dev/null
+sudo service postgresql reload
 ----
 
 Setup python environment
@@ -107,6 +109,22 @@ mkvirtualenv -p /usr/bin/python3.4 taiga
 pip install -r requirements.txt
 ----
 
+.Adjust Django Configuration
+
+You can tune your own environment configuration by editing a `settings/local.py`
+configuration file to overwrite any setting in `settings/common.py`.
+
+For a basic configuration that works with these instructions, simply copy
+settings/local.py.example to settings/local.py.
+
+Otherwise, just put this in your own ~/taiga-back/settings/local.py
+[source,python]
+----
+from .common import *
+
+# YOUR OWN CONFIGURATION HERE
+----
+
 .Populate the database with initial basic data
 [source,bash]
 ----
@@ -119,17 +137,6 @@ python manage.py sample_data
 ----
 
 This creates a new user **admin** with password **123123** and some sample data.
-
-You can tune your own environment configuration by editing the `settings/local.py`
-configuration file to overwrite any setting in `settings/common.py`.
-
-.Put this in ~/taiga-back/settings/local.py
-[source,python]
-----
-from .common import *
-
-# YOUR OWN CONFIGURATION HERE
-----
 
 Run
 ~~~
