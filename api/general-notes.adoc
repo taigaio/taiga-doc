@@ -92,6 +92,17 @@ By default the API will always return paginated results and includes the followi
 x-disable-pagination: True
 ----
 
+=== Internationalization
+The API returns some content translated, you can specify the language with an extra http header:
+
+[source]
+----
+Accept-Language: {LanguageId}
+----
+
+The LanguageId can be chosen from the value list of available languages. You can get them using the link:#locales[locales API].
+
+
 === Throttling
 
 If the api is configured with throttling you have to take care on responses

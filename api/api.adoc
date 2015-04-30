@@ -109,6 +109,9 @@ include::webhooks/endpoints.adoc[]
 === Timelines
 include::timelines/endpoints.adoc[]
 
+=== Locales
+include::locales/endpoints.adoc[]
+
 
 [[auth]]
 == Auth
@@ -241,6 +244,11 @@ include::webhooks/summary.adoc[]
 [[timelines]]
 == Timelines
 include::timelines/summary.adoc[]
+
+[[locales]]
+== Locales
+include::locales/summary.adoc[]
+
 
 == Objects Summary
 
@@ -431,6 +439,11 @@ include::webhooks/log-detail-response.adoc[]
 [[object-timeline-detail]]
 === Timeline entry detail
 include::timelines/detail-response.adoc[]
+
+[[object-locale-detail]]
+=== Locale
+include::locales/detail-response.adoc[]
+
 
 == Contrib plugins
 
