@@ -204,6 +204,10 @@
 			}
 			// add class mp-level-open to the opening level element
 			classie.add( subLevel || this.levels[0], 'mp-level-open' );
+
+			// add overflow: auto to the first level, prevent having overflow: hidden after the menu was closed when a submenu was open
+			if (! subLevel) this.levels[0].style.overflow = "auto";
+
 		},
 		// close the menu
 		_resetMenu : function() {
