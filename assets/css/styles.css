@@ -1,35 +1,41 @@
 body {
-  font-family:"Open Sans","DejaVu Sans",sans-serif;
+    font-family:"Open Sans","DejaVu Sans",sans-serif;
 }
 
 ::selection {
-  background: #70aa7d;
-  color: #fff;
-  text-shadow: none; }
+    background: #70aa7d;
+    color: #fff;
+    text-shadow: none;
+}
 
 ::-moz-selection {
-  background: #70aa7d;
-  color: #fff;
-  text-shadow: none; }
+    background: #70aa7d;
+    color: #fff;
+    text-shadow: none;
+}
 
 a {
-  color: #50A5B7;
+    color: #70aa7d;
+}
+a:hover {
+    color: #74887c;
 }
 
 .mp-level > ul > li > a {
-  color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 #toctitle {
-  color: #1d0b33;
+    color: #fff;
 }
 
 .header1 {
-  padding: 2rem 1rem 0;
-  text-align: center; }
+    padding: 2rem 1rem 0;
+    text-align: center;
+}
 h2 {
     color: #1d0b33;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 h3 {
     color: #1D0B33;
@@ -38,5 +44,11 @@ h4{
     color: #474354;
 }
 p {
-    color: #81bf89;
+    color: #808080;
+}
+td.content>.title, .audioblock>.title, .exampleblock>.title, .imageblock>.title, .listingblock>.title, .literalblock>.title, .stemblock>.title, .openblock>.title, .paragraph>.title, .quoteblock>.title, table.tableblock>.title, .verseblock>.title, .videoblock>.title, .dlist>.title, .olist>.title, .ulist>.title, .qlist>.title, .hdlist>.title {
+    color: #70aa7d;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-style: normal;
 }
