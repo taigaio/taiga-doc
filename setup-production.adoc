@@ -599,7 +599,9 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
 ----
 
-And finally, restart nginx with `sudo service nginx restart`
+And finally, restart nginx with `sudo service nginx restart`.
+
+You can verify the nginx configuration with the following command to track any error preventing the service to start with `sudo nginx -t`.
 
 **Now you should have the service up and running on `http://example.com/`**
 
