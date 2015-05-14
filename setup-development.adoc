@@ -41,7 +41,7 @@ C compiler and development headers.
 ----
 sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
 sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
-sudo apt-get install -y automake libtool libffi-dev curl git tmux
+sudo apt-get install -y automake libtool libffi-dev curl git tmux gettext
 ----
 
 Setup a database
@@ -132,6 +132,7 @@ python manage.py migrate --noinput
 python manage.py loaddata initial_user
 python manage.py loaddata initial_project_templates
 python manage.py loaddata initial_role
+python manage.py compilemessages
 python manage.py collectstatic --noinput
 python manage.py sample_data
 ----
