@@ -798,6 +798,7 @@ git pull
 
 .Backend application
 ----
+As user "taiga" or whatever user you use, do not run this code as "root" to avoid errors.
 cd ~/taiga-back
 git checkout stable
 workon taiga
