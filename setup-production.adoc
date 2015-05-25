@@ -693,6 +693,7 @@ from .common import *
 MEDIA_URL = "https://example.com/media/"
 STATIC_URL = "https://example.com/static/"
 ADMIN_MEDIA_PREFIX = "https://example.com/static/admin/"
+SITES["front"]["scheme"] = "https"
 SITES["front"]["domain"] = "example.com"
 
 SECRET_KEY = "theveryultratopsecretkey"
