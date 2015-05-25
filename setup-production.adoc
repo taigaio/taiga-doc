@@ -730,7 +730,7 @@ sudo service circus restart
 ----
 {
     "api": "https://example.com/api/v1/",
-    "eventsUrl": "ws://example.com/events",
+    "eventsUrl": "wss://example.com/events",
     "debug": "true",
     "publicRegisterEnabled": true,
     "feedbackEnabled": true,
