@@ -10,6 +10,10 @@ include::../users/get.adoc[]
 === Me
 include::../users/me.adoc[]
 
+[[users-stats]]
+=== Get user stats
+include::../users/stats.adoc[]
+
 [[users-starred]]
 === Get starred projects
 include::../users/starred.adoc[]

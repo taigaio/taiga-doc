@@ -1,0 +1,11 @@
+[source,json]
+----
+{
+    "roles": [
+        "Back"
+    ],
+    "total_num_closed_userstories": 0,
+    "total_num_contacts": 8,
+    "total_num_projects": 1
+}
+----

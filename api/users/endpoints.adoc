@@ -24,6 +24,10 @@
 | PATCH
 | link:#users-edit[Modify partially a user]
 
+| /api/v1/users/\{userId}/stats
+| GET
+| link:#users-stats[Get user stats]
+
 | /api/v1/users/\{userId}/starred
 | GET
 | link:#users-starred[Get user starred projects]

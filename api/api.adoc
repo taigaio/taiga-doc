@@ -268,6 +268,10 @@ include::users/contact-response.adoc[]
 ===  User authentication-detail
 include::users/auth-detail-response.adoc[]
 
+[[object-user-stats-detail]]
+===  User stats detail
+include::users/stats-detail-response.adoc[]
+
 [[object-search-results-detail]]
 ===  Search results detail
 include::searches/detail-response.adoc[]
