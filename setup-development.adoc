@@ -22,7 +22,7 @@ Before starting
 ---------------
 
 This tutorial assumes that you are using a clean, recently updated, **ubuntu 14.04** image.
-Notes for a Debian stable (wheezy) install are included at the end of the appropriate sections.
+Notes for Debian installations are included at the end of the appropriate sections.
 
 
 Backend environment
@@ -193,8 +193,10 @@ celery -A taiga worker -l info -E
 Debian installation notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The latest Python available from Stable/Wheezy's apt repositories is only 3.1, which is not sufficient for taiga-back.
-Python 3.4 is available from Debian Testing (jessie) if you are comfortable using mixed versions in your apt sources.
+Debian stable (Jessie) provides all needed requirements, but old-stable (Wheezy) does not.
+
+The latest Python available from Wheezy's apt repositories is only 3.1 and insufficient for taiga-back.
+Python 3.4 is available from stable (Jessie) if you are comfortable using mixed versions in your apt sources.
 Otherwise, you must build Python 3.4 from source (see https://www.python.org/downloads/source/ for links).
 When building from source, if the bz2 development libraries are not already present on your system, then you must first:
 [source,bash]
@@ -203,7 +205,7 @@ sudo apt-get install libbz2-dev
 ----
 Or else Python will build without the bz2 module necessary for some pip installed requirements.
 
-The latest Postgresql available for Stable/Wheezy is 9.1, but a fully Wheezy-compatible 9.3 build is available from
+The latest Postgresql available for Wheezy is 9.1, but a fully Wheezy-compatible 9.3 build is available from
 the official Postgresql apt repositories, however:
 [source,bash]
 ----
@@ -306,7 +308,7 @@ bower install
 Debian installation notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While Debian Testing (jessie), provides a nodejs package out of the box, Debian Stable (wheezy) does not.
+While Debian stable (Jessie), provides a nodejs package out of the box, old-stable (Wheezy) does not.
 You can access one via the wheezy-backports apt repository, however, which can be added to your system as follows:
 [source,bash]
 ----
@@ -322,13 +324,14 @@ You can:
 ----
 sudo apt-get install nodejs
 ----
+
 Note that Debian installs the executable as nodejs not node, so you will need to provide this alias by issuing the following command:
 [source,bash]
 ----
 sudo update-alternatives --install /usr/bin/node nodejs /usr/bin/nodejs 100
 ----
 
-Testing (jessie) also provides an npm package, but npm is not available for Stable (wheezy), not even from wheezy-backports.
+Stable (Jessie) also provides an npm package, but npm is not available for old-stable (Wheezy), not even from wheezy-backports.
 Thus, you will need to install it manually via:
 [source,bash]
 ----
