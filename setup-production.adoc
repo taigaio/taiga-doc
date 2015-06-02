@@ -32,6 +32,8 @@ Due the nature of frontend application, you should know that this service will b
 through the domain/public-ip. This is because, the frontend application will run on your browser
 and it should communicate with the backend/api.
 
+**Taiga installation must be done with a "normal" user, never with root.**
+
 We assume the following:
 
 - **ip:** `80.88.23.45`

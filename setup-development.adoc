@@ -24,6 +24,7 @@ Before starting
 This tutorial assumes that you are using a clean, recently updated, **ubuntu 14.04** image.
 Notes for Debian installations are included at the end of the appropriate sections.
 
+**Taiga installation must be done with a "normal" user, never with root.**
 
 Backend environment
 -------------------
