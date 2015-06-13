@@ -78,7 +78,7 @@ virtual machine. **taiga-vagrant** uses **taiga-scripts** for its provisioning s
 Important notes about using **taiga-vagrant**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- The installation is not 100% ready for production, it is designed for use as a demostration.
+- The installation is not 100% ready for production, it is designed for use as a demonstration.
 - Does not support reprovisioning at this moment.
 
 Dependencies
