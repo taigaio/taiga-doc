@@ -382,7 +382,7 @@ Now you have to add taiga-events to circus configuration. See link:#circus-and-g
 ----
 [watcher:taiga-events]
 working_dir = /home/taiga/taiga-events
-cmd = node_modules/coffee-script/bin/coffee
+cmd = /usr/lib/node_modules/coffee-script/bin/coffee
 args = index.coffee
 uid = taiga
 numprocesses = 1
