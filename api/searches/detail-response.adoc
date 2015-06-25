@@ -1,10 +1,10 @@
 [source,json]
 ----
 {
-    "wikipages": [{ <Wiki Page> }, ...],
-    "userstories":  [{ <User Story> }, ...],
-    "issues":  [{ <Issue> }, ...],
-    "tasks":  [{ <Task> }, ...],
-    "count": 1
+    "wikipages": [{"id": 1, "slug": "wiki-page", "content": "wiki content"}, ...],
+    "userstories":  [{"id": 1, "ref": 10, "subject": "User story subject", "status": 23, "total_points": 12.5}, ...],
+    "issues":  [{"id": 1, "ref": 20, "subject": "Issue subject", "status": 10, "assigned_to": 12}, ...],
+    "tasks":  [{"id": 1, "ref": 30, "subject": "Task  subject", "status": 15, "assigned_to": 54}, ...],
+    "count": 8
 }
 ----
