@@ -27,11 +27,11 @@ include::../projects/delete.adoc[]
 include::../projects/bulk-update-order.adoc[]
 
 [[projects-get-modules]]
-=== Get modules
+=== Get modules configuration
 include::../projects/get-modules.adoc[]
 
 [[projects-edit-modules]]
-=== Edit modules
+=== Edit modules configuration
 include::../projects/edit-modules.adoc[]
 
 [[projects-stats]]
