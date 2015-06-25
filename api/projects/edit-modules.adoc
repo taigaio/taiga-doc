@@ -1,4 +1,4 @@
-To edit a project modules send a PATCH specifying the project id in the url.
+To edit a project modules configuration send a PATCH specifying the project id in the url.
 
 
 [source,bash]

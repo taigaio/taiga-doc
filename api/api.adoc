@@ -293,7 +293,7 @@ include::projects/list-entry-response.adoc[]
 include::projects/detail-response.adoc[]
 
 [[object-project-modules-detail]]
-===  Project modules detail
+===  Project modules configuration
 include::projects/modules-response.adoc[]
 
 [[object-project-stats-detail]]
