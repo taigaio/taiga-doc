@@ -9,7 +9,7 @@ To create projects send a POST request with the following data:
 - *is_private*
 - *is_wiki_activated*
 - *videoconferences*: appear-in or talky, the third party used for meetups if enabled
-- *videoconferences_salt*: string used for the videoconference chat url generation
+- *videoconferences_extra_data*: string used for the videoconference chat url generation
 - *total_milestones*
 - *total_story_points*
 
@@ -40,7 +40,7 @@ curl -v -X POST \
           "is_private": false,
           "is_wiki_activated": true,
           "videoconferences": "appear-in",
-          "videoconferences_salt": null,
+          "videoconferences_extra_data": null,
           "total_milestones": 3,
           "total_story_points": 20.0
       }' \

@@ -9,7 +9,7 @@ To create project templates send a POST request with the following data:
 * *is_wiki_activated*: boolean
 * *is_issues_activated*: boolean
 * *videoconferences*: (talky|appear-in)
-* *videoconferences_salt*: string
+* *videoconferences_extra_data*: string
 * *default_options*: a json with a list of objects with:
 ** *points*: slug
 ** *us_status*: slug
@@ -417,7 +417,7 @@ curl -X POST \
           "is_wiki_activated": false,
           "is_issues_activated": false,
           "videoconferences": null,
-          "videoconferences_salt": ""
+          "videoconferences_extra_data": ""
       }' \
   https://api.taiga.io/api/v1/project-templates
 ----
