@@ -153,6 +153,31 @@ documentation and repository. The currently supported plugins are:
 * link:http://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration
 * link:http://github.com/taigaio/taiga-contrib-hall[taiga-contrib-hall]: Hall.com integration
 
+Themes
+-------
+
+You can create custom themes for Taiga.
+
+To create a theme you have to create a new folder in `/app/themes/` with your theme name, then create two files inside.
+
+`variables.scss` - to override variable for layout, fonts or colors.
+
+`custom.scss` - to override any defined Taiga style.
+
+When the files are created you have to run gulp with the theme name. This is the same as `gulp default` but uses your theme instead of the default taiga theme.
+
+[source]
+----
+gulp --theme themeName
+----
+
+If you want to compile all themes you should run.
+
+[source]
+----
+gulp compile-themes
+----
+
 License
 -------
 
