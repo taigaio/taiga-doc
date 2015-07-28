@@ -2,46 +2,44 @@
 ----
 {
     "assigned_to": 19,
-    "backlog_order": 2,
     "blocked_note": "",
     "blocked_note_html": "",
-    "client_requirement": false,
     "comment": "",
     "created_date": "2014-07-29T07:15:50+0000",
     "description": "Implement API CALL",
     "description_html": "<p>Implement API CALL</p>",
     "finish_date": "2014-09-16T17:17:16+0000",
-    "generated_from_issue": null,
     "id": 1149,
-    "is_archived": false,
     "is_blocked": false,
     "is_closed": true,
-    "kanban_order": 37,
     "milestone": 98,
-    "milestone_name": "Sprint 03",
-    "milestone_slug": "sprint-03",
     "modified_date": "2014-10-10T12:07:13+0000",
-    "origin_issue": null,
+    "finished_date": null,
     "owner": 19,
-    "points": {
-        "129": 361,
-        "130": 361,
-        "131": 361,
-        "132": 364
-    },
     "project": 31,
     "ref": 31,
-    "sprint_order": 2,
     "status": 83,
+    "severity": 2,
+    "priority": 3,
+    "type": 1,
     "subject": "Customer personal data",
     "tags": [
         "service catalog",
         "customer"
     ],
-    "team_requirement": false,
-    "total_points": 1.0,
     "version": 8,
     "watchers": [],
+    "generated_user_stories": [
+    ],
+    "votes": null,
+    "neighbors": {
+        "next": {
+            "id": 16,
+            "ref": 126,
+            "subject": "Support for bulk actions"
+        },
+        "previous": {}
+    },
     "status_extra_info": {
         "name": "In progress",
         "color": "#5E8C6A"
@@ -56,4 +54,4 @@
 ----
 
 [NOTE]
-status_extra_info and assigned_to_extra_info are read only fields
+neighbors, status_extra_info and assigned_to_extra_info are read only fields

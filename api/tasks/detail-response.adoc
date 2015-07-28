@@ -31,18 +31,6 @@
     "is_iocaine": false,
     "external_reference": null,
     "watchers": [],
-    "neighbors": {
-        "previous": {
-            "id": 57,
-            "ref": 74,
-            "subject": "get_actions() does not check for 'delete_selected' in actions"
-        },
-        "next": {
-            "id": 59,
-            "ref": 77,
-            "subject": "Feature/improved image admin"
-        }
-    },
     "status_extra_info": {
         "name": "In progress",
         "color": "#5E8C6A"
@@ -57,4 +45,4 @@
 ----
 
 [NOTE]
-us_extra_info and assigned_to_extra_info are read only fields
+status_extra_info and assigned_to_extra_info are read only fields
