@@ -32,14 +32,6 @@
     "generated_user_stories": [
     ],
     "votes": null,
-    "neighbors": {
-        "next": {
-            "id": 16,
-            "ref": 126,
-            "subject": "Support for bulk actions"
-        },
-        "previous": {}
-    },
     "status_extra_info": {
         "name": "In progress",
         "color": "#5E8C6A"
@@ -54,4 +46,4 @@
 ----
 
 [NOTE]
-us_extra_info and assigned_to_extra_info are read only fields
+status_extra_info and assigned_to_extra_info are read only fields

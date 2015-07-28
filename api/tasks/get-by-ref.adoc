@@ -8,4 +8,4 @@ curl -X GET \
   https://api.taiga.io/api/v1/tasks/by_ref?ref=1\&project=1
 ----
 
-The HTTP response is a 200 OK and the response body is a JSON link:#object-task-detail[task detail object]
+The HTTP response is a 200 OK and the response body is a JSON link:#object-task-detail-get[task detail (GET) object]

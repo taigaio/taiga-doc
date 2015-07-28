@@ -42,6 +42,18 @@
     "total_points": 1.0,
     "version": 8,
     "watchers": [],
+    "neighbors": {
+        "previous": {
+            "id": 10969,
+            "ref": 1286,
+            "subject": "US/Task/Issue Visualization and edition refactor"
+        },
+        "next": {
+            "id": 9085,
+            "ref": 1212,
+            "subject": "Limit sizes"
+        }
+    },
     "status_extra_info": {
         "name": "In progress",
         "color": "#5E8C6A"
@@ -56,4 +68,4 @@
 ----
 
 [NOTE]
-status_extra_info and assigned_to_extra_info are read only fields
+neighbors, status_extra_info and assigned_to_extra_info are read only fields
