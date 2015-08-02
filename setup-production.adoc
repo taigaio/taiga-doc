@@ -169,7 +169,7 @@ DEFAULT_FROM_EMAIL = "no-reply@example.com"
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 # Uncomment and populate with proper connection parameters
-# for enable email sending.
+# for enable email sending. EMAIL_HOST_USER should end by @domain.tld 
 #EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 #EMAIL_USE_TLS = False
 #EMAIL_HOST = "localhost"
