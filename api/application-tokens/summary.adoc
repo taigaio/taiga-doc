@@ -1,0 +1,19 @@
+[[application-tokens-list]]
+=== List
+include::list.adoc[]
+
+[[application-tokens-get]]
+=== Get
+include::get.adoc[]
+
+[[application-tokens-delete]]
+=== Delete
+include::delete.adoc[]
+
+[[application-tokens-authorize]]
+=== Authorize
+include::authorize.adoc[]
+
+[[application-tokens-validate]]
+=== Validate
+include::validate.adoc[]

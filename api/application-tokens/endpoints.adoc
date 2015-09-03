@@ -1,0 +1,26 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/application-tokens
+| GET
+| link:#application-tokens-list[List application tokens]
+
+| /api/v1/application-tokens/\{applicationTokenId}
+| GET
+| link:#application-tokens-get[Get application token]
+
+| /api/v1/application-tokens/\{applicationTokenId}
+| DELETE
+| link:#application-tokens-delete[Delete application token]
+
+| /api/v1/application-tokens/authorize
+| POST
+| link:#application-tokens-authorize[Authorize application token]
+
+| /api/v1/application-tokens/validate
+| POST
+| link:#application-tokens-validate[Validate application token]
+|===
