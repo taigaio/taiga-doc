@@ -8,7 +8,7 @@ curl -X GET \
   https://api.taiga.io/api/v1/userstories
 ----
 
-The HTTP response is a 200 OK and the response body is a JSON list of link:#object-userstory-detail[user story detail objects]
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-userstory-detail-list[user story list objects]
 
 The results can be filtered using the following parameters:
 
