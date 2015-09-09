@@ -8,7 +8,7 @@ curl -X GET \
   https://api.taiga.io/api/v1/tasks
 ----
 
-The HTTP response is a 200 OK and the response body is a JSON list of link:#object-task-detail[task detail objects]
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-task-detail-list[task list objects]
 
 The results can be filtered using the following parameters:
 

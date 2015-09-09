@@ -340,6 +340,10 @@ include::user-stories/detail-response.adoc[]
 === User story detail (GET)
 include::user-stories/get-detail-response.adoc[]
 
+[[object-userstory-detail-list]]
+=== User story detail (LIST)
+include::user-stories/list-detail-response.adoc[]
+
 [[object-userstory-status-detail]]
 === User story status detail
 include::user-story-statuses/detail-response.adoc[]
@@ -364,6 +368,10 @@ include::tasks/detail-response.adoc[]
 === Task detail (GET)
 include::tasks/get-detail-response.adoc[]
 
+[[object-task-detail-list]]
+=== Task detail (LIST)
+include::tasks/list-detail-response.adoc[]
+
 [[object-task-status-detail]]
 === Task status detail
 include::task-statuses/detail-response.adoc[]
@@ -383,6 +391,10 @@ include::issues/detail-response.adoc[]
 [[object-issue-detail-get]]
 === Issue detail (GET)
 include::issues/get-detail-response.adoc[]
+
+[[object-issue-detail-list]]
+=== Issue detail (LIST)
+include::issues/list-detail-response.adoc[]
 
 [[object-issue-voters-detail]]
 === Issue voters detail
