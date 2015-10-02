@@ -1,0 +1,10 @@
+To add a vote to a user story send a POST request specifying the user story id in the url
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/userstories/1/upvote
+----
+
+The HTTP response is a 200 OK with an empty body response

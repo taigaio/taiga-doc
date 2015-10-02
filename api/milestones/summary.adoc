@@ -21,3 +21,15 @@ include::delete.adoc[]
 [[milestones-stats]]
 === Stats
 include::stats.adoc[]
+
+[[milestones-watch]]
+=== Watch a milestone
+include::watch.adoc[]
+
+[[milestones-unwatch]]
+=== Stop watching a milestone
+include::unwatch.adoc[]
+
+[[milestones-watchers]]
+=== List milestone watchers
+include::watchers.adoc[]

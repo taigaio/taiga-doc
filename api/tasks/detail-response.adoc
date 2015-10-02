@@ -1,53 +1,67 @@
 [source,json]
 ----
 {
-    "assigned_to": 19,
-    "blocked_note": "",
-    "blocked_note_html": "",
-    "comment": "",
-    "milestone_slug": "sprint-2014-11-1",
-    "created_date": "2014-07-29T07:15:50+0000",
-    "description": "Implement API CALL",
-    "description_html": "<p>Implement API CALL</p>",
-    "id": 1149,
-    "is_blocked": false,
-    "is_closed": true,
-    "milestone": 98,
-    "modified_date": "2014-10-10T12:07:13+0000",
-    "finished_date": null,
-    "owner": 19,
-    "project": 31,
-    "user_story": 17,
-    "ref": 31,
-    "status": 83,
-    "subject": "Customer personal data",
-    "tags": [
-        "service catalog",
-        "customer"
+    "is_voter": false,
+    "total_voters": 3,
+    "is_watcher": false,
+    "total_watchers": 1,
+    "watchers": [
+        6
     ],
-    "us_order": 1,
-    "taskboard_order": 1,
-    "version": 8,
-    "is_iocaine": false,
+    "tags": [
+        "porro",
+        "placeat"
+    ],
     "external_reference": null,
-    "watchers": [],
+    "comment": "",
+    "milestone_slug": "sprint-2015-8-7",
+    "blocked_note_html": "",
+    "description_html": "<p>Nostrum consequatur quasi odio, pariatur modi id distinctio sequi. Voluptatibus illo ratione eius necessitatibus ad quibusdam nulla reiciendis laborum doloribus, nostrum repudiandae asperiores eveniet libero consequuntur expedita velit accusantium a commodi blanditiis? Quaerat ipsum pariatur nulla maiores harum ipsa eveniet, vel omnis culpa quisquam nulla, minus iste ad modi aliquid inventore ab iusto optio tempora hic voluptas?</p>",
+    "is_closed": false,
     "status_extra_info": {
-        "name": "In progress",
-        "color": "#5E8C6A"
+        "name": "Needs Info",
+        "color": "#999999"
     },
     "assigned_to_extra_info": {
-        "is_active": true,
-        "username": "beta.tester",
-        "full_name_display": "Beta testing",
-        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80""
+        "username": "user2",
+        "full_name_display": "Sofia Ramirez",
+        "photo": "//www.gravatar.com/avatar/5c921c7bd676b7b4992501005d243c42?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+        "big_photo": "//www.gravatar.com/avatar/5c921c7bd676b7b4992501005d243c42?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=300",
+        "is_active": true
     },
     "owner_extra_info": {
-        "is_active": true,
-        "username": "beta.tester",
-        "full_name_display": "Beta testing",
-        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80""
+        "username": "user3",
+        "full_name_display": "Concepcion Garrido",
+        "photo": "//www.gravatar.com/avatar/9971a763f5dfc5cbd1ce1d2865b4fcfa?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+        "big_photo": "//www.gravatar.com/avatar/9971a763f5dfc5cbd1ce1d2865b4fcfa?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=300",
+        "is_active": true
+    },
+    "id": 1,
+    "version": 1,
+    "is_blocked": false,
+    "blocked_note": "",
+    "user_story": 1,
+    "ref": 2,
+    "owner": 9,
+    "status": 5,
+    "project": 1,
+    "milestone": 1,
+    "created_date": "2015-10-01T09:52:54+0000",
+    "modified_date": "2015-10-01T09:52:55+0000",
+    "finished_date": "2015-08-16T15:54:13+0000",
+    "subject": "Create testsuite with matrix builds",
+    "us_order": 1,
+    "taskboard_order": 1,
+    "description": "Nostrum consequatur quasi odio, pariatur modi id distinctio sequi. Voluptatibus illo ratione eius necessitatibus ad quibusdam nulla reiciendis laborum doloribus, nostrum repudiandae asperiores eveniet libero consequuntur expedita velit accusantium a commodi blanditiis? Quaerat ipsum pariatur nulla maiores harum ipsa eveniet, vel omnis culpa quisquam nulla, minus iste ad modi aliquid inventore ab iusto optio tempora hic voluptas?",
+    "assigned_to": 8,
+    "is_iocaine": false,
+    "neighbors": {
+        "next": {
+            "id": 2,
+            "ref": 3,
+            "subject": "Lighttpd support"
+        },
+        "previous": {}
     }
 }
 ----

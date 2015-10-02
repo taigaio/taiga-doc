@@ -60,17 +60,29 @@
 | GET
 | link:#projects-tag-colors[Get project tags colors]
 
-| /api/v1/projects/\{projectId}/star
+| /api/v1/projects/\{projectId}/like
 | POST
-| link:#projects-star[Add star to a project]
+| link:#projects-like[Like a project]
 
-| /api/v1/projects/\{projectId}/unstar
+| /api/v1/projects/\{projectId}/unlike
 | POST
-| link:#projects-unstar[Remove star from project]
+| link:#projects-unlike[Unlike a project]
 
 | /api/v1/projects/\{projectId}/fans
 | GET
 | link:#projects-fans[Get project fans]
+
+| /api/v1/projects/\{projectId}/watch
+| POST
+| link:#projects-watch[Watch a project]
+
+| /api/v1/projects/\{projectId}/unwatch
+| POST
+| link:#projects-unwatch[Unwatch a project]
+
+| /api/v1/projects/\{projectId}/watchers
+| GET
+| link:#projects-watchers[Get project watchers]
 
 | /api/v1/projects/\{projectId}/create_template
 | POST

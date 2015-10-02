@@ -1,0 +1,10 @@
+To watch a milestone send a POST request specifying the milestone id in the url
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/milestones/1/watch
+----
+
+The HTTP response is a 200 OK with an empty body response

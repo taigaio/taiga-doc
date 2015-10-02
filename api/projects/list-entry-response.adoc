@@ -18,6 +18,8 @@
     "is_issues_activated": true,
     "is_kanban_activated": true,
     "is_private": false,
+    "is_liked": true,
+    "is_watched": true,
     "is_wiki_activated": true,
     "members": [
         2,
@@ -67,7 +69,7 @@
     "owner": 2,
     "public_permissions": [],
     "slug": "ail",
-    "stars": null,
+    "likes": 3,
     "tags": null,
     "tags_colors": {
         "api": "#ce5c00",
@@ -80,6 +82,10 @@
     "total_milestones": 3,
     "total_story_points": 20.0,
     "videoconferences": "appear-in",
-    "videoconferences_extra_data": null
+    "videoconferences_salt": null,
+    "voters": 1,
+    "watchers": [
+      7
+    ]
 }
 ----

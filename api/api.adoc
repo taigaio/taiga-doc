@@ -316,6 +316,10 @@ include::projects/tags-colors-response.adoc[]
 ===  Project voter detail
 include::projects/voter-detail-response.adoc[]
 
+[[object-project-watcher-detail]]
+===  Project watcher detail
+include::projects/watcher-detail-response.adoc[]
+
 [[object-project-template-detail]]
 ===  Project template detail
 include::projects/template-detail-response.adoc[]
@@ -327,6 +331,10 @@ include::memberships/detail-response.adoc[]
 [[object-milestone-detail]]
 ===  Milestone detail
 include::milestones/detail-response.adoc[]
+
+[[object-milestone-watcher-detail]]
+===  Milestone watcher detail
+include::milestones/watcher-detail-response.adoc[]
 
 [[object-milestone-stats-detail]]
 ===  Milestone stats detail
@@ -343,6 +351,14 @@ include::user-stories/get-detail-response.adoc[]
 [[object-userstory-detail-list]]
 === User story detail (LIST)
 include::user-stories/list-detail-response.adoc[]
+
+[[object-userstory-voter-detail]]
+===  User story voter detail
+include::user-stories/voter-detail-response.adoc[]
+
+[[object-userstory-watcher-detail]]
+===  User story watcher detail
+include::user-stories/watcher-detail-response.adoc[]
 
 [[object-userstory-status-detail]]
 === User story status detail
@@ -372,6 +388,22 @@ include::tasks/get-detail-response.adoc[]
 === Task detail (LIST)
 include::tasks/list-detail-response.adoc[]
 
+[[object-task-voter-detail]]
+===  Task voter detail
+include::tasks/voter-detail-response.adoc[]
+
+[[object-task-watcher-detail]]
+===  Task watcher detail
+include::tasks/watcher-detail-response.adoc[]
+
+[[object-project-voter-detail]]
+===  Project voter detail
+include::projects/voter-detail-response.adoc[]
+
+[[object-project-watcher-detail]]
+===  Project watcher detail
+include::projects/watcher-detail-response.adoc[]
+
 [[object-task-status-detail]]
 === Task status detail
 include::task-statuses/detail-response.adoc[]
@@ -400,6 +432,10 @@ include::issues/list-detail-response.adoc[]
 === Issue voters detail
 include::issues/voters-detail-response.adoc[]
 
+[[object-issue-watcher-detail]]
+===  Issue watchers detail
+include::issues/watcher-detail-response.adoc[]
+
 [[object-issue-status-detail]]
 === Issue status detail
 include::issue-statuses/detail-response.adoc[]
@@ -427,6 +463,10 @@ include::issue-custom-attributes-values/detail-response.adoc[]
 [[object-wiki-detail]]
 === Wiki page
 include::wiki/detail-response.adoc[]
+
+[[object-wiki-watcher-detail]]
+===  Wiki page watcher detail
+include::wiki/watcher-detail-response.adoc[]
 
 [[object-wiki-link-detail]]
 === Wiki link
@@ -472,6 +512,13 @@ include::timelines/detail-response.adoc[]
 === Locale
 include::locales/detail-response.adoc[]
 
+[[object-watched-detail]]
+=== Watched
+include::users/watched-response.adoc[]
+
+[[object-liked-detail]]
+=== Liked
+include::users/liked-response.adoc[]
 
 == Contrib plugins
 

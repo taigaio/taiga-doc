@@ -2,119 +2,686 @@
 [source,json]
 ----
 {
-    "anon_permissions": [],
-    "created_date": "2014-11-07T12:35:37+0000",
-    "creation_template": 1,
-    "default_issue_status": 59,
-    "default_issue_type": 25,
-    "default_points": 97,
-    "default_priority": 26,
-    "default_severity": 43,
-    "default_task_status": 42,
-    "default_us_status": 42,
-    "description": "Taiga",
+    "is_fan": true,
+    "total_fans": 2,
+    "is_watcher": true,
+    "total_watchers": 12,
+    "tags": [],
+    "anon_permissions": [
+        "view_project",
+        "view_milestones",
+        "view_us",
+        "view_tasks",
+        "view_issues",
+        "view_wiki_pages",
+        "view_wiki_links"
+    ],
+    "public_permissions": [
+        "view_project",
+        "view_milestones",
+        "view_us",
+        "view_tasks",
+        "view_issues",
+        "view_wiki_pages",
+        "view_wiki_links"
+    ],
+    "my_permissions": [
+        "add_comments_to_issue",
+        "view_wiki_pages",
+        "admin_roles",
+        "add_wiki_page",
+        "delete_project",
+        "add_us",
+        "delete_task",
+        "add_milestone",
+        "delete_issue",
+        "admin_project_values",
+        "modify_wiki_page",
+        "add_comments_to_task",
+        "modify_us",
+        "view_tasks",
+        "modify_task",
+        "add_task",
+        "modify_milestone",
+        "add_member",
+        "remove_member",
+        "delete_wiki_link",
+        "add_wiki_link",
+        "modify_project",
+        "delete_wiki_page",
+        "view_issues",
+        "view_us",
+        "modify_issue",
+        "view_project",
+        "add_comments_to_us",
+        "add_issue",
+        "request_membership",
+        "view_milestones",
+        "delete_us",
+        "view_wiki_links",
+        "add_us_to_project",
+        "modify_wiki_link",
+        "delete_milestone"
+    ],
     "i_am_owner": true,
-    "id": 9,
-    "is_backlog_activated": true,
-    "is_issues_activated": true,
-    "is_kanban_activated": false,
-    "is_private": false,
-    "is_wiki_activated": true,
-    "issue_custom_attributes": [
+    "tags_colors": {
+        "laborum": "#67eac4",
+        "cumque": "#ad75ec",
+        "labore": "#6fdf52",
+        "error": "#11f957",
+        "fugiat": "#1c563a",
+        "animi": "#d93411",
+        "dolorem": "#604860",
+        "ea": "#2c80b2",
+        "et": "#a5bc1d",
+        "expedita": "#c4a000",
+        "corrupti": "#432493",
+        "veniam": "#a40000",
+        "sunt": "#98f4c9",
+        "velit": "#790ea4",
+        "unde": "#da2470",
+        "doloremque": "#61405d",
+        "voluptates": "#6639aa",
+        "pariatur": "#7b0e4e",
+        "ex": "#e06613",
+        "quo": "#857670",
+        "repudiandae": "#3a2b71",
+        "consequuntur": "#ce24ec",
+        "dolores": "#7fea8e",
+        "eum": "#ee6c40",
+        "earum": "#24bec9",
+        "sequi": "#9f6274",
+        "magnam": "#d1fac1",
+        "nostrum": "#0cf81b",
+        "esse": "#d77661",
+        "est": "#75507b",
+        "voluptatibus": "#681ad4",
+        "quaerat": "#0b4425",
+        "similique": "#710c97",
+        "suscipit": "#38abf3",
+        "quasi": "#5dae16",
+        "voluptas": "#729359",
+        "corporis": "#ed9c91",
+        "quis": "#ef2929",
+        "impedit": "#cde1f0",
+        "possimus": "#fccc1b",
+        "assumenda": "#52b91a",
+        "ipsum": "#da3ba4",
+        "provident": "#7fdcf2",
+        "odio": "#edb520",
+        "sit": "#abdcde",
+        "quae": "#d91a8b",
+        "numquam": "#fa8ea8",
+        "perferendis": "#73d216",
+        "repellat": "#807389",
+        "dolorum": "#db7ec2",
+        "beatae": "#b844bd",
+        "eveniet": "#5d26b5",
+        "ut": "#e74669",
+        "quam": "#0149d1",
+        "eligendi": "#5d8273",
+        "libero": "#ad7fa8",
+        "temporibus": "#8ae234",
+        "facere": "#5c3566",
+        "laudantium": "#9e3f1f",
+        "non": "#37031f",
+        "ullam": "#98ad13",
+        "commodi": "#3b70df",
+        "illum": "#898c66",
+        "soluta": "#1398ab",
+        "veritatis": "#d3d7cf",
+        "ab": "#da2361",
+        "saepe": "#b87b67",
+        "sint": "#3b2404",
+        "eius": "#860b86",
+        "ipsam": "#fa74af",
+        "amet": "#db04fb",
+        "nesciunt": "#4c8404",
+        "rerum": "#b1c629",
+        "quibusdam": "#c49ac2",
+        "enim": "#150d4a",
+        "nemo": "#f57900",
+        "iusto": "#3a10e8",
+        "illo": "#3531fd",
+        "eaque": "#3e7c66",
+        "autem": "#5e8c91",
+        "blanditiis": "#fce94f",
+        "deserunt": "#e7b695",
+        "maiores": "#cbb2b3",
+        "eos": "#8a6433",
+        "placeat": "#cc0000",
+        "odit": "#e2b537",
+        "nulla": "#894727",
+        "aperiam": "#a2b100",
+        "quisquam": "#ebca0b",
+        "excepturi": "#5c3c96",
+        "fuga": "#e86797",
+        "dicta": "#939b44",
+        "nam": "#729fcf",
+        "consectetur": "#97176f",
+        "reiciendis": "#2e3436",
+        "inventore": "#3465a4",
+        "facilis": "#0f6b6b",
+        "qui": "#61f611",
+        "sapiente": "#850c56",
+        "itaque": "#edd400",
+        "hic": "#f75f0b",
+        "natus": "#e610c1",
+        "id": "#87ea5d",
+        "asperiores": "#a69134",
+        "officiis": "#204a87",
+        "cupiditate": "#144bba",
+        "voluptatem": "#00d60c",
+        "rem": "#688119",
+        "accusantium": "#b36f86",
+        "perspiciatis": "#afb825",
+        "aliquam": "#631249",
+        "recusandae": "#47e087",
+        "a": "#86f7e4",
+        "harum": "#b42d3c",
+        "obcaecati": "#9ccd46",
+        "aut": "#9ae4e4",
+        "accusamus": "#801cf7",
+        "voluptatum": "#02d22f",
+        "necessitatibus": "#84e3b6",
+        "nihil": "#98a352",
+        "fugit": "#9345df",
+        "dolor": "#641bd9",
+        "explicabo": "#2892cb",
+        "ducimus": "#ea6bb9",
+        "consequatur": "#3ad7db",
+        "neque": "#888a85",
+        "modi": "#494e30",
+        "adipisci": "#257dec",
+        "magni": "#429e6f",
+        "cum": "#ab14d9",
+        "quidem": "#ae6519",
+        "maxime": "#1acc29",
+        "porro": "#ce5c00",
+        "exercitationem": "#ac7c74",
+        "culpa": "#f5e53b",
+        "reprehenderit": "#6c82c6",
+        "laboriosam": "#fcaf3e",
+        "at": "#27e90d",
+        "dolore": "#61b076",
+        "praesentium": "#0cd131",
+        "architecto": "#9d1e93",
+        "vel": "#4e9a06",
+        "sed": "#c15b7b",
+        "quas": "#6e3390",
+        "iure": "#019320"
+    },
+    "total_closed_milestones": 0,
+    "notify_level": 1,
+    "us_statuses": [
         {
             "id": 1,
-            "name": "Duration",
-            "description": "Duration in minutes",
+            "name": "New",
+            "slug": "new",
             "order": 1,
-            "project": 9
+            "is_closed": false,
+            "is_archived": false,
+            "color": "#999999",
+            "wip_limit": null,
+            "project": 1
+        },
+        {
+            "id": 2,
+            "name": "Ready",
+            "slug": "ready",
+            "order": 2,
+            "is_closed": false,
+            "is_archived": false,
+            "color": "#ff8a84",
+            "wip_limit": null,
+            "project": 1
+        },
+        {
+            "id": 3,
+            "name": "In progress",
+            "slug": "in-progress",
+            "order": 3,
+            "is_closed": false,
+            "is_archived": false,
+            "color": "#ff9900",
+            "wip_limit": null,
+            "project": 1
+        },
+        {
+            "id": 4,
+            "name": "Ready for test",
+            "slug": "ready-for-test",
+            "order": 4,
+            "is_closed": false,
+            "is_archived": false,
+            "color": "#fcc000",
+            "wip_limit": null,
+            "project": 1
+        },
+        {
+            "id": 5,
+            "name": "Done",
+            "slug": "done",
+            "order": 5,
+            "is_closed": true,
+            "is_archived": false,
+            "color": "#669900",
+            "wip_limit": null,
+            "project": 1
+        },
+        {
+            "id": 6,
+            "name": "Archived",
+            "slug": "archived",
+            "order": 6,
+            "is_closed": true,
+            "is_archived": true,
+            "color": "#5c3566",
+            "wip_limit": null,
+            "project": 1
+        }
+    ],
+    "points": [
+        {
+            "id": 1,
+            "name": "?",
+            "order": 1,
+            "value": null,
+            "project": 1
+        },
+        {
+            "id": 2,
+            "name": "0",
+            "order": 2,
+            "value": 0.0,
+            "project": 1
+        },
+        {
+            "id": 3,
+            "name": "1/2",
+            "order": 3,
+            "value": 0.5,
+            "project": 1
+        },
+        {
+            "id": 4,
+            "name": "1",
+            "order": 4,
+            "value": 1.0,
+            "project": 1
+        },
+        {
+            "id": 5,
+            "name": "2",
+            "order": 5,
+            "value": 2.0,
+            "project": 1
+        },
+        {
+            "id": 6,
+            "name": "3",
+            "order": 6,
+            "value": 3.0,
+            "project": 1
+        },
+        {
+            "id": 7,
+            "name": "5",
+            "order": 7,
+            "value": 5.0,
+            "project": 1
+        },
+        {
+            "id": 8,
+            "name": "8",
+            "order": 8,
+            "value": 8.0,
+            "project": 1
+        },
+        {
+            "id": 9,
+            "name": "10",
+            "order": 9,
+            "value": 10.0,
+            "project": 1
+        },
+        {
+            "id": 10,
+            "name": "13",
+            "order": 10,
+            "value": 13.0,
+            "project": 1
+        },
+        {
+            "id": 11,
+            "name": "20",
+            "order": 11,
+            "value": 20.0,
+            "project": 1
+        },
+        {
+            "id": 12,
+            "name": "40",
+            "order": 12,
+            "value": 40.0,
+            "project": 1
+        }
+    ],
+    "task_statuses": [
+        {
+            "id": 1,
+            "name": "New",
+            "slug": "new",
+            "order": 1,
+            "is_closed": false,
+            "color": "#999999",
+            "project": 1
+        },
+        {
+            "id": 2,
+            "name": "In progress",
+            "slug": "in-progress",
+            "order": 2,
+            "is_closed": false,
+            "color": "#ff9900",
+            "project": 1
+        },
+        {
+            "id": 3,
+            "name": "Ready for test",
+            "slug": "ready-for-test",
+            "order": 3,
+            "is_closed": true,
+            "color": "#ffcc00",
+            "project": 1
+        },
+        {
+            "id": 4,
+            "name": "Closed",
+            "slug": "closed",
+            "order": 4,
+            "is_closed": true,
+            "color": "#669900",
+            "project": 1
+        },
+        {
+            "id": 5,
+            "name": "Needs Info",
+            "slug": "needs-info",
+            "order": 5,
+            "is_closed": false,
+            "color": "#999999",
+            "project": 1
         }
     ],
     "issue_statuses": [
         {
-            "color": "#8C2318",
-            "id": 59,
-            "is_closed": false,
+            "id": 1,
             "name": "New",
+            "slug": "new",
             "order": 1,
-            "project": 9,
-            "slug": "new"
+            "is_closed": false,
+            "color": "#8C2318",
+            "project": 1
         },
         {
-            "color": "#5E8C6A",
-            "id": 60,
-            "is_closed": false,
+            "id": 2,
             "name": "In progress",
+            "slug": "in-progress",
             "order": 2,
-            "project": 9,
-            "slug": "in-progress"
+            "is_closed": false,
+            "color": "#5E8C6A",
+            "project": 1
         },
         {
-            "color": "#88A65E",
-            "id": 61,
-            "is_closed": true,
+            "id": 3,
             "name": "Ready for test",
+            "slug": "ready-for-test",
             "order": 3,
-            "project": 9,
-            "slug": "ready-for-test"
+            "is_closed": true,
+            "color": "#88A65E",
+            "project": 1
         },
         {
-            "color": "#BFB35A",
-            "id": 62,
-            "is_closed": true,
+            "id": 4,
             "name": "Closed",
+            "slug": "closed",
             "order": 4,
-            "project": 9,
-            "slug": "closed"
-        },
-        {
-            "color": "#89BAB4",
-            "id": 63,
-            "is_closed": false,
-            "name": "Needs Info",
-            "order": 5,
-            "project": 9,
-            "slug": "needs-info"
-        },
-        {
-            "color": "#CC0000",
-            "id": 64,
             "is_closed": true,
-            "name": "Rejected",
-            "order": 6,
-            "project": 9,
-            "slug": "rejected"
+            "color": "#BFB35A",
+            "project": 1
         },
         {
-            "color": "#666666",
-            "id": 65,
+            "id": 5,
+            "name": "Needs Info",
+            "slug": "needs-info",
+            "order": 5,
             "is_closed": false,
+            "color": "#89BAB4",
+            "project": 1
+        },
+        {
+            "id": 6,
+            "name": "Rejected",
+            "slug": "rejected",
+            "order": 6,
+            "is_closed": true,
+            "color": "#CC0000",
+            "project": 1
+        },
+        {
+            "id": 7,
             "name": "Postponed",
+            "slug": "postponed",
             "order": 7,
-            "project": 9,
-            "slug": "postponed"
+            "is_closed": false,
+            "color": "#666666",
+            "project": 1
         }
     ],
     "issue_types": [
         {
-            "color": "#89BAB4",
-            "id": 25,
+            "id": 1,
             "name": "Bug",
             "order": 1,
-            "project": 9
+            "color": "#89BAB4",
+            "project": 1
         },
         {
-            "color": "#ba89a8",
-            "id": 26,
+            "id": 2,
             "name": "Question",
             "order": 2,
-            "project": 9
+            "color": "#ba89a8",
+            "project": 1
         },
         {
-            "color": "#89a8ba",
-            "id": 27,
+            "id": 3,
             "name": "Enhancement",
             "order": 3,
-            "project": 9
+            "color": "#89a8ba",
+            "project": 1
+        }
+    ],
+    "priorities": [
+        {
+            "id": 1,
+            "name": "Low",
+            "order": 1,
+            "color": "#666666",
+            "project": 1
+        },
+        {
+            "id": 2,
+            "name": "Normal",
+            "order": 3,
+            "color": "#669933",
+            "project": 1
+        },
+        {
+            "id": 3,
+            "name": "High",
+            "order": 5,
+            "color": "#CC0000",
+            "project": 1
+        }
+    ],
+    "severities": [
+        {
+            "id": 1,
+            "name": "Wishlist",
+            "order": 1,
+            "color": "#666666",
+            "project": 1
+        },
+        {
+            "id": 2,
+            "name": "Minor",
+            "order": 2,
+            "color": "#669933",
+            "project": 1
+        },
+        {
+            "id": 3,
+            "name": "Normal",
+            "order": 3,
+            "color": "#0000FF",
+            "project": 1
+        },
+        {
+            "id": 4,
+            "name": "Important",
+            "order": 4,
+            "color": "#FFA500",
+            "project": 1
+        },
+        {
+            "id": 5,
+            "name": "Critical",
+            "order": 5,
+            "color": "#CC0000",
+            "project": 1
+        }
+    ],
+    "userstory_custom_attributes": [
+        {
+            "id": 1,
+            "name": "assumenda laboriosam maxime",
+            "description": "nihil pariatur in nisi asperiores soluta unde similique deserunt consequatur ipsa dolorum",
+            "field_type": "TEXT",
+            "order": 1,
+            "project": 1
+        },
+        {
+            "id": 2,
+            "name": "officia dolorum possimus",
+            "description": "eum nesciunt consectetur similique nihil velit rerum error magnam nostrum quisquam dolore",
+            "field_type": "TEXT",
+            "order": 2,
+            "project": 1
+        },
+        {
+            "id": 3,
+            "name": "vero facere soluta",
+            "description": "quod vel dolorum obcaecati cupiditate",
+            "field_type": "TEXT",
+            "order": 3,
+            "project": 1
+        }
+    ],
+    "task_custom_attributes": [
+        {
+            "id": 1,
+            "name": "vel",
+            "description": "quo nisi ratione rem sit eum fugiat veniam porro deserunt optio voluptas",
+            "field_type": "TEXT",
+            "order": 1,
+            "project": 1
+        },
+        {
+            "id": 2,
+            "name": "libero quibusdam",
+            "description": "alias rerum dolorum quas quod maiores iure error perferendis",
+            "field_type": "TEXT",
+            "order": 2,
+            "project": 1
+        },
+        {
+            "id": 3,
+            "name": "ipsa illo",
+            "description": "magnam pariatur cumque",
+            "field_type": "TEXT",
+            "order": 3,
+            "project": 1
+        }
+    ],
+    "issue_custom_attributes": [
+        {
+            "id": 1,
+            "name": "aut accusantium cumque",
+            "description": "blanditiis dolores commodi",
+            "field_type": "TEXT",
+            "order": 1,
+            "project": 1
+        },
+        {
+            "id": 2,
+            "name": "molestias ducimus cumque",
+            "description": "deleniti iste nostrum",
+            "field_type": "TEXT",
+            "order": 2,
+            "project": 1
+        },
+        {
+            "id": 3,
+            "name": "quasi eius",
+            "description": "quaerat nulla minima eius officia saepe",
+            "field_type": "TEXT",
+            "order": 3,
+            "project": 1
+        }
+    ],
+    "roles": [
+        {
+            "id": 1,
+            "name": "UX",
+            "slug": "ux",
+            "order": 10,
+            "computable": true
+        },
+        {
+            "id": 2,
+            "name": "Design",
+            "slug": "design",
+            "order": 20,
+            "computable": true
+        },
+        {
+            "id": 3,
+            "name": "Front",
+            "slug": "front",
+            "order": 30,
+            "computable": true
+        },
+        {
+            "id": 4,
+            "name": "Back",
+            "slug": "back",
+            "order": 40,
+            "computable": true
+        },
+        {
+            "id": 5,
+            "name": "Product Owner",
+            "slug": "product-owner",
+            "order": 50,
+            "computable": false
+        },
+        {
+            "id": 6,
+            "name": "Stakeholder",
+            "slug": "stakeholder",
+            "order": 60,
+            "computable": false
         }
     ],
     "members": [
@@ -124,378 +691,170 @@
             "full_name": "Administrator",
             "full_name_display": "Administrator",
             "color": "",
-            "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
+            "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
             "is_active": true,
-            "role_name": "Product Owner",
+            "role_name": "Design",
             "user": 5,
-            "role": 5,
-            "is_owner": false,
-        }, {
+            "role": 2,
+            "is_owner": false
+        },
+        {
             "id": 11,
             "username": "user5",
             "full_name": "Alicia Flores",
             "full_name_display": "Alicia Flores",
             "color": "#D70A53",
-            "photo": "//www.gravatar.com/avatar/c9ba9d485f9a9153ebf53758feb0980c?size=80",
+            "photo": "//www.gravatar.com/avatar/c9ba9d485f9a9153ebf53758feb0980c?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "is_active": true,
+            "role_name": "Back",
+            "user": 11,
+            "role": 4,
+            "is_owner": true
+        },
+        {
+            "id": 9,
+            "username": "user3",
+            "full_name": "Concepcion Garrido",
+            "full_name_display": "Concepcion Garrido",
+            "color": "#D70A53",
+            "photo": "//www.gravatar.com/avatar/9971a763f5dfc5cbd1ce1d2865b4fcfa?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
             "is_active": true,
             "role_name": "UX",
-            "user": 11,
+            "user": 9,
             "role": 1,
-            "is_owner": true,
-        }
-    ],
-    "modified_date": "2014-11-07T12:35:38+0000",
-    "my_permissions": [
-        "delete_issue",
-        "modify_milestone",
-        "delete_milestone",
-        "delete_wiki_page",
-        "modify_wiki_page",
-        "modify_us",
-        "modify_task",
-        "add_member",
-        "add_milestone",
-        "view_milestones",
-        "add_issue",
-        "add_us",
-        "delete_task",
-        "add_wiki_page",
-        "delete_us",
-        "admin_project_values",
-        "view_issues",
-        "modify_issue",
-        "view_project",
-        "delete_project",
-        "remove_member",
-        "vote_issues",
-        "view_tasks",
-        "admin_roles",
-        "modify_wiki_link",
-        "add_wiki_link",
-        "modify_project",
-        "view_us",
-        "view_wiki_links",
-        "add_task",
-        "view_wiki_pages",
-        "delete_wiki_link"
-    ],
-    "name": "Beta project",
-    "owner": 2,
-    "points": [
-        {
-            "id": 97,
-            "name": "?",
-            "order": 1,
-            "project": 9,
-            "value": null
+            "is_owner": true
         },
         {
-            "id": 98,
-            "name": "0",
-            "order": 2,
-            "project": 9,
-            "value": 0.0
+            "id": 10,
+            "username": "user4",
+            "full_name": "Esther Ferrer",
+            "full_name_display": "Esther Ferrer",
+            "color": "#40826D",
+            "photo": "//www.gravatar.com/avatar/f31e0063c7cd6da19b6467bc48d2b14b?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "is_active": true,
+            "role_name": "Front",
+            "user": 10,
+            "role": 3,
+            "is_owner": true
         },
         {
-            "id": 99,
-            "name": "1/2",
-            "order": 3,
-            "project": 9,
-            "value": 0.5
+            "id": 15,
+            "username": "user9",
+            "full_name": "Francisca Gallardo",
+            "full_name_display": "Francisca Gallardo",
+            "color": "#67CF00",
+            "photo": "//www.gravatar.com/avatar/69b60d39a450e863609ae3546b12b360?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "is_active": true,
+            "role_name": "UX",
+            "user": 15,
+            "role": 1,
+            "is_owner": true
         },
         {
-            "id": 100,
-            "name": "1",
-            "order": 4,
-            "project": 9,
-            "value": 1.0
+            "id": 13,
+            "username": "user7",
+            "full_name": "German Benitez",
+            "full_name_display": "German Benitez",
+            "color": "#4B0082",
+            "photo": "//www.gravatar.com/avatar/6d7e702bd6c6fc568fca7577f9ca8c55?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "is_active": true,
+            "role_name": "Product Owner",
+            "user": 13,
+            "role": 5,
+            "is_owner": true
         },
         {
-            "id": 101,
-            "name": "2",
-            "order": 5,
-            "project": 9,
-            "value": 2.0
+            "id": 12,
+            "username": "user6",
+            "full_name": "Julian Hidalgo",
+            "full_name_display": "Julian Hidalgo",
+            "color": "#67CF00",
+            "photo": "//www.gravatar.com/avatar/74cb769a5e64d445b8550789e1553502?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "is_active": true,
+            "role_name": "Product Owner",
+            "user": 12,
+            "role": 5,
+            "is_owner": true
         },
         {
-            "id": 102,
-            "name": "3",
-            "order": 6,
-            "project": 9,
-            "value": 3.0
-        },
-        {
-            "id": 103,
-            "name": "5",
-            "order": 7,
-            "project": 9,
-            "value": 5.0
-        },
-        {
-            "id": 104,
-            "name": "8",
-            "order": 8,
-            "project": 9,
-            "value": 8.0
-        },
-        {
-            "id": 105,
-            "name": "10",
-            "order": 9,
-            "project": 9,
-            "value": 10.0
-        },
-        {
-            "id": 106,
-            "name": "15",
-            "order": 10,
-            "project": 9,
-            "value": 15.0
-        },
-        {
-            "id": 107,
-            "name": "20",
-            "order": 11,
-            "project": 9,
-            "value": 20.0
-        },
-        {
-            "id": 108,
-            "name": "40",
-            "order": 12,
-            "project": 9,
-            "value": 40.0
-        }
-    ],
-    "priorities": [
-        {
-            "color": "#666666",
-            "id": 25,
-            "name": "Low",
-            "order": 1,
-            "project": 9
-        },
-        {
-            "color": "#669933",
-            "id": 26,
-            "name": "Normal",
-            "order": 3,
-            "project": 9
-        },
-        {
+            "id": 14,
+            "username": "user8",
+            "full_name": "Lourdes Aguilar",
+            "full_name_display": "Lourdes Aguilar",
             "color": "#CC0000",
-            "id": 27,
-            "name": "High",
-            "order": 5,
-            "project": 9
+            "photo": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "is_active": true,
+            "role_name": "Design",
+            "user": 14,
+            "role": 2,
+            "is_owner": false
+        },
+        {
+            "id": 7,
+            "username": "user1",
+            "full_name": "Purificacion Montero",
+            "full_name_display": "Purificacion Montero",
+            "color": "#67CF00",
+            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "is_active": true,
+            "role_name": "UX",
+            "user": 7,
+            "role": 1,
+            "is_owner": true
+        },
+        {
+            "id": 6,
+            "username": "user6532909695705815086",
+            "full_name": "Silvia Soto",
+            "full_name_display": "Silvia Soto",
+            "color": "#FFFF00",
+            "photo": "//www.gravatar.com/avatar/ece2f7a2dec5f21b2858fecabdcacacc?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "is_active": true,
+            "role_name": "Design",
+            "user": 6,
+            "role": 2,
+            "is_owner": false
+        },
+        {
+            "id": 8,
+            "username": "user2",
+            "full_name": "Sofia Ramirez",
+            "full_name_display": "Sofia Ramirez",
+            "color": "#4B0082",
+            "photo": "//www.gravatar.com/avatar/5c921c7bd676b7b4992501005d243c42?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+            "is_active": true,
+            "role_name": "Product Owner",
+            "user": 8,
+            "role": 5,
+            "is_owner": true
         }
     ],
-    "public_permissions": [],
-    "roles": [
-        {
-            "computable": true,
-            "id": 49,
-            "name": "UX",
-            "order": 10,
-            "slug": "ux"
-        },
-        {
-            "computable": true,
-            "id": 50,
-            "name": "Design",
-            "order": 20,
-            "slug": "design"
-        },
-        {
-            "computable": true,
-            "id": 51,
-            "name": "Front",
-            "order": 30,
-            "slug": "front"
-        },
-        {
-            "computable": true,
-            "id": 52,
-            "name": "Back",
-            "order": 40,
-            "slug": "back"
-        },
-        {
-            "computable": false,
-            "id": 53,
-            "name": "Product Owner",
-            "order": 50,
-            "slug": "product-owner"
-        },
-        {
-            "computable": false,
-            "id": 54,
-            "name": "Stakeholder",
-            "order": 60,
-            "slug": "stakeholder"
-        }
-    ],
-    "severities": [
-        {
-            "color": "#666666",
-            "id": 41,
-            "name": "Wishlist",
-            "order": 1,
-            "project": 9
-        },
-        {
-            "color": "#669933",
-            "id": 42,
-            "name": "Minor",
-            "order": 2,
-            "project": 9
-        },
-        {
-            "color": "#0000FF",
-            "id": 43,
-            "name": "Normal",
-            "order": 3,
-            "project": 9
-        },
-        {
-            "color": "#FFA500",
-            "id": 44,
-            "name": "Important",
-            "order": 4,
-            "project": 9
-        },
-        {
-            "color": "#CC0000",
-            "id": 45,
-            "name": "Critical",
-            "order": 5,
-            "project": 9
-        }
-    ],
-    "slug": "user6532909695705815086-beta-project-4",
-    "stars": 0,
-    "tags": null,
-    "tags_colors": {},
-    "task_custom_attributes": [
-        {
-            "id": 1,
-            "name": "Duration",
-            "description": "Duration in minutes",
-            "order": 1,
-            "project": 9
-        }
-    ],
-    "task_statuses": [
-        {
-            "color": "#999999",
-            "id": 42,
-            "is_closed": false,
-            "name": "New",
-            "order": 1,
-            "project": 9,
-            "slug": "new"
-        },
-        {
-            "color": "#ff9900",
-            "id": 43,
-            "is_closed": false,
-            "name": "In progress",
-            "order": 2,
-            "project": 9,
-            "slug": "in-progress"
-        },
-        {
-            "color": "#ffcc00",
-            "id": 44,
-            "is_closed": true,
-            "name": "Ready for test",
-            "order": 3,
-            "project": 9,
-            "slug": "ready-for-test"
-        },
-        {
-            "color": "#669900",
-            "id": 45,
-            "is_closed": true,
-            "name": "Closed",
-            "order": 4,
-            "project": 9,
-            "slug": "closed"
-        },
-        {
-            "color": "#999999",
-            "id": 46,
-            "is_closed": false,
-            "name": "Needs Info",
-            "order": 5,
-            "project": 9,
-            "slug": "needs-info"
-        }
-    ],
-    "total_milestones": 3,
-    "total_story_points": 20.0,
-    "us_statuses": [
-        {
-            "color": "#999999",
-            "id": 42,
-            "is_closed": false,
-            "name": "New",
-            "order": 1,
-            "project": 9,
-            "slug": "new",
-            "wip_limit": null
-        },
-        {
-            "color": "#ff8a84",
-            "id": 43,
-            "is_closed": false,
-            "name": "Ready",
-            "order": 2,
-            "project": 9,
-            "slug": "ready",
-            "wip_limit": null
-        },
-        {
-            "color": "#ff9900",
-            "id": 44,
-            "is_closed": false,
-            "name": "In progress",
-            "order": 3,
-            "project": 9,
-            "slug": "in-progress",
-            "wip_limit": null
-        },
-        {
-            "color": "#fcc000",
-            "id": 45,
-            "is_closed": false,
-            "name": "Ready for test",
-            "order": 4,
-            "project": 9,
-            "slug": "ready-for-test",
-            "wip_limit": null
-        },
-        {
-            "color": "#669900",
-            "id": 46,
-            "is_closed": true,
-            "name": "Done",
-            "order": 5,
-            "project": 9,
-            "slug": "done",
-            "wip_limit": null
-        }
-    ],
-    "userstory_custom_attributes": [
-        {
-            "id": 1,
-            "name": "Duration",
-            "description": "Duration in minutes",
-            "order": 1,
-            "project": 9
-        }
-    ],
+    "id": 1,
+    "default_points": 1,
+    "default_us_status": 1,
+    "default_task_status": 1,
+    "default_priority": 2,
+    "default_severity": 3,
+    "default_issue_status": 1,
+    "default_issue_type": 1,
+    "name": "Project Example 0",
+    "slug": "project-0",
+    "description": "Project example 0 description",
+    "created_date": "2015-10-01T09:52:54+0000",
+    "modified_date": "2015-10-01T09:53:13+0000",
+    "owner": 13,
+    "total_milestones": 8,
+    "total_story_points": 622.0,
+    "is_backlog_activated": true,
+    "is_kanban_activated": true,
+    "is_wiki_activated": true,
+    "is_issues_activated": true,
     "videoconferences": null,
-    "videoconferences_extra_data": null
+    "videoconferences_extra_data": null,
+    "creation_template": 1,
+    "is_private": false,
+    "userstories_csv_uuid": null,
+    "tasks_csv_uuid": null,
+    "issues_csv_uuid": null
 }
 ----

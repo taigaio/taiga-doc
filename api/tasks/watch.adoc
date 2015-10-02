@@ -1,0 +1,10 @@
+To watch a task send a POST request specifying the task id in the url
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/tasks/1/watch
+----
+
+The HTTP response is a 200 OK with an empty body response
