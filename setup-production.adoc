@@ -353,7 +353,7 @@ cd taiga-events
 .Install all the javascript dependencies needed
 [source,bash]
 ----
-sudo apt-get -y nodejs npm
+sudo apt-get install -y nodejs npm
 npm install
 sudo npm install -g coffee-script
 ----
