@@ -57,7 +57,8 @@ Compile time:
 
 Hardware
 
-- The main Taiga hardware restriction is having **at least 0.75 GB of RAM memory**. When installing the python requirements the package lxml will use gcc for building it and fail if not enough memory.
+- The main Taiga hardware restriction is having **at least 0.75 GB of RAM memory**. When installing
+the python requirements the package lxml will use gcc for building it and fail if not enough memory.
 
 Installation Guide
 ------------------
@@ -80,6 +81,11 @@ development environment].
 In addition to the traditional step-by-step manuals, _Taiga_ comes with a
 collection of provisioning scripts and Vagrant support, and
 link:setup-alternatives.html[complete documentation of how to use them].
+
+=== Setup FAQs and common Bugs
+
+You can view a list of common FAQs and bugs related to the setup process link:setup-faqs.html[FAQs
+and common bugs].
 
 
 How to Contribute
@@ -129,9 +135,9 @@ Donations
 
 We are grateful for your emails volunteering donations to _Taiga_. We feel comfortable accepting them under
 these conditions: the first is that we will only do so while we are in the current beta/pre-revenue stage,
-and the second is that whatever money is donated will go towards a bounty fund. Starting Q2 2015 we will be engaging
-much more actively with our community to help further the development of Taiga, and we will use these
-donations to reward people working alongside us.
+and the second is that whatever money is donated will go towards a bounty fund. Starting Q2 2015 we will be
+engaging much more actively with our community to help further the development of Taiga, and we will use
+these donations to reward people working alongside us.
 
 If you wish to make a donation to this Taiga fund, you can do so via link:http://www.paypal.com[PayPal]
 using the email: eposner@taiga.io
@@ -150,7 +156,7 @@ documentation and repository. The currently supported plugins are:
 License
 -------
 
-Every code patch accepted in the Taiga codebase is accepted under the AGPL v3.0 license. It is important that you
-do not include any code which cannot be licensed under AGPL v3.0.
+Every code patch accepted in the Taiga codebase is accepted under the AGPL v3.0 license. It is important
+that you do not include any code which cannot be licensed under AGPL v3.0.
 
 You can see the complete license in the `LICENSE` file in the root of repository.

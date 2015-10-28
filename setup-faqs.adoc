@@ -1,0 +1,134 @@
+Setup FAQs and commom bugs
+==========================
+:toc: left
+:numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
+
+
+FAQs
+----
+
+[[faq-change-domain]]
+How can I change the domain name?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The domain name mainly affects the frontend application, because it needs to comunicate with the
+backend through the domain/public-ip.
+
+To do this you should update the `url` value on frontend config file (conf/main.json) and rebuild frontend with
+`gulp deploy`. Also you should update the domain related configuration on the backend
+settings file: `settings/local.py`.
+
+And finally reload the backend config with: `circusctl reload taiga`
+
+
+
+[[faq-restart-backend]]
+How can I restart the backend application?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Backend application is running under circus. To restart any application running
+with circus use the `circusctl` command:
+
+[source,bash]
+----
+circusctl restart taiga
+----
+
+
+
+[[faq-maintain-update]]
+How I can keep my app up to date with the most recent Taiga version?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Taiga platform is developed on github. For consistences you should alway maintain the same version
+in time with the *stable* branch of git or use the last major version of each component.
+
+**No packaged version of Taiga is available at this moment.**
+
+.Frontend application
+[source,bash]
+----
+cd ~/taiga-front-dist
+git checkout stable
+git pull
+----
+
+.Backend application
+----
+As user "taiga" or whatever user you use, do not run this code as "root" to avoid errors.
+cd ~/taiga-back
+git checkout stable
+workon taiga
+git pull
+pip install --upgrade -r requirements.txt
+python manage.py migrate --noinput
+python manage.py compilemessages
+python manage.py collectstatic --noinput
+circusctl reload taiga
+----
+
+
+
+[[faq-add-extra-functionality]]
+How I can add extra functionality to Taiga?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Taiga allows adding functionality through contrib plugins. The installation of each
+plugin depends on the plugin itself and must be documented in the plugin
+repository.
+
+The current supported plugins are:
+
+* link:http://github.com/taigaio/taiga-contrib-gogs[taiga-contrib-gogs]: Gogs integration
+* link:http://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration
+* link:http://github.com/taigaio/taiga-contrib-hall[taiga-contrib-hall]: Hall.com integration
+
+
+
+
+Common Bugs
+-----------
+
+[[bug-unicodeencodeerror]]
+UnicodeEncodeError
+~~~~~~~~~~~~~~~~~~
+
+If you have some error like this:
+
+----
+  File "/home/taiga/taiga-back/taiga/projects/services/invitations.py", line 17, in send_invitation
+    email.send()
+  File "/home/taiga/.virtualenvs/taiga/lib/python3.4/site-packages/django/core/mail/message.py", line 286, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/taiga/.virtualenvs/taiga/lib/python3.4/site-packages/django/core/mail/backends/console.py", line 36, in send_messages
+    self.write_message(message)
+  File "/home/taiga/.virtualenvs/taiga/lib/python3.4/site-packages/django/core/mail/backends/console.py", line 23, in write_message
+    self.stream.write('%s\n' % msg_data)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xfc' in position 487: ordinal not in range(128)
+----
+
+You have to change the locale of your system to someone that support UTF8 characters. To fix it
+add to the taiga user `.bashrc` file this lines:
+
+if you have a German Linux machine, you can fix the problem by exporting the locale to `de_DE.UTF-8`:
+
+[source,bash]
+----
+export LANG=de_DE.UTF-8
+export LC_ALL=de_DE.UTF-8
+export LC_TYPE=de_DE.UTF-8
+----
+
+If you are on a US machine, en_US.utf-8 is the encoding of choice. On some newer Linux systems,
+you could also try `en_US.UTF-8` as the locale:
+
+[source,bash]
+----
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export LC_TYPE=en_US.UTF-8
+----
+
+Restart the shell, or the machine, and try again.
