@@ -156,13 +156,19 @@ documentation and repository. The currently supported plugins are:
 Themes
 -------
 
-You can create custom themes for Taiga.
+You can create custom themes in Taiga.
 
-To create a theme you have to create a new folder in `/app/themes/` with your theme name, then create two files inside.
+To create a theme you have to create a new folder in `/app/themes/` with your theme name, or duplicate a previous one. If you create a new folder, then create two files inside.
 
-`variables.scss` - to override variable for layout, fonts or colors.
+* `variables.scss` - to override sass variables, fonts, mixins helpers..etc.
 
-`custom.scss` - to override any defined Taiga style.
+* `custom.scss` - to override any defined Taiga style for any module or layout.
+
+Remember, the file `variables.scss` should only contain sass declarations that do not generate code by themselves (like variables or mixins).
+
+If you need to override a style and generate some new CSS, you should do it in `custom.scss`.
+
+Please, check the default Taiga theme to understand how this files work properly.
 
 When the files are created you have to run gulp with the theme name. This is the same as `gulp default` but uses your theme instead of the default taiga theme.
 
