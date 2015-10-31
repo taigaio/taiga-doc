@@ -80,6 +80,6 @@
     "total_milestones": 3,
     "total_story_points": 20.0,
     "videoconferences": "appear-in",
-    "videoconferences_salt": null
+    "videoconferences_extra_data": null
 }
 ----

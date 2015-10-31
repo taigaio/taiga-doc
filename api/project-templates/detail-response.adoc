@@ -364,6 +364,6 @@
     "is_wiki_activated": false,
     "is_issues_activated": false,
     "videoconferences": null,
-    "videoconferences_salt": ""
+    "videoconferences_extra_data": ""
 }
 ----

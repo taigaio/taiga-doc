@@ -496,6 +496,6 @@
         }
     ],
     "videoconferences": null,
-    "videoconferences_salt": null
+    "videoconferences_extra_data": null
 }
 ----
