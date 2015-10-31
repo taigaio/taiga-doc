@@ -25,3 +25,7 @@ include::../resolver/wiki-pages.adoc[]
 [[resolver-multiple-resolution]]
 === Multiple resolution
 include::../resolver/multiple.adoc[]
+
+[[resolver-ref]]
+=== By ref value
+include::../resolver/by-ref.adoc[]
