@@ -48,6 +48,30 @@
 | POST
 | link:#user-stories-bulk-udate-sprint-order[Update user stories order for sprint in bulk mode]
 
+| /api/v1/userstories/\{userStoryId}/upvote
+| POST
+| link:#user-stories-upvote[Add star to a user story]
+
+| /api/v1/userstories/\{userStoryId}/downvote
+| POST
+| link:#user-stories-downvote[Remove star from user story]
+
+| /api/v1/userstories/\{userStoryId}/voters
+| GET
+| link:#user-stories-voters[Get user story voters]
+
+| /api/v1/userstories/\{userStoryId}/watch
+| POST
+| link:#user-stories-watch[Watch a user story]
+
+| /api/v1/userstories/\{userStoryId}/unwatch
+| POST
+| link:#user-stories-unwatch[Unwatch a user story]
+
+| /api/v1/userstories/\{userStoryId}/watchers
+| GET
+| link:#user-stories-watchers[Get user story watchers]
+
 | /api/v1/userstories/attachments
 | GET
 | link:#user-stories-list-attachments[List user story attachments]

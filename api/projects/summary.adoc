@@ -50,17 +50,29 @@ include::../projects/issue-filters-data.adoc[]
 === Tag colors
 include::../projects/tags-colors.adoc[]
 
-[[projects-star]]
-=== Star
-include::../projects/star.adoc[]
+[[projects-like]]
+=== Like a project
+include::../projects/like.adoc[]
 
-[[projects-unstar]]
-=== Unstar
-include::../projects/unstar.adoc[]
+[[projects-unlike]]
+=== Unlike a project
+include::../projects/unlike.adoc[]
 
 [[projects-fans]]
-=== Fans
+=== List project fans
 include::../projects/fans.adoc[]
+
+[[projects-watch]]
+=== Watch a project
+include::../projects/watch.adoc[]
+
+[[projects-unwatch]]
+=== Stop watching project
+include::../projects/unwatch.adoc[]
+
+[[projects-watchers]]
+=== List project watchers
+include::../projects/watchers.adoc[]
 
 [[projects-create-template]]
 === Create template

@@ -31,4 +31,16 @@
 | /api/v1/milestones/\{milestoneId}/stats
 | GET
 | link:#milestones-stats[Get a milestone stats]
+
+| /api/v1/milestones/\{milestoneId}/watch
+| POST
+| link:#milestones-watch[Watch a milestone]
+
+| /api/v1/milestones/\{milestoneId}/unwatch
+| POST
+| link:#milestones-unwatch[Stop watching a milestone]
+
+| /api/v1/milestones/\{milestoneId}/watchers
+| GET
+| link:#milestones-watchers[Get milestone watchers]
 |===

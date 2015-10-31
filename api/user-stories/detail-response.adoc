@@ -1,64 +1,79 @@
 [source,json]
 ----
 {
-    "assigned_to": 19,
-    "backlog_order": 2,
-    "blocked_note": "",
-    "blocked_note_html": "",
-    "client_requirement": false,
-    "comment": "",
-    "created_date": "2014-07-29T07:15:50+0000",
-    "description": "Implement API CALL",
-    "description_html": "<p>Implement API CALL</p>",
-    "finish_date": "2014-09-16T17:17:16+0000",
-    "generated_from_issue": null,
-    "id": 1149,
-    "is_archived": false,
-    "is_blocked": false,
-    "is_closed": true,
-    "kanban_order": 37,
-    "milestone": 98,
-    "milestone_name": "Sprint 03",
-    "milestone_slug": "sprint-03",
-    "modified_date": "2014-10-10T12:07:13+0000",
-    "origin_issue": null,
-    "owner": 19,
-    "points": {
-        "129": 361,
-        "130": 361,
-        "131": 361,
-        "132": 364
-    },
-    "project": 31,
-    "ref": 31,
-    "sprint_order": 2,
-    "status": 83,
-    "subject": "Customer personal data",
-    "tags": [
-        "service catalog",
-        "customer"
+    "is_voter": true,
+    "total_voters": 2,
+    "is_watcher": false,
+    "total_watchers": 1,
+    "watchers": [
+        12
     ],
-    "team_requirement": false,
-    "total_points": 1.0,
-    "version": 8,
-    "watchers": [],
+    "tags": [
+        "officiis",
+        "est",
+        "expedita"
+    ],
+    "external_reference": null,
+    "points": {
+        "2": 7,
+        "3": 10,
+        "4": 7,
+        "1": 8
+    },
+    "total_points": 31.0,
+    "comment": "",
+    "milestone_slug": "sprint-2015-8-7",
+    "milestone_name": "Sprint 2015-8-7",
+    "origin_issue": null,
+    "blocked_note_html": "",
+    "description_html": "<p>Cum explicabo esse quis impedit earum dolore, voluptatibus atque provident vel, impedit mollitia eius debitis saepe veritatis praesentium recusandae rem consequuntur alias, recusandae architecto blanditiis odit nihil enim dolores? Ab rem totam et delectus blanditiis, numquam iusto accusamus blanditiis tempore asperiores odit dolor voluptatibus officiis perferendis sunt, tempora nihil nobis quo, dolores porro ducimus sapiente aperiam nesciunt exercitationem nam hic et deserunt saepe, et officia modi laboriosam reiciendis placeat quisquam nostrum eum? Iste corrupti repellat, nam voluptates architecto, in fugiat tempora, ex similique neque voluptatibus?</p>",
     "status_extra_info": {
-        "name": "In progress",
-        "color": "#5E8C6A"
+        "name": "Ready",
+        "color": "#ff8a84"
     },
     "assigned_to_extra_info": {
-        "is_active": true,
-        "username": "beta.tester",
-        "full_name_display": "Beta testing",
-        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80""
+        "username": "user8",
+        "full_name_display": "Lourdes Aguilar",
+        "photo": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+        "big_photo": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=300",
+        "is_active": true
     },
     "owner_extra_info": {
-        "is_active": true,
-        "username": "beta.tester",
-        "full_name_display": "Beta testing",
-        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80""
+        "username": "user2",
+        "full_name_display": "Sofia Ramirez",
+        "photo": "//www.gravatar.com/avatar/5c921c7bd676b7b4992501005d243c42?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+        "big_photo": "//www.gravatar.com/avatar/5c921c7bd676b7b4992501005d243c42?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=300",
+        "is_active": true
+    },
+    "id": 1,
+    "version": 1,
+    "is_blocked": false,
+    "blocked_note": "",
+    "ref": 1,
+    "milestone": 1,
+    "project": 1,
+    "owner": 8,
+    "status": 2,
+    "is_closed": false,
+    "backlog_order": 10000,
+    "sprint_order": 10000,
+    "kanban_order": 10000,
+    "created_date": "2015-10-01T09:52:54+0000",
+    "modified_date": "2015-10-01T09:52:54+0000",
+    "finish_date": null,
+    "subject": "Create the html template",
+    "description": "Cum explicabo esse quis impedit earum dolore, voluptatibus atque provident vel, impedit mollitia eius debitis saepe veritatis praesentium recusandae rem consequuntur alias, recusandae architecto blanditiis odit nihil enim dolores? Ab rem totam et delectus blanditiis, numquam iusto accusamus blanditiis tempore asperiores odit dolor voluptatibus officiis perferendis sunt, tempora nihil nobis quo, dolores porro ducimus sapiente aperiam nesciunt exercitationem nam hic et deserunt saepe, et officia modi laboriosam reiciendis placeat quisquam nostrum eum? Iste corrupti repellat, nam voluptates architecto, in fugiat tempora, ex similique neque voluptatibus?",
+    "assigned_to": 14,
+    "client_requirement": false,
+    "team_requirement": false,
+    "generated_from_issue": null,
+    "neighbors": {
+        "next": {
+            "id": 2,
+            "ref": 7,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        "previous": {}
     }
 }
 ----

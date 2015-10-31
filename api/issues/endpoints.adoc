@@ -32,6 +32,10 @@
 | DELETE
 | link:#issues-delete[Delete an issue]
 
+| /api/v1/issues/bulk_create
+| POST
+| link:#issues-bulk-create[Create issues un bulk mode]
+
 | /api/v1/issues/\{issueId}/upvote
 | POST
 | link:#issues-upvote[Add a vote to an issue]
@@ -44,9 +48,17 @@
 | GET
 | link:#issues-voters[Get issue voters list]
 
-| /api/v1/issues/bulk_create
+| /api/v1/issues/\{issueId}/watch
 | POST
-| link:#issues-bulk-create[Create issues un bulk mode]
+| link:#issues-watch[Watch an issue]
+
+| /api/v1/issues/\{issueId}/unwatch
+| POST
+| link:#issues-unwatch[Unwatch an issue]
+
+| /api/v1/issues/\{issueId}/watchers
+| GET
+| link:#issues-watchers[Get issue watchers]
 
 | /api/v1/issues/attachments
 | GET

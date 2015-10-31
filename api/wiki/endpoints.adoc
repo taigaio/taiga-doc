@@ -32,6 +32,18 @@
 | DELETE
 | link:#wiki-delete[Delete an wiki page]
 
+| /api/v1/wiki/\{wikiPageId}/watch
+| POST
+| link:#wiki-watch[Watch a wiki page]
+
+| /api/v1/wiki/\{wikiPageId}/unwatch
+| POST
+| link:#wiki-unwatch[Stop watching a wiki page]
+
+| /api/v1/wiki/\{wikiPageId}/watchers
+| GET
+| link:#wiki-watchers[Get wiki page watchers]
+
 | /api/v1/wiki/attachments
 | GET
 | link:#wiki-list-attachments[List wiki page attachments]

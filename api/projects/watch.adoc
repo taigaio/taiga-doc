@@ -1,0 +1,13 @@
+To watch a project send a POST request specifying the project id in the url
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+		  "notify_level": 3
+	  }' \  
+  https://api.taiga.io/api/v1/projects/1/watch
+----
+
+The HTTP response is a 200 OK with an empty body response

@@ -28,9 +28,13 @@
 | GET
 | link:#users-stats[Get user stats]
 
-| /api/v1/users/\{userId}/starred
+| /api/v1/users/\{userId}/watched
 | GET
-| link:#users-starred[Get user starred projects]
+| link:#users-watched[Get user watched content]
+
+| /api/v1/users/\{userId}/liked
+| GET
+| link:#users-liked[Get user liked content]
 
 | /api/v1/users/\{userId}
 | DELETE

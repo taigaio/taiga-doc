@@ -1,4 +1,4 @@
-To get an issue voters send a GET request specifying the issue id in the url
+To get the list of voters from an issue send a GET request specifying the issue id in the url
 
 [source,bash]
 ----

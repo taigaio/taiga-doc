@@ -23,16 +23,28 @@ include::../issues/edit.adoc[]
 include::../issues/delete.adoc[]
 
 [[issues-upvote]]
-=== Vote to an issue
+=== Vote an issue
 include::../issues/upvote.adoc[]
 
 [[issues-downvote]]
-=== Remove vote to an issue
+=== Remove vote from an issue
 include::../issues/downvote.adoc[]
 
 [[issues-voters]]
 === Get issue voters list
 include::../issues/voters.adoc[]
+
+[[issues-watch]]
+=== Watch an issue
+include::../issues/watch.adoc[]
+
+[[issues-unwatch]]
+=== Stop watching an issue
+include::../issues/unwatch.adoc[]
+
+[[issues-watchers]]
+=== List issue watchers
+include::../issues/watchers.adoc[]
 
 [[issues-list-attachments]]
 === List attachments

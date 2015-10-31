@@ -22,6 +22,18 @@ include::edit.adoc[]
 === Delete
 include::delete.adoc[]
 
+[[wiki-watch]]
+=== Watch a wiki page
+include::watch.adoc[]
+
+[[wiki-unwatch]]
+=== Stop watching a wiki page
+include::unwatch.adoc[]
+
+[[wiki-watchers]]
+=== List wiki page watchers
+include::watchers.adoc[]
+
 [[wiki-list-attachments]]
 === List attachments
 include::list-attachments.adoc[]

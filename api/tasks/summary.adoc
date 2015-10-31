@@ -26,6 +26,30 @@ include::../tasks/delete.adoc[]
 === Bulk creation
 include::../tasks/bulk-create.adoc[]
 
+[[tasks-upvote]]
+=== Vote a task
+include::../tasks/upvote.adoc[]
+
+[[tasks-downvote]]
+=== Remove vote from a task
+include::../tasks/downvote.adoc[]
+
+[[tasks-voters]]
+=== Get task voters list
+include::../tasks/voters.adoc[]
+
+[[tasks-watch]]
+=== Watch a task
+include::../tasks/watch.adoc[]
+
+[[tasks-unwatch]]
+=== Stop watching a task
+include::../tasks/unwatch.adoc[]
+
+[[tasks-watchers]]
+=== List task watchers
+include::../tasks/watchers.adoc[]
+
 [[tasks-list-attachments]]
 === List attachments
 include::../tasks/list-attachments.adoc[]

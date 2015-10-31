@@ -1,54 +1,72 @@
 [source,json]
 ----
 {
-    "assigned_to": 19,
-    "blocked_note": "",
-    "blocked_note_html": "",
-    "comment": "",
-    "created_date": "2014-07-29T07:15:50+0000",
-    "description": "Implement API CALL",
-    "description_html": "<p>Implement API CALL</p>",
-    "finish_date": "2014-09-16T17:17:16+0000",
-    "id": 1149,
-    "is_blocked": false,
-    "is_closed": true,
-    "milestone": 98,
-    "modified_date": "2014-10-10T12:07:13+0000",
-    "finished_date": null,
-    "owner": 19,
-    "project": 31,
-    "ref": 31,
-    "status": 83,
-    "severity": 2,
-    "priority": 3,
-    "type": 1,
-    "subject": "Customer personal data",
+    "is_voter": false,
+    "total_voters": 1,
+    "is_watcher": false,
+    "total_watchers": 1,
+    "watchers": [
+        15
+    ],
     "tags": [
-        "service catalog",
-        "customer"
+        "dicta",
+        "dolores",
+        "eum",
+        "amet"
     ],
-    "version": 8,
-    "watchers": [],
-    "generated_user_stories": [
-    ],
-    "votes": null,
+    "external_reference": null,
+    "is_closed": false,
+    "comment": "",
+    "generated_user_stories": [],
+    "blocked_note_html": "",
+    "description_html": "<p>Modi numquam esse qui sequi porro optio tenetur assumenda temporibus consequatur ad, aspernatur veniam perferendis quia asperiores dolorem nihil impedit, libero aperiam quis, perspiciatis soluta quis iste? Id quo assumenda distinctio? Cupiditate corporis distinctio placeat dolor commodi delectus eum recusandae, non autem maiores saepe quia cum quasi nisi, a accusantium laudantium nihil eum adipisci aut voluptas debitis enim. Voluptatum voluptas saepe perferendis, a similique saepe sint iure numquam sed voluptas aliquam, laboriosam voluptate sequi?</p>",
     "status_extra_info": {
-        "name": "In progress",
-        "color": "#5E8C6A"
+        "name": "Needs Info",
+        "color": "#89BAB4"
     },
     "assigned_to_extra_info": {
-        "is_active": true,
-        "username": "beta.tester",
-        "full_name_display": "Beta testing",
-        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80""
+        "username": "user1",
+        "full_name_display": "Purificacion Montero",
+        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+        "big_photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=300",
+        "is_active": true
     },
     "owner_extra_info": {
-        "is_active": true,
-        "username": "beta.tester",
-        "full_name_display": "Beta testing",
-        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80""
+        "username": "user2",
+        "full_name_display": "Sofia Ramirez",
+        "photo": "//www.gravatar.com/avatar/5c921c7bd676b7b4992501005d243c42?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
+        "big_photo": "//www.gravatar.com/avatar/5c921c7bd676b7b4992501005d243c42?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=300",
+        "is_active": true
+    },
+    "id": 1,
+    "version": 1,
+    "is_blocked": false,
+    "blocked_note": "",
+    "ref": 43,
+    "owner": 8,
+    "status": 5,
+    "severity": 3,
+    "priority": 3,
+    "type": 3,
+    "milestone": null,
+    "project": 1,
+    "created_date": "2015-10-01T09:53:06+0000",
+    "modified_date": "2015-10-01T09:53:07+0000",
+    "finished_date": null,
+    "subject": "Migrate to Python 3 and milk a beautiful cow",
+    "description": "Modi numquam esse qui sequi porro optio tenetur assumenda temporibus consequatur ad, aspernatur veniam perferendis quia asperiores dolorem nihil impedit, libero aperiam quis, perspiciatis soluta quis iste? Id quo assumenda distinctio? Cupiditate corporis distinctio placeat dolor commodi delectus eum recusandae, non autem maiores saepe quia cum quasi nisi, a accusantium laudantium nihil eum adipisci aut voluptas debitis enim. Voluptatum voluptas saepe perferendis, a similique saepe sint iure numquam sed voluptas aliquam, laboriosam voluptate sequi?",
+    "assigned_to": 7,
+    "neighbors": {
+        "next": {
+            "id": 35,
+            "ref": 83,
+            "subject": "Lighttpd support"
+        },
+        "previous": {
+            "id": 2,
+            "ref": 44,
+            "subject": "Lighttpd support"
+        }
     }
 }
 ----

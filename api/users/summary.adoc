@@ -14,9 +14,13 @@ include::../users/me.adoc[]
 === Get user stats
 include::../users/stats.adoc[]
 
-[[users-starred]]
-=== Get starred projects
-include::../users/starred.adoc[]
+[[users-watched]]
+=== Get watched content
+include::../users/watched.adoc[]
+
+[[users-liked]]
+=== Get liked content
+include::../users/liked.adoc[]
 
 [[users-edit]]
 === Edit

@@ -38,6 +38,30 @@ include::../user-stories/bulk-update-kanban-order.adoc[]
 === Bulk update sprint order
 include::../user-stories/bulk-update-sprint-order.adoc[]
 
+[[user-stories-upvote]]
+=== Vote a user story
+include::../user-stories/upvote.adoc[]
+
+[[user-stories-downvote]]
+=== Remove vote from a user story
+include::../user-stories/downvote.adoc[]
+
+[[user-stories-voters]]
+=== Get user story voters list
+include::../user-stories/voters.adoc[]
+
+[[user-stories-watch]]
+=== Watch a user story
+include::../user-stories/watch.adoc[]
+
+[[user-stories-unwatch]]
+=== Stop watching a user story
+include::../user-stories/unwatch.adoc[]
+
+[[user-stories-watchers]]
+=== List user story watchers
+include::../user-stories/watchers.adoc[]
+
 [[user-stories-list-attachments]]
 === List attachments
 include::../user-stories/list-attachments.adoc[]
