@@ -13,6 +13,12 @@ include::general-notes.adoc[]
 === Auth
 include::login/endpoints.adoc[]
 
+=== Applications
+include::applications/endpoints.adoc[]
+
+=== Application Tokens
+include::application-tokens/endpoints.adoc[]
+
 === Resolver
 include::resolver/endpoints.adoc[]
 
@@ -116,6 +122,14 @@ include::locales/endpoints.adoc[]
 [[auth]]
 == Auth
 include::login/summary.adoc[]
+
+[[applications]]
+== Applications
+include::applications/summary.adoc[]
+
+[[application-tokens]]
+== Application tokens
+include::application-tokens/summary.adoc[]
 
 [[resolver]]
 == Resolver
@@ -255,6 +269,22 @@ include::locales/summary.adoc[]
 [[object-attachment-detail]]
 ===  Attachment
 include::attachments/detail-response.adoc[]
+
+[[object-application-detail]]
+=== Application object
+include::applications/detail-response.adoc[]
+
+[[object-application-token-detail]]
+=== Application token object
+include::application-tokens/detail-response.adoc[]
+
+[[object-application-token-authorization-code]]
+=== Authorization code object
+include::application-tokens/authorize-response.adoc[]
+
+[[object-application-token-cyphered-token]]
+=== Cyphered token object
+include::application-tokens/validate-response.adoc[]
 
 [[object-user-detail]]
 ===  User detail

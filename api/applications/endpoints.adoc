@@ -1,0 +1,14 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/applications/\{applicationId}
+| GET
+| link:#applications-get[Get application]
+
+| /api/v1/applications/\{applicationId}/token
+| GET
+| link:#applications-get-token[Get application token]
+|===

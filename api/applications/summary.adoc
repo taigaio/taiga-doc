@@ -1,0 +1,7 @@
+[[applications-get]]
+=== Get
+include::get.adoc[]
+
+[[applications-get-token]]
+=== Get token
+include::get-token.adoc[]

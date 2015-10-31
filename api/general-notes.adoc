@@ -9,6 +9,9 @@ _http://localhost:8000/api/v1_ instead of _https://taiga.io/api/v1_.
 ===============================
 
 === Authentication
+
+==== Standard token authentication
+
 To authenticate requests an http header called "Authorization" should be added. Its format should be:
 
 [source]
@@ -66,6 +69,151 @@ fi
 ----
 AUTH_TOKEN=$( echo ${USER_AUTH_DETAIL} | grep -Po '"auth_token":.*?[^\\]",' | cut -d\" -f4 )
 ----
+
+
+==== Application token authentication
+
+This kind of tokes are designed for allowing external apps use the Taiga API, they are associated to an existing user and an Application. They can be manually created via the django ADMIN or programatically created via API.
+
+They work in the same way than standard Taiga authentication tokens but the "Authorization" header change slightly. Its format should be:
+
+[source]
+----
+Authorization: Application ${AUTH_TOKEN}
+----
+
+The process for obtaining a valid token consists in:
+
+- link:#external-app-get-token[Checking if there is an existing application token for the requesting user]
+- link:#external-app-authorization[Requesting an authorization code for the requesting user if it doesn't exist yet]
+- link:#external-app-validation[Validating the authorization code to obtain the final token]
+- link:#external-app-decyphering[Decyphering the token]
+
+[[external-app-get-token]]
+===== Checking if there is an existing application token for the requesting user
+
+A GET request must be done to the applications resource including the application id in the url and specifying the token endpoint:
+
+[source,bash]
+----
+curl -X GET \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer {AUTH_TOKEN}" \
+    https://api.taiga.io/api/v1/applications/5c8515c2-4fc4-11e5-9a5e-68f72800aadd/token
+----
+
+The API will answer with info about the application and the token:
+
+[source,json]
+----
+{
+    "user": 4,
+    "id": null,
+    "application": {
+        "id": "a60c3208-5234-11e5-96df-68f72800aadd",
+        "name": "Testing application",
+        "web": "http://taiga.io",
+        "description": "Testing external app",
+        "icon_url": "https://tree.taiga.io/images/beta.png"
+    },
+    "auth_code": null,
+    "next_url": "http://tree.taiga.io/redirect?auth_code=None"
+}
+----
+
+If id and auth_code are null it means there is no application token generated and you need to link:#external-app-authorization[authorize one]. If they are not null you can jump to the link:#external-app-validation[validation step].
+
+[[external-app-authorization]]
+===== Requesting an authorization code for the requesting user if it doesn't exist yet
+
+The request should include:
+
+- application: the application id for the requested token
+- state: an unguessable random string. It is used to protect against cross-site request forgery attacks. The API will include this value when the validation process is completed so the final app can verify it matches the original one.
+
+[source,bash]
+----
+curl -X POST \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjo0fQ:1ZX33b:QnAN3EcuChLoRVf3CdybWEi2OEg" \
+    -d '{
+    	  "application": "a60c3208-5234-11e5-96df-68f72800aadd",
+    	  "state": "random-state"
+      }' \
+    https://api.taiga.io/api/v1/application-tokens/authorize
+----
+
+The API answer will be something like:
+
+[source,json]
+----
+{
+    "auth_code": "c8bfacba-5236-11e5-b8f6-68f72800aadd",
+    "state": "random-state",
+    "next_url": "asd?auth_code=c8bfacba-5236-11e5-b8f6-68f72800aadd"
+}
+----
+
+The obtained auth_code must be validated as described in the link:#external-app-validation[validation step].
+
+[[external-app-validation]]
+===== Validating the authorization code to obtain the final token
+
+Now the external app must validate the auth_code obtained in the previous steps with a request including:
+
+- application: the application id for the requested token
+- state: an unguessable random string. It is used to protect against cross-site request forgery attacks. The API will include this value when the validation process is completed so the final app can verify it matches the original one.
+- auth_code: the authorization code received on previous the steps.
+
+[source,bash]
+----
+curl -X POST \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjo0fQ:1ZX33b:QnAN3EcuChLoRVf3CdybWEi2OEg" \
+    -d '{
+    	  "application": "a60c3208-5234-11e5-96df-68f72800aadd",
+    	  "auth_code": "21ce08c4-5237-11e5-a8a3-68f72800aadd",
+    	  "state": "random-state"
+      }' \
+https://api.taiga.io/api/v1/application-tokens/validate
+----
+
+The API answer will be something like:
+
+[source,json]
+----
+{
+    "cyphered_token": "eyJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTEyOEtXIn0.E-Ee1cRgG0JEd90yJu-Dgl_vwKHTHdPy2YHRbCsMvfiJx0OvR12E8g.kGwJPnWQJecFPEae.ebQtpRNPbKh6FBS-LSUhw1xNARl0Q5loCO4fAk00LHFqcDpAwba7LHeR3MPx9T9LfA.KM-Id_041g8OdWaseGyV8g"
+}
+----
+
+[[external-app-decyphering]]
+===== Decyphering the token
+
+The token is cyphered using JWE with A128KW as algorythm and A256GCM as encryption. Both parts (Taiga and the external application requesting the token) must know about the encryption key used in the process (in Taiga it's an attribute of the application model).
+
+- A python snippet for decyphering the token:
+
+[source,python]
+----
+from jwkest.jwk import SYMKey
+from jwkest.jwe import JWE
+key ="this-is-the-secret-key"
+cyphered_token="eyJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTEyOEtXIn0.H5jWzzXQISSh_QPCO5mWhT0EI9RRV45xA7vbWoxeBIjiCL3qwAmlzg.bBWVKwGTkta5y99c.ArycfFtrlmWgyZ4lwXw_JiSVmkn9YF6Xwlh8nVDku0BLW8kvaxNy3XRbbb17MtZ7mg.pDkpgDwffCyCy4sYNQI6zA"
+sym_key = SYMKey(key=key, alg="A128KW")
+token=JWE().decrypt(cyphered_token, keys=[sym_key])
+print(token)
+----
+
+When decyphering it correctly you will obtain a json containing the application token that can be used in the Authorization headers
+
+[source, json]
+----
+{
+    "token": "95db1710-5238-11e5-a86e-68f72800aadd"
+}
+----
+
 
 === OCC - Optimistic concurrency control
 In taiga multiple operations can be happening at the same time for an element so every modifying request should include a valid version parameter. You can think about two different users updating the same user story, there are two possible scenarios here:
