@@ -12,7 +12,8 @@ The HTTP response is a 200 OK and the response body is a JSON list of link:#obje
 
 The results can be filtered using the following parameters:
 
-- *project*: project id
+- *project*: project ID
+- *closed*: `true` to get only closed milestones or `false` to get only opened ones.
 
 [source,bash]
 ----
@@ -21,3 +22,12 @@ curl -X GET \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
   https://api.taiga.io/api/v1/milestones?project=1
 ----
+
+[NOTE]
+===============================
+When you filter milestones by project ID (`/api/v1/milestones?project=_<projectID>_`) the response has two new headers:
+
+- `*Taiga-Info-Total-Opened-Milestones*`: the numer of opened milestones for this project.
+- `*Taiga-Info-Total-Closed-Milestones*`: the numer of closed milestones for this project.
+
+===============================
