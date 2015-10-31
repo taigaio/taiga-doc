@@ -118,24 +118,30 @@
         }
     ],
     "members": [
-        2
-    ],
-    "memberships": [
         {
-            "color": "#2099DB",
-            "created_at": "2014-11-07T12:35:38+0000",
-            "email": "expedita@sequi.org",
-            "full_name": "Silvia Soto",
-            "id": 24,
-            "invitation_extra_text": null,
-            "invited_by": null,
-            "is_owner": true,
-            "photo": "//www.gravatar.com/avatar/f64db24896b923753d440e23faa856aa?size=80",
-            "project": 9,
-            "role": 53,
+            "id": 5,
+            "username": "admin",
+            "full_name": "Administrator",
+            "full_name_display": "Administrator",
+            "color": "",
+            "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
+            "is_active": true,
             "role_name": "Product Owner",
-            "token": null,
-            "user": 2
+            "user": 5,
+            "role": 5,
+            "is_owner": false,
+        }, {
+            "id": 11,
+            "username": "user5",
+            "full_name": "Alicia Flores",
+            "full_name_display": "Alicia Flores",
+            "color": "#D70A53",
+            "photo": "//www.gravatar.com/avatar/c9ba9d485f9a9153ebf53758feb0980c?size=80",
+            "is_active": true,
+            "role_name": "UX",
+            "user": 11,
+            "role": 1,
+            "is_owner": true,
         }
     ],
     "modified_date": "2014-11-07T12:35:38+0000",
@@ -478,23 +484,6 @@
             "project": 9,
             "slug": "done",
             "wip_limit": null
-        }
-    ],
-    "users":[
-        {
-            "id":2,
-            "username":"user6532909695705815086",
-            "full_name":"Silvia Soto",
-            "full_name_display":"Silvia Soto",
-            "email":"expedita@sequi.org",
-            "github_id":null,
-            "color":"#2099DB",
-            "bio":"",
-            "lang":"",
-            "timezone":"",
-            "is_active":true,
-            "photo":"//www.gravatar.com/avatar/f64db24896b923753d440e23faa856aa?size=80",
-            "big_photo":"//www.gravatar.com/avatar/f64db24896b923753d440e23faa856aa?size=80"
         }
     ],
     "userstory_custom_attributes": [
