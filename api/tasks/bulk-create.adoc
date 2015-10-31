@@ -2,6 +2,8 @@ To create multiple tasks at the same time send a POST request with the following
 
 - *project_id* (required)
 - *status_id*
+- *sprint_id*: milestone id (optional)
+- *us_id*: user story id (optional)
 - *bulk_tasks*: task subjects, one per line
 
 
