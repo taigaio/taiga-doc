@@ -47,6 +47,14 @@
         "color": "#5E8C6A"
     },
     "assigned_to_extra_info": {
+        "is_active": true,
+        "username": "beta.tester",
+        "full_name_display": "Beta testing",
+        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80""
+    },
+    "owner_extra_info": {
+        "is_active": true,
         "username": "beta.tester",
         "full_name_display": "Beta testing",
         "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
