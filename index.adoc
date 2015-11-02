@@ -140,7 +140,7 @@ Contrib Plugins
 Taiga supports the inclusion of contrib plugins, each plugin has its own
 documentation and repository. The currently supported plugins are:
 
-* link:http://github.com/taigaio/taiga-contrib-github-auth[github-auth]: GitHub Auth plugin
+* link:http://github.com/taigaio/taiga-contrib-github-auth[taiga-github-auth]: GitHub Auth plugin
 * link:http://github.com/taigaio/taiga-contrib-gogs[taiga-contrib-gogs]: Gogs integration plugin
 * link:http://github.com/taigaio/taiga-contrib-hipchat[taiga-contrib-hipchat]: HipChat integration plugin
 * link:http://github.com/taigaio/taiga-contrib-letschat[taiga-contrib-letschat]: Lets Chat integration plugin
@@ -182,7 +182,7 @@ gulp compile-themes
 
 [[community]]
 Community
-~~~~~~~~~
+---------
 
 link:http://groups.google.com/d/forum/taigaio[Taiga has a mailing list]. Feel free to join it
 and ask any questions you may have.
@@ -193,7 +193,7 @@ link:https://twitter.com/taigaio[@taigaio] on Twitter or read our link:https://b
 
 [[donations]]
 Donations
-~~~~~~~~~
+---------
 
 We are grateful for your emails volunteering donations to _Taiga_. We feel comfortable accepting them under
 these conditions: the first is that we will only do so while we are in the current beta/pre-revenue stage,
