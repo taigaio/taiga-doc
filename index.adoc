@@ -4,6 +4,7 @@ Taiga Documentation
 :numbered:
 
 
+[[introduction]]
 Introduction
 ------------
 
@@ -11,19 +12,21 @@ Free. Open Source. Powerful. _Taiga_ is a project management platform for startu
 and agile developers & designers who want a simple, beautiful tool that makes work
 truly enjoyable.
 
-
+[[project-maturity]]
 Project Maturity
 ----------------
 
 Because _Taiga_ is still a young project we currently consider it to be in a beta state.
 
 
+[[api]]
 API
 ---
 _Taiga_ has a complete REST API (the one used by the web app), check the full API
 documentation link:api.html[here].
 
 
+[[how-it-works]]
 How it Works
 ------------
 
@@ -38,6 +41,7 @@ and link:https://github.com/taigaio/taiga-back[taiga-back]
 _Taiga_ has some other modules, but they are optional and documented in other sections.
 
 
+[[requirements]]
 Requirements
 ------------
 
@@ -60,6 +64,8 @@ Hardware
 - The main Taiga hardware restriction is having **at least 0.75 GB of RAM memory**. When installing
 the python requirements the package lxml will use gcc for building it and fail if not enough memory.
 
+
+[[installation-guide]]
 Installation Guide
 ------------------
 
@@ -88,6 +94,7 @@ You can view a list of common FAQs and bugs related to the setup process link:se
 and common bugs].
 
 
+[[how-to-contribute]]
 How to Contribute
 -----------------
 
@@ -95,15 +102,19 @@ Because _Taiga_ is an open source project, we gratefully accept contributions in
 
 Examples of contributions include:
 
+- link:#reporting-bugs[Bug reports]
 - Code patches
-- link:#contrib-plugins[Code contrib plugins]
 - Improvements
-- Bug reports
 - Patch reviews
+- link:#translate[Translate]
+- link:#themes[Create a theme]
+- link:#contrib-plugins[Code contrib plugins]
 
 Before starting to develop a big feature (intended to be included on the _Taiga_ code base), it is
 strongly recommended that you reach out to us on the link:http://groups.google.com/d/forum/taigaio[mailing list].
 
+
+[[reporting-bugs]]
 Reporting Bugs
 ~~~~~~~~~~~~~~
 
@@ -121,26 +132,6 @@ Before reporting a bug or requesting a new feature, please consider these genera
   ticket is controversial, please move the discussion to the
   link:http://groups.google.com/d/forum/taigaio[mailing list].
 
-Community
-~~~~~~~~~
-
-link:http://groups.google.com/d/forum/taigaio[Taiga has a mailing list]. Feel free to join it
-and ask any questions you may have.
-
-To subscribe for announcements of releases, important changes and so on, please follow
-link:https://twitter.com/taigaio[@taigaio] on Twitter or read our link:https://blog.taiga.io[blog].
-
-Donations
-~~~~~~~~~
-
-We are grateful for your emails volunteering donations to _Taiga_. We feel comfortable accepting them under
-these conditions: the first is that we will only do so while we are in the current beta/pre-revenue stage,
-and the second is that whatever money is donated will go towards a bounty fund. Starting Q2 2015 we will be
-engaging much more actively with our community to help further the development of Taiga, and we will use
-these donations to reward people working alongside us.
-
-If you wish to make a donation to this Taiga fund, you can do so via link:http://www.paypal.com[PayPal]
-using the email: eposner@taiga.io
 
 [[contrib-plugins]]
 Contrib Plugins
@@ -149,10 +140,14 @@ Contrib Plugins
 Taiga supports the inclusion of contrib plugins, each plugin has its own
 documentation and repository. The currently supported plugins are:
 
-* link:http://github.com/taigaio/taiga-contrib-gogs[taiga-contrib-gogs]: Gogs integration
-* link:http://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration
-* link:http://github.com/taigaio/taiga-contrib-hall[taiga-contrib-hall]: Hall.com integration
+* link:http://github.com/taigaio/taiga-contrib-github-auth[github-auth]: GitHub Auth plugin
+* link:http://github.com/taigaio/taiga-contrib-gogs[taiga-contrib-gogs]: Gogs integration plugin
+* link:http://github.com/taigaio/taiga-contrib-hipchat[taiga-contrib-hipchat]: HipChat integration plugin
+* link:http://github.com/taigaio/taiga-contrib-letschat[taiga-contrib-letschat]: Lets Chat integration plugin
+* link:http://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration plugin
 
+
+[[themes]]
 Themes
 -------
 
@@ -184,6 +179,33 @@ If you want to compile all themes you should run.
 gulp compile-themes
 ----
 
+
+[[community]]
+Community
+~~~~~~~~~
+
+link:http://groups.google.com/d/forum/taigaio[Taiga has a mailing list]. Feel free to join it
+and ask any questions you may have.
+
+To subscribe for announcements of releases, important changes and so on, please follow
+link:https://twitter.com/taigaio[@taigaio] on Twitter or read our link:https://blog.taiga.io[blog].
+
+
+[[donations]]
+Donations
+~~~~~~~~~
+
+We are grateful for your emails volunteering donations to _Taiga_. We feel comfortable accepting them under
+these conditions: the first is that we will only do so while we are in the current beta/pre-revenue stage,
+and the second is that whatever money is donated will go towards a bounty fund. Starting Q2 2015 we will be
+engaging much more actively with our community to help further the development of Taiga, and we will use
+these donations to reward people working alongside us.
+
+If you wish to make a donation to this Taiga fund, you can do so via link:http://www.paypal.com[PayPal]
+using the email: eposner@taiga.io
+
+
+[[license]]
 License
 -------
 
