@@ -1,7 +1,7 @@
 [source,json]
 ----
 {
-    "type": "project",
+    "type": "userstory",
     "id": 5,
     "ref": null,
     "slug": "project-4",
@@ -23,7 +23,7 @@
     "assigned_to_photo": null,
     "is_watcher": true,
     "total_watchers": 14,
-    "is_fan": false,
-    "total_fans": 3
+    "is_voter": false,
+    "total_voters": 3
 }
 ----

@@ -36,6 +36,10 @@
 | GET
 | link:#users-liked[Get user liked content]
 
+| /api/v1/users/\{userId}/voted
+| GET
+| link:#users-voted[Get user voted content]
+
 | /api/v1/users/\{userId}
 | DELETE
 | link:#users-delete[Delete a user]

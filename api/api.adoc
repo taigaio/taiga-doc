@@ -550,6 +550,10 @@ include::users/watched-response.adoc[]
 === Liked
 include::users/liked-response.adoc[]
 
+[[object-voted-detail]]
+=== Voted
+include::users/voted-response.adoc[]
+
 == Contrib plugins
 
 Taiga allows adding features through contrib plugins, each plugin can add new

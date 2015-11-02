@@ -22,6 +22,10 @@ include::../users/watched.adoc[]
 === Get liked content
 include::../users/liked.adoc[]
 
+[[users-voted]]
+=== Get voted content
+include::../users/voted.adoc[]
+
 [[users-edit]]
 === Edit
 include::../users/edit.adoc[]
