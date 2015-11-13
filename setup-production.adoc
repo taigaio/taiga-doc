@@ -21,7 +21,6 @@ Each component can run on one unique machine or each can be installed in a diffe
 this tutorial we will setup everything in one single machine. This type of setup should suffice
 for small/medium production environments.
 
-
 Before starting
 ---------------
 
@@ -287,10 +286,10 @@ git checkout stable
 ----
 
 And now, you can configure it copying the
-`taiga-front-dist/dist/js/conf.example.json` to `taiga-front-dist/dist/js/conf.json`
+`taiga-front-dist/dist/conf.example.json` to `taiga-front-dist/dist/conf.json`
 and editing it.
 
-.Copy and edit initial configuration on ~/taiga-front-dist/dist/js/conf.json
+.Copy and edit initial configuration on ~/taiga-front-dist/dist/conf.json
 [source,json]
 ----
 {
@@ -747,7 +746,7 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 sudo service circus restart
 ----
 
-.Update ~/taiga-front-dist/dist/js/conf.json
+.Update ~/taiga-front-dist/dist/conf.json
 [source,json]
 ----
 {

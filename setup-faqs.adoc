@@ -47,39 +47,7 @@ circusctl restart taiga-celery
 How I can keep my app up to date with the most recent Taiga version?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Taiga platform is developed on github. For consistences you should alway maintain the same version
-in time with the *stable* branch of git or use the last major version of each component.
-
-**No packaged version of Taiga is available at this moment.**
-
-.Frontend application
-[source,bash]
-----
-cd ~/taiga-front-dist
-git checkout stable
-git pull
-----
-
-.Backend application
-----
-As user "taiga" or whatever user you use, do not run this code as "root" to avoid errors.
-cd ~/taiga-back
-git checkout stable
-workon taiga
-git pull
-pip install --upgrade -r requirements.txt
-python manage.py migrate --noinput
-python manage.py compilemessages
-python manage.py collectstatic --noinput
-circusctl reload taiga
-----
-
-In case taiga-celery is configured reload it too:
-
-[source,bash]
-----
-circusctl reload taiga-celery
-----
+link:upgrades.html[Check the upgrades instructions].
 
 
 [[faq-add-extra-functionality]]

@@ -92,6 +92,10 @@ link:setup-alternatives.html[complete documentation of how to use them].
 You can view a list of common FAQs and bugs related to the setup process link:setup-faqs.html[FAQs
 and common bugs].
 
+=== Upgrades
+
+Instructions on link:upgrades.html[how to upgrade your Tainga instance].
+
 
 [[how-to-contribute]]
 How to Contribute
