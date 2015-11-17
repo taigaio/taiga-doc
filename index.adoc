@@ -61,8 +61,8 @@ Compile time:
 
 Hardware
 
-- The main Taiga hardware restriction is having **at least 0.75 GB of RAM memory**. When installing
-the python requirements the package lxml will use gcc for building it and fail if not enough memory.
+- The main Taiga hardware restriction is having **at least 0.75 GB of RAM**. When installing
+the python requirements, the package lxml will use gcc for building itself and fail if there is not enough memory.
 
 
 [[installation-guide]]
