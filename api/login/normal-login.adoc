@@ -1,7 +1,7 @@
 To login a user send a POST request containing the following data:
 
 - *type* with value "normal"
-- *username* (required)
+- *username* (required): this field also supports the user email
 - *password* (required)
 
 [source,bash]

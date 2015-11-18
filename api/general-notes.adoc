@@ -36,7 +36,7 @@ $ sudo apt-get install jq
 ----
 #!/bin/bash
 # Request username and password for connecting to Taiga
-read -p "Username: " USERNAME
+read -p "Username or email: " USERNAME
 read -s -p "Password: " PASSWORD
 
 # Get AUTH_TOKEN
