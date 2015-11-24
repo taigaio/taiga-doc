@@ -3,6 +3,7 @@
 {
     "color": "#669933",
     "id": 143,
+    "is_archived": true,
     "is_closed": false,
     "name": "Open",
     "order": 1,
