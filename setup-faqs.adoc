@@ -36,6 +36,12 @@ with circus use the `circusctl` command:
 circusctl restart taiga
 ----
 
+In case taiga-celery is configured restart it too:
+
+[source,bash]
+----
+circusctl restart taiga-celery
+----
 
 
 [[faq-maintain-update]]
@@ -69,6 +75,12 @@ python manage.py collectstatic --noinput
 circusctl reload taiga
 ----
 
+In case taiga-celery is configured reload it too:
+
+[source,bash]
+----
+circusctl reload taiga-celery
+----
 
 
 [[faq-add-extra-functionality]]
