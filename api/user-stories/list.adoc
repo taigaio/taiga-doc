@@ -16,7 +16,7 @@ The results can be filtered using the following parameters:
 - *milestone*: milestone id
 - *milestone__isnull*: (true|false) if you are looking for user stories associated with a milestone or not
 - *status*: status id
-- *is_archived*: (true|false)
+- *status__is_archived*: (true|false)
 - *watchers*: watching user id
 - *assigned_to*: assigned to user id
 - *status__is_closed*: (true|false)
