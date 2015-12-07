@@ -1,5 +1,4 @@
-Other ways to setup initial environment
-=======================================
+= Taiga: Other ways to setup initial environment
 :toc: left
 :numbered:
 

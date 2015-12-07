@@ -1,5 +1,4 @@
-Setup production environment
-============================
+= Taiga: Setup production environment
 :toc: left
 :numbered:
 :source-highlighter: pygments

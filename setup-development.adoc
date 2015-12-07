@@ -1,5 +1,4 @@
-Setup development environment
-=============================
+= Taiga: Setup development environment
 :toc: left
 :numbered:
 :source-highlighter: pygments

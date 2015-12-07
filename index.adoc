@@ -1,5 +1,4 @@
-Taiga Documentation
-===================
+= Taiga Documentation
 :toc: left
 :numbered:
 

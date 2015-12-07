@@ -1,5 +1,4 @@
-Setup FAQs and commom bugs
-==========================
+= Taiga: Setup FAQs and commom bugs
 :toc: left
 :numbered:
 :source-highlighter: pygments

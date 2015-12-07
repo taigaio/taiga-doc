@@ -1,5 +1,4 @@
-Webhooks
-========
+= Taiga: Webhooks
 :toc: left
 :numbered:
 :source-highlighter: pygments
