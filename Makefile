@@ -35,3 +35,10 @@ doc:
 	asciidoctor -T custom-html5 -o dist/api.html api/api.adoc
 	asciidoctor -T custom-html5 -o dist/webhooks.html webhooks.adoc
 	cp -r assets/* dist || exit 1
+pdf:
+	asciidoctor -r asciidoctor-pdf -b pdf -o dist/pdfs/setup-production.pdf setup-production.adoc
+	asciidoctor -r asciidoctor-pdf -b pdf -o dist/pdfs/setup-development.pdf setup-development.adoc
+	asciidoctor -r asciidoctor-pdf -b pdf -o dist/pdfs/setup-alternatives.pdf setup-alternatives.adoc
+	asciidoctor -r asciidoctor-pdf -b pdf -o dist/pdfs/setup-faqs.pdf setup-faqs.adoc
+	asciidoctor -r asciidoctor-pdf -b pdf -o dist/pdfs/api.pdf api/api.adoc
+	asciidoctor -r asciidoctor-pdf -b pdf -o dist/pdfs/webhooks.pdf webhooks.adoc
