@@ -168,7 +168,7 @@ DEFAULT_FROM_EMAIL = "no-reply@example.com"
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 # Uncomment and populate with proper connection parameters
-# for enable email sending. EMAIL_HOST_USER should end by @domain.tld 
+# for enable email sending. EMAIL_HOST_USER should end by @domain.tld
 #EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 #EMAIL_USE_TLS = False
 #EMAIL_HOST = "localhost"
@@ -315,6 +315,7 @@ Events installation
 
 **This step is completelly optional and can be skipped**
 
+Taiga-events is the Taiga websocket server, it allows taiga-front showing realtime changes in backlog, taskboard, kanban and issues listing.
 
 Taiga events needs rabbitmq (the message broker) to be installed
 
@@ -352,7 +353,7 @@ cd taiga-events
 .Install all the javascript dependencies needed
 [source,bash]
 ----
-sudo apt-get install -y nodejs npm
+sudo apt-get install -y nodejs nodejs-legacy npm
 npm install
 sudo npm install -g coffee-script
 ----
@@ -382,7 +383,7 @@ Now you have to add taiga-events to circus configuration. See link:#circus-and-g
 ----
 [watcher:taiga-events]
 working_dir = /home/taiga/taiga-events
-cmd = /usr/lib/node_modules/coffee-script/bin/coffee
+cmd = /usr/local/bin/coffee
 args = index.coffee
 uid = taiga
 numprocesses = 1
@@ -604,7 +605,7 @@ sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
 
 You can verify the nginx configuration with the following command to track any error preventing the service to start with `sudo nginx -t`.
 
-Finally, restart nginx with `sudo service nginx restart`.	
+Finally, restart nginx with `sudo service nginx restart`.
 
 **Now you should have the service up and running on `http://example.com/`**
 
