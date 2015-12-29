@@ -231,7 +231,7 @@ http://docs.celeryproject.org/en/latest/index.html
 
 Once you have configured celery on Taiga, you have to add celery to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
 
-.Taiga celery configuration block for circus on ~/circus.ini
+.Taiga celery configuration block for circus on ~/conf/circus.ini
 [source,ini]
 ----
 [watcher:taiga-celery]
@@ -378,7 +378,7 @@ cp config.example.json config.json
 
 Now you have to add taiga-events to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
 
-.Taiga taiga-events configuration block for circus on ~/circus.ini
+.Taiga taiga-events configuration block for circus on ~/conf/circus.ini
 [source,ini]
 ----
 [watcher:taiga-events]
@@ -459,7 +459,14 @@ restarting processes if something goes wrong, and starting processes on system b
 sudo pip2 install circus
 ----
 
-.Initial configuration for circus on ~/circus.ini
+.Create conf folder if it doesn't exist
+[source,bash]
+----
+mkdir -p ~/conf/
+----
+
+.Initial configuration for circus on ~/conf/circus.ini
+
 [source,ini]
 ----
 [circus]
@@ -511,7 +518,7 @@ start on filesystem and net-device-up IFACE=lo
 stop on runlevel [016]
 
 respawn
-exec /usr/local/bin/circusd /home/taiga/circus.ini
+exec /usr/local/bin/circusd /home/taiga/conf/circus.ini
 ----
 
 And finally start circus:
