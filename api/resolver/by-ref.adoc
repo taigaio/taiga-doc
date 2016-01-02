@@ -15,7 +15,7 @@ issue id.
 ----
 {
     "project": 1,
-    "task": 1336,
+    "task": 1336
 }
 ----
 
