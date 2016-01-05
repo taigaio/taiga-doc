@@ -1,0 +1,48 @@
+How to upgrade Taiga
+====================
+:toc: left
+
+The Taiga platform is developed on github. For consistences you should alway maintain the same version
+in time with the *stable* branch of git or use the last major version of each component.
+
+**No packaged version of Taiga is available at this moment.**
+
+.Frontend application
+[source,bash]
+----
+cd ~/taiga-front-dist
+git checkout stable
+git pull
+----
+
+.Backend application
+----
+As user "taiga" or whatever user you use, do not run this code as "root" to avoid errors.
+cd ~/taiga-back
+git checkout stable
+workon taiga
+git pull
+pip install --upgrade -r requirements.txt
+python manage.py migrate --noinput
+python manage.py compilemessages
+python manage.py collectstatic --noinput
+circusctl reload taiga
+----
+
+In case taiga-celery is configured reload it too:
+
+[source,bash]
+----
+circusctl reload taiga-celery
+----
+
+Upgrades notes
+--------------
+
+.1.9.0 > 1.9.1
+
+Copy your conf.json from `taiga-front-dist/dist/js/conf.json` to `taiga-front-dist/dist/conf.json`.
+
+Remove the following folders `dist/fonts`, `dist/images`, `dist/js`, `dist/locales`, `dist/styles`, `dist/svg`.
+
+Download the latest plugins version following their installation instructions.
