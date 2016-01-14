@@ -16,6 +16,14 @@ The results can be filtered using the following parameters:
 
 - *members*: member ids
 
+- *is_looking_for_people*: the project is looking for new members
+
+- *is_featured*: the project has been highlighted by the instance staff
+
+- *is_backlog_activated*: backlog is active
+
+- *is_kanban_activated*: kanban is active
+
 [source,bash]
 ----
 curl -X GET \
@@ -27,6 +35,23 @@ curl -X GET \
 The results can be ordered using the order_by parameter with the values:
 
 - *memberships__user_order*: the project order specified by the user
+
+- *total_fans*: total fans for the project
+
+- *total_fans_last_week*: number of new fans in the last week
+
+- *total_fans_last_month*: number of new fans in the last month
+
+- *total_fans_last_year*: number of new fans in the last year
+
+- *total_activity*: number of history entries for the project
+
+- *total_activity_last_week*: number of history entries generated in the last week
+
+- *total_activity_last_month*: number of history entries generated in the last month
+
+- *total_activity_last_year*: number of history entries generated in the last year
+
 
 [source,bash]
 ----

@@ -118,6 +118,9 @@ include::timelines/endpoints.adoc[]
 === Locales
 include::locales/endpoints.adoc[]
 
+=== Stats
+include::stats/endpoints.adoc[]
+
 
 [[auth]]
 == Auth
@@ -262,6 +265,10 @@ include::timelines/summary.adoc[]
 [[locales]]
 == Locales
 include::locales/summary.adoc[]
+
+[[stats]]
+== Stats
+include::stats/summary.adoc[]
 
 
 == Objects Summary
@@ -553,6 +560,15 @@ include::users/liked-response.adoc[]
 [[object-voted-detail]]
 === Voted
 include::users/voted-response.adoc[]
+
+[[object-discover-stats]]
+=== Discover stats
+include::stats/discover-response.adoc[]
+
+[[object-system-stats]]
+=== System stats
+include::stats/system-response.adoc[]
+
 
 == Contrib plugins
 
