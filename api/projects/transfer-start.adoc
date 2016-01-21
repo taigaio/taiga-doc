@@ -1,0 +1,15 @@
+To start the transfer of one of your projects to another user send a POST request specifying the project id in the url and containing the following data:
+
+- *user*: user id of other admin member of the project.
+
+[source,bash]
+----
+curl -X POST \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  -d '{
+          "user": "'${USER_ID}'",
+      }' \
+  https://api.taiga.io/api/v1/projects/1/transfer_start
+----
+
+The HTTP response is a 200 OK with an empty body response

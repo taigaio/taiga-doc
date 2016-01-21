@@ -89,3 +89,19 @@ include::../projects/change-logo.adoc[]
 [[projects-remove-logo]]
 === Remove logo
 include::../projects/remove-logo.adoc[]
+
+[[projects-transfer-request]]
+=== Transfer request
+include::../projects/transfer-request.adoc[]
+
+[[projects-transfer-start]]
+=== Transfer start
+include::../projects/transfer-start.adoc[]
+
+[[projects-transfer-accept]]
+=== Transfer accept
+include::../projects/transfer-accept.adoc[]
+
+[[projects-transfer-reject]]
+=== Transfer reject
+include::../projects/transfer-reject.adoc[]
