@@ -1,18 +1,25 @@
 [source,json]
 ----
 {
-    "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-    "bio": "",
-    "color": "black",
-    "lang": "",
-    "timezone": "",
-    "email": "beta.testing@taiga.io",
+    "id": 7,
+    "username": "beta.tester",
     "full_name": "Beta testing",
     "full_name_display": "Beta testing",
-    "github_id": null,
-    "id": 1,
+    "email": "beta.testing@taiga.io",
+    "color": "#FC8EAC",
+    "bio": "",
+    "lang": "en",
+    "theme": "taiga",
+    "timezone": "",
     "is_active": true,
     "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-    "username": "beta.tester"
+    "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=300",
+    "max_private_projects": null,
+    "max_public_projects": null,
+    "total_private_projects": 11,
+    "total_public_projects": 2
 }
 ----
+
+[NOTE]
+The attributes: email, max_private_projects, max_public_projects, total_private_projects, total_public_projects will only be included in the json only if the user requested and the requesting one are the same or if the requesting user is a super user.
