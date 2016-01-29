@@ -325,6 +325,10 @@ html, body, .container, .scroller {
 	border-radius: 15px;
 }
 
+#trigger:hover {
+	background: #5B8660;
+}
+
 #toc ul li::before {
 	position: absolute;
 	left: 10px;
