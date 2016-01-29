@@ -46,3 +46,11 @@ Copy your conf.json from `taiga-front-dist/dist/js/conf.json` to `taiga-front-di
 Remove the following folders `dist/fonts`, `dist/images`, `dist/js`, `dist/locales`, `dist/styles`, `dist/svg`.
 
 Download the latest plugins version following their installation instructions.
+
+
+.1.9.1 > 1.10.0
+
+Follow the default process.
+
+The migration could take a long time if you have a large database.
+
