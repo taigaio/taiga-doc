@@ -1,0 +1,7 @@
+[[discover-stats]]
+=== Get discover stats
+include::../stats/discover.adoc[]
+
+[[system-stats]]
+=== Get system stats
+include::../stats/system.adoc[]

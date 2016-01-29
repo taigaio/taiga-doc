@@ -91,4 +91,12 @@
 | /api/v1/projects/\{projectId}/leave
 | POST
 | link:#projects-create-template[Leave project]
+
+| /api/v1/projects/\{projectId}/change_logo
+| POST
+| link:#projects-change-logo[Change logo]
+
+| /api/v1/projects/\{projectId}/remove_logo
+| POST
+| link:#projects-remove-logo[Remove logo]
 |===
