@@ -286,7 +286,7 @@ git checkout stable
 ----
 
 And now, you can configure it copying the
-`taiga-front-dist/dist/conf.example.json` to `taiga-front-dist/dist/conf.json`
+`~/taiga-front-dist/dist/conf.example.json` to `~/taiga-front-dist/dist/conf.json`
 and editing it.
 
 .Copy and edit initial configuration on ~/taiga-front-dist/dist/conf.json
@@ -625,7 +625,7 @@ Second we need to generate a stronger GHE parameter
 [source,nginx]
 ----
 cd /etc/ssl
-openssl dhparam -out dhparam.pem 4096
+sudo openssl dhparam -out dhparam.pem 4096
 ----
 
 .New configuration in /etc/nginx/sites-available/taiga
