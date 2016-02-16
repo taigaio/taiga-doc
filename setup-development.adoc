@@ -298,33 +298,6 @@ cd taiga-front
 git checkout stable
 ----
 
-And now, you can configure it copying the
-`dist/conf.example.json` to `dist/conf.json`
-and editing it.
-
-.Copy and edit initial configuration on ~/taiga-front/dist/conf.json
-[source,json]
-----
-{
-    "api": "http://localhost:8000/api/v1/",
-    "eventsUrl": null,
-    "eventsMaxMissedHeartbeats": 5,
-    "eventsHeartbeatIntervalTime": 60000,
-    "debug": true,
-    "debugInfo": false,
-    "defaultLanguage": "en",
-    "themes": ["taiga"],
-    "defaultTheme": "taiga",
-    "publicRegisterEnabled": true,
-    "feedbackEnabled": true,
-    "privacyPolicyUrl": null,
-    "termsOfServiceUrl": null,
-    "maxUploadFileSize": null,
-    "contribPlugins": []
-
-}
-----
-
 .Install all dependencies needed to run gulp and compile taiga-front
 [source,bash]
 ----
@@ -375,6 +348,33 @@ Having installed all the dependencies, all you have left to do is to run the cod
 ----
 cd ~/taiga-front
 gulp
+----
+
+And now, you can configure it copying the
+`dist/conf.example.json` to `dist/conf.json`
+and editing it.
+
+.Copy and edit initial configuration on ~/taiga-front/dist/conf.json
+[source,json]
+----
+{
+    "api": "http://localhost:8000/api/v1/",
+    "eventsUrl": null,
+    "eventsMaxMissedHeartbeats": 5,
+    "eventsHeartbeatIntervalTime": 60000,
+    "debug": true,
+    "debugInfo": false,
+    "defaultLanguage": "en",
+    "themes": ["taiga"],
+    "defaultTheme": "taiga",
+    "publicRegisterEnabled": true,
+    "feedbackEnabled": true,
+    "privacyPolicyUrl": null,
+    "termsOfServiceUrl": null,
+    "maxUploadFileSize": null,
+    "contribPlugins": []
+
+}
 ----
 
 Now, you can access http://localhost:9001 for access to taiga-front.
