@@ -18,7 +18,7 @@
     "default_task_status": 1,
     "default_us_status": 27,
     "description": "Free. Open Source. Powerful. Taiga is a project management platform for startups and agile developers & designers who want a simple, beautiful tool that makes work truly enjoyable.",
-    "i_am_owner": true,
+    "i_am_admin": true,
     "id": 1,
     "is_backlog_activated": false,
     "is_fan": true,

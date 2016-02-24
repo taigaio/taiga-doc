@@ -56,7 +56,7 @@
         "admin_project_values",
         "view_wiki_links"
     ],
-    "i_am_owner": true,
+    "i_am_admin": true,
     "tags": [
         "angular",
         "python",
@@ -179,7 +179,7 @@
         "admin_project_values",
         "view_wiki_links"
     ],
-    "i_am_owner": true,
+    "i_am_admin": true,
     "tags": [],
     "tags_colors": {},
     "notify_level": 1,
@@ -270,7 +270,7 @@
         "admin_project_values",
         "view_wiki_links"
     ],
-    "i_am_owner": true,
+    "i_am_admin": true,
     "tags": [],
     "tags_colors": {
         "perfil": "#ef2929",
