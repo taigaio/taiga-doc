@@ -18,7 +18,16 @@
     "default_task_status": 1,
     "default_us_status": 27,
     "description": "Free. Open Source. Powerful. Taiga is a project management platform for startups and agile developers & designers who want a simple, beautiful tool that makes work truly enjoyable.",
+    "owner": {
+        "username": "beta.tester",
+        "full_name_display": "Beta Tester",
+        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+        "is_active": true
+    },
+    "i_am_owner": true,
     "i_am_admin": true,
+    "i_am_member": true,
     "id": 1,
     "is_backlog_activated": false,
     "is_fan": true,
@@ -462,7 +471,6 @@
     ],
     "name": "Taiga",
     "notify_level": 2,
-    "owner": 9,
     "points": [
         {
             "id": 1,
