@@ -15,6 +15,6 @@
     "object_id": 81,
     "order": 0,
     "sha1": "da2631d805f12a1b533738a0912e9b9c2261dbef",
-    thumbnail_card_url: "https://media.taiga.io/8/1/6/e/68a8e4edb4ba422d201d65406b161be03e052d9b63e265aaa826179497c8/img_20141102_214512.300x200_q85_crop.jpg"
+    "thumbnail_card_url": "https://media.taiga.io/8/1/6/e/68a8e4edb4ba422d201d65406b161be03e052d9b63e265aaa826179497c8/img_20141102_214512.300x200_q85_crop.jpg"
 }
 ----
