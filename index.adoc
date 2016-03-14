@@ -124,7 +124,7 @@ Reporting Bugs
 Before reporting a bug or requesting a new feature, please consider these general points:
 
 - Check that someone hasn't already filed the bug or feature request by searching, or running custom
-  queries in, the ticket tracker.
+  queries in, the link:https://tree.taiga.io/project/taiga/issues[issue tracker].
 - Check the right repository to use for reporting an issue: bugs related to UI should go to *taiga-front*,
   but if something is broken on the backend, an issue should be opened on the *taiga-back* repository.
 - Ask on the link:http://groups.google.com/d/forum/taigaio[mailing list] first if you're not sure if
