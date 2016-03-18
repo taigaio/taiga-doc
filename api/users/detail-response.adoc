@@ -16,11 +16,12 @@
     "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=300",
     "max_private_projects": null,
     "max_public_projects": null,
-    "max_memberships_for_projects": null,
+    "max_memberships_private_projects": 3,
+    "max_memberships_public_projects": 10,
     "total_private_projects": 11,
     "total_public_projects": 2
 }
 ----
 
 [NOTE]
-The attributes: email, max_private_projects, max_public_projects, max_memberships_for_projects, total_private_projects, total_public_projects will only be included in the json only if the user requested and the requesting one are the same or if the requesting user is a super user.
+The attributes: email, max_private_projects, max_public_projects, max_memberships_private_projects, max_memberships_public_projects, total_private_projects, total_public_projects will only be included in the json only if the user requested and the requesting one are the same or if the requesting user is a super user.
