@@ -90,6 +90,10 @@ include::../projects/change-logo.adoc[]
 === Remove logo
 include::../projects/remove-logo.adoc[]
 
+[[projects-validate-token]]
+=== Transfer validate token
+include::../projects/transfer-validate-token.adoc[]
+
 [[projects-transfer-request]]
 === Transfer request
 include::../projects/transfer-request.adoc[]

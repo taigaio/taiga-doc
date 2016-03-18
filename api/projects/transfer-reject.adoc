@@ -1,6 +1,7 @@
 To reject the transfer of one project to your user send a POST request specifying the project id in the url and containing the following data:
 
 - *token*: valid transfer token received by email.
+- *reason*: text included in the email response to the project owner.
 
 [source,bash]
 ----
@@ -8,6 +9,7 @@ curl -X POST \
   -H "Authorization: Bearer ${AUTH_TOKEN}" \
   -d '{
           "token": "'${TRANSFER_TOKEN}'",
+          "reason": "testing"
       }' \
   https://api.taiga.io/api/v1/projects/1/transfer_reject
 ----

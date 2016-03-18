@@ -100,6 +100,10 @@
 | POST
 | link:#projects-remove-logo[Remove logo]
 
+| /api/v1/projects/\{projectId}/transfer_validate_token
+| POST
+| link:#projects-transfer-validate-token[Transfer validate token]
+
 | /api/v1/projects/\{projectId}/transfer_request
 | POST
 | link:#projects-transfer-request[Transfer request]
