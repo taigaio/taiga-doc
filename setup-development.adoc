@@ -106,7 +106,7 @@ mkvirtualenv -p /usr/bin/python3.4 taiga
 .Install dependencies
 [source, bash]
 ----
-pip install -r requirements.txt
+pip install -r requirements-devel.txt
 ----
 
 .Adjust Django Configuration
