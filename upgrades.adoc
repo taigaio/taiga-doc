@@ -36,10 +36,12 @@ In case taiga-celery is configured reload it too:
 circusctl reload taiga-celery
 ----
 
+
 Upgrades notes
 --------------
 
-.1.9.0 > 1.9.1
+1.9.0 > 1.9.1
+~~~~~~~~~~~~~
 
 Copy your conf.json from `taiga-front-dist/dist/js/conf.json` to `taiga-front-dist/dist/conf.json`.
 
@@ -48,9 +50,41 @@ Remove the following folders `dist/fonts`, `dist/images`, `dist/js`, `dist/local
 Download the latest plugins version following their installation instructions.
 
 
-.1.9.1 > 1.10.0
+1.9.1 > 1.10.0
+~~~~~~~~~~~~~~
 
 Follow the default process.
 
 The migration could take a long time if you have a large database.
 
+
+
+1.10.0 > 2.0.0
+~~~~~~~~~~~~~~
+
+Follow the default process.
+
+This version upgrade Django to 1.9, so if you overwrited the DB settings in `taiga-back/settings/local.py` you have to change the DB backend to use the default one.
+
+So, change...
+
+
+[source,python]
+----
+# In Taiga <= 1.9
+DATABASES = {
+    "default": {
+        "ENGINE": "transaction_hooks.backends.postgresql_psycopg2",
+        (...)
+----
+
+to:
+
+[source,python]
+----
+# In Taiga >= 2.0
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        (...)
+----

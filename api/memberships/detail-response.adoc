@@ -14,7 +14,7 @@
     "user": 8,
     "project": 1,
     "role": 3,
-    "is_owner": true,
+    "is_admin": true,
     "created_at": "2014-11-17T16:19:04+0000",
     "invitation_extra_text": null
 }
