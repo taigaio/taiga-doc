@@ -207,6 +207,10 @@ The default behavior in Taiga is to do all tasks in a synchronous way, but some 
 can be completely asynchronous (for example webhooks or import/export). To do
 this, you have to configure and install the celery service requirements.
 
+There is just an exception related to exported files, if your instance works in asynchronous mode the exported project files will be
+automatically removed from the storage after 24 hours, if not those media files won't be automatically removed (taiga-back doesn't really know anything about
+the existance of those files).
+
 Install `rabbitmq-server` and `redis-server`:
 
 [source,bash]
@@ -503,6 +507,9 @@ PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.4/site-packages
 
 [NOTE]
 ====
+
+Circus stats can generate a high cpu usage without any load you can set statsd to false if you don't need them.
+
 Taiga stores logs on the user home, making them available and immediately accessible when
 you enter a machine. To make everything work, make sure you have the logs directory
 created.
