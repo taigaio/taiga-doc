@@ -10,5 +10,5 @@ curl -X GET \
 
 Depending on server configuration it can return two results:
 
-* A 202 Accepted and as response body a JSON of link:#object-export-accepted[export request accepted].
-* A 200 OK and as response body a JSON of link:#object-export-synch[export detail for synch mode].
+* If taiga is working in synchronous mode the json file is directly generated, the result is a 200 OK and as response body a JSON of link:#object-export-synch[export detail for synch mode].
+* If taiga is working in asynchronous mode the result is a 202 Accepted and as response body a JSON of link:#object-export-accepted[export request accepted]. The export_id can be used to build the URL to download the exported file when the file generation is complete, those urls look like: MEDIA_URL/exports/PROJECT_ID/PROJECT_SLUG-export_id.json.
