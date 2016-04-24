@@ -15,8 +15,9 @@ How can I change the domain name?
 The domain name mainly affects the frontend application, because it needs to comunicate with the
 backend through the domain/public-ip.
 
-To do this you should update the `url` value on frontend config file dist/conf.json. Also you should update the domain related configuration on the backend
-settings file: `settings/local.py`.
+To do this you should update the url value `api` on frontend config file `dist/conf/conf.json`.
+Also you should update the domain related configuration on the backend settings file:
+`settings/local.py`.
 
 And finally reload the backend config with: `circusctl reload taiga`
 
