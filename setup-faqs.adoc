@@ -59,11 +59,12 @@ repository.
 
 The current supported plugins are:
 
-* link:http://github.com/taigaio/taiga-contrib-gogs[taiga-contrib-gogs]: Gogs integration
-* link:http://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration
-* link:http://github.com/taigaio/taiga-contrib-hall[taiga-contrib-hall]: Hall.com integration
-
-
+* link:https://github.com/taigaio/taiga-contrib-cookie-warning[taiga-contrib-cookie-warning] A funny cookie warning message
+* link:https://github.com/taigaio/taiga-contrib-github-auth[taiga-contrib-github-auth]: GitHub Authentication
+* link:https://github.com/taigaio/taiga-contrib-gogs[taiga-contrib-gogs]: Gogs integration
+* link:https://github.com/taigaio/taiga-contrib-hipchat[taiga-contrib-hipchat]: HipChat integration
+* link:https://github.com/taigaio/taiga-contrib-letschat[taiga-contrib-letschat]: Let's Chat integration
+* link:https://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration
 
 
 Common Bugs
