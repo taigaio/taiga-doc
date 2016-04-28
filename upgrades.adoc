@@ -58,7 +58,6 @@ Follow the default process.
 The migration could take a long time if you have a large database.
 
 
-
 1.10.0 > 2.0.0
 ~~~~~~~~~~~~~~
 
@@ -67,7 +66,6 @@ Follow the default process.
 This version upgrade Django to 1.9, so if you overwrited the DB settings in `taiga-back/settings/local.py` you have to change the DB backend to use the default one.
 
 So, change...
-
 
 [source,python]
 ----
@@ -88,3 +86,10 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         (...)
 ----
+
+
+2.0.0 > 2.1.0
+~~~~~~~~~~~~~~
+
+Follow the default process.
+
