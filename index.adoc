@@ -25,6 +25,12 @@ _Taiga_ has a complete REST API (the one used by the web app), check the full AP
 documentation link:api.html[here].
 
 
+[[webhooks]]
+Webhooks
+--------
+_Taiga_ has a webhooks notification system, check the full documentation link:webhooks.html[here].
+
+
 [[how-it-works]]
 How it Works
 ------------
