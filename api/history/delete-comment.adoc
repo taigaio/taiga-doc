@@ -1,4 +1,4 @@
-To delete history comment send a POST specifying the history entry id in the url
+To delete a history comment send a POST specifying the history entry id in the url
 
 [source,bash]
 ----

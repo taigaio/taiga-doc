@@ -509,6 +509,10 @@ include::wiki/watcher-detail-response.adoc[]
 === Wiki link
 include::wikilinks/detail-response.adoc[]
 
+[[object-history-entry-comment-detail]]
+=== History entry comment
+include::history/comment-detail-response.adoc[]
+
 [[object-history-entry-detail]]
 === History entry
 include::history/detail-response.adoc[]

@@ -1,0 +1,24 @@
+[source,json]
+----
+{
+    "comment": "test",
+    "comment_html": "<p>test</p>",
+    "date": "2016-05-25T07:05:39.389Z",
+    "user": {
+        "id": 7,
+        "username": "alejandro.alonso",
+        "full_name": "Alejandro Alonso",
+        "full_name_display": "Alejandro Alonso",
+        "color": "#FC8EAC",
+        "bio": "",
+        "lang": "en",
+        "theme": "taiga",
+        "timezone": "",
+        "is_active": true,
+        "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
+        "big_photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
+        "roles": [],
+        "projects_with_me": []
+    }
+}
+----

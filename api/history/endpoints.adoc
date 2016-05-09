@@ -8,6 +8,14 @@
 | GET
 | link:#history-get[Get user story history]
 
+| /api/v1/history/userstory/\{usId}/commentVersions?id=\{commentId}
+| GET
+| link:#history-comment-versions[Get user story comment versions]
+
+| /api/v1/history/userstory/\{usId}/edit_comment?id=\{commentId}
+| POST
+| link:#history-edit-comment[Edit user story comment]
+
 | /api/v1/history/userstory/\{usId}/delete_comment?id=\{commentId}
 | POST
 | link:#history-delete-comment[Delete user story comment]
@@ -20,11 +28,19 @@
 | GET
 | link:#history-get[Get issue history]
 
-| /api/v1/history/issue/\{usId}/delete_comment?id=\{commentId}
+| /api/v1/history/issue/\{issueId}/commentVersions?id=\{commentId}
+| POST
+| link:#history-comment-versions[Get issue comment versions]
+
+| /api/v1/history/issue/\{issueId}/edit_comment?id=\{commentId}
+| POST
+| link:#history-edit-comment[Edit issue comment]
+
+| /api/v1/history/issue/\{issueId}/delete_comment?id=\{commentId}
 | POST
 | link:#history-delete-comment[Delete issue comment]
 
-| /api/v1/history/issue/\{usId}/undelete_comment?id=\{commentId}
+| /api/v1/history/issue/\{issueId}/undelete_comment?id=\{commentId}
 | POST
 | link:#history-undelete-comment[Undelete issue comment]
 
@@ -32,11 +48,19 @@
 | GET
 | link:#history-get[Get task history]
 
-| /api/v1/history/task/\{usId}/delete_comment?id=\{commentId}
+| /api/v1/history/task/\{taskId}/commentVersions?id=\{commentId}
+| POST
+| link:#history-comment-versions[Get task comment versions]
+
+| /api/v1/history/task/\{taskId}/edit_comment?id=\{commentId}
+| POST
+| link:#history-edit-comment[Edit task comment]
+
+| /api/v1/history/task/\{taskId}/delete_comment?id=\{commentId}
 | POST
 | link:#history-delete-comment[Delete task comment]
 
-| /api/v1/history/task/\{usId}/undelete_comment?id=\{commentId}
+| /api/v1/history/task/\{taskId}/undelete_comment?id=\{commentId}
 | POST
 | link:#history-undelete-comment[Undelete task comment]
 
@@ -44,11 +68,19 @@
 | GET
 | link:#history-get[Get wiki history]
 
-| /api/v1/history/wiki/\{usId}/delete_comment?id=\{commentId}
+| /api/v1/history/wiki/\{wikiId}/commentVersions?id=\{commentId}
+| POST
+| link:#history-comment-versions[Get wiki comment versions]
+
+| /api/v1/history/wiki/\{wikiId}/edit_comment?id=\{commentId}
+| POST
+| link:#history-edit-comment[Edit wiki comment]
+
+| /api/v1/history/wiki/\{wikiId}/delete_comment?id=\{commentId}
 | POST
 | link:#history-delete-comment[Delete wiki comment]
 
-| /api/v1/history/wiki/\{usId}/undelete_comment?id=\{commentId}
+| /api/v1/history/wiki/\{wikiId}/undelete_comment?id=\{commentId}
 | POST
 | link:#history-undelete-comment[Undelete wiki comment]
 |===
