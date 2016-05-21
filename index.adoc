@@ -11,24 +11,7 @@ Free. Open Source. Powerful. _Taiga_ is a project management platform for startu
 and agile developers & designers who want a simple, beautiful tool that makes work
 truly enjoyable.
 
-[[project-maturity]]
-Project Maturity
-----------------
 
-Because _Taiga_ is still a young project we currently consider it to be in a beta state.
-
-
-[[api]]
-API
----
-_Taiga_ has a complete REST API (the one used by the web app), check the full API
-documentation link:api.html[here].
-
-
-[[webhooks]]
-Webhooks
---------
-_Taiga_ has a webhooks notification system, check the full documentation link:webhooks.html[here].
 
 
 [[how-it-works]]
@@ -140,6 +123,20 @@ Before reporting a bug or requesting a new feature, please consider these genera
 - Don’t use GitHub issues for lengthy discussions, because they're likely to get lost. If a particular
   ticket is controversial, please move the discussion to the
   link:http://groups.google.com/d/forum/taigaio[mailing list].
+
+
+
+[[api]]
+API
+---
+_Taiga_ has a complete REST API (the one used by the web app), check the full API
+documentation link:api.html[here].
+
+
+[[webhooks]]
+Webhooks
+--------
+_Taiga_ has a webhooks notification system, check the full documentation link:webhooks.html[here].
 
 
 [[contrib-plugins]]
