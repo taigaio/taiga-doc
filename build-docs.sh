@@ -15,3 +15,4 @@ mv /tmp/taiga-doc-dist dist || exit 1
 git add --all dist || exit 1
 git commit -a -m "Update doc" || exit 1
 git push || exit 1
+git checkout master || exit 1
