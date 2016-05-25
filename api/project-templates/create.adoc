@@ -315,12 +315,12 @@ curl -X POST \
           "roles": [
               {
                   "permissions": [
-                      "add_issue", "modify_issue", "delete_issue",
+                      "add_issue", "modify_issue", "comment_issue", "delete_issue",
                       "view_issues", "add_milestone", "modify_milestone",
                       "delete_milestone", "view_milestones", "view_project",
-                      "add_task", "modify_task", "delete_task", "view_tasks",
-                      "add_us", "modify_us", "delete_us", "view_us",
-                      "add_wiki_page", "modify_wiki_page", "delete_wiki_page",
+                      "add_task", "modify_task", "comment_task", "delete_task", "view_tasks",
+                      "add_us", "modify_us", "comment_us", "delete_us", "view_us",
+                      "add_wiki_page", "modify_wiki_page", "comment_wiki_page", "delete_wiki_page",
                       "view_wiki_pages", "add_wiki_link", "delete_wiki_link",
                       "view_wiki_links"
                   ],
@@ -331,12 +331,12 @@ curl -X POST \
               },
               {
                   "permissions": [
-                      "add_issue", "modify_issue", "delete_issue",
+                      "add_issue", "modify_issue", "comment_issue", "delete_issue",
                       "view_issues", "add_milestone", "modify_milestone",
                       "delete_milestone", "view_milestones", "view_project",
-                      "add_task", "modify_task", "delete_task", "view_tasks",
-                      "add_us", "modify_us", "delete_us", "view_us",
-                      "add_wiki_page", "modify_wiki_page", "delete_wiki_page",
+                      "add_task", "modify_task", "comment_task", "delete_task", "view_tasks",
+                      "add_us", "modify_us", "comment_us", "delete_us", "view_us",
+                      "add_wiki_page", "modify_wiki_page", "comment_wiki_page", "delete_wiki_page",
                       "view_wiki_pages", "add_wiki_link", "delete_wiki_link",
                       "view_wiki_links"
                   ],
@@ -347,12 +347,12 @@ curl -X POST \
               },
               {
                   "permissions": [
-                      "add_issue", "modify_issue", "delete_issue",
+                      "add_issue", "modify_issue", "comment_issue", "delete_issue",
                       "view_issues", "add_milestone", "modify_milestone",
                       "delete_milestone", "view_milestones", "view_project",
-                      "add_task", "modify_task", "delete_task", "view_tasks",
-                      "add_us", "modify_us", "delete_us", "view_us",
-                      "add_wiki_page", "modify_wiki_page", "delete_wiki_page",
+                      "add_task", "modify_task", "comment_task", "delete_task", "view_tasks",
+                      "add_us", "modify_us", "comment_us", "delete_us", "view_us",
+                      "add_wiki_page", "modify_wiki_page", "comment_wiki_page", "delete_wiki_page",
                       "view_wiki_pages", "add_wiki_link", "delete_wiki_link",
                       "view_wiki_links"
                   ],
@@ -363,12 +363,12 @@ curl -X POST \
               },
               {
                   "permissions": [
-                      "add_issue", "modify_issue", "delete_issue",
+                      "add_issue", "modify_issue", "comment_issue", "delete_issue",
                       "view_issues", "add_milestone", "modify_milestone",
                       "delete_milestone", "view_milestones", "view_project",
-                      "add_task", "modify_task", "delete_task", "view_tasks",
-                      "add_us", "modify_us", "delete_us", "view_us",
-                      "add_wiki_page", "modify_wiki_page", "delete_wiki_page",
+                      "add_task", "modify_task", "comment_task", "delete_task", "view_tasks",
+                      "add_us", "modify_us", "comment_us", "delete_us", "view_us",
+                      "add_wiki_page", "modify_wiki_page", "comment_wiki_page", "delete_wiki_page",
                       "view_wiki_pages", "add_wiki_link", "delete_wiki_link",
                       "view_wiki_links"
                   ],
@@ -379,12 +379,12 @@ curl -X POST \
               },
               {
                   "permissions": [
-                      "add_issue", "modify_issue", "delete_issue",
+                      "add_issue", "modify_issue", "comment_issue", "delete_issue",
                       "view_issues", "add_milestone", "modify_milestone",
                       "delete_milestone", "view_milestones", "view_project",
-                      "add_task", "modify_task", "delete_task", "view_tasks",
-                      "add_us", "modify_us", "delete_us", "view_us",
-                      "add_wiki_page", "modify_wiki_page", "delete_wiki_page",
+                      "add_task", "modify_task", "comment_task", "delete_task", "view_tasks",
+                      "add_us", "modify_us", "comment_us", "delete_us", "view_us",
+                      "add_wiki_page", "modify_wiki_page", "comment_wiki_page", "delete_wiki_page",
                       "view_wiki_pages", "add_wiki_link", "delete_wiki_link",
                       "view_wiki_links"
                   ],
@@ -395,9 +395,9 @@ curl -X POST \
               },
               {
                   "permissions": [
-                      "add_issue", "modify_issue", "delete_issue",
+                      "add_issue", "modify_issue", "comment_issue", "delete_issue",
                       "view_issues", "view_milestones", "view_project",
-                      "view_tasks", "view_us", "modify_wiki_page",
+                      "view_tasks", "view_us", "modify_wiki_page", "comment_wiki_page",
                       "view_wiki_pages", "add_wiki_link", "delete_wiki_link",
                       "view_wiki_links"
                   ],
