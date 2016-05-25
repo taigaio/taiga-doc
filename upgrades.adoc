@@ -93,3 +93,11 @@ DATABASES = {
 
 Follow the default process.
 
+
+
+2.1.0 > 3.0.0
+~~~~~~~~~~~~~~
+
+Follow the default process.
+
+The migration could take a long time if you have a large database: now a new permissions has been included to allow to add comments instead of use `modify_*` for this purpose.
