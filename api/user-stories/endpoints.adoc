@@ -48,6 +48,10 @@
 | POST
 | link:#user-stories-bulk-udate-sprint-order[Update user stories order for sprint in bulk mode]
 
+| /api/v1/userstories/bulk_update_milestone
+| POST
+| link:#user-stories-bulk-udate-milestone[Update user stories sprint in bulk mode]
+
 | /api/v1/userstories/\{userStoryId}/upvote
 | POST
 | link:#user-stories-upvote[Add star to a user story]
