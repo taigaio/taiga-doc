@@ -104,6 +104,7 @@ html, body, .container, .scroller {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
+	display: none;
 }
 
 .mp-level.mp-level-overlay {

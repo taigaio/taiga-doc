@@ -29,5 +29,15 @@ ul,ol,dl{margin-bottom:0em;}
 #toc.toc2{background:none;border-right:none;}
 #toc{width:15em !important;border-bottom:none !important;}
 body {padding-left:0px !important;}
-#toc.toc2{left:-15em}
+#toc.toc2{left:-30em}
 .scroller,.scroller-inner {position: relative;}
+
+.scroller {
+	width: calc(100% - 240px);
+}
+.mp-cover {
+	transform: translate3d(240px, 0, 0);
+}
+#trigger {
+	display: none;
+}

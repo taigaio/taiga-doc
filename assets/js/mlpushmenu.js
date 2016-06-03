@@ -103,6 +103,7 @@
 		},
 		_initEvents : function() {
 			var self = this;
+			self._openMenu();
 
 			// the menu should close if clicking somewhere on the body
 			var bodyClickFn = function( el ) {
@@ -120,11 +121,11 @@
 				else {
 					self._openMenu();
 					// the menu should close if clicking somewhere on the body (excluding clicks on the menu)
-					document.addEventListener( self.eventtype, function( ev ) {
+					/*document.addEventListener( self.eventtype, function( ev ) {
 						if( self.open && !hasParent( ev.target, self.el.id ) ) {
 							bodyClickFn( this );
 						}
-					} );
+					} );*/
 				}
 			} );
 
