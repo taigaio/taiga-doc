@@ -28,7 +28,7 @@ Important notes about **taiga-scripts**
 Requirements
 ~~~~~~~~~~~~
 
-- Freshly installed and updated Ubuntu 14.04
+- Freshly installed and updated Ubuntu 16.04
 - Bash shell
 - Git
 
@@ -36,7 +36,7 @@ Requirements
 Setup server-like environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Make sure you have a fresh and updated Ubuntu 14.04 machine or virtual image:
+Make sure you have a fresh and updated Ubuntu 16.04 machine or virtual image:
 
 [source, txt]
 ----
@@ -54,13 +54,57 @@ This setup is much like the previous one but with a few differences:
 - It does not install services like nginx, as they are only necessary for production
 - It sets all hostnames to localhost to easily run everything on localhost
 
-Make sure you have a fresh and updated Ubuntu 14.04 machine or virtual image:
+Make sure you have a fresh and updated Ubuntu 16.04 machine or virtual image:
 
 [source, txt]
 ----
 $ git clone https://github.com/taigaio/taiga-scripts.git
 $ cd taiga-scripts
 $ bash setup-devel.sh
+----
+
+Upgrade from Ubuntu 16.04 taiga installation to Ubuntu 16.04
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To upgrade from 14.04 to 16.04 you have to follow the official Ubuntu process:
+
+[source, txt]
+----
+$ sudo apt-get install update-manager-core
+$ sudo do-release-upgrade -p
+----
+
+Then you have to upgrade to the new postgres version maintaining the old data:
+[source, txt]
+----
+$ sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
+$ sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
+$ sudo pg_dropcluster 9.5 main --stop
+$ sudo pg_upgradecluster 9.3 main
+$ sudo reboot
+----
+
+Then you have to use the circus service from ubuntu.
+[source, txt]
+----
+$ pip uninstall circus pyzmq
+$ apt-get install circus
+$ cp ~/conf/circus.ini /etc/circus/circusd.conf
+----
+
+Rebuild your virtualenv
+[source, txt]
+----
+$ rmvirtualenv taiga
+$ mkvirtualenv taiga -p /usr/bin/python3.5
+$ cd ~/taiga-back
+$ pip install -r requirements.txt
+----
+
+Reboot the system
+[source, txt]
+----
+$ sudo reboot
 ----
 
 [[setup-taiga-vagrant]]
@@ -94,6 +138,7 @@ Installation
 ----
 git clone https://github.com/taigaio/taiga-vagrant.git
 cd taiga-vagrant
+vagrant plugin install vagrant-vbguest
 vagrant up
 ----
 

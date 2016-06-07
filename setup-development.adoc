@@ -20,7 +20,7 @@ And each one has its own dependencies, at compile time and runtime.
 Before starting
 ---------------
 
-This tutorial assumes that you are using a clean, recently updated, **ubuntu 14.04** image.
+This tutorial assumes that you are using a clean, recently updated, **ubuntu 16.04** image.
 Notes for Debian installations are included at the end of the appropriate sections.
 
 **Taiga installation must be done with a "normal" user, never with root.**
@@ -53,8 +53,8 @@ Install postgresql:
 
 [source,bash]
 ----
-sudo apt-get install -y postgresql-9.3 postgresql-contrib-9.3
-sudo apt-get install -y postgresql-doc-9.3 postgresql-server-dev-9.3
+sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
+sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
 ----
 
 And setup the initial user, database, and permissions:
@@ -63,7 +63,7 @@ And setup the initial user, database, and permissions:
 ----
 sudo -u postgres psql -c "CREATE ROLE taiga LOGIN PASSWORD 'changeme';"
 sudo -u postgres createdb taiga -O taiga
-echo 'local all taiga peer' | sudo -u postgres tee -a /etc/postgresql/9.3/main/pg_hba.conf > /dev/null
+echo 'local all taiga peer' | sudo -u postgres tee -a /etc/postgresql/9.5/main/pg_hba.conf > /dev/null
 sudo service postgresql reload
 ----
 
@@ -100,7 +100,7 @@ git checkout stable
 .Create a new virtualenv named **taiga**
 [source,bash]
 ----
-mkvirtualenv -p /usr/bin/python3.4 taiga
+mkvirtualenv -p /usr/bin/python3.5 taiga
 ----
 
 .Install dependencies

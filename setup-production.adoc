@@ -24,7 +24,7 @@ for small/medium production environments.
 Before starting
 ---------------
 
-This tutorial assumes that you are using a clean, recently updated, **ubuntu 14.04** image.
+This tutorial assumes that you are using a clean, recently updated, **ubuntu 16.04** image.
 
 Due the nature of frontend application, you should know that this service will be used
 through the domain/public-ip. This is because, the frontend application will run on your browser
@@ -62,14 +62,14 @@ sudo apt-get install -y automake libtool libffi-dev curl git tmux gettext
 Setup a database
 ~~~~~~~~~~~~~~~~
 
-**taiga-back** also requires postgresql (>= 9.3) as a database
+**taiga-back** also requires postgresql (>= 9.4) as a database
 
 Install postgresql:
 
 [source,bash]
 ----
-sudo apt-get install -y postgresql-9.3 postgresql-contrib-9.3
-sudo apt-get install -y postgresql-doc-9.3 postgresql-server-dev-9.3
+sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
+sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
 ----
 
 And setup the initial user and database:
@@ -113,7 +113,7 @@ git checkout stable
 .Create new virtualenv named **taiga**
 [source,bash]
 ----
-mkvirtualenv -p /usr/bin/python3.4 taiga
+mkvirtualenv -p /usr/bin/python3.5 taiga
 ----
 
 .Install dependencies
@@ -234,7 +234,7 @@ http://docs.celeryproject.org/en/latest/index.html
 
 Once you have configured celery on Taiga, you have to add celery to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
 
-.Taiga celery configuration block for circus on ~/conf/circus.ini
+.Taiga celery configuration block for circus on /etc/circus/conf.d/taiga-celery.ini
 [source,ini]
 ----
 [watcher:taiga-celery]
@@ -383,7 +383,7 @@ Next, your 'secret' in your `config.json` key should be the same as your "SECRET
 
 Now you have to add taiga-events to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
 
-.Taiga taiga-events configuration block for circus on ~/conf/circus.ini
+.Taiga taiga-events configuration block for circus on /etc/circus/conf.d/taiga-events.ini
 [source,ini]
 ----
 [watcher:taiga-events]
@@ -461,25 +461,12 @@ restarting processes if something goes wrong, and starting processes on system b
 .Install circus
 [source,bash]
 ----
-sudo pip2 install circus
+sudo apt-get install circus
 ----
 
-.Create conf folder if it doesn't exist
-[source,bash]
-----
-mkdir -p ~/conf/
-----
-
-.Initial configuration for circus on ~/conf/circus.ini
-
+.Initial taiga configuration for circus on /etc/circus/conf.d/taiga.ini
 [source,ini]
 ----
-[circus]
-check_delay = 5
-endpoint = tcp://127.0.0.1:5555
-pubsub_endpoint = tcp://127.0.0.1:5556
-statsd = true
-
 [watcher:taiga]
 working_dir = /home/taiga/taiga-back
 cmd = gunicorn
@@ -510,7 +497,8 @@ PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.4/site-packages
 [NOTE]
 ====
 
-Circus stats can generate a high cpu usage without any load you can set statsd to false if you don't need them.
+Circus stats can generate a high cpu usage without any load you can set statsd
+in /etc/circus/circusd.conf to false if you don't need them.
 
 Taiga stores logs on the user home, making them available and immediately accessible when
 you enter a machine. To make everything work, make sure you have the logs directory
@@ -519,21 +507,11 @@ created.
 You can create it with: `mkdir -p ~/logs`
 ====
 
-.Setup circus for start on boot putting this on `/etc/init/circus.conf`
-[source,text]
-----
-start on filesystem and net-device-up IFACE=lo
-stop on runlevel [016]
-
-respawn
-exec /usr/local/bin/circusd /home/taiga/conf/circus.ini
-----
-
-And finally start circus:
+And finally restart circus:
 
 [source,bash]
 ----
-sudo service circus start
+sudo service circus restart
 ----
 
 
@@ -752,7 +730,7 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 .Restart circus after updating the configuration
 [source,bash]
 ----
-sudo service circus restart
+sudo service circusd restart
 ----
 
 .Update ~/taiga-front-dist/dist/conf.json
