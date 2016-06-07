@@ -14,6 +14,7 @@
     "full_name": "Beta testing",
     "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
     "username": "beta.tester",
-    "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80"
+    "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+    "gravatar_url": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80"
 }
 ----
