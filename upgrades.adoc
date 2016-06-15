@@ -100,4 +100,12 @@ Follow the default process.
 
 Follow the default process.
 
-The migration could take a long time if you have a large database: now a new permissions has been included to allow to add comments instead of use `modify_*` for this purpose.
+The migration could take a long time if you have a large database: now a new permissions has been included to allow to add comments instead of use the __modify object permission__ for this purpose.
+
+Now project templates can be sortered and we've added a new permission to allow users to add coments. if you want to apply this corrections you can reload the fixtures.
+
+----
+cd taiga-back
+workon taiga
+python manage.py loaddata initial_project_templates --traceback
+----
