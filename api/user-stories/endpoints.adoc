@@ -52,6 +52,10 @@
 | POST
 | link:#user-stories-bulk-udate-milestone[Update user stories sprint in bulk mode]
 
+| /api/v1/userstories/filters_data?project=\{projectId}
+| GET
+| link:#user-stories-get-filters-data[Get filters data]
+
 | /api/v1/userstories/\{userStoryId}/upvote
 | POST
 | link:#user-stories-upvote[Add star to a user story]

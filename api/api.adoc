@@ -341,10 +341,6 @@ include::projects/stats-response.adoc[]
 ===  Project issue stats detail
 include::projects/issues-stats-response.adoc[]
 
-[[object-project-issue-filters-data-detail]]
-===  Project issue filters data detail
-include::projects/issue-filters-data-response.adoc[]
-
 [[object-project-tags-colors-detail]]
 ===  Project tag colors data detail
 include::projects/tags-colors-response.adoc[]
@@ -389,6 +385,10 @@ include::user-stories/get-detail-response.adoc[]
 === User story detail (LIST)
 include::user-stories/list-detail-response.adoc[]
 
+[[object-userstory-filters-data]]
+=== Issue filters data detail
+include::user-stories/get-filters-data-response.adoc[]
+
 [[object-userstory-voter-detail]]
 ===  User story voter detail
 include::user-stories/voter-detail-response.adoc[]
@@ -424,6 +424,10 @@ include::tasks/get-detail-response.adoc[]
 [[object-task-detail-list]]
 === Task detail (LIST)
 include::tasks/list-detail-response.adoc[]
+
+[[object-task-filters-data]]
+=== Task filters data detail
+include::tasks/get-filters-data-response.adoc[]
 
 [[object-task-voter-detail]]
 ===  Task voter detail
@@ -464,6 +468,10 @@ include::issues/get-detail-response.adoc[]
 [[object-issue-detail-list]]
 === Issue detail (LIST)
 include::issues/list-detail-response.adoc[]
+
+[[object-issue-filters-data]]
+=== Issue filters data detail
+include::issues/get-filters-data-response.adoc[]
 
 [[object-issue-voters-detail]]
 === Issue voters detail

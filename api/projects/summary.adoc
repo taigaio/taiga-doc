@@ -42,10 +42,6 @@ include::../projects/stats.adoc[]
 === Issue stats
 include::../projects/issues-stats.adoc[]
 
-[[projects-issue-filters-data]]
-=== Issue filters data
-include::../projects/issue-filters-data.adoc[]
-
 [[projects-tag-colors]]
 === Tag colors
 include::../projects/tags-colors.adoc[]

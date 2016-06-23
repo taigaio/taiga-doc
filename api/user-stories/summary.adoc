@@ -42,6 +42,10 @@ include::../user-stories/bulk-update-sprint-order.adoc[]
 === Bulk update milestone
 include::../user-stories/bulk-update-milestone.adoc[]
 
+[[user-stories-get-filters-data]]
+=== Filters data
+include::../user-stories/get-filters-data.adoc[]
+
 [[user-stories-upvote]]
 === Vote a user story
 include::../user-stories/upvote.adoc[]
