@@ -22,6 +22,7 @@
     "assigned_to_username": null,
     "assigned_to_full_name": null,
     "assigned_to_photo": null,
+    "assigned_to_gravatar_id": "464bb6d514c3ecece1b87136ceeda1da",
     "is_watcher": false,
     "total_watchers": 2,
     "is_fan": false,

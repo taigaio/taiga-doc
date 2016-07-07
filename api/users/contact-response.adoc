@@ -10,9 +10,9 @@
     "lang": "",
     "timezone": "",
     "is_active": true,
-    "photo": "http//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-    "big_photo": "http//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-    "gravatar_url": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+    "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+    "big_photo": "//media.taiga.io/avatar.png",
+    "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da",
     "roles": [
         "Product Owner"
     ],

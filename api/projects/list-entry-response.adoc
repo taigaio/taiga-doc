@@ -64,8 +64,9 @@
         "id": 33,
         "username": "beta.tester",
         "full_name_display": "Beta Tester",
-        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "big_photo": "//media.taiga.io/avatar.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da",
         "is_active": true
     },
     "i_am_owner": true,
@@ -199,8 +200,9 @@
     "owner": {
         "username": "beta.tester",
         "full_name_display": "Beta Tester",
-        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "big_photo": "//media.taiga.io/avatar.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da",
         "is_active": true
     },
     "i_am_owner": true,
@@ -303,8 +305,9 @@
         "id": 33,
         "username": "beta.tester",
         "full_name_display": "Beta Tester",
-        "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-        "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "big_photo": "//media.taiga.io/avatar.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da",
         "is_active": true
     },
     "i_am_owner": true,

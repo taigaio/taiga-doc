@@ -12,9 +12,9 @@
     "timezone": "",
     "id": 7,
     "full_name": "Beta testing",
-    "photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
     "username": "beta.tester",
-    "big_photo": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80",
-    "gravatar_url": "//www.gravatar.com/avatar/4648b6d514c3ecece1b87136ceeda1d1?size=80"
+    "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+    "big_photo": "//media.taiga.io/avatar.png",
+    "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
 }
 ----
