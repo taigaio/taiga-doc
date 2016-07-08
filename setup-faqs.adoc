@@ -23,6 +23,27 @@ And finally reload the backend config with: `circusctl reload taiga`
 
 
 
+[[restrict-emails-to-domain]]
+How can I restrict registration to a concrete domain?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can restrict the usage of the platform to a set of valid email domains, so
+this allows you to restrict the registration to users that have a valid company
+email account.
+
+To do this you should update the `USER_EMAIL_ALLOWED_DOMAINS` on your
+`settings/local.py` and add the list of valid domains, for example, if you want
+to allow registrations only from `mycompany.com` and `mycustomer.com`, y can
+set it as:
+
+[source,python]
+----
+USER_EMAIL_ALLOWED_DOMAINS = ["mycompany.com", "mycustomer.com"]
+----
+
+And finally reload the backend config with: `circusctl reload taiga`
+
+
 [[faq-restart-backend]]
 How can I restart the backend application?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
