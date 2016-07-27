@@ -83,7 +83,7 @@ and common bugs].
 
 === Upgrades
 
-Instructions on link:upgrades.html[how to upgrade your Tainga instance].
+Instructions on link:upgrades.html[how to upgrade your Taiga instance].
 
 
 [[how-to-contribute]]
