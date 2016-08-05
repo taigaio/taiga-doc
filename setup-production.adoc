@@ -379,6 +379,8 @@ cp config.example.json config.json
 }
 ----
 
+Next, your 'secret' in your `config.json` key should be the same as your "SECRET_KEY" in `~/taiga-back/settings/local.py`
+
 Now you have to add taiga-events to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
 
 .Taiga taiga-events configuration block for circus on ~/conf/circus.ini
