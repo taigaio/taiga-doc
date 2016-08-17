@@ -3,3 +3,5 @@
 *~
 dist/
 Gemfile.lock
+*.pyc
+__pycache__
