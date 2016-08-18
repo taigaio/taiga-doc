@@ -22,6 +22,25 @@ Confirm that `Gemfile` is in the base `taiga-doc` directory and then perform the
     $ bundle
     $ asciidoctor -v // should return Asciidoctor 1.5.1 ...
 
+### (Optional) Regenerating curls and json responses
+
+Taiga doc include a django app that help us to generate the curl commands and
+the json responses from the api. To use it, you have to activate your
+taiga-back virtualenv, install the `generate_api_documents`, add it to your
+taiga settings installed apps, regenerate the taiga-back database with the
+sample data, and finally run the `generate_api_examples` django command:
+
+    $ workon taiga-back
+    $ cd generate_api_documents_app
+    $ python setup.py install
+    $ cd $TAIGA_BACK_DIRECTORY
+    $ bash regenerate.sh
+    $ python manage.py generate_api_examples
+
+After that, you have to copy the contente generated in the output directory to
+the api/generated/ directory in taiga-doc. After that, you can rebuild your
+documentation running `make`.
+
 ### (Optional) Setup live preview in browser
 
 > _Prerequisite: Initial environment above must be setup and working_
