@@ -1,12 +1,6 @@
 To get the user voted content send a GET request specifying the user id in the url
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/users/1/voted
-----
+include::../generated/users-voted-cmd.adoc[]
 
 The HTTP response is a 200 OK and the response body is a list of JSON link:#object-voted-detail[voted detail object]
 
@@ -15,10 +9,4 @@ The results can be filtered using the following parameters:
 - *type*: of the content. Possible values: userstory, task and issue
 - *q*: text to search in the subject of the element
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/users/1/liked?type=userstory&q=test
-----
+include::../generated/users-filtered-liked-cmd.adoc[]

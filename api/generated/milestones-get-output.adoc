@@ -1,0 +1,397 @@
+[source,json]
+----
+{
+    "closed": false,
+    "closed_points": 41.0,
+    "created_date": "2016-06-23T10:38:21.780Z",
+    "disponibility": 0.0,
+    "estimated_finish": "2016-07-08",
+    "estimated_start": "2016-06-23",
+    "id": 1,
+    "is_watcher": false,
+    "modified_date": "2016-08-17T10:45:34.666Z",
+    "name": "Sprint 2",
+    "order": 10,
+    "owner": 7,
+    "project": 1,
+    "slug": "sprint-2016-6-23",
+    "total_points": 141.5,
+    "total_watchers": 0,
+    "user_stories": [
+        {
+            "assigned_to": 15,
+            "assigned_to_extra_info": {
+                "big_photo": null,
+                "full_name_display": "Catalina Roman",
+                "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+                "id": 15,
+                "is_active": true,
+                "photo": null,
+                "username": "user9"
+            },
+            "attachments": [],
+            "backlog_order": 10,
+            "blocked_note": "",
+            "client_requirement": false,
+            "comment": "",
+            "created_date": "2016-08-17T10:38:21.817Z",
+            "external_reference": null,
+            "finish_date": "2016-08-17T10:38:22.220Z",
+            "generated_from_issue": null,
+            "id": 1,
+            "is_blocked": false,
+            "is_closed": true,
+            "is_voter": false,
+            "is_watcher": false,
+            "kanban_order": 10,
+            "milestone": 1,
+            "milestone_name": "Sprint 2",
+            "milestone_slug": "sprint-2016-6-23",
+            "modified_date": "2016-08-17T10:44:57.275Z",
+            "origin_issue": null,
+            "owner": 10,
+            "owner_extra_info": {
+                "big_photo": null,
+                "full_name_display": "Marta Carmona",
+                "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+                "id": 10,
+                "is_active": true,
+                "photo": null,
+                "username": "user4"
+            },
+            "points": {
+                "1": 8,
+                "2": 5,
+                "3": 8,
+                "4": 7
+            },
+            "project": 1,
+            "ref": 1,
+            "sprint_order": 10,
+            "status": 3,
+            "status_extra_info": {
+                "color": "#ff9900",
+                "name": "In progress"
+            },
+            "subject": "Patching subject",
+            "tags": [
+                [
+                    "aspernatur",
+                    null
+                ],
+                [
+                    "perspiciatis",
+                    null
+                ]
+            ],
+            "tasks": [],
+            "team_requirement": false,
+            "total_points": 23.0,
+            "total_voters": 2,
+            "total_watchers": 8,
+            "tribe_gig": null,
+            "version": 2,
+            "watchers": [
+                2,
+                8,
+                5,
+                12,
+                4,
+                10,
+                3,
+                6
+            ]
+        },
+        {
+            "assigned_to": null,
+            "assigned_to_extra_info": null,
+            "attachments": [],
+            "backlog_order": 15,
+            "blocked_note": "",
+            "client_requirement": false,
+            "comment": "",
+            "created_date": "2016-08-17T10:38:22.493Z",
+            "external_reference": null,
+            "finish_date": null,
+            "generated_from_issue": null,
+            "id": 2,
+            "is_blocked": false,
+            "is_closed": false,
+            "is_voter": false,
+            "is_watcher": false,
+            "kanban_order": 15,
+            "milestone": 1,
+            "milestone_name": "Sprint 2",
+            "milestone_slug": "sprint-2016-6-23",
+            "modified_date": "2016-08-17T10:38:22.681Z",
+            "origin_issue": null,
+            "owner": 15,
+            "owner_extra_info": {
+                "big_photo": null,
+                "full_name_display": "Catalina Roman",
+                "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+                "id": 15,
+                "is_active": true,
+                "photo": null,
+                "username": "user9"
+            },
+            "points": {
+                "1": 6,
+                "2": 2,
+                "3": 12,
+                "4": 10
+            },
+            "project": 1,
+            "ref": 3,
+            "sprint_order": 15,
+            "status": 4,
+            "status_extra_info": {
+                "color": "#fcc000",
+                "name": "Ready for test"
+            },
+            "subject": "Add tests for bulk operations",
+            "tags": [
+                [
+                    "sequi",
+                    null
+                ]
+            ],
+            "tasks": [],
+            "team_requirement": false,
+            "total_points": 56.0,
+            "total_voters": 6,
+            "total_watchers": 0,
+            "tribe_gig": null,
+            "version": 1,
+            "watchers": []
+        },
+        {
+            "assigned_to": 11,
+            "assigned_to_extra_info": {
+                "big_photo": null,
+                "full_name_display": "German Benitez",
+                "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+                "id": 11,
+                "is_active": true,
+                "photo": null,
+                "username": "user5"
+            },
+            "attachments": [],
+            "backlog_order": 10000,
+            "blocked_note": "",
+            "client_requirement": false,
+            "comment": "",
+            "created_date": "2016-08-17T10:38:23.830Z",
+            "external_reference": null,
+            "finish_date": null,
+            "generated_from_issue": null,
+            "id": 3,
+            "is_blocked": false,
+            "is_closed": false,
+            "is_voter": false,
+            "is_watcher": false,
+            "kanban_order": 10000,
+            "milestone": 1,
+            "milestone_name": "Sprint 2",
+            "milestone_slug": "sprint-2016-6-23",
+            "modified_date": "2016-08-17T10:38:24.011Z",
+            "origin_issue": null,
+            "owner": 5,
+            "owner_extra_info": {
+                "big_photo": null,
+                "full_name_display": "Administrator",
+                "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+                "id": 5,
+                "is_active": true,
+                "photo": null,
+                "username": "admin"
+            },
+            "points": {
+                "1": 6,
+                "2": 10,
+                "3": 8,
+                "4": 5
+            },
+            "project": 1,
+            "ref": 8,
+            "sprint_order": 10001,
+            "status": 4,
+            "status_extra_info": {
+                "color": "#fcc000",
+                "name": "Ready for test"
+            },
+            "subject": "Lighttpd support",
+            "tags": [
+                [
+                    "placeat",
+                    null
+                ],
+                [
+                    "aut",
+                    null
+                ]
+            ],
+            "tasks": [],
+            "team_requirement": false,
+            "total_points": 26.0,
+            "total_voters": 1,
+            "total_watchers": 2,
+            "tribe_gig": null,
+            "version": 1,
+            "watchers": [
+                4,
+                5
+            ]
+        },
+        {
+            "assigned_to": null,
+            "assigned_to_extra_info": null,
+            "attachments": [],
+            "backlog_order": 10000,
+            "blocked_note": "",
+            "client_requirement": false,
+            "comment": "",
+            "created_date": "2016-08-17T10:38:25.471Z",
+            "external_reference": null,
+            "finish_date": null,
+            "generated_from_issue": null,
+            "id": 4,
+            "is_blocked": false,
+            "is_closed": false,
+            "is_voter": false,
+            "is_watcher": false,
+            "kanban_order": 10000,
+            "milestone": 1,
+            "milestone_name": "Sprint 2",
+            "milestone_slug": "sprint-2016-6-23",
+            "modified_date": "2016-08-17T10:38:25.646Z",
+            "origin_issue": null,
+            "owner": 14,
+            "owner_extra_info": {
+                "big_photo": null,
+                "full_name_display": "Andrea Fernandez",
+                "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+                "id": 14,
+                "is_active": true,
+                "photo": null,
+                "username": "user8"
+            },
+            "points": {
+                "1": 7,
+                "2": 10,
+                "3": 3,
+                "4": 2
+            },
+            "project": 1,
+            "ref": 14,
+            "sprint_order": 10001,
+            "status": 2,
+            "status_extra_info": {
+                "color": "#ff8a84",
+                "name": "Ready"
+            },
+            "subject": "Added file copying and processing of images (resizing)",
+            "tags": [
+                [
+                    "molestias",
+                    null
+                ],
+                [
+                    "dolor",
+                    null
+                ],
+                [
+                    "voluptate",
+                    null
+                ]
+            ],
+            "tasks": [],
+            "team_requirement": false,
+            "total_points": 18.5,
+            "total_voters": 3,
+            "total_watchers": 7,
+            "tribe_gig": null,
+            "version": 1,
+            "watchers": [
+                4,
+                2,
+                11,
+                6,
+                1,
+                13,
+                14
+            ]
+        },
+        {
+            "assigned_to": null,
+            "assigned_to_extra_info": null,
+            "attachments": [],
+            "backlog_order": 10000,
+            "blocked_note": "",
+            "client_requirement": false,
+            "comment": "",
+            "created_date": "2016-08-17T10:38:26.753Z",
+            "external_reference": null,
+            "finish_date": "2016-08-17T10:38:27.034Z",
+            "generated_from_issue": null,
+            "id": 5,
+            "is_blocked": false,
+            "is_closed": true,
+            "is_voter": true,
+            "is_watcher": false,
+            "kanban_order": 10000,
+            "milestone": 1,
+            "milestone_name": "Sprint 2",
+            "milestone_slug": "sprint-2016-6-23",
+            "modified_date": "2016-08-17T10:38:26.895Z",
+            "origin_issue": null,
+            "owner": 15,
+            "owner_extra_info": {
+                "big_photo": null,
+                "full_name_display": "Catalina Roman",
+                "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+                "id": 15,
+                "is_active": true,
+                "photo": null,
+                "username": "user9"
+            },
+            "points": {
+                "1": 6,
+                "2": 6,
+                "3": 5,
+                "4": 9
+            },
+            "project": 1,
+            "ref": 19,
+            "sprint_order": 10001,
+            "status": 3,
+            "status_extra_info": {
+                "color": "#ff9900",
+                "name": "In progress"
+            },
+            "subject": "get_actions() does not check for 'delete_selected' in actions",
+            "tags": [
+                [
+                    "a",
+                    null
+                ]
+            ],
+            "tasks": [],
+            "team_requirement": false,
+            "total_points": 18.0,
+            "total_voters": 6,
+            "total_watchers": 5,
+            "tribe_gig": null,
+            "version": 1,
+            "watchers": [
+                1,
+                9,
+                14,
+                4,
+                12
+            ]
+        }
+    ],
+    "watchers": []
+}
+----

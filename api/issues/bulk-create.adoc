@@ -5,17 +5,7 @@ To create multiple issues at the same time send a POST request with the followin
 - *bulk_issues*: issue subjects, one per line
 
 
-[source,bash]
-----
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "project_id": 3,
-          "bulk_issues": "Issue 1 \n Issue 2 \n Issue 3"
-      }' \
-  https://api.taiga.io/api/v1/issues/bulk_create
-----
+include::../generated/issues-bulk-create-cmd.adoc[]
 
 
 When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON list of link:#object-issue-detail[issue detail object]

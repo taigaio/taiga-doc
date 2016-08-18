@@ -1,0 +1,20 @@
+[source,json]
+----
+{
+    "attached_file": "attachments/3/0/9/4/a33c8460e711a0409a9147e962234ad6c8a7a28150a2da6cb69ea64cef4a/sample_attachment_1.txt",
+    "created_date": "2016-08-17T10:38:21.901Z",
+    "description": "patching description",
+    "id": 1,
+    "is_deprecated": false,
+    "modified_date": "2016-08-17T10:44:58.676Z",
+    "name": "sample_attachment_1.txt",
+    "object_id": 1,
+    "order": 1,
+    "owner": 14,
+    "project": 1,
+    "sha1": "e9913a16efd01bf9b44d712cf601802fdc8869ea",
+    "size": 289,
+    "thumbnail_card_url": null,
+    "url": "http://localhost:8000/media/attachments/3/0/9/4/a33c8460e711a0409a9147e962234ad6c8a7a28150a2da6cb69ea64cef4a/sample_attachment_1.txt"
+}
+----

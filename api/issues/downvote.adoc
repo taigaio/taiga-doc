@@ -1,10 +1,5 @@
 To remove a vote from an issue send a POST specifying the issue id in the url
 
-[source,bash]
-----
-curl -X POST \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/issues/1/downvote
-----
+include::../generated/issues-downvote-cmd.adoc[]
 
 When remove of the vote succeeded, the HTTP response is a 200 OK with an empty body response

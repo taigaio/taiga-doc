@@ -1,0 +1,20 @@
+[source,json]
+----
+{
+    "attached_file": "attachments/4/2/f/6/91405b90eddb1b7c117f2969824832d7a8f9ce5562b2e342687cd8ee977e/sample_attachment_3.txt",
+    "created_date": "2016-08-17T10:38:55.835Z",
+    "description": "officia eos exercitationem iste commodi ad sint explicabo dignissimos voluptatum molestias",
+    "id": 292,
+    "is_deprecated": false,
+    "modified_date": "2016-08-17T10:45:31.839Z",
+    "name": "sample_attachment_3.txt",
+    "object_id": 52,
+    "order": 1,
+    "owner": 6,
+    "project": 2,
+    "sha1": "da2631d805f12a1b533738a0912e9b9c2261dbef",
+    "size": 1178,
+    "thumbnail_card_url": null,
+    "url": "http://localhost:8000/media/attachments/4/2/f/6/91405b90eddb1b7c117f2969824832d7a8f9ce5562b2e342687cd8ee977e/sample_attachment_3.txt"
+}
+----

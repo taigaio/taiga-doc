@@ -1,12 +1,6 @@
 To list a user timeline send a GET request with the following parameters:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/timeline/user/1
-----
+include::../generated/users-timeline-get-cmd.adoc[]
 
 This API call returns only actions directly executed by the specified user.
 

@@ -1,0 +1,9 @@
+[source,json]
+----
+{
+    "project": 1,
+    "task": 1,
+    "us": 1,
+    "wikipage": 1
+}
+----

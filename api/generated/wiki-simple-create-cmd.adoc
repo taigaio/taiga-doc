@@ -1,0 +1,12 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "content": "Lorem ipsum dolor.",
+        "project": 1,
+        "slug": "new-simple-page"
+    }' \
+http://localhost:8000/api/v1/wiki
+----

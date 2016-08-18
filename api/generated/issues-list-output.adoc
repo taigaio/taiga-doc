@@ -1,0 +1,85 @@
+[source,json]
+----
+{
+    "assigned_to": null,
+    "assigned_to_extra_info": null,
+    "created_date": "2016-08-04T11:08:19Z",
+    "external_reference": null,
+    "finished_date": null,
+    "id": 115,
+    "is_closed": false,
+    "is_voter": false,
+    "is_watcher": false,
+    "milestone": null,
+    "modified_date": "2016-08-04T11:08:19Z",
+    "owner": 13,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Alvaro Molina",
+        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+        "id": 13,
+        "is_active": true,
+        "photo": null,
+        "username": "user7"
+    },
+    "priority": 23,
+    "project": 8,
+    "ref": 59,
+    "severity": 38,
+    "status": 58,
+    "status_extra_info": {
+        "color": "#666666",
+        "name": "Postponed"
+    },
+    "subject": "Exception is thrown if trying to add a folder with existing name",
+    "tags": [
+        [
+            "excepturi",
+            null
+        ],
+        [
+            "quidem",
+            "#ae6519"
+        ],
+        [
+            "adipisci",
+            null
+        ],
+        [
+            "nisi",
+            null
+        ],
+        [
+            "voluptatum",
+            "#02d22f"
+        ],
+        [
+            "alias",
+            "#cdb6fd"
+        ],
+        [
+            "vero",
+            "#74e191"
+        ],
+        [
+            "asperiores",
+            null
+        ],
+        [
+            "quibusdam",
+            null
+        ],
+        [
+            "omnis",
+            "#fc9548"
+        ]
+    ],
+    "total_voters": 0,
+    "total_watchers": 1,
+    "type": 23,
+    "version": 1,
+    "watchers": [
+        13
+    ]
+}
+----

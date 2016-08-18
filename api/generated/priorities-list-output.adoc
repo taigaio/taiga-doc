@@ -1,0 +1,187 @@
+[source,json]
+----
+[
+    {
+        "color": "#666666",
+        "id": 22,
+        "name": "Low",
+        "order": 1,
+        "project": 8
+    },
+    {
+        "color": "#669933",
+        "id": 23,
+        "name": "Normal",
+        "order": 3,
+        "project": 8
+    },
+    {
+        "color": "#CC0000",
+        "id": 24,
+        "name": "High",
+        "order": 5,
+        "project": 8
+    },
+    {
+        "color": "#CC0000",
+        "id": 3,
+        "name": "High",
+        "order": 5,
+        "project": 1
+    },
+    {
+        "color": "#669933",
+        "id": 2,
+        "name": "Normal",
+        "order": 5,
+        "project": 1
+    },
+    {
+        "color": "#AAAAAA",
+        "id": 25,
+        "name": "New priority",
+        "order": 8,
+        "project": 1
+    },
+    {
+        "color": "#999999",
+        "id": 26,
+        "name": "New priority name",
+        "order": 10,
+        "project": 1
+    },
+    {
+        "color": "#666666",
+        "id": 1,
+        "name": "Patch name",
+        "order": 10,
+        "project": 1
+    },
+    {
+        "color": "#666666",
+        "id": 4,
+        "name": "Low",
+        "order": 1,
+        "project": 2
+    },
+    {
+        "color": "#669933",
+        "id": 5,
+        "name": "Normal",
+        "order": 3,
+        "project": 2
+    },
+    {
+        "color": "#CC0000",
+        "id": 6,
+        "name": "High",
+        "order": 5,
+        "project": 2
+    },
+    {
+        "color": "#666666",
+        "id": 7,
+        "name": "Low",
+        "order": 1,
+        "project": 3
+    },
+    {
+        "color": "#669933",
+        "id": 8,
+        "name": "Normal",
+        "order": 3,
+        "project": 3
+    },
+    {
+        "color": "#CC0000",
+        "id": 9,
+        "name": "High",
+        "order": 5,
+        "project": 3
+    },
+    {
+        "color": "#666666",
+        "id": 10,
+        "name": "Low",
+        "order": 1,
+        "project": 4
+    },
+    {
+        "color": "#669933",
+        "id": 11,
+        "name": "Normal",
+        "order": 3,
+        "project": 4
+    },
+    {
+        "color": "#CC0000",
+        "id": 12,
+        "name": "High",
+        "order": 5,
+        "project": 4
+    },
+    {
+        "color": "#666666",
+        "id": 13,
+        "name": "Low",
+        "order": 1,
+        "project": 5
+    },
+    {
+        "color": "#669933",
+        "id": 14,
+        "name": "Normal",
+        "order": 3,
+        "project": 5
+    },
+    {
+        "color": "#CC0000",
+        "id": 15,
+        "name": "High",
+        "order": 5,
+        "project": 5
+    },
+    {
+        "color": "#666666",
+        "id": 16,
+        "name": "Low",
+        "order": 1,
+        "project": 6
+    },
+    {
+        "color": "#669933",
+        "id": 17,
+        "name": "Normal",
+        "order": 3,
+        "project": 6
+    },
+    {
+        "color": "#CC0000",
+        "id": 18,
+        "name": "High",
+        "order": 5,
+        "project": 6
+    },
+    {
+        "color": "#666666",
+        "id": 19,
+        "name": "Low",
+        "order": 1,
+        "project": 7
+    },
+    {
+        "color": "#669933",
+        "id": 20,
+        "name": "Normal",
+        "order": 3,
+        "project": 7
+    },
+    {
+        "color": "#CC0000",
+        "id": 21,
+        "name": "High",
+        "order": 5,
+        "project": 7
+    }
+]
+----

@@ -1,0 +1,20 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "bulk_stories": [
+            {
+                "order": 10,
+                "us_id": 1
+            },
+            {
+                "order": 15,
+                "us_id": 2
+            }
+        ],
+        "project_id": 1
+    }' \
+http://localhost:8000/api/v1/userstories/bulk_update_backlog_order
+----

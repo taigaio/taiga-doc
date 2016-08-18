@@ -5,3 +5,6 @@ dist/
 Gemfile.lock
 *.pyc
 __pycache__
+.eggs
+*.egg-info
+generate_api_documents_app/build

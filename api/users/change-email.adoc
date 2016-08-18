@@ -1,14 +1,5 @@
 To change your user email send a POST with the following data
 
-[source,bash]
-----
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "email_token": "'${EMAIL_TOKEN}'"
-      }' \
-  https://api.taiga.io/api/v1/users/change_email
-----
+include::../generated/users-change-email-cmd.adoc[]
 
 When the change is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-user-detail[user detail object]

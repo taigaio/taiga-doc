@@ -1,0 +1,478 @@
+[source,json]
+----
+{
+    "created_date": "2014-04-22T14:48:43.596Z",
+    "default_options": {
+        "issue_status": "New",
+        "issue_type": "Bug",
+        "points": "?",
+        "priority": "Normal",
+        "severity": "Normal",
+        "task_status": "New",
+        "us_status": "New"
+    },
+    "default_owner_role": "product-owner",
+    "description": "New description",
+    "id": 1,
+    "is_backlog_activated": true,
+    "is_issues_activated": true,
+    "is_kanban_activated": false,
+    "is_wiki_activated": true,
+    "issue_statuses": [
+        {
+            "color": "#8C2318",
+            "is_closed": false,
+            "name": "New",
+            "order": 1,
+            "slug": "new"
+        },
+        {
+            "color": "#5E8C6A",
+            "is_closed": false,
+            "name": "In progress",
+            "order": 2,
+            "slug": "in-progress"
+        },
+        {
+            "color": "#88A65E",
+            "is_closed": true,
+            "name": "Ready for test",
+            "order": 3,
+            "slug": "ready-for-test"
+        },
+        {
+            "color": "#BFB35A",
+            "is_closed": true,
+            "name": "Closed",
+            "order": 4,
+            "slug": "closed"
+        },
+        {
+            "color": "#89BAB4",
+            "is_closed": false,
+            "name": "Needs Info",
+            "order": 5,
+            "slug": "needs-info"
+        },
+        {
+            "color": "#CC0000",
+            "is_closed": true,
+            "name": "Rejected",
+            "order": 6,
+            "slug": "rejected"
+        },
+        {
+            "color": "#666666",
+            "is_closed": false,
+            "name": "Postponed",
+            "order": 7,
+            "slug": "posponed"
+        }
+    ],
+    "issue_types": [
+        {
+            "color": "#89BAB4",
+            "name": "Bug",
+            "order": 1
+        },
+        {
+            "color": "#ba89a8",
+            "name": "Question",
+            "order": 2
+        },
+        {
+            "color": "#89a8ba",
+            "name": "Enhancement",
+            "order": 3
+        }
+    ],
+    "modified_date": "2016-08-17T10:45:32.660Z",
+    "name": "Scrum",
+    "order": 1,
+    "points": [
+        {
+            "name": "?",
+            "order": 1,
+            "value": null
+        },
+        {
+            "name": "0",
+            "order": 2,
+            "value": 0.0
+        },
+        {
+            "name": "1/2",
+            "order": 3,
+            "value": 0.5
+        },
+        {
+            "name": "1",
+            "order": 4,
+            "value": 1.0
+        },
+        {
+            "name": "2",
+            "order": 5,
+            "value": 2.0
+        },
+        {
+            "name": "3",
+            "order": 6,
+            "value": 3.0
+        },
+        {
+            "name": "5",
+            "order": 7,
+            "value": 5.0
+        },
+        {
+            "name": "8",
+            "order": 8,
+            "value": 8.0
+        },
+        {
+            "name": "10",
+            "order": 9,
+            "value": 10.0
+        },
+        {
+            "name": "13",
+            "order": 10,
+            "value": 13.0
+        },
+        {
+            "name": "20",
+            "order": 11,
+            "value": 20.0
+        },
+        {
+            "name": "40",
+            "order": 12,
+            "value": 40.0
+        }
+    ],
+    "priorities": [
+        {
+            "color": "#666666",
+            "name": "Low",
+            "order": 1
+        },
+        {
+            "color": "#669933",
+            "name": "Normal",
+            "order": 3
+        },
+        {
+            "color": "#CC0000",
+            "name": "High",
+            "order": 5
+        }
+    ],
+    "roles": [
+        {
+            "computable": true,
+            "name": "UX",
+            "order": 10,
+            "permissions": [
+                "add_issue",
+                "modify_issue",
+                "delete_issue",
+                "view_issues",
+                "add_milestone",
+                "modify_milestone",
+                "delete_milestone",
+                "view_milestones",
+                "view_project",
+                "add_task",
+                "modify_task",
+                "delete_task",
+                "view_tasks",
+                "add_us",
+                "modify_us",
+                "delete_us",
+                "view_us",
+                "add_wiki_page",
+                "modify_wiki_page",
+                "delete_wiki_page",
+                "view_wiki_pages",
+                "add_wiki_link",
+                "delete_wiki_link",
+                "view_wiki_links"
+            ],
+            "slug": "ux"
+        },
+        {
+            "computable": true,
+            "name": "Design",
+            "order": 20,
+            "permissions": [
+                "add_issue",
+                "modify_issue",
+                "delete_issue",
+                "view_issues",
+                "add_milestone",
+                "modify_milestone",
+                "delete_milestone",
+                "view_milestones",
+                "view_project",
+                "add_task",
+                "modify_task",
+                "delete_task",
+                "view_tasks",
+                "add_us",
+                "modify_us",
+                "delete_us",
+                "view_us",
+                "add_wiki_page",
+                "modify_wiki_page",
+                "delete_wiki_page",
+                "view_wiki_pages",
+                "add_wiki_link",
+                "delete_wiki_link",
+                "view_wiki_links"
+            ],
+            "slug": "design"
+        },
+        {
+            "computable": true,
+            "name": "Front",
+            "order": 30,
+            "permissions": [
+                "add_issue",
+                "modify_issue",
+                "delete_issue",
+                "view_issues",
+                "add_milestone",
+                "modify_milestone",
+                "delete_milestone",
+                "view_milestones",
+                "view_project",
+                "add_task",
+                "modify_task",
+                "delete_task",
+                "view_tasks",
+                "add_us",
+                "modify_us",
+                "delete_us",
+                "view_us",
+                "add_wiki_page",
+                "modify_wiki_page",
+                "delete_wiki_page",
+                "view_wiki_pages",
+                "add_wiki_link",
+                "delete_wiki_link",
+                "view_wiki_links"
+            ],
+            "slug": "front"
+        },
+        {
+            "computable": true,
+            "name": "Back",
+            "order": 40,
+            "permissions": [
+                "add_issue",
+                "modify_issue",
+                "delete_issue",
+                "view_issues",
+                "add_milestone",
+                "modify_milestone",
+                "delete_milestone",
+                "view_milestones",
+                "view_project",
+                "add_task",
+                "modify_task",
+                "delete_task",
+                "view_tasks",
+                "add_us",
+                "modify_us",
+                "delete_us",
+                "view_us",
+                "add_wiki_page",
+                "modify_wiki_page",
+                "delete_wiki_page",
+                "view_wiki_pages",
+                "add_wiki_link",
+                "delete_wiki_link",
+                "view_wiki_links"
+            ],
+            "slug": "back"
+        },
+        {
+            "computable": false,
+            "name": "Product Owner",
+            "order": 50,
+            "permissions": [
+                "add_issue",
+                "modify_issue",
+                "delete_issue",
+                "view_issues",
+                "add_milestone",
+                "modify_milestone",
+                "delete_milestone",
+                "view_milestones",
+                "view_project",
+                "add_task",
+                "modify_task",
+                "delete_task",
+                "view_tasks",
+                "add_us",
+                "modify_us",
+                "delete_us",
+                "view_us",
+                "add_wiki_page",
+                "modify_wiki_page",
+                "delete_wiki_page",
+                "view_wiki_pages",
+                "add_wiki_link",
+                "delete_wiki_link",
+                "view_wiki_links"
+            ],
+            "slug": "product-owner"
+        },
+        {
+            "computable": false,
+            "name": "Stakeholder",
+            "order": 60,
+            "permissions": [
+                "add_issue",
+                "modify_issue",
+                "delete_issue",
+                "view_issues",
+                "view_milestones",
+                "view_project",
+                "view_tasks",
+                "view_us",
+                "modify_wiki_page",
+                "view_wiki_pages",
+                "add_wiki_link",
+                "delete_wiki_link",
+                "view_wiki_links"
+            ],
+            "slug": "stakeholder"
+        }
+    ],
+    "severities": [
+        {
+            "color": "#666666",
+            "name": "Wishlist",
+            "order": 1
+        },
+        {
+            "color": "#669933",
+            "name": "Minor",
+            "order": 2
+        },
+        {
+            "color": "#0000FF",
+            "name": "Normal",
+            "order": 3
+        },
+        {
+            "color": "#FFA500",
+            "name": "Important",
+            "order": 4
+        },
+        {
+            "color": "#CC0000",
+            "name": "Critical",
+            "order": 5
+        }
+    ],
+    "slug": "scrum",
+    "task_statuses": [
+        {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "New",
+            "order": 1,
+            "slug": "new"
+        },
+        {
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "In progress",
+            "order": 2,
+            "slug": "in-progress"
+        },
+        {
+            "color": "#ffcc00",
+            "is_closed": true,
+            "name": "Ready for test",
+            "order": 3,
+            "slug": "ready-for-test"
+        },
+        {
+            "color": "#669900",
+            "is_closed": true,
+            "name": "Closed",
+            "order": 4,
+            "slug": "closed"
+        },
+        {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Needs Info",
+            "order": 5,
+            "slug": "needs-info"
+        }
+    ],
+    "us_statuses": [
+        {
+            "color": "#999999",
+            "is_archived": false,
+            "is_closed": false,
+            "name": "New",
+            "order": 1,
+            "slug": "new",
+            "wip_limit": null
+        },
+        {
+            "color": "#ff8a84",
+            "is_archived": false,
+            "is_closed": false,
+            "name": "Ready",
+            "order": 2,
+            "slug": "ready",
+            "wip_limit": null
+        },
+        {
+            "color": "#ff9900",
+            "is_archived": false,
+            "is_closed": false,
+            "name": "In progress",
+            "order": 3,
+            "slug": "in-progress",
+            "wip_limit": null
+        },
+        {
+            "color": "#fcc000",
+            "is_archived": false,
+            "is_closed": false,
+            "name": "Ready for test",
+            "order": 4,
+            "slug": "ready-for-test",
+            "wip_limit": null
+        },
+        {
+            "color": "#669900",
+            "is_archived": false,
+            "is_closed": true,
+            "name": "Done",
+            "order": 5,
+            "slug": "done",
+            "wip_limit": null
+        },
+        {
+            "color": "#5c3566",
+            "is_archived": true,
+            "is_closed": true,
+            "name": "Archived",
+            "order": 6,
+            "slug": "archived",
+            "wip_limit": null
+        }
+    ],
+    "videoconferences": null,
+    "videoconferences_extra_data": ""
+}
+----

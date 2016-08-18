@@ -1,0 +1,30 @@
+[source,json]
+----
+{
+    "auth_token": "eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxNn0:1bZyL8:BhMUJqb3G47iSkginUZuvFrTM9U",
+    "big_photo": null,
+    "bio": "",
+    "color": "#c330f3",
+    "email": "test-register@email.com",
+    "full_name": "test",
+    "full_name_display": "test",
+    "gravatar_id": "1ec29e4d0732b571e9a975e258a7e9b5",
+    "id": 16,
+    "is_active": true,
+    "lang": "",
+    "max_memberships_private_projects": null,
+    "max_memberships_public_projects": null,
+    "max_private_projects": null,
+    "max_public_projects": null,
+    "photo": null,
+    "projects_with_me": [],
+    "roles": [
+        "Front"
+    ],
+    "theme": "",
+    "timezone": "",
+    "total_private_projects": 0,
+    "total_public_projects": 0,
+    "username": "test-username"
+}
+----

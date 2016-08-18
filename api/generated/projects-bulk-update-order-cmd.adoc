@@ -1,0 +1,17 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '[
+        {
+            "order": 10,
+            "project_id": 1
+        },
+        {
+            "order": 15,
+            "project_id": 2
+        }
+    ]' \
+http://localhost:8000/api/v1/projects/bulk_update_order
+----

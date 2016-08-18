@@ -1,0 +1,10 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "comment": "comment edition"
+    }' \
+http://localhost:8000/api/v1/history/userstory/2/edit_comment?id=00000000-0000-0000-0000-000000000000
+----

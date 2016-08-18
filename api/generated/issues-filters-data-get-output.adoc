@@ -1,0 +1,954 @@
+[source,json]
+----
+{
+    "assigned_to": [
+        {
+            "count": 8,
+            "full_name": "",
+            "id": null
+        },
+        {
+            "count": 2,
+            "full_name": "Administrator",
+            "id": 5
+        },
+        {
+            "count": 1,
+            "full_name": "Alba Leon",
+            "id": 8
+        },
+        {
+            "count": 4,
+            "full_name": "Alvaro Molina",
+            "id": 13
+        },
+        {
+            "count": 3,
+            "full_name": "Andrea Fernandez",
+            "id": 14
+        },
+        {
+            "count": 1,
+            "full_name": "Catalina Roman",
+            "id": 15
+        },
+        {
+            "count": 1,
+            "full_name": "Esther Ferrer",
+            "id": 9
+        },
+        {
+            "count": 0,
+            "full_name": "German Benitez",
+            "id": 11
+        },
+        {
+            "count": 4,
+            "full_name": "Marcos Ortiz",
+            "id": 7
+        },
+        {
+            "count": 1,
+            "full_name": "Marta Carmona",
+            "id": 10
+        },
+        {
+            "count": 1,
+            "full_name": "Pilar Herrera",
+            "id": 12
+        },
+        {
+            "count": 2,
+            "full_name": "Silvia Soto",
+            "id": 6
+        },
+        {
+            "count": 0,
+            "full_name": "test",
+            "id": 16
+        }
+    ],
+    "owners": [
+        {
+            "count": 3,
+            "full_name": "Administrator",
+            "id": 5
+        },
+        {
+            "count": 5,
+            "full_name": "Alba Leon",
+            "id": 8
+        },
+        {
+            "count": 3,
+            "full_name": "Alvaro Molina",
+            "id": 13
+        },
+        {
+            "count": 4,
+            "full_name": "Andrea Fernandez",
+            "id": 14
+        },
+        {
+            "count": 1,
+            "full_name": "Esther Ferrer",
+            "id": 9
+        },
+        {
+            "count": 3,
+            "full_name": "Marta Carmona",
+            "id": 10
+        },
+        {
+            "count": 3,
+            "full_name": "Pilar Herrera",
+            "id": 12
+        },
+        {
+            "count": 6,
+            "full_name": "Silvia Soto",
+            "id": 6
+        }
+    ],
+    "priorities": [
+        {
+            "color": "#666666",
+            "count": 8,
+            "id": 1,
+            "name": "Low",
+            "order": 1
+        },
+        {
+            "color": "#669933",
+            "count": 12,
+            "id": 2,
+            "name": "Normal",
+            "order": 3
+        },
+        {
+            "color": "#CC0000",
+            "count": 8,
+            "id": 3,
+            "name": "High",
+            "order": 5
+        }
+    ],
+    "severities": [
+        {
+            "color": "#0000FF",
+            "count": 8,
+            "id": 3,
+            "name": "Normal",
+            "order": 3
+        },
+        {
+            "color": "#FFA500",
+            "count": 4,
+            "id": 4,
+            "name": "Important",
+            "order": 4
+        },
+        {
+            "color": "#CC0000",
+            "count": 7,
+            "id": 5,
+            "name": "Critical",
+            "order": 5
+        },
+        {
+            "color": "#669933",
+            "count": 4,
+            "id": 2,
+            "name": "Minor",
+            "order": 5
+        },
+        {
+            "color": "#AAAAAA",
+            "count": 0,
+            "id": 41,
+            "name": "New severity",
+            "order": 8
+        },
+        {
+            "color": "#666666",
+            "count": 5,
+            "id": 1,
+            "name": "Patch name",
+            "order": 10
+        },
+        {
+            "color": "#999999",
+            "count": 0,
+            "id": 42,
+            "name": "New severity name",
+            "order": 10
+        }
+    ],
+    "statuses": [
+        {
+            "color": "#88A65E",
+            "count": 3,
+            "id": 3,
+            "name": "Ready for test",
+            "order": 3
+        },
+        {
+            "color": "#BFB35A",
+            "count": 3,
+            "id": 4,
+            "name": "Closed",
+            "order": 4
+        },
+        {
+            "color": "#5E8C6A",
+            "count": 7,
+            "id": 2,
+            "name": "In progress",
+            "order": 5
+        },
+        {
+            "color": "#89BAB4",
+            "count": 1,
+            "id": 5,
+            "name": "Needs Info",
+            "order": 5
+        },
+        {
+            "color": "#CC0000",
+            "count": 2,
+            "id": 6,
+            "name": "Rejected",
+            "order": 6
+        },
+        {
+            "color": "#666666",
+            "count": 5,
+            "id": 7,
+            "name": "Postponed",
+            "order": 7
+        },
+        {
+            "color": "#AAAAAA",
+            "count": 0,
+            "id": 50,
+            "name": "New status",
+            "order": 8
+        },
+        {
+            "color": "#8C2318",
+            "count": 7,
+            "id": 1,
+            "name": "Patch status name",
+            "order": 10
+        },
+        {
+            "color": "#999999",
+            "count": 0,
+            "id": 51,
+            "name": "New status name",
+            "order": 10
+        }
+    ],
+    "tags": [
+        {
+            "count": 4,
+            "name": "a"
+        },
+        {
+            "count": 3,
+            "name": "ab"
+        },
+        {
+            "count": 0,
+            "name": "accusamus"
+        },
+        {
+            "count": 0,
+            "name": "accusantium"
+        },
+        {
+            "count": 0,
+            "name": "ad"
+        },
+        {
+            "count": 0,
+            "name": "adipisci"
+        },
+        {
+            "count": 2,
+            "name": "aliquam"
+        },
+        {
+            "count": 1,
+            "name": "aliquid"
+        },
+        {
+            "count": 2,
+            "name": "amet"
+        },
+        {
+            "count": 1,
+            "name": "animi"
+        },
+        {
+            "count": 1,
+            "name": "architecto"
+        },
+        {
+            "count": 0,
+            "name": "asperiores"
+        },
+        {
+            "count": 1,
+            "name": "aspernatur"
+        },
+        {
+            "count": 0,
+            "name": "assumenda"
+        },
+        {
+            "count": 0,
+            "name": "at"
+        },
+        {
+            "count": 1,
+            "name": "aut"
+        },
+        {
+            "count": 0,
+            "name": "autem"
+        },
+        {
+            "count": 1,
+            "name": "beatae"
+        },
+        {
+            "count": 0,
+            "name": "blanditiis"
+        },
+        {
+            "count": 2,
+            "name": "commodi"
+        },
+        {
+            "count": 1,
+            "name": "consectetur"
+        },
+        {
+            "count": 0,
+            "name": "consequatur"
+        },
+        {
+            "count": 0,
+            "name": "consequuntur"
+        },
+        {
+            "count": 1,
+            "name": "corporis"
+        },
+        {
+            "count": 0,
+            "name": "culpa"
+        },
+        {
+            "count": 0,
+            "name": "cum"
+        },
+        {
+            "count": 1,
+            "name": "cupiditate"
+        },
+        {
+            "count": 1,
+            "name": "customer"
+        },
+        {
+            "count": 1,
+            "name": "debitis"
+        },
+        {
+            "count": 0,
+            "name": "delectus"
+        },
+        {
+            "count": 1,
+            "name": "deleniti"
+        },
+        {
+            "count": 2,
+            "name": "deserunt"
+        },
+        {
+            "count": 1,
+            "name": "dicta"
+        },
+        {
+            "count": 0,
+            "name": "dignissimos"
+        },
+        {
+            "count": 0,
+            "name": "distinctio"
+        },
+        {
+            "count": 0,
+            "name": "dolor"
+        },
+        {
+            "count": 1,
+            "name": "dolore"
+        },
+        {
+            "count": 2,
+            "name": "dolorem"
+        },
+        {
+            "count": 1,
+            "name": "doloremque"
+        },
+        {
+            "count": 1,
+            "name": "dolores"
+        },
+        {
+            "count": 0,
+            "name": "doloribus"
+        },
+        {
+            "count": 0,
+            "name": "dolorum"
+        },
+        {
+            "count": 0,
+            "name": "ducimus"
+        },
+        {
+            "count": 0,
+            "name": "ea"
+        },
+        {
+            "count": 2,
+            "name": "eaque"
+        },
+        {
+            "count": 2,
+            "name": "earum"
+        },
+        {
+            "count": 0,
+            "name": "eius"
+        },
+        {
+            "count": 1,
+            "name": "eligendi"
+        },
+        {
+            "count": 1,
+            "name": "enim"
+        },
+        {
+            "count": 1,
+            "name": "eos"
+        },
+        {
+            "count": 0,
+            "name": "error"
+        },
+        {
+            "count": 1,
+            "name": "esse"
+        },
+        {
+            "count": 0,
+            "name": "est"
+        },
+        {
+            "count": 0,
+            "name": "et"
+        },
+        {
+            "count": 1,
+            "name": "eum"
+        },
+        {
+            "count": 1,
+            "name": "eveniet"
+        },
+        {
+            "count": 2,
+            "name": "ex"
+        },
+        {
+            "count": 1,
+            "name": "excepturi"
+        },
+        {
+            "count": 0,
+            "name": "exercitationem"
+        },
+        {
+            "count": 0,
+            "name": "expedita"
+        },
+        {
+            "count": 0,
+            "name": "explicabo"
+        },
+        {
+            "count": 1,
+            "name": "facere"
+        },
+        {
+            "count": 2,
+            "name": "facilis"
+        },
+        {
+            "count": 1,
+            "name": "fugit"
+        },
+        {
+            "count": 1,
+            "name": "harum"
+        },
+        {
+            "count": 0,
+            "name": "hic"
+        },
+        {
+            "count": 1,
+            "name": "id"
+        },
+        {
+            "count": 2,
+            "name": "illo"
+        },
+        {
+            "count": 0,
+            "name": "illum"
+        },
+        {
+            "count": 0,
+            "name": "impedit"
+        },
+        {
+            "count": 0,
+            "name": "in"
+        },
+        {
+            "count": 1,
+            "name": "incidunt"
+        },
+        {
+            "count": 0,
+            "name": "inventore"
+        },
+        {
+            "count": 1,
+            "name": "ipsa"
+        },
+        {
+            "count": 0,
+            "name": "ipsam"
+        },
+        {
+            "count": 1,
+            "name": "ipsum"
+        },
+        {
+            "count": 1,
+            "name": "iste"
+        },
+        {
+            "count": 0,
+            "name": "itaque"
+        },
+        {
+            "count": 2,
+            "name": "iure"
+        },
+        {
+            "count": 1,
+            "name": "iusto"
+        },
+        {
+            "count": 0,
+            "name": "labore"
+        },
+        {
+            "count": 0,
+            "name": "laborum"
+        },
+        {
+            "count": 0,
+            "name": "laudantium"
+        },
+        {
+            "count": 1,
+            "name": "libero"
+        },
+        {
+            "count": 0,
+            "name": "magnam"
+        },
+        {
+            "count": 1,
+            "name": "magni"
+        },
+        {
+            "count": 0,
+            "name": "maiores"
+        },
+        {
+            "count": 1,
+            "name": "maxime"
+        },
+        {
+            "count": 2,
+            "name": "minima"
+        },
+        {
+            "count": 3,
+            "name": "minus"
+        },
+        {
+            "count": 0,
+            "name": "modi"
+        },
+        {
+            "count": 2,
+            "name": "molestiae"
+        },
+        {
+            "count": 1,
+            "name": "molestias"
+        },
+        {
+            "count": 0,
+            "name": "mollitia"
+        },
+        {
+            "count": 1,
+            "name": "nam"
+        },
+        {
+            "count": 0,
+            "name": "natus"
+        },
+        {
+            "count": 3,
+            "name": "necessitatibus"
+        },
+        {
+            "count": 2,
+            "name": "nemo"
+        },
+        {
+            "count": 2,
+            "name": "neque"
+        },
+        {
+            "count": 0,
+            "name": "nesciunt"
+        },
+        {
+            "count": 0,
+            "name": "nihil"
+        },
+        {
+            "count": 3,
+            "name": "nisi"
+        },
+        {
+            "count": 1,
+            "name": "nobis"
+        },
+        {
+            "count": 0,
+            "name": "non"
+        },
+        {
+            "count": 2,
+            "name": "nostrum"
+        },
+        {
+            "count": 1,
+            "name": "nulla"
+        },
+        {
+            "count": 0,
+            "name": "numquam"
+        },
+        {
+            "count": 1,
+            "name": "obcaecati"
+        },
+        {
+            "count": 0,
+            "name": "odio"
+        },
+        {
+            "count": 1,
+            "name": "odit"
+        },
+        {
+            "count": 2,
+            "name": "officia"
+        },
+        {
+            "count": 1,
+            "name": "omnis"
+        },
+        {
+            "count": 1,
+            "name": "pariatur"
+        },
+        {
+            "count": 0,
+            "name": "perferendis"
+        },
+        {
+            "count": 0,
+            "name": "perspiciatis"
+        },
+        {
+            "count": 0,
+            "name": "placeat"
+        },
+        {
+            "count": 3,
+            "name": "porro"
+        },
+        {
+            "count": 1,
+            "name": "praesentium"
+        },
+        {
+            "count": 0,
+            "name": "provident"
+        },
+        {
+            "count": 1,
+            "name": "quae"
+        },
+        {
+            "count": 0,
+            "name": "quaerat"
+        },
+        {
+            "count": 2,
+            "name": "quam"
+        },
+        {
+            "count": 2,
+            "name": "quas"
+        },
+        {
+            "count": 0,
+            "name": "quasi"
+        },
+        {
+            "count": 1,
+            "name": "qui"
+        },
+        {
+            "count": 0,
+            "name": "quia"
+        },
+        {
+            "count": 1,
+            "name": "quibusdam"
+        },
+        {
+            "count": 2,
+            "name": "quidem"
+        },
+        {
+            "count": 4,
+            "name": "quis"
+        },
+        {
+            "count": 1,
+            "name": "quisquam"
+        },
+        {
+            "count": 1,
+            "name": "quo"
+        },
+        {
+            "count": 1,
+            "name": "quod"
+        },
+        {
+            "count": 1,
+            "name": "ratione"
+        },
+        {
+            "count": 3,
+            "name": "recusandae"
+        },
+        {
+            "count": 1,
+            "name": "reiciendis"
+        },
+        {
+            "count": 0,
+            "name": "rem"
+        },
+        {
+            "count": 1,
+            "name": "repellat"
+        },
+        {
+            "count": 1,
+            "name": "repellendus"
+        },
+        {
+            "count": 1,
+            "name": "reprehenderit"
+        },
+        {
+            "count": 1,
+            "name": "repudiandae"
+        },
+        {
+            "count": 2,
+            "name": "rerum"
+        },
+        {
+            "count": 1,
+            "name": "saepe"
+        },
+        {
+            "count": 2,
+            "name": "sapiente"
+        },
+        {
+            "count": 0,
+            "name": "sed"
+        },
+        {
+            "count": 1,
+            "name": "sequi"
+        },
+        {
+            "count": 1,
+            "name": "service catalog"
+        },
+        {
+            "count": 1,
+            "name": "sint"
+        },
+        {
+            "count": 2,
+            "name": "sit"
+        },
+        {
+            "count": 0,
+            "name": "soluta"
+        },
+        {
+            "count": 0,
+            "name": "sunt"
+        },
+        {
+            "count": 1,
+            "name": "suscipit"
+        },
+        {
+            "count": 0,
+            "name": "tempora"
+        },
+        {
+            "count": 2,
+            "name": "tempore"
+        },
+        {
+            "count": 2,
+            "name": "temporibus"
+        },
+        {
+            "count": 1,
+            "name": "totam"
+        },
+        {
+            "count": 1,
+            "name": "ullam"
+        },
+        {
+            "count": 1,
+            "name": "unde"
+        },
+        {
+            "count": 2,
+            "name": "ut"
+        },
+        {
+            "count": 3,
+            "name": "vel"
+        },
+        {
+            "count": 1,
+            "name": "velit"
+        },
+        {
+            "count": 1,
+            "name": "veniam"
+        },
+        {
+            "count": 1,
+            "name": "veritatis"
+        },
+        {
+            "count": 1,
+            "name": "vero"
+        },
+        {
+            "count": 1,
+            "name": "vitae"
+        },
+        {
+            "count": 0,
+            "name": "voluptas"
+        },
+        {
+            "count": 0,
+            "name": "voluptate"
+        },
+        {
+            "count": 0,
+            "name": "voluptatem"
+        },
+        {
+            "count": 0,
+            "name": "voluptates"
+        },
+        {
+            "count": 1,
+            "name": "voluptatibus"
+        }
+    ],
+    "types": [
+        {
+            "color": "#89BAB4",
+            "count": 15,
+            "id": 1,
+            "name": "Bug",
+            "order": 1
+        },
+        {
+            "color": "#ba89a8",
+            "count": 6,
+            "id": 2,
+            "name": "Question",
+            "order": 2
+        },
+        {
+            "color": "#89a8ba",
+            "count": 7,
+            "id": 3,
+            "name": "Enhancement",
+            "order": 3
+        }
+    ]
+}
+----

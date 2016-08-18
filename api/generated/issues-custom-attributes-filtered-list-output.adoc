@@ -1,0 +1,75 @@
+[source,json]
+----
+[
+    {
+        "created_date": "2016-08-17T10:38:21.778Z",
+        "description": "nesciunt non adipisci debitis laudantium impedit similique neque iste cumque hic minus",
+        "id": 2,
+        "modified_date": "2016-08-17T10:38:21.778Z",
+        "name": "consequuntur deserunt velit",
+        "order": 1,
+        "project": 1,
+        "type": "url"
+    },
+    {
+        "created_date": "2016-08-17T10:38:21.777Z",
+        "description": "recusandae ipsa nisi non",
+        "id": 1,
+        "modified_date": "2016-08-17T10:38:21.777Z",
+        "name": "odio officiis",
+        "order": 1,
+        "project": 1,
+        "type": "url"
+    },
+    {
+        "created_date": "2016-08-17T10:38:21.778Z",
+        "description": "rerum ipsum at fugiat laborum neque sit vitae",
+        "id": 3,
+        "modified_date": "2016-08-17T10:38:21.778Z",
+        "name": "velit excepturi",
+        "order": 1,
+        "project": 1,
+        "type": "url"
+    },
+    {
+        "created_date": "2016-08-17T10:38:21.780Z",
+        "description": "nulla laborum autem impedit deserunt delectus",
+        "id": 5,
+        "modified_date": "2016-08-17T10:38:21.780Z",
+        "name": "est",
+        "order": 5,
+        "project": 1,
+        "type": "url"
+    },
+    {
+        "created_date": "2016-08-17T10:45:27.744Z",
+        "description": "Duration in minutes",
+        "id": 41,
+        "modified_date": "2016-08-17T10:45:27.752Z",
+        "name": "Duration 2",
+        "order": 8,
+        "project": 1,
+        "type": "text"
+    },
+    {
+        "created_date": "2016-08-17T10:38:21.779Z",
+        "description": "deleniti sunt consectetur odit voluptate",
+        "id": 4,
+        "modified_date": "2016-08-17T10:45:27.713Z",
+        "name": "Duration 1",
+        "order": 10,
+        "project": 1,
+        "type": "url"
+    },
+    {
+        "created_date": "2016-08-17T10:45:27.784Z",
+        "description": "",
+        "id": 42,
+        "modified_date": "2016-08-17T10:45:27.793Z",
+        "name": "Duration 3",
+        "order": 10000,
+        "project": 1,
+        "type": "text"
+    }
+]
+----

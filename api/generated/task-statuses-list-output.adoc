@@ -1,0 +1,275 @@
+[source,json]
+----
+[
+    {
+        "color": "#999999",
+        "id": 36,
+        "is_closed": false,
+        "name": "New",
+        "order": 1,
+        "project": 8,
+        "slug": "new"
+    },
+    {
+        "color": "#ff9900",
+        "id": 37,
+        "is_closed": false,
+        "name": "In progress",
+        "order": 2,
+        "project": 8,
+        "slug": "in-progress"
+    },
+    {
+        "color": "#ffcc00",
+        "id": 38,
+        "is_closed": true,
+        "name": "Ready for test",
+        "order": 3,
+        "project": 8,
+        "slug": "ready-for-test"
+    },
+    {
+        "color": "#669900",
+        "id": 39,
+        "is_closed": true,
+        "name": "Closed",
+        "order": 4,
+        "project": 8,
+        "slug": "closed"
+    },
+    {
+        "color": "#999999",
+        "id": 40,
+        "is_closed": false,
+        "name": "Needs Info",
+        "order": 5,
+        "project": 8,
+        "slug": "needs-info"
+    },
+    {
+        "color": "#ffcc00",
+        "id": 3,
+        "is_closed": true,
+        "name": "Ready for test",
+        "order": 3,
+        "project": 1,
+        "slug": "ready-for-test"
+    },
+    {
+        "color": "#669900",
+        "id": 4,
+        "is_closed": true,
+        "name": "Closed",
+        "order": 4,
+        "project": 1,
+        "slug": "closed"
+    },
+    {
+        "color": "#ff9900",
+        "id": 2,
+        "is_closed": false,
+        "name": "In progress",
+        "order": 5,
+        "project": 1,
+        "slug": "in-progress"
+    },
+    {
+        "color": "#999999",
+        "id": 5,
+        "is_closed": false,
+        "name": "Needs Info",
+        "order": 5,
+        "project": 1,
+        "slug": "needs-info"
+    },
+    {
+        "color": "#AAAAAA",
+        "id": 41,
+        "is_closed": true,
+        "name": "New status",
+        "order": 8,
+        "project": 1,
+        "slug": "new-status"
+    },
+    {
+        "color": "#999999",
+        "id": 42,
+        "is_closed": false,
+        "name": "New status name",
+        "order": 10,
+        "project": 1,
+        "slug": "new-status-name"
+    },
+    {
+        "color": "#999999",
+        "id": 1,
+        "is_closed": false,
+        "name": "Patch status name",
+        "order": 10,
+        "project": 1,
+        "slug": "patch-status-name"
+    },
+    {
+        "color": "#999999",
+        "id": 6,
+        "is_closed": false,
+        "name": "New",
+        "order": 1,
+        "project": 2,
+        "slug": "new"
+    },
+    {
+        "color": "#ff9900",
+        "id": 7,
+        "is_closed": false,
+        "name": "In progress",
+        "order": 2,
+        "project": 2,
+        "slug": "in-progress"
+    },
+    {
+        "color": "#ffcc00",
+        "id": 8,
+        "is_closed": true,
+        "name": "Ready for test",
+        "order": 3,
+        "project": 2,
+        "slug": "ready-for-test"
+    },
+    {
+        "color": "#669900",
+        "id": 9,
+        "is_closed": true,
+        "name": "Closed",
+        "order": 4,
+        "project": 2,
+        "slug": "closed"
+    },
+    {
+        "color": "#999999",
+        "id": 10,
+        "is_closed": false,
+        "name": "Needs Info",
+        "order": 5,
+        "project": 2,
+        "slug": "needs-info"
+    },
+    {
+        "color": "#999999",
+        "id": 11,
+        "is_closed": false,
+        "name": "New",
+        "order": 1,
+        "project": 3,
+        "slug": "new"
+    },
+    {
+        "color": "#ff9900",
+        "id": 12,
+        "is_closed": false,
+        "name": "In progress",
+        "order": 2,
+        "project": 3,
+        "slug": "in-progress"
+    },
+    {
+        "color": "#ffcc00",
+        "id": 13,
+        "is_closed": true,
+        "name": "Ready for test",
+        "order": 3,
+        "project": 3,
+        "slug": "ready-for-test"
+    },
+    {
+        "color": "#669900",
+        "id": 14,
+        "is_closed": true,
+        "name": "Closed",
+        "order": 4,
+        "project": 3,
+        "slug": "closed"
+    },
+    {
+        "color": "#999999",
+        "id": 15,
+        "is_closed": false,
+        "name": "Needs Info",
+        "order": 5,
+        "project": 3,
+        "slug": "needs-info"
+    },
+    {
+        "color": "#999999",
+        "id": 16,
+        "is_closed": false,
+        "name": "New",
+        "order": 1,
+        "project": 4,
+        "slug": "new"
+    },
+    {
+        "color": "#ff9900",
+        "id": 17,
+        "is_closed": false,
+        "name": "In progress",
+        "order": 2,
+        "project": 4,
+        "slug": "in-progress"
+    },
+    {
+        "color": "#ffcc00",
+        "id": 18,
+        "is_closed": true,
+        "name": "Ready for test",
+        "order": 3,
+        "project": 4,
+        "slug": "ready-for-test"
+    },
+    {
+        "color": "#669900",
+        "id": 19,
+        "is_closed": true,
+        "name": "Closed",
+        "order": 4,
+        "project": 4,
+        "slug": "closed"
+    },
+    {
+        "color": "#999999",
+        "id": 20,
+        "is_closed": false,
+        "name": "Needs Info",
+        "order": 5,
+        "project": 4,
+        "slug": "needs-info"
+    },
+    {
+        "color": "#999999",
+        "id": 21,
+        "is_closed": false,
+        "name": "New",
+        "order": 1,
+        "project": 5,
+        "slug": "new"
+    },
+    {
+        "color": "#ff9900",
+        "id": 22,
+        "is_closed": false,
+        "name": "In progress",
+        "order": 2,
+        "project": 5,
+        "slug": "in-progress"
+    },
+    {
+        "color": "#ffcc00",
+        "id": 23,
+        "is_closed": true,
+        "name": "Ready for test",
+        "order": 3,
+        "project": 5,
+        "slug": "ready-for-test"
+    }
+]
+----

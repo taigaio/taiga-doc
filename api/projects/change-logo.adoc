@@ -1,11 +1,5 @@
 To change your project logo send a POST with the following data
 
-[source,bash]
-----
-curl -X POST \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -F "logo=@/tmp/test.png" \
-  https://api.taiga.io/api/v1/projects/1/change_logo
-----
+include::../generated/projects-change-logo-cmd.adoc[]
 
 When the change is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-project-detail[project detail object]

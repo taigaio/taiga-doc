@@ -1,0 +1,8 @@
+[source,json]
+----
+{
+    "projects": {
+        "total": 4
+    }
+}
+----

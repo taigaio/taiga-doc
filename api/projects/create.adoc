@@ -13,38 +13,8 @@ To create projects send a POST request with the following data:
 - *total_milestones*
 - *total_story_points*
 
-[source,bash]
-----
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "name": "Beta project",
-          "description": "Beta description"
-      }' \
-  https://api.taiga.io/api/v1/projects
-----
+include::../generated/projects-simple-create-cmd.adoc[]
 
-[source,bash]
-----
-curl -v -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "name": "Beta project",
-          "description": "Taiga",
-          "creation_template": 1,
-          "is_backlog_activated": false,
-          "is_issues_activated": true,
-          "is_kanban_activated": true,
-          "is_private": false,
-          "is_wiki_activated": true,
-          "videoconferences": "appear-in",
-          "videoconferences_extra_data": null,
-          "total_milestones": 3,
-          "total_story_points": 20.0
-      }' \
-  https://api.taiga.io/api/v1/projects
-----
+include::../generated/projects-create-cmd.adoc[]
 
 When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-project-detail[project detail object]

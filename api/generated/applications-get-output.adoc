@@ -1,0 +1,10 @@
+[source,json]
+----
+{
+    "description": "description paragraph",
+    "icon_url": null,
+    "id": "00000000-0000-0000-0000-000000000000",
+    "name": "example application",
+    "web": "http://example.com"
+}
+----

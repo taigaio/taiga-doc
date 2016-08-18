@@ -1,0 +1,20 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "bulk_task_custom_attributes": [
+            [
+                3,
+                10
+            ],
+            [
+                1,
+                15
+            ]
+        ],
+        "project": 1
+    }' \
+http://localhost:8000/api/v1/task-custom-attributes/bulk_update_order
+----

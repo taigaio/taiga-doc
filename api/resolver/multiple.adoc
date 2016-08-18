@@ -1,21 +1,7 @@
 To resolve the multiple ids you can send a GET mixing parameters from the previous examples:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/resolver?project=taiga\&task=915\&us=1\&wikipage=home
-----
+include::../generated/resolver-multiple-cmd.adoc[]
 
 The response body is a JSON object containing the project and the task ids
 
-[source,json]
-----
-{
-    "project": 1,
-    "task": 1336,
-    "us": 26,
-    "wikipage": 2
-}
-----
+include::../generated/resolver-multiple-output.adoc[]

@@ -1,0 +1,14 @@
+[source,json]
+----
+{
+    "color": "#AAAAAA",
+    "id": 61,
+    "is_archived": false,
+    "is_closed": true,
+    "name": "New status",
+    "order": 8,
+    "project": 1,
+    "slug": "new-status",
+    "wip_limit": 6
+}
+----

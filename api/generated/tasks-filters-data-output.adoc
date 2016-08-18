@@ -1,0 +1,214 @@
+[source,json]
+----
+{
+    "assigned_to": [
+        {
+            "count": 5,
+            "full_name": "",
+            "id": null
+        },
+        {
+            "count": 13,
+            "full_name": "Administrator",
+            "id": 5
+        },
+        {
+            "count": 0,
+            "full_name": "Alba Leon",
+            "id": 8
+        },
+        {
+            "count": 5,
+            "full_name": "Alvaro Molina",
+            "id": 13
+        },
+        {
+            "count": 4,
+            "full_name": "Andrea Fernandez",
+            "id": 14
+        },
+        {
+            "count": 4,
+            "full_name": "Catalina Roman",
+            "id": 15
+        },
+        {
+            "count": 3,
+            "full_name": "Esther Ferrer",
+            "id": 9
+        },
+        {
+            "count": 5,
+            "full_name": "German Benitez",
+            "id": 11
+        },
+        {
+            "count": 6,
+            "full_name": "Marcos Ortiz",
+            "id": 7
+        },
+        {
+            "count": 3,
+            "full_name": "Marta Carmona",
+            "id": 10
+        },
+        {
+            "count": 4,
+            "full_name": "Pilar Herrera",
+            "id": 12
+        },
+        {
+            "count": 4,
+            "full_name": "Silvia Soto",
+            "id": 6
+        },
+        {
+            "count": 0,
+            "full_name": "test",
+            "id": 16
+        }
+    ],
+    "owners": [
+        {
+            "count": 1,
+            "full_name": "Administrator",
+            "id": 5
+        },
+        {
+            "count": 5,
+            "full_name": "Alba Leon",
+            "id": 8
+        },
+        {
+            "count": 5,
+            "full_name": "Alvaro Molina",
+            "id": 13
+        },
+        {
+            "count": 8,
+            "full_name": "Andrea Fernandez",
+            "id": 14
+        },
+        {
+            "count": 5,
+            "full_name": "Catalina Roman",
+            "id": 15
+        },
+        {
+            "count": 2,
+            "full_name": "Esther Ferrer",
+            "id": 9
+        },
+        {
+            "count": 4,
+            "full_name": "German Benitez",
+            "id": 11
+        },
+        {
+            "count": 6,
+            "full_name": "Marcos Ortiz",
+            "id": 7
+        },
+        {
+            "count": 3,
+            "full_name": "Marta Carmona",
+            "id": 10
+        },
+        {
+            "count": 9,
+            "full_name": "Pilar Herrera",
+            "id": 12
+        },
+        {
+            "count": 8,
+            "full_name": "Silvia Soto",
+            "id": 6
+        }
+    ],
+    "statuses": [
+        {
+            "color": "#ffcc00",
+            "count": 8,
+            "id": 3,
+            "name": "Ready for test",
+            "order": 3
+        },
+        {
+            "color": "#669900",
+            "count": 6,
+            "id": 4,
+            "name": "Closed",
+            "order": 4
+        },
+        {
+            "color": "#ff9900",
+            "count": 12,
+            "id": 2,
+            "name": "In progress",
+            "order": 5
+        },
+        {
+            "color": "#999999",
+            "count": 13,
+            "id": 5,
+            "name": "Needs Info",
+            "order": 5
+        },
+        {
+            "color": "#AAAAAA",
+            "count": 0,
+            "id": 41,
+            "name": "New status",
+            "order": 8
+        },
+        {
+            "color": "#999999",
+            "count": 13,
+            "id": 1,
+            "name": "Patch status name",
+            "order": 10
+        },
+        {
+            "color": "#999999",
+            "count": 0,
+            "id": 42,
+            "name": "New status name",
+            "order": 10
+        }
+    ],
+    "tags": [
+        {
+            "count": 1,
+            "name": "at"
+        },
+        {
+            "count": 1,
+            "name": "customer"
+        },
+        {
+            "count": 1,
+            "name": "eveniet"
+        },
+        {
+            "count": 6,
+            "name": "incidunt"
+        },
+        {
+            "count": 3,
+            "name": "odit"
+        },
+        {
+            "count": 3,
+            "name": "sequi"
+        },
+        {
+            "count": 1,
+            "name": "service catalog"
+        },
+        {
+            "count": 2,
+            "name": "ullam"
+        }
+    ]
+}
+----

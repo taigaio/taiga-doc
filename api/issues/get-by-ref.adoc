@@ -3,12 +3,6 @@ To get an issue send a GET request specifying the issue reference and one of the
 - project (project id)
 - project_slug
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/issues/by_ref?ref=1&project=1
-----
+include::../generated/issues-get-by-ref-cmd.adoc[]
 
 The HTTP response is a 200 OK and the response body is a JSON link:#object-issue-detail-get[issue detail (GET) object]

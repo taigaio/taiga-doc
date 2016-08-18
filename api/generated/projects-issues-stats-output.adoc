@@ -1,0 +1,610 @@
+[source,json]
+----
+{
+    "closed_issues": 8,
+    "issues_per_assigned_to": {
+        "0": {
+            "color": "black",
+            "count": 8,
+            "id": 0,
+            "name": "Unassigned",
+            "username": "Unassigned"
+        },
+        "10": {
+            "color": "#67CF00",
+            "count": 1,
+            "id": 10,
+            "name": "Marta Carmona",
+            "username": "user4"
+        },
+        "12": {
+            "color": "#71A6D2",
+            "count": 1,
+            "id": 12,
+            "name": "Pilar Herrera",
+            "username": "user6"
+        },
+        "13": {
+            "color": "#002e33",
+            "count": 4,
+            "id": 13,
+            "name": "Alvaro Molina",
+            "username": "user7"
+        },
+        "14": {
+            "color": "#FFCC00",
+            "count": 3,
+            "id": 14,
+            "name": "Andrea Fernandez",
+            "username": "user8"
+        },
+        "15": {
+            "color": "#C0FF33",
+            "count": 1,
+            "id": 15,
+            "name": "Catalina Roman",
+            "username": "user9"
+        },
+        "5": {
+            "color": "",
+            "count": 2,
+            "id": 5,
+            "name": "Administrator",
+            "username": "admin"
+        },
+        "6": {
+            "color": "#4B0082",
+            "count": 2,
+            "id": 6,
+            "name": "Silvia Soto",
+            "username": "user6532909695705815086"
+        },
+        "7": {
+            "color": "#B6DA55",
+            "count": 4,
+            "id": 7,
+            "name": "Marcos Ortiz",
+            "username": "user1"
+        },
+        "8": {
+            "color": "#D70A53",
+            "count": 1,
+            "id": 8,
+            "name": "Alba Leon",
+            "username": "user2"
+        },
+        "9": {
+            "color": "#FFF8E7",
+            "count": 1,
+            "id": 9,
+            "name": "Esther Ferrer",
+            "username": "user3"
+        }
+    },
+    "issues_per_owner": {
+        "10": {
+            "color": "#67CF00",
+            "count": 3,
+            "id": 10,
+            "name": "Marta Carmona",
+            "username": "user4"
+        },
+        "12": {
+            "color": "#71A6D2",
+            "count": 3,
+            "id": 12,
+            "name": "Pilar Herrera",
+            "username": "user6"
+        },
+        "13": {
+            "color": "#002e33",
+            "count": 3,
+            "id": 13,
+            "name": "Alvaro Molina",
+            "username": "user7"
+        },
+        "14": {
+            "color": "#FFCC00",
+            "count": 4,
+            "id": 14,
+            "name": "Andrea Fernandez",
+            "username": "user8"
+        },
+        "5": {
+            "color": "",
+            "count": 3,
+            "id": 5,
+            "name": "Administrator",
+            "username": "admin"
+        },
+        "6": {
+            "color": "#4B0082",
+            "count": 6,
+            "id": 6,
+            "name": "Silvia Soto",
+            "username": "user6532909695705815086"
+        },
+        "8": {
+            "color": "#D70A53",
+            "count": 5,
+            "id": 8,
+            "name": "Alba Leon",
+            "username": "user2"
+        },
+        "9": {
+            "color": "#FFF8E7",
+            "count": 1,
+            "id": 9,
+            "name": "Esther Ferrer",
+            "username": "user3"
+        }
+    },
+    "issues_per_priority": {
+        "1": {
+            "color": "#666666",
+            "count": 8,
+            "id": 1,
+            "name": "Patch name"
+        },
+        "2": {
+            "color": "#669933",
+            "count": 12,
+            "id": 2,
+            "name": "Normal"
+        },
+        "3": {
+            "color": "#CC0000",
+            "count": 8,
+            "id": 3,
+            "name": "High"
+        }
+    },
+    "issues_per_severity": {
+        "1": {
+            "color": "#666666",
+            "count": 5,
+            "id": 1,
+            "name": "Patch name"
+        },
+        "2": {
+            "color": "#669933",
+            "count": 4,
+            "id": 2,
+            "name": "Minor"
+        },
+        "3": {
+            "color": "#0000FF",
+            "count": 8,
+            "id": 3,
+            "name": "Normal"
+        },
+        "4": {
+            "color": "#FFA500",
+            "count": 4,
+            "id": 4,
+            "name": "Important"
+        },
+        "5": {
+            "color": "#CC0000",
+            "count": 7,
+            "id": 5,
+            "name": "Critical"
+        }
+    },
+    "issues_per_status": {
+        "1": {
+            "color": "#8C2318",
+            "count": 7,
+            "id": 1,
+            "name": "Patch status name"
+        },
+        "2": {
+            "color": "#5E8C6A",
+            "count": 7,
+            "id": 2,
+            "name": "In progress"
+        },
+        "3": {
+            "color": "#88A65E",
+            "count": 3,
+            "id": 3,
+            "name": "Ready for test"
+        },
+        "4": {
+            "color": "#BFB35A",
+            "count": 3,
+            "id": 4,
+            "name": "Closed"
+        },
+        "5": {
+            "color": "#89BAB4",
+            "count": 1,
+            "id": 5,
+            "name": "Needs Info"
+        },
+        "6": {
+            "color": "#CC0000",
+            "count": 2,
+            "id": 6,
+            "name": "Rejected"
+        },
+        "7": {
+            "color": "#666666",
+            "count": 5,
+            "id": 7,
+            "name": "Postponed"
+        }
+    },
+    "issues_per_type": {
+        "1": {
+            "color": "#89BAB4",
+            "count": 15,
+            "id": 1,
+            "name": "Bug"
+        },
+        "2": {
+            "color": "#ba89a8",
+            "count": 6,
+            "id": 2,
+            "name": "Question"
+        },
+        "3": {
+            "color": "#89a8ba",
+            "count": 7,
+            "id": 3,
+            "name": "Enhancement"
+        }
+    },
+    "last_four_weeks_days": {
+        "by_open_closed": {
+            "closed": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                8
+            ],
+            "open": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                28
+            ]
+        },
+        "by_priority": {
+            "1": {
+                "color": "#666666",
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    8
+                ],
+                "id": 1,
+                "name": "Patch name"
+            },
+            "2": {
+                "color": "#669933",
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    12
+                ],
+                "id": 2,
+                "name": "Normal"
+            },
+            "3": {
+                "color": "#CC0000",
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    8
+                ],
+                "id": 3,
+                "name": "High"
+            }
+        },
+        "by_severity": {
+            "1": {
+                "color": "#666666",
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    5
+                ],
+                "id": 1,
+                "name": "Patch name"
+            },
+            "2": {
+                "color": "#669933",
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    4
+                ],
+                "id": 2,
+                "name": "Minor"
+            },
+            "3": {
+                "color": "#0000FF",
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    8
+                ],
+                "id": 3,
+                "name": "Normal"
+            },
+            "4": {
+                "color": "#FFA500",
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    4
+                ],
+                "id": 4,
+                "name": "Important"
+            },
+            "5": {
+                "color": "#CC0000",
+                "data": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    7
+                ],
+                "id": 5,
+                "name": "Critical"
+            }
+        },
+        "by_status": {}
+    },
+    "opened_issues": 20,
+    "total_issues": 28
+}
+----

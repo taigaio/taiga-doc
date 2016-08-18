@@ -1,0 +1,8 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: multipart/form-data" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-F dump=@dump.json \
+http://localhost:8000/api/v1/importer/load_dump
+----

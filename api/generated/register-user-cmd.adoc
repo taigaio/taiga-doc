@@ -1,0 +1,16 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "email": "test-register@email.com",
+        "existing": false,
+        "full_name": "test",
+        "password": "password",
+        "token": "00000000-0000-0000-0000-000000000000",
+        "type": "private",
+        "username": "test-username"
+    }' \
+http://localhost:8000/api/v1/auth/register
+----

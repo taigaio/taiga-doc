@@ -1,12 +1,6 @@
 To list a project timeline send a GET request with the following parameters:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/timeline/project/1
-----
+include::../generated/projects-timeline-get-cmd.adoc[]
 
 This API call returns actions executed by different users related to the specified project.
 

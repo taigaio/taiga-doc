@@ -1,17 +1,5 @@
 To edit a project modules configuration send a PATCH specifying the project id in the url.
 
-
-[source,bash]
-----
-curl -X PATCH \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "github": {
-              "secret": "new_secret"
-          }
-      }' \
-  https://api.taiga.io/api/v1/projects/1/modules
-----
+include::../generated/projects-modules-patch-cmd.adoc[]
 
 When edition succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

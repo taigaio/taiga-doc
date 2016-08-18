@@ -1,0 +1,12 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "bulk_tasks": "Task 1 \n Task 2 \n Task 3",
+        "project_id": 1,
+        "sprint_id": 1
+    }' \
+http://localhost:8000/api/v1/tasks/bulk_create
+----

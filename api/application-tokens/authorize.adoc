@@ -3,16 +3,6 @@ To request an authorization code send a POST request with the following data:
 - *application*: the application id for the requested token
 - *state*: an unguessable random string. It is used to protect against cross-site request forgery attacks. The API will include this value when the validation process is completed so the final app can verify it matches the original one.
 
-[source,bash]
-----
-curl -X POST \
-    -H "Content-Type: application/json" \
-    -H "Authorization: Bearer eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjo0fQ:1ZX33b:QnAN3EcuChLoRVf3CdybWEi2OEg" \
-    -d '{
-    	  "application": "a60c3208-5234-11e5-96df-68f72800aadd",
-    	  "state": "random-state"
-      }' \
-    https://api.taiga.io/api/v1/application-tokens/authorize
-----
+include::../generated/application-tokens-authorize-cmd.adoc[]
 
 When the creation is successful, the HTTP response is a 200 and the response body is a JSON link:#object-application-token-authorization-code[authorization code object]

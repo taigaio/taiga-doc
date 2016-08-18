@@ -1,8 +1,0 @@
-[source,json]
-----
-{
-    "full_name": "Silvia Soto",
-    "id": 2,
-    "username": "user6532909695705815086"
-}
-----

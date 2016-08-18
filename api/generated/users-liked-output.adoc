@@ -1,0 +1,92 @@
+[source,json]
+----
+[
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "created_date": "2016-08-17T10:45:24.301Z",
+        "description": "Beta description",
+        "id": 1,
+        "is_fan": true,
+        "is_private": true,
+        "is_watcher": false,
+        "logo_small_url": null,
+        "name": "Beta project patch",
+        "project": null,
+        "project_blocked_code": null,
+        "project_is_private": null,
+        "project_name": null,
+        "project_slug": null,
+        "ref": null,
+        "slug": "project-0",
+        "status": null,
+        "status_color": null,
+        "subject": null,
+        "tags_colors": [],
+        "total_fans": 7,
+        "total_watchers": 15,
+        "type": "project"
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "created_date": "2016-08-17T10:40:32.446Z",
+        "description": "Project example 5 description",
+        "id": 6,
+        "is_fan": true,
+        "is_private": false,
+        "is_watcher": true,
+        "logo_small_url": null,
+        "name": "Project Example 5",
+        "project": null,
+        "project_blocked_code": null,
+        "project_is_private": null,
+        "project_name": null,
+        "project_slug": null,
+        "ref": null,
+        "slug": "project-5",
+        "status": null,
+        "status_color": null,
+        "subject": null,
+        "tags_colors": [],
+        "total_fans": 9,
+        "total_watchers": 13,
+        "type": "project"
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "created_date": "2016-08-17T10:39:34.485Z",
+        "description": "Project example 1 description",
+        "id": 2,
+        "is_fan": true,
+        "is_private": false,
+        "is_watcher": true,
+        "logo_small_url": null,
+        "name": "Project Example 1",
+        "project": null,
+        "project_blocked_code": null,
+        "project_is_private": null,
+        "project_name": null,
+        "project_slug": null,
+        "ref": null,
+        "slug": "project-1",
+        "status": null,
+        "status_color": null,
+        "subject": null,
+        "tags_colors": [
+            {
+                "color": null,
+                "name": "quisquam"
+            },
+            {
+                "color": null,
+                "name": "neque"
+            }
+        ],
+        "total_fans": 11,
+        "total_watchers": 15,
+        "type": "project"
+    }
+]
+----

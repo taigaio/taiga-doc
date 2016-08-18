@@ -1,0 +1,58 @@
+[source,json]
+----
+{
+    "assigned_to": null,
+    "assigned_to_extra_info": null,
+    "created_date": "2016-08-17T10:40:58.806Z",
+    "description": null,
+    "id": 80,
+    "is_private": null,
+    "is_voter": false,
+    "is_watcher": false,
+    "logo_small_url": null,
+    "name": null,
+    "project": 7,
+    "project_blocked_code": "blocked-by-staff",
+    "project_is_private": false,
+    "project_name": "Project Example 6",
+    "project_slug": "project-6",
+    "ref": 97,
+    "slug": null,
+    "status": "Postponed",
+    "status_color": "#666666",
+    "subject": "Add tests for bulk operations",
+    "tags_colors": [
+        {
+            "color": "#6e3390",
+            "name": "quas"
+        },
+        {
+            "color": "#ee6c40",
+            "name": "eum"
+        },
+        {
+            "color": null,
+            "name": "corrupti"
+        },
+        {
+            "color": "#2c80b2",
+            "name": "ea"
+        },
+        {
+            "color": "#67eac4",
+            "name": "laborum"
+        },
+        {
+            "color": "#3099ec",
+            "name": "incidunt"
+        },
+        {
+            "color": "#ea6bb9",
+            "name": "ducimus"
+        }
+    ],
+    "total_voters": 4,
+    "total_watchers": 7,
+    "type": "issue"
+}
+----

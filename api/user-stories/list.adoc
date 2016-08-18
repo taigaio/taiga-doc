@@ -1,12 +1,6 @@
 To list user stories send a GET request with the following parameters:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/userstories
-----
+include::../generated/user-stories-list-cmd.adoc[]
 
 The HTTP response is a 200 OK and the response body is a JSON list of link:#object-userstory-detail-list[user story list objects]
 
@@ -21,10 +15,4 @@ The results can be filtered using the following parameters:
 - *assigned_to*: assigned to user id
 - *status__is_closed*: (true|false)
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/userstories?project=1
-----
+include::../generated/user-stories-filtered-list-cmd.adoc[]

@@ -1,0 +1,75 @@
+[source,json]
+----
+[
+    {
+        "created_date": "2016-08-17T10:38:21.773Z",
+        "description": "cum iste corrupti repellat eveniet nam voluptates architecto perspiciatis",
+        "id": 5,
+        "modified_date": "2016-08-17T10:38:21.773Z",
+        "name": "adipisci ab rem",
+        "order": 1,
+        "project": 1,
+        "type": "multiline"
+    },
+    {
+        "created_date": "2016-08-17T10:38:21.772Z",
+        "description": "et officia modi laboriosam reiciendis placeat quisquam nostrum eum",
+        "id": 4,
+        "modified_date": "2016-08-17T10:38:21.772Z",
+        "name": "dolores sed",
+        "order": 1,
+        "project": 1,
+        "type": "text"
+    },
+    {
+        "created_date": "2016-08-17T10:38:21.772Z",
+        "description": "aperiam nesciunt exercitationem nam hic et deserunt",
+        "id": 3,
+        "modified_date": "2016-08-17T10:38:21.772Z",
+        "name": "numquam iusto",
+        "order": 1,
+        "project": 1,
+        "type": "date"
+    },
+    {
+        "created_date": "2016-08-17T10:38:21.771Z",
+        "description": "nobis quo repellendus dolores",
+        "id": 2,
+        "modified_date": "2016-08-17T10:38:21.771Z",
+        "name": "et delectus",
+        "order": 5,
+        "project": 1,
+        "type": "url"
+    },
+    {
+        "created_date": "2016-08-17T10:45:00.255Z",
+        "description": "Duration in minutes",
+        "id": 36,
+        "modified_date": "2016-08-17T10:45:00.262Z",
+        "name": "Duration 2",
+        "order": 8,
+        "project": 1,
+        "type": "text"
+    },
+    {
+        "created_date": "2016-08-17T10:38:21.770Z",
+        "description": "blanditiis tempore asperiores odit dolor voluptatibus officiis perferendis sunt labore quisquam",
+        "id": 1,
+        "modified_date": "2016-08-17T10:45:00.223Z",
+        "name": "Duration 1",
+        "order": 10,
+        "project": 1,
+        "type": "multiline"
+    },
+    {
+        "created_date": "2016-08-17T10:45:00.294Z",
+        "description": "",
+        "id": 37,
+        "modified_date": "2016-08-17T10:45:00.301Z",
+        "name": "Duration 3",
+        "order": 10000,
+        "project": 1,
+        "type": "text"
+    }
+]
+----

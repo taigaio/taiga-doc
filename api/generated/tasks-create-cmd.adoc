@@ -1,0 +1,28 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "assigned_to": null,
+        "blocked_note": "blocking reason",
+        "description": "Implement API CALL",
+        "external_reference": null,
+        "is_blocked": false,
+        "is_closed": true,
+        "is_iocaine": false,
+        "milestone": null,
+        "project": 1,
+        "status": 1,
+        "subject": "Customer personal data",
+        "tags": [
+            "service catalog",
+            "customer"
+        ],
+        "taskboard_order": 1,
+        "us_order": 1,
+        "user_story": 17,
+        "watchers": []
+    }' \
+http://localhost:8000/api/v1/tasks
+----

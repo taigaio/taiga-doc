@@ -1,11 +1,5 @@
 To list the application tokens for an authenticated user send a GET request with the following parameters:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/application-tokens
-----
+include::../generated/application-tokens-list-cmd.adoc[]
 
 The HTTP response is a 200 OK and the response body is a JSON list of link:#object-application-token-detail[application token objects]

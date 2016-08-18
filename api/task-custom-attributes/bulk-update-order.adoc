@@ -3,16 +3,6 @@ To update the order of multiple task custom attributes at the same time send a P
 - *project* (required)
 - *bulk_task_custom_attributes*: list where each element is a list, the first element is the custom attribute id and the second the new order
 
-[source,bash]
-----
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "project_id": 3,
-          "bulk_task_custom_attributes": [[1,10], [2,5]]
-      }' \
-  https://api.taiga.io/api/v1/task-custom-attributes/bulk_update_order
-----
+include::../generated/tasks-custom-attributes-bulk-update-order-cmd.adoc[]
 
 When the update is successful, the HTTP response is a 204 NO CONTENT with an empty body response

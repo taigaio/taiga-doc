@@ -1,0 +1,93 @@
+[source,json]
+----
+[
+    {
+        "color": "#ff9900",
+        "id": 3,
+        "is_archived": false,
+        "is_closed": false,
+        "name": "In progress",
+        "order": 3,
+        "project": 1,
+        "slug": "in-progress",
+        "wip_limit": null
+    },
+    {
+        "color": "#fcc000",
+        "id": 4,
+        "is_archived": false,
+        "is_closed": false,
+        "name": "Ready for test",
+        "order": 4,
+        "project": 1,
+        "slug": "ready-for-test",
+        "wip_limit": null
+    },
+    {
+        "color": "#669900",
+        "id": 5,
+        "is_archived": false,
+        "is_closed": true,
+        "name": "Done",
+        "order": 5,
+        "project": 1,
+        "slug": "done",
+        "wip_limit": null
+    },
+    {
+        "color": "#ff8a84",
+        "id": 2,
+        "is_archived": false,
+        "is_closed": false,
+        "name": "Ready",
+        "order": 5,
+        "project": 1,
+        "slug": "ready",
+        "wip_limit": null
+    },
+    {
+        "color": "#5c3566",
+        "id": 6,
+        "is_archived": true,
+        "is_closed": true,
+        "name": "Archived",
+        "order": 6,
+        "project": 1,
+        "slug": "archived",
+        "wip_limit": null
+    },
+    {
+        "color": "#AAAAAA",
+        "id": 61,
+        "is_archived": false,
+        "is_closed": true,
+        "name": "New status",
+        "order": 8,
+        "project": 1,
+        "slug": "new-status",
+        "wip_limit": 6
+    },
+    {
+        "color": "#999999",
+        "id": 62,
+        "is_archived": false,
+        "is_closed": false,
+        "name": "New status name",
+        "order": 10,
+        "project": 1,
+        "slug": "new-status-name",
+        "wip_limit": null
+    },
+    {
+        "color": "#999999",
+        "id": 1,
+        "is_archived": false,
+        "is_closed": false,
+        "name": "Patch status name",
+        "order": 10,
+        "project": 1,
+        "slug": "patch-status-name",
+        "wip_limit": null
+    }
+]
+----

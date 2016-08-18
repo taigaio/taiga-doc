@@ -275,267 +275,263 @@ include::stats/summary.adoc[]
 
 [[object-attachment-detail]]
 ===  Attachment
-include::attachments/detail-response.adoc[]
+include::generated/user-stories-attachments-get-output.adoc[]
 
 [[object-application-detail]]
-=== Application object
-include::applications/detail-response.adoc[]
+include::generated/applications-get-output.adoc[]
 
 [[object-application-token-detail]]
 === Application token object
-include::application-tokens/detail-response.adoc[]
+include::generated/application-tokens-get-output.adoc[]
 
 [[object-application-token-authorization-code]]
 === Authorization code object
-include::application-tokens/authorize-response.adoc[]
+include::generated/application-tokens-authorize-output.adoc[]
 
 [[object-application-token-cyphered-token]]
 === Cyphered token object
-include::application-tokens/validate-response.adoc[]
+include::generated/application-tokens-validate-output.adoc[]
 
 [[object-user-detail]]
 ===  User detail
-include::users/detail-response.adoc[]
+include::generated/users-get-output.adoc[]
 
 [[object-contact-detail]]
 ===  User contact detail
-include::users/contact-response.adoc[]
+include::generated/users-contacts-output.adoc[]
 
 [[object-auth-user-detail]]
 ===  User authentication-detail
-include::users/auth-detail-response.adoc[]
+include::generated/normal-login-output.adoc[]
 
 [[object-user-stats-detail]]
 ===  User stats detail
-include::users/stats-detail-response.adoc[]
+include::generated/users-stats-output.adoc[]
 
 [[object-search-results-detail]]
 ===  Search results detail
-include::searches/detail-response.adoc[]
+include::generated/search-output.adoc[]
 
 [[object-user-storage-detail]]
 === User storage data
-include::user-storage/detail-response.adoc[]
+include::generated/user-storage-get-output.adoc[]
 
 [[object-project-template-detail]]
 == Project templates detail
-include::project-templates/detail-response.adoc[]
+include::generated/project-templates-get-output.adoc[]
 
 [[object-project-list-entry]]
 ===  Project list entry
-include::projects/list-entry-response.adoc[]
+include::generated/projects-list-output.adoc[]
 
 [[object-project-detail]]
 ===  Project detail
-include::projects/detail-response.adoc[]
+include::generated/projects-get-output.adoc[]
 
 [[object-project-modules-detail]]
 ===  Project modules configuration
-include::projects/modules-response.adoc[]
+include::generated/projects-modules-get-output.adoc[]
 
 [[object-project-stats-detail]]
 ===  Project stats detail
-include::projects/stats-response.adoc[]
+include::generated/projects-stats-output.adoc[]
 
 [[object-project-issue-stats-detail]]
 ===  Project issue stats detail
-include::projects/issues-stats-response.adoc[]
+include::generated/projects-issues-stats-output.adoc[]
 
 [[object-project-tags-colors-detail]]
 ===  Project tag colors data detail
-include::projects/tags-colors-response.adoc[]
+include::generated/projects-tags-colors-output.adoc[]
 
 [[object-project-voter-detail]]
 ===  Project voter detail
-include::projects/voter-detail-response.adoc[]
+include::generated/projects-fans-output.adoc[]
 
 [[object-project-watcher-detail]]
 ===  Project watcher detail
-include::projects/watcher-detail-response.adoc[]
-
-[[object-project-template-detail]]
-===  Project template detail
-include::projects/template-detail-response.adoc[]
+include::generated/projects-watchers-output.adoc[]
 
 [[object-membership-detail]]
 ===  Membership detail
-include::memberships/detail-response.adoc[]
+include::generated/memberships-get-output.adoc[]
 
 [[object-milestone-detail]]
 ===  Milestone detail
-include::milestones/detail-response.adoc[]
+include::generated/milestones-get-output.adoc[]
 
 [[object-milestone-watcher-detail]]
 ===  Milestone watcher detail
-include::milestones/watcher-detail-response.adoc[]
+include::generated/milestones-watchers-output.adoc[]
 
 [[object-milestone-stats-detail]]
 ===  Milestone stats detail
-include::milestones/stats-detail-response.adoc[]
+include::generated/milestones-stats-output.adoc[]
 
 [[object-userstory-detail]]
 === User story detail
-include::user-stories/detail-response.adoc[]
+include::generated/user-stories-get-output.adoc[]
+
+[NOTE]
+status_extra_info and assigned_to_extra_info are read only fields
 
 [[object-userstory-detail-get]]
 === User story detail (GET)
-include::user-stories/get-detail-response.adoc[]
+include::generated/user-stories-get-output.adoc[]
+
+[NOTE]
+neighbors, status_extra_info and assigned_to_extra_info are read only fields
 
 [[object-userstory-detail-list]]
 === User story detail (LIST)
-include::user-stories/list-detail-response.adoc[]
+include::generated/user-stories-list-output.adoc[]
+
+[NOTE]
+status_extra_info and assigned_to_extra_info are read only fields
 
 [[object-userstory-filters-data]]
 === Issue filters data detail
-include::user-stories/get-filters-data-response.adoc[]
+include::generated/user-stories-filter-data-output.adoc[]
 
 [[object-userstory-voter-detail]]
 ===  User story voter detail
-include::user-stories/voter-detail-response.adoc[]
+inlcude::generated/user-stories-get-voters-output.adoc[]
 
 [[object-userstory-watcher-detail]]
 ===  User story watcher detail
-include::user-stories/watcher-detail-response.adoc[]
+inlcude::generated/user-stories-get-watchers-output.adoc[]
 
 [[object-userstory-status-detail]]
 === User story status detail
-include::user-story-statuses/detail-response.adoc[]
+include::generated/user-story-statuses-get-output.adoc[]
 
 [[object-point-detail]]
 === Point detail
-include::points/detail-response.adoc[]
+include::generated/points-get-output.adoc[]
 
 [[object-userstory-custom-attribute-detail]]
 === User story custom attribute detail
-include::user-story-custom-attributes/detail-response.adoc[]
+include::generated/user-stories-custom-attributes-get-output.adoc[]
 
 [[object-userstory-custom-attributes-values-detail]]
 === User story custom attributes values detail
-include::user-story-custom-attributes-values/detail-response.adoc[]
+include::generated/user-stories-custom-attributes-values-get-output.adoc[]
 
 [[object-task-detail]]
 === Task detail
-include::tasks/detail-response.adoc[]
+include::generated/tasks-get-output.adoc[]
 
 [[object-task-detail-get]]
 === Task detail (GET)
-include::tasks/get-detail-response.adoc[]
+include::generated/tasks-get-output.adoc[]
 
 [[object-task-detail-list]]
 === Task detail (LIST)
-include::tasks/list-detail-response.adoc[]
+include::generated/tasks-list-output.adoc[]
 
 [[object-task-filters-data]]
 === Task filters data detail
-include::tasks/get-filters-data-response.adoc[]
+include::generated/tasks-filters-data-output.adoc[]
 
 [[object-task-voter-detail]]
 ===  Task voter detail
-include::tasks/voter-detail-response.adoc[]
+include::generated/tasks-voters-output.adoc[]
 
 [[object-task-watcher-detail]]
 ===  Task watcher detail
-include::tasks/watcher-detail-response.adoc[]
-
-[[object-project-voter-detail]]
-===  Project voter detail
-include::projects/voter-detail-response.adoc[]
-
-[[object-project-watcher-detail]]
-===  Project watcher detail
-include::projects/watcher-detail-response.adoc[]
+include::generated/tasks-watchers-output.adoc[]
 
 [[object-task-status-detail]]
 === Task status detail
-include::task-statuses/detail-response.adoc[]
+include::generated/task-statuses-get-output.adoc[]
 
 [[object-task-custom-attribute-detail]]
 === Task custom attribute detail
-include::task-custom-attributes/detail-response.adoc[]
+include::generated/tasks-custom-attributes-get-output.adoc[]
 
 [[object-task-custom-attributes-values-detail]]
 === Task custom attributes values detail
-include::task-custom-attributes-values/detail-response.adoc[]
+include::generated/tasks-custom-attributes-values-get-output.adoc[]
 
 [[object-issue-detail]]
 === Issue detail
-include::issues/detail-response.adoc[]
+include::generated/issues-get-output.adoc[]
 
 [[object-issue-detail-get]]
 === Issue detail (GET)
-include::issues/get-detail-response.adoc[]
+include::generated/issues-get-output.adoc[]
 
 [[object-issue-detail-list]]
 === Issue detail (LIST)
-include::issues/list-detail-response.adoc[]
+include::generated/issues-list-output.adoc[]
 
 [[object-issue-filters-data]]
 === Issue filters data detail
-include::issues/get-filters-data-response.adoc[]
+include::generated/issues-filters-data-get-output.adoc[]
 
 [[object-issue-voters-detail]]
 === Issue voters detail
-include::issues/voters-detail-response.adoc[]
+include::generated/issues-voters-output.adoc[]
 
 [[object-issue-watcher-detail]]
 ===  Issue watchers detail
-include::issues/watcher-detail-response.adoc[]
+include::generated/issues-watchers-output.adoc[]
 
 [[object-issue-status-detail]]
 === Issue status detail
-include::issue-statuses/detail-response.adoc[]
+include::generated/issue-statuses-get-output.adoc[]
 
 [[object-issue-type-detail]]
 === Issue type detail
-include::issue-types/detail-response.adoc[]
+include::generated/issue-types-get-output.adoc[]
 
 [[object-priority-detail]]
 === Priority detail
-include::priorities/detail-response.adoc[]
+include::generated/priorities-get-output.adoc[]
 
 [[object-severity-detail]]
 === Severity detail
-include::severities/detail-response.adoc[]
+include::generated/severities-get-output.adoc[]
 
 [[object-issue-custom-attribute-detail]]
 === Issue custom attribute detail
-include::issue-custom-attributes/detail-response.adoc[]
+include::generated/issues-custom-attributes-get-output.adoc[]
 
 [[object-issue-custom-attributes-values-detail]]
 === Issue custom attributes values detail
-include::issue-custom-attributes-values/detail-response.adoc[]
+include::generated/issues-custom-attributes-values-get-output.adoc[]
 
 [[object-wiki-detail]]
 === Wiki page
-include::wiki/detail-response.adoc[]
+include::generated/wiki-get-output.adoc[]
 
 [[object-wiki-watcher-detail]]
 ===  Wiki page watcher detail
-include::wiki/watcher-detail-response.adoc[]
+include::generated/wiki-watchers-output.adoc[]
 
 [[object-wiki-link-detail]]
 === Wiki link
-include::wikilinks/detail-response.adoc[]
+include::generated/wiki-links-get-output.adoc[]
 
 [[object-history-entry-comment-detail]]
 === History entry comment
-include::history/comment-detail-response.adoc[]
+include::generated/user-stories-get-comment-versions-output.adoc[]
 
 [[object-history-entry-detail]]
 === History entry
-include::history/detail-response.adoc[]
+include::generated/user-stories-get-history-output.adoc[]
 
 [[object-notify-policy-detail]]
 === Notify policy
-include::notify-policies/detail-response.adoc[]
+include::generated/notify-policies-get-output.adoc[]
 
 [[object-feedback-detail]]
 === Feedback
-include::feedback/detail-response.adoc[]
+include::generated/feedback-output.adoc[]
 
 [[object-export-synch]]
 === Export detail for synch mode
-include::export-import/detail-export-synch.adoc[]
+include::generated/projects-export-output.adoc[]
 
 [[object-export-accepted]]
 === Export accepted response
@@ -547,39 +543,39 @@ include::export-import/detail-import-accepted.adoc[]
 
 [[object-webhook-detail]]
 === Webhook
-include::webhooks/detail-response.adoc[]
+include::generated/webhooks-get-output.adoc[]
 
 [[object-webhook-log-detail]]
 === Webhook log
-include::webhooks/log-detail-response.adoc[]
+include::generated/webhooklogs-get-output.adoc[]
 
 [[object-timeline-detail]]
 === Timeline entry detail
-include::timelines/detail-response.adoc[]
+include::generated/projects-timeline-get-output.adoc[]
 
 [[object-locale-detail]]
 === Locale
-include::locales/detail-response.adoc[]
+include::generated/locales-output.adoc[]
 
 [[object-watched-detail]]
 === Watched
-include::users/watched-response.adoc[]
+include::generated/users-watched-output.adoc[]
 
 [[object-liked-detail]]
 === Liked
-include::users/liked-response.adoc[]
+include::generated/users-liked-output.adoc[]
 
 [[object-voted-detail]]
 === Voted
-include::users/voted-response.adoc[]
+include::generated/users-voted-output.adoc[]
 
 [[object-discover-stats]]
 === Discover stats
-include::stats/discover-response.adoc[]
+include::generated/stats-discover-output.adoc[]
 
 [[object-system-stats]]
 === System stats
-include::stats/system-response.adoc[]
+include::generated/stats-system-output.adoc[]
 
 
 == Contrib plugins

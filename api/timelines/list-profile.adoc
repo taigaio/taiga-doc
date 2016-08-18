@@ -1,12 +1,6 @@
 To list a profile timeline send a GET request with the following parameters:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/timeline/profile/1
-----
+include::../generated/profile-timeline-get-cmd.adoc[]
 
 This API call returns actions executed by the specified user and related to them, watching objects, actions by related team members, belonging to projects...
 

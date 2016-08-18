@@ -1,0 +1,68 @@
+[source,json]
+----
+[
+    {
+        "color": "#ffcc00",
+        "id": 3,
+        "is_closed": true,
+        "name": "Ready for test",
+        "order": 3,
+        "project": 1,
+        "slug": "ready-for-test"
+    },
+    {
+        "color": "#669900",
+        "id": 4,
+        "is_closed": true,
+        "name": "Closed",
+        "order": 4,
+        "project": 1,
+        "slug": "closed"
+    },
+    {
+        "color": "#ff9900",
+        "id": 2,
+        "is_closed": false,
+        "name": "In progress",
+        "order": 5,
+        "project": 1,
+        "slug": "in-progress"
+    },
+    {
+        "color": "#999999",
+        "id": 5,
+        "is_closed": false,
+        "name": "Needs Info",
+        "order": 5,
+        "project": 1,
+        "slug": "needs-info"
+    },
+    {
+        "color": "#AAAAAA",
+        "id": 41,
+        "is_closed": true,
+        "name": "New status",
+        "order": 8,
+        "project": 1,
+        "slug": "new-status"
+    },
+    {
+        "color": "#999999",
+        "id": 42,
+        "is_closed": false,
+        "name": "New status name",
+        "order": 10,
+        "project": 1,
+        "slug": "new-status-name"
+    },
+    {
+        "color": "#999999",
+        "id": 1,
+        "is_closed": false,
+        "name": "Patch status name",
+        "order": 10,
+        "project": 1,
+        "slug": "patch-status-name"
+    }
+]
+----

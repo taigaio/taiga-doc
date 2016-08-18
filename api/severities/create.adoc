@@ -6,30 +6,8 @@ To create severities send a POST request with the following data:
 - *project*: (required): project id
 
 
-[source,bash]
-----
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-        "color": "#AAAAAA",
-        "name": "New severity",
-        "order": 8,
-        "project": 3
-    }' \
-  https://api.taiga.io/api/v1/severities
-----
+include::../generated/severities-create-cmd.adoc[]
 
-[source,bash]
-----
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "project": 3,
-          "name": "New severity name"
-      }' \
-  https://api.taiga.io/api/v1/severities
-----
+include::../generated/severities-simple-create-cmd.adoc[]
 
 When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-severity-detail[severity detail object]

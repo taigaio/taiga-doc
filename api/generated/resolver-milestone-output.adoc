@@ -1,0 +1,7 @@
+[source,json]
+----
+{
+    "milestone": 1,
+    "project": 1
+}
+----

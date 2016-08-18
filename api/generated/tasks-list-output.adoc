@@ -1,0 +1,72 @@
+[source,json]
+----
+{
+    "assigned_to": 10,
+    "assigned_to_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Marta Carmona",
+        "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+        "id": 10,
+        "is_active": true,
+        "photo": null,
+        "username": "user4"
+    },
+    "attachments": [],
+    "blocked_note": "",
+    "created_date": "2016-08-17T10:38:22.203Z",
+    "external_reference": null,
+    "finished_date": "2016-07-05T10:14:48.780Z",
+    "id": 1,
+    "is_blocked": false,
+    "is_closed": true,
+    "is_iocaine": false,
+    "is_voter": true,
+    "is_watcher": true,
+    "milestone": 1,
+    "milestone_slug": "sprint-2016-6-23",
+    "modified_date": "2016-08-17T10:45:30.528Z",
+    "owner": 7,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Marcos Ortiz",
+        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+        "id": 7,
+        "is_active": true,
+        "photo": null,
+        "username": "user1"
+    },
+    "project": 1,
+    "ref": 2,
+    "status": 3,
+    "status_extra_info": {
+        "color": "#ffcc00",
+        "name": "Ready for test"
+    },
+    "subject": "Patching subject",
+    "tags": [
+        [
+            "incidunt",
+            null
+        ],
+        [
+            "sequi",
+            null
+        ],
+        [
+            "at",
+            null
+        ]
+    ],
+    "taskboard_order": 1,
+    "total_voters": 8,
+    "total_watchers": 3,
+    "us_order": 1,
+    "user_story": 1,
+    "version": 2,
+    "watchers": [
+        8,
+        3,
+        6
+    ]
+}
+----

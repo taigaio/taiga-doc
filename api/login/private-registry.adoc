@@ -8,20 +8,6 @@ To add a user into a project via invitation send a POST request containing the f
 - *email* (required only if the user doesn't exist in the platform)
 - *full_name* (required only if the user doesn't exist in the platform)
 
-[source,bash]
-----
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -d '{
-          "type": "private",
-          "existing": false,
-          "token": "e8ea658e-6655-11e4-9d95-b499ba562790",
-          "username": "'${USERNAME}'",
-          "password": "'${PASSWORD}'",
-          "email": "'${EMAIL}'",
-          "full_name": "'${FULL_NAME}'"
-      }' \
-  https://api.taiga.io/api/v1/auth/register
-----
+include::../generated/register-user-cmd.adoc[]
 
 When the registration is successful, the HTTP response is a 201 CREATED and the response body is a JSON link:#object-auth-user-detail[user auth detail object]

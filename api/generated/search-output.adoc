@@ -1,0 +1,513 @@
+[source,json]
+----
+{
+    "count": 67,
+    "issues": [
+        {
+            "assigned_to": 6,
+            "id": 8,
+            "ref": 28,
+            "status": 1,
+            "subject": "Support for bulk actions"
+        },
+        {
+            "assigned_to": 14,
+            "id": 23,
+            "ref": 74,
+            "status": 3,
+            "subject": "Implement the form"
+        },
+        {
+            "assigned_to": null,
+            "id": 5,
+            "ref": 19,
+            "status": 3,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        {
+            "assigned_to": null,
+            "id": 16,
+            "ref": 61,
+            "status": 3,
+            "subject": "Exception is thrown if trying to add a folder with existing name"
+        },
+        {
+            "assigned_to": null,
+            "id": 4,
+            "ref": 14,
+            "status": 2,
+            "subject": "Added file copying and processing of images (resizing)"
+        },
+        {
+            "assigned_to": null,
+            "id": 11,
+            "ref": 39,
+            "status": 1,
+            "subject": "Lighttpd x-sendfile support"
+        },
+        {
+            "assigned_to": 15,
+            "id": 1,
+            "ref": 1,
+            "status": 3,
+            "subject": "Patching subject"
+        },
+        {
+            "assigned_to": 11,
+            "id": 15,
+            "ref": 57,
+            "status": 1,
+            "subject": "Create the user model"
+        },
+        {
+            "assigned_to": 8,
+            "id": 18,
+            "ref": 68,
+            "status": 1,
+            "subject": "Support for bulk actions"
+        },
+        {
+            "assigned_to": 10,
+            "id": 20,
+            "ref": 71,
+            "status": 1,
+            "subject": "Create the html template"
+        },
+        {
+            "assigned_to": 15,
+            "id": 31,
+            "ref": 82,
+            "status": 1,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        {
+            "assigned_to": 10,
+            "id": 12,
+            "ref": 43,
+            "status": 3,
+            "subject": "Fixing templates for Django 1.6."
+        },
+        {
+            "assigned_to": 14,
+            "id": 25,
+            "ref": 76,
+            "status": 1,
+            "subject": "Create the user model"
+        },
+        {
+            "assigned_to": 11,
+            "id": 10,
+            "ref": 36,
+            "status": 1,
+            "subject": "Implement the form"
+        },
+        {
+            "assigned_to": 14,
+            "id": 26,
+            "ref": 77,
+            "status": 1,
+            "subject": "Migrate to Python 3 and milk a beautiful cow"
+        },
+        {
+            "assigned_to": null,
+            "id": 7,
+            "ref": 23,
+            "status": 2,
+            "subject": "Added file copying and processing of images (resizing)"
+        },
+        {
+            "assigned_to": null,
+            "id": 6,
+            "ref": 21,
+            "status": 1,
+            "subject": "Implement the form"
+        },
+        {
+            "assigned_to": 13,
+            "id": 27,
+            "ref": 78,
+            "status": 3,
+            "subject": "Fixing templates for Django 1.6."
+        },
+        {
+            "assigned_to": 7,
+            "id": 30,
+            "ref": 81,
+            "status": 4,
+            "subject": "Lighttpd support"
+        },
+        {
+            "assigned_to": null,
+            "id": 2,
+            "ref": 3,
+            "status": 4,
+            "subject": "Add tests for bulk operations"
+        },
+        {
+            "assigned_to": 15,
+            "id": 19,
+            "ref": 70,
+            "status": 2,
+            "subject": "Create the html template"
+        }
+    ],
+    "tasks": [
+        {
+            "assigned_to": 6,
+            "id": 8,
+            "ref": 28,
+            "status": 1,
+            "subject": "Support for bulk actions"
+        },
+        {
+            "assigned_to": 14,
+            "id": 23,
+            "ref": 74,
+            "status": 3,
+            "subject": "Implement the form"
+        },
+        {
+            "assigned_to": null,
+            "id": 5,
+            "ref": 19,
+            "status": 3,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        {
+            "assigned_to": null,
+            "id": 16,
+            "ref": 61,
+            "status": 3,
+            "subject": "Exception is thrown if trying to add a folder with existing name"
+        },
+        {
+            "assigned_to": null,
+            "id": 4,
+            "ref": 14,
+            "status": 2,
+            "subject": "Added file copying and processing of images (resizing)"
+        },
+        {
+            "assigned_to": null,
+            "id": 11,
+            "ref": 39,
+            "status": 1,
+            "subject": "Lighttpd x-sendfile support"
+        },
+        {
+            "assigned_to": 15,
+            "id": 1,
+            "ref": 1,
+            "status": 3,
+            "subject": "Patching subject"
+        },
+        {
+            "assigned_to": 11,
+            "id": 15,
+            "ref": 57,
+            "status": 1,
+            "subject": "Create the user model"
+        },
+        {
+            "assigned_to": 8,
+            "id": 18,
+            "ref": 68,
+            "status": 1,
+            "subject": "Support for bulk actions"
+        },
+        {
+            "assigned_to": 10,
+            "id": 20,
+            "ref": 71,
+            "status": 1,
+            "subject": "Create the html template"
+        },
+        {
+            "assigned_to": 15,
+            "id": 31,
+            "ref": 82,
+            "status": 1,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        {
+            "assigned_to": 10,
+            "id": 12,
+            "ref": 43,
+            "status": 3,
+            "subject": "Fixing templates for Django 1.6."
+        },
+        {
+            "assigned_to": 14,
+            "id": 25,
+            "ref": 76,
+            "status": 1,
+            "subject": "Create the user model"
+        },
+        {
+            "assigned_to": 11,
+            "id": 10,
+            "ref": 36,
+            "status": 1,
+            "subject": "Implement the form"
+        },
+        {
+            "assigned_to": 14,
+            "id": 26,
+            "ref": 77,
+            "status": 1,
+            "subject": "Migrate to Python 3 and milk a beautiful cow"
+        },
+        {
+            "assigned_to": null,
+            "id": 7,
+            "ref": 23,
+            "status": 2,
+            "subject": "Added file copying and processing of images (resizing)"
+        },
+        {
+            "assigned_to": null,
+            "id": 6,
+            "ref": 21,
+            "status": 1,
+            "subject": "Implement the form"
+        },
+        {
+            "assigned_to": 13,
+            "id": 27,
+            "ref": 78,
+            "status": 3,
+            "subject": "Fixing templates for Django 1.6."
+        },
+        {
+            "assigned_to": 7,
+            "id": 30,
+            "ref": 81,
+            "status": 4,
+            "subject": "Lighttpd support"
+        },
+        {
+            "assigned_to": null,
+            "id": 2,
+            "ref": 3,
+            "status": 4,
+            "subject": "Add tests for bulk operations"
+        },
+        {
+            "assigned_to": 15,
+            "id": 19,
+            "ref": 70,
+            "status": 2,
+            "subject": "Create the html template"
+        }
+    ],
+    "userstories": [
+        {
+            "id": 8,
+            "milestone_name": "Sprint 2016-7-8",
+            "milestone_slug": "sprint-2016-7-8",
+            "ref": 28,
+            "status": 1,
+            "subject": "Support for bulk actions",
+            "total_points": 65.0
+        },
+        {
+            "id": 23,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 74,
+            "status": 3,
+            "subject": "Implement the form",
+            "total_points": 29.0
+        },
+        {
+            "id": 5,
+            "milestone_name": "Sprint 2016-6-23",
+            "milestone_slug": "sprint-2016-6-23",
+            "ref": 19,
+            "status": 3,
+            "subject": "get_actions() does not check for 'delete_selected' in actions",
+            "total_points": 18.0
+        },
+        {
+            "id": 16,
+            "milestone_name": "Sprint 2016-7-23",
+            "milestone_slug": "sprint-2016-7-23",
+            "ref": 61,
+            "status": 3,
+            "subject": "Exception is thrown if trying to add a folder with existing name",
+            "total_points": 34.0
+        },
+        {
+            "id": 4,
+            "milestone_name": "Sprint 2016-6-23",
+            "milestone_slug": "sprint-2016-6-23",
+            "ref": 14,
+            "status": 2,
+            "subject": "Added file copying and processing of images (resizing)",
+            "total_points": 18.5
+        },
+        {
+            "id": 11,
+            "milestone_name": "Sprint 2016-7-8",
+            "milestone_slug": "sprint-2016-7-8",
+            "ref": 39,
+            "status": 1,
+            "subject": "Lighttpd x-sendfile support",
+            "total_points": 34.5
+        },
+        {
+            "id": 1,
+            "milestone_name": "Sprint 2016-6-23",
+            "milestone_slug": "sprint-2016-6-23",
+            "ref": 1,
+            "status": 3,
+            "subject": "Patching subject",
+            "total_points": 23.0
+        },
+        {
+            "id": 15,
+            "milestone_name": "Sprint 2016-7-23",
+            "milestone_slug": "sprint-2016-7-23",
+            "ref": 57,
+            "status": 1,
+            "subject": "Create the user model",
+            "total_points": 12.0
+        },
+        {
+            "id": 18,
+            "milestone_name": "Sprint 2016-7-23",
+            "milestone_slug": "sprint-2016-7-23",
+            "ref": 68,
+            "status": 1,
+            "subject": "Support for bulk actions",
+            "total_points": 34.5
+        },
+        {
+            "id": 20,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 71,
+            "status": 1,
+            "subject": "Create the html template",
+            "total_points": 31.0
+        },
+        {
+            "id": 31,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 82,
+            "status": 1,
+            "subject": "get_actions() does not check for 'delete_selected' in actions",
+            "total_points": 12.5
+        },
+        {
+            "id": 12,
+            "milestone_name": "Sprint 2016-7-23",
+            "milestone_slug": "sprint-2016-7-23",
+            "ref": 43,
+            "status": 3,
+            "subject": "Fixing templates for Django 1.6.",
+            "total_points": 31.0
+        },
+        {
+            "id": 25,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 76,
+            "status": 1,
+            "subject": "Create the user model",
+            "total_points": 43.5
+        },
+        {
+            "id": 10,
+            "milestone_name": "Sprint 2016-7-8",
+            "milestone_slug": "sprint-2016-7-8",
+            "ref": 36,
+            "status": 1,
+            "subject": "Implement the form",
+            "total_points": 5.5
+        },
+        {
+            "id": 26,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 77,
+            "status": 1,
+            "subject": "Migrate to Python 3 and milk a beautiful cow",
+            "total_points": 23.0
+        },
+        {
+            "id": 7,
+            "milestone_name": "Sprint 2016-7-8",
+            "milestone_slug": "sprint-2016-7-8",
+            "ref": 23,
+            "status": 2,
+            "subject": "Added file copying and processing of images (resizing)",
+            "total_points": 33.5
+        },
+        {
+            "id": 6,
+            "milestone_name": "Sprint 2016-7-8",
+            "milestone_slug": "sprint-2016-7-8",
+            "ref": 21,
+            "status": 1,
+            "subject": "Implement the form",
+            "total_points": 25.0
+        },
+        {
+            "id": 27,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 78,
+            "status": 3,
+            "subject": "Fixing templates for Django 1.6.",
+            "total_points": 18.0
+        },
+        {
+            "id": 30,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 81,
+            "status": 4,
+            "subject": "Lighttpd support",
+            "total_points": 13.0
+        },
+        {
+            "id": 2,
+            "milestone_name": "Sprint 2016-6-23",
+            "milestone_slug": "sprint-2016-6-23",
+            "ref": 3,
+            "status": 4,
+            "subject": "Add tests for bulk operations",
+            "total_points": 56.0
+        },
+        {
+            "id": 19,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 70,
+            "status": 2,
+            "subject": "Create the html template",
+            "total_points": 24.0
+        }
+    ],
+    "wikipages": [
+        {
+            "id": 3,
+            "slug": "unde"
+        },
+        {
+            "id": 1,
+            "slug": "home"
+        },
+        {
+            "id": 2,
+            "slug": "sapiente"
+        },
+        {
+            "id": 4,
+            "slug": "recusandae-sapiente-excepturi"
+        }
+    ]
+}
+----

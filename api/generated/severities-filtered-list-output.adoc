@@ -1,0 +1,54 @@
+[source,json]
+----
+[
+    {
+        "color": "#0000FF",
+        "id": 3,
+        "name": "Normal",
+        "order": 3,
+        "project": 1
+    },
+    {
+        "color": "#FFA500",
+        "id": 4,
+        "name": "Important",
+        "order": 4,
+        "project": 1
+    },
+    {
+        "color": "#CC0000",
+        "id": 5,
+        "name": "Critical",
+        "order": 5,
+        "project": 1
+    },
+    {
+        "color": "#669933",
+        "id": 2,
+        "name": "Minor",
+        "order": 5,
+        "project": 1
+    },
+    {
+        "color": "#AAAAAA",
+        "id": 41,
+        "name": "New severity",
+        "order": 8,
+        "project": 1
+    },
+    {
+        "color": "#999999",
+        "id": 42,
+        "name": "New severity name",
+        "order": 10,
+        "project": 1
+    },
+    {
+        "color": "#666666",
+        "id": 1,
+        "name": "Patch name",
+        "order": 10,
+        "project": 1
+    }
+]
+----

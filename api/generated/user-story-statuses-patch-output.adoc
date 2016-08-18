@@ -1,0 +1,14 @@
+[source,json]
+----
+{
+    "color": "#999999",
+    "id": 1,
+    "is_archived": false,
+    "is_closed": false,
+    "name": "Patch status name",
+    "order": 1,
+    "project": 1,
+    "slug": "patch-status-name",
+    "wip_limit": null
+}
+----

@@ -1,7 +1,0 @@
-[source,json]
-----
-{
-    "name": "Español",
-    "code": "es"
-}
-----

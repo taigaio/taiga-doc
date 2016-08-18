@@ -1,0 +1,80 @@
+[source,json]
+----
+{
+    "assigned_to": 13,
+    "assigned_to_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Alvaro Molina",
+        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+        "id": 13,
+        "is_active": true,
+        "photo": null,
+        "username": "user7"
+    },
+    "blocked_note_html": "",
+    "comment": "",
+    "created_date": "2016-08-17T10:38:50.028Z",
+    "description": "Suscipit totam quaerat vel quae, excepturi deleniti enim veritatis officiis ipsa saepe id totam cumque. Dolores maxime quis excepturi labore officiis omnis quia harum eveniet at, aspernatur voluptate omnis debitis, praesentium aliquid est provident temporibus deserunt? Eaque amet a aliquam dolor minus quaerat vero nam, nostrum veritatis fugiat quam id excepturi tempore delectus dolorem? Consequatur ducimus et vitae.",
+    "description_html": "<p>Suscipit totam quaerat vel quae, excepturi deleniti enim veritatis officiis ipsa saepe id totam cumque. Dolores maxime quis excepturi labore officiis omnis quia harum eveniet at, aspernatur voluptate omnis debitis, praesentium aliquid est provident temporibus deserunt? Eaque amet a aliquam dolor minus quaerat vero nam, nostrum veritatis fugiat quam id excepturi tempore delectus dolorem? Consequatur ducimus et vitae.</p>",
+    "external_reference": null,
+    "finished_date": null,
+    "generated_user_stories": null,
+    "id": 23,
+    "is_closed": false,
+    "is_voter": false,
+    "is_watcher": true,
+    "milestone": null,
+    "modified_date": "2016-08-17T10:38:50.136Z",
+    "neighbors": {
+        "next": {
+            "id": 22,
+            "ref": 105,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        "previous": {
+            "id": 116,
+            "ref": 112,
+            "subject": "Issue 1"
+        }
+    },
+    "owner": 10,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Marta Carmona",
+        "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+        "id": 10,
+        "is_active": true,
+        "photo": null,
+        "username": "user4"
+    },
+    "priority": 2,
+    "project": 1,
+    "ref": 106,
+    "severity": 5,
+    "status": 5,
+    "status_extra_info": {
+        "color": "#89BAB4",
+        "name": "Needs Info"
+    },
+    "subject": "Added file copying and processing of images (resizing)",
+    "tags": [
+        [
+            "doloremque",
+            null
+        ]
+    ],
+    "total_voters": 4,
+    "total_watchers": 7,
+    "type": 2,
+    "version": 1,
+    "watchers": [
+        1,
+        6,
+        7,
+        8,
+        10,
+        12,
+        15
+    ]
+}
+----

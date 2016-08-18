@@ -1,0 +1,28 @@
+[source,json]
+----
+{
+    "bitbucket": {
+        "secret": "ea4f9f2d8e854ae59ded48bc01b52dd4",
+        "valid_origin_ips": [
+            "131.103.20.165",
+            "131.103.20.166",
+            "104.192.143.192/28",
+            "104.192.143.208/28"
+        ],
+        "webhooks_url": "http://localhost:8000/api/v1/bitbucket-hook?project=1&key=ea4f9f2d8e854ae59ded48bc01b52dd4"
+    },
+    "github": {
+        "secret": "fda7286ed1d94e0599dbb855ec23d4ca",
+        "webhooks_url": "http://localhost:8000/api/v1/github-hook?project=1"
+    },
+    "gitlab": {
+        "secret": "19a40a82649c4c0f97a0dc27afda78a2",
+        "valid_origin_ips": [],
+        "webhooks_url": "http://localhost:8000/api/v1/gitlab-hook?project=1&key=19a40a82649c4c0f97a0dc27afda78a2"
+    },
+    "gogs": {
+        "secret": "39c1646d21214856900118f3df6d29a9",
+        "webhooks_url": "http://localhost:8000/api/v1/gogs-hook?project=1"
+    }
+}
+----

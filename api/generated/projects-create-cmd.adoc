@@ -1,0 +1,21 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "creation_template": 1,
+        "description": "Taiga",
+        "is_backlog_activated": false,
+        "is_issues_activated": true,
+        "is_kanban_activated": true,
+        "is_private": false,
+        "is_wiki_activated": true,
+        "name": "Beta project",
+        "total_milestones": 3,
+        "total_story_points": 20.0,
+        "videoconferences": "appear-in",
+        "videoconferences_extra_data": null
+    }' \
+http://localhost:8000/api/v1/projects
+----

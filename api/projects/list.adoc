@@ -1,12 +1,6 @@
 To list projects send a GET request with the following parameters:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/projects
-----
+include::../generated/projects-list-cmd.adoc[]
 
 The HTTP response is a 200 OK and the response body is a JSON list of link:#object-project-list-entry[project list entry objects]
 
@@ -24,13 +18,7 @@ The results can be filtered using the following parameters:
 
 - *is_kanban_activated*: kanban is active
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/projects?member=1
-----
+include::../generated/projects-filtered-list-cmd.adoc[]
 
 The results can be ordered using the order_by parameter with the values:
 
@@ -53,10 +41,4 @@ The results can be ordered using the order_by parameter with the values:
 - *total_activity_last_year*: number of history entries generated in the last year
 
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/projects?member=1&order_by=memberships__user_order
-----
+include::../generated/projects-filtered-and-ordered-list-cmd.adoc[]

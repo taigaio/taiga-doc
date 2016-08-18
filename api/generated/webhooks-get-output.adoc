@@ -1,0 +1,11 @@
+[source,json]
+----
+{
+    "id": 1,
+    "key": "test-key",
+    "logs_counter": 1,
+    "name": "My service name",
+    "project": 1,
+    "url": "http://localhost:3000/htbin/test.py"
+}
+----

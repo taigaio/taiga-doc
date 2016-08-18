@@ -1,0 +1,16 @@
+[source,json]
+----
+{
+    "application": {
+        "description": "description paragraph",
+        "icon_url": null,
+        "id": "00000000-0000-0000-0000-000000000000",
+        "name": "example application",
+        "web": "http://example.com"
+    },
+    "auth_code": "b8c9ac36-6467-11e6-89e3-28b2bde6fbe5",
+    "id": 1,
+    "next_url": "http://example.com?auth_code=b8c9ac36-6467-11e6-89e3-28b2bde6fbe5",
+    "user": 6
+}
+----

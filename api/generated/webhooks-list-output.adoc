@@ -1,0 +1,21 @@
+[source,json]
+----
+[
+    {
+        "id": 1,
+        "key": "test-key",
+        "logs_counter": 1,
+        "name": "My service name",
+        "project": 1,
+        "url": "http://localhost:3000/htbin/test.py"
+    },
+    {
+        "id": 2,
+        "key": "my-very-secret-key",
+        "logs_counter": 0,
+        "name": "My service webhook",
+        "project": 1,
+        "url": "http://myservice.com/webhooks"
+    }
+]
+----

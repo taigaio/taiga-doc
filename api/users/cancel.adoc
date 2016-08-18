@@ -1,13 +1,5 @@
 To cancel a user account send a POST with the following data
 
-[source,bash]
-----
-curl -X POST \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "cancel_token": "'${CANCEL_TOKEN}'"
-      }' \
-  https://api.taiga.io/api/v1/users/cancel
-----
+include::../generated/users-cancel-cmd.adoc[]
 
 When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

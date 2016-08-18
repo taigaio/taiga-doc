@@ -1,0 +1,11 @@
+[source,json]
+----
+{
+    "id": 2,
+    "key": "my-very-secret-key",
+    "logs_counter": 0,
+    "name": "My service webhook",
+    "project": 1,
+    "url": "http://myservice.com/webhooks"
+}
+----

@@ -1,0 +1,45 @@
+[source,json]
+----
+[
+    {
+        "full_name": "Administrator",
+        "id": 5,
+        "username": "admin"
+    },
+    {
+        "full_name": "GitHub",
+        "id": 2,
+        "username": "github-9855a549210f4fa292abc5749f6cff7d"
+    },
+    {
+        "full_name": "GitLab",
+        "id": 3,
+        "username": "gitlab-ad1881c1d33c4b04a66b52ec7a486462"
+    },
+    {
+        "full_name": "Gogs",
+        "id": 4,
+        "username": "gogs-c4be52ff410f44bebf58b9de840df3a8"
+    },
+    {
+        "full_name": "Alba Leon",
+        "id": 8,
+        "username": "user2"
+    },
+    {
+        "full_name": "Marta Carmona",
+        "id": 10,
+        "username": "user4"
+    },
+    {
+        "full_name": "Pilar Herrera",
+        "id": 12,
+        "username": "user6"
+    },
+    {
+        "full_name": "Silvia Soto",
+        "id": 6,
+        "username": "user6532909695705815086"
+    }
+]
+----

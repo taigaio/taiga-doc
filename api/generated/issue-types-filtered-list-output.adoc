@@ -1,0 +1,40 @@
+[source,json]
+----
+[
+    {
+        "color": "#89a8ba",
+        "id": 3,
+        "name": "Enhancement",
+        "order": 3,
+        "project": 1
+    },
+    {
+        "color": "#ba89a8",
+        "id": 2,
+        "name": "Question",
+        "order": 5,
+        "project": 1
+    },
+    {
+        "color": "#AAAAAA",
+        "id": 31,
+        "name": "New type",
+        "order": 8,
+        "project": 1
+    },
+    {
+        "color": "#999999",
+        "id": 32,
+        "name": "New type name",
+        "order": 10,
+        "project": 1
+    },
+    {
+        "color": "#89BAB4",
+        "id": 1,
+        "name": "Patch type name",
+        "order": 10,
+        "project": 1
+    }
+]
+----

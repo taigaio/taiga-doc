@@ -1,0 +1,12 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "href": "home",
+        "project": 1,
+        "title": "Home page"
+    }' \
+http://localhost:8000/api/v1/wiki-links
+----

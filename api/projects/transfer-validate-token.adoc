@@ -2,14 +2,6 @@ To check if a transfer token for one project is valid for your user send a POST 
 
 - *token*: valid transfer token received by email.
 
-[source,bash]
-----
-curl -X POST \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  -d '{
-          "token": "'${TRANSFER_TOKEN}'",
-      }' \
-  https://api.taiga.io/api/v1/projects/1/transfer_validate_token
-----
+include::../generated/projects-transfer-validate-token-cmd.adoc[]
 
 The HTTP response is a 200 OK with an empty body response

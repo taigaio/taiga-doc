@@ -1,12 +1,6 @@
 To get the user watched content send a GET request specifying the user id in the url
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/users/1/watched
-----
+include::../generated/users-watched-cmd.adoc[]
 
 The HTTP response is a 200 OK and the response body is a list of JSON link:#object-watched-detail[watched detail object]
 
@@ -15,10 +9,4 @@ The results can be filtered using the following parameters:
 - *type*: of the content. Possible values: project, userstory, task and issue
 - *q*: text to search in the subject of the element
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/users/1/watched?type=project&q=test
-----
+include::../generated/users-filtered-watched-cmd.adoc[]

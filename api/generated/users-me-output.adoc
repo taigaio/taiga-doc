@@ -1,0 +1,34 @@
+[source,json]
+----
+{
+    "big_photo": "http://localhost:8000/media/user/a/8/2/b/d7081dc3a946066084690a8d1e5acfa5b5ace27cbccb3d3492ce2c9cdf13/test.png.300x300_q85_crop.png",
+    "bio": "",
+    "color": "#4B0082",
+    "email": "test@sample-email.com",
+    "full_name": "Silvia Soto",
+    "full_name_display": "Silvia Soto",
+    "gravatar_id": "737cc0873c835a8c879f124c0df9a0f1",
+    "id": 6,
+    "is_active": true,
+    "lang": "",
+    "max_memberships_private_projects": null,
+    "max_memberships_public_projects": null,
+    "max_private_projects": null,
+    "max_public_projects": null,
+    "photo": "http://localhost:8000/media/user/a/8/2/b/d7081dc3a946066084690a8d1e5acfa5b5ace27cbccb3d3492ce2c9cdf13/test.png.80x80_q85_crop.png",
+    "projects_with_me": [],
+    "roles": [
+        "Back",
+        "Design",
+        "Front",
+        "Product Owner",
+        "Stakeholder",
+        "UX"
+    ],
+    "theme": "",
+    "timezone": "",
+    "total_private_projects": 2,
+    "total_public_projects": 3,
+    "username": "patchedusername"
+}
+----

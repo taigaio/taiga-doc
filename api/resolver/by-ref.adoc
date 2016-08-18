@@ -1,23 +1,11 @@
 To resolve an object if we don't know its type we have to use `ref` GET parameter:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/resolver?project=taiga\&ref=915
-----
+include::../generated/resolver-ref-cmd.adoc[]
 
 The response body is a JSON object containing the project and the story, task or
 issue id.
 
-[source,json]
-----
-{
-    "project": 1,
-    "task": 1336
-}
-----
+include::../generated/resolver-ref-output.adoc[]
 
 [IMPORTANT]
 .Incompatibility between GET params

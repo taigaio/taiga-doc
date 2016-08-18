@@ -1,10 +1,5 @@
 To delete tasks send a DELETE specifying the task id in the url
 
-[source,bash]
-----
-curl -X DELETE \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/tasks/1
-----
+include::../generated/tasks-delete-cmd.adoc[]
 
 When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

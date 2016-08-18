@@ -1,0 +1,70 @@
+[source,json]
+----
+{
+    "assigned_to": null,
+    "assigned_to_extra_info": null,
+    "attachments": [],
+    "backlog_order": 2,
+    "blocked_note": "",
+    "client_requirement": false,
+    "comment": "",
+    "created_date": "2016-08-17T10:44:58.000Z",
+    "external_reference": null,
+    "finish_date": null,
+    "generated_from_issue": null,
+    "id": 168,
+    "is_blocked": false,
+    "is_closed": false,
+    "is_voter": false,
+    "is_watcher": false,
+    "kanban_order": 37,
+    "milestone": null,
+    "milestone_name": null,
+    "milestone_slug": null,
+    "modified_date": "2016-08-17T10:44:58.010Z",
+    "origin_issue": null,
+    "owner": 6,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Silvia Soto",
+        "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+        "id": 6,
+        "is_active": true,
+        "photo": null,
+        "username": "user6532909695705815086"
+    },
+    "points": {
+        "1": 4,
+        "2": 3,
+        "3": 2,
+        "4": 1
+    },
+    "project": 1,
+    "ref": 110,
+    "sprint_order": 2,
+    "status": 2,
+    "status_extra_info": {
+        "color": "#ff8a84",
+        "name": "Ready"
+    },
+    "subject": "Customer personal data",
+    "tags": [
+        [
+            "service catalog",
+            null
+        ],
+        [
+            "customer",
+            null
+        ]
+    ],
+    "tasks": [],
+    "team_requirement": false,
+    "total_points": 1.5,
+    "total_voters": 0,
+    "total_watchers": 0,
+    "tribe_gig": null,
+    "version": 1,
+    "watchers": []
+}
+----

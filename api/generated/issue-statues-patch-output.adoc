@@ -1,0 +1,12 @@
+[source,json]
+----
+{
+    "color": "#8C2318",
+    "id": 1,
+    "is_closed": false,
+    "name": "Patch status name",
+    "order": 1,
+    "project": 1,
+    "slug": "patch-status-name"
+}
+----

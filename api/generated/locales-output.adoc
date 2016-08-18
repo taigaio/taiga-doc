@@ -1,0 +1,75 @@
+[source,json]
+----
+[
+    {
+        "bidi": false,
+        "code": "ca",
+        "name": "Catal\u00e0"
+    },
+    {
+        "bidi": false,
+        "code": "de",
+        "name": "Deutsch"
+    },
+    {
+        "bidi": false,
+        "code": "en",
+        "name": "English (US)"
+    },
+    {
+        "bidi": false,
+        "code": "es",
+        "name": "Espa\u00f1ol"
+    },
+    {
+        "bidi": false,
+        "code": "fi",
+        "name": "Suomi"
+    },
+    {
+        "bidi": false,
+        "code": "fr",
+        "name": "Fran\u00e7ais"
+    },
+    {
+        "bidi": false,
+        "code": "it",
+        "name": "Italiano"
+    },
+    {
+        "bidi": false,
+        "code": "nl",
+        "name": "Nederlands"
+    },
+    {
+        "bidi": false,
+        "code": "pl",
+        "name": "Polski"
+    },
+    {
+        "bidi": false,
+        "code": "pt-br",
+        "name": "Portugu\u00eas (Brasil)"
+    },
+    {
+        "bidi": false,
+        "code": "ru",
+        "name": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439"
+    },
+    {
+        "bidi": false,
+        "code": "sv",
+        "name": "Svenska"
+    },
+    {
+        "bidi": false,
+        "code": "tr",
+        "name": "T\u00fcrk\u00e7e"
+    },
+    {
+        "bidi": false,
+        "code": "zh-hant",
+        "name": "\u4e2d\u6587(\u9999\u6e2f)"
+    }
+]
+----

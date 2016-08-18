@@ -1,0 +1,6 @@
+[source,json]
+----
+{
+    "cyphered_token": "eyJhbGciOiJBMTI4S1ciLCJlbmMiOiJBMjU2R0NNIn0.Soq9YQ9y6wBT8OnLITZaSYBwhaZurSh3G7KbSZKA_N3VxWyqxAemxA.k_3RlliZY63F0RwI.1yY-v1jjd5x2eAZMoGslYKfxsUUWa2A9uVNGpPYF9g9Qjihzj1GP8A1VxnZS2EKGvQ.npp7IJMJ6LvVAqJcmEP_bQ"
+}
+----

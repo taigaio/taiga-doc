@@ -1,12 +1,6 @@
 To get the user liked content send a GET request specifying the user id in the url
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/users/1/liked
-----
+include::../generated/users-liked-cmd.adoc[]
 
 The HTTP response is a 200 OK and the response body is a list of JSON link:#object-liked-detail[liked detail object]
 
@@ -14,10 +8,4 @@ The results can be filtered using the following parameters:
 
 - *q*: text to search in the subject of the element
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/users/1/liked?q=test
-----
+include::../generated/users-filtered-liked-cmd.adoc[]

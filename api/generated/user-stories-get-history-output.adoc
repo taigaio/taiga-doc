@@ -1,0 +1,58 @@
+[source,json]
+----
+[
+    {
+        "comment": "Architecto voluptatibus ipsam qui nostrum aperiam unde esse. Consectetur quaerat ipsum atque, minus ipsa ab iste sapiente corrupti natus inventore ipsam hic doloremque dolor, iure dignissimos repudiandae reprehenderit, a provident et quos ad?",
+        "comment_html": "<p>Architecto voluptatibus ipsam qui nostrum aperiam unde esse. Consectetur quaerat ipsum atque, minus ipsa ab iste sapiente corrupti natus inventore ipsam hic doloremque dolor, iure dignissimos repudiandae reprehenderit, a provident et quos ad?</p>",
+        "created_at": "2016-08-17T10:38:22.728Z",
+        "delete_comment_date": null,
+        "delete_comment_user": null,
+        "diff": {},
+        "edit_comment_date": null,
+        "id": "b8904e88-6466-11e6-bf11-28b2bde6fbe5",
+        "is_hidden": false,
+        "is_snapshot": false,
+        "key": "userstories.userstory:2",
+        "snapshot": null,
+        "type": 1,
+        "user": {
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "is_active": true,
+            "name": "Catalina Roman",
+            "photo": null,
+            "pk": 15,
+            "username": "user9"
+        },
+        "values": {},
+        "values_diff": {}
+    },
+    {
+        "comment": "comment edition",
+        "comment_html": "<p>comment edition</p>",
+        "created_at": "2016-08-17T10:38:22.728Z",
+        "delete_comment_date": "2016-08-17T10:45:12.845Z",
+        "delete_comment_user": {
+            "name": "Silvia Soto",
+            "pk": 6
+        },
+        "diff": {},
+        "edit_comment_date": "2016-08-17T10:45:12.614Z",
+        "id": "00000000-0000-0000-0000-000000000000",
+        "is_hidden": false,
+        "is_snapshot": false,
+        "key": "userstories.userstory:2",
+        "snapshot": null,
+        "type": 1,
+        "user": {
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "is_active": true,
+            "name": "Catalina Roman",
+            "photo": null,
+            "pk": 15,
+            "username": "user9"
+        },
+        "values": {},
+        "values_diff": {}
+    }
+]
+----

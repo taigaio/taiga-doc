@@ -1,0 +1,42 @@
+[source,json]
+----
+{
+    "assigned_to": 15,
+    "assigned_to_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Catalina Roman",
+        "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+        "id": 15,
+        "is_active": true,
+        "photo": null,
+        "username": "user9"
+    },
+    "created_date": "2016-08-17T10:40:59.666Z",
+    "description": null,
+    "id": 83,
+    "is_private": null,
+    "is_voter": true,
+    "is_watcher": false,
+    "logo_small_url": null,
+    "name": null,
+    "project": 7,
+    "project_blocked_code": "blocked-by-staff",
+    "project_is_private": false,
+    "project_name": "Project Example 6",
+    "project_slug": "project-6",
+    "ref": 100,
+    "slug": null,
+    "status": "Needs Info",
+    "status_color": "#89BAB4",
+    "subject": "Experimental: modular file types",
+    "tags_colors": [
+        {
+            "color": "#91e065",
+            "name": "vel"
+        }
+    ],
+    "total_voters": 5,
+    "total_watchers": 4,
+    "type": "issue"
+}
+----

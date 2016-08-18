@@ -6,18 +6,6 @@ To register a user without invitation send a POST request containing the followi
 - *email* (required)
 - *full_name* (required)
 
-[source,bash]
-----
-curl -X POST \
-  -H "Content-Type: application/json" \
-  -d '{
-          "type": "public",
-          "username": "'${USERNAME}'",
-          "password": "'${PASSWORD}'",
-          "email": "'${EMAIL}'",
-          "full_name": "'${FULL_NAME}'"
-      }' \
-  https://api.taiga.io/api/v1/auth/register
-----
+include::../generated/normal-register-cmd.adoc[]
 
 When the registration is successful, the HTTP response is a 201 CREATED and the response body is a JSON link:#object-auth-user-detail[user auth detail object]

@@ -1,12 +1,6 @@
 To get a project dump send a GET request with the project id:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/exporter/1
-----
+include::../generated/projects-export-cmd.adoc[]
 
 Depending on server configuration it can return two results:
 

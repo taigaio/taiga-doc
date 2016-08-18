@@ -1,0 +1,12 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "application": "00000000-0000-0000-0000-000000000000",
+        "auth_code": "00000000-0000-0000-0000-000000000002",
+        "state": "random-state"
+    }' \
+http://localhost:8000/api/v1/application-tokens/validate
+----

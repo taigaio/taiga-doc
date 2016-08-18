@@ -1,0 +1,10 @@
+[source,json]
+----
+{
+    "id": 1,
+    "name": "Patch name",
+    "order": 1,
+    "project": 1,
+    "value": null
+}
+----

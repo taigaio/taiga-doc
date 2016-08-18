@@ -3,20 +3,8 @@ To resolve the id of a milestone send a GET request with the following parameter
 - *project* (required): the project slug trying to be resolved
 - *milestone* (required): the milestone slug trying to be resolved
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/resolver?project=taiga\&milestone=sprint-0
-----
+include::../generated/resolver-milestone-cmd.adoc[]
 
 The response body is a JSON object containing the project and the milestone ids
 
-[source,json]
-----
-{
-    "milestone": 1,
-    "project": 1
-}
-----
+include::../generated/resolver-milestone-output.adoc[]

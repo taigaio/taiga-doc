@@ -1,0 +1,70 @@
+[source,json]
+----
+{
+    "assigned_to": 10,
+    "assigned_to_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Marta Carmona",
+        "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+        "id": 10,
+        "is_active": true,
+        "photo": null,
+        "username": "user4"
+    },
+    "blocked_note_html": "",
+    "comment": "",
+    "created_date": "2016-08-17T10:38:45.207Z",
+    "description": "Tenetur fugit consequatur iure maxime, dignissimos fugit odit perferendis aut minima, necessitatibus laborum inventore ipsam, unde sunt asperiores quas eius nisi, ullam id iste dignissimos eius deleniti ex? Veniam quod minus rem necessitatibus nulla, quia sapiente in aliquid praesentium voluptatum, eius excepturi atque. Libero culpa eius ducimus earum doloribus, totam delectus nobis necessitatibus aliquam, facilis eum a tempore harum praesentium dicta, possimus consequuntur provident qui?",
+    "description_html": "<p>Tenetur fugit consequatur iure maxime, dignissimos fugit odit perferendis aut minima, necessitatibus laborum inventore ipsam, unde sunt asperiores quas eius nisi, ullam id iste dignissimos eius deleniti ex? Veniam quod minus rem necessitatibus nulla, quia sapiente in aliquid praesentium voluptatum, eius excepturi atque. Libero culpa eius ducimus earum doloribus, totam delectus nobis necessitatibus aliquam, facilis eum a tempore harum praesentium dicta, possimus consequuntur provident qui?</p>",
+    "external_reference": null,
+    "finished_date": null,
+    "generated_user_stories": null,
+    "id": 3,
+    "is_closed": false,
+    "is_voter": false,
+    "is_watcher": false,
+    "milestone": null,
+    "modified_date": "2016-08-17T10:45:15.705Z",
+    "owner": 14,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Andrea Fernandez",
+        "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+        "id": 14,
+        "is_active": true,
+        "photo": null,
+        "username": "user8"
+    },
+    "priority": 3,
+    "project": 1,
+    "ref": 86,
+    "severity": 4,
+    "status": 2,
+    "status_extra_info": {
+        "color": "#5E8C6A",
+        "name": "In progress"
+    },
+    "subject": "Patching subject",
+    "tags": [
+        [
+            "corporis",
+            null
+        ],
+        [
+            "porro",
+            null
+        ]
+    ],
+    "total_voters": 7,
+    "total_watchers": 5,
+    "type": 1,
+    "version": 2,
+    "watchers": [
+        1,
+        5,
+        9,
+        13,
+        15
+    ]
+}
+----

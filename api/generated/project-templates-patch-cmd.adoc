@@ -1,0 +1,10 @@
+[source,bash]
+----
+curl -X PATCH \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${ADMIN_AUTH_TOKEN}" \
+-d '{
+        "description": "New description"
+    }' \
+http://localhost:8000/api/v1/project-templates/1
+----

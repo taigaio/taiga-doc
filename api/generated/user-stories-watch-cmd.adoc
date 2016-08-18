@@ -1,0 +1,7 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+http://localhost:8000/api/v1/userstories/1/watch
+----

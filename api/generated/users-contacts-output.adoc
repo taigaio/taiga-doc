@@ -1,0 +1,26 @@
+[source,json]
+----
+{
+    "big_photo": null,
+    "bio": "",
+    "color": "#D70A53",
+    "full_name": "Alba Leon",
+    "full_name_display": "Alba Leon",
+    "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+    "id": 8,
+    "is_active": true,
+    "lang": "",
+    "photo": null,
+    "projects_with_me": [],
+    "roles": [
+        "Back",
+        "Design",
+        "Product Owner",
+        "Stakeholder",
+        "UX"
+    ],
+    "theme": "",
+    "timezone": "",
+    "username": "user2"
+}
+----

@@ -1,8 +1,0 @@
-[source,json]
-----
-{
-    "auth_code": "5a6e869a-52e6-11e5-ad57-68f72800aadd",
-    "state": "random-state",
-    "next_url": "http://tree.taiga.io/redirect?auth_code=5a6e869a-52e6-11e5-ad57-68f72800aadd"
-}
-----

@@ -1,0 +1,11 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "reason": "testing",
+        "token": "6:1bZyL6:olByFAM3MCvcPh2cfs6tONNxasU"
+    }' \
+http://localhost:8000/api/v1/projects/1/transfer_reject
+----

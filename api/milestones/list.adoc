@@ -1,12 +1,6 @@
 To list milestones send a GET request with the following parameters:
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/milestones
-----
+include::../generated/milestones-list-cmd.adoc[]
 
 The HTTP response is a 200 OK and the response body is a JSON list of link:#object-milestone-detail[milestone detail objects]
 
@@ -15,13 +9,7 @@ The results can be filtered using the following parameters:
 - *project*: project ID
 - *closed*: `true` to get only closed milestones or `false` to get only opened ones.
 
-[source,bash]
-----
-curl -X GET \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer ${AUTH_TOKEN}" \
-  https://api.taiga.io/api/v1/milestones?project=1
-----
+include::../generated/milestones-filtered-list-cmd.adoc[]
 
 [NOTE]
 ===============================

@@ -1,0 +1,65 @@
+[source,json]
+----
+[
+    {
+        "color": null,
+        "created_at": "2016-08-17T10:44:53.418Z",
+        "email": "test@test.com",
+        "full_name": null,
+        "gravatar_id": null,
+        "id": 93,
+        "invitation_extra_text": null,
+        "invited_by": {
+            "big_photo": null,
+            "full_name_display": "Silvia Soto",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user6532909695705815086"
+        },
+        "is_admin": false,
+        "is_owner": null,
+        "is_user_active": false,
+        "photo": null,
+        "project": 1,
+        "project_name": "Project Example 0",
+        "project_slug": "project-0",
+        "role": 3,
+        "role_name": "Front",
+        "user": null,
+        "user_email": null,
+        "user_order": 10000
+    },
+    {
+        "color": null,
+        "created_at": "2016-08-17T10:44:53.418Z",
+        "email": "john@doe.com",
+        "full_name": null,
+        "gravatar_id": null,
+        "id": 94,
+        "invitation_extra_text": null,
+        "invited_by": {
+            "big_photo": null,
+            "full_name_display": "Silvia Soto",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user6532909695705815086"
+        },
+        "is_admin": false,
+        "is_owner": null,
+        "is_user_active": false,
+        "photo": null,
+        "project": 1,
+        "project_name": "Project Example 0",
+        "project_slug": "project-0",
+        "role": 4,
+        "role_name": "Back",
+        "user": null,
+        "user_email": null,
+        "user_order": 10000
+    }
+]
+----

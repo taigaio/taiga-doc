@@ -1,0 +1,13 @@
+[source,bash]
+----
+curl -X PATCH \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "attributes_values": {
+            "5": "240 min"
+        },
+        "version": 1
+    }' \
+http://localhost:8000/api/v1/userstories/custom-attributes-values/1
+----

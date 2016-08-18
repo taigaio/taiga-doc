@@ -1,0 +1,53 @@
+[source,json]
+----
+[
+    {
+        "id": 4,
+        "notify_level": 2,
+        "project": 1,
+        "project_name": "Project Example 0"
+    },
+    {
+        "id": 18,
+        "notify_level": 1,
+        "project": 2,
+        "project_name": "Project Example 1"
+    },
+    {
+        "id": 38,
+        "notify_level": 1,
+        "project": 3,
+        "project_name": "Project Example 2"
+    },
+    {
+        "id": 51,
+        "notify_level": 1,
+        "project": 4,
+        "project_name": "Project Example 3"
+    },
+    {
+        "id": 67,
+        "notify_level": 1,
+        "project": 5,
+        "project_name": "Project Example 4"
+    },
+    {
+        "id": 82,
+        "notify_level": 1,
+        "project": 6,
+        "project_name": "Project Example 5"
+    },
+    {
+        "id": 96,
+        "notify_level": 1,
+        "project": 7,
+        "project_name": "Project Example 6"
+    },
+    {
+        "id": 111,
+        "notify_level": 1,
+        "project": 8,
+        "project_name": "Project Example"
+    }
+]
+----

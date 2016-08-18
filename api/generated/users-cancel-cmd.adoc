@@ -1,0 +1,10 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "cancel_token": "eyJ1c2VyX2NhbmNlbF9hY2NvdW50X2lkIjo2fQ:1bZyL7:EDkipEVYna6IgfsZ0m6Xw7VRLK4"
+    }' \
+http://localhost:8000/api/v1/users/cancel
+----

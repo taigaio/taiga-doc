@@ -1,0 +1,34 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "assigned_to": null,
+        "backlog_order": 2,
+        "blocked_note": "blocking reason",
+        "client_requirement": false,
+        "description": "Implement API CALL",
+        "is_blocked": false,
+        "is_closed": true,
+        "kanban_order": 37,
+        "milestone": null,
+        "points": {
+            "1": 4,
+            "2": 3,
+            "3": 2,
+            "4": 1
+        },
+        "project": 1,
+        "sprint_order": 2,
+        "status": 2,
+        "subject": "Customer personal data",
+        "tags": [
+            "service catalog",
+            "customer"
+        ],
+        "team_requirement": false,
+        "watchers": []
+    }' \
+http://localhost:8000/api/v1/userstories
+----

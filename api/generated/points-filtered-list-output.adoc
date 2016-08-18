@@ -1,0 +1,103 @@
+[source,json]
+----
+[
+    {
+        "id": 3,
+        "name": "1/2",
+        "order": 3,
+        "project": 1,
+        "value": 0.5
+    },
+    {
+        "id": 4,
+        "name": "1",
+        "order": 4,
+        "project": 1,
+        "value": 1.0
+    },
+    {
+        "id": 2,
+        "name": "0",
+        "order": 5,
+        "project": 1,
+        "value": 0.0
+    },
+    {
+        "id": 5,
+        "name": "2",
+        "order": 5,
+        "project": 1,
+        "value": 2.0
+    },
+    {
+        "id": 6,
+        "name": "3",
+        "order": 6,
+        "project": 1,
+        "value": 3.0
+    },
+    {
+        "id": 7,
+        "name": "5",
+        "order": 7,
+        "project": 1,
+        "value": 5.0
+    },
+    {
+        "id": 8,
+        "name": "8",
+        "order": 8,
+        "project": 1,
+        "value": 8.0
+    },
+    {
+        "id": 121,
+        "name": "Huge",
+        "order": 8,
+        "project": 1,
+        "value": 40.0
+    },
+    {
+        "id": 9,
+        "name": "10",
+        "order": 9,
+        "project": 1,
+        "value": 10.0
+    },
+    {
+        "id": 10,
+        "name": "13",
+        "order": 10,
+        "project": 1,
+        "value": 13.0
+    },
+    {
+        "id": 1,
+        "name": "Patch name",
+        "order": 10,
+        "project": 1,
+        "value": null
+    },
+    {
+        "id": 122,
+        "name": "Very huge",
+        "order": 10,
+        "project": 1,
+        "value": null
+    },
+    {
+        "id": 11,
+        "name": "20",
+        "order": 11,
+        "project": 1,
+        "value": 20.0
+    },
+    {
+        "id": 12,
+        "name": "40",
+        "order": 12,
+        "project": 1,
+        "value": 40.0
+    }
+]
+----

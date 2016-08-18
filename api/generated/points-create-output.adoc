@@ -1,0 +1,10 @@
+[source,json]
+----
+{
+    "id": 121,
+    "name": "Huge",
+    "order": 8,
+    "project": 1,
+    "value": 40.0
+}
+----

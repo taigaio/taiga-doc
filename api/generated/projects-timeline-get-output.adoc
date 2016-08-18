@@ -1,0 +1,62 @@
+[source,json]
+----
+{
+    "content_type": 1,
+    "created": "2016-08-17T10:44:58.698Z",
+    "data": {
+        "comment": "",
+        "comment_html": "",
+        "milestone": {
+            "id": 1,
+            "name": "Sprint 2016-6-23",
+            "slug": "sprint-2016-6-23"
+        },
+        "project": {
+            "description": "Project example 0 description",
+            "id": 1,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "user": {
+            "big_photo": null,
+            "date_joined": "2016-08-17T10:38:20.944Z",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
+            "is_profile_visible": true,
+            "name": "Silvia Soto",
+            "photo": null,
+            "username": "user6532909695705815086"
+        },
+        "userstory": {
+            "id": 1,
+            "ref": 1,
+            "subject": "Patching subject"
+        },
+        "values_diff": {
+            "attachments": {
+                "changed": [
+                    {
+                        "changes": {
+                            "description": [
+                                "libero quo fugit molestiae impedit officia at",
+                                "patching description"
+                            ]
+                        },
+                        "filename": "sample_attachment_1.txt",
+                        "thumb_url": null,
+                        "url": "http://localhost:8000/media/attachments/3/0/9/4/a33c8460e711a0409a9147e962234ad6c8a7a28150a2da6cb69ea64cef4a/sample_attachment_1.txt"
+                    }
+                ],
+                "deleted": [],
+                "new": []
+            }
+        }
+    },
+    "data_content_type": 39,
+    "event_type": "userstories.userstory.change",
+    "id": 8218,
+    "namespace": "project:1",
+    "object_id": 1,
+    "project": 1
+}
+----
