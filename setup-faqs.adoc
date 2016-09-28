@@ -102,7 +102,7 @@ To backup data from your server you just need to store a copy of the database an
 pg_dump taiga > taiga.sql
 ----
 
-2. Copy media  to a `<dest>`:
+2.C opy media to a `<dest>`:
 
 [source,bash]
 ----
