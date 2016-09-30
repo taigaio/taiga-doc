@@ -1,4 +1,7 @@
-To get a user story send a GET request specifying the user story reference and the project id as parameters:
+To get a user story send a GET request specifying the user story reference and one of the following parameters:
+
+- project (project id)
+- project_slug
 
 [source,bash]
 ----

@@ -36,6 +36,10 @@
 | POST
 | link:#tasks-bulk-create[Create tasks on bulk mode]
 
+| /api/v1/tasks/filters_data?project=\{projectId}
+| GET
+| link:#tasks-get-filters-data[Get filters data]
+
 | /api/v1/tasks/\{taskId}/upvote
 | POST
 | link:#tasks-upvote[Add star to a task]

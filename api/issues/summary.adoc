@@ -22,6 +22,10 @@ include::../issues/edit.adoc[]
 === Delete
 include::../issues/delete.adoc[]
 
+[[issues-get-filters-data]]
+=== Filters data
+include::../issues/get-filters-data.adoc[]
+
 [[issues-upvote]]
 === Vote an issue
 include::../issues/upvote.adoc[]

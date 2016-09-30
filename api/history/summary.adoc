@@ -2,6 +2,14 @@
 === Get user story, task, issue or wiki page history
 include::get-history.adoc[]
 
+[[history-comment-versions]]
+=== Get comment versions
+include::get-comment-versions.adoc[]
+
+[[history-edit-comment]]
+=== Edit comment
+include::edit-comment.adoc[]
+
 [[history-delete-comment]]
 === Delete comment
 include::delete-comment.adoc[]

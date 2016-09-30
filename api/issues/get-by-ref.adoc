@@ -1,4 +1,7 @@
-To get an issue send a GET request specifying the issue reference end project id as parameters:
+To get an issue send a GET request specifying the issue reference and one of the following parameters:
+
+- project (project id)
+- project_slug
 
 [source,bash]
 ----

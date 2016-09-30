@@ -26,6 +26,10 @@ include::../tasks/delete.adoc[]
 === Bulk creation
 include::../tasks/bulk-create.adoc[]
 
+[[tasks-get-filters-data]]
+=== Filters data
+include::../tasks/get-filters-data.adoc[]
+
 [[tasks-upvote]]
 === Vote a task
 include::../tasks/upvote.adoc[]

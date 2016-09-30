@@ -86,10 +86,10 @@ Test payload
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     },
     "date": "2016-04-12T12:00:56.335Z",
     "action": "test",
@@ -111,10 +111,10 @@ Milestone payloads
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     },
     "date": "2016-04-12T12:08:18.309Z",
     "action": "create",
@@ -129,10 +129,10 @@ Milestone payloads
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "id": 13,
         "name": "Sprint 4",
@@ -156,10 +156,10 @@ Milestone payloads
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     },
     "date": "2016-04-12T12:13:47.873Z",
     "action": "delete",
@@ -174,10 +174,10 @@ Milestone payloads
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "id": 13,
         "name": "Sprint 4",
@@ -201,10 +201,10 @@ Milestone payloads
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     },
     "action": "change",
     "data": {
@@ -218,10 +218,10 @@ Milestone payloads
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "id": 13,
         "name": "Sprint 4",
@@ -282,10 +282,10 @@ User story data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "assigned_to": null,
         "points": [
@@ -337,10 +337,10 @@ User story data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     }
 }
 ----
@@ -372,10 +372,10 @@ User story data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "assigned_to": null,
         "points": [],
@@ -398,10 +398,10 @@ User story data information
             "owner": {
                 "id": 4,
                 "permalink": "http://localhost:9001/profile/admin",
-                "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
                 "username": "admin",
                 "full_name": "Administrator",
-                "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "id": 1,
             "name": "Sprint 2016-2-16",
@@ -431,10 +431,10 @@ User story data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     }
 }
 ----
@@ -477,10 +477,10 @@ User story data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "assigned_to": null,
         "points": [
@@ -524,10 +524,10 @@ User story data information
             "owner": {
                 "id": 4,
                 "permalink": "http://localhost:9001/profile/admin",
-                "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
                 "username": "admin",
                 "full_name": "Administrator",
-                "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "id": 1,
             "name": "Sprint 2016-2-16",
@@ -557,10 +557,10 @@ User story data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     }
 }
 ----
@@ -592,18 +592,18 @@ Task data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "assigned_to": {
             "id": 10,
             "permalink": "http://localhost:9001/profile/user5",
-            "gravatar_url": "//www.gravatar.com/avatar/c9ba9d485f9a9153ebf53758feb0980c?size=80",
             "username": "user5",
             "full_name": "Alicia Flores",
-            "photo": "//www.gravatar.com/avatar/c9ba9d485f9a9153ebf53758feb0980c?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "status": {
             "id": 2,
@@ -634,18 +634,18 @@ Task data information
             "owner": {
                 "id": 8,
                 "permalink": "http://localhost:9001/profile/user3",
-                "gravatar_url": "//www.gravatar.com/avatar/9971a763f5dfc5cbd1ce1d2865b4fcfa?size=80",
                 "username": "user3",
                 "full_name": "Concepcion Garrido",
-                "photo": "//www.gravatar.com/avatar/9971a763f5dfc5cbd1ce1d2865b4fcfa?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "assigned_to": {
                 "id": 13,
                 "permalink": "http://localhost:9001/profile/user8",
-                "gravatar_url": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?size=80",
                 "username": "user8",
                 "full_name": "Lourdes Aguilar",
-                "photo": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "points": [
                 {
@@ -688,10 +688,10 @@ Task data information
                 "owner": {
                     "id": 4,
                     "permalink": "http://localhost:9001/profile/admin",
-                    "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
                     "username": "admin",
                     "full_name": "Administrator",
-                    "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+                    "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                    "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
                 },
                 "id": 1,
                 "name": "Sprint 2016-2-16",
@@ -729,10 +729,10 @@ Task data information
             "owner": {
                 "id": 4,
                 "permalink": "http://localhost:9001/profile/admin",
-                "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
                 "username": "admin",
                 "full_name": "Administrator",
-                "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "id": 1,
             "name": "Sprint 2016-2-16",
@@ -761,10 +761,10 @@ Task data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     }
 }
 ----
@@ -790,18 +790,18 @@ Task data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "assigned_to": {
             "id": 4,
             "permalink": "http://localhost:9001/profile/admin",
-            "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
             "username": "admin",
             "full_name": "Administrator",
-            "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+"gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "status": {
             "id": 2,
@@ -832,18 +832,18 @@ Task data information
             "owner": {
                 "id": 8,
                 "permalink": "http://localhost:9001/profile/user3",
-                "gravatar_url": "//www.gravatar.com/avatar/9971a763f5dfc5cbd1ce1d2865b4fcfa?size=80",
                 "username": "user3",
                 "full_name": "Concepcion Garrido",
-                "photo": "//www.gravatar.com/avatar/9971a763f5dfc5cbd1ce1d2865b4fcfa?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "assigned_to": {
                 "id": 13,
                 "permalink": "http://localhost:9001/profile/user8",
-                "gravatar_url": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?size=80",
                 "username": "user8",
                 "full_name": "Lourdes Aguilar",
-                "photo": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "points": [
                 {
@@ -886,10 +886,10 @@ Task data information
                 "owner": {
                     "id": 4,
                     "permalink": "http://localhost:9001/profile/admin",
-                    "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
                     "username": "admin",
                     "full_name": "Administrator",
-                    "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+                    "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                    "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
                 },
                 "id": 1,
                 "name": "Sprint 2016-2-16",
@@ -927,10 +927,10 @@ Task data information
             "owner": {
                 "id": 4,
                 "permalink": "http://localhost:9001/profile/admin",
-                "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
                 "username": "admin",
                 "full_name": "Administrator",
-                "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+"gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "id": 1,
             "name": "Sprint 2016-2-16",
@@ -962,10 +962,10 @@ Task data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     }
 }
 ----
@@ -979,10 +979,10 @@ Task data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     },
     "type": "task",
     "data": {
@@ -1001,18 +1001,18 @@ Task data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "assigned_to": {
             "id": 4,
             "permalink": "http://localhost:9001/profile/admin",
-            "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
             "username": "admin",
             "full_name": "Administrator",
-            "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "status": {
             "id": 2,
@@ -1043,18 +1043,18 @@ Task data information
             "owner": {
                 "id": 8,
                 "permalink": "http://localhost:9001/profile/user3",
-                "gravatar_url": "//www.gravatar.com/avatar/9971a763f5dfc5cbd1ce1d2865b4fcfa?size=80",
                 "username": "user3",
                 "full_name": "Concepcion Garrido",
-                "photo": "//www.gravatar.com/avatar/9971a763f5dfc5cbd1ce1d2865b4fcfa?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "assigned_to": {
                 "id": 13,
                 "permalink": "http://localhost:9001/profile/user8",
-                "gravatar_url": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?size=80",
                 "username": "user8",
                 "full_name": "Lourdes Aguilar",
-                "photo": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+                "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "points": [
                 {
@@ -1097,10 +1097,10 @@ Task data information
                 "owner": {
                     "id": 4,
                     "permalink": "http://localhost:9001/profile/admin",
-                    "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
                     "username": "admin",
                     "full_name": "Administrator",
-                    "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+                    "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+"gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
                 },
                 "id": 1,
                 "name": "Sprint 2016-2-16",
@@ -1138,10 +1138,10 @@ Task data information
             "owner": {
                 "id": 4,
                 "permalink": "http://localhost:9001/profile/admin",
-                "gravatar_url": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80",
                 "username": "admin",
                 "full_name": "Administrator",
-                "photo": "//www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=80"
+                "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+"gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
             },
             "id": 1,
             "name": "Sprint 2016-2-16",
@@ -1208,10 +1208,10 @@ Issue data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "assigned_to": null,
         "status": {
@@ -1253,10 +1253,10 @@ Issue data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     }
 }
 ----
@@ -1284,10 +1284,10 @@ Issue data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "assigned_to": null,
         "status": {
@@ -1329,10 +1329,10 @@ Issue data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     }
 }
 ----
@@ -1371,10 +1371,10 @@ Issue data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "assigned_to": null,
         "status": {
@@ -1413,10 +1413,10 @@ Issue data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     },
     "type": "issue",
     "action": "change",
@@ -1443,18 +1443,18 @@ Wiki page data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "last_modifier": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "id": 6,
         "slug": "test-wiki-page",
@@ -1468,10 +1468,10 @@ Wiki page data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     }
 }
 ----
@@ -1492,18 +1492,18 @@ Wiki page data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "last_modifier": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "id": 6,
         "slug": "test-wiki-page",
@@ -1517,10 +1517,10 @@ Wiki page data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     }
 }
 ----
@@ -1556,18 +1556,18 @@ Wiki page data information
         "owner": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "last_modifier": {
             "id": 6,
             "permalink": "http://localhost:9001/profile/user1",
-            "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
             "username": "user1",
             "full_name": "Purificacion Montero",
-            "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+            "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+            "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
         },
         "id": 6,
         "slug": "test-wiki-page",
@@ -1578,10 +1578,10 @@ Wiki page data information
     "by": {
         "id": 6,
         "permalink": "http://localhost:9001/profile/user1",
-        "gravatar_url": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80",
         "username": "user1",
         "full_name": "Purificacion Montero",
-        "photo": "//www.gravatar.com/avatar/aed1e43be0f69f07ce6f34a907bc6328?size=80"
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da"
     },
     "type": "wikipage",
     "action": "change",

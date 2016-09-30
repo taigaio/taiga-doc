@@ -36,6 +36,10 @@
 | POST
 | link:#issues-bulk-create[Create issues un bulk mode]
 
+| /api/v1/issues/filters_data?project=\{projectId}
+| GET
+| link:#issues-get-filters-data[Get filters data]
+
 | /api/v1/issues/\{issueId}/upvote
 | POST
 | link:#issues-upvote[Add a vote to an issue]

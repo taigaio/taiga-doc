@@ -34,15 +34,17 @@
     "assigned_to_extra_info": {
         "username": "user8",
         "full_name_display": "Lourdes Aguilar",
-        "photo": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
-        "big_photo": "//www.gravatar.com/avatar/dce0e8ed702cd85d5132e523121e619b?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=300",
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "big_photo": "//media.taiga.io/avatar.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da",
         "is_active": true
     },
     "owner_extra_info": {
         "username": "user2",
         "full_name_display": "Sofia Ramirez",
-        "photo": "//www.gravatar.com/avatar/5c921c7bd676b7b4992501005d243c42?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=80",
-        "big_photo": "//www.gravatar.com/avatar/5c921c7bd676b7b4992501005d243c42?default=https%3A%2F%2Fstatic.taiga.io%2Fimg%2Fuser-noimage.png&size=300",
+        "photo": "//media.taiga.io/avatar.80x80_q85_crop.png",
+        "big_photo": "//media.taiga.io/avatar.png",
+        "gravatar_id": "464bb6d514c3ecece1b87136ceeda1da",
         "is_active": true
     },
     "id": 1,

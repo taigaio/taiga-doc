@@ -1,4 +1,4 @@
-To undelete history comment send a POST specifying the history entry id in the url
+To undelete a history comment send a POST specifying the history entry id in the url
 
 [source,bash]
 ----

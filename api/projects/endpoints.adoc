@@ -52,10 +52,6 @@
 | GET
 | link:#projects-issue-stats[Get project issue stats]
 
-| /api/v1/projects/\{projectId}/issue_filters_data
-| GET
-| link:#projects-issue-filters-data[Get project issue filters data]
-
 | /api/v1/projects/\{projectId}/tags_colors
 | GET
 | link:#projects-tag-colors[Get project tags colors]

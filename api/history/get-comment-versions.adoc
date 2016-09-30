@@ -1,0 +1,11 @@
+To get the comment versions from the history entry of a user story, task, issue or wiki page send a GET request specifying the history entry id in the url
+
+[source,bash]
+----
+curl -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AUTH_TOKEN}" \
+  https://api.taiga.io/api/v1/history/userstory/1/comment_versions?id=10
+----
+
+The HTTP response is a 200 OK and the response body is a JSON of a list of link:#object-history-entry-comment-detail[history entry comment detail objects]

@@ -23,6 +23,27 @@ And finally reload the backend config with: `circusctl reload taiga`
 
 
 
+[[restrict-emails-to-domain]]
+How can I restrict registration to a concrete domain?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can restrict the usage of the platform to a set of valid email domains, so
+this allows you to restrict the registration to users that have a valid company
+email account.
+
+To do this you should update the `USER_EMAIL_ALLOWED_DOMAINS` on your
+`settings/local.py` and add the list of valid domains, for example, if you want
+to allow registrations only from `mycompany.com` and `mycustomer.com`, y can
+set it as:
+
+[source,python]
+----
+USER_EMAIL_ALLOWED_DOMAINS = ["mycompany.com", "mycustomer.com"]
+----
+
+And finally reload the backend config with: `circusctl reload taiga`
+
+
 [[faq-restart-backend]]
 How can I restart the backend application?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,6 +87,36 @@ The current supported plugins are:
 * link:https://github.com/taigaio/taiga-contrib-hipchat[taiga-contrib-hipchat]: HipChat integration
 * link:https://github.com/taigaio/taiga-contrib-letschat[taiga-contrib-letschat]: Let's Chat integration
 * link:https://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration
+
+
+[[faq-backup]]
+How I can make a backup of the data? And then restore them?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To backup data from your server you just need to store a copy of the database and attachments files. That is, You just need to make a dump of the database and a copy of `taiga-back/media directory`.
+
+1. Create dump:
+
+[source,bash]
+----
+pg_dump taiga > taiga.sql
+----
+
+2.C opy media to a `<dest>`:
+
+[source,bash]
+----
+cp -r taiga-back/media <dest>
+----
+
+Then You can restore the backup creating a new database to load the dump and copying the media directory:
+
+[source,bash]
+----
+createdb taiga
+psql taiga < taiga.sql
+cp -r <dest> taiga-back/media
+----
 
 
 Common Bugs
