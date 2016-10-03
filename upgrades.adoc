@@ -101,10 +101,14 @@ DATABASES = {
 
 Follow the default process.
 
-2.1.0 > 3.0.0 (extra step for instances with gogs plugin installed)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2.1.0 > 3.0.0
+~~~~~~~~~~~~~
 
-Taiga contrib gogs plugin has been moved to taiga core so in case you installed the plugin you must uninstall it:
+[IMPORTANT]
+.Extra step for instances with gogs plugin installed
+====
+
+Taiga contrib gogs plugin has been moved to taiga core so in case you installed the plugin you must uninstall it first:
 
 - In `taiga-back/settings/local.py`
     * Remove `taiga_contrib_gogs` from your `INSTALLED_APPS`
@@ -112,13 +116,9 @@ Taiga contrib gogs plugin has been moved to taiga core so in case you installed 
 
 - In `taiga-front/dist/conf.json` remove `/plugins/gogs/gogs.json` from the `contribPlugins` section
 - In `taiga-front/dist/plugins` remove the folder `gogs`
-
-
-2.1.0 > 3.0.0 (all installations)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====
 
 Follow the default process.
-
 
 The migration could take a long time if you have a large database: now a new permissions has been included to allow to add comments instead of use the __modify object permission__ for this purpose.
 
