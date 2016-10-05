@@ -10,5 +10,5 @@ curl -X POST \
         "project": 1,
         "value": 40
     }' \
-http://localhost:8000/api/v1/points
+-s http://localhost:8000/api/v1/points
 ----

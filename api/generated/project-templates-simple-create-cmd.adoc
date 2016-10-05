@@ -8,5 +8,5 @@ curl -X POST \
         "description": "Sample description",
         "name": "New simple template"
     }' \
-http://localhost:8000/api/v1/project-templates
+-s http://localhost:8000/api/v1/project-templates
 ----

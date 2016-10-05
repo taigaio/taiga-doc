@@ -6,5 +6,5 @@ curl -X PATCH \
 -d '{
         "name": "Beta project patch"
     }' \
-http://localhost:8000/api/v1/projects/1
+-s http://localhost:8000/api/v1/projects/1
 ----

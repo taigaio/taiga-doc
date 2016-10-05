@@ -1,0 +1,11 @@
+To list epic status send a GET request with the following parameters:
+
+include::../generated/epic-statuses-list-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-epic-status-detail[epic status detail objects]
+
+The results can be filtered using the following parameters:
+
+- *project*: project id
+
+include::../generated/epic-statuses-filtered-list-cmd.adoc[]

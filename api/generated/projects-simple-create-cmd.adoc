@@ -7,5 +7,5 @@ curl -X POST \
         "description": "Beta description",
         "name": "Beta project"
     }' \
-http://localhost:8000/api/v1/projects
+-s http://localhost:8000/api/v1/projects
 ----

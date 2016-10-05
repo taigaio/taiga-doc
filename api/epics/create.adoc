@@ -1,0 +1,19 @@
+To create epics send a POST request with the following data:
+
+- *assigned_to*: user id
+- *blocked_note*: reason why the epic is blocked
+- *description*: string
+- *is_blocked*: boolean
+- *is_closed*: boolean
+- *color*: RGB color
+- *project* (required): project id
+- *subject* (required)
+- *tags*: array of strings
+- *watchers*: array of watcher id's
+
+
+include::../generated/epics-create-cmd.adoc[]
+
+include::../generated/epics-simple-create-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-epic-detail[epic detail object]

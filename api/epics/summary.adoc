@@ -1,0 +1,99 @@
+[[epics-list]]
+=== List
+include::../epics/list.adoc[]
+
+[[epics-create]]
+=== Create
+include::../epics/create.adoc[]
+
+[[epics-get]]
+=== Get
+include::../epics/get.adoc[]
+
+[[epics-get-by-ref]]
+=== Get by ref
+include::../epics/get-by-ref.adoc[]
+
+[[epics-edit]]
+=== Edit
+include::../epics/edit.adoc[]
+
+[[epics-delete]]
+=== Delete
+include::../epics/delete.adoc[]
+
+[[epics-bulk-create]]
+=== Bulk creation
+include::../epics/bulk-create.adoc[]
+
+[[epics-get-filters-data]]
+=== Filters data
+include::../epics/get-filters-data.adoc[]
+
+[[epics-related-user-stories-list]]
+=== List related userstories
+include::../epics/list-related-user-stories.adoc[]
+
+[[epics-related-user-stories-create]]
+=== Create related userstory
+include::../epics/create-related-user-story.adoc[]
+
+[[epics-related-user-stories-get]]
+=== Get related userstory
+include::../epics/get-related-user-story.adoc[]
+
+[[epics-related-user-stories-edit]]
+=== Edit related userstory
+include::../epics/edit-related-user-story.adoc[]
+
+[[epics-related-user-stories-delete]]
+=== Delete related userstory
+include::../epics/delete-related-user-story.adoc[]
+
+[[epics-related-user-stories-bulk-create]]
+=== Bulk related userstories creation
+include::../epics/bulk-create-related-user-stories.adoc[]
+
+[[epics-upvote]]
+=== Vote an epic
+include::../epics/upvote.adoc[]
+
+[[epics-downvote]]
+=== Remove vote from an epic
+include::../epics/downvote.adoc[]
+
+[[epics-voters]]
+=== Get epic voters list
+include::../epics/voters.adoc[]
+
+[[epics-watch]]
+=== Watch an epic
+include::../epics/watch.adoc[]
+
+[[epics-unwatch]]
+=== Stop watching an epic
+include::../epics/unwatch.adoc[]
+
+[[epics-watchers]]
+=== List epic watchers
+include::../epics/watchers.adoc[]
+
+[[epics-list-attachments]]
+=== List attachments
+include::../epics/list-attachments.adoc[]
+
+[[epics-create-attachment]]
+=== Create attachment
+include::../epics/create-attachment.adoc[]
+
+[[epics-get-attachment]]
+=== Get attachment
+include::../epics/get-attachment.adoc[]
+
+[[epics-edit-attachment]]
+=== Edit attachment
+include::../epics/edit-attachment.adoc[]
+
+[[epics-delete-attachment]]
+=== Delete attachment
+include::../epics/delete-attachment.adoc[]

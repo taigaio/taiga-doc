@@ -1,0 +1,23 @@
+[[epic-custom-attributes-list]]
+=== List
+include::../epic-custom-attributes/list.adoc[]
+
+[[epic-custom-attributes-create]]
+=== Create
+include::../epic-custom-attributes/create.adoc[]
+
+[[epic-custom-attributes-get]]
+=== Get
+include::../epic-custom-attributes/get.adoc[]
+
+[[epic-custom-attributes-edit]]
+=== Edit
+include::../epic-custom-attributes/edit.adoc[]
+
+[[epic-custom-attributes-delete]]
+=== Delete
+include::../epic-custom-attributes/delete.adoc[]
+
+[[epic-custom-attributes-bulk-update-order]]
+=== Bulk update order
+include::../epic-custom-attributes/bulk-update-order.adoc[]

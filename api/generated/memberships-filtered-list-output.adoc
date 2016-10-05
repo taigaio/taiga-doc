@@ -3,7 +3,7 @@
 [
     {
         "color": "",
-        "created_at": "2016-08-17T10:38:21.513Z",
+        "created_at": "2016-10-04T12:11:00.711Z",
         "email": "admin@admin.com",
         "full_name": "Administrator",
         "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
@@ -21,11 +21,11 @@
         "role_name": "Design",
         "user": 5,
         "user_email": "admin@admin.com",
-        "user_order": 10000
+        "user_order": 1475583060711
     },
     {
         "color": "#D70A53",
-        "created_at": "2016-08-17T10:38:21.589Z",
+        "created_at": "2016-10-04T12:11:00.833Z",
         "email": "user2@taigaio.demo",
         "full_name": "Alba Leon",
         "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
@@ -43,11 +43,11 @@
         "role_name": "Stakeholder",
         "user": 8,
         "user_email": "user2@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583060833
     },
     {
         "color": "#002e33",
-        "created_at": "2016-08-17T10:38:21.715Z",
+        "created_at": "2016-10-04T12:11:01.055Z",
         "email": "user7@taigaio.demo",
         "full_name": "Alvaro Molina",
         "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
@@ -65,11 +65,11 @@
         "role_name": "Front",
         "user": 13,
         "user_email": "user7@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583061055
     },
     {
         "color": "#FFCC00",
-        "created_at": "2016-08-17T10:38:21.301Z",
+        "created_at": "2016-10-04T12:11:00.436Z",
         "email": "user8@taigaio.demo",
         "full_name": "Andrea Fernandez",
         "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
@@ -87,11 +87,11 @@
         "role_name": "Product Owner",
         "user": 14,
         "user_email": "user8@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583060436
     },
     {
         "color": "#C0FF33",
-        "created_at": "2016-08-17T10:38:21.742Z",
+        "created_at": "2016-10-04T12:11:01.099Z",
         "email": "user9@taigaio.demo",
         "full_name": "Catalina Roman",
         "gravatar_id": "69b60d39a450e863609ae3546b12b360",
@@ -109,11 +109,11 @@
         "role_name": "Product Owner",
         "user": 15,
         "user_email": "user9@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583061099
     },
     {
         "color": "#FFF8E7",
-        "created_at": "2016-08-17T10:38:21.612Z",
+        "created_at": "2016-10-04T12:11:00.878Z",
         "email": "user3@taigaio.demo",
         "full_name": "Esther Ferrer",
         "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
@@ -131,11 +131,11 @@
         "role_name": "Back",
         "user": 9,
         "user_email": "user3@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583060878
     },
     {
         "color": "#FFFF00",
-        "created_at": "2016-08-17T10:38:21.666Z",
+        "created_at": "2016-10-04T12:11:00.975Z",
         "email": "user5@taigaio.demo",
         "full_name": "German Benitez",
         "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
@@ -153,11 +153,11 @@
         "role_name": "Back",
         "user": 11,
         "user_email": "user5@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583060975
     },
     {
         "color": "#B6DA55",
-        "created_at": "2016-08-17T10:38:21.566Z",
+        "created_at": "2016-10-04T12:11:00.796Z",
         "email": "user1@taigaio.demo",
         "full_name": "Marcos Ortiz",
         "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
@@ -175,11 +175,11 @@
         "role_name": "Front",
         "user": 7,
         "user_email": "user1@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583060796
     },
     {
         "color": "#67CF00",
-        "created_at": "2016-08-17T10:38:21.636Z",
+        "created_at": "2016-10-04T12:11:00.927Z",
         "email": "user4@taigaio.demo",
         "full_name": "Marta Carmona",
         "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
@@ -197,11 +197,11 @@
         "role_name": "Stakeholder",
         "user": 10,
         "user_email": "user4@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583060927
     },
     {
         "color": "#71A6D2",
-        "created_at": "2016-08-17T10:38:21.690Z",
+        "created_at": "2016-10-04T12:11:01.006Z",
         "email": "user6@taigaio.demo",
         "full_name": "Pilar Herrera",
         "gravatar_id": "74cb769a5e64d445b8550789e1553502",
@@ -219,11 +219,11 @@
         "role_name": "UX",
         "user": 12,
         "user_email": "user6@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583061006
     },
     {
         "color": "#4B0082",
-        "created_at": "2016-08-17T10:38:21.541Z",
+        "created_at": "2016-10-04T12:11:00.757Z",
         "email": "user6532909695705815086@taigaio.demo",
         "full_name": "Silvia Soto",
         "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
@@ -241,11 +241,11 @@
         "role_name": "Stakeholder",
         "user": 6,
         "user_email": "user6532909695705815086@taigaio.demo",
-        "user_order": 10000
+        "user_order": 1475583060757
     },
     {
         "color": null,
-        "created_at": "2016-08-17T10:38:21.770Z",
+        "created_at": "2016-10-04T12:11:01.141Z",
         "email": "expedita@voluptatibus.org",
         "full_name": null,
         "gravatar_id": null,
@@ -263,11 +263,11 @@
         "role_name": "Stakeholder",
         "user": null,
         "user_email": null,
-        "user_order": 10000
+        "user_order": 1475583061141
     },
     {
         "color": null,
-        "created_at": "2016-08-17T10:44:53.418Z",
+        "created_at": "2016-10-05T11:44:28.858Z",
         "email": "john@doe.com",
         "full_name": null,
         "gravatar_id": null,
@@ -293,11 +293,11 @@
         "role_name": "Back",
         "user": null,
         "user_email": null,
-        "user_order": 10000
+        "user_order": 1475667868858
     },
     {
         "color": null,
-        "created_at": "2016-08-17T10:38:21.767Z",
+        "created_at": "2016-10-04T12:11:01.135Z",
         "email": "nulla@minima.net",
         "full_name": null,
         "gravatar_id": null,
@@ -315,24 +315,24 @@
         "role_name": "UX",
         "user": null,
         "user_email": null,
-        "user_order": 10000
+        "user_order": 1475583061136
     },
     {
         "color": null,
-        "created_at": "2016-08-17T10:44:52.775Z",
+        "created_at": "2016-10-05T11:44:27.934Z",
         "email": "test@test.com",
         "full_name": null,
         "gravatar_id": null,
         "id": 92,
         "invitation_extra_text": "",
         "invited_by": {
-            "big_photo": "http://localhost:8000/media/user/7/8/a/c/ccbec1d7d61c4cd5e9f49c4fdc3a61cf8afed685987d3ee70188e70557f0/logo.png.300x300_q85_crop.png",
+            "big_photo": "http://localhost:8000/media/user/9/b/2/1/bbd29240df2f4703aa039ab502de77d0ca56957523de973cb246d778af22/logo.png.300x300_q85_crop.png",
             "full_name_display": "BitBucket",
-            "gravatar_id": "0e5f47af6aa0e2da8f9d62fb8e42b227",
+            "gravatar_id": "845869ca62e4371aea292168a6332bd0",
             "id": 1,
             "is_active": false,
-            "photo": "http://localhost:8000/media/user/7/8/a/c/ccbec1d7d61c4cd5e9f49c4fdc3a61cf8afed685987d3ee70188e70557f0/logo.png.80x80_q85_crop.png",
-            "username": "bitbucket-bee5da6673384d92a34c2ce45c6025f7"
+            "photo": "http://localhost:8000/media/user/9/b/2/1/bbd29240df2f4703aa039ab502de77d0ca56957523de973cb246d778af22/logo.png.80x80_q85_crop.png",
+            "username": "bitbucket-3d25ea123b534de1bcb956d7800aa0ec"
         },
         "is_admin": false,
         "is_owner": null,
@@ -349,7 +349,7 @@
     },
     {
         "color": null,
-        "created_at": "2016-08-17T10:44:53.418Z",
+        "created_at": "2016-10-05T11:44:28.857Z",
         "email": "test@test.com",
         "full_name": null,
         "gravatar_id": null,
@@ -375,11 +375,11 @@
         "role_name": "Front",
         "user": null,
         "user_email": null,
-        "user_order": 10000
+        "user_order": 1475667868857
     },
     {
         "color": null,
-        "created_at": "2016-08-17T10:44:53.827Z",
+        "created_at": "2016-10-05T11:44:29.265Z",
         "email": "test-user@test.com",
         "full_name": null,
         "gravatar_id": null,
@@ -405,7 +405,7 @@
         "role_name": "Front",
         "user": null,
         "user_email": null,
-        "user_order": 10000
+        "user_order": 1475667869265
     }
 ]
 ----

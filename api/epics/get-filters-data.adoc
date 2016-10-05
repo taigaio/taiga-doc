@@ -1,0 +1,5 @@
+To get the epic filters data send a GET request specifying the project id in the url
+
+include::../generated/epics-filters-data-get-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-epic-filters-data[epic filters data object]

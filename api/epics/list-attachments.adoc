@@ -1,0 +1,8 @@
+To list epic attachments send a GET request with the following parameters:
+
+- *project*: project id
+- *object_id*: epic id
+
+include::../generated/epics-attachments-list-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-attachment-detail[attachment detail objects]

@@ -70,8 +70,6 @@
     ],
     "roles": [
         "Back",
-        "Design",
-        "Front",
         "Product Owner",
         "Stakeholder",
         "UX"

@@ -1,11 +1,11 @@
 .About Taiga instance and URLs used in this document
 [NOTE]
 ===============================
-All API calls used in the documentation are refered to Taiga.io instance, so if you use another
-instance remember to change the url.
+All API calls used in the documentation are refered to a local taiga instance API running on localhost:8000,
+so if you use another instance remember to change the url.
 
-For example, if you have installed Taiga on your own PC, you must perform the tests using
-_http://localhost:8000/api/v1_ instead of _https://taiga.io/api/v1_.
+For example, if you want to perform the tests against our own instance, you should use _https://api.taiga.io/api/v1_
+instead of  _http://localhost:8000/api/v1_.
 ===============================
 
 === Authentication

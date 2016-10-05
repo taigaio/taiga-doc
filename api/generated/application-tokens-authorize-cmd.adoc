@@ -7,5 +7,5 @@ curl -X POST \
         "application": "00000000-0000-0000-0000-000000000000",
         "state": "random-state"
     }' \
-http://localhost:8000/api/v1/application-tokens/authorize
+-s http://localhost:8000/api/v1/application-tokens/authorize
 ----

@@ -1,0 +1,5 @@
+To stop watching an epic send a POST request specifying the epic id in the url
+
+include::../generated/epics-unwatch-cmd.adoc[]
+
+The HTTP response is a 200 OK with an empty body response

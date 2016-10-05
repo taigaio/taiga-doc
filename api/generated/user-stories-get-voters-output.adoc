@@ -1,15 +1,8 @@
 [source,json]
 ----
-[
-    {
-        "full_name": "BitBucket",
-        "id": 1,
-        "username": "bitbucket-bee5da6673384d92a34c2ce45c6025f7"
-    },
-    {
-        "full_name": "Gogs",
-        "id": 4,
-        "username": "gogs-c4be52ff410f44bebf58b9de840df3a8"
-    }
-]
+{
+    "full_name": "BitBucket",
+    "id": 1,
+    "username": "bitbucket-3d25ea123b534de1bcb956d7800aa0ec"
+}
 ----

@@ -13,5 +13,5 @@ curl -X POST \
             "project_id": 2
         }
     ]' \
-http://localhost:8000/api/v1/projects/bulk_update_order
+-s http://localhost:8000/api/v1/projects/bulk_update_order
 ----

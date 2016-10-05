@@ -38,6 +38,11 @@
     },
     {
         "bidi": false,
+        "code": "nb",
+        "name": "Norsk (bokm\u00e5l)"
+    },
+    {
+        "bidi": false,
         "code": "nl",
         "name": "Nederlands"
     },

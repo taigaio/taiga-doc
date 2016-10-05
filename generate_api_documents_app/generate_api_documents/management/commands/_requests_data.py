@@ -22,6 +22,7 @@ from taiga.external_apps.models import Application, ApplicationToken
 from taiga.webhooks.models import Webhook
 from taiga.users.models import User
 from taiga.auth.tokens import get_token_for_user
+from taiga.projects.epics.models import RelatedUserStory
 from taiga.projects.models import Project, Membership
 from taiga.projects.notifications.models import NotifyPolicy
 from taiga.projects.history.models import HistoryEntry
@@ -50,7 +51,6 @@ Membership.objects.get_or_create(
     web="http://example.com",
     description="description paragraph",
     next_url="http://example.com",
-    key="abcdefg",
 )
 
 (app2, _) = Application.objects.get_or_create(
@@ -60,7 +60,6 @@ Membership.objects.get_or_create(
     web="http://example.com",
     description="description paragraph",
     next_url="http://example.com",
-    key="abcdefg",
 )
 
 (app_token, _) = ApplicationToken.objects.get_or_create(
@@ -97,7 +96,14 @@ project2 = Project.objects.get(id=2)
 project1.owner_id = USER_ID
 project1.save()
 transfer_service.start_project_transfer(project2, user, "test")
-
+related_user_story = RelatedUserStory.objects.filter(epic__project_id=project2.id).first()
+related_user_story_id = related_user_story.user_story.id
+epic = related_user_story.epic
+epics_attachment = epic.attachments.all().first().id
+epic_ref = epic.ref
+epic_id = epic.id
+epic_custom_attribute_id = project2.epiccustomattributes.all().first().id
+epic_custom_attribute_id2 = project2.epiccustomattributes.all()[2].id
 user_stories_attachment = project2.user_stories.first().attachments.all().first().id
 user_story_ref = project1.user_stories.first().ref
 user_story_id = project1.user_stories.first().id
@@ -199,6 +205,297 @@ reqs = OrderedDict([
             "username": "test-username",
             "password": "password"
         }
+    }),
+    ("epics-list", {
+        "method": "GET",
+        "url": "/api/v1/epics",
+        "index": 0,
+    }),
+    ("epics-filtered-list", {
+        "method": "GET",
+        "url": "/api/v1/epics?project=1",
+    }),
+    ("epics-create", {
+        "method": "POST",
+        "url": "/api/v1/epics",
+        "body": {
+            "assigned_to": None,
+            "blocked_note": "blocking reason",
+            "client_requirement": False,
+            "description": "New epic description",
+            "is_blocked": True,
+            "project": 1,
+            "epics_order": 2,
+            "status": 2,
+            "color": "#ABCABC",
+            "subject": "New epic",
+            "tags": [
+                "service catalog",
+                "customer"
+            ],
+            "team_requirement": False,
+            "watchers": []
+        }
+    }),
+    ("epics-simple-create", {
+        "method": "POST",
+        "url": "/api/v1/epics",
+        "body": {
+            "project": 1,
+            "subject": "New epic"
+        }
+    }),
+    ("epics-get", {
+        "method": "GET",
+        "url": "/api/v1/epics/1",
+    }),
+    ("epics-get-by-ref", {
+        "method": "GET",
+        "url": "/api/v1/epics/by_ref?ref={}\&project={}".format(epic_ref, epic.project_id),
+    }),
+    ("epics-patch", {
+        "method": "PATCH",
+        "url": "/api/v1/epics/{}".format(epic_id),
+        "body": {
+            "subject": "Patching subject",
+            "version": 1
+        }
+    }),
+    ("epics-bulk-create", {
+        "method": "POST",
+        "url": "/api/v1/epics/bulk_create",
+        "body": {
+            "project_id": 1,
+            "bulk_epics": "EPIC 1 \n EPIC 2 \n EPIC 3"
+        }
+    }),
+    ("epics-filters-data-get", {
+        "method": "GET",
+        "url": "/api/v1/epics/filters_data?project=1",
+    }),
+    ("epics-upvote", {
+        "method": "POST",
+        "url": "/api/v1/epics/3/upvote",
+    }),
+    ("epics-voters", {
+        "method": "GET",
+        "url": "/api/v1/epics/{}/voters".format(task_id),
+        "index": 0,
+    }),
+    ("epics-downvote", {
+        "method": "POST",
+        "url": "/api/v1/epics/3/downvote",
+    }),
+    ("epics-attachments-list", {
+        "method": "GET",
+        "url": "/api/v1/epics/attachments?object_id={}\&project=1".format(epics_attachment),
+    }),
+    ("epics-attachments-create", {
+        "method": "MULTIPART-POST",
+        "url": "/api/v1/epics/attachments",
+        "body": {
+            "object_id": epic_id,
+            "project": epic.project.id,
+            "attached_file": test_file
+        }
+    }),
+    ("epics-watch", {
+        "method": "POST",
+        "url": "/api/v1/epics/{}/watch".format(epic_id),
+    }),
+    ("epics-watchers", {
+        "method": "GET",
+        "url": "/api/v1/epics/{}/watchers".format(epic_id),
+        "index": 0,
+    }),
+    ("epics-unwatch", {
+        "method": "POST",
+        "url": "/api/v1/epics/{}/unwatch".format(epic_id),
+    }),
+    ("epics-attachments-get", {
+        "method": "GET",
+        "url": "/api/v1/epics/attachments/{}".format(epics_attachment),
+    }),
+    ("epics-attachments-patch", {
+        "method": "PATCH",
+        "url": "/api/v1/epics/attachments/{}".format(epics_attachment),
+        "body": {
+            "description": "Updated description",
+        }
+    }),
+    ("epics-attachments-delete", {
+        "method": "DELETE",
+        "url": "/api/v1/epics/attachments/{}".format(epics_attachment),
+    }),
+    ("epic-statuses-patch", {
+          "method": "PATCH",
+          "url": "/api/v1/epic-statuses/1",
+          "body": {
+              "name": "Patch status name"
+          }
+      }),
+    ("epic-statuses-create", {
+          "method": "POST",
+          "url": "/api/v1/epic-statuses",
+          "body": {
+              "color": "#AAAAAA",
+              "is_closed": True,
+              "name": "New status",
+              "order": 8,
+              "project": 1
+          }
+      }),
+    ("epic-statuses-patch", {
+        "method": "PATCH",
+        "url": "/api/v1/epic-statuses/1",
+        "body": {
+            "name": "Patch status name"
+        }
+    }),
+    ("epic-statuses-create", {
+        "method": "POST",
+        "url": "/api/v1/epic-statuses",
+        "body": {
+            "color": "#AAAAAA",
+            "is_closed": True,
+            "name": "New status",
+            "order": 8,
+            "project": 1
+        }
+    }),
+    ("epic-statuses-simple-create", {
+        "method": "POST",
+        "url": "/api/v1/epic-statuses",
+        "body": {
+            "project": 1,
+            "name": "New status name"
+        }
+    }),
+    ("epic-statuses-get", {
+        "method": "GET",
+        "url": "/api/v1/epic-statuses/1",
+    }),
+    ("epic-statuses-bulk-update-order", {
+        "method": "POST",
+        "url": "/api/v1/epic-statuses/bulk_update_order",
+        "body": {
+            "project": 1,
+            "bulk_epic_statuses": [[1, 10], [2, 5]]
+        }
+    }),
+    ("epic-statuses-list", {
+        "method": "GET",
+        "url": "/api/v1/epic-statuses",
+    }),
+    ("epic-statuses-filtered-list", {
+        "method": "GET",
+        "url": "/api/v1/epic-statuses?project=1",
+    }),
+    ("epic-statuses-delete", {
+        "method": "DELETE",
+        "url": "/api/v1/epic-statuses/1",
+    }),
+    ("epics-custom-attributes-values-patch", {
+        "method": "PATCH",
+        "url": "/api/v1/epics/custom-attributes-values/{}".format(epic_id),
+        "body": {
+            "attributes_values": {"{}".format(epic_custom_attribute_id): "240 min"},
+            "version": 1
+        }
+    }),
+    ("epics-custom-attributes-values-get", {
+        "method": "GET",
+        "url": "/api/v1/epics/custom-attributes-values/{}".format(epic_id),
+    }),
+    ("epics-custom-attributes-patch", {
+        "method": "PATCH",
+        "url": "/api/v1/epic-custom-attributes/{}".format(epic_custom_attribute_id),
+        "body": {
+          "name": "Duration 1"
+        }
+    }),
+    ("epics-custom-attributes-create", {
+        "method": "POST",
+        "url": "/api/v1/epic-custom-attributes",
+        "body": {
+            "name": "Duration 2",
+            "description": "Duration in minutes",
+            "order": 8,
+            "project": 1
+        }
+    }),
+    ("epics-custom-attributes-simple-create", {
+        "method": "POST",
+        "url": "/api/v1/epic-custom-attributes",
+        "body": {
+            "name": "Duration 3",
+            "project": 1
+        }
+    }),
+    ("epics-custom-attributes-get", {
+        "method": "GET",
+        "url": "/api/v1/epic-custom-attributes/{}".format(epic_custom_attribute_id),
+    }),
+    ("epics-custom-attributes-bulk-update-order", {
+        "method": "POST",
+        "url": "/api/v1/epic-custom-attributes/bulk_update_order",
+        "body": {
+            "project": 1,
+            "bulk_epic_custom_attributes": [[epic_custom_attribute_id, 10], [epic_custom_attribute_id2, 15]]
+        }
+    }),
+    ("epics-custom-attributes-list", {
+        "method": "GET",
+        "url": "/api/v1/epic-custom-attributes",
+    }),
+    ("epics-custom-attributes-filtered-list", {
+        "method": "GET",
+        "url": "/api/v1/epic-custom-attributes?project=1",
+    }),
+    ("epics-custom-attributes-delete", {
+        "method": "DELETE",
+        "url": "/api/v1/epic-custom-attributes/{}".format(epic_custom_attribute_id),
+    }),
+
+    ("epics-related-user-stories-bulk-create", {
+        "method": "POST",
+        "url": "/api/v1/epics/{}/related_userstories/bulk_create".format(epic_id),
+        "body": {
+            "project_id": epic.project.id,
+            "bulk_userstories": "epic 1 \n epic 2 \n epic 3"
+        }
+    }),
+    ("epics-related-user-story-create", {
+        "method": "POST",
+        "url": "/api/v1/epics/{}/related_userstories".format(epic_id),
+        "body": {
+            "user_story": user_story_id,
+            "epic": epic_id
+        }
+    }),
+    ("epics-related-user-story-patch", {
+        "method": "PATCH",
+        "url": "/api/v1/epics/{}/related_userstories/{}".format(epic_id, related_user_story_id),
+        "body": {
+            "order": 100,
+        }
+    }),
+    ("epics-related-user-story-get", {
+        "method": "GET",
+        "url": "/api/v1/epics/{}/related_userstories/{}".format(epic_id, related_user_story_id),
+    }),
+    ("epics-related-user-stories-list", {
+        "method": "GET",
+        "url": "/api/v1/epics/{}/related_userstories".format(epic_id),
+        "index": 0,
+    }),
+    ("epics-related-user-story-delete", {
+        "method": "DELETE",
+        "url": "/api/v1/epics/{}/related_userstories/{}".format(epic_id, related_user_story_id),
+    }),
+    ("epics-delete", {
+        "method": "DELETE",
+        "url": "/api/v1/epics/{}".format(epic_id),
     }),
     ("add-attachment-to-us", {
         "method": "MULTIPART-POST",
@@ -317,7 +614,7 @@ reqs = OrderedDict([
     }),
     ("user-stories-get-voters", {
         "method": "GET",
-        "url": "/api/v1/userstories/1/voters",
+        "url": "/api/v1/userstories/2/voters",
         "index": 0,
     }),
     ("user-stories-attachments-list", {
@@ -1191,6 +1488,9 @@ reqs = OrderedDict([
     ("wiki-attachments-patch", {
         "method": "PATCH",
         "url": "/api/v1/wiki/attachments/{}".format(wiki_attachment),
+        "body": {
+            "description": "Updated description",
+        }
     }),
     ("wiki-list", {
         "method": "GET",
@@ -1364,7 +1664,7 @@ reqs = OrderedDict([
         "url": "/api/v1/tasks/bulk_create",
         "body": {
             "project_id": 1,
-            "sprint_id": milestone_id,
+            "milestone_id": milestone_id,
             "bulk_tasks": "Task 1 \n Task 2 \n Task 3"
         }
     }),
@@ -1433,6 +1733,9 @@ reqs = OrderedDict([
     ("tasks-attachments-patch", {
         "method": "PATCH",
         "url": "/api/v1/tasks/attachments/{}".format(tasks_attachment),
+        "body": {
+            "description": "Updated description",
+        }
     }),
     ("tasks-upvote", {
         "method": "POST",

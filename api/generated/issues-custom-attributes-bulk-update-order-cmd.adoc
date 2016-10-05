@@ -6,15 +6,15 @@ curl -X POST \
 -d '{
         "bulk_issue_custom_attributes": [
             [
-                4,
+                2,
                 10
             ],
             [
-                5,
+                4,
                 5
             ]
         ],
         "project": 1
     }' \
-http://localhost:8000/api/v1/issue-custom-attributes/bulk_update_order
+-s http://localhost:8000/api/v1/issue-custom-attributes/bulk_update_order
 ----

@@ -1,11 +1,19 @@
 [source,json]
 ----
 {
-    "assigned_to": null,
-    "assigned_to_extra_info": null,
-    "created_date": "2016-08-17T10:40:58.806Z",
+    "assigned_to": 8,
+    "assigned_to_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Alba Leon",
+        "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+        "id": 8,
+        "is_active": true,
+        "photo": null,
+        "username": "user2"
+    },
+    "created_date": "2016-10-04T12:14:50.475Z",
     "description": null,
-    "id": 80,
+    "id": 113,
     "is_private": null,
     "is_voter": false,
     "is_watcher": false,
@@ -13,42 +21,42 @@
     "name": null,
     "project": 7,
     "project_blocked_code": "blocked-by-staff",
-    "project_is_private": false,
+    "project_is_private": true,
     "project_name": "Project Example 6",
     "project_slug": "project-6",
-    "ref": 97,
+    "ref": 76,
     "slug": null,
-    "status": "Postponed",
-    "status_color": "#666666",
-    "subject": "Add tests for bulk operations",
+    "status": "New",
+    "status_color": "#8C2318",
+    "subject": "Create the user model",
     "tags_colors": [
         {
-            "color": "#6e3390",
-            "name": "quas"
+            "color": null,
+            "name": "dicta"
         },
         {
-            "color": "#ee6c40",
-            "name": "eum"
+            "color": "#50a0d5",
+            "name": "quos"
+        },
+        {
+            "color": "#da3ba4",
+            "name": "ipsum"
+        },
+        {
+            "color": "#db7ec2",
+            "name": "dolorum"
+        },
+        {
+            "color": "#9631e4",
+            "name": "debitis"
         },
         {
             "color": null,
-            "name": "corrupti"
+            "name": "praesentium"
         },
         {
-            "color": "#2c80b2",
-            "name": "ea"
-        },
-        {
-            "color": "#67eac4",
+            "color": null,
             "name": "laborum"
-        },
-        {
-            "color": "#3099ec",
-            "name": "incidunt"
-        },
-        {
-            "color": "#ea6bb9",
-            "name": "ducimus"
         }
     ],
     "total_voters": 4,

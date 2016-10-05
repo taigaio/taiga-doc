@@ -7,5 +7,5 @@ curl -X POST \
         "template_description": "Beta template description",
         "template_name": "Beta template"
     }' \
-http://localhost:8000/api/v1/projects/1/create_template
+-s http://localhost:8000/api/v1/projects/1/create_template
 ----

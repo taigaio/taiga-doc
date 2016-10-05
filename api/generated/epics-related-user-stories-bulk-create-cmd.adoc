@@ -1,0 +1,11 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "bulk_userstories": "epic 1 \n epic 2 \n epic 3",
+        "project_id": 2
+    }' \
+-s http://localhost:8000/api/v1/epics/10/related_userstories/bulk_create
+----

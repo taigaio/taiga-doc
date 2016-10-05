@@ -1,0 +1,5 @@
+To vote epics send a POST request specifying the epic id in the url
+
+include::../generated/epics-upvote-cmd.adoc[]
+
+The HTTP response is a 200 OK with an empty body response

@@ -1,0 +1,7 @@
+[[epic-custom-attributes-values-get]]
+=== Get
+include::../epic-custom-attributes-values/get.adoc[]
+
+[[epic-custom-attributes-values-edit]]
+=== Edit
+include::../epic-custom-attributes-values/edit.adoc[]

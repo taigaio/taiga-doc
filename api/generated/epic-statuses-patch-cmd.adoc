@@ -1,0 +1,10 @@
+[source,bash]
+----
+curl -X PATCH \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "name": "Patch status name"
+    }' \
+-s http://localhost:8000/api/v1/epic-statuses/1
+----

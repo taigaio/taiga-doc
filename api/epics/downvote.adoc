@@ -1,0 +1,5 @@
+To remove a vote from an epic send a POST request specifying the epic id in the url
+
+include::../generated/epics-downvote-cmd.adoc[]
+
+When remove of the vote succeeded, the HTTP response is a 200 OK with an empty body response

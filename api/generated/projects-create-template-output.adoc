@@ -1,8 +1,9 @@
 [source,json]
 ----
 {
-    "created_date": "2016-08-17T10:45:21.070Z",
+    "created_date": "2016-10-05T11:44:56.866Z",
     "default_options": {
+        "epic_status": null,
         "issue_status": "Patch status name",
         "issue_type": "Bug",
         "points": "?",
@@ -13,8 +14,53 @@
     },
     "default_owner_role": "stakeholder",
     "description": "Beta template description",
+    "epic_statuses": [
+        {
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "In progress",
+            "order": 3,
+            "slug": "in-progress"
+        },
+        {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Ready for test",
+            "order": 4,
+            "slug": "ready-for-test"
+        },
+        {
+            "color": "#669900",
+            "is_closed": true,
+            "name": "Done",
+            "order": 5,
+            "slug": "done"
+        },
+        {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Ready",
+            "order": 5,
+            "slug": "ready"
+        },
+        {
+            "color": "#AAAAAA",
+            "is_closed": true,
+            "name": "New status",
+            "order": 8,
+            "slug": "new-status"
+        },
+        {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "New status name",
+            "order": 10,
+            "slug": "new-status-name"
+        }
+    ],
     "id": 3,
     "is_backlog_activated": true,
+    "is_epics_activated": true,
     "is_issues_activated": true,
     "is_kanban_activated": true,
     "is_wiki_activated": true,
@@ -100,9 +146,9 @@
             "order": 3
         }
     ],
-    "modified_date": "2016-08-17T10:45:21.094Z",
+    "modified_date": "2016-10-05T11:44:56.885Z",
     "name": "Beta template",
-    "order": 10000,
+    "order": 1475667896866,
     "points": [
         {
             "name": "?",
@@ -221,7 +267,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "slug": "ux"
         },
@@ -253,7 +308,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "slug": "design"
         },
@@ -285,7 +349,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "slug": "front"
         },
@@ -317,7 +390,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "slug": "back"
         },
@@ -349,7 +431,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "slug": "product-owner"
         },
@@ -370,7 +461,13 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "slug": "stakeholder"
         }

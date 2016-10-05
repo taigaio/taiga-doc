@@ -1,0 +1,13 @@
+To create epic custom attributes send a POST request with the following data:
+
+- *name*: (required) text
+- *description*: text
+- *order*: integer
+- *project*: (required) integer, project id
+
+
+include::../generated/epics-custom-attributes-create-cmd.adoc[]
+
+include::../generated/epics-custom-attributes-simple-create-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-epic-custom-attribute-detail[epic custom attribute detail object]

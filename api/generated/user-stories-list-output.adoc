@@ -8,11 +8,13 @@
     "blocked_note": "",
     "client_requirement": false,
     "comment": "",
-    "created_date": "2016-08-17T10:44:58.000Z",
+    "created_date": "2016-10-05T11:44:37.631Z",
+    "epic_order": null,
+    "epics": null,
     "external_reference": null,
     "finish_date": null,
     "generated_from_issue": null,
-    "id": 168,
+    "id": 150,
     "is_blocked": false,
     "is_closed": false,
     "is_voter": false,
@@ -21,7 +23,7 @@
     "milestone": null,
     "milestone_name": null,
     "milestone_slug": null,
-    "modified_date": "2016-08-17T10:44:58.010Z",
+    "modified_date": "2016-10-05T11:44:37.642Z",
     "origin_issue": null,
     "owner": 6,
     "owner_extra_info": {
@@ -40,12 +42,19 @@
         "4": 1
     },
     "project": 1,
-    "ref": 110,
+    "project_extra_info": {
+        "id": 1,
+        "logo_small_url": null,
+        "name": "Project Example 0",
+        "slug": "project-0"
+    },
+    "ref": 135,
     "sprint_order": 2,
     "status": 2,
     "status_extra_info": {
         "color": "#ff8a84",
-        "name": "Ready"
+        "is_closed": false,
+        "name": "Preparada"
     },
     "subject": "Customer personal data",
     "tags": [

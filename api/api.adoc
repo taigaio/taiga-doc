@@ -40,6 +40,18 @@ include::memberships/endpoints.adoc[]
 === Milestones
 include::milestones/endpoints.adoc[]
 
+=== Epics
+include::epics/endpoints.adoc[]
+
+=== Epic status
+include::epic-statuses/endpoints.adoc[]
+
+=== Epic custom attribute
+include::epic-custom-attributes/endpoints.adoc[]
+
+=== Epic custom attributes values
+include::epic-custom-attributes-values/endpoints.adoc[]
+
 === User stories
 include::user-stories/endpoints.adoc[]
 
@@ -161,6 +173,22 @@ include::memberships/summary.adoc[]
 [[milestones]]
 == Milestones
 include::milestones/summary.adoc[]
+
+[[epics]]
+== Epics
+include::epics/summary.adoc[]
+
+[[epic-statuses]]
+== Epic status
+include::epic-statuses/summary.adoc[]
+
+[[epic-custom-attributes]]
+== Epic custom attribute
+include::epic-custom-attributes/summary.adoc[]
+
+[[epic-custom-attributes-values]]
+== Epic custom attributes values
+include::epic-custom-attributes-values/summary.adoc[]
 
 [[user-stories]]
 == User stories
@@ -367,6 +395,46 @@ include::generated/milestones-watchers-output.adoc[]
 [[object-milestone-stats-detail]]
 ===  Milestone stats detail
 include::generated/milestones-stats-output.adoc[]
+
+[[object-epic-detail]]
+=== Epic detail
+include::generated/epics-get-output.adoc[]
+
+[[object-epic-detail-get]]
+=== Epic detail (GET)
+include::generated/epics-get-output.adoc[]
+
+[[object-epic-detail-list]]
+=== Epic detail (LIST)
+include::generated/epics-list-output.adoc[]
+
+[[object-epic-filters-data]]
+=== Epic filters data detail
+include::generated/epics-filters-data-get-output.adoc[]
+
+[[object-epic-voter-detail]]
+===  Epic voter detail
+include::generated/epics-voters-output.adoc[]
+
+[[object-epic-watcher-detail]]
+===  Epic watcher detail
+include::generated/epics-watchers-output.adoc[]
+
+[[object-epic-status-detail]]
+=== Epic status detail
+include::generated/epic-statuses-get-output.adoc[]
+
+[[object-epic-custom-attribute-detail]]
+=== Epic custom attribute detail
+include::generated/epics-custom-attributes-get-output.adoc[]
+
+[[object-epic-custom-attributes-values-detail]]
+=== Epic custom attributes values detail
+include::generated/epics-custom-attributes-values-get-output.adoc[]
+
+[[object-epic-related-user-story-detail]]
+=== Epic related user story detail
+include::generated/epics-related-user-story-get-output.adoc[]
 
 [[object-userstory-detail]]
 === User story detail

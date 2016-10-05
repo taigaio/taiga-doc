@@ -6,5 +6,5 @@ curl -X PATCH \
 -d '{
         "description": "New description"
     }' \
-http://localhost:8000/api/v1/project-templates/1
+-s http://localhost:8000/api/v1/project-templates/1
 ----

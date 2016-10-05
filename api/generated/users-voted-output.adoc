@@ -1,19 +1,19 @@
 [source,json]
 ----
 {
-    "assigned_to": 15,
+    "assigned_to": 8,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Catalina Roman",
-        "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-        "id": 15,
+        "full_name_display": "Alba Leon",
+        "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+        "id": 8,
         "is_active": true,
         "photo": null,
-        "username": "user9"
+        "username": "user2"
     },
-    "created_date": "2016-08-17T10:40:59.666Z",
+    "created_date": "2016-10-04T12:14:46.449Z",
     "description": null,
-    "id": 83,
+    "id": 104,
     "is_private": null,
     "is_voter": true,
     "is_watcher": false,
@@ -21,22 +21,30 @@
     "name": null,
     "project": 7,
     "project_blocked_code": "blocked-by-staff",
-    "project_is_private": false,
+    "project_is_private": true,
     "project_name": "Project Example 6",
     "project_slug": "project-6",
-    "ref": 100,
+    "ref": 67,
     "slug": null,
-    "status": "Needs Info",
-    "status_color": "#89BAB4",
-    "subject": "Experimental: modular file types",
+    "status": "In progress",
+    "status_color": "#5E8C6A",
+    "subject": "Create the user model",
     "tags_colors": [
         {
-            "color": "#91e065",
-            "name": "vel"
+            "color": null,
+            "name": "ut"
+        },
+        {
+            "color": "#7fea8e",
+            "name": "dolores"
+        },
+        {
+            "color": null,
+            "name": "nesciunt"
         }
     ],
     "total_voters": 5,
-    "total_watchers": 4,
+    "total_watchers": 1,
     "type": "issue"
 }
 ----

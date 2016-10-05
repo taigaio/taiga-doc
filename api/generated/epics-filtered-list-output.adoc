@@ -1,0 +1,423 @@
+[source,json]
+----
+[
+    {
+        "assigned_to": 11,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "German Benitez",
+            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+            "id": 11,
+            "is_active": true,
+            "photo": null,
+            "username": "user5"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#fcaf3e",
+        "created_date": "2016-10-04T12:11:55.166Z",
+        "epics_order": 1475583115166,
+        "id": 1,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2016-10-04T12:11:55.318Z",
+        "owner": 7,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Marcos Ortiz",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
+            "is_active": true,
+            "photo": null,
+            "username": "user1"
+        },
+        "project": 1,
+        "ref": 120,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Preparada"
+        },
+        "subject": "Add tests for bulk operations",
+        "tags": [
+            [
+                "quaerat",
+                "#0b4425"
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 3,
+        "total_watchers": 0,
+        "user_stories_counts": {
+            "closed": 0,
+            "opened": 0
+        },
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": 9,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Esther Ferrer",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
+            "is_active": true,
+            "photo": null,
+            "username": "user3"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#ce5c00",
+        "created_date": "2016-10-04T12:11:55.498Z",
+        "epics_order": 1475583115498,
+        "id": 2,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2016-10-04T12:11:55.735Z",
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Pilar Herrera",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "project": 1,
+        "ref": 121,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Lista para testear"
+        },
+        "subject": "Implement the form",
+        "tags": [
+            [
+                "eos",
+                "#8a6433"
+            ],
+            [
+                "quia",
+                null
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 5,
+        "total_watchers": 2,
+        "user_stories_counts": {
+            "closed": 0,
+            "opened": 0
+        },
+        "version": 1,
+        "watchers": [
+            1,
+            14
+        ]
+    },
+    {
+        "assigned_to": 12,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Pilar Herrera",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#3465a4",
+        "created_date": "2016-10-04T12:11:56.025Z",
+        "epics_order": 1475583116025,
+        "id": 3,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": true,
+        "is_watcher": false,
+        "modified_date": "2016-10-04T12:11:56.233Z",
+        "owner": 9,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Esther Ferrer",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
+            "is_active": true,
+            "photo": null,
+            "username": "user3"
+        },
+        "project": 1,
+        "ref": 122,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Preparada"
+        },
+        "subject": "Lighttpd x-sendfile support",
+        "tags": [
+            [
+                "minima",
+                null
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 6,
+        "total_watchers": 2,
+        "user_stories_counts": {
+            "closed": 0,
+            "opened": 1
+        },
+        "version": 1,
+        "watchers": [
+            5,
+            14
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#4e9a06",
+        "created_date": "2016-10-04T12:11:56.477Z",
+        "epics_order": 1475583116477,
+        "id": 4,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2016-10-04T12:11:56.636Z",
+        "owner": 7,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Marcos Ortiz",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
+            "is_active": true,
+            "photo": null,
+            "username": "user1"
+        },
+        "project": 1,
+        "ref": 123,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Nueva"
+        },
+        "subject": "Feature/improved image admin",
+        "tags": [
+            [
+                "mollitia",
+                "#002e7f"
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 2,
+        "total_watchers": 0,
+        "user_stories_counts": {
+            "closed": 1,
+            "opened": 6
+        },
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#d3d7cf",
+        "created_date": "2016-10-04T12:11:56.909Z",
+        "epics_order": 1475583116909,
+        "id": 5,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2016-10-04T12:11:57.047Z",
+        "owner": 9,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Esther Ferrer",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
+            "is_active": true,
+            "photo": null,
+            "username": "user3"
+        },
+        "project": 1,
+        "ref": 124,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Preparada"
+        },
+        "subject": "Add setting to allow regular users to create folders at the root level.",
+        "tags": [
+            [
+                "reiciendis",
+                "#560ff6"
+            ],
+            [
+                "natus",
+                null
+            ],
+            [
+                "maiores",
+                null
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 7,
+        "total_watchers": 3,
+        "user_stories_counts": {
+            "closed": 0,
+            "opened": 1
+        },
+        "version": 1,
+        "watchers": [
+            3,
+            9,
+            12
+        ]
+    },
+    {
+        "assigned_to": 10,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Marta Carmona",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
+            "is_active": true,
+            "photo": null,
+            "username": "user4"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#edd400",
+        "created_date": "2016-10-04T12:11:57.264Z",
+        "epics_order": 1475583117264,
+        "id": 6,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2016-10-04T12:11:57.411Z",
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Pilar Herrera",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "project": 1,
+        "ref": 125,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Nueva"
+        },
+        "subject": "Added file copying and processing of images (resizing)",
+        "tags": [
+            [
+                "corporis",
+                null
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 2,
+        "total_watchers": 0,
+        "user_stories_counts": {
+            "closed": 0,
+            "opened": 1
+        },
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#4e9a06",
+        "created_date": "2016-10-04T12:11:57.606Z",
+        "epics_order": 1475583117606,
+        "id": 7,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2016-10-04T12:11:57.706Z",
+        "owner": 11,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "German Benitez",
+            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+            "id": 11,
+            "is_active": true,
+            "photo": null,
+            "username": "user5"
+        },
+        "project": 1,
+        "ref": 126,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Lista para testear"
+        },
+        "subject": "Migrate to Python 3 and milk a beautiful cow",
+        "tags": [
+            [
+                "tempora",
+                null
+            ],
+            [
+                "amet",
+                null
+            ],
+            [
+                "dignissimos",
+                null
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 1,
+        "total_watchers": 5,
+        "user_stories_counts": {
+            "closed": 0,
+            "opened": 5
+        },
+        "version": 1,
+        "watchers": [
+            3,
+            7,
+            11,
+            12,
+            13
+        ]
+    }
+]
+----

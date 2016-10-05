@@ -5,7 +5,7 @@ curl -X POST \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
         "reason": "testing",
-        "token": "6:1bZyL6:olByFAM3MCvcPh2cfs6tONNxasU"
+        "token": "6:1brkce:TVlPNhaK7kona51h9LHo-ICgCL4"
     }' \
-http://localhost:8000/api/v1/projects/1/transfer_reject
+-s http://localhost:8000/api/v1/projects/1/transfer_reject
 ----

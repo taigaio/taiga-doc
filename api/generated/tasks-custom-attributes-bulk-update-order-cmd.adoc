@@ -6,15 +6,15 @@ curl -X POST \
 -d '{
         "bulk_task_custom_attributes": [
             [
-                3,
+                4,
                 10
             ],
             [
-                1,
+                5,
                 15
             ]
         ],
         "project": 1
     }' \
-http://localhost:8000/api/v1/task-custom-attributes/bulk_update_order
+-s http://localhost:8000/api/v1/task-custom-attributes/bulk_update_order
 ----

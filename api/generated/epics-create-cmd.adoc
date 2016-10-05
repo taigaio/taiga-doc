@@ -1,0 +1,25 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "assigned_to": null,
+        "blocked_note": "blocking reason",
+        "client_requirement": false,
+        "color": "#ABCABC",
+        "description": "New epic description",
+        "epics_order": 2,
+        "is_blocked": true,
+        "project": 1,
+        "status": 2,
+        "subject": "New epic",
+        "tags": [
+            "service catalog",
+            "customer"
+        ],
+        "team_requirement": false,
+        "watchers": []
+    }' \
+-s http://localhost:8000/api/v1/epics
+----

@@ -2,21 +2,21 @@
 ----
 [
     {
-        "assigned_to": 10,
+        "assigned_to": 15,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Marta Carmona",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
+            "full_name_display": "Catalina Roman",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
             "is_active": true,
             "photo": null,
-            "username": "user4"
+            "username": "user9"
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:22.203Z",
+        "created_date": "2016-10-04T12:11:01.694Z",
         "external_reference": null,
-        "finished_date": "2016-07-05T10:14:48.780Z",
+        "finished_date": "2016-08-20T02:24:40.209Z",
         "id": 1,
         "is_blocked": false,
         "is_closed": true,
@@ -24,8 +24,98 @@
         "is_voter": true,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:45:30.528Z",
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-05T11:45:06.871Z",
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Pilar Herrera",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "project": 1,
+        "ref": 2,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#669900",
+            "is_closed": true,
+            "name": "Cerrada"
+        },
+        "subject": "Patching subject",
+        "tags": [
+            [
+                "voluptates",
+                null
+            ],
+            [
+                "iste",
+                null
+            ],
+            [
+                "obcaecati",
+                null
+            ],
+            [
+                "totam",
+                null
+            ],
+            [
+                "eos",
+                null
+            ],
+            [
+                "deleniti",
+                null
+            ],
+            [
+                "vel",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583061694,
+        "total_voters": 7,
+        "total_watchers": 1,
+        "us_order": 1475583061694,
+        "user_story": 1,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 1,
+            "ref": 1,
+            "subject": "Patching subject"
+        },
+        "version": 2,
+        "watchers": [
+            6
+        ]
+    },
+    {
+        "assigned_to": 14,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Andrea Fernandez",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
+            "is_active": true,
+            "photo": null,
+            "username": "user8"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:01.995Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 2,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": true,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:02.155Z",
         "owner": 7,
         "owner_extra_info": {
             "big_photo": null,
@@ -37,111 +127,475 @@
             "username": "user1"
         },
         "project": 1,
-        "ref": 2,
-        "status": 3,
+        "ref": 3,
+        "status": 1,
         "status_extra_info": {
-            "color": "#ffcc00",
-            "name": "Ready for test"
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Patch status name"
         },
-        "subject": "Patching subject",
+        "subject": "Add tests for bulk operations",
         "tags": [
             [
-                "incidunt",
+                "ipsum",
                 null
             ],
             [
-                "sequi",
+                "vitae",
+                null
+            ],
+            [
+                "fuga",
+                null
+            ],
+            [
+                "perferendis",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583061995,
+        "total_voters": 0,
+        "total_watchers": 4,
+        "us_order": 1475583061995,
+        "user_story": 1,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 1,
+            "ref": 1,
+            "subject": "Patching subject"
+        },
+        "version": 1,
+        "watchers": [
+            6,
+            7,
+            8,
+            11
+        ]
+    },
+    {
+        "assigned_to": 14,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Andrea Fernandez",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
+            "is_active": true,
+            "photo": null,
+            "username": "user8"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:02.340Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 3,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:02.484Z",
+        "owner": 13,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Alvaro Molina",
+            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+            "id": 13,
+            "is_active": true,
+            "photo": null,
+            "username": "user7"
+        },
+        "project": 1,
+        "ref": 4,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "En curso"
+        },
+        "subject": "Create the html template",
+        "tags": [
+            [
+                "aliquam",
+                null
+            ],
+            [
+                "ullam",
+                null
+            ],
+            [
+                "sit",
+                null
+            ],
+            [
+                "ea",
+                null
+            ],
+            [
+                "doloribus",
+                null
+            ],
+            [
+                "sed",
+                null
+            ],
+            [
+                "iure",
+                null
+            ],
+            [
+                "quibusdam",
+                null
+            ],
+            [
+                "vel",
+                null
+            ],
+            [
+                "accusantium",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583062340,
+        "total_voters": 6,
+        "total_watchers": 4,
+        "us_order": 1475583062340,
+        "user_story": 1,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 1,
+            "ref": 1,
+            "subject": "Patching subject"
+        },
+        "version": 1,
+        "watchers": [
+            9,
+            10,
+            12,
+            15
+        ]
+    },
+    {
+        "assigned_to": 7,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Marcos Ortiz",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
+            "is_active": true,
+            "photo": null,
+            "username": "user1"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:03.057Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 4,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:03.258Z",
+        "owner": 14,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Andrea Fernandez",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
+            "is_active": true,
+            "photo": null,
+            "username": "user8"
+        },
+        "project": 1,
+        "ref": 6,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "En curso"
+        },
+        "subject": "Fixing templates for Django 1.6.",
+        "tags": [
+            [
+                "excepturi",
                 null
             ],
             [
                 "at",
                 null
+            ],
+            [
+                "obcaecati",
+                null
+            ],
+            [
+                "omnis",
+                null
+            ],
+            [
+                "aliquam",
+                null
+            ],
+            [
+                "quas",
+                null
+            ],
+            [
+                "consequuntur",
+                null
+            ],
+            [
+                "nostrum",
+                null
+            ],
+            [
+                "ex",
+                null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 8,
-        "total_watchers": 3,
-        "us_order": 1,
-        "user_story": 1,
-        "version": 2,
-        "watchers": [
-            8,
-            3,
-            6
-        ]
+        "taskboard_order": 1475583063057,
+        "total_voters": 2,
+        "total_watchers": 0,
+        "us_order": 1475583063057,
+        "user_story": 2,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 2,
+            "ref": 5,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        "version": 1,
+        "watchers": []
     },
     {
-        "assigned_to": 6,
+        "assigned_to": 5,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
             "is_active": true,
             "photo": null,
-            "username": "user6532909695705815086"
+            "username": "admin"
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:22.808Z",
+        "created_date": "2016-10-04T12:11:03.406Z",
+        "external_reference": null,
+        "finished_date": "2016-08-23T07:05:07.209Z",
+        "id": 5,
+        "is_blocked": false,
+        "is_closed": true,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:03.569Z",
+        "owner": 9,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Esther Ferrer",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
+            "is_active": true,
+            "photo": null,
+            "username": "user3"
+        },
+        "project": 1,
+        "ref": 7,
+        "status": 3,
+        "status_extra_info": {
+            "color": "#ffcc00",
+            "is_closed": true,
+            "name": "Lista para testear"
+        },
+        "subject": "Added file copying and processing of images (resizing)",
+        "tags": [
+            [
+                "ab",
+                null
+            ],
+            [
+                "doloremque",
+                null
+            ],
+            [
+                "a",
+                null
+            ],
+            [
+                "magnam",
+                null
+            ],
+            [
+                "hic",
+                null
+            ],
+            [
+                "incidunt",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583063406,
+        "total_voters": 3,
+        "total_watchers": 3,
+        "us_order": 1475583063406,
+        "user_story": 2,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 2,
+            "ref": 5,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        "version": 1,
+        "watchers": [
+            2,
+            3,
+            13
+        ]
+    },
+    {
+        "assigned_to": 7,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Marcos Ortiz",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
+            "is_active": true,
+            "photo": null,
+            "username": "user1"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:03.747Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 2,
+        "id": 6,
         "is_blocked": false,
         "is_closed": false,
         "is_iocaine": false,
         "is_voter": true,
-        "is_watcher": false,
+        "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:22.936Z",
-        "owner": 15,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:03.885Z",
+        "owner": 11,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Catalina Roman",
-            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-            "id": 15,
+            "full_name_display": "German Benitez",
+            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+            "id": 11,
             "is_active": true,
             "photo": null,
-            "username": "user9"
+            "username": "user5"
         },
         "project": 1,
-        "ref": 4,
-        "status": 1,
+        "ref": 8,
+        "status": 5,
         "status_extra_info": {
             "color": "#999999",
-            "name": "Patch status name"
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n"
         },
-        "subject": "Experimental: modular file types",
+        "subject": "Migrate to Python 3 and milk a beautiful cow",
         "tags": [
             [
-                "totam",
+                "rem",
                 null
             ],
             [
-                "quidem",
+                "sapiente",
                 null
             ],
             [
-                "id",
+                "quo",
                 null
             ],
             [
-                "deleniti",
+                "iure",
                 null
             ],
             [
-                "eligendi",
+                "natus",
+                null
+            ],
+            [
+                "libero",
+                null
+            ],
+            [
+                "autem",
+                null
+            ],
+            [
+                "magni",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 7,
-        "total_watchers": 0,
-        "us_order": 1,
+        "taskboard_order": 1475583063747,
+        "total_voters": 5,
+        "total_watchers": 7,
+        "us_order": 1475583063747,
         "user_story": 2,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 2,
+            "ref": 5,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
         "version": 1,
-        "watchers": []
+        "watchers": [
+            1,
+            3,
+            4,
+            6,
+            7,
+            10,
+            11
+        ]
     },
     {
         "assigned_to": 9,
@@ -156,18 +610,18 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:23.133Z",
+        "created_date": "2016-10-04T12:11:04.077Z",
         "external_reference": null,
-        "finished_date": null,
-        "id": 3,
+        "finished_date": "2016-08-18T07:27:48.209Z",
+        "id": 7,
         "is_blocked": false,
-        "is_closed": false,
+        "is_closed": true,
         "is_iocaine": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:23.244Z",
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:04.216Z",
         "owner": 7,
         "owner_extra_info": {
             "big_photo": null,
@@ -179,323 +633,77 @@
             "username": "user1"
         },
         "project": 1,
-        "ref": 5,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Needs Info"
-        },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
-        "tags": [
-            [
-                "asperiores",
-                null
-            ],
-            [
-                "dolorum",
-                null
-            ],
-            [
-                "maiores",
-                null
-            ],
-            [
-                "est",
-                null
-            ],
-            [
-                "amet",
-                null
-            ],
-            [
-                "odio",
-                null
-            ],
-            [
-                "a",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 0,
-        "total_watchers": 0,
-        "us_order": 1,
-        "user_story": 2,
-        "version": 1,
-        "watchers": []
-    },
-    {
-        "assigned_to": 5,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:23.351Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 4,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:23.501Z",
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "project": 1,
-        "ref": 6,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Needs Info"
-        },
-        "subject": "Migrate to Python 3 and milk a beautiful cow",
-        "tags": [
-            [
-                "ipsam",
-                null
-            ],
-            [
-                "adipisci",
-                null
-            ],
-            [
-                "cum",
-                null
-            ],
-            [
-                "et",
-                null
-            ],
-            [
-                "eum",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 1,
-        "total_watchers": 0,
-        "us_order": 1,
-        "user_story": 2,
-        "version": 1,
-        "watchers": []
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:23.612Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 5,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:23.743Z",
-        "owner": 14,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Andrea Fernandez",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
-            "is_active": true,
-            "photo": null,
-            "username": "user8"
-        },
-        "project": 1,
-        "ref": 7,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Patch status name"
-        },
-        "subject": "Experimental: modular file types",
-        "tags": [
-            [
-                "nulla",
-                null
-            ],
-            [
-                "voluptate",
-                null
-            ],
-            [
-                "autem",
-                null
-            ],
-            [
-                "inventore",
-                null
-            ],
-            [
-                "nostrum",
-                null
-            ],
-            [
-                "veritatis",
-                null
-            ],
-            [
-                "ipsa",
-                null
-            ],
-            [
-                "est",
-                null
-            ],
-            [
-                "quam",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 4,
-        "total_watchers": 1,
-        "us_order": 1,
-        "user_story": 2,
-        "version": 1,
-        "watchers": [
-            2
-        ]
-    },
-    {
-        "assigned_to": 13,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alvaro Molina",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:24.133Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 6,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:24.326Z",
-        "owner": 6,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "project": 1,
         "ref": 9,
-        "status": 2,
+        "status": 4,
         "status_extra_info": {
-            "color": "#ff9900",
-            "name": "In progress"
+            "color": "#669900",
+            "is_closed": true,
+            "name": "Cerrada"
         },
-        "subject": "Feature/improved image admin",
+        "subject": "Fixing templates for Django 1.6.",
         "tags": [
             [
-                "ullam",
+                "harum",
                 null
             ],
             [
-                "vitae",
-                null
-            ],
-            [
-                "perferendis",
-                null
-            ],
-            [
-                "rerum",
-                null
-            ],
-            [
-                "voluptate",
-                null
-            ],
-            [
-                "est",
-                null
-            ],
-            [
-                "explicabo",
+                "ducimus",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 2,
+        "taskboard_order": 1475583064077,
+        "total_voters": 1,
         "total_watchers": 1,
-        "us_order": 1,
-        "user_story": 3,
+        "us_order": 1475583064077,
+        "user_story": 2,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 2,
+            "ref": 5,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
         "version": 1,
         "watchers": [
-            9
+            11
         ]
     },
     {
-        "assigned_to": 5,
+        "assigned_to": 7,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
+            "full_name_display": "Marcos Ortiz",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
             "is_active": true,
             "photo": null,
-            "username": "admin"
+            "username": "user1"
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:24.503Z",
+        "created_date": "2016-10-04T12:11:04.329Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 7,
+        "id": 8,
         "is_blocked": false,
         "is_closed": false,
         "is_iocaine": false,
         "is_voter": false,
-        "is_watcher": true,
+        "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:24.626Z",
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:04.486Z",
         "owner": 15,
         "owner_extra_info": {
             "big_photo": null,
@@ -511,212 +719,102 @@
         "status": 5,
         "status_extra_info": {
             "color": "#999999",
-            "name": "Needs Info"
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n"
         },
-        "subject": "Create testsuite with matrix builds",
+        "subject": "Implement the form",
         "tags": [
             [
-                "maxime",
+                "libero",
                 null
             ],
             [
-                "incidunt",
+                "possimus",
                 null
             ],
             [
-                "fugit",
+                "quis",
                 null
             ],
             [
-                "illum",
+                "laborum",
+                null
+            ],
+            [
+                "officia",
+                null
+            ],
+            [
+                "veritatis",
+                null
+            ],
+            [
+                "ipsum",
+                null
+            ],
+            [
+                "dolorum",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 0,
-        "total_watchers": 5,
-        "us_order": 1,
-        "user_story": 3,
+        "taskboard_order": 1475583064329,
+        "total_voters": 7,
+        "total_watchers": 6,
+        "us_order": 1475583064329,
+        "user_story": 2,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 2,
+            "ref": 5,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
         "version": 1,
         "watchers": [
-            3,
-            5,
-            6,
+            2,
             4,
-            1
+            8,
+            10,
+            12,
+            13
         ]
     },
     {
-        "assigned_to": 13,
+        "assigned_to": 8,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Alvaro Molina",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
+            "full_name_display": "Alba Leon",
+            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+            "id": 8,
             "is_active": true,
             "photo": null,
-            "username": "user7"
+            "username": "user2"
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:24.731Z",
+        "created_date": "2016-10-04T12:11:05.047Z",
         "external_reference": null,
-        "finished_date": "2016-07-06T21:41:35.780Z",
-        "id": 8,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_iocaine": false,
-        "is_voter": true,
-        "is_watcher": false,
-        "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:24.856Z",
-        "owner": 9,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Esther Ferrer",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "project": 1,
-        "ref": 11,
-        "status": 3,
-        "status_extra_info": {
-            "color": "#ffcc00",
-            "name": "Ready for test"
-        },
-        "subject": "Fixing templates for Django 1.6.",
-        "tags": [
-            [
-                "impedit",
-                null
-            ],
-            [
-                "nesciunt",
-                null
-            ],
-            [
-                "expedita",
-                null
-            ],
-            [
-                "eaque",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 2,
-        "total_watchers": 3,
-        "us_order": 1,
-        "user_story": 3,
-        "version": 1,
-        "watchers": [
-            15,
-            5,
-            4
-        ]
-    },
-    {
-        "assigned_to": 12,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Pilar Herrera",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:24.961Z",
-        "external_reference": null,
-        "finished_date": null,
+        "finished_date": "2016-08-22T08:30:48.209Z",
         "id": 9,
         "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:25.071Z",
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Marta Carmona",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "project": 1,
-        "ref": 12,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "name": "In progress"
-        },
-        "subject": "Lighttpd support",
-        "tags": [
-            [
-                "nesciunt",
-                null
-            ],
-            [
-                "voluptatibus",
-                null
-            ],
-            [
-                "perferendis",
-                null
-            ],
-            [
-                "corporis",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 1,
-        "total_watchers": 3,
-        "us_order": 1,
-        "user_story": 3,
-        "version": 1,
-        "watchers": [
-            12,
-            13,
-            10
-        ]
-    },
-    {
-        "assigned_to": 14,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Andrea Fernandez",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
-            "is_active": true,
-            "photo": null,
-            "username": "user8"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:25.164Z",
-        "external_reference": null,
-        "finished_date": "2016-07-03T08:56:01.780Z",
-        "id": 10,
-        "is_blocked": false,
         "is_closed": true,
         "is_iocaine": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:25.317Z",
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:05.268Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -728,63 +826,104 @@
             "username": "user6"
         },
         "project": 1,
-        "ref": 13,
+        "ref": 12,
         "status": 4,
         "status_extra_info": {
             "color": "#669900",
-            "name": "Closed"
+            "is_closed": true,
+            "name": "Cerrada"
         },
-        "subject": "Implement the form",
+        "subject": "Create testsuite with matrix builds",
         "tags": [
             [
-                "nihil",
+                "repellendus",
                 null
             ],
             [
-                "ducimus",
+                "autem",
                 null
             ],
             [
-                "reprehenderit",
+                "ex",
+                null
+            ],
+            [
+                "esse",
+                null
+            ],
+            [
+                "expedita",
+                null
+            ],
+            [
+                "corporis",
+                null
+            ],
+            [
+                "eius",
+                null
+            ],
+            [
+                "quas",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 2,
-        "total_watchers": 2,
-        "us_order": 1,
+        "taskboard_order": 1475583065047,
+        "total_voters": 0,
+        "total_watchers": 4,
+        "us_order": 1475583065047,
         "user_story": 3,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 3,
+            "ref": 11,
+            "subject": "Add tests for bulk operations"
+        },
         "version": 1,
         "watchers": [
+            3,
             4,
-            7
+            5,
+            10
         ]
     },
     {
-        "assigned_to": 13,
+        "assigned_to": 9,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Alvaro Molina",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
+            "full_name_display": "Esther Ferrer",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
             "is_active": true,
             "photo": null,
-            "username": "user7"
+            "username": "user3"
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:25.784Z",
+        "created_date": "2016-10-04T12:11:05.815Z",
         "external_reference": null,
-        "finished_date": "2016-07-08T03:12:10.780Z",
-        "id": 11,
+        "finished_date": null,
+        "id": 10,
         "is_blocked": false,
-        "is_closed": true,
+        "is_closed": false,
         "is_iocaine": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:25.927Z",
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:06.035Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -796,34 +935,356 @@
             "username": "user7"
         },
         "project": 1,
+        "ref": 14,
+        "status": 5,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n"
+        },
+        "subject": "Create the html template",
+        "tags": [
+            [
+                "quo",
+                null
+            ],
+            [
+                "corporis",
+                null
+            ],
+            [
+                "magni",
+                null
+            ],
+            [
+                "ut",
+                null
+            ],
+            [
+                "perspiciatis",
+                null
+            ],
+            [
+                "numquam",
+                null
+            ],
+            [
+                "expedita",
+                null
+            ],
+            [
+                "commodi",
+                null
+            ],
+            [
+                "quia",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583065815,
+        "total_voters": 6,
+        "total_watchers": 5,
+        "us_order": 1475583065815,
+        "user_story": 4,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 4,
+            "ref": 13,
+            "subject": "Support for bulk actions"
+        },
+        "version": 1,
+        "watchers": [
+            2,
+            4,
+            7,
+            9,
+            14
+        ]
+    },
+    {
+        "assigned_to": 6,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Silvia Soto",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user6532909695705815086"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:06.266Z",
+        "external_reference": null,
+        "finished_date": "2016-08-18T06:13:40.209Z",
+        "id": 11,
+        "is_blocked": false,
+        "is_closed": true,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": true,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:06.394Z",
+        "owner": 11,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "German Benitez",
+            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+            "id": 11,
+            "is_active": true,
+            "photo": null,
+            "username": "user5"
+        },
+        "project": 1,
         "ref": 15,
         "status": 3,
         "status_extra_info": {
             "color": "#ffcc00",
-            "name": "Ready for test"
+            "is_closed": true,
+            "name": "Lista para testear"
         },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
+        "subject": "Lighttpd support",
         "tags": [
             [
-                "dolore",
+                "consectetur",
                 null
             ],
             [
-                "rerum",
+                "provident",
                 null
             ],
             [
-                "omnis",
+                "blanditiis",
+                null
+            ],
+            [
+                "officiis",
+                null
+            ],
+            [
+                "rem",
+                null
+            ],
+            [
+                "tempore",
+                null
+            ],
+            [
+                "id",
+                null
+            ],
+            [
+                "alias",
+                null
+            ],
+            [
+                "voluptatum",
                 null
             ]
         ],
-        "taskboard_order": 1,
+        "taskboard_order": 1475583066266,
         "total_voters": 5,
-        "total_watchers": 0,
-        "us_order": 1,
+        "total_watchers": 4,
+        "us_order": 1475583066266,
         "user_story": 4,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 4,
+            "ref": 13,
+            "subject": "Support for bulk actions"
+        },
         "version": 1,
-        "watchers": []
+        "watchers": [
+            3,
+            6,
+            12,
+            14
+        ]
+    },
+    {
+        "assigned_to": 5,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
+            "is_active": true,
+            "photo": null,
+            "username": "admin"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:06.589Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 12,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:06.730Z",
+        "owner": 13,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Alvaro Molina",
+            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+            "id": 13,
+            "is_active": true,
+            "photo": null,
+            "username": "user7"
+        },
+        "project": 1,
+        "ref": 16,
+        "status": 5,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n"
+        },
+        "subject": "Create the user model",
+        "tags": [
+            [
+                "porro",
+                null
+            ],
+            [
+                "sed",
+                null
+            ],
+            [
+                "sapiente",
+                null
+            ],
+            [
+                "dicta",
+                null
+            ],
+            [
+                "quos",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583066590,
+        "total_voters": 4,
+        "total_watchers": 5,
+        "us_order": 1475583066589,
+        "user_story": 4,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 4,
+            "ref": 13,
+            "subject": "Support for bulk actions"
+        },
+        "version": 1,
+        "watchers": [
+            1,
+            4,
+            7,
+            10,
+            14
+        ]
+    },
+    {
+        "assigned_to": 5,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
+            "is_active": true,
+            "photo": null,
+            "username": "admin"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:06.895Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 13,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": true,
+        "is_watcher": false,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:07.045Z",
+        "owner": 10,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Marta Carmona",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
+            "is_active": true,
+            "photo": null,
+            "username": "user4"
+        },
+        "project": 1,
+        "ref": 17,
+        "status": 5,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n"
+        },
+        "subject": "Feature/improved image admin",
+        "tags": [
+            [
+                "ullam",
+                null
+            ],
+            [
+                "sequi",
+                null
+            ],
+            [
+                "tenetur",
+                null
+            ],
+            [
+                "mollitia",
+                null
+            ],
+            [
+                "nostrum",
+                null
+            ],
+            [
+                "quae",
+                null
+            ],
+            [
+                "hic",
+                null
+            ],
+            [
+                "itaque",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583066895,
+        "total_voters": 4,
+        "total_watchers": 5,
+        "us_order": 1475583066895,
+        "user_story": 4,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 4,
+            "ref": 13,
+            "subject": "Support for bulk actions"
+        },
+        "version": 1,
+        "watchers": [
+            3,
+            7,
+            11,
+            14,
+            15
+        ]
     },
     {
         "assigned_to": 7,
@@ -838,162 +1299,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:26.019Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 12,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:26.126Z",
-        "owner": 12,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Pilar Herrera",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "project": 1,
-        "ref": 16,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Patch status name"
-        },
-        "subject": "Create the html template",
-        "tags": [
-            [
-                "perferendis",
-                null
-            ],
-            [
-                "ipsa",
-                null
-            ],
-            [
-                "mollitia",
-                null
-            ],
-            [
-                "voluptatibus",
-                null
-            ],
-            [
-                "minus",
-                null
-            ],
-            [
-                "distinctio",
-                null
-            ],
-            [
-                "architecto",
-                null
-            ],
-            [
-                "eveniet",
-                null
-            ],
-            [
-                "culpa",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 3,
-        "total_watchers": 1,
-        "us_order": 1,
-        "user_story": 4,
-        "version": 1,
-        "watchers": [
-            11
-        ]
-    },
-    {
-        "assigned_to": 11,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "German Benitez",
-            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-            "id": 11,
-            "is_active": true,
-            "photo": null,
-            "username": "user5"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:26.282Z",
-        "external_reference": null,
-        "finished_date": "2016-07-07T01:59:47.780Z",
-        "id": 13,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_iocaine": false,
-        "is_voter": true,
-        "is_watcher": false,
-        "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:26.401Z",
-        "owner": 7,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "project": 1,
-        "ref": 17,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#669900",
-            "name": "Closed"
-        },
-        "subject": "Create testsuite with matrix builds",
-        "tags": [
-            [
-                "porro",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 4,
-        "total_watchers": 6,
-        "us_order": 1,
-        "user_story": 4,
-        "version": 1,
-        "watchers": [
-            1,
-            8,
-            10,
-            13,
-            7,
-            5
-        ]
-    },
-    {
-        "assigned_to": 13,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alvaro Molina",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:26.512Z",
+        "created_date": "2016-10-04T12:11:07.210Z",
         "external_reference": null,
         "finished_date": null,
         "id": 14,
@@ -1001,66 +1307,55 @@
         "is_closed": false,
         "is_iocaine": false,
         "is_voter": true,
-        "is_watcher": true,
+        "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:26.609Z",
-        "owner": 14,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:07.350Z",
+        "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Andrea Fernandez",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
+            "full_name_display": "Silvia Soto",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "user8"
+            "username": "user6532909695705815086"
         },
         "project": 1,
         "ref": 18,
         "status": 2,
         "status_extra_info": {
             "color": "#ff9900",
-            "name": "In progress"
+            "is_closed": false,
+            "name": "En curso"
         },
-        "subject": "Experimental: modular file types",
+        "subject": "Added file copying and processing of images (resizing)",
         "tags": [
             [
-                "rerum",
+                "cupiditate",
                 null
             ],
             [
-                "iusto",
-                null
-            ],
-            [
-                "earum",
-                null
-            ],
-            [
-                "minima",
-                null
-            ],
-            [
-                "aut",
-                null
-            ],
-            [
-                "illum",
+                "quibusdam",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 8,
-        "total_watchers": 5,
-        "us_order": 1,
+        "taskboard_order": 1475583067210,
+        "total_voters": 3,
+        "total_watchers": 3,
+        "us_order": 1475583067210,
         "user_story": 4,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 4,
+            "ref": 13,
+            "subject": "Support for bulk actions"
+        },
         "version": 1,
         "watchers": [
-            10,
-            11,
             2,
-            5,
-            6
+            8,
+            15
         ]
     },
     {
@@ -1076,89 +1371,287 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:27.024Z",
+        "created_date": "2016-10-04T12:11:07.887Z",
         "external_reference": null,
-        "finished_date": "2016-06-30T11:07:48.780Z",
+        "finished_date": null,
         "id": 15,
         "is_blocked": false,
-        "is_closed": true,
+        "is_closed": false,
         "is_iocaine": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-6-23",
-        "modified_date": "2016-08-17T10:38:27.176Z",
-        "owner": 14,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:08.097Z",
+        "owner": 11,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Andrea Fernandez",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
+            "full_name_display": "German Benitez",
+            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+            "id": 11,
             "is_active": true,
             "photo": null,
-            "username": "user8"
+            "username": "user5"
         },
         "project": 1,
         "ref": 20,
-        "status": 4,
+        "status": 1,
         "status_extra_info": {
-            "color": "#669900",
-            "name": "Closed"
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Patch status name"
         },
         "subject": "Migrate to Python 3 and milk a beautiful cow",
         "tags": [
             [
-                "odit",
+                "aspernatur",
                 null
             ],
             [
-                "iusto",
+                "inventore",
                 null
             ],
             [
-                "labore",
+                "possimus",
                 null
             ],
             [
-                "harum",
+                "perferendis",
+                null
+            ],
+            [
+                "repellat",
+                null
+            ],
+            [
+                "ut",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 6,
-        "total_watchers": 0,
-        "us_order": 1,
+        "taskboard_order": 1475583067887,
+        "total_voters": 5,
+        "total_watchers": 2,
+        "us_order": 1475583067887,
         "user_story": 5,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 7,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 126,
+                    "subject": "Migrate to Python 3 and milk a beautiful cow"
+                }
+            ],
+            "id": 5,
+            "ref": 19,
+            "subject": "Fixing templates for Django 1.6."
+        },
         "version": 1,
-        "watchers": []
+        "watchers": [
+            7,
+            12
+        ]
     },
     {
-        "assigned_to": 5,
+        "assigned_to": 15,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
+            "full_name_display": "Catalina Roman",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
             "is_active": true,
             "photo": null,
-            "username": "admin"
+            "username": "user9"
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:27.717Z",
+        "created_date": "2016-10-04T12:11:08.328Z",
         "external_reference": null,
         "finished_date": null,
         "id": 16,
         "is_blocked": false,
         "is_closed": false,
         "is_iocaine": false,
+        "is_voter": true,
+        "is_watcher": true,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:08.472Z",
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Pilar Herrera",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "project": 1,
+        "ref": 21,
+        "status": 5,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n"
+        },
+        "subject": "Add setting to allow regular users to create folders at the root level.",
+        "tags": [
+            [
+                "assumenda",
+                null
+            ],
+            [
+                "quos",
+                null
+            ],
+            [
+                "a",
+                null
+            ],
+            [
+                "sequi",
+                null
+            ],
+            [
+                "voluptatum",
+                null
+            ],
+            [
+                "aut",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583068328,
+        "total_voters": 5,
+        "total_watchers": 4,
+        "us_order": 1475583068328,
+        "user_story": 5,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 7,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 126,
+                    "subject": "Migrate to Python 3 and milk a beautiful cow"
+                }
+            ],
+            "id": 5,
+            "ref": 19,
+            "subject": "Fixing templates for Django 1.6."
+        },
+        "version": 1,
+        "watchers": [
+            2,
+            6,
+            9,
+            15
+        ]
+    },
+    {
+        "assigned_to": 7,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Marcos Ortiz",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
+            "is_active": true,
+            "photo": null,
+            "username": "user1"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:08.665Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 17,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
         "is_voter": false,
         "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:27.840Z",
-        "owner": 6,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:08.807Z",
+        "owner": 9,
         "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Esther Ferrer",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
+            "is_active": true,
+            "photo": null,
+            "username": "user3"
+        },
+        "project": 1,
+        "ref": 22,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "En curso"
+        },
+        "subject": "Implement the form",
+        "tags": [
+            [
+                "quibusdam",
+                null
+            ],
+            [
+                "nobis",
+                null
+            ],
+            [
+                "beatae",
+                null
+            ],
+            [
+                "velit",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583068665,
+        "total_voters": 2,
+        "total_watchers": 2,
+        "us_order": 1475583068665,
+        "user_story": 5,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 7,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 126,
+                    "subject": "Migrate to Python 3 and milk a beautiful cow"
+                }
+            ],
+            "id": 5,
+            "ref": 19,
+            "subject": "Fixing templates for Django 1.6."
+        },
+        "version": 1,
+        "watchers": [
+            2,
+            14
+        ]
+    },
+    {
+        "assigned_to": 6,
+        "assigned_to_extra_info": {
             "big_photo": null,
             "full_name_display": "Silvia Soto",
             "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
@@ -1167,57 +1660,171 @@
             "photo": null,
             "username": "user6532909695705815086"
         },
-        "project": 1,
-        "ref": 22,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Needs Info"
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:09.385Z",
+        "external_reference": null,
+        "finished_date": "2016-08-18T14:09:34.209Z",
+        "id": 18,
+        "is_blocked": false,
+        "is_closed": true,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:09.663Z",
+        "owner": 10,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Marta Carmona",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
+            "is_active": true,
+            "photo": null,
+            "username": "user4"
         },
-        "subject": "Experimental: modular file types",
+        "project": 1,
+        "ref": 24,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#669900",
+            "is_closed": true,
+            "name": "Cerrada"
+        },
+        "subject": "get_actions() does not check for 'delete_selected' in actions",
         "tags": [
             [
-                "quae",
+                "laudantium",
                 null
             ],
             [
-                "ea",
-                null
-            ],
-            [
-                "quidem",
-                null
-            ],
-            [
-                "dignissimos",
-                null
-            ],
-            [
-                "delectus",
-                null
-            ],
-            [
-                "culpa",
-                null
-            ],
-            [
-                "sequi",
+                "voluptate",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 4,
-        "total_watchers": 6,
-        "us_order": 1,
+        "taskboard_order": 1475583069385,
+        "total_voters": 6,
+        "total_watchers": 1,
+        "us_order": 1475583069385,
         "user_story": 6,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 6,
+            "ref": 23,
+            "subject": "Create the user model"
+        },
         "version": 1,
         "watchers": [
-            7,
-            9,
-            3,
+            7
+        ]
+    },
+    {
+        "assigned_to": 6,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Silvia Soto",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user6532909695705815086"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:09.845Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 19,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": true,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:10.005Z",
+        "owner": 15,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Catalina Roman",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
+        "project": 1,
+        "ref": 25,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Patch status name"
+        },
+        "subject": "Fixing templates for Django 1.6.",
+        "tags": [
+            [
+                "repellendus",
+                null
+            ],
+            [
+                "nulla",
+                null
+            ],
+            [
+                "dolore",
+                null
+            ],
+            [
+                "nam",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583069845,
+        "total_voters": 9,
+        "total_watchers": 7,
+        "us_order": 1475583069845,
+        "user_story": 6,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 6,
+            "ref": 23,
+            "subject": "Create the user model"
+        },
+        "version": 1,
+        "watchers": [
+            2,
+            4,
             5,
-            14,
-            4
+            6,
+            9,
+            12,
+            15
         ]
     },
     {
@@ -1233,174 +1840,18 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:28.293Z",
+        "created_date": "2016-10-04T12:11:10.294Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 17,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:28.448Z",
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Marta Carmona",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "project": 1,
-        "ref": 24,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Patch status name"
-        },
-        "subject": "get_actions() does not check for 'delete_selected' in actions",
-        "tags": [
-            [
-                "quaerat",
-                null
-            ],
-            [
-                "dolorem",
-                null
-            ],
-            [
-                "provident",
-                null
-            ],
-            [
-                "reprehenderit",
-                null
-            ],
-            [
-                "quod",
-                null
-            ],
-            [
-                "aut",
-                null
-            ],
-            [
-                "neque",
-                null
-            ],
-            [
-                "ipsa",
-                null
-            ],
-            [
-                "laudantium",
-                null
-            ],
-            [
-                "veritatis",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 5,
-        "total_watchers": 0,
-        "us_order": 1,
-        "user_story": 7,
-        "version": 1,
-        "watchers": []
-    },
-    {
-        "assigned_to": 5,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:28.609Z",
-        "external_reference": null,
-        "finished_date": "2016-07-19T04:07:03.780Z",
-        "id": 18,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:28.746Z",
-        "owner": 15,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Roman",
-            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-            "id": 15,
-            "is_active": true,
-            "photo": null,
-            "username": "user9"
-        },
-        "project": 1,
-        "ref": 25,
-        "status": 3,
-        "status_extra_info": {
-            "color": "#ffcc00",
-            "name": "Ready for test"
-        },
-        "subject": "Migrate to Python 3 and milk a beautiful cow",
-        "tags": [
-            [
-                "dolorum",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 0,
-        "total_watchers": 5,
-        "us_order": 1,
-        "user_story": 7,
-        "version": 1,
-        "watchers": [
-            8,
-            7,
-            2,
-            10,
-            5
-        ]
-    },
-    {
-        "assigned_to": 5,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:28.843Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 19,
+        "id": 20,
         "is_blocked": false,
         "is_closed": false,
         "is_iocaine": false,
         "is_voter": true,
         "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:28.955Z",
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:10.431Z",
         "owner": 5,
         "owner_extra_info": {
             "big_photo": null,
@@ -1416,131 +1867,335 @@
         "status": 5,
         "status_extra_info": {
             "color": "#999999",
-            "name": "Needs Info"
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n"
         },
-        "subject": "Experimental: modular file types",
+        "subject": "Create the html template",
         "tags": [
             [
-                "voluptas",
+                "culpa",
                 null
             ],
             [
-                "eligendi",
+                "esse",
                 null
             ],
             [
-                "iusto",
+                "molestias",
                 null
             ],
             [
-                "doloribus",
+                "officia",
+                null
+            ],
+            [
+                "vitae",
+                null
+            ],
+            [
+                "qui",
+                null
+            ],
+            [
+                "assumenda",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 7,
-        "total_watchers": 3,
-        "us_order": 1,
-        "user_story": 7,
+        "taskboard_order": 1475583070294,
+        "total_voters": 3,
+        "total_watchers": 2,
+        "us_order": 1475583070294,
+        "user_story": 6,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 6,
+            "ref": 23,
+            "subject": "Create the user model"
+        },
         "version": 1,
         "watchers": [
-            1,
-            3,
-            2
+            5,
+            10
         ]
     },
     {
-        "assigned_to": 11,
+        "assigned_to": 9,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "German Benitez",
-            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-            "id": 11,
+            "full_name_display": "Esther Ferrer",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
             "is_active": true,
             "photo": null,
-            "username": "user5"
+            "username": "user3"
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:29.141Z",
+        "created_date": "2016-10-04T12:11:10.597Z",
         "external_reference": null,
-        "finished_date": null,
-        "id": 20,
+        "finished_date": "2016-08-14T18:51:28.209Z",
+        "id": 21,
         "is_blocked": false,
-        "is_closed": false,
+        "is_closed": true,
         "is_iocaine": false,
-        "is_voter": true,
+        "is_voter": false,
         "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:29.280Z",
-        "owner": 14,
+        "milestone": 1,
+        "milestone_slug": "sprint-2016-8-10",
+        "modified_date": "2016-10-04T12:11:10.755Z",
+        "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Andrea Fernandez",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
+            "full_name_display": "Pilar Herrera",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
             "is_active": true,
             "photo": null,
-            "username": "user8"
+            "username": "user6"
         },
         "project": 1,
         "ref": 27,
-        "status": 5,
+        "status": 3,
         "status_extra_info": {
-            "color": "#999999",
-            "name": "Needs Info"
+            "color": "#ffcc00",
+            "is_closed": true,
+            "name": "Lista para testear"
         },
-        "subject": "Lighttpd x-sendfile support",
+        "subject": "get_actions() does not check for 'delete_selected' in actions",
         "tags": [
             [
-                "animi",
+                "voluptatem",
                 null
             ],
             [
-                "incidunt",
-                null
-            ],
-            [
-                "provident",
+                "sapiente",
                 null
             ]
         ],
-        "taskboard_order": 1,
+        "taskboard_order": 1475583070597,
         "total_voters": 4,
-        "total_watchers": 0,
-        "us_order": 1,
-        "user_story": 7,
+        "total_watchers": 6,
+        "us_order": 1475583070597,
+        "user_story": 6,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 6,
+            "ref": 23,
+            "subject": "Create the user model"
+        },
         "version": 1,
-        "watchers": []
+        "watchers": [
+            3,
+            4,
+            5,
+            8,
+            11,
+            12
+        ]
     },
     {
-        "assigned_to": 5,
+        "assigned_to": 10,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
+            "full_name_display": "Marta Carmona",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
             "is_active": true,
             "photo": null,
-            "username": "admin"
+            "username": "user4"
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:29.743Z",
+        "created_date": "2016-10-04T12:11:11.343Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 21,
+        "id": 22,
         "is_blocked": false,
         "is_closed": false,
         "is_iocaine": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:29.896Z",
-        "owner": 14,
+        "milestone_slug": "sprint-2016-8-25",
+        "modified_date": "2016-10-04T12:11:11.528Z",
+        "owner": 12,
         "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Pilar Herrera",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "project": 1,
+        "ref": 29,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Patch status name"
+        },
+        "subject": "Add setting to allow regular users to create folders at the root level.",
+        "tags": [
+            [
+                "alias",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583071343,
+        "total_voters": 2,
+        "total_watchers": 3,
+        "us_order": 1475583071343,
+        "user_story": 7,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 7,
+            "ref": 28,
+            "subject": "Feature/improved image admin"
+        },
+        "version": 1,
+        "watchers": [
+            2,
+            7,
+            11
+        ]
+    },
+    {
+        "assigned_to": 6,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Silvia Soto",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user6532909695705815086"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:11.713Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 23,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": 2,
+        "milestone_slug": "sprint-2016-8-25",
+        "modified_date": "2016-10-04T12:11:11.835Z",
+        "owner": 8,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Alba Leon",
+            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+            "id": 8,
+            "is_active": true,
+            "photo": null,
+            "username": "user2"
+        },
+        "project": 1,
+        "ref": 30,
+        "status": 5,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n"
+        },
+        "subject": "Implement the form",
+        "tags": [
+            [
+                "architecto",
+                null
+            ],
+            [
+                "nesciunt",
+                null
+            ],
+            [
+                "modi",
+                null
+            ],
+            [
+                "id",
+                null
+            ],
+            [
+                "repellendus",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583071713,
+        "total_voters": 6,
+        "total_watchers": 3,
+        "us_order": 1475583071713,
+        "user_story": 7,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 7,
+            "ref": 28,
+            "subject": "Feature/improved image admin"
+        },
+        "version": 1,
+        "watchers": [
+            1,
+            8,
+            13
+        ]
+    },
+    {
+        "assigned_to": 14,
+        "assigned_to_extra_info": {
             "big_photo": null,
             "full_name_display": "Andrea Fernandez",
             "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
@@ -1549,40 +2204,294 @@
             "photo": null,
             "username": "user8"
         },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:11.998Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 24,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": true,
+        "is_watcher": true,
+        "milestone": 2,
+        "milestone_slug": "sprint-2016-8-25",
+        "modified_date": "2016-10-04T12:11:12.120Z",
+        "owner": 15,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Catalina Roman",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
         "project": 1,
-        "ref": 29,
+        "ref": 31,
         "status": 2,
         "status_extra_info": {
             "color": "#ff9900",
-            "name": "In progress"
+            "is_closed": false,
+            "name": "En curso"
         },
-        "subject": "Create testsuite with matrix builds",
+        "subject": "Lighttpd x-sendfile support",
         "tags": [
+            [
+                "iusto",
+                null
+            ],
+            [
+                "laudantium",
+                null
+            ],
+            [
+                "maxime",
+                null
+            ],
+            [
+                "facilis",
+                null
+            ],
+            [
+                "placeat",
+                null
+            ],
             [
                 "dignissimos",
                 null
+            ]
+        ],
+        "taskboard_order": 1475583071998,
+        "total_voters": 2,
+        "total_watchers": 7,
+        "us_order": 1475583071998,
+        "user_story": 7,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
             ],
+            "id": 7,
+            "ref": 28,
+            "subject": "Feature/improved image admin"
+        },
+        "version": 1,
+        "watchers": [
+            1,
+            6,
+            7,
+            9,
+            11,
+            13,
+            14
+        ]
+    },
+    {
+        "assigned_to": 14,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Andrea Fernandez",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
+            "is_active": true,
+            "photo": null,
+            "username": "user8"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:12.278Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 25,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": true,
+        "is_watcher": false,
+        "milestone": 2,
+        "milestone_slug": "sprint-2016-8-25",
+        "modified_date": "2016-10-04T12:11:12.430Z",
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Pilar Herrera",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "project": 1,
+        "ref": 32,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Patch status name"
+        },
+        "subject": "Lighttpd support",
+        "tags": [
             [
-                "sapiente",
+                "molestias",
                 null
             ],
             [
-                "unde",
-                null
-            ],
-            [
-                "distinctio",
+                "labore",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 2,
-        "total_watchers": 1,
-        "us_order": 1,
-        "user_story": 8,
+        "taskboard_order": 1475583072278,
+        "total_voters": 4,
+        "total_watchers": 2,
+        "us_order": 1475583072278,
+        "user_story": 7,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 7,
+            "ref": 28,
+            "subject": "Feature/improved image admin"
+        },
         "version": 1,
         "watchers": [
-            12
+            1,
+            9
+        ]
+    },
+    {
+        "assigned_to": 12,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Pilar Herrera",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:12.613Z",
+        "external_reference": null,
+        "finished_date": "2016-09-04T15:26:10.209Z",
+        "id": 26,
+        "is_blocked": false,
+        "is_closed": true,
+        "is_iocaine": false,
+        "is_voter": true,
+        "is_watcher": false,
+        "milestone": 2,
+        "milestone_slug": "sprint-2016-8-25",
+        "modified_date": "2016-10-04T12:11:12.764Z",
+        "owner": 9,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Esther Ferrer",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
+            "is_active": true,
+            "photo": null,
+            "username": "user3"
+        },
+        "project": 1,
+        "ref": 33,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#669900",
+            "is_closed": true,
+            "name": "Cerrada"
+        },
+        "subject": "Add tests for bulk operations",
+        "tags": [
+            [
+                "aliquam",
+                null
+            ],
+            [
+                "perferendis",
+                null
+            ],
+            [
+                "quos",
+                null
+            ],
+            [
+                "tempora",
+                null
+            ],
+            [
+                "error",
+                null
+            ],
+            [
+                "consequatur",
+                null
+            ],
+            [
+                "deleniti",
+                null
+            ],
+            [
+                "fugiat",
+                null
+            ],
+            [
+                "neque",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583072613,
+        "total_voters": 7,
+        "total_watchers": 5,
+        "us_order": 1475583072613,
+        "user_story": 7,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                }
+            ],
+            "id": 7,
+            "ref": 28,
+            "subject": "Feature/improved image admin"
+        },
+        "version": 1,
+        "watchers": [
+            2,
+            7,
+            10,
+            13,
+            15
         ]
     },
     {
@@ -1598,18 +2507,18 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:30.028Z",
+        "created_date": "2016-10-04T12:11:13.416Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 22,
+        "id": 27,
         "is_blocked": false,
         "is_closed": false,
         "is_iocaine": false,
-        "is_voter": false,
+        "is_voter": true,
         "is_watcher": true,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:30.124Z",
+        "milestone_slug": "sprint-2016-8-25",
+        "modified_date": "2016-10-04T12:11:13.609Z",
         "owner": 11,
         "owner_extra_info": {
             "big_photo": null,
@@ -1621,67 +2530,124 @@
             "username": "user5"
         },
         "project": 1,
-        "ref": 30,
-        "status": 1,
+        "ref": 35,
+        "status": 2,
         "status_extra_info": {
-            "color": "#999999",
-            "name": "Patch status name"
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "En curso"
         },
-        "subject": "Experimental: modular file types",
+        "subject": "Create the user model",
         "tags": [
             [
-                "non",
+                "aliquam",
                 null
             ],
             [
-                "laborum",
+                "laboriosam",
                 null
             ],
             [
-                "officia",
-                null
-            ],
-            [
-                "quae",
-                null
-            ],
-            [
-                "veritatis",
-                null
-            ],
-            [
-                "vel",
-                null
-            ],
-            [
-                "ab",
-                null
-            ],
-            [
-                "voluptas",
-                null
-            ],
-            [
-                "esse",
-                null
-            ],
-            [
-                "beatae",
+                "sequi",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 3,
-        "total_watchers": 6,
-        "us_order": 1,
+        "taskboard_order": 1475583073416,
+        "total_voters": 6,
+        "total_watchers": 4,
+        "us_order": 1475583073416,
         "user_story": 8,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 8,
+            "ref": 34,
+            "subject": "Support for bulk actions"
+        },
         "version": 1,
         "watchers": [
-            12,
-            7,
+            2,
+            3,
+            5,
+            6
+        ]
+    },
+    {
+        "assigned_to": 15,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Catalina Roman",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "created_date": "2016-10-04T12:11:14.276Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 28,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_iocaine": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": 2,
+        "milestone_slug": "sprint-2016-8-25",
+        "modified_date": "2016-10-04T12:11:14.477Z",
+        "owner": 5,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
+            "is_active": true,
+            "photo": null,
+            "username": "admin"
+        },
+        "project": 1,
+        "ref": 37,
+        "status": 5,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n"
+        },
+        "subject": "Added file copying and processing of images (resizing)",
+        "tags": [
+            [
+                "quaerat",
+                null
+            ],
+            [
+                "nam",
+                null
+            ],
+            [
+                "dolores",
+                null
+            ],
+            [
+                "cupiditate",
+                null
+            ]
+        ],
+        "taskboard_order": 1475583074276,
+        "total_voters": 6,
+        "total_watchers": 3,
+        "us_order": 1475583074276,
+        "user_story": 9,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 9,
+            "ref": 36,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        "version": 1,
+        "watchers": [
             10,
-            15,
-            6,
+            12,
             13
         ]
     },
@@ -1698,357 +2664,18 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:30.236Z",
+        "created_date": "2016-10-04T12:11:14.695Z",
         "external_reference": null,
-        "finished_date": null,
-        "id": 23,
+        "finished_date": "2016-08-27T15:28:15.209Z",
+        "id": 29,
         "is_blocked": false,
-        "is_closed": false,
+        "is_closed": true,
         "is_iocaine": false,
         "is_voter": true,
-        "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:30.328Z",
-        "owner": 15,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Roman",
-            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-            "id": 15,
-            "is_active": true,
-            "photo": null,
-            "username": "user9"
-        },
-        "project": 1,
-        "ref": 31,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Needs Info"
-        },
-        "subject": "Fixing templates for Django 1.6.",
-        "tags": [
-            [
-                "quod",
-                null
-            ],
-            [
-                "aspernatur",
-                null
-            ],
-            [
-                "asperiores",
-                null
-            ],
-            [
-                "officia",
-                null
-            ],
-            [
-                "tempore",
-                null
-            ],
-            [
-                "voluptatibus",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 5,
-        "total_watchers": 2,
-        "us_order": 1,
-        "user_story": 8,
-        "version": 1,
-        "watchers": [
-            14,
-            3
-        ]
-    },
-    {
-        "assigned_to": 5,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:30.430Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 24,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
         "is_watcher": true,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:30.516Z",
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "project": 1,
-        "ref": 32,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Needs Info"
-        },
-        "subject": "Added file copying and processing of images (resizing)",
-        "tags": [
-            [
-                "ut",
-                null
-            ],
-            [
-                "veritatis",
-                null
-            ],
-            [
-                "architecto",
-                null
-            ],
-            [
-                "voluptate",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 5,
-        "total_watchers": 5,
-        "us_order": 1,
-        "user_story": 8,
-        "version": 1,
-        "watchers": [
-            2,
-            3,
-            6,
-            4,
-            15
-        ]
-    },
-    {
-        "assigned_to": 5,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:30.635Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 25,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:30.734Z",
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "project": 1,
-        "ref": 33,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Needs Info"
-        },
-        "subject": "Add setting to allow regular users to create folders at the root level.",
-        "tags": [
-            [
-                "cupiditate",
-                null
-            ],
-            [
-                "nostrum",
-                null
-            ],
-            [
-                "eligendi",
-                null
-            ],
-            [
-                "aspernatur",
-                null
-            ],
-            [
-                "corporis",
-                null
-            ],
-            [
-                "beatae",
-                null
-            ],
-            [
-                "odit",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 6,
-        "total_watchers": 3,
-        "us_order": 1,
-        "user_story": 8,
-        "version": 1,
-        "watchers": [
-            10,
-            12,
-            13
-        ]
-    },
-    {
-        "assigned_to": 7,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:31.136Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 26,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": true,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:31.267Z",
-        "owner": 7,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "project": 1,
-        "ref": 35,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "name": "In progress"
-        },
-        "subject": "Add setting to allow regular users to create folders at the root level.",
-        "tags": [
-            [
-                "molestiae",
-                null
-            ],
-            [
-                "dicta",
-                null
-            ],
-            [
-                "iusto",
-                null
-            ],
-            [
-                "a",
-                null
-            ],
-            [
-                "consequatur",
-                null
-            ],
-            [
-                "tempora",
-                null
-            ],
-            [
-                "ex",
-                null
-            ],
-            [
-                "voluptatem",
-                null
-            ],
-            [
-                "sunt",
-                null
-            ],
-            [
-                "mollitia",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 6,
-        "total_watchers": 5,
-        "us_order": 1,
-        "user_story": 9,
-        "version": 1,
-        "watchers": [
-            14,
-            1,
-            8,
-            6,
-            12
-        ]
-    },
-    {
-        "assigned_to": 11,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "German Benitez",
-            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-            "id": 11,
-            "is_active": true,
-            "photo": null,
-            "username": "user5"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:31.848Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 27,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:32.032Z",
+        "milestone_slug": "sprint-2016-8-25",
+        "modified_date": "2016-10-04T12:11:14.815Z",
         "owner": 14,
         "owner_extra_info": {
             "big_photo": null,
@@ -2060,104 +2687,33 @@
             "username": "user8"
         },
         "project": 1,
-        "ref": 37,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#999999",
-            "name": "Needs Info"
-        },
-        "subject": "Fixing templates for Django 1.6.",
-        "tags": [
-            [
-                "ipsa",
-                null
-            ],
-            [
-                "temporibus",
-                null
-            ],
-            [
-                "dolores",
-                null
-            ],
-            [
-                "incidunt",
-                null
-            ],
-            [
-                "aspernatur",
-                null
-            ],
-            [
-                "officia",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 2,
-        "total_watchers": 2,
-        "us_order": 1,
-        "user_story": 10,
-        "version": 1,
-        "watchers": [
-            7,
-            9
-        ]
-    },
-    {
-        "assigned_to": 9,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Esther Ferrer",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:32.160Z",
-        "external_reference": null,
-        "finished_date": "2016-07-22T23:19:55.780Z",
-        "id": 28,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_iocaine": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:32.275Z",
-        "owner": 12,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Pilar Herrera",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "project": 1,
         "ref": 38,
-        "status": 4,
+        "status": 3,
         "status_extra_info": {
-            "color": "#669900",
-            "name": "Closed"
+            "color": "#ffcc00",
+            "is_closed": true,
+            "name": "Lista para testear"
         },
-        "subject": "Create the user model",
+        "subject": "Add tests for bulk operations",
         "tags": [
             [
-                "modi",
+                "exercitationem",
                 null
             ],
             [
-                "id",
+                "magni",
                 null
             ],
             [
-                "maxime",
+                "rerum",
+                null
+            ],
+            [
+                "dolor",
+                null
+            ],
+            [
+                "expedita",
                 null
             ],
             [
@@ -2165,33 +2721,26 @@
                 null
             ],
             [
-                "inventore",
-                null
-            ],
-            [
-                "suscipit",
-                null
-            ],
-            [
-                "est",
-                null
-            ],
-            [
-                "molestiae",
+                "natus",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 0,
-        "total_watchers": 4,
-        "us_order": 1,
-        "user_story": 10,
+        "taskboard_order": 1475583074695,
+        "total_voters": 6,
+        "total_watchers": 3,
+        "us_order": 1475583074695,
+        "user_story": 9,
+        "user_story_extra_info": {
+            "epics": null,
+            "id": 9,
+            "ref": 36,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
         "version": 1,
         "watchers": [
-            1,
-            12,
-            2,
-            3
+            6,
+            7,
+            9
         ]
     },
     {
@@ -2207,94 +2756,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-08-17T10:38:32.744Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 29,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_iocaine": false,
-        "is_voter": true,
-        "is_watcher": false,
-        "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:32.887Z",
-        "owner": 12,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Pilar Herrera",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "project": 1,
-        "ref": 40,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "name": "In progress"
-        },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
-        "tags": [
-            [
-                "laborum",
-                null
-            ],
-            [
-                "architecto",
-                null
-            ],
-            [
-                "quasi",
-                null
-            ],
-            [
-                "modi",
-                null
-            ],
-            [
-                "obcaecati",
-                null
-            ],
-            [
-                "nulla",
-                null
-            ],
-            [
-                "neque",
-                null
-            ]
-        ],
-        "taskboard_order": 1,
-        "total_voters": 8,
-        "total_watchers": 5,
-        "us_order": 1,
-        "user_story": 11,
-        "version": 1,
-        "watchers": [
-            9,
-            15,
-            14,
-            11,
-            2
-        ]
-    },
-    {
-        "assigned_to": 7,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "created_date": "2016-08-17T10:38:33.067Z",
+        "created_date": "2016-10-04T12:11:15.416Z",
         "external_reference": null,
         "finished_date": null,
         "id": 30,
@@ -2304,8 +2766,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-7-8",
-        "modified_date": "2016-08-17T10:38:33.173Z",
+        "milestone_slug": "sprint-2016-8-25",
+        "modified_date": "2016-10-04T12:11:15.639Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -2317,42 +2779,55 @@
             "username": "user7"
         },
         "project": 1,
-        "ref": 41,
+        "ref": 40,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
+            "is_closed": false,
             "name": "Patch status name"
         },
-        "subject": "Lighttpd support",
+        "subject": "Create testsuite with matrix builds",
         "tags": [
             [
-                "laudantium",
+                "omnis",
                 null
             ],
             [
-                "nihil",
-                null
-            ],
-            [
-                "eum",
-                null
-            ],
-            [
-                "adipisci",
-                null
-            ],
-            [
-                "aut",
+                "porro",
                 null
             ]
         ],
-        "taskboard_order": 1,
-        "total_voters": 7,
-        "total_watchers": 1,
-        "us_order": 1,
-        "user_story": 11,
+        "taskboard_order": 1475583075416,
+        "total_voters": 5,
+        "total_watchers": 7,
+        "us_order": 1475583075416,
+        "user_story": 10,
+        "user_story_extra_info": {
+            "epics": [
+                {
+                    "color": "#edd400",
+                    "id": 6,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 125,
+                    "subject": "Added file copying and processing of images (resizing)"
+                }
+            ],
+            "id": 10,
+            "ref": 39,
+            "subject": "Add setting to allow regular users to create folders at the root level."
+        },
         "version": 1,
         "watchers": [
+            2,
+            5,
+            7,
+            9,
+            10,
+            12,
             14
         ]
     }

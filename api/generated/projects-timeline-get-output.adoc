@@ -1,15 +1,15 @@
 [source,json]
 ----
 {
-    "content_type": 1,
-    "created": "2016-08-17T10:44:58.698Z",
+    "content_type": 23,
+    "created": "2016-10-05T11:44:38.406Z",
     "data": {
         "comment": "",
         "comment_html": "",
         "milestone": {
             "id": 1,
-            "name": "Sprint 2016-6-23",
-            "slug": "sprint-2016-6-23"
+            "name": "Sprint 2016-8-10",
+            "slug": "sprint-2016-8-10"
         },
         "project": {
             "description": "Project example 0 description",
@@ -19,7 +19,7 @@
         },
         "user": {
             "big_photo": null,
-            "date_joined": "2016-08-17T10:38:20.944Z",
+            "date_joined": "2016-10-04T12:10:59.790Z",
             "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
             "id": 6,
             "is_profile_visible": true,
@@ -38,13 +38,13 @@
                     {
                         "changes": {
                             "description": [
-                                "libero quo fugit molestiae impedit officia at",
+                                "earum vel odit ipsum dolores eos corrupti totam voluptatibus quod unde",
                                 "patching description"
                             ]
                         },
-                        "filename": "sample_attachment_1.txt",
+                        "filename": "sample_attachment_2.txt",
                         "thumb_url": null,
-                        "url": "http://localhost:8000/media/attachments/3/0/9/4/a33c8460e711a0409a9147e962234ad6c8a7a28150a2da6cb69ea64cef4a/sample_attachment_1.txt"
+                        "url": "http://localhost:8000/media/attachments/4/3/c/e/f4eafe2719a8c40bac23651978cc8ea58eea10359b30ba343e9e44b13f7c/sample_attachment_2.txt"
                     }
                 ],
                 "deleted": [],
@@ -52,9 +52,9 @@
             }
         }
     },
-    "data_content_type": 39,
+    "data_content_type": 44,
     "event_type": "userstories.userstory.change",
-    "id": 8218,
+    "id": 8772,
     "namespace": "project:1",
     "object_id": 1,
     "project": 1

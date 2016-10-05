@@ -1,0 +1,5 @@
+To delete epic attachments send a DELETE specifying the epic attachment id in the url
+
+include::../generated/epics-attachments-delete-cmd.adoc[]
+
+When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

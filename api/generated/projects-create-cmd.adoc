@@ -17,5 +17,5 @@ curl -X POST \
         "videoconferences": "appear-in",
         "videoconferences_extra_data": null
     }' \
-http://localhost:8000/api/v1/projects
+-s http://localhost:8000/api/v1/projects
 ----

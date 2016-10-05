@@ -1,0 +1,68 @@
+[source,json]
+----
+[
+    {
+        "color": "#ff9900",
+        "id": 3,
+        "is_closed": false,
+        "name": "En curso",
+        "order": 3,
+        "project": 1,
+        "slug": "in-progress"
+    },
+    {
+        "color": "#fcc000",
+        "id": 4,
+        "is_closed": false,
+        "name": "Lista para testear",
+        "order": 4,
+        "project": 1,
+        "slug": "ready-for-test"
+    },
+    {
+        "color": "#669900",
+        "id": 5,
+        "is_closed": true,
+        "name": "Hecha",
+        "order": 5,
+        "project": 1,
+        "slug": "done"
+    },
+    {
+        "color": "#ff8a84",
+        "id": 2,
+        "is_closed": false,
+        "name": "Preparada",
+        "order": 5,
+        "project": 1,
+        "slug": "ready"
+    },
+    {
+        "color": "#AAAAAA",
+        "id": 36,
+        "is_closed": true,
+        "name": "New status",
+        "order": 8,
+        "project": 1,
+        "slug": "new-status"
+    },
+    {
+        "color": "#999999",
+        "id": 37,
+        "is_closed": false,
+        "name": "New status name",
+        "order": 10,
+        "project": 1,
+        "slug": "new-status-name"
+    },
+    {
+        "color": "#999999",
+        "id": 1,
+        "is_closed": false,
+        "name": "Patch status name",
+        "order": 10,
+        "project": 1,
+        "slug": "patch-status-name"
+    }
+]
+----

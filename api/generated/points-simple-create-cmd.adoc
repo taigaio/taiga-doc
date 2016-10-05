@@ -7,5 +7,5 @@ curl -X POST \
         "name": "Very huge",
         "project": 1
     }' \
-http://localhost:8000/api/v1/points
+-s http://localhost:8000/api/v1/points
 ----

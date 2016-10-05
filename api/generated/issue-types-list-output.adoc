@@ -11,14 +11,14 @@
     {
         "color": "#ba89a8",
         "id": 26,
-        "name": "Question",
+        "name": "Pregunta",
         "order": 2,
         "project": 9
     },
     {
         "color": "#89a8ba",
         "id": 27,
-        "name": "Enhancement",
+        "name": "Mejora",
         "order": 3,
         "project": 9
     },
@@ -32,28 +32,28 @@
     {
         "color": "#ba89a8",
         "id": 29,
-        "name": "Question",
+        "name": "Pregunta",
         "order": 2,
         "project": 10
     },
     {
         "color": "#89a8ba",
         "id": 30,
-        "name": "Enhancement",
+        "name": "Mejora",
         "order": 3,
         "project": 10
     },
     {
         "color": "#89a8ba",
         "id": 3,
-        "name": "Enhancement",
+        "name": "Mejora",
         "order": 3,
         "project": 1
     },
     {
         "color": "#ba89a8",
         "id": 2,
-        "name": "Question",
+        "name": "Pregunta",
         "order": 5,
         "project": 1
     },
@@ -88,14 +88,14 @@
     {
         "color": "#ba89a8",
         "id": 23,
-        "name": "Question",
+        "name": "Pregunta",
         "order": 2,
         "project": 8
     },
     {
         "color": "#89a8ba",
         "id": 24,
-        "name": "Enhancement",
+        "name": "Mejora",
         "order": 3,
         "project": 8
     },
@@ -109,14 +109,14 @@
     {
         "color": "#ba89a8",
         "id": 5,
-        "name": "Question",
+        "name": "Pregunta",
         "order": 2,
         "project": 2
     },
     {
         "color": "#89a8ba",
         "id": 6,
-        "name": "Enhancement",
+        "name": "Mejora",
         "order": 3,
         "project": 2
     },
@@ -130,14 +130,14 @@
     {
         "color": "#ba89a8",
         "id": 8,
-        "name": "Question",
+        "name": "Pregunta",
         "order": 2,
         "project": 3
     },
     {
         "color": "#89a8ba",
         "id": 9,
-        "name": "Enhancement",
+        "name": "Mejora",
         "order": 3,
         "project": 3
     },
@@ -151,14 +151,14 @@
     {
         "color": "#ba89a8",
         "id": 11,
-        "name": "Question",
+        "name": "Pregunta",
         "order": 2,
         "project": 4
     },
     {
         "color": "#89a8ba",
         "id": 12,
-        "name": "Enhancement",
+        "name": "Mejora",
         "order": 3,
         "project": 4
     },
@@ -172,14 +172,14 @@
     {
         "color": "#ba89a8",
         "id": 14,
-        "name": "Question",
+        "name": "Pregunta",
         "order": 2,
         "project": 5
     },
     {
         "color": "#89a8ba",
         "id": 15,
-        "name": "Enhancement",
+        "name": "Mejora",
         "order": 3,
         "project": 5
     },
@@ -193,14 +193,14 @@
     {
         "color": "#ba89a8",
         "id": 17,
-        "name": "Question",
+        "name": "Pregunta",
         "order": 2,
         "project": 6
     },
     {
         "color": "#89a8ba",
         "id": 18,
-        "name": "Enhancement",
+        "name": "Mejora",
         "order": 3,
         "project": 6
     },

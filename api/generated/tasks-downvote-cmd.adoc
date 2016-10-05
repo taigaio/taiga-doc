@@ -3,5 +3,5 @@
 curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
-http://localhost:8000/api/v1/tasks/1/downvote
+-s http://localhost:8000/api/v1/tasks/1/downvote
 ----

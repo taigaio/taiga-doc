@@ -9,5 +9,5 @@ curl -X POST \
         "project": 1,
         "url": "http://myservice.com/webhooks"
     }' \
-http://localhost:8000/api/v1/webhooks
+-s http://localhost:8000/api/v1/webhooks
 ----

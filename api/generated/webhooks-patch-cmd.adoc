@@ -6,5 +6,5 @@ curl -X PATCH \
 -d '{
         "name": "My service name"
     }' \
-http://localhost:8000/api/v1/webhooks/1
+-s http://localhost:8000/api/v1/webhooks/1
 ----

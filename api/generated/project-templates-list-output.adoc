@@ -4,6 +4,7 @@
     {
         "created_date": "2014-04-22T14:48:43.596Z",
         "default_options": {
+            "epic_status": "New",
             "issue_status": "New",
             "issue_type": "Bug",
             "points": "?",
@@ -14,8 +15,46 @@
         },
         "default_owner_role": "product-owner",
         "description": "New description",
+        "epic_statuses": [
+            {
+                "color": "#999999",
+                "is_closed": false,
+                "name": "New",
+                "order": 1,
+                "slug": "new"
+            },
+            {
+                "color": "#ff8a84",
+                "is_closed": false,
+                "name": "Ready",
+                "order": 2,
+                "slug": "ready"
+            },
+            {
+                "color": "#ff9900",
+                "is_closed": false,
+                "name": "In progress",
+                "order": 3,
+                "slug": "in-progress"
+            },
+            {
+                "color": "#fcc000",
+                "is_closed": false,
+                "name": "Ready for test",
+                "order": 4,
+                "slug": "ready-for-test"
+            },
+            {
+                "color": "#669900",
+                "is_closed": true,
+                "name": "Done",
+                "order": 5,
+                "slug": "done"
+            }
+        ],
         "id": 1,
         "is_backlog_activated": true,
+        "is_epics_activated": false,
         "is_issues_activated": true,
         "is_kanban_activated": false,
         "is_wiki_activated": true,
@@ -87,7 +126,7 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-08-17T10:45:32.660Z",
+        "modified_date": "2016-10-05T11:45:08.489Z",
         "name": "Scrum",
         "order": 1,
         "points": [
@@ -198,7 +237,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "ux"
             },
@@ -230,7 +278,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "design"
             },
@@ -262,7 +319,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "front"
             },
@@ -294,7 +360,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "back"
             },
@@ -326,7 +401,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "product-owner"
             },
@@ -347,7 +431,13 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "stakeholder"
             }
@@ -479,6 +569,7 @@
     {
         "created_date": "2014-04-22T14:50:19.738Z",
         "default_options": {
+            "epic_status": "New",
             "issue_status": "New",
             "issue_type": "Bug",
             "points": "?",
@@ -488,9 +579,47 @@
             "us_status": "New"
         },
         "default_owner_role": "product-owner",
-        "description": "Kanban is a method for managing knowledge work with an emphasis on just-in-time delivery while not overloading the team members. In this approach, the process, from definition of a task to its delivery to the customer, is displayed for participants to see and team members pull work from a queue.",
+        "description": "Kanban es un sistema de informaci\u00f3n para gestionar arm\u00f3nicamente el proceso de creaci\u00f3n del producto garantizando el cumplimiento de los tiempos, detectando los posibles sobrecargas del equipo durante las diferentes fases. En esta aproximaci\u00f3n, el proceso, desde su definici\u00f3n hasta la entrega final al cliente, se mostrar\u00e1 a los participantes, siendo los miembros del equipo los encargados de que el trabajo fluya haciendo pull de las tareas sobre las diferentes colas.",
+        "epic_statuses": [
+            {
+                "color": "#999999",
+                "is_closed": false,
+                "name": "New",
+                "order": 1,
+                "slug": "new"
+            },
+            {
+                "color": "#ff8a84",
+                "is_closed": false,
+                "name": "Ready",
+                "order": 2,
+                "slug": "ready"
+            },
+            {
+                "color": "#ff9900",
+                "is_closed": false,
+                "name": "In progress",
+                "order": 3,
+                "slug": "in-progress"
+            },
+            {
+                "color": "#fcc000",
+                "is_closed": false,
+                "name": "Ready for test",
+                "order": 4,
+                "slug": "ready-for-test"
+            },
+            {
+                "color": "#669900",
+                "is_closed": true,
+                "name": "Done",
+                "order": 5,
+                "slug": "done"
+            }
+        ],
         "id": 2,
         "is_backlog_activated": false,
+        "is_epics_activated": false,
         "is_issues_activated": false,
         "is_kanban_activated": true,
         "is_wiki_activated": false,
@@ -562,7 +691,7 @@
                 "order": 3
             }
         ],
-        "modified_date": "2014-07-25T13:11:42.754Z",
+        "modified_date": "2016-08-24T16:26:45.365Z",
         "name": "Kanban",
         "order": 2,
         "points": [
@@ -673,7 +802,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "ux"
             },
@@ -705,7 +843,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "design"
             },
@@ -737,7 +884,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "front"
             },
@@ -769,7 +925,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "back"
             },
@@ -801,7 +966,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "product-owner"
             },
@@ -822,7 +996,13 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "stakeholder"
             }
@@ -952,8 +1132,9 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2016-08-17T10:45:21.070Z",
+        "created_date": "2016-10-05T11:44:56.866Z",
         "default_options": {
+            "epic_status": null,
             "issue_status": "Patch status name",
             "issue_type": "Bug",
             "points": "?",
@@ -964,8 +1145,53 @@
         },
         "default_owner_role": "stakeholder",
         "description": "Beta template description",
+        "epic_statuses": [
+            {
+                "color": "#ff9900",
+                "is_closed": false,
+                "name": "In progress",
+                "order": 3,
+                "slug": "in-progress"
+            },
+            {
+                "color": "#fcc000",
+                "is_closed": false,
+                "name": "Ready for test",
+                "order": 4,
+                "slug": "ready-for-test"
+            },
+            {
+                "color": "#669900",
+                "is_closed": true,
+                "name": "Done",
+                "order": 5,
+                "slug": "done"
+            },
+            {
+                "color": "#ff8a84",
+                "is_closed": false,
+                "name": "Ready",
+                "order": 5,
+                "slug": "ready"
+            },
+            {
+                "color": "#AAAAAA",
+                "is_closed": true,
+                "name": "New status",
+                "order": 8,
+                "slug": "new-status"
+            },
+            {
+                "color": "#999999",
+                "is_closed": false,
+                "name": "New status name",
+                "order": 10,
+                "slug": "new-status-name"
+            }
+        ],
         "id": 3,
         "is_backlog_activated": true,
+        "is_epics_activated": true,
         "is_issues_activated": true,
         "is_kanban_activated": true,
         "is_wiki_activated": true,
@@ -1051,9 +1277,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-08-17T10:45:21.094Z",
+        "modified_date": "2016-10-05T11:44:56.885Z",
         "name": "Beta template",
-        "order": 10000,
+        "order": 1475667896866,
         "points": [
             {
                 "name": "?",
@@ -1172,7 +1398,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "ux"
             },
@@ -1204,7 +1439,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "design"
             },
@@ -1236,7 +1480,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "front"
             },
@@ -1268,7 +1521,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "back"
             },
@@ -1300,7 +1562,16 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "add_epic",
+                    "modify_epic",
+                    "delete_epic",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "product-owner"
             },
@@ -1321,7 +1592,13 @@
                     "view_wiki_pages",
                     "add_wiki_link",
                     "delete_wiki_link",
-                    "view_wiki_links"
+                    "view_wiki_links",
+                    "view_epics",
+                    "comment_epic",
+                    "comment_us",
+                    "comment_task",
+                    "comment_issue",
+                    "comment_wiki_page"
                 ],
                 "slug": "stakeholder"
             }
@@ -1475,32 +1752,7 @@
         "videoconferences_extra_data": null
     },
     {
-        "created_date": "2016-08-17T10:45:33.730Z",
-        "default_options": null,
-        "default_owner_role": "product-owner",
-        "description": "Sample description",
-        "id": 5,
-        "is_backlog_activated": true,
-        "is_issues_activated": true,
-        "is_kanban_activated": false,
-        "is_wiki_activated": true,
-        "issue_statuses": null,
-        "issue_types": null,
-        "modified_date": "2016-08-17T10:45:33.730Z",
-        "name": "New simple template",
-        "order": 10000,
-        "points": null,
-        "priorities": null,
-        "roles": null,
-        "severities": null,
-        "slug": "",
-        "task_statuses": null,
-        "us_statuses": null,
-        "videoconferences": null,
-        "videoconferences_extra_data": null
-    },
-    {
-        "created_date": "2016-08-17T10:45:33.693Z",
+        "created_date": "2016-10-05T11:45:09.529Z",
         "default_options": {
             "issue_status": "New",
             "issue_type": "Bug",
@@ -1512,8 +1764,10 @@
         },
         "default_owner_role": "product-owner",
         "description": "Sample description",
+        "epic_statuses": null,
         "id": 4,
         "is_backlog_activated": false,
+        "is_epics_activated": false,
         "is_issues_activated": false,
         "is_kanban_activated": true,
         "is_wiki_activated": false,
@@ -1578,9 +1832,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-08-17T10:45:33.695Z",
+        "modified_date": "2016-10-05T11:45:09.530Z",
         "name": "New Template",
-        "order": 10000,
+        "order": 1475667909527,
         "points": [
             {
                 "name": "?",
@@ -1964,6 +2218,33 @@
         ],
         "videoconferences": null,
         "videoconferences_extra_data": ""
+    },
+    {
+        "created_date": "2016-10-05T11:45:09.564Z",
+        "default_options": null,
+        "default_owner_role": "product-owner",
+        "description": "Sample description",
+        "epic_statuses": null,
+        "id": 5,
+        "is_backlog_activated": true,
+        "is_epics_activated": false,
+        "is_issues_activated": true,
+        "is_kanban_activated": false,
+        "is_wiki_activated": true,
+        "issue_statuses": null,
+        "issue_types": null,
+        "modified_date": "2016-10-05T11:45:09.564Z",
+        "name": "New simple template",
+        "order": 1475667909563,
+        "points": null,
+        "priorities": null,
+        "roles": null,
+        "severities": null,
+        "slug": "",
+        "task_statuses": null,
+        "us_statuses": null,
+        "videoconferences": null,
+        "videoconferences_extra_data": null
     }
 ]
 ----

@@ -1,0 +1,6 @@
+To edit epic statuses send a PUT or a PATCH specifying the epic status id in the url.
+In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
+
+include::../generated/epic-statuses-patch-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-epic-status-detail[epic status detail object]

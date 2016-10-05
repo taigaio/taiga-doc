@@ -1,0 +1,14 @@
+To list epics send a GET request with the following parameters:
+
+include::../generated/epics-list-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-epic-detail-list[epic list objects]
+
+The results can be filtered using the following parameters:
+
+- *project*: project id
+- *project__slug*: project slug
+- *assigned_to*: assigned to user id
+- *status__is_closed*: boolean indicating if the epic status is closed
+
+include::../generated/epics-filtered-list-cmd.adoc[]

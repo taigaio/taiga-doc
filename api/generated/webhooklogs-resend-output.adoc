@@ -1,7 +1,7 @@
 [source,json]
 ----
 {
-    "created": "2016-08-17T10:45:19.282Z",
+    "created": "2016-10-05T11:44:56.185Z",
     "duration": 0,
     "id": 2,
     "request_data": {
@@ -17,13 +17,14 @@
         "data": {
             "test": "test"
         },
-        "date": "2016-08-17T10:45:18.730Z",
+        "date": "2016-10-05T11:44:55.889Z",
         "type": "test"
     },
     "request_headers": {
         "Content-Length": "316",
         "Content-Type": "application/json",
-        "X-TAIGA-WEBHOOK-SIGNATURE": "2aa691184ee71d17c7f2cfa61a07eb799165fab3"
+        "X-Hub-Signature": "sha1=242bb70017e7d2b6442bfa2eb94a4fd21ad79f6f",
+        "X-TAIGA-WEBHOOK-SIGNATURE": "242bb70017e7d2b6442bfa2eb94a4fd21ad79f6f"
     },
     "response_data": "error-in-request: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))",
     "response_headers": {},

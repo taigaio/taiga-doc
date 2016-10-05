@@ -1,0 +1,5 @@
+To get an epic custom attribute send a GET request specifying the epic custom attribute id in the url
+
+include::../generated/epics-custom-attributes-get-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-epic-custom-attribute-detail[epic custom attribute detail object]

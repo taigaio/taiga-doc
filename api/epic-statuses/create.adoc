@@ -1,0 +1,14 @@
+To create epic statuses send a POST request with the following data:
+
+- *color*: in hexadecimal
+- *is_closed*: (true|false)
+- *name* (required)
+- *order*: integer
+- *project*: (required): project id
+
+
+include::../generated/epic-statuses-create-cmd.adoc[]
+
+include::../generated/epic-statuses-simple-create-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-epic-status-detail[epic status detail object]

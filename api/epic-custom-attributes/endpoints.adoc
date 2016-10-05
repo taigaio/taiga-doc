@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/epic-custom-attributes
+| GET
+| link:#epic-custom-attributes-list[List epic custom attributes]
+
+| /api/v1/epic-custom-attributes
+| POST
+| link:#epic-custom-attributes-create[Create epic custom attribute]
+
+| /api/v1/epic-custom-attributes/\{epicCustomAttributeId}
+| GET
+| link:#epic-custom-attributes-get[Get epic custom attribute]
+
+| /api/v1/epic-custom-attributes/\{epicCustomAttributeId}
+| PUT
+| link:#epic-custom-attributes-edit[Modify epic custom attribute]
+
+| /api/v1/epic-custom-attributes/\{epicCustomAttributeId}
+| PATCH
+| link:#epic-custom-attributes-edit[Modify partially an epic custom attribute]
+
+| /api/v1/epic-custom-attributes/\{epicCustomAttributeId}
+| DELETE
+| link:#epic-custom-attributes-delete[Delete an epic custom attribute]
+
+| /api/v1/epic-custom-attributes/bulk_update_order
+| POST
+| link:#epic-custom-attributes-bulk-update-order[Update epic custom attributes order in bulk mode]
+|===

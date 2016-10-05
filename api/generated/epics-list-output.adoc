@@ -1,0 +1,61 @@
+[source,json]
+----
+{
+    "assigned_to": 11,
+    "assigned_to_extra_info": {
+        "big_photo": null,
+        "full_name_display": "German Benitez",
+        "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+        "id": 11,
+        "is_active": true,
+        "photo": null,
+        "username": "user5"
+    },
+    "attachments": [],
+    "blocked_note": "",
+    "client_requirement": false,
+    "color": "#fcaf3e",
+    "created_date": "2016-10-04T12:11:55.166Z",
+    "epics_order": 1475583115166,
+    "id": 1,
+    "is_blocked": false,
+    "is_closed": false,
+    "is_voter": false,
+    "is_watcher": false,
+    "modified_date": "2016-10-04T12:11:55.318Z",
+    "owner": 7,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Marcos Ortiz",
+        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+        "id": 7,
+        "is_active": true,
+        "photo": null,
+        "username": "user1"
+    },
+    "project": 1,
+    "ref": 120,
+    "status": 2,
+    "status_extra_info": {
+        "color": "#ff8a84",
+        "is_closed": false,
+        "name": "Preparada"
+    },
+    "subject": "Add tests for bulk operations",
+    "tags": [
+        [
+            "quaerat",
+            "#0b4425"
+        ]
+    ],
+    "team_requirement": false,
+    "total_voters": 3,
+    "total_watchers": 0,
+    "user_stories_counts": {
+        "closed": 0,
+        "opened": 0
+    },
+    "version": 1,
+    "watchers": []
+}
+----

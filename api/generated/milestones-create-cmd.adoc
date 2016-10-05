@@ -13,5 +13,5 @@ curl -X POST \
         "slug": "sprint-1",
         "watchers": []
     }' \
-http://localhost:8000/api/v1/milestones
+-s http://localhost:8000/api/v1/milestones
 ----

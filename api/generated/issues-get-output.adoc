@@ -1,80 +1,105 @@
 [source,json]
 ----
 {
-    "assigned_to": 10,
+    "assigned_to": 13,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Marta Carmona",
-        "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-        "id": 10,
+        "full_name_display": "Alvaro Molina",
+        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+        "id": 13,
         "is_active": true,
         "photo": null,
-        "username": "user4"
+        "username": "user7"
     },
+    "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2016-08-17T10:38:45.207Z",
-    "description": "Tenetur fugit consequatur iure maxime, dignissimos fugit odit perferendis aut minima, necessitatibus laborum inventore ipsam, unde sunt asperiores quas eius nisi, ullam id iste dignissimos eius deleniti ex? Veniam quod minus rem necessitatibus nulla, quia sapiente in aliquid praesentium voluptatum, eius excepturi atque. Libero culpa eius ducimus earum doloribus, totam delectus nobis necessitatibus aliquam, facilis eum a tempore harum praesentium dicta, possimus consequuntur provident qui?",
-    "description_html": "<p>Tenetur fugit consequatur iure maxime, dignissimos fugit odit perferendis aut minima, necessitatibus laborum inventore ipsam, unde sunt asperiores quas eius nisi, ullam id iste dignissimos eius deleniti ex? Veniam quod minus rem necessitatibus nulla, quia sapiente in aliquid praesentium voluptatum, eius excepturi atque. Libero culpa eius ducimus earum doloribus, totam delectus nobis necessitatibus aliquam, facilis eum a tempore harum praesentium dicta, possimus consequuntur provident qui?</p>",
+    "created_date": "2016-10-04T12:11:37.639Z",
+    "description": "Sint temporibus unde tempora exercitationem ullam praesentium, consequatur veniam voluptas ut? Nihil perspiciatis iusto quas reprehenderit repellat omnis sequi dolore tempora nisi exercitationem, molestias enim aut recusandae, amet repellat eum ullam qui nostrum sint deserunt voluptate nulla exercitationem reprehenderit, mollitia id sed natus?",
+    "description_html": "<p>Sint temporibus unde tempora exercitationem ullam praesentium, consequatur veniam voluptas ut? Nihil perspiciatis iusto quas reprehenderit repellat omnis sequi dolore tempora nisi exercitationem, molestias enim aut recusandae, amet repellat eum ullam qui nostrum sint deserunt voluptate nulla exercitationem reprehenderit, mollitia id sed natus?</p>",
     "external_reference": null,
-    "finished_date": null,
+    "finished_date": "2016-10-04T12:11:37.641Z",
     "generated_user_stories": null,
     "id": 3,
-    "is_closed": false,
+    "is_blocked": false,
+    "is_closed": true,
     "is_voter": false,
     "is_watcher": false,
     "milestone": null,
-    "modified_date": "2016-08-17T10:45:15.705Z",
+    "modified_date": "2016-10-05T11:44:54.067Z",
     "neighbors": {
         "next": {
             "id": 2,
-            "ref": 85,
-            "subject": "Lighttpd x-sendfile support"
+            "ref": 98,
+            "subject": "Implement the form"
         },
         "previous": {
             "id": 4,
-            "ref": 87,
-            "subject": "Experimental: modular file types"
+            "ref": 100,
+            "subject": "Create testsuite with matrix builds"
         }
     },
-    "owner": 14,
+    "owner": 5,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Andrea Fernandez",
-        "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-        "id": 14,
+        "full_name_display": "Administrator",
+        "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+        "id": 5,
         "is_active": true,
         "photo": null,
-        "username": "user8"
+        "username": "admin"
     },
-    "priority": 3,
+    "priority": 1,
     "project": 1,
-    "ref": 86,
-    "severity": 4,
-    "status": 2,
+    "ref": 99,
+    "severity": 2,
+    "status": 6,
     "status_extra_info": {
-        "color": "#5E8C6A",
-        "name": "In progress"
+        "color": "#CC0000",
+        "is_closed": true,
+        "name": "Rechazada"
     },
     "subject": "Patching subject",
     "tags": [
         [
-            "corporis",
+            "magni",
+            "#429e6f"
+        ],
+        [
+            "quisquam",
             null
         ],
         [
-            "porro",
+            "provident",
+            "#7fdcf2"
+        ],
+        [
+            "quia",
+            null
+        ],
+        [
+            "temporibus",
+            "#a2c51a"
+        ],
+        [
+            "minus",
+            "#59b653"
+        ],
+        [
+            "eos",
+            "#8a6433"
+        ],
+        [
+            "repellat",
             null
         ]
     ],
-    "total_voters": 7,
-    "total_watchers": 5,
-    "type": 1,
+    "total_voters": 3,
+    "total_watchers": 3,
+    "type": 3,
     "version": 2,
     "watchers": [
-        1,
         5,
-        9,
         13,
         15
     ]

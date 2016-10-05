@@ -13,6 +13,7 @@
     "blocked_code": null,
     "created_date": "2016-08-04T11:08:04Z",
     "creation_template": 1,
+    "default_epic_status": null,
     "default_issue_status": 52,
     "default_issue_type": 22,
     "default_points": 85,
@@ -26,6 +27,7 @@
     "i_am_owner": false,
     "id": 8,
     "is_backlog_activated": true,
+    "is_epics_activated": false,
     "is_fan": false,
     "is_featured": false,
     "is_issues_activated": true,
@@ -234,7 +236,7 @@
         "voluptatum": "#02d22f"
     },
     "total_activity": 202,
-    "total_activity_last_month": 202,
+    "total_activity_last_month": 0,
     "total_activity_last_week": 0,
     "total_activity_last_year": 202,
     "total_closed_milestones": 0,
@@ -245,7 +247,7 @@
     "total_milestones": 5,
     "total_story_points": 332.0,
     "total_watchers": 11,
-    "totals_updated_datetime": "2016-08-17T10:45:12.204Z",
+    "totals_updated_datetime": "2016-10-05T11:44:51.230Z",
     "videoconferences": null,
     "videoconferences_extra_data": null
 }

@@ -1,0 +1,14 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "color": "#AAAAAA",
+        "is_closed": true,
+        "name": "New status",
+        "order": 8,
+        "project": 1
+    }' \
+-s http://localhost:8000/api/v1/epic-statuses
+----

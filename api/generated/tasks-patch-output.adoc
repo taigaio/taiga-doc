@@ -1,75 +1,95 @@
 [source,json]
 ----
 {
-    "assigned_to": 10,
+    "assigned_to": 15,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Marta Carmona",
-        "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-        "id": 10,
+        "full_name_display": "Catalina Roman",
+        "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+        "id": 15,
         "is_active": true,
         "photo": null,
-        "username": "user4"
+        "username": "user9"
     },
     "attachments": [],
     "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2016-08-17T10:38:22.203Z",
-    "description": "Incidunt facere sequi consequuntur saepe accusantium suscipit facilis quos.",
-    "description_html": "<p>Incidunt facere sequi consequuntur saepe accusantium suscipit facilis quos.</p>",
+    "created_date": "2016-10-04T12:11:01.694Z",
+    "description": "Perspiciatis ipsum repellat quia quidem officia, totam accusamus laboriosam, quas expedita quos dolore adipisci animi harum hic?",
+    "description_html": "<p>Perspiciatis ipsum repellat quia quidem officia, totam accusamus laboriosam, quas expedita quos dolore adipisci animi harum hic?</p>",
     "external_reference": null,
-    "finished_date": "2016-07-05T10:14:48.780Z",
+    "finished_date": "2016-08-20T02:24:40.209Z",
     "id": 1,
     "is_blocked": false,
     "is_closed": true,
     "is_iocaine": false,
-    "is_voter": false,
+    "is_voter": true,
     "is_watcher": false,
     "milestone": 1,
-    "milestone_slug": "sprint-2016-6-23",
-    "modified_date": "2016-08-17T10:45:30.528Z",
-    "owner": 7,
+    "milestone_slug": "sprint-2016-8-10",
+    "modified_date": "2016-10-05T11:45:06.871Z",
+    "owner": 12,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Marcos Ortiz",
-        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-        "id": 7,
+        "full_name_display": "Pilar Herrera",
+        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+        "id": 12,
         "is_active": true,
         "photo": null,
-        "username": "user1"
+        "username": "user6"
     },
     "project": 1,
     "ref": 2,
-    "status": 3,
+    "status": 4,
     "status_extra_info": {
-        "color": "#ffcc00",
-        "name": "Ready for test"
+        "color": "#669900",
+        "is_closed": true,
+        "name": "Cerrada"
     },
     "subject": "Patching subject",
     "tags": [
         [
-            "incidunt",
+            "voluptates",
             null
         ],
         [
-            "sequi",
+            "iste",
             null
         ],
         [
-            "at",
+            "obcaecati",
+            null
+        ],
+        [
+            "totam",
+            null
+        ],
+        [
+            "eos",
+            null
+        ],
+        [
+            "deleniti",
+            null
+        ],
+        [
+            "vel",
             null
         ]
     ],
-    "taskboard_order": 1,
+    "taskboard_order": 1475583061694,
     "total_voters": 7,
-    "total_watchers": 2,
-    "us_order": 1,
+    "total_watchers": 0,
+    "us_order": 1475583061694,
     "user_story": 1,
+    "user_story_extra_info": {
+        "epics": null,
+        "id": 1,
+        "ref": 1,
+        "subject": "Patching subject"
+    },
     "version": 2,
-    "watchers": [
-        8,
-        3
-    ]
+    "watchers": []
 }
 ----

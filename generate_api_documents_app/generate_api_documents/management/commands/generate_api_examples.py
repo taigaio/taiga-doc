@@ -59,7 +59,7 @@ class Command(BaseCommand):
 {% if admin_needed %}-H "Authorization: Bearer ${ADMIN_AUTH_TOKEN}"{% else %}-H "Authorization: Bearer ${AUTH_TOKEN}"{% endif %} \\
 {% if fields %}{% for (key,value) in sorted(fields.items()) %}-F {{key}}={{value}} \\
 {% endfor %}{% endif %}{% if body %}-d '{{body}}' \\
-{% endif %}{{host}}{{url}}
+{% endif %}-s {{host}}{{url}}
 """)
         return template.render(**data, sorted=sorted)
 
@@ -93,15 +93,16 @@ class Command(BaseCommand):
             output_path = os.path.join("output", key + "-output.adoc")
             result = subprocess.run(curl_cmd + " -f", shell=True, stdout=subprocess.PIPE)
 
+            print(key)
+
             if result.returncode != 0:
-                print(key)
-                print(curl_cmd)
                 result = subprocess.run(curl_cmd, shell=True, stdout=subprocess.PIPE)
-                print(result.stdout)
-                sys.exit(1)
+                print("ERROR on key: ", key)
+                print(result)
 
             if result.stdout == b'':
                 continue
+
             with open(output_path, "w") as fd:
                 fd.write("[source,json]\n")
                 fd.write("----\n")

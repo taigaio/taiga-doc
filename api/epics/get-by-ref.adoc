@@ -1,0 +1,8 @@
+To get an epic send a GET request specifying the epic reference and one of the following parameters:
+
+- project (project id)
+- project_slug
+
+include::../generated/epics-get-by-ref-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-epic-detail-get[epic detail (GET) object]

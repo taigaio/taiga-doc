@@ -19,8 +19,6 @@
     "projects_with_me": [],
     "roles": [
         "Back",
-        "Design",
-        "Front",
         "Product Owner",
         "Stakeholder",
         "UX"

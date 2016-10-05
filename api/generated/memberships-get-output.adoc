@@ -2,7 +2,7 @@
 ----
 {
     "color": "#FFCC00",
-    "created_at": "2016-08-17T10:38:21.301Z",
+    "created_at": "2016-10-04T12:11:00.436Z",
     "email": "user8@taigaio.demo",
     "full_name": "Andrea Fernandez",
     "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
@@ -20,6 +20,6 @@
     "role_name": "Product Owner",
     "user": 14,
     "user_email": "user8@taigaio.demo",
-    "user_order": 10000
+    "user_order": 1475583060436
 }
 ----

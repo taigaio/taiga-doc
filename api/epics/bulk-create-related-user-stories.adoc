@@ -1,0 +1,9 @@
+To create multiple related user stories at the same time send a POST request with the following data:
+
+- *project_id* (required)
+- *bulk_userstories*: user stories subjects, one per line
+
+
+include::../generated/epics-related-user-stories-bulk-create-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON list of link:#object-epic-related-user-story-detail[epic related user story detail object]

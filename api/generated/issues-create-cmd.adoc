@@ -22,5 +22,5 @@ curl -X POST \
         "type": 1,
         "watchers": []
     }' \
-http://localhost:8000/api/v1/issues
+-s http://localhost:8000/api/v1/issues
 ----

@@ -1,0 +1,8 @@
+To update the order of multiple epic statuses at the same time send a POST request with the following data:
+
+- *project* (required)
+- *bulk_epic_statuses*: list where each element is a list, the first element is the status id and the second the new order
+
+include::../generated/epic-statuses-bulk-update-order-cmd.adoc[]
+
+When the update is successful, the HTTP response is a 204 NO CONTENT with an empty body response

@@ -1,0 +1,5 @@
+To delete epic custom attributes send a DELETE specifying the epic custom attribute id in the url
+
+include::../generated/epics-custom-attributes-delete-cmd.adoc[]
+
+When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

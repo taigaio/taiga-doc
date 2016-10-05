@@ -7,5 +7,5 @@ curl -X POST \
         "key": "favorite-forest",
         "value": "Taiga"
     }' \
-http://localhost:8000/api/v1/user-storage
+-s http://localhost:8000/api/v1/user-storage
 ----

@@ -466,5 +466,5 @@ curl -X POST \
         "videoconferences": null,
         "videoconferences_extra_data": ""
     }' \
-http://localhost:8000/api/v1/project-templates
+-s http://localhost:8000/api/v1/project-templates
 ----

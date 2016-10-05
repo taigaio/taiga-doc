@@ -1,0 +1,5 @@
+To delete epic satuses send a DELETE specifying the epic status id in the url
+
+include::../generated/epic-statuses-delete-cmd.adoc[]
+
+When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

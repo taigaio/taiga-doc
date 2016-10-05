@@ -7,20 +7,20 @@
     "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2016-08-17T10:45:31.107Z",
+    "created_date": "2016-10-05T11:45:07.043Z",
     "description": "Implement API CALL",
     "description_html": "<p>Implement API CALL</p>",
     "external_reference": null,
     "finished_date": null,
-    "id": 277,
+    "id": 262,
     "is_blocked": false,
     "is_closed": false,
     "is_iocaine": false,
     "is_voter": false,
     "is_watcher": false,
     "milestone": 3,
-    "milestone_slug": "sprint-2016-7-23",
-    "modified_date": "2016-08-17T10:45:31.128Z",
+    "milestone_slug": "sprint-2016-9-9",
+    "modified_date": "2016-10-05T11:45:07.061Z",
     "owner": 6,
     "owner_extra_info": {
         "big_photo": null,
@@ -32,10 +32,11 @@
         "username": "user6532909695705815086"
     },
     "project": 1,
-    "ref": 120,
+    "ref": 145,
     "status": 1,
     "status_extra_info": {
         "color": "#999999",
+        "is_closed": false,
         "name": "Patch status name"
     },
     "subject": "Customer personal data",
@@ -54,6 +55,12 @@
     "total_watchers": 0,
     "us_order": 1,
     "user_story": 17,
+    "user_story_extra_info": {
+        "epics": null,
+        "id": 17,
+        "ref": 68,
+        "subject": "Migrate to Python 3 and milk a beautiful cow"
+    },
     "version": 1,
     "watchers": []
 }

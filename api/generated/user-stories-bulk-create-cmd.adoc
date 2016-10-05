@@ -7,5 +7,5 @@ curl -X POST \
         "bulk_stories": "US 1 \n US 2 \n US 3",
         "project_id": 1
     }' \
-http://localhost:8000/api/v1/userstories/bulk_create
+-s http://localhost:8000/api/v1/userstories/bulk_create
 ----

@@ -8,5 +8,5 @@ curl -X POST \
         "type": "normal",
         "username": "test-username"
     }' \
-http://localhost:8000/api/v1/auth
+-s http://localhost:8000/api/v1/auth
 ----

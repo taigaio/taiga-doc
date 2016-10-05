@@ -1,0 +1,23 @@
+[[epic-statuses-list]]
+=== List
+include::../epic-statuses/list.adoc[]
+
+[[epic-statuses-create]]
+=== Create
+include::../epic-statuses/create.adoc[]
+
+[[epic-statuses-get]]
+=== Get
+include::../epic-statuses/get.adoc[]
+
+[[epic-statuses-edit]]
+=== Edit
+include::../epic-statuses/edit.adoc[]
+
+[[epic-statuses-delete]]
+=== Delete
+include::../epic-statuses/delete.adoc[]
+
+[[epic-statuses-bulk-update-order]]
+=== Bulk update order
+include::../epic-statuses/bulk-update-order.adoc[]

@@ -7,5 +7,5 @@ curl -X POST \
         "project": 1,
         "subject": "Customer personal data"
     }' \
-http://localhost:8000/api/v1/userstories
+-s http://localhost:8000/api/v1/userstories
 ----

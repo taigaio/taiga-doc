@@ -6,5 +6,5 @@ curl -X POST \
 -d '{
         "comment": "comment edition"
     }' \
-http://localhost:8000/api/v1/history/userstory/2/edit_comment?id=00000000-0000-0000-0000-000000000000
+-s http://localhost:8000/api/v1/history/userstory/2/edit_comment?id=00000000-0000-0000-0000-000000000000
 ----

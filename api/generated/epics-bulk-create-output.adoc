@@ -1,0 +1,152 @@
+[source,json]
+----
+[
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "blocked_note": "",
+        "blocked_note_html": "",
+        "client_requirement": false,
+        "color": "#4e9a06",
+        "comment": "",
+        "created_date": "2016-10-05T11:44:31.348Z",
+        "description": "",
+        "description_html": "",
+        "epics_order": 1475667871348,
+        "id": 32,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2016-10-05T11:44:31.348Z",
+        "owner": 6,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Silvia Soto",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user6532909695705815086"
+        },
+        "project": 1,
+        "ref": 129,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Nueva"
+        },
+        "subject": "EPIC 1",
+        "tags": [],
+        "team_requirement": false,
+        "total_voters": 0,
+        "total_watchers": 0,
+        "user_stories_counts": {
+            "closed": 0,
+            "opened": 0
+        },
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "blocked_note": "",
+        "blocked_note_html": "",
+        "client_requirement": false,
+        "color": "#c4a000",
+        "comment": "",
+        "created_date": "2016-10-05T11:44:31.348Z",
+        "description": "",
+        "description_html": "",
+        "epics_order": 1475667871348,
+        "id": 33,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2016-10-05T11:44:31.428Z",
+        "owner": 6,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Silvia Soto",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user6532909695705815086"
+        },
+        "project": 1,
+        "ref": 130,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Nueva"
+        },
+        "subject": "EPIC 2",
+        "tags": [],
+        "team_requirement": false,
+        "total_voters": 0,
+        "total_watchers": 0,
+        "user_stories_counts": {
+            "closed": 0,
+            "opened": 0
+        },
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "blocked_note": "",
+        "blocked_note_html": "",
+        "client_requirement": false,
+        "color": "#ef2929",
+        "comment": "",
+        "created_date": "2016-10-05T11:44:31.348Z",
+        "description": "",
+        "description_html": "",
+        "epics_order": 1475667871348,
+        "id": 34,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2016-10-05T11:44:31.486Z",
+        "owner": 6,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Silvia Soto",
+            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user6532909695705815086"
+        },
+        "project": 1,
+        "ref": 131,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Nueva"
+        },
+        "subject": "EPIC 3",
+        "tags": [],
+        "team_requirement": false,
+        "total_voters": 0,
+        "total_watchers": 0,
+        "user_stories_counts": {
+            "closed": 0,
+            "opened": 0
+        },
+        "version": 1,
+        "watchers": []
+    }
+]
+----

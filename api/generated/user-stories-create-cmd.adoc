@@ -30,5 +30,5 @@ curl -X POST \
         "team_requirement": false,
         "watchers": []
     }' \
-http://localhost:8000/api/v1/userstories
+-s http://localhost:8000/api/v1/userstories
 ----

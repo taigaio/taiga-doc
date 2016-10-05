@@ -9,5 +9,5 @@ curl -X POST \
         "order": 8,
         "project": 1
     }' \
-http://localhost:8000/api/v1/priorities
+-s http://localhost:8000/api/v1/priorities
 ----

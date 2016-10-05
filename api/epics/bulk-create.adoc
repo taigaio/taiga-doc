@@ -1,0 +1,10 @@
+To create multiple epics at the same time send a POST request with the following data:
+
+- *project_id* (required)
+- *status_id* (optional)
+- *bulk_epics*: epic subjects, one per line
+
+
+include::../generated/epics-bulk-create-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON list of link:#object-epic-detail[epic detail object]

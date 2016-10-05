@@ -5,9 +5,9 @@ curl -X PATCH \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
         "attributes_values": {
-            "3": "240 min"
+            "4": "240 min"
         },
         "version": 1
     }' \
-http://localhost:8000/api/v1/tasks/custom-attributes-values/1
+-s http://localhost:8000/api/v1/tasks/custom-attributes-values/1
 ----

@@ -7,5 +7,5 @@ curl -X POST \
         "name": "Duration 3",
         "project": 1
     }' \
-http://localhost:8000/api/v1/userstory-custom-attributes
+-s http://localhost:8000/api/v1/userstory-custom-attributes
 ----

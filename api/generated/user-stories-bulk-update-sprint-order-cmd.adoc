@@ -16,5 +16,5 @@ curl -X POST \
         ],
         "project_id": 1
     }' \
-http://localhost:8000/api/v1/userstories/bulk_update_sprint_order
+-s http://localhost:8000/api/v1/userstories/bulk_update_sprint_order
 ----

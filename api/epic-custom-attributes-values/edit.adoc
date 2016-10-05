@@ -1,0 +1,7 @@
+To edit epic custom attributes values send a PUT or a PATCH specifying the epic id in the url.
+"attribute_values" must be a JSON object with pairs epic custom atribute id - value.
+In a PATCH request you just need to send the modified data, in a PUT one the whole object must be sent.
+
+include::../generated/epics-custom-attributes-values-patch-cmd.adoc[]
+
+When the update is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-epic-custom-attributes-values-detail[epic custom attribute detail object]

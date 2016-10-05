@@ -1,0 +1,34 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/epic-statuses
+| GET
+| link:#epic-statuses-list[List epic statuses]
+
+| /api/v1/epic-statuses
+| POST
+| link:#epic-statuses-create[Create epic status]
+
+| /api/v1/epic-statuses/\{epicStatusId}
+| GET
+| link:#epic-statuses-get[Get epic status]
+
+| /api/v1/epic-statuses/\{epicStatusId}
+| PUT
+| link:#epic-statuses-edit[Modify epic status]
+
+| /api/v1/epic-statuses/\{epicStatusId}
+| PATCH
+| link:#epic-statuses-edit[Modify partially an epic status]
+
+| /api/v1/epic-statuses/\{epicStatusId}
+| DELETE
+| link:#epic-statuses-delete[Delete an epic status]
+
+| /api/v1/epic-statuses/bulk_update_order
+| POST
+| link:#epic-statuses-bulk-update-order[Update epic statuses order in bulk mode]
+|===

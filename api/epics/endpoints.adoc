@@ -1,0 +1,118 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/epics
+| GET
+| link:#epics-list[List epics]
+
+| /api/v1/epics
+| POST
+| link:#epics-create[Create epic]
+
+| /api/v1/epics/\{epicId}
+| GET
+| link:#epics-get[Get epic]
+
+| /api/v1/epics/by_ref?ref=\{epicRef}&project=\{projectId}
+| GET
+| link:#epics-get-by-ref[Get epic]
+
+| /api/v1/epics/\{epicId}
+| PUT
+| link:#epics-edit[Modify epic]
+
+| /api/v1/epics/\{epicId}
+| PATCH
+| link:#epics-edit[Modify partially an epic]
+
+| /api/v1/epics/\{epicId}
+| DELETE
+| link:#epics-delete[Delete an epic]
+
+| /api/v1/epics\{epicId}/related_userstories
+| GET
+| link:#epics-list[List epic related userstories]
+
+| /api/v1/epics\{epicId}/related_userstories
+| POST
+| link:#epics-create-related-userstory[Create epic related user story]
+
+| /api/v1/epics/\{epicId}/related_userstories/{userStoryId}
+| GET
+| link:#epics-get-related-user-story[Get epic related userstory]
+
+| /api/v1/epics/\{epicId}/related_userstories/{userStoryId}
+| PUT
+| link:#epics-edit-related-user-story[Modify epic related user story]
+
+| /api/v1/epics/\{epicId}/related_userstories/{userStoryId}
+| PATCH
+| link:#epics-edit-related-user-story[Modify partially an epic related user story]
+
+| /api/v1/epics/\{epicId}/related_userstories/{userStoryId}
+| DELETE
+| link:#epics-delete-related-user-story[Delete an epic related user story]
+
+| /api/v1/epics/\{epicId}/related_userstories/bulk_create
+| POST
+| link:#epics-bulk-create-related-user-stories[Create epic related user stories on bulk mode]
+
+| /api/v1/epics/bulk_create
+| POST
+| link:#epics-bulk-create[Create epics on bulk mode]
+
+| /api/v1/epics/filters_data?project=\{projectId}
+| GET
+| link:#epics-get-filters-data[Get filters data]
+
+| /api/v1/epics/\{epicId}/upvote
+| POST
+| link:#epics-upvote[Add star to an epic]
+
+| /api/v1/epics/\{epicId}/downvote
+| POST
+| link:#epics-downvote[Remove star from epic]
+
+| /api/v1/epics/\{epicId}/voters
+| GET
+| link:#epics-voters[Get epic voters]
+
+| /api/v1/epics/\{epicId}/watch
+| POST
+| link:#epics-watch[Watch an epic]
+
+| /api/v1/epics/\{epicId}/unwatch
+| POST
+| link:#epics-unwatch[Unwatch an epic]
+
+| /api/v1/epics/\{epicId}/watchers
+| GET
+| link:#epics-watchers[Get epic watchers]
+
+| /api/v1/epics/attachments
+| GET
+| link:#epics-list-attachments[List epic attachments]
+
+| /api/v1/epics/attachments
+| POST
+| link:#epics-create-attachment[Create epic attachments]
+
+| /api/v1/epics/attachments/\{epicAttachmentId}
+| GET
+| link:#epics-get-attachment[Get epic attachments]
+
+| /api/v1/epics/attachments/\{epicAttachmentId}
+| PUT
+| link:#epics-edit-attachment[Modify epic attachments]
+
+| /api/v1/epics/attachments/\{epicAttachmentId}
+| PATCH
+| link:#epics-edit-attachment[Modify partially an epic attachments]
+
+| /api/v1/epics/attachments/\{epicAttachmentId}
+| DELETE
+| link:#epics-delete-attachment[Delete an epic attachments]
+|===

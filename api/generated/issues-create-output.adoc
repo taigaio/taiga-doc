@@ -3,20 +3,22 @@
 {
     "assigned_to": null,
     "assigned_to_extra_info": null,
+    "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2016-08-17T10:45:16.703Z",
+    "created_date": "2016-10-05T11:44:54.231Z",
     "description": "Implement API CALL",
     "description_html": "<p>Implement API CALL</p>",
     "external_reference": null,
-    "finished_date": "2016-08-17T10:45:16.720Z",
+    "finished_date": "2016-10-05T11:44:54.249Z",
     "generated_user_stories": null,
-    "id": 119,
+    "id": 142,
+    "is_blocked": false,
     "is_closed": true,
     "is_voter": false,
     "is_watcher": false,
     "milestone": null,
-    "modified_date": "2016-08-17T10:45:16.719Z",
+    "modified_date": "2016-10-05T11:44:54.248Z",
     "owner": 6,
     "owner_extra_info": {
         "big_photo": null,
@@ -29,12 +31,13 @@
     },
     "priority": 3,
     "project": 1,
-    "ref": 115,
+    "ref": 140,
     "severity": 2,
     "status": 3,
     "status_extra_info": {
         "color": "#88A65E",
-        "name": "Ready for test"
+        "is_closed": true,
+        "name": "Lista para testear"
     },
     "subject": "Customer personal data",
     "tags": [

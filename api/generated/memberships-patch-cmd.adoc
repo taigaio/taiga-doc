@@ -6,5 +6,5 @@ curl -X PATCH \
 -d '{
         "role": 3
     }' \
-http://localhost:8000/api/v1/memberships/1
+-s http://localhost:8000/api/v1/memberships/1
 ----

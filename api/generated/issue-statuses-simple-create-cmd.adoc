@@ -7,5 +7,5 @@ curl -X POST \
         "name": "New status name",
         "project": 1
     }' \
-http://localhost:8000/api/v1/issue-statuses
+-s http://localhost:8000/api/v1/issue-statuses
 ----

@@ -7,5 +7,5 @@ curl -X POST \
         "name": "New severity name",
         "project": 1
     }' \
-http://localhost:8000/api/v1/severities
+-s http://localhost:8000/api/v1/severities
 ----

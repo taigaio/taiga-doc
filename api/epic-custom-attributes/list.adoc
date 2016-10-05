@@ -1,0 +1,11 @@
+To list epic custom attributes send a GET request with the following parameters:
+
+include::../generated/epics-custom-attributes-list-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-epic-custom-attribute-detail[epic custom attribute detail objects]
+
+The results can be filtered using the following parameters:
+
+- *project*: project id
+
+include::../generated/epics-custom-attributes-filtered-list-cmd.adoc[]

@@ -2,7 +2,7 @@
 ----
 {
     "attributes_values": {
-        "4": "240 min"
+        "2": "240 min"
     },
     "issue": 23,
     "version": 2

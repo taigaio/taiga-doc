@@ -1,0 +1,20 @@
+[source,json]
+----
+{
+    "attached_file": "attachments/c/6/1/2/504ef18038da64ebe4745ece04744c5deef0774b376c89dbf00c2bfafa9d/sample_attachment_1.txt",
+    "created_date": "2016-10-04T12:12:43.204Z",
+    "description": "voluptates odio repudiandae ratione aspernatur tempore adipisci",
+    "id": 642,
+    "is_deprecated": false,
+    "modified_date": "2016-10-04T12:12:43.204Z",
+    "name": "sample_attachment_1.txt",
+    "object_id": 10,
+    "order": 1,
+    "owner": 11,
+    "project": 2,
+    "sha1": "e9913a16efd01bf9b44d712cf601802fdc8869ea",
+    "size": 289,
+    "thumbnail_card_url": null,
+    "url": "http://localhost:8000/media/attachments/c/6/1/2/504ef18038da64ebe4745ece04744c5deef0774b376c89dbf00c2bfafa9d/sample_attachment_1.txt"
+}
+----

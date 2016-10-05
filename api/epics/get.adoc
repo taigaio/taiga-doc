@@ -1,0 +1,5 @@
+To get an epic send a GET request specifying the epic id in the url
+
+include::../generated/epics-get-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-epic-detail-get[epic detail (GET) object]

@@ -1,0 +1,5 @@
+To delete epics send a DELETE specifying the epic id in the url
+
+include::../generated/epics-delete-cmd.adoc[]
+
+When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

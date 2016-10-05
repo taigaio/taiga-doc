@@ -11,69 +11,83 @@
         "photo": null,
         "username": "user7"
     },
+    "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2016-08-17T10:38:50.028Z",
-    "description": "Suscipit totam quaerat vel quae, excepturi deleniti enim veritatis officiis ipsa saepe id totam cumque. Dolores maxime quis excepturi labore officiis omnis quia harum eveniet at, aspernatur voluptate omnis debitis, praesentium aliquid est provident temporibus deserunt? Eaque amet a aliquam dolor minus quaerat vero nam, nostrum veritatis fugiat quam id excepturi tempore delectus dolorem? Consequatur ducimus et vitae.",
-    "description_html": "<p>Suscipit totam quaerat vel quae, excepturi deleniti enim veritatis officiis ipsa saepe id totam cumque. Dolores maxime quis excepturi labore officiis omnis quia harum eveniet at, aspernatur voluptate omnis debitis, praesentium aliquid est provident temporibus deserunt? Eaque amet a aliquam dolor minus quaerat vero nam, nostrum veritatis fugiat quam id excepturi tempore delectus dolorem? Consequatur ducimus et vitae.</p>",
+    "created_date": "2016-10-04T12:11:47.442Z",
+    "description": "Ipsa id modi, a illo voluptates tenetur et placeat repudiandae nisi fugiat debitis officiis, nulla aliquid dolor quaerat saepe ut quasi quas aspernatur fuga labore, a porro sit, aliquid ut laboriosam a quisquam dolore. Aut similique excepturi pariatur repudiandae. Delectus magnam eligendi voluptatibus cumque doloremque tempora dolor dignissimos doloribus expedita, nisi cum labore ex officiis nesciunt nihil ipsam odit assumenda suscipit sint, numquam expedita nam repellat nihil eum ipsam, animi tempora excepturi laborum mollitia beatae officia quod voluptas soluta sit. Excepturi rerum corporis, saepe voluptates ratione reprehenderit aut voluptatem ducimus ipsum distinctio.",
+    "description_html": "<p>Ipsa id modi, a illo voluptates tenetur et placeat repudiandae nisi fugiat debitis officiis, nulla aliquid dolor quaerat saepe ut quasi quas aspernatur fuga labore, a porro sit, aliquid ut laboriosam a quisquam dolore. Aut similique excepturi pariatur repudiandae. Delectus magnam eligendi voluptatibus cumque doloremque tempora dolor dignissimos doloribus expedita, nisi cum labore ex officiis nesciunt nihil ipsam odit assumenda suscipit sint, numquam expedita nam repellat nihil eum ipsam, animi tempora excepturi laborum mollitia beatae officia quod voluptas soluta sit. Excepturi rerum corporis, saepe voluptates ratione reprehenderit aut voluptatem ducimus ipsum distinctio.</p>",
     "external_reference": null,
     "finished_date": null,
     "generated_user_stories": null,
     "id": 23,
+    "is_blocked": false,
     "is_closed": false,
     "is_voter": false,
-    "is_watcher": true,
+    "is_watcher": false,
     "milestone": null,
-    "modified_date": "2016-08-17T10:38:50.136Z",
+    "modified_date": "2016-10-04T12:11:47.616Z",
     "neighbors": {
         "next": {
             "id": 22,
-            "ref": 105,
-            "subject": "get_actions() does not check for 'delete_selected' in actions"
+            "ref": 118,
+            "subject": "Create testsuite with matrix builds"
         },
         "previous": {
-            "id": 116,
-            "ref": 112,
+            "id": 139,
+            "ref": 137,
             "subject": "Issue 1"
         }
     },
-    "owner": 10,
+    "owner": 6,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Marta Carmona",
-        "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-        "id": 10,
+        "full_name_display": "Silvia Soto",
+        "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+        "id": 6,
         "is_active": true,
         "photo": null,
-        "username": "user4"
+        "username": "user6532909695705815086"
     },
-    "priority": 2,
+    "priority": 1,
     "project": 1,
-    "ref": 106,
+    "ref": 119,
     "severity": 5,
     "status": 5,
     "status_extra_info": {
         "color": "#89BAB4",
-        "name": "Needs Info"
+        "is_closed": false,
+        "name": "Necesita informaci\u00f3n"
     },
-    "subject": "Added file copying and processing of images (resizing)",
+    "subject": "Migrate to Python 3 and milk a beautiful cow",
     "tags": [
         [
-            "doloremque",
+            "fuga",
+            "#e86797"
+        ],
+        [
+            "voluptates",
+            null
+        ],
+        [
+            "earum",
+            null
+        ],
+        [
+            "quod",
+            "#0e5b24"
+        ],
+        [
+            "ab",
             null
         ]
     ],
-    "total_voters": 4,
-    "total_watchers": 7,
-    "type": 2,
+    "total_voters": 8,
+    "total_watchers": 2,
+    "type": 1,
     "version": 1,
     "watchers": [
-        1,
-        6,
-        7,
-        8,
         10,
-        12,
         15
     ]
 }

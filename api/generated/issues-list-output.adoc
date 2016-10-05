@@ -3,10 +3,12 @@
 {
     "assigned_to": null,
     "assigned_to_extra_info": null,
+    "blocked_note": "",
     "created_date": "2016-08-04T11:08:19Z",
     "external_reference": null,
     "finished_date": null,
-    "id": 115,
+    "id": 138,
+    "is_blocked": false,
     "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
@@ -29,7 +31,8 @@
     "status": 58,
     "status_extra_info": {
         "color": "#666666",
-        "name": "Postponed"
+        "is_closed": false,
+        "name": "Pospuesta"
     },
     "subject": "Exception is thrown if trying to add a folder with existing name",
     "tags": [

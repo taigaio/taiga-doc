@@ -8,57 +8,57 @@
             "id": null
         },
         {
-            "count": 13,
+            "count": 6,
             "full_name": "Administrator",
             "id": 5
         },
         {
-            "count": 0,
+            "count": 1,
             "full_name": "Alba Leon",
             "id": 8
         },
         {
-            "count": 5,
+            "count": 2,
             "full_name": "Alvaro Molina",
             "id": 13
         },
         {
-            "count": 4,
+            "count": 7,
             "full_name": "Andrea Fernandez",
             "id": 14
         },
         {
-            "count": 4,
+            "count": 11,
             "full_name": "Catalina Roman",
             "id": 15
         },
         {
-            "count": 3,
+            "count": 5,
             "full_name": "Esther Ferrer",
             "id": 9
         },
         {
-            "count": 5,
+            "count": 2,
             "full_name": "German Benitez",
             "id": 11
         },
         {
-            "count": 6,
+            "count": 12,
             "full_name": "Marcos Ortiz",
             "id": 7
         },
         {
-            "count": 3,
+            "count": 5,
             "full_name": "Marta Carmona",
             "id": 10
         },
         {
-            "count": 4,
+            "count": 5,
             "full_name": "Pilar Herrera",
             "id": 12
         },
         {
-            "count": 4,
+            "count": 6,
             "full_name": "Silvia Soto",
             "id": 6
         },
@@ -70,7 +70,7 @@
     ],
     "owners": [
         {
-            "count": 1,
+            "count": 3,
             "full_name": "Administrator",
             "id": 5
         },
@@ -80,32 +80,32 @@
             "id": 8
         },
         {
-            "count": 5,
+            "count": 6,
             "full_name": "Alvaro Molina",
             "id": 13
         },
         {
-            "count": 8,
+            "count": 4,
             "full_name": "Andrea Fernandez",
             "id": 14
         },
         {
-            "count": 5,
+            "count": 6,
             "full_name": "Catalina Roman",
             "id": 15
         },
         {
-            "count": 2,
+            "count": 7,
             "full_name": "Esther Ferrer",
             "id": 9
         },
         {
-            "count": 4,
+            "count": 10,
             "full_name": "German Benitez",
             "id": 11
         },
         {
-            "count": 6,
+            "count": 3,
             "full_name": "Marcos Ortiz",
             "id": 7
         },
@@ -115,12 +115,12 @@
             "id": 10
         },
         {
-            "count": 9,
+            "count": 11,
             "full_name": "Pilar Herrera",
             "id": 12
         },
         {
-            "count": 8,
+            "count": 9,
             "full_name": "Silvia Soto",
             "id": 6
         }
@@ -128,30 +128,30 @@
     "statuses": [
         {
             "color": "#ffcc00",
-            "count": 8,
+            "count": 9,
             "id": 3,
-            "name": "Ready for test",
+            "name": "Lista para testear",
             "order": 3
         },
         {
             "color": "#669900",
-            "count": 6,
+            "count": 12,
             "id": 4,
-            "name": "Closed",
+            "name": "Cerrada",
             "order": 4
         },
         {
             "color": "#ff9900",
-            "count": 12,
+            "count": 14,
             "id": 2,
-            "name": "In progress",
+            "name": "En curso",
             "order": 5
         },
         {
             "color": "#999999",
-            "count": 13,
+            "count": 14,
             "id": 5,
-            "name": "Needs Info",
+            "name": "Necesita informaci\u00f3n",
             "order": 5
         },
         {
@@ -163,7 +163,7 @@
         },
         {
             "color": "#999999",
-            "count": 13,
+            "count": 14,
             "id": 1,
             "name": "Patch status name",
             "order": 10
@@ -178,36 +178,59 @@
     ],
     "tags": [
         {
-            "count": 1,
-            "name": "at"
+            "color": null,
+            "count": 2,
+            "name": "cumque"
         },
         {
+            "color": null,
             "count": 1,
             "name": "customer"
         },
         {
-            "count": 1,
-            "name": "eveniet"
-        },
-        {
-            "count": 6,
-            "name": "incidunt"
-        },
-        {
+            "color": null,
             "count": 3,
-            "name": "odit"
+            "name": "deleniti"
         },
         {
+            "color": null,
             "count": 3,
-            "name": "sequi"
+            "name": "eos"
         },
         {
+            "color": null,
+            "count": 4,
+            "name": "expedita"
+        },
+        {
+            "color": null,
+            "count": 3,
+            "name": "iste"
+        },
+        {
+            "color": null,
+            "count": 3,
+            "name": "obcaecati"
+        },
+        {
+            "color": null,
             "count": 1,
             "name": "service catalog"
         },
         {
-            "count": 2,
-            "name": "ullam"
+            "color": null,
+            "count": 1,
+            "name": "totam"
+        },
+        {
+            "color": null,
+            "count": 3,
+            "name": "vel"
+        },
+        {
+            "color": null,
+            "count": 5,
+            "name": "voluptates"
         }
     ]
 }

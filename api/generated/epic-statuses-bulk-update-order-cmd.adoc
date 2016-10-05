@@ -1,0 +1,20 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "bulk_epic_statuses": [
+            [
+                1,
+                10
+            ],
+            [
+                2,
+                5
+            ]
+        ],
+        "project": 1
+    }' \
+-s http://localhost:8000/api/v1/epic-statuses/bulk_update_order
+----

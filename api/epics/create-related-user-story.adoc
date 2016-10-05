@@ -1,0 +1,8 @@
+To create an epic related user story send a POST request with the following data:
+
+- *epic*: related epic id
+- *user_story*: related user story id
+
+include::../generated/epics-related-user-story-create-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-epic-related-user-story-detail[epic related user story detail object]

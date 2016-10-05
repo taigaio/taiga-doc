@@ -1,0 +1,5 @@
+To get the list of watchers from an epic send a GET request specifying the epic id in the url
+
+include::../generated/epics-watchers-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON list of link:#object-epic-watcher-detail[epic watcher object]

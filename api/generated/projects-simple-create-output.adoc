@@ -3,8 +3,9 @@
 {
     "anon_permissions": [],
     "blocked_code": null,
-    "created_date": "2016-08-17T10:45:22.607Z",
+    "created_date": "2016-10-05T11:44:58.588Z",
     "creation_template": 1,
+    "default_epic_status": 38,
     "default_issue_status": 59,
     "default_issue_type": 25,
     "default_points": 97,
@@ -13,11 +14,61 @@
     "default_task_status": 43,
     "default_us_status": 49,
     "description": "Beta description",
+    "epic_custom_attributes": null,
+    "epic_statuses": [
+        {
+            "color": "#999999",
+            "id": 38,
+            "is_closed": false,
+            "name": "Nueva",
+            "order": 1,
+            "project_id": 9,
+            "slug": "new"
+        },
+        {
+            "color": "#ff8a84",
+            "id": 39,
+            "is_closed": false,
+            "name": "Preparada",
+            "order": 2,
+            "project_id": 9,
+            "slug": "ready"
+        },
+        {
+            "color": "#ff9900",
+            "id": 40,
+            "is_closed": false,
+            "name": "En curso",
+            "order": 3,
+            "project_id": 9,
+            "slug": "in-progress"
+        },
+        {
+            "color": "#fcc000",
+            "id": 41,
+            "is_closed": false,
+            "name": "Lista para testear",
+            "order": 4,
+            "project_id": 9,
+            "slug": "ready-for-test"
+        },
+        {
+            "color": "#669900",
+            "id": 42,
+            "is_closed": true,
+            "name": "Hecha",
+            "order": 5,
+            "project_id": 9,
+            "slug": "done"
+        }
+    ],
+    "epics_csv_uuid": null,
     "i_am_admin": true,
     "i_am_member": true,
     "i_am_owner": true,
     "id": 9,
     "is_backlog_activated": true,
+    "is_epics_activated": false,
     "is_fan": false,
     "is_featured": false,
     "is_issues_activated": true,
@@ -37,7 +88,7 @@
             "color": "#8C2318",
             "id": 59,
             "is_closed": false,
-            "name": "New",
+            "name": "Nueva",
             "order": 1,
             "project_id": 9,
             "slug": "new"
@@ -46,7 +97,7 @@
             "color": "#5E8C6A",
             "id": 60,
             "is_closed": false,
-            "name": "In progress",
+            "name": "En curso",
             "order": 2,
             "project_id": 9,
             "slug": "in-progress"
@@ -55,7 +106,7 @@
             "color": "#88A65E",
             "id": 61,
             "is_closed": true,
-            "name": "Ready for test",
+            "name": "Lista para testear",
             "order": 3,
             "project_id": 9,
             "slug": "ready-for-test"
@@ -64,7 +115,7 @@
             "color": "#BFB35A",
             "id": 62,
             "is_closed": true,
-            "name": "Closed",
+            "name": "Cerrada",
             "order": 4,
             "project_id": 9,
             "slug": "closed"
@@ -73,7 +124,7 @@
             "color": "#89BAB4",
             "id": 63,
             "is_closed": false,
-            "name": "Needs Info",
+            "name": "Necesita informaci\u00f3n",
             "order": 5,
             "project_id": 9,
             "slug": "needs-info"
@@ -82,7 +133,7 @@
             "color": "#CC0000",
             "id": 64,
             "is_closed": true,
-            "name": "Rejected",
+            "name": "Rechazada",
             "order": 6,
             "project_id": 9,
             "slug": "rejected"
@@ -91,7 +142,7 @@
             "color": "#666666",
             "id": 65,
             "is_closed": false,
-            "name": "Postponed",
+            "name": "Pospuesta",
             "order": 7,
             "project_id": 9,
             "slug": "postponed"
@@ -99,24 +150,24 @@
     ],
     "issue_types": [
         {
-            "color": "#89a8ba",
-            "id": 27,
-            "name": "Enhancement",
-            "order": 3,
+            "color": "#89BAB4",
+            "id": 25,
+            "name": "Bug",
+            "order": 1,
             "project_id": 9
         },
         {
             "color": "#ba89a8",
             "id": 26,
-            "name": "Question",
+            "name": "Pregunta",
             "order": 2,
             "project_id": 9
         },
         {
-            "color": "#89BAB4",
-            "id": 25,
-            "name": "Bug",
-            "order": 1,
+            "color": "#89a8ba",
+            "id": 27,
+            "name": "Mejora",
+            "order": 3,
             "project_id": 9
         }
     ],
@@ -140,43 +191,48 @@
         }
     ],
     "milestones": [],
-    "modified_date": "2016-08-17T10:45:22.775Z",
+    "modified_date": "2016-10-05T11:44:58.883Z",
     "my_permissions": [
-        "delete_us",
-        "comment_wiki_page",
-        "view_wiki_links",
-        "modify_wiki_link",
-        "delete_issue",
-        "modify_project",
-        "add_milestone",
+        "remove_member",
         "delete_wiki_page",
-        "view_milestones",
-        "admin_roles",
-        "add_wiki_page",
-        "comment_task",
-        "add_us",
-        "modify_issue",
-        "view_project",
-        "view_us",
-        "admin_project_values",
-        "comment_us",
-        "add_issue",
-        "modify_us",
-        "delete_wiki_link",
         "view_tasks",
-        "delete_project",
-        "delete_milestone",
-        "modify_milestone",
+        "delete_wiki_link",
         "comment_issue",
         "view_issues",
-        "add_task",
-        "modify_task",
-        "remove_member",
-        "view_wiki_pages",
+        "comment_epic",
+        "delete_us",
+        "comment_us",
+        "add_issue",
+        "modify_issue",
+        "modify_project",
         "modify_wiki_page",
-        "add_wiki_link",
+        "delete_issue",
         "delete_task",
-        "add_member"
+        "modify_milestone",
+        "add_wiki_page",
+        "delete_project",
+        "add_epic",
+        "view_us",
+        "add_task",
+        "delete_epic",
+        "add_wiki_link",
+        "view_wiki_pages",
+        "delete_milestone",
+        "modify_task",
+        "comment_task",
+        "view_epics",
+        "comment_wiki_page",
+        "modify_us",
+        "add_member",
+        "add_us",
+        "modify_wiki_link",
+        "view_wiki_links",
+        "admin_project_values",
+        "view_milestones",
+        "modify_epic",
+        "admin_roles",
+        "view_project",
+        "add_milestone"
     ],
     "name": "Beta project",
     "notify_level": 1,
@@ -277,10 +333,10 @@
     ],
     "priorities": [
         {
-            "color": "#CC0000",
-            "id": 29,
-            "name": "High",
-            "order": 5,
+            "color": "#666666",
+            "id": 27,
+            "name": "Baja",
+            "order": 1,
             "project_id": 9
         },
         {
@@ -291,10 +347,10 @@
             "project_id": 9
         },
         {
-            "color": "#666666",
-            "id": 27,
-            "name": "Low",
-            "order": 1,
+            "color": "#CC0000",
+            "id": 29,
+            "name": "Alta",
+            "order": 5,
             "project_id": 9
         }
     ],
@@ -318,7 +374,13 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "project_id": 9,
             "slug": "stakeholder"
@@ -352,7 +414,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "project_id": 9,
             "slug": "product-owner"
@@ -386,7 +457,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "project_id": 9,
             "slug": "back"
@@ -420,7 +500,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "project_id": 9,
             "slug": "front"
@@ -428,7 +517,7 @@
         {
             "computable": true,
             "id": 50,
-            "name": "Design",
+            "name": "Dise\u00f1ador",
             "order": 20,
             "permissions": [
                 "add_issue",
@@ -454,7 +543,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "project_id": 9,
             "slug": "design"
@@ -488,7 +586,16 @@
                 "view_wiki_pages",
                 "add_wiki_link",
                 "delete_wiki_link",
-                "view_wiki_links"
+                "view_wiki_links",
+                "view_epics",
+                "add_epic",
+                "modify_epic",
+                "delete_epic",
+                "comment_epic",
+                "comment_us",
+                "comment_task",
+                "comment_issue",
+                "comment_wiki_page"
             ],
             "project_id": 9,
             "slug": "ux"
@@ -496,17 +603,17 @@
     ],
     "severities": [
         {
-            "color": "#CC0000",
-            "id": 47,
-            "name": "Critical",
-            "order": 5,
+            "color": "#666666",
+            "id": 43,
+            "name": "Deseada",
+            "order": 1,
             "project_id": 9
         },
         {
-            "color": "#FFA500",
-            "id": 46,
-            "name": "Important",
-            "order": 4,
+            "color": "#669933",
+            "id": 44,
+            "name": "Menor",
+            "order": 2,
             "project_id": 9
         },
         {
@@ -517,17 +624,17 @@
             "project_id": 9
         },
         {
-            "color": "#669933",
-            "id": 44,
-            "name": "Minor",
-            "order": 2,
+            "color": "#FFA500",
+            "id": 46,
+            "name": "Importante",
+            "order": 4,
             "project_id": 9
         },
         {
-            "color": "#666666",
-            "id": 43,
-            "name": "Wishlist",
-            "order": 1,
+            "color": "#CC0000",
+            "id": 47,
+            "name": "Cr\u00edtica",
+            "order": 5,
             "project_id": 9
         }
     ],
@@ -537,49 +644,49 @@
     "task_custom_attributes": null,
     "task_statuses": [
         {
-            "color": "#669900",
-            "id": 46,
-            "is_closed": true,
-            "name": "Closed",
-            "order": 4,
-            "project_id": 9,
-            "slug": "closed"
-        },
-        {
-            "color": "#ff9900",
-            "id": 44,
-            "is_closed": false,
-            "name": "In progress",
-            "order": 2,
-            "project_id": 9,
-            "slug": "in-progress"
-        },
-        {
-            "color": "#999999",
-            "id": 47,
-            "is_closed": false,
-            "name": "Needs Info",
-            "order": 5,
-            "project_id": 9,
-            "slug": "needs-info"
-        },
-        {
             "color": "#999999",
             "id": 43,
             "is_closed": false,
-            "name": "New",
+            "name": "Nueva",
             "order": 1,
             "project_id": 9,
             "slug": "new"
         },
         {
+            "color": "#ff9900",
+            "id": 44,
+            "is_closed": false,
+            "name": "En curso",
+            "order": 2,
+            "project_id": 9,
+            "slug": "in-progress"
+        },
+        {
             "color": "#ffcc00",
             "id": 45,
             "is_closed": true,
-            "name": "Ready for test",
+            "name": "Lista para testear",
             "order": 3,
             "project_id": 9,
             "slug": "ready-for-test"
+        },
+        {
+            "color": "#669900",
+            "id": 46,
+            "is_closed": true,
+            "name": "Cerrada",
+            "order": 4,
+            "project_id": 9,
+            "slug": "closed"
+        },
+        {
+            "color": "#999999",
+            "id": 47,
+            "is_closed": false,
+            "name": "Necesita informaci\u00f3n",
+            "order": 5,
+            "project_id": 9,
+            "slug": "needs-info"
         }
     ],
     "tasks_csv_uuid": null,
@@ -596,48 +703,15 @@
     "total_milestones": null,
     "total_story_points": null,
     "total_watchers": 1,
-    "totals_updated_datetime": "2016-08-17T10:45:22.804Z",
+    "totals_updated_datetime": "2016-10-05T11:44:58.924Z",
     "transfer_token": null,
     "us_statuses": [
-        {
-            "color": "#5c3566",
-            "id": 54,
-            "is_archived": true,
-            "is_closed": true,
-            "name": "Archived",
-            "order": 6,
-            "project_id": 9,
-            "slug": "archived",
-            "wip_limit": null
-        },
-        {
-            "color": "#669900",
-            "id": 53,
-            "is_archived": false,
-            "is_closed": true,
-            "name": "Done",
-            "order": 5,
-            "project_id": 9,
-            "slug": "done",
-            "wip_limit": null
-        },
-        {
-            "color": "#ff9900",
-            "id": 51,
-            "is_archived": false,
-            "is_closed": false,
-            "name": "In progress",
-            "order": 3,
-            "project_id": 9,
-            "slug": "in-progress",
-            "wip_limit": null
-        },
         {
             "color": "#999999",
             "id": 49,
             "is_archived": false,
             "is_closed": false,
-            "name": "New",
+            "name": "Nueva",
             "order": 1,
             "project_id": 9,
             "slug": "new",
@@ -648,10 +722,21 @@
             "id": 50,
             "is_archived": false,
             "is_closed": false,
-            "name": "Ready",
+            "name": "Preparada",
             "order": 2,
             "project_id": 9,
             "slug": "ready",
+            "wip_limit": null
+        },
+        {
+            "color": "#ff9900",
+            "id": 51,
+            "is_archived": false,
+            "is_closed": false,
+            "name": "En curso",
+            "order": 3,
+            "project_id": 9,
+            "slug": "in-progress",
             "wip_limit": null
         },
         {
@@ -659,10 +744,32 @@
             "id": 52,
             "is_archived": false,
             "is_closed": false,
-            "name": "Ready for test",
+            "name": "Lista para testear",
             "order": 4,
             "project_id": 9,
             "slug": "ready-for-test",
+            "wip_limit": null
+        },
+        {
+            "color": "#669900",
+            "id": 53,
+            "is_archived": false,
+            "is_closed": true,
+            "name": "Hecha",
+            "order": 5,
+            "project_id": 9,
+            "slug": "done",
+            "wip_limit": null
+        },
+        {
+            "color": "#5c3566",
+            "id": 54,
+            "is_archived": true,
+            "is_closed": true,
+            "name": "Archivada",
+            "order": 6,
+            "project_id": 9,
+            "slug": "archived",
             "wip_limit": null
         }
     ],

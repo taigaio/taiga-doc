@@ -1,0 +1,12 @@
+[source,json]
+----
+{
+    "color": "#AAAAAA",
+    "id": 36,
+    "is_closed": true,
+    "name": "New status",
+    "order": 8,
+    "project": 1,
+    "slug": "new-status"
+}
+----

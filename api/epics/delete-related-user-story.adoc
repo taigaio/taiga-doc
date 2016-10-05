@@ -1,0 +1,5 @@
+To delete epic related user stories send a DELETE specifying the epic and the userstory ids in the url
+
+include::../generated/epics-related-user-story-delete-cmd.adoc[]
+
+When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

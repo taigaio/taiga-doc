@@ -1,0 +1,18 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/epics/custom-attributes-values/\{epicId}
+| GET
+| link:#epic-custom-attributes-values-get[Get epic custom attributes values]
+
+| /api/v1/epics/custom-attributes-values/\{epicId}
+| PUT
+| link:#epic-custom-attributes-values-edit[Modify epic custom attributes values]
+
+| /api/v1/epics/custom-attributes-values/\{epicId}
+| PATCH
+| link:#epic-custom-attributes-values-edit[Modify partially an epic custom attributes values]
+|===

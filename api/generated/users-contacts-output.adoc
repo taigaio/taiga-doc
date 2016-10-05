@@ -13,11 +13,9 @@
     "photo": null,
     "projects_with_me": [],
     "roles": [
-        "Back",
         "Design",
-        "Product Owner",
-        "Stakeholder",
-        "UX"
+        "Front",
+        "Stakeholder"
     ],
     "theme": "",
     "timezone": "",

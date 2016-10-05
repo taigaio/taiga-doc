@@ -6,5 +6,5 @@ curl -X POST \
 -F attached_file=@test.png \
 -F object_id=23 \
 -F project=1 \
-http://localhost:8000/api/v1/issues/attachments
+-s http://localhost:8000/api/v1/issues/attachments
 ----
