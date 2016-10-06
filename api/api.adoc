@@ -440,22 +440,16 @@ include::generated/epics-related-user-story-get-output.adoc[]
 === User story detail
 include::generated/user-stories-get-output.adoc[]
 
-[NOTE]
-status_extra_info and assigned_to_extra_info are read only fields
-
 [[object-userstory-detail-get]]
 === User story detail (GET)
 include::generated/user-stories-get-output.adoc[]
 
 [NOTE]
-neighbors, status_extra_info and assigned_to_extra_info are read only fields
+neighbors is a read only field
 
 [[object-userstory-detail-list]]
 === User story detail (LIST)
 include::generated/user-stories-list-output.adoc[]
-
-[NOTE]
-status_extra_info and assigned_to_extra_info are read only fields
 
 [[object-userstory-filters-data]]
 === Issue filters data detail

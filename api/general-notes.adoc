@@ -257,3 +257,7 @@ The LanguageId can be chosen from the value list of available languages. You can
 If the api is configured with throttling you have to take care on responses
 with 429 (Too many requests) status code, that mean you reach the throttling
 limit.
+
+=== Read only fields
+
+All the fields ending in _extra_info (assigned_to_extra_info, is_private_extra_info, owner_extra_info, project_extra_info, status_extra_info, status_extra_info, user_story_extra_info...) are read only fields
