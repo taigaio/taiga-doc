@@ -65,7 +65,7 @@
         "username": "admin"
     },
     {
-        "big_photo": "http://localhost:8000/media/user/3/b/9/d/7ca17aeae27d3db920d8b00f77f6da920e196874d58546d89dd6f1ffdf06/test.png.300x300_q85_crop.png",
+        "big_photo": "http://localhost:8000/media/user/1/6/5/5/953742374d37b0cf24898f347c0c4883a54a669ac6ec2e44e064c4cafd3f/test.png.300x300_q85_crop.png",
         "bio": "",
         "color": "#4B0082",
         "full_name": "Silvia Soto",
@@ -74,7 +74,7 @@
         "id": 6,
         "is_active": true,
         "lang": "",
-        "photo": "http://localhost:8000/media/user/3/b/9/d/7ca17aeae27d3db920d8b00f77f6da920e196874d58546d89dd6f1ffdf06/test.png.80x80_q85_crop.png",
+        "photo": "http://localhost:8000/media/user/1/6/5/5/953742374d37b0cf24898f347c0c4883a54a669ac6ec2e44e064c4cafd3f/test.png.80x80_q85_crop.png",
         "projects_with_me": [
             {
                 "id": 9,
@@ -140,7 +140,7 @@
     {
         "big_photo": null,
         "bio": "",
-        "color": "#bbcaad",
+        "color": "#381837",
         "full_name": "test",
         "full_name_display": "test",
         "gravatar_id": "1ec29e4d0732b571e9a975e258a7e9b5",

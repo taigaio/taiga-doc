@@ -11,18 +11,18 @@
             "subject": "Lighttpd x-sendfile support"
         },
         {
-            "assigned_to": 11,
-            "id": 1,
-            "ref": 120,
-            "status": 2,
-            "subject": "Add tests for bulk operations"
-        },
-        {
             "assigned_to": null,
             "id": 5,
             "ref": 124,
             "status": 2,
             "subject": "Add setting to allow regular users to create folders at the root level."
+        },
+        {
+            "assigned_to": 11,
+            "id": 1,
+            "ref": 120,
+            "status": 2,
+            "subject": "Add tests for bulk operations"
         },
         {
             "assigned_to": 10,
@@ -76,11 +76,11 @@
             "subject": "Create testsuite with matrix builds"
         },
         {
-            "assigned_to": null,
-            "id": 20,
-            "ref": 116,
-            "status": 6,
-            "subject": "Lighttpd x-sendfile support"
+            "assigned_to": 13,
+            "id": 23,
+            "ref": 119,
+            "status": 5,
+            "subject": "Migrate to Python 3 and milk a beautiful cow"
         },
         {
             "assigned_to": 15,
@@ -90,11 +90,11 @@
             "subject": "Feature/improved image admin"
         },
         {
-            "assigned_to": 13,
-            "id": 23,
-            "ref": 119,
-            "status": 5,
-            "subject": "Migrate to Python 3 and milk a beautiful cow"
+            "assigned_to": null,
+            "id": 20,
+            "ref": 116,
+            "status": 6,
+            "subject": "Lighttpd x-sendfile support"
         },
         {
             "assigned_to": 7,
@@ -105,37 +105,23 @@
         },
         {
             "assigned_to": 8,
-            "id": 21,
-            "ref": 117,
-            "status": 6,
-            "subject": "Added file copying and processing of images (resizing)"
-        },
-        {
-            "assigned_to": 8,
             "id": 12,
             "ref": 108,
             "status": 7,
             "subject": "Experimental: modular file types"
         },
         {
-            "assigned_to": null,
-            "id": 17,
-            "ref": 113,
-            "status": 5,
-            "subject": "Fixing templates for Django 1.6."
-        },
-        {
-            "assigned_to": 13,
-            "id": 9,
-            "ref": 105,
+            "assigned_to": 8,
+            "id": 21,
+            "ref": 117,
             "status": 6,
-            "subject": "Create the html template"
+            "subject": "Added file copying and processing of images (resizing)"
         },
         {
-            "assigned_to": 11,
-            "id": 2,
-            "ref": 98,
-            "status": 2,
+            "assigned_to": 7,
+            "id": 7,
+            "ref": 103,
+            "status": 4,
             "subject": "Implement the form"
         },
         {
@@ -146,18 +132,18 @@
             "subject": "Add tests for bulk operations"
         },
         {
-            "assigned_to": 15,
-            "id": 13,
-            "ref": 109,
-            "status": 3,
-            "subject": "Lighttpd x-sendfile support"
+            "assigned_to": 11,
+            "id": 2,
+            "ref": 98,
+            "status": 2,
+            "subject": "Implement the form"
         },
         {
-            "assigned_to": 7,
-            "id": 7,
-            "ref": 103,
-            "status": 4,
-            "subject": "Implement the form"
+            "assigned_to": null,
+            "id": 17,
+            "ref": 113,
+            "status": 5,
+            "subject": "Fixing templates for Django 1.6."
         },
         {
             "assigned_to": 13,
@@ -165,6 +151,20 @@
             "ref": 99,
             "status": 6,
             "subject": "Patching subject"
+        },
+        {
+            "assigned_to": 13,
+            "id": 9,
+            "ref": 105,
+            "status": 6,
+            "subject": "Create the html template"
+        },
+        {
+            "assigned_to": 15,
+            "id": 13,
+            "ref": 109,
+            "status": 3,
+            "subject": "Lighttpd x-sendfile support"
         }
     ],
     "tasks": [
@@ -190,18 +190,18 @@
             "subject": "Support for bulk actions"
         },
         {
-            "assigned_to": 14,
-            "id": 46,
-            "ref": 61,
-            "status": 2,
-            "subject": "Experimental: modular file types"
-        },
-        {
             "assigned_to": 7,
             "id": 52,
             "ref": 69,
             "status": 3,
             "subject": "Lighttpd x-sendfile support"
+        },
+        {
+            "assigned_to": 14,
+            "id": 46,
+            "ref": 61,
+            "status": 2,
+            "subject": "Experimental: modular file types"
         },
         {
             "assigned_to": 14,
@@ -211,25 +211,18 @@
             "subject": "Create the html template"
         },
         {
-            "assigned_to": 9,
-            "id": 21,
-            "ref": 27,
-            "status": 3,
-            "subject": "get_actions() does not check for 'delete_selected' in actions"
-        },
-        {
-            "assigned_to": 14,
-            "id": 25,
-            "ref": 32,
-            "status": 1,
-            "subject": "Lighttpd support"
-        },
-        {
             "assigned_to": 7,
             "id": 30,
             "ref": 40,
             "status": 1,
             "subject": "Create testsuite with matrix builds"
+        },
+        {
+            "assigned_to": 9,
+            "id": 21,
+            "ref": 27,
+            "status": 3,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
         },
         {
             "assigned_to": 5,
@@ -246,17 +239,17 @@
             "subject": "Exception is thrown if trying to add a folder with existing name"
         },
         {
+            "assigned_to": 14,
+            "id": 25,
+            "ref": 32,
+            "status": 1,
+            "subject": "Lighttpd support"
+        },
+        {
             "assigned_to": 15,
             "id": 33,
             "ref": 44,
             "status": 2,
-            "subject": "Create testsuite with matrix builds"
-        },
-        {
-            "assigned_to": 15,
-            "id": 48,
-            "ref": 63,
-            "status": 5,
             "subject": "Create testsuite with matrix builds"
         },
         {
@@ -274,53 +267,11 @@
             "subject": "Added file copying and processing of images (resizing)"
         },
         {
-            "assigned_to": 12,
-            "id": 15,
-            "ref": 20,
-            "status": 1,
-            "subject": "Migrate to Python 3 and milk a beautiful cow"
-        },
-        {
-            "assigned_to": 9,
-            "id": 7,
-            "ref": 9,
-            "status": 4,
-            "subject": "Fixing templates for Django 1.6."
-        },
-        {
-            "assigned_to": 7,
-            "id": 8,
-            "ref": 10,
-            "status": 5,
-            "subject": "Implement the form"
-        },
-        {
-            "assigned_to": 8,
-            "id": 9,
-            "ref": 12,
-            "status": 4,
-            "subject": "Create testsuite with matrix builds"
-        },
-        {
-            "assigned_to": 5,
-            "id": 13,
-            "ref": 17,
-            "status": 5,
-            "subject": "Feature/improved image admin"
-        },
-        {
             "assigned_to": 15,
-            "id": 32,
-            "ref": 42,
-            "status": 3,
-            "subject": "Create the user model"
-        },
-        {
-            "assigned_to": 9,
-            "id": 41,
-            "ref": 55,
-            "status": 3,
-            "subject": "Add setting to allow regular users to create folders at the root level."
+            "id": 48,
+            "ref": 63,
+            "status": 5,
+            "subject": "Create testsuite with matrix builds"
         },
         {
             "assigned_to": 9,
@@ -330,11 +281,67 @@
             "subject": "Support for bulk actions"
         },
         {
+            "assigned_to": 8,
+            "id": 9,
+            "ref": 12,
+            "status": 4,
+            "subject": "Create testsuite with matrix builds"
+        },
+        {
+            "assigned_to": 15,
+            "id": 32,
+            "ref": 42,
+            "status": 3,
+            "subject": "Create the user model"
+        },
+        {
+            "assigned_to": 7,
+            "id": 8,
+            "ref": 10,
+            "status": 5,
+            "subject": "Implement the form"
+        },
+        {
+            "assigned_to": 9,
+            "id": 7,
+            "ref": 9,
+            "status": 4,
+            "subject": "Fixing templates for Django 1.6."
+        },
+        {
+            "assigned_to": 5,
+            "id": 13,
+            "ref": 17,
+            "status": 5,
+            "subject": "Feature/improved image admin"
+        },
+        {
+            "assigned_to": 12,
+            "id": 15,
+            "ref": 20,
+            "status": 1,
+            "subject": "Migrate to Python 3 and milk a beautiful cow"
+        },
+        {
+            "assigned_to": 9,
+            "id": 41,
+            "ref": 55,
+            "status": 3,
+            "subject": "Add setting to allow regular users to create folders at the root level."
+        },
+        {
             "assigned_to": 10,
             "id": 44,
             "ref": 58,
             "status": 4,
             "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        {
+            "assigned_to": 15,
+            "id": 16,
+            "ref": 21,
+            "status": 5,
+            "subject": "Add setting to allow regular users to create folders at the root level."
         },
         {
             "assigned_to": 5,
@@ -345,10 +352,24 @@
         },
         {
             "assigned_to": 15,
-            "id": 16,
-            "ref": 21,
+            "id": 1,
+            "ref": 2,
+            "status": 4,
+            "subject": "Patching subject"
+        },
+        {
+            "assigned_to": 6,
+            "id": 18,
+            "ref": 24,
+            "status": 4,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
+        },
+        {
+            "assigned_to": 14,
+            "id": 20,
+            "ref": 26,
             "status": 5,
-            "subject": "Add setting to allow regular users to create folders at the root level."
+            "subject": "Create the html template"
         },
         {
             "assigned_to": 6,
@@ -356,6 +377,41 @@
             "ref": 30,
             "status": 5,
             "subject": "Implement the form"
+        },
+        {
+            "assigned_to": 15,
+            "id": 59,
+            "ref": 78,
+            "status": 2,
+            "subject": "Add tests for bulk operations"
+        },
+        {
+            "assigned_to": 12,
+            "id": 26,
+            "ref": 33,
+            "status": 4,
+            "subject": "Add tests for bulk operations"
+        },
+        {
+            "assigned_to": 7,
+            "id": 27,
+            "ref": 35,
+            "status": 2,
+            "subject": "Create the user model"
+        },
+        {
+            "assigned_to": 15,
+            "id": 29,
+            "ref": 38,
+            "status": 3,
+            "subject": "Add tests for bulk operations"
+        },
+        {
+            "assigned_to": 7,
+            "id": 31,
+            "ref": 41,
+            "status": 1,
+            "subject": "Lighttpd x-sendfile support"
         },
         {
             "assigned_to": 7,
@@ -379,88 +435,11 @@
             "subject": "Add setting to allow regular users to create folders at the root level."
         },
         {
-            "assigned_to": 14,
-            "id": 20,
-            "ref": 26,
-            "status": 5,
-            "subject": "Create the html template"
-        },
-        {
-            "assigned_to": 11,
-            "id": 55,
-            "ref": 73,
-            "status": 2,
-            "subject": "Add tests for bulk operations"
-        },
-        {
-            "assigned_to": 6,
-            "id": 42,
-            "ref": 56,
-            "status": 4,
-            "subject": "Migrate to Python 3 and milk a beautiful cow"
-        },
-        {
             "assigned_to": 15,
             "id": 61,
             "ref": 82,
             "status": 4,
             "subject": "Feature/improved image admin"
-        },
-        {
-            "assigned_to": 10,
-            "id": 45,
-            "ref": 59,
-            "status": 1,
-            "subject": "Add tests for bulk operations"
-        },
-        {
-            "assigned_to": 6,
-            "id": 18,
-            "ref": 24,
-            "status": 4,
-            "subject": "get_actions() does not check for 'delete_selected' in actions"
-        },
-        {
-            "assigned_to": 15,
-            "id": 47,
-            "ref": 62,
-            "status": 1,
-            "subject": "Add setting to allow regular users to create folders at the root level."
-        },
-        {
-            "assigned_to": 12,
-            "id": 51,
-            "ref": 67,
-            "status": 3,
-            "subject": "Create the html template"
-        },
-        {
-            "assigned_to": 15,
-            "id": 1,
-            "ref": 2,
-            "status": 4,
-            "subject": "Patching subject"
-        },
-        {
-            "assigned_to": 7,
-            "id": 27,
-            "ref": 35,
-            "status": 2,
-            "subject": "Create the user model"
-        },
-        {
-            "assigned_to": 15,
-            "id": 29,
-            "ref": 38,
-            "status": 3,
-            "subject": "Add tests for bulk operations"
-        },
-        {
-            "assigned_to": 12,
-            "id": 26,
-            "ref": 33,
-            "status": 4,
-            "subject": "Add tests for bulk operations"
         },
         {
             "assigned_to": 5,
@@ -470,18 +449,39 @@
             "subject": "Added file copying and processing of images (resizing)"
         },
         {
-            "assigned_to": 7,
-            "id": 31,
-            "ref": 41,
+            "assigned_to": 10,
+            "id": 45,
+            "ref": 59,
             "status": 1,
-            "subject": "Lighttpd x-sendfile support"
+            "subject": "Add tests for bulk operations"
+        },
+        {
+            "assigned_to": 12,
+            "id": 51,
+            "ref": 67,
+            "status": 3,
+            "subject": "Create the html template"
+        },
+        {
+            "assigned_to": 6,
+            "id": 42,
+            "ref": 56,
+            "status": 4,
+            "subject": "Migrate to Python 3 and milk a beautiful cow"
+        },
+        {
+            "assigned_to": 11,
+            "id": 55,
+            "ref": 73,
+            "status": 2,
+            "subject": "Add tests for bulk operations"
         },
         {
             "assigned_to": 15,
-            "id": 59,
-            "ref": 78,
-            "status": 2,
-            "subject": "Add tests for bulk operations"
+            "id": 47,
+            "ref": 62,
+            "status": 1,
+            "subject": "Add setting to allow regular users to create folders at the root level."
         }
     ],
     "userstories": [
@@ -531,6 +531,24 @@
             "total_points": 13.5
         },
         {
+            "id": 19,
+            "milestone_name": "Sprint 2016-9-24",
+            "milestone_slug": "sprint-2016-9-24",
+            "ref": 76,
+            "status": 3,
+            "subject": "Implement the form",
+            "total_points": 43.0
+        },
+        {
+            "id": 30,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 92,
+            "status": 1,
+            "subject": "Lighttpd support",
+            "total_points": 13.5
+        },
+        {
             "id": 31,
             "milestone_name": null,
             "milestone_slug": null,
@@ -549,13 +567,13 @@
             "total_points": 25.5
         },
         {
-            "id": 11,
-            "milestone_name": "Sprint 2016-9-9",
-            "milestone_slug": "sprint-2016-9-9",
-            "ref": 43,
-            "status": 1,
-            "subject": "Lighttpd x-sendfile support",
-            "total_points": 34.5
+            "id": 6,
+            "milestone_name": "Sprint 2016-8-10",
+            "milestone_slug": "sprint-2016-8-10",
+            "ref": 23,
+            "status": 3,
+            "subject": "Create the user model",
+            "total_points": 11.0
         },
         {
             "id": 21,
@@ -576,31 +594,13 @@
             "total_points": 71.0
         },
         {
-            "id": 19,
-            "milestone_name": "Sprint 2016-9-24",
-            "milestone_slug": "sprint-2016-9-24",
-            "ref": 76,
-            "status": 3,
-            "subject": "Implement the form",
-            "total_points": 43.0
-        },
-        {
-            "id": 30,
-            "milestone_name": null,
-            "milestone_slug": null,
-            "ref": 92,
+            "id": 11,
+            "milestone_name": "Sprint 2016-9-9",
+            "milestone_slug": "sprint-2016-9-9",
+            "ref": 43,
             "status": 1,
-            "subject": "Lighttpd support",
-            "total_points": 13.5
-        },
-        {
-            "id": 6,
-            "milestone_name": "Sprint 2016-8-10",
-            "milestone_slug": "sprint-2016-8-10",
-            "ref": 23,
-            "status": 3,
-            "subject": "Create the user model",
-            "total_points": 11.0
+            "subject": "Lighttpd x-sendfile support",
+            "total_points": 34.5
         },
         {
             "id": 18,
@@ -621,22 +621,13 @@
             "total_points": 86.0
         },
         {
-            "id": 26,
-            "milestone_name": null,
-            "milestone_slug": null,
-            "ref": 88,
+            "id": 12,
+            "milestone_name": "Sprint 2016-9-9",
+            "milestone_slug": "sprint-2016-9-9",
+            "ref": 48,
             "status": 2,
-            "subject": "Create the user model",
-            "total_points": 50.0
-        },
-        {
-            "id": 24,
-            "milestone_name": "Sprint 2016-9-24",
-            "milestone_slug": "sprint-2016-9-24",
-            "ref": 85,
-            "status": 4,
-            "subject": "Add tests for bulk operations",
-            "total_points": 63.0
+            "subject": "get_actions() does not check for 'delete_selected' in actions",
+            "total_points": 20.0
         },
         {
             "id": 13,
@@ -648,6 +639,24 @@
             "total_points": 28.5
         },
         {
+            "id": 24,
+            "milestone_name": "Sprint 2016-9-24",
+            "milestone_slug": "sprint-2016-9-24",
+            "ref": 85,
+            "status": 4,
+            "subject": "Add tests for bulk operations",
+            "total_points": 63.0
+        },
+        {
+            "id": 26,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 88,
+            "status": 2,
+            "subject": "Create the user model",
+            "total_points": 50.0
+        },
+        {
             "id": 7,
             "milestone_name": "Sprint 2016-8-25",
             "milestone_slug": "sprint-2016-8-25",
@@ -655,15 +664,6 @@
             "status": 2,
             "subject": "Feature/improved image admin",
             "total_points": 23.0
-        },
-        {
-            "id": 12,
-            "milestone_name": "Sprint 2016-9-9",
-            "milestone_slug": "sprint-2016-9-9",
-            "ref": 48,
-            "status": 2,
-            "subject": "get_actions() does not check for 'delete_selected' in actions",
-            "total_points": 20.0
         }
     ],
     "wikipages": [

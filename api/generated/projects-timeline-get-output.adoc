@@ -2,7 +2,7 @@
 ----
 {
     "content_type": 23,
-    "created": "2016-10-05T11:44:38.406Z",
+    "created": "2016-10-06T07:22:32.382Z",
     "data": {
         "comment": "",
         "comment_html": "",
@@ -54,7 +54,7 @@
     },
     "data_content_type": 44,
     "event_type": "userstories.userstory.change",
-    "id": 8772,
+    "id": 8779,
     "namespace": "project:1",
     "object_id": 1,
     "project": 1

@@ -62,24 +62,24 @@
     "subject": "Migrate to Python 3 and milk a beautiful cow",
     "tags": [
         [
-            "fuga",
-            "#e86797"
-        ],
-        [
-            "voluptates",
-            null
-        ],
-        [
             "earum",
             null
         ],
         [
-            "quod",
-            "#0e5b24"
-        ],
-        [
             "ab",
             null
+        ],
+        [
+            "modi",
+            "#494e30"
+        ],
+        [
+            "fuga",
+            "#e86797"
+        ],
+        [
+            "quod",
+            "#0e5b24"
         ]
     ],
     "total_voters": 8,

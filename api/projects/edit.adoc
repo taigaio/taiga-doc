@@ -4,4 +4,4 @@ include::../generated/projects-update-cmd.adoc[]
 
 include::../generated/projects-patch-cmd.adoc[]
 
-When the creation is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-project-detail[project detail object]
+When the edit is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-project-detail[project detail object]

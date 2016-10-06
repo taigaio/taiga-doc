@@ -7,7 +7,7 @@
     "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2016-10-05T11:45:07.043Z",
+    "created_date": "2016-10-06T07:23:01.977Z",
     "description": "Implement API CALL",
     "description_html": "<p>Implement API CALL</p>",
     "external_reference": null,
@@ -20,7 +20,7 @@
     "is_watcher": false,
     "milestone": 3,
     "milestone_slug": "sprint-2016-9-9",
-    "modified_date": "2016-10-05T11:45:07.061Z",
+    "modified_date": "2016-10-06T07:23:02.069Z",
     "owner": 6,
     "owner_extra_info": {
         "big_photo": null,

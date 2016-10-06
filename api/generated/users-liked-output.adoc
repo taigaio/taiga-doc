@@ -4,7 +4,7 @@
     {
         "assigned_to": null,
         "assigned_to_extra_info": null,
-        "created_date": "2016-10-05T11:45:00.704Z",
+        "created_date": "2016-10-06T07:22:56.114Z",
         "description": "Beta description",
         "id": 1,
         "is_fan": true,

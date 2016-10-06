@@ -90,7 +90,7 @@
                         null
                     ],
                     [
-                        "perferendis",
+                        "modi",
                         null
                     ],
                     [
@@ -572,11 +572,11 @@
                         null
                     ],
                     [
-                        "minima",
+                        "ducimus",
                         null
                     ],
                     [
-                        "ducimus",
+                        "minima",
                         null
                     ]
                 ],
@@ -1534,11 +1534,11 @@
                 "subject": "Support for bulk actions",
                 "tags": [
                     [
-                        "ipsa",
+                        "necessitatibus",
                         null
                     ],
                     [
-                        "necessitatibus",
+                        "ipsa",
                         null
                     ]
                 ],
@@ -1625,11 +1625,11 @@
                 "subject": "get_actions() does not check for 'delete_selected' in actions",
                 "tags": [
                     [
-                        "illum",
+                        "eveniet",
                         null
                     ],
                     [
-                        "eveniet",
+                        "illum",
                         null
                     ],
                     [
@@ -1761,7 +1761,7 @@
         "estimated_start": "2016-08-10",
         "id": 1,
         "is_watcher": true,
-        "modified_date": "2016-10-05T11:45:10.573Z",
+        "modified_date": "2016-10-06T07:23:05.627Z",
         "name": "Sprint 2",
         "order": 10,
         "owner": 10,
@@ -1801,7 +1801,7 @@
                 "milestone": 1,
                 "milestone_name": "Sprint 2",
                 "milestone_slug": "sprint-2016-8-10",
-                "modified_date": "2016-10-05T11:44:37.390Z",
+                "modified_date": "2016-10-06T07:22:31.255Z",
                 "origin_issue": null,
                 "owner": 8,
                 "owner_extra_info": {
@@ -1838,14 +1838,6 @@
                 "tags": [
                     [
                         "modi",
-                        null
-                    ],
-                    [
-                        "eligendi",
-                        null
-                    ],
-                    [
-                        "perferendis",
                         null
                     ]
                 ],
@@ -1944,15 +1936,15 @@
                 "subject": "get_actions() does not check for 'delete_selected' in actions",
                 "tags": [
                     [
+                        "amet",
+                        null
+                    ],
+                    [
                         "totam",
                         null
                     ],
                     [
                         "mollitia",
-                        null
-                    ],
-                    [
-                        "amet",
                         null
                     ]
                 ],
@@ -2231,11 +2223,11 @@
                 "subject": "Fixing templates for Django 1.6.",
                 "tags": [
                     [
-                        "voluptatem",
+                        "impedit",
                         null
                     ],
                     [
-                        "impedit",
+                        "voluptatem",
                         null
                     ]
                 ],
@@ -2363,13 +2355,13 @@
     {
         "closed": false,
         "closed_points": null,
-        "created_date": "2016-10-05T11:45:10.801Z",
+        "created_date": "2016-10-06T07:23:05.908Z",
         "disponibility": 0.0,
         "estimated_finish": "2014-11-04",
         "estimated_start": "2014-10-20",
         "id": 23,
         "is_watcher": false,
-        "modified_date": "2016-10-05T11:45:10.809Z",
+        "modified_date": "2016-10-06T07:23:05.916Z",
         "name": "Sprint 3",
         "order": 1,
         "owner": 6,
@@ -2383,13 +2375,13 @@
     {
         "closed": false,
         "closed_points": null,
-        "created_date": "2016-10-05T11:45:10.687Z",
+        "created_date": "2016-10-06T07:23:05.774Z",
         "disponibility": 30.0,
         "estimated_finish": "2014-11-04",
         "estimated_start": "2014-10-20",
         "id": 22,
         "is_watcher": false,
-        "modified_date": "2016-10-05T11:45:10.695Z",
+        "modified_date": "2016-10-06T07:23:05.784Z",
         "name": "Sprint 1",
         "order": 1,
         "owner": 6,

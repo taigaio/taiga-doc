@@ -25,7 +25,7 @@
         "is_watcher": true,
         "milestone": 1,
         "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-05T11:45:06.871Z",
+        "modified_date": "2016-10-06T07:23:01.790Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -47,10 +47,6 @@
         "subject": "Patching subject",
         "tags": [
             [
-                "voluptates",
-                null
-            ],
-            [
                 "iste",
                 null
             ],
@@ -59,7 +55,15 @@
                 null
             ],
             [
+                "vel",
+                null
+            ],
+            [
                 "totam",
+                null
+            ],
+            [
+                "modi",
                 null
             ],
             [
@@ -68,10 +72,6 @@
             ],
             [
                 "deleniti",
-                null
-            ],
-            [
-                "vel",
                 null
             ]
         ],
@@ -137,7 +137,7 @@
         "subject": "Add tests for bulk operations",
         "tags": [
             [
-                "ipsum",
+                "modi",
                 null
             ],
             [
@@ -149,7 +149,7 @@
                 null
             ],
             [
-                "perferendis",
+                "ipsum",
                 null
             ]
         ],
@@ -218,35 +218,7 @@
         "subject": "Create the html template",
         "tags": [
             [
-                "aliquam",
-                null
-            ],
-            [
-                "ullam",
-                null
-            ],
-            [
-                "sit",
-                null
-            ],
-            [
-                "ea",
-                null
-            ],
-            [
-                "doloribus",
-                null
-            ],
-            [
-                "sed",
-                null
-            ],
-            [
                 "iure",
-                null
-            ],
-            [
-                "quibusdam",
                 null
             ],
             [
@@ -254,7 +226,35 @@
                 null
             ],
             [
+                "aliquam",
+                null
+            ],
+            [
+                "sit",
+                null
+            ],
+            [
+                "ullam",
+                null
+            ],
+            [
                 "accusantium",
+                null
+            ],
+            [
+                "doloribus",
+                null
+            ],
+            [
+                "ea",
+                null
+            ],
+            [
+                "sed",
+                null
+            ],
+            [
+                "quibusdam",
                 null
             ]
         ],
@@ -323,18 +323,6 @@
         "subject": "Fixing templates for Django 1.6.",
         "tags": [
             [
-                "excepturi",
-                null
-            ],
-            [
-                "at",
-                null
-            ],
-            [
-                "obcaecati",
-                null
-            ],
-            [
                 "omnis",
                 null
             ],
@@ -343,7 +331,11 @@
                 null
             ],
             [
-                "quas",
+                "nostrum",
+                null
+            ],
+            [
+                "excepturi",
                 null
             ],
             [
@@ -351,11 +343,19 @@
                 null
             ],
             [
-                "nostrum",
+                "at",
+                null
+            ],
+            [
+                "quas",
                 null
             ],
             [
                 "ex",
+                null
+            ],
+            [
+                "obcaecati",
                 null
             ]
         ],
@@ -431,11 +431,7 @@
         "subject": "Added file copying and processing of images (resizing)",
         "tags": [
             [
-                "ab",
-                null
-            ],
-            [
-                "doloremque",
+                "incidunt",
                 null
             ],
             [
@@ -443,15 +439,19 @@
                 null
             ],
             [
-                "magnam",
-                null
-            ],
-            [
                 "hic",
                 null
             ],
             [
-                "incidunt",
+                "doloremque",
+                null
+            ],
+            [
+                "magnam",
+                null
+            ],
+            [
+                "ab",
                 null
             ]
         ],
@@ -535,10 +535,6 @@
                 null
             ],
             [
-                "sapiente",
-                null
-            ],
-            [
                 "quo",
                 null
             ],
@@ -555,11 +551,15 @@
                 null
             ],
             [
+                "magni",
+                null
+            ],
+            [
                 "autem",
                 null
             ],
             [
-                "magni",
+                "sapiente",
                 null
             ]
         ],
@@ -643,11 +643,11 @@
         "subject": "Fixing templates for Django 1.6.",
         "tags": [
             [
-                "harum",
+                "ducimus",
                 null
             ],
             [
-                "ducimus",
+                "harum",
                 null
             ]
         ],
@@ -729,7 +729,7 @@
                 null
             ],
             [
-                "possimus",
+                "laborum",
                 null
             ],
             [
@@ -737,7 +737,7 @@
                 null
             ],
             [
-                "laborum",
+                "veritatis",
                 null
             ],
             [
@@ -745,7 +745,7 @@
                 null
             ],
             [
-                "veritatis",
+                "possimus",
                 null
             ],
             [
@@ -836,15 +836,11 @@
         "subject": "Create testsuite with matrix builds",
         "tags": [
             [
-                "repellendus",
-                null
-            ],
-            [
                 "autem",
                 null
             ],
             [
-                "ex",
+                "eius",
                 null
             ],
             [
@@ -856,15 +852,19 @@
                 null
             ],
             [
-                "corporis",
-                null
-            ],
-            [
-                "eius",
-                null
-            ],
-            [
                 "quas",
+                null
+            ],
+            [
+                "repellendus",
+                null
+            ],
+            [
+                "ex",
+                null
+            ],
+            [
+                "corporis",
                 null
             ]
         ],
@@ -949,15 +949,7 @@
                 null
             ],
             [
-                "corporis",
-                null
-            ],
-            [
                 "magni",
-                null
-            ],
-            [
-                "ut",
                 null
             ],
             [
@@ -969,6 +961,14 @@
                 null
             ],
             [
+                "quia",
+                null
+            ],
+            [
+                "ut",
+                null
+            ],
+            [
                 "expedita",
                 null
             ],
@@ -977,7 +977,7 @@
                 null
             ],
             [
-                "quia",
+                "corporis",
                 null
             ]
         ],
@@ -1051,19 +1051,7 @@
                 null
             ],
             [
-                "provident",
-                null
-            ],
-            [
-                "blanditiis",
-                null
-            ],
-            [
                 "officiis",
-                null
-            ],
-            [
-                "rem",
                 null
             ],
             [
@@ -1071,7 +1059,11 @@
                 null
             ],
             [
-                "id",
+                "voluptatum",
+                null
+            ],
+            [
+                "provident",
                 null
             ],
             [
@@ -1079,7 +1071,15 @@
                 null
             ],
             [
-                "voluptatum",
+                "blanditiis",
+                null
+            ],
+            [
+                "id",
+                null
+            ],
+            [
+                "rem",
                 null
             ]
         ],
@@ -1152,15 +1152,15 @@
                 null
             ],
             [
+                "dicta",
+                null
+            ],
+            [
                 "sed",
                 null
             ],
             [
                 "sapiente",
-                null
-            ],
-            [
-                "dicta",
                 null
             ],
             [
@@ -1234,15 +1234,15 @@
         "subject": "Feature/improved image admin",
         "tags": [
             [
+                "nostrum",
+                null
+            ],
+            [
+                "itaque",
+                null
+            ],
+            [
                 "ullam",
-                null
-            ],
-            [
-                "sequi",
-                null
-            ],
-            [
-                "tenetur",
                 null
             ],
             [
@@ -1250,7 +1250,7 @@
                 null
             ],
             [
-                "nostrum",
+                "tenetur",
                 null
             ],
             [
@@ -1262,7 +1262,7 @@
                 null
             ],
             [
-                "itaque",
+                "sequi",
                 null
             ]
         ],
@@ -1408,6 +1408,10 @@
                 null
             ],
             [
+                "repellat",
+                null
+            ],
+            [
                 "inventore",
                 null
             ],
@@ -1416,15 +1420,11 @@
                 null
             ],
             [
-                "perferendis",
-                null
-            ],
-            [
-                "repellat",
-                null
-            ],
-            [
                 "ut",
+                null
+            ],
+            [
+                "modi",
                 null
             ]
         ],
@@ -1503,19 +1503,7 @@
         "subject": "Add setting to allow regular users to create folders at the root level.",
         "tags": [
             [
-                "assumenda",
-                null
-            ],
-            [
-                "quos",
-                null
-            ],
-            [
                 "a",
-                null
-            ],
-            [
-                "sequi",
                 null
             ],
             [
@@ -1524,6 +1512,18 @@
             ],
             [
                 "aut",
+                null
+            ],
+            [
+                "assumenda",
+                null
+            ],
+            [
+                "quos",
+                null
+            ],
+            [
+                "sequi",
                 null
             ]
         ],
@@ -1777,19 +1777,19 @@
         "subject": "Fixing templates for Django 1.6.",
         "tags": [
             [
-                "repellendus",
-                null
-            ],
-            [
-                "nulla",
-                null
-            ],
-            [
                 "dolore",
                 null
             ],
             [
                 "nam",
+                null
+            ],
+            [
+                "repellendus",
+                null
+            ],
+            [
+                "nulla",
                 null
             ]
         ],
@@ -1877,19 +1877,15 @@
                 null
             ],
             [
-                "esse",
-                null
-            ],
-            [
                 "molestias",
                 null
             ],
             [
-                "officia",
+                "vitae",
                 null
             ],
             [
-                "vitae",
+                "esse",
                 null
             ],
             [
@@ -1898,6 +1894,10 @@
             ],
             [
                 "assumenda",
+                null
+            ],
+            [
+                "officia",
                 null
             ]
         ],
@@ -2155,11 +2155,11 @@
                 null
             ],
             [
-                "id",
+                "repellendus",
                 null
             ],
             [
-                "repellendus",
+                "id",
                 null
             ]
         ],
@@ -2239,11 +2239,11 @@
         "subject": "Lighttpd x-sendfile support",
         "tags": [
             [
-                "iusto",
+                "facilis",
                 null
             ],
             [
-                "laudantium",
+                "placeat",
                 null
             ],
             [
@@ -2251,11 +2251,11 @@
                 null
             ],
             [
-                "facilis",
+                "laudantium",
                 null
             ],
             [
-                "placeat",
+                "iusto",
                 null
             ],
             [
@@ -2426,15 +2426,23 @@
         "subject": "Add tests for bulk operations",
         "tags": [
             [
+                "consequatur",
+                null
+            ],
+            [
                 "aliquam",
                 null
             ],
             [
-                "perferendis",
+                "neque",
                 null
             ],
             [
-                "quos",
+                "modi",
+                null
+            ],
+            [
+                "deleniti",
                 null
             ],
             [
@@ -2446,19 +2454,11 @@
                 null
             ],
             [
-                "consequatur",
-                null
-            ],
-            [
-                "deleniti",
+                "quos",
                 null
             ],
             [
                 "fugiat",
-                null
-            ],
-            [
-                "neque",
                 null
             ]
         ],
@@ -2540,15 +2540,15 @@
         "subject": "Create the user model",
         "tags": [
             [
+                "sequi",
+                null
+            ],
+            [
                 "aliquam",
                 null
             ],
             [
                 "laboriosam",
-                null
-            ],
-            [
-                "sequi",
                 null
             ]
         ],
@@ -2617,6 +2617,10 @@
         "subject": "Added file copying and processing of images (resizing)",
         "tags": [
             [
+                "cupiditate",
+                null
+            ],
+            [
                 "quaerat",
                 null
             ],
@@ -2626,10 +2630,6 @@
             ],
             [
                 "dolores",
-                null
-            ],
-            [
-                "cupiditate",
                 null
             ]
         ],
@@ -2697,23 +2697,7 @@
         "subject": "Add tests for bulk operations",
         "tags": [
             [
-                "exercitationem",
-                null
-            ],
-            [
                 "magni",
-                null
-            ],
-            [
-                "rerum",
-                null
-            ],
-            [
-                "dolor",
-                null
-            ],
-            [
-                "expedita",
                 null
             ],
             [
@@ -2722,6 +2706,22 @@
             ],
             [
                 "natus",
+                null
+            ],
+            [
+                "exercitationem",
+                null
+            ],
+            [
+                "dolor",
+                null
+            ],
+            [
+                "rerum",
+                null
+            ],
+            [
+                "expedita",
                 null
             ]
         ],

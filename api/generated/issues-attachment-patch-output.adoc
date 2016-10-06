@@ -6,7 +6,7 @@
     "description": "itaque quis quibusdam inventore error a laudantium beatae totam esse",
     "id": 620,
     "is_deprecated": true,
-    "modified_date": "2016-10-05T11:44:54.986Z",
+    "modified_date": "2016-10-06T07:22:50.777Z",
     "name": "sample_attachment_3.txt",
     "object_id": 48,
     "order": 1,

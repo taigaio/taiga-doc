@@ -26,7 +26,7 @@
     "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
-    "modified_date": "2016-10-05T11:44:31.193Z",
+    "modified_date": "2016-10-06T07:22:24.654Z",
     "owner": 13,
     "owner_extra_info": {
         "big_photo": null,

@@ -103,12 +103,12 @@
         "subject": "Implement the form",
         "tags": [
             [
-                "eos",
-                "#8a6433"
-            ],
-            [
                 "quia",
                 null
+            ],
+            [
+                "eos",
+                "#8a6433"
             ]
         ],
         "team_requirement": false,
@@ -391,15 +391,15 @@
         "subject": "Migrate to Python 3 and milk a beautiful cow",
         "tags": [
             [
-                "tempora",
-                null
-            ],
-            [
                 "amet",
                 null
             ],
             [
                 "dignissimos",
+                null
+            ],
+            [
+                "tempora",
                 null
             ]
         ],

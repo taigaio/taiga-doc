@@ -9,7 +9,7 @@
     "blocked_note_html": "",
     "client_requirement": false,
     "comment": "",
-    "created_date": "2016-10-05T11:44:37.631Z",
+    "created_date": "2016-10-06T07:22:31.549Z",
     "description": "Implement API CALL",
     "description_html": "<p>Implement API CALL</p>",
     "epic_order": null,
@@ -26,7 +26,7 @@
     "milestone": null,
     "milestone_name": null,
     "milestone_slug": null,
-    "modified_date": "2016-10-05T11:44:37.642Z",
+    "modified_date": "2016-10-06T07:22:31.559Z",
     "origin_issue": null,
     "owner": 6,
     "owner_extra_info": {

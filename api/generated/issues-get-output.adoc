@@ -26,7 +26,7 @@
     "is_voter": false,
     "is_watcher": false,
     "milestone": null,
-    "modified_date": "2016-10-05T11:44:54.067Z",
+    "modified_date": "2016-10-06T07:22:49.832Z",
     "neighbors": {
         "next": {
             "id": 2,
@@ -66,8 +66,8 @@
             "#429e6f"
         ],
         [
-            "quisquam",
-            null
+            "minus",
+            "#59b653"
         ],
         [
             "provident",
@@ -78,20 +78,20 @@
             null
         ],
         [
+            "repellat",
+            null
+        ],
+        [
+            "quisquam",
+            null
+        ],
+        [
             "temporibus",
             "#a2c51a"
         ],
         [
-            "minus",
-            "#59b653"
-        ],
-        [
             "eos",
             "#8a6433"
-        ],
-        [
-            "repellat",
-            null
         ]
     ],
     "total_voters": 3,

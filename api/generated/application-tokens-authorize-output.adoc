@@ -1,8 +1,8 @@
 [source,json]
 ----
 {
-    "auth_code": "2a67b9b4-8af1-11e6-a93e-68f72800aadd",
-    "next_url": "http://example.com?auth_code=2a67b9b4-8af1-11e6-a93e-68f72800aadd",
+    "auth_code": "b8051ff6-8b95-11e6-8477-68f72800aadd",
+    "next_url": "http://example.com?auth_code=b8051ff6-8b95-11e6-8477-68f72800aadd",
     "state": "random-state"
 }
 ----

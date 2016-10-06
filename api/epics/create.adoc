@@ -5,7 +5,7 @@ To create epics send a POST request with the following data:
 - *description*: string
 - *is_blocked*: boolean
 - *is_closed*: boolean
-- *color*: RGB color
+- *color*: HEX color
 - *project* (required): project id
 - *subject* (required)
 - *tags*: array of strings

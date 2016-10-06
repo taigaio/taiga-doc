@@ -9,7 +9,7 @@
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-05T11:44:37.631Z",
+        "created_date": "2016-10-06T07:22:31.549Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -24,7 +24,7 @@
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-10-05T11:44:37.642Z",
+        "modified_date": "2016-10-06T07:22:31.559Z",
         "origin_issue": null,
         "owner": 6,
         "owner_extra_info": {
@@ -108,7 +108,7 @@
         "milestone": 1,
         "milestone_name": "Sprint 2016-8-10",
         "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-05T11:44:37.390Z",
+        "modified_date": "2016-10-06T07:22:31.255Z",
         "origin_issue": null,
         "owner": 8,
         "owner_extra_info": {
@@ -146,14 +146,6 @@
             [
                 "modi",
                 "#494e30"
-            ],
-            [
-                "eligendi",
-                "#5d8273"
-            ],
-            [
-                "perferendis",
-                "#999645"
             ]
         ],
         "tasks": [],
@@ -251,16 +243,16 @@
         "subject": "get_actions() does not check for 'delete_selected' in actions",
         "tags": [
             [
+                "amet",
+                null
+            ],
+            [
                 "totam",
                 "#560a5d"
             ],
             [
                 "mollitia",
                 "#002e7f"
-            ],
-            [
-                "amet",
-                null
             ]
         ],
         "tasks": [],
@@ -538,12 +530,12 @@
         "subject": "Fixing templates for Django 1.6.",
         "tags": [
             [
-                "voluptatem",
-                "#00d60c"
-            ],
-            [
                 "impedit",
                 null
+            ],
+            [
+                "voluptatem",
+                "#00d60c"
             ]
         ],
         "tasks": [],
@@ -832,12 +824,12 @@
         "subject": "Support for bulk actions",
         "tags": [
             [
-                "ipsa",
-                "#ffa8ed"
-            ],
-            [
                 "necessitatibus",
                 "#84e3b6"
+            ],
+            [
+                "ipsa",
+                "#ffa8ed"
             ]
         ],
         "tasks": [],
@@ -923,11 +915,11 @@
         "subject": "get_actions() does not check for 'delete_selected' in actions",
         "tags": [
             [
-                "illum",
+                "eveniet",
                 null
             ],
             [
-                "eveniet",
+                "illum",
                 null
             ],
             [
@@ -1730,8 +1722,8 @@
                 null
             ],
             [
-                "perferendis",
-                "#999645"
+                "modi",
+                "#494e30"
             ],
             [
                 "dicta",
@@ -2212,12 +2204,12 @@
                 null
             ],
             [
-                "minima",
-                null
-            ],
-            [
                 "ducimus",
                 "#ea6bb9"
+            ],
+            [
+                "minima",
+                null
             ]
         ],
         "tasks": [],
@@ -2440,12 +2432,12 @@
         "subject": "Support for bulk actions",
         "tags": [
             [
-                "eius",
-                "#860b86"
-            ],
-            [
                 "perspiciatis",
                 null
+            ],
+            [
+                "eius",
+                "#860b86"
             ],
             [
                 "et",

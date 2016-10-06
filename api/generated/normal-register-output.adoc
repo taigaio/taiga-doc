@@ -1,10 +1,10 @@
 [source,json]
 ----
 {
-    "auth_token": "eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxN30:1brkcg:JQZ0v4O-wu4tbazkdOQ9OYV1-b0",
+    "auth_token": "eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxN30:1bs30Z:PvpggIbqNrmf4eDwXH4AO_smQbM",
     "big_photo": null,
     "bio": "",
-    "color": "#1d92cf",
+    "color": "#1f2576",
     "email": "test-register2@email.com",
     "full_name": "test",
     "full_name_display": "test",

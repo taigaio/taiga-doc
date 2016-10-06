@@ -126,7 +126,7 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-10-05T11:45:08.489Z",
+        "modified_date": "2016-10-06T07:23:03.557Z",
         "name": "Scrum",
         "order": 1,
         "points": [
@@ -1132,7 +1132,7 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2016-10-05T11:44:56.866Z",
+        "created_date": "2016-10-06T07:22:52.592Z",
         "default_options": {
             "epic_status": null,
             "issue_status": "Patch status name",
@@ -1277,9 +1277,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-10-05T11:44:56.885Z",
+        "modified_date": "2016-10-06T07:22:52.614Z",
         "name": "Beta template",
-        "order": 1475667896866,
+        "order": 1475738572592,
         "points": [
             {
                 "name": "?",
@@ -1752,7 +1752,7 @@
         "videoconferences_extra_data": null
     },
     {
-        "created_date": "2016-10-05T11:45:09.529Z",
+        "created_date": "2016-10-06T07:23:04.601Z",
         "default_options": {
             "issue_status": "New",
             "issue_type": "Bug",
@@ -1832,9 +1832,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-10-05T11:45:09.530Z",
+        "modified_date": "2016-10-06T07:23:04.602Z",
         "name": "New Template",
-        "order": 1475667909527,
+        "order": 1475738584599,
         "points": [
             {
                 "name": "?",
@@ -2220,7 +2220,7 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2016-10-05T11:45:09.564Z",
+        "created_date": "2016-10-06T07:23:04.644Z",
         "default_options": null,
         "default_owner_role": "product-owner",
         "description": "Sample description",
@@ -2233,9 +2233,9 @@
         "is_wiki_activated": true,
         "issue_statuses": null,
         "issue_types": null,
-        "modified_date": "2016-10-05T11:45:09.564Z",
+        "modified_date": "2016-10-06T07:23:04.644Z",
         "name": "New simple template",
-        "order": 1475667909563,
+        "order": 1475738584641,
         "points": null,
         "priorities": null,
         "roles": null,

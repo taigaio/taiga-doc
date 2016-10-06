@@ -1,0 +1,8 @@
+To create tags send a POST request specifying the project id in the url with the following data:
+
+- *tag* (required)
+- *color*: HEX color
+
+include::../generated/projects-create-tag-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 200 OK with an empty body response

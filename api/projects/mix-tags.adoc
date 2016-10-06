@@ -1,0 +1,5 @@
+To mix tags send a POST specifying the project id in the url.
+
+include::../generated/projects-mix-tags-cmd.adoc[]
+
+When the edit is successful, the HTTP response is a 200 OK with an empty body response

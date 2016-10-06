@@ -247,7 +247,7 @@
     "total_milestones": 5,
     "total_story_points": 332.0,
     "total_watchers": 11,
-    "totals_updated_datetime": "2016-10-05T11:44:51.230Z",
+    "totals_updated_datetime": "2016-10-06T07:22:46.970Z",
     "videoconferences": null,
     "videoconferences_extra_data": null
 }

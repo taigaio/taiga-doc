@@ -128,10 +128,45 @@ milestone_slug = project1.milestones.first().slug
 notify_policy_id = NotifyPolicy.objects.filter(user_id=USER_ID).first().id
 owned_project = Project.objects.filter(owner_id=USER_ID).first()
 
+tags = [t[0] for t in project1.tags_colors[0:4]]
+
 reqs = OrderedDict([
     ("projects-tags-colors", {
         "method": "GET",
         "url": "/api/v1/projects/1/tags_colors",
+    }),
+
+    ("projects-create-tag", {
+        "method": "POST",
+        "url": "/api/v1/projects/1/create_tag",
+        "body": {
+            "tag": "testing-tag",
+            "color": "#FC8EAC"
+        }
+    }),
+    ("projects-edit-tag", {
+        "method": "POST",
+        "url": "/api/v1/projects/1/edit_tag",
+        "body": {
+            "from_tag": "testing-tag",
+            "to_tag": "testing-tag-updated",
+            "color": "#FFF8E7"
+        }
+    }),
+    ("projects-delete-tag", {
+        "method": "POST",
+        "url": "/api/v1/projects/1/delete_tag",
+        "body": {
+            "tag": "testing-tag-updated",
+        }
+    }),
+    ("projects-mix-tags", {
+        "method": "POST",
+        "url": "/api/v1/projects/1/mix_tags",
+        "body": {
+            "from_tags": tags,
+            "to_tag": tags[0]
+        }
     }),
     ("memberships-bulk-create", {
         "method": "POST",

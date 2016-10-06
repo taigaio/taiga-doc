@@ -516,11 +516,6 @@
             "name": "eius"
         },
         {
-            "color": "#5d8273",
-            "count": 1,
-            "name": "eligendi"
-        },
-        {
             "color": null,
             "count": 0,
             "name": "enim"
@@ -747,7 +742,7 @@
         },
         {
             "color": "#494e30",
-            "count": 3,
+            "count": 5,
             "name": "modi"
         },
         {
@@ -864,11 +859,6 @@
             "color": null,
             "count": 1,
             "name": "optio"
-        },
-        {
-            "color": "#999645",
-            "count": 1,
-            "name": "perferendis"
         },
         {
             "color": null,
@@ -1129,11 +1119,6 @@
             "color": "#00d60c",
             "count": 1,
             "name": "voluptatem"
-        },
-        {
-            "color": null,
-            "count": 1,
-            "name": "voluptates"
         },
         {
             "color": "#681ad4",

@@ -4,7 +4,7 @@
     "created_date": "2016-10-04T12:11:01.189Z",
     "description": "deleniti sunt consectetur odit voluptate",
     "id": 4,
-    "modified_date": "2016-10-05T11:45:10.144Z",
+    "modified_date": "2016-10-06T07:23:05.198Z",
     "name": "Duration 1",
     "order": 1,
     "project": 1,

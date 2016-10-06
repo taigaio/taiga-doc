@@ -46,6 +46,22 @@ include::../projects/issues-stats.adoc[]
 === Tag colors
 include::../projects/tags-colors.adoc[]
 
+[[projects-create-tag]]
+=== Create tag
+include::../projects/create-tag.adoc[]
+
+[[projects-edit-tag]]
+=== Edit tag
+include::../projects/edit-tag.adoc[]
+
+[[projects-delete-tag]]
+=== Delete-tag
+include::../projects/delete-tag.adoc[]
+
+[[projects-mix-tags]]
+=== Mix tags
+include::../projects/mix-tags.adoc[]
+
 [[projects-like]]
 === Like a project
 include::../projects/like.adoc[]

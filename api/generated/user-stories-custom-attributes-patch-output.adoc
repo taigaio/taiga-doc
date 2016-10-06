@@ -4,7 +4,7 @@
     "created_date": "2016-10-04T12:11:01.165Z",
     "description": "accusamus sit corporis ipsum",
     "id": 1,
-    "modified_date": "2016-10-05T11:44:39.446Z",
+    "modified_date": "2016-10-06T07:22:33.669Z",
     "name": "Duration 1",
     "order": 1,
     "project": 1,

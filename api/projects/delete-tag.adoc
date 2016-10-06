@@ -1,0 +1,5 @@
+To delete a tag send a POST specifying the project id in the url.
+
+include::../generated/projects-delete-tag-cmd.adoc[]
+
+When the edit is successful, the HTTP response is a 200 OK with an empty body response

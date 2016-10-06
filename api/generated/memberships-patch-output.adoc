@@ -8,12 +8,12 @@
     "id": 1,
     "invitation_extra_text": null,
     "invited_by": {
-        "big_photo": "http://localhost:8000/media/user/3/b/9/d/7ca17aeae27d3db920d8b00f77f6da920e196874d58546d89dd6f1ffdf06/test.png.300x300_q85_crop.png",
+        "big_photo": "http://localhost:8000/media/user/1/6/5/5/953742374d37b0cf24898f347c0c4883a54a669ac6ec2e44e064c4cafd3f/test.png.300x300_q85_crop.png",
         "full_name_display": "Silvia Soto",
         "gravatar_id": "737cc0873c835a8c879f124c0df9a0f1",
         "id": 6,
         "is_active": true,
-        "photo": "http://localhost:8000/media/user/3/b/9/d/7ca17aeae27d3db920d8b00f77f6da920e196874d58546d89dd6f1ffdf06/test.png.80x80_q85_crop.png",
+        "photo": "http://localhost:8000/media/user/1/6/5/5/953742374d37b0cf24898f347c0c4883a54a669ac6ec2e44e064c4cafd3f/test.png.80x80_q85_crop.png",
         "username": "patchedusername"
     },
     "is_admin": true,

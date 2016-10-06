@@ -24,7 +24,7 @@
     "is_watcher": true,
     "milestone": 1,
     "milestone_slug": "sprint-2016-8-10",
-    "modified_date": "2016-10-05T11:45:06.871Z",
+    "modified_date": "2016-10-06T07:23:01.790Z",
     "owner": 12,
     "owner_extra_info": {
         "big_photo": null,
@@ -46,10 +46,6 @@
     "subject": "Patching subject",
     "tags": [
         [
-            "voluptates",
-            null
-        ],
-        [
             "iste",
             null
         ],
@@ -58,7 +54,15 @@
             null
         ],
         [
+            "vel",
+            null
+        ],
+        [
             "totam",
+            null
+        ],
+        [
+            "modi",
             null
         ],
         [
@@ -67,10 +71,6 @@
         ],
         [
             "deleniti",
-            null
-        ],
-        [
-            "vel",
             null
         ]
     ],

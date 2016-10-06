@@ -9,7 +9,7 @@
     "client_requirement": false,
     "color": "#ABCABC",
     "comment": "",
-    "created_date": "2016-10-05T11:44:30.565Z",
+    "created_date": "2016-10-06T07:22:23.976Z",
     "description": "New epic description",
     "description_html": "<p>New epic description</p>",
     "epics_order": 2,
@@ -18,7 +18,7 @@
     "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
-    "modified_date": "2016-10-05T11:44:30.574Z",
+    "modified_date": "2016-10-06T07:22:23.985Z",
     "owner": 6,
     "owner_extra_info": {
         "big_photo": null,

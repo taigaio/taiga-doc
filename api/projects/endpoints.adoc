@@ -56,6 +56,22 @@
 | GET
 | link:#projects-tag-colors[Get project tags colors]
 
+| /api/v1/projects/\{projectId}/create_tag
+| POST
+| link:#projects-create-tag[Create project tag]
+
+| /api/v1/projects/\{projectId}/edit_tag
+| POST
+| link:#projects-edit-tag[Edit project tag]
+
+| /api/v1/projects/\{projectId}/delete_tag
+| POST
+| link:#projects-delete-tag[Delete project tag]
+
+| /api/v1/projects/\{projectId}/mix_tags
+| POST
+| link:#projects-mix-tags[Mix project tags]
+
 | /api/v1/projects/\{projectId}/like
 | POST
 | link:#projects-like[Like a project]
