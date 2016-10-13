@@ -26,20 +26,41 @@ Confirm that `Gemfile` is in the base `taiga-doc` directory and then perform the
 
 Taiga doc include a django app that help us to generate the curl commands and
 the json responses from the api. To use it, you have to activate your
-taiga-back virtualenv, install the `generate_api_documents`, add it to your
-taiga settings installed apps, regenerate the taiga-back database with the
-sample data, and finally run the `generate_api_examples` django command:
+taiga-back virtualenv, install the `generate_api_documents`.
 
-    $ workon taiga-back
+    $ workon taiga
     $ cd generate_api_documents_app
-    $ python setup.py install
-    $ cd $TAIGA_BACK_DIRECTORY
+    $ pip install -e .
+
+Now add it to your taiga settings installed apps; Modify in taiga-back your
+`settings/local.py` and include the line:
+
+```python
+INSTALLED_APPS += ["generate_api_documents"]
+```
+
+Now regenerate the taiga-back database with the sample data
+
+    $ cd taiga-back
+    $ workon taiga
     $ bash regenerate.sh
+    $ python manage.py runserver
+
+And finally, in a new terminal, run the `generate_api_examples`
+ django command:
+
+    $ cd taiga-back
+    $ workon taiga
     $ python manage.py generate_api_examples
 
 After that, you have to copy the contente generated in the output directory to
-the api/generated/ directory in taiga-doc. After that, you can rebuild your
-documentation running `make`.
+the api/generated/ directory in taiga-doc.
+
+    $ mv output/* ../taiga-doc/api/generated/
+
+Now you can rebuild your documentation running `make`.
+
+    $ make
 
 ### (Optional) Setup live preview in browser
 
