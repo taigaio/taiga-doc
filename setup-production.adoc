@@ -49,7 +49,7 @@ This section helps with the installation of the backend (api) Taiga service.
 Install dependencies
 ~~~~~~~~~~~~~~~~~~~~
 
-The Backend is written mainly in python (3.4) but for some third party libraries we need to install a
+The Backend is written mainly in python (3.5) but for some third party libraries we need to install a
 C compiller and development headers.
 
 [source,bash]
@@ -83,7 +83,7 @@ sudo -u postgres createdb taiga -O taiga
 Setup python environment
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-For run **taiga-back** you should have python (3.4) installed with some other third party
+For run **taiga-back** you should have python (3.5) installed with some other third party
 libraries. As a first step, start installing python and virtualenvwrapper:
 
 [source,bash]
@@ -261,7 +261,7 @@ SHELL=/bin/bash
 USER=taiga
 LANG=en_US.UTF-8
 HOME=/home/taiga
-PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.4/site-packages
+PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.5/site-packages
 ----
 
 Then you have to reload your circus configuration, restart taiga and start
@@ -491,7 +491,7 @@ SHELL=/bin/bash
 USER=taiga
 LANG=en_US.UTF-8
 HOME=/home/taiga
-PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.4/site-packages
+PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.5/site-packages
 ----
 
 [NOTE]
@@ -511,7 +511,7 @@ And finally restart circus:
 
 [source,bash]
 ----
-sudo service circus restart
+sudo service circusd restart
 ----
 
 
