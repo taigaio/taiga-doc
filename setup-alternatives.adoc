@@ -126,3 +126,14 @@ has been developed by link:https://github.com/ipedrazas[Iván Pedrazas], link:ht
 has been developed by link:https://github.com/htdvisser[Hylke Visser], and
 link:https://github.com/benhutchins/docker-taiga[yet another docker script]
 has been developed by link:https://github.com/benhutchins[Benjamin Hutchins].
+
+[[setup-taiga-puppet]]
+Setup using **puppet-taiga**
+----------------------------
+
+
+Important notes about using **puppet-taiga**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Puppet is not officially supported by the Taiga development team but a link:https://github.com/opus-codium/puppet-taiga[puppet module]
+has been developed by the link:https://github.com/orgs/opus-codium/people[Opus-Codium folks].
