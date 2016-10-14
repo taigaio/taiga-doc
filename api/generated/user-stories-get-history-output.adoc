@@ -3,14 +3,14 @@
 {
     "comment": "comment edition",
     "comment_html": "<p>comment edition</p>",
-    "created_at": "2016-10-04T12:11:02.938Z",
-    "delete_comment_date": "2016-10-06T07:22:47.579Z",
+    "created_at": "2016-10-14T09:03:30.362Z",
+    "delete_comment_date": "2016-10-14T09:20:19.231Z",
     "delete_comment_user": {
         "name": "Silvia Soto",
         "pk": 6
     },
     "diff": {},
-    "edit_comment_date": "2016-10-06T07:22:47.401Z",
+    "edit_comment_date": "2016-10-14T09:20:19.003Z",
     "id": "00000000-0000-0000-0000-000000000000",
     "is_hidden": false,
     "is_snapshot": false,

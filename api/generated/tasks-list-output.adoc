@@ -13,9 +13,9 @@
     },
     "attachments": [],
     "blocked_note": "",
-    "created_date": "2016-10-04T12:11:01.694Z",
+    "created_date": "2016-10-14T09:03:29.043Z",
     "external_reference": null,
-    "finished_date": "2016-08-20T02:24:40.209Z",
+    "finished_date": "2016-08-29T23:17:07.508Z",
     "id": 1,
     "is_blocked": false,
     "is_closed": true,
@@ -23,8 +23,8 @@
     "is_voter": true,
     "is_watcher": true,
     "milestone": 1,
-    "milestone_slug": "sprint-2016-8-10",
-    "modified_date": "2016-10-06T07:23:01.790Z",
+    "milestone_slug": "sprint-2016-8-20",
+    "modified_date": "2016-10-14T09:20:35.510Z",
     "owner": 12,
     "owner_extra_info": {
         "big_photo": null,
@@ -74,10 +74,10 @@
             null
         ]
     ],
-    "taskboard_order": 1475583061694,
+    "taskboard_order": 1476435809043,
     "total_voters": 7,
     "total_watchers": 1,
-    "us_order": 1475583061694,
+    "us_order": 1476435809043,
     "user_story": 1,
     "user_story_extra_info": {
         "epics": null,

@@ -26,28 +26,28 @@
         {
             "client-increment": 0,
             "evolution": 1098.0,
-            "name": "Sprint 2016-8-10",
+            "name": "Sprint 2016-8-20",
             "optimal": 1098.0,
             "team-increment": 0
         },
         {
             "client-increment": 0,
             "evolution": 1056.0,
-            "name": "Sprint 2016-8-25",
+            "name": "Sprint 2016-9-4",
             "optimal": 960.75,
             "team-increment": 0
         },
         {
             "client-increment": 0,
             "evolution": 1056.0,
-            "name": "Sprint 2016-9-9",
+            "name": "Sprint 2016-9-19",
             "optimal": 823.5,
             "team-increment": 0
         },
         {
             "client-increment": 0,
             "evolution": 998.0,
-            "name": "Sprint 2016-9-24",
+            "name": "Sprint 2016-10-4",
             "optimal": 686.25,
             "team-increment": 0
         },

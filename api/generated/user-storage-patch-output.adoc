@@ -1,9 +1,9 @@
 [source,json]
 ----
 {
-    "created_date": "2016-10-06T07:22:52.401Z",
+    "created_date": "2016-10-14T09:20:24.772Z",
     "key": "favorite-forest",
-    "modified_date": "2016-10-06T07:22:52.442Z",
+    "modified_date": "2016-10-14T09:20:24.820Z",
     "value": "Russian Taiga"
 }
 ----

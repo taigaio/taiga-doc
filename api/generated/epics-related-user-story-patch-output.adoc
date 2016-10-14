@@ -3,6 +3,6 @@
 {
     "epic": 10,
     "order": 100,
-    "user_story": 40
+    "user_story": 37
 }
 ----

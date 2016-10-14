@@ -3,6 +3,6 @@
 {
     "full_name": "BitBucket",
     "id": 1,
-    "username": "bitbucket-3d25ea123b534de1bcb956d7800aa0ec"
+    "username": "bitbucket-cdb384d9c6224987963271283bddd11b"
 }
 ----

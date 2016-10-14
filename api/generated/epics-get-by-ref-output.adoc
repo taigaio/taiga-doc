@@ -17,16 +17,16 @@
     "client_requirement": false,
     "color": "#3465a4",
     "comment": "",
-    "created_date": "2016-10-04T12:12:43.170Z",
+    "created_date": "2016-10-14T09:05:25.251Z",
     "description": "Ullam ut officiis adipisci molestias molestiae cum soluta debitis magnam, possimus culpa ab iste maiores suscipit harum, doloremque similique amet nostrum dolorum, dolorem veritatis nobis? Enim laboriosam tempora repudiandae reiciendis nisi repellendus. Perferendis quaerat quibusdam earum quos error ipsam aut nam vitae, accusantium quas enim, asperiores qui quisquam minus ea ipsa voluptatibus cupiditate, adipisci voluptatibus dignissimos cumque iusto ullam quisquam quo quasi nihil at. Magnam fugiat accusantium fuga sunt quis eveniet nulla sequi quisquam consectetur, numquam laboriosam voluptas ipsam suscipit corporis perspiciatis officia?",
     "description_html": "<p>Ullam ut officiis adipisci molestias molestiae cum soluta debitis magnam, possimus culpa ab iste maiores suscipit harum, doloremque similique amet nostrum dolorum, dolorem veritatis nobis? Enim laboriosam tempora repudiandae reiciendis nisi repellendus. Perferendis quaerat quibusdam earum quos error ipsam aut nam vitae, accusantium quas enim, asperiores qui quisquam minus ea ipsa voluptatibus cupiditate, adipisci voluptatibus dignissimos cumque iusto ullam quisquam quo quasi nihil at. Magnam fugiat accusantium fuga sunt quis eveniet nulla sequi quisquam consectetur, numquam laboriosam voluptas ipsam suscipit corporis perspiciatis officia?</p>",
-    "epics_order": 1475583163170,
+    "epics_order": 1476435925251,
     "id": 10,
     "is_blocked": false,
     "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
-    "modified_date": "2016-10-04T12:12:43.295Z",
+    "modified_date": "2016-10-14T09:05:25.425Z",
     "neighbors": {
         "next": {
             "id": 11,
@@ -76,8 +76,8 @@
     "total_voters": 0,
     "total_watchers": 1,
     "user_stories_counts": {
-        "closed": 1,
-        "opened": 7
+        "closed": 0,
+        "opened": 8
     },
     "version": 1,
     "watchers": [

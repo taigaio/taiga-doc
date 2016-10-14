@@ -14,9 +14,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:01.694Z",
+        "created_date": "2016-10-14T09:03:29.043Z",
         "external_reference": null,
-        "finished_date": "2016-08-20T02:24:40.209Z",
+        "finished_date": "2016-08-29T23:17:07.508Z",
         "id": 1,
         "is_blocked": false,
         "is_closed": true,
@@ -24,8 +24,8 @@
         "is_voter": true,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-06T07:23:01.790Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:20:35.510Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -75,10 +75,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583061694,
+        "taskboard_order": 1476435809043,
         "total_voters": 7,
         "total_watchers": 1,
-        "us_order": 1475583061694,
+        "us_order": 1476435809043,
         "user_story": 1,
         "user_story_extra_info": {
             "epics": null,
@@ -104,7 +104,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:01.995Z",
+        "created_date": "2016-10-14T09:03:29.382Z",
         "external_reference": null,
         "finished_date": null,
         "id": 2,
@@ -114,8 +114,8 @@
         "is_voter": false,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:02.155Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:29.527Z",
         "owner": 7,
         "owner_extra_info": {
             "big_photo": null,
@@ -153,10 +153,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583061995,
+        "taskboard_order": 1476435809382,
         "total_voters": 0,
         "total_watchers": 4,
-        "us_order": 1475583061995,
+        "us_order": 1476435809382,
         "user_story": 1,
         "user_story_extra_info": {
             "epics": null,
@@ -185,7 +185,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:02.340Z",
+        "created_date": "2016-10-14T09:03:29.713Z",
         "external_reference": null,
         "finished_date": null,
         "id": 3,
@@ -195,8 +195,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:02.484Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:29.846Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -258,10 +258,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583062340,
+        "taskboard_order": 1476435809713,
         "total_voters": 6,
         "total_watchers": 4,
-        "us_order": 1475583062340,
+        "us_order": 1476435809713,
         "user_story": 1,
         "user_story_extra_info": {
             "epics": null,
@@ -290,7 +290,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:03.057Z",
+        "created_date": "2016-10-14T09:03:30.503Z",
         "external_reference": null,
         "finished_date": null,
         "id": 4,
@@ -300,8 +300,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:03.258Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:30.716Z",
         "owner": 14,
         "owner_extra_info": {
             "big_photo": null,
@@ -359,25 +359,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583063057,
+        "taskboard_order": 1476435810503,
         "total_voters": 2,
         "total_watchers": 0,
-        "us_order": 1475583063057,
+        "us_order": 1476435810503,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 2,
             "ref": 5,
             "subject": "get_actions() does not check for 'delete_selected' in actions"
@@ -398,9 +386,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:03.406Z",
+        "created_date": "2016-10-14T09:03:30.908Z",
         "external_reference": null,
-        "finished_date": "2016-08-23T07:05:07.209Z",
+        "finished_date": "2016-09-02T03:57:34.508Z",
         "id": 5,
         "is_blocked": false,
         "is_closed": true,
@@ -408,8 +396,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:03.569Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:31.056Z",
         "owner": 9,
         "owner_extra_info": {
             "big_photo": null,
@@ -455,25 +443,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583063406,
+        "taskboard_order": 1476435810908,
         "total_voters": 3,
         "total_watchers": 3,
-        "us_order": 1475583063406,
+        "us_order": 1476435810908,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 2,
             "ref": 5,
             "subject": "get_actions() does not check for 'delete_selected' in actions"
@@ -498,7 +474,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:03.747Z",
+        "created_date": "2016-10-14T09:03:31.192Z",
         "external_reference": null,
         "finished_date": null,
         "id": 6,
@@ -508,8 +484,8 @@
         "is_voter": true,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:03.885Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:31.361Z",
         "owner": 11,
         "owner_extra_info": {
             "big_photo": null,
@@ -563,25 +539,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583063747,
+        "taskboard_order": 1476435811192,
         "total_voters": 5,
         "total_watchers": 7,
-        "us_order": 1475583063747,
+        "us_order": 1476435811192,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 2,
             "ref": 5,
             "subject": "get_actions() does not check for 'delete_selected' in actions"
@@ -610,9 +574,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:04.077Z",
+        "created_date": "2016-10-14T09:03:31.580Z",
         "external_reference": null,
-        "finished_date": "2016-08-18T07:27:48.209Z",
+        "finished_date": "2016-08-28T04:20:15.508Z",
         "id": 7,
         "is_blocked": false,
         "is_closed": true,
@@ -620,8 +584,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:04.216Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:31.738Z",
         "owner": 7,
         "owner_extra_info": {
             "big_photo": null,
@@ -651,25 +615,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583064077,
+        "taskboard_order": 1476435811580,
         "total_voters": 1,
         "total_watchers": 1,
-        "us_order": 1475583064077,
+        "us_order": 1476435811580,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 2,
             "ref": 5,
             "subject": "get_actions() does not check for 'delete_selected' in actions"
@@ -692,7 +644,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:04.329Z",
+        "created_date": "2016-10-14T09:03:31.858Z",
         "external_reference": null,
         "finished_date": null,
         "id": 8,
@@ -702,8 +654,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:04.486Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:32.034Z",
         "owner": 15,
         "owner_extra_info": {
             "big_photo": null,
@@ -757,25 +709,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583064329,
+        "taskboard_order": 1476435811858,
         "total_voters": 7,
         "total_watchers": 6,
-        "us_order": 1475583064329,
+        "us_order": 1476435811858,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 2,
             "ref": 5,
             "subject": "get_actions() does not check for 'delete_selected' in actions"
@@ -803,9 +743,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:05.047Z",
+        "created_date": "2016-10-14T09:03:32.790Z",
         "external_reference": null,
-        "finished_date": "2016-08-22T08:30:48.209Z",
+        "finished_date": "2016-09-01T05:23:15.508Z",
         "id": 9,
         "is_blocked": false,
         "is_closed": true,
@@ -813,8 +753,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:05.268Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:33.092Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -868,10 +808,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583065047,
+        "taskboard_order": 1476435812790,
         "total_voters": 0,
         "total_watchers": 4,
-        "us_order": 1475583065047,
+        "us_order": 1476435812790,
         "user_story": 3,
         "user_story_extra_info": {
             "epics": [
@@ -912,7 +852,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:05.815Z",
+        "created_date": "2016-10-14T09:03:33.744Z",
         "external_reference": null,
         "finished_date": null,
         "id": 10,
@@ -922,8 +862,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:06.035Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:34.006Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -981,10 +921,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583065815,
+        "taskboard_order": 1476435813744,
         "total_voters": 6,
         "total_watchers": 5,
-        "us_order": 1475583065815,
+        "us_order": 1476435813744,
         "user_story": 4,
         "user_story_extra_info": {
             "epics": null,
@@ -1014,9 +954,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:06.266Z",
+        "created_date": "2016-10-14T09:03:34.288Z",
         "external_reference": null,
-        "finished_date": "2016-08-18T06:13:40.209Z",
+        "finished_date": "2016-08-28T03:06:07.508Z",
         "id": 11,
         "is_blocked": false,
         "is_closed": true,
@@ -1024,8 +964,8 @@
         "is_voter": false,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:06.394Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:34.439Z",
         "owner": 11,
         "owner_extra_info": {
             "big_photo": null,
@@ -1083,10 +1023,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583066266,
+        "taskboard_order": 1476435814288,
         "total_voters": 5,
         "total_watchers": 4,
-        "us_order": 1475583066266,
+        "us_order": 1476435814288,
         "user_story": 4,
         "user_story_extra_info": {
             "epics": null,
@@ -1115,7 +1055,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:06.589Z",
+        "created_date": "2016-10-14T09:03:34.662Z",
         "external_reference": null,
         "finished_date": null,
         "id": 12,
@@ -1125,8 +1065,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:06.730Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:34.828Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -1168,10 +1108,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583066590,
+        "taskboard_order": 1476435814662,
         "total_voters": 4,
         "total_watchers": 5,
-        "us_order": 1475583066589,
+        "us_order": 1476435814662,
         "user_story": 4,
         "user_story_extra_info": {
             "epics": null,
@@ -1201,7 +1141,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:06.895Z",
+        "created_date": "2016-10-14T09:03:35.053Z",
         "external_reference": null,
         "finished_date": null,
         "id": 13,
@@ -1211,8 +1151,8 @@
         "is_voter": true,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:07.045Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:35.276Z",
         "owner": 10,
         "owner_extra_info": {
             "big_photo": null,
@@ -1266,10 +1206,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583066895,
+        "taskboard_order": 1476435815053,
         "total_voters": 4,
         "total_watchers": 5,
-        "us_order": 1475583066895,
+        "us_order": 1476435815053,
         "user_story": 4,
         "user_story_extra_info": {
             "epics": null,
@@ -1299,7 +1239,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:07.210Z",
+        "created_date": "2016-10-14T09:03:35.508Z",
         "external_reference": null,
         "finished_date": null,
         "id": 14,
@@ -1309,8 +1249,8 @@
         "is_voter": true,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:07.350Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:35.729Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -1340,10 +1280,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583067210,
+        "taskboard_order": 1476435815508,
         "total_voters": 3,
         "total_watchers": 3,
-        "us_order": 1475583067210,
+        "us_order": 1476435815508,
         "user_story": 4,
         "user_story_extra_info": {
             "epics": null,
@@ -1371,7 +1311,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:07.887Z",
+        "created_date": "2016-10-14T09:03:36.458Z",
         "external_reference": null,
         "finished_date": null,
         "id": 15,
@@ -1381,8 +1321,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:08.097Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:36.708Z",
         "owner": 11,
         "owner_extra_info": {
             "big_photo": null,
@@ -1428,25 +1368,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583067887,
+        "taskboard_order": 1476435816458,
         "total_voters": 5,
         "total_watchers": 2,
-        "us_order": 1475583067887,
+        "us_order": 1476435816458,
         "user_story": 5,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 7,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 126,
-                    "subject": "Migrate to Python 3 and milk a beautiful cow"
-                }
-            ],
+            "epics": null,
             "id": 5,
             "ref": 19,
             "subject": "Fixing templates for Django 1.6."
@@ -1470,7 +1398,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:08.328Z",
+        "created_date": "2016-10-14T09:03:36.949Z",
         "external_reference": null,
         "finished_date": null,
         "id": 16,
@@ -1480,8 +1408,8 @@
         "is_voter": true,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:08.472Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:37.135Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -1527,25 +1455,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583068328,
+        "taskboard_order": 1476435816949,
         "total_voters": 5,
         "total_watchers": 4,
-        "us_order": 1475583068328,
+        "us_order": 1476435816949,
         "user_story": 5,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 7,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 126,
-                    "subject": "Migrate to Python 3 and milk a beautiful cow"
-                }
-            ],
+            "epics": null,
             "id": 5,
             "ref": 19,
             "subject": "Fixing templates for Django 1.6."
@@ -1571,7 +1487,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:08.665Z",
+        "created_date": "2016-10-14T09:03:37.369Z",
         "external_reference": null,
         "finished_date": null,
         "id": 17,
@@ -1581,8 +1497,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:08.807Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:37.525Z",
         "owner": 9,
         "owner_extra_info": {
             "big_photo": null,
@@ -1620,25 +1536,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583068665,
+        "taskboard_order": 1476435817369,
         "total_voters": 2,
         "total_watchers": 2,
-        "us_order": 1475583068665,
+        "us_order": 1476435817369,
         "user_story": 5,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 7,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 126,
-                    "subject": "Migrate to Python 3 and milk a beautiful cow"
-                }
-            ],
+            "epics": null,
             "id": 5,
             "ref": 19,
             "subject": "Fixing templates for Django 1.6."
@@ -1662,9 +1566,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:09.385Z",
+        "created_date": "2016-10-14T09:03:38.332Z",
         "external_reference": null,
-        "finished_date": "2016-08-18T14:09:34.209Z",
+        "finished_date": "2016-08-28T11:02:01.508Z",
         "id": 18,
         "is_blocked": false,
         "is_closed": true,
@@ -1672,8 +1576,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:09.663Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:38.670Z",
         "owner": 10,
         "owner_extra_info": {
             "big_photo": null,
@@ -1703,25 +1607,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583069385,
+        "taskboard_order": 1476435818332,
         "total_voters": 6,
         "total_watchers": 1,
-        "us_order": 1475583069385,
+        "us_order": 1476435818332,
         "user_story": 6,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 6,
             "ref": 23,
             "subject": "Create the user model"
@@ -1744,7 +1636,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:09.845Z",
+        "created_date": "2016-10-14T09:03:38.918Z",
         "external_reference": null,
         "finished_date": null,
         "id": 19,
@@ -1754,8 +1646,8 @@
         "is_voter": false,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:10.005Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:39.179Z",
         "owner": 15,
         "owner_extra_info": {
             "big_photo": null,
@@ -1793,25 +1685,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583069845,
+        "taskboard_order": 1476435818918,
         "total_voters": 9,
         "total_watchers": 7,
-        "us_order": 1475583069845,
+        "us_order": 1476435818918,
         "user_story": 6,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 6,
             "ref": 23,
             "subject": "Create the user model"
@@ -1840,7 +1720,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:10.294Z",
+        "created_date": "2016-10-14T09:03:39.660Z",
         "external_reference": null,
         "finished_date": null,
         "id": 20,
@@ -1850,8 +1730,8 @@
         "is_voter": true,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:10.431Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:39.853Z",
         "owner": 5,
         "owner_extra_info": {
             "big_photo": null,
@@ -1901,25 +1781,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583070294,
+        "taskboard_order": 1476435819660,
         "total_voters": 3,
         "total_watchers": 2,
-        "us_order": 1475583070294,
+        "us_order": 1476435819660,
         "user_story": 6,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 6,
             "ref": 23,
             "subject": "Create the user model"
@@ -1943,9 +1811,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:10.597Z",
+        "created_date": "2016-10-14T09:03:40.072Z",
         "external_reference": null,
-        "finished_date": "2016-08-14T18:51:28.209Z",
+        "finished_date": "2016-08-24T15:43:55.508Z",
         "id": 21,
         "is_blocked": false,
         "is_closed": true,
@@ -1953,8 +1821,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-8-10",
-        "modified_date": "2016-10-04T12:11:10.755Z",
+        "milestone_slug": "sprint-2016-8-20",
+        "modified_date": "2016-10-14T09:03:40.314Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -1984,25 +1852,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583070597,
+        "taskboard_order": 1476435820072,
         "total_voters": 4,
         "total_watchers": 6,
-        "us_order": 1475583070597,
+        "us_order": 1476435820072,
         "user_story": 6,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 6,
             "ref": 23,
             "subject": "Create the user model"
@@ -2030,7 +1886,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:11.343Z",
+        "created_date": "2016-10-14T09:03:41.203Z",
         "external_reference": null,
         "finished_date": null,
         "id": 22,
@@ -2040,8 +1896,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-8-25",
-        "modified_date": "2016-10-04T12:11:11.528Z",
+        "milestone_slug": "sprint-2016-9-4",
+        "modified_date": "2016-10-14T09:03:41.457Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -2067,25 +1923,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583071343,
+        "taskboard_order": 1476435821203,
         "total_voters": 2,
         "total_watchers": 3,
-        "us_order": 1475583071343,
+        "us_order": 1476435821203,
         "user_story": 7,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 7,
             "ref": 28,
             "subject": "Feature/improved image admin"
@@ -2110,7 +1954,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:11.713Z",
+        "created_date": "2016-10-14T09:03:41.705Z",
         "external_reference": null,
         "finished_date": null,
         "id": 23,
@@ -2120,8 +1964,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-8-25",
-        "modified_date": "2016-10-04T12:11:11.835Z",
+        "milestone_slug": "sprint-2016-9-4",
+        "modified_date": "2016-10-14T09:03:41.879Z",
         "owner": 8,
         "owner_extra_info": {
             "big_photo": null,
@@ -2163,25 +2007,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583071713,
+        "taskboard_order": 1476435821705,
         "total_voters": 6,
         "total_watchers": 3,
-        "us_order": 1475583071713,
+        "us_order": 1476435821705,
         "user_story": 7,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 7,
             "ref": 28,
             "subject": "Feature/improved image admin"
@@ -2206,7 +2038,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:11.998Z",
+        "created_date": "2016-10-14T09:03:42.137Z",
         "external_reference": null,
         "finished_date": null,
         "id": 24,
@@ -2216,8 +2048,8 @@
         "is_voter": true,
         "is_watcher": true,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-8-25",
-        "modified_date": "2016-10-04T12:11:12.120Z",
+        "milestone_slug": "sprint-2016-9-4",
+        "modified_date": "2016-10-14T09:03:42.321Z",
         "owner": 15,
         "owner_extra_info": {
             "big_photo": null,
@@ -2263,25 +2095,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583071998,
+        "taskboard_order": 1476435822137,
         "total_voters": 2,
         "total_watchers": 7,
-        "us_order": 1475583071998,
+        "us_order": 1476435822137,
         "user_story": 7,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 7,
             "ref": 28,
             "subject": "Feature/improved image admin"
@@ -2310,7 +2130,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:12.278Z",
+        "created_date": "2016-10-14T09:03:42.572Z",
         "external_reference": null,
         "finished_date": null,
         "id": 25,
@@ -2320,8 +2140,8 @@
         "is_voter": true,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-8-25",
-        "modified_date": "2016-10-04T12:11:12.430Z",
+        "milestone_slug": "sprint-2016-9-4",
+        "modified_date": "2016-10-14T09:03:42.780Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -2351,25 +2171,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583072278,
+        "taskboard_order": 1476435822572,
         "total_voters": 4,
         "total_watchers": 2,
-        "us_order": 1475583072278,
+        "us_order": 1476435822572,
         "user_story": 7,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 7,
             "ref": 28,
             "subject": "Feature/improved image admin"
@@ -2393,9 +2201,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:12.613Z",
+        "created_date": "2016-10-14T09:03:43.006Z",
         "external_reference": null,
-        "finished_date": "2016-09-04T15:26:10.209Z",
+        "finished_date": "2016-09-14T12:18:37.508Z",
         "id": 26,
         "is_blocked": false,
         "is_closed": true,
@@ -2403,8 +2211,8 @@
         "is_voter": true,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-8-25",
-        "modified_date": "2016-10-04T12:11:12.764Z",
+        "milestone_slug": "sprint-2016-9-4",
+        "modified_date": "2016-10-14T09:03:43.222Z",
         "owner": 9,
         "owner_extra_info": {
             "big_photo": null,
@@ -2462,25 +2270,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583072613,
+        "taskboard_order": 1476435823006,
         "total_voters": 7,
         "total_watchers": 5,
-        "us_order": 1475583072613,
+        "us_order": 1476435823006,
         "user_story": 7,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
+            "epics": null,
             "id": 7,
             "ref": 28,
             "subject": "Feature/improved image admin"
@@ -2507,7 +2303,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:13.416Z",
+        "created_date": "2016-10-14T09:03:44.101Z",
         "external_reference": null,
         "finished_date": null,
         "id": 27,
@@ -2517,8 +2313,8 @@
         "is_voter": true,
         "is_watcher": true,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-8-25",
-        "modified_date": "2016-10-04T12:11:13.609Z",
+        "milestone_slug": "sprint-2016-9-4",
+        "modified_date": "2016-10-14T09:03:44.315Z",
         "owner": 11,
         "owner_extra_info": {
             "big_photo": null,
@@ -2552,13 +2348,36 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583073416,
+        "taskboard_order": 1476435824101,
         "total_voters": 6,
         "total_watchers": 4,
-        "us_order": 1475583073416,
+        "us_order": 1476435824101,
         "user_story": 8,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#4e9a06",
+                    "id": 4,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 123,
+                    "subject": "Feature/improved image admin"
+                },
+                {
+                    "color": "#73d216",
+                    "id": 17,
+                    "project": {
+                        "id": 3,
+                        "name": "Project Example 2",
+                        "slug": "project-2"
+                    },
+                    "ref": 89,
+                    "subject": "Fixing templates for Django 1.6."
+                }
+            ],
             "id": 8,
             "ref": 34,
             "subject": "Support for bulk actions"
@@ -2584,7 +2403,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:14.276Z",
+        "created_date": "2016-10-14T09:03:45.036Z",
         "external_reference": null,
         "finished_date": null,
         "id": 28,
@@ -2594,8 +2413,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-8-25",
-        "modified_date": "2016-10-04T12:11:14.477Z",
+        "milestone_slug": "sprint-2016-9-4",
+        "modified_date": "2016-10-14T09:03:45.247Z",
         "owner": 5,
         "owner_extra_info": {
             "big_photo": null,
@@ -2633,10 +2452,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583074276,
+        "taskboard_order": 1476435825036,
         "total_voters": 6,
         "total_watchers": 3,
-        "us_order": 1475583074276,
+        "us_order": 1476435825036,
         "user_story": 9,
         "user_story_extra_info": {
             "epics": null,
@@ -2664,9 +2483,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:14.695Z",
+        "created_date": "2016-10-14T09:03:45.497Z",
         "external_reference": null,
-        "finished_date": "2016-08-27T15:28:15.209Z",
+        "finished_date": "2016-09-06T12:20:42.508Z",
         "id": 29,
         "is_blocked": false,
         "is_closed": true,
@@ -2674,8 +2493,8 @@
         "is_voter": true,
         "is_watcher": true,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-8-25",
-        "modified_date": "2016-10-04T12:11:14.815Z",
+        "milestone_slug": "sprint-2016-9-4",
+        "modified_date": "2016-10-14T09:03:45.645Z",
         "owner": 14,
         "owner_extra_info": {
             "big_photo": null,
@@ -2725,10 +2544,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583074695,
+        "taskboard_order": 1476435825497,
         "total_voters": 6,
         "total_watchers": 3,
-        "us_order": 1475583074695,
+        "us_order": 1476435825497,
         "user_story": 9,
         "user_story_extra_info": {
             "epics": null,
@@ -2756,7 +2575,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-10-04T12:11:15.416Z",
+        "created_date": "2016-10-14T09:03:46.288Z",
         "external_reference": null,
         "finished_date": null,
         "id": 30,
@@ -2766,8 +2585,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-8-25",
-        "modified_date": "2016-10-04T12:11:15.639Z",
+        "milestone_slug": "sprint-2016-9-4",
+        "modified_date": "2016-10-14T09:03:46.508Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -2797,25 +2616,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1475583075416,
+        "taskboard_order": 1476435826288,
         "total_voters": 5,
         "total_watchers": 7,
-        "us_order": 1475583075416,
+        "us_order": 1476435826288,
         "user_story": 10,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#edd400",
-                    "id": 6,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 125,
-                    "subject": "Added file copying and processing of images (resizing)"
-                }
-            ],
+            "epics": null,
             "id": 10,
             "ref": 39,
             "subject": "Add setting to allow regular users to create folders at the root level."

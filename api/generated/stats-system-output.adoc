@@ -2,30 +2,30 @@
 ----
 {
     "projects": {
-        "average_last_five_working_days": 1.4,
-        "average_last_seven_days": 1.0,
+        "average_last_five_working_days": 0.0,
+        "average_last_seven_days": 0.0,
         "percent_with_backlog": 0.0,
         "percent_with_backlog_and_kanban": 100.0,
         "percent_with_kanban": 0.0,
-        "today": 0,
+        "today": 7,
         "total": 8,
         "total_with_backlog": 0,
         "total_with_backlog_and_kanban": 8,
         "total_with_kanban": 0
     },
     "users": {
-        "average_last_five_working_days": 2.0,
-        "average_last_seven_days": 1.4285714285714286,
+        "average_last_five_working_days": 0.0,
+        "average_last_seven_days": 0.0,
         "counts_last_year_per_week": {
-            "2016-10-03": 13
+            "2016-10-10": 13
         },
-        "today": 2,
+        "today": 12,
         "total": 13
     },
     "userstories": {
-        "average_last_five_working_days": 28.6,
-        "average_last_seven_days": 20.428571428571427,
-        "today": 8,
+        "average_last_five_working_days": 0.0,
+        "average_last_seven_days": 0.0,
+        "today": 151,
         "total": 180
     }
 }

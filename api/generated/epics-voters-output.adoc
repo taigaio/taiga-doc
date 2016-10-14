@@ -3,6 +3,6 @@
 {
     "full_name": "Gogs",
     "id": 4,
-    "username": "gogs-6553bcb278534d4787c6d283ebdbc2da"
+    "username": "gogs-f33ddbd6ecc64da1b18d5b9bd902d2b6"
 }
 ----

@@ -11,106 +11,106 @@
     "completed_userstories": 1,
     "days": [
         {
-            "day": "2016-08-10",
-            "name": 10,
+            "day": "2016-08-20",
+            "name": 20,
             "open_points": 184.0,
             "optimal_points": 184.0
         },
         {
-            "day": "2016-08-11",
-            "name": 11,
+            "day": "2016-08-21",
+            "name": 21,
             "open_points": 184.0,
             "optimal_points": 171.73333333333332
         },
         {
-            "day": "2016-08-12",
-            "name": 12,
+            "day": "2016-08-22",
+            "name": 22,
             "open_points": 184.0,
             "optimal_points": 159.46666666666664
         },
         {
-            "day": "2016-08-13",
-            "name": 13,
+            "day": "2016-08-23",
+            "name": 23,
             "open_points": 184.0,
             "optimal_points": 147.19999999999996
         },
         {
-            "day": "2016-08-14",
-            "name": 14,
+            "day": "2016-08-24",
+            "name": 24,
             "open_points": 181.25,
             "optimal_points": 134.93333333333328
         },
         {
-            "day": "2016-08-15",
-            "name": 15,
+            "day": "2016-08-25",
+            "name": 25,
             "open_points": 181.25,
             "optimal_points": 122.66666666666661
         },
         {
-            "day": "2016-08-16",
-            "name": 16,
+            "day": "2016-08-26",
+            "name": 26,
             "open_points": 181.25,
             "optimal_points": 110.39999999999995
         },
         {
-            "day": "2016-08-17",
-            "name": 17,
+            "day": "2016-08-27",
+            "name": 27,
             "open_points": 181.25,
             "optimal_points": 98.13333333333328
         },
         {
-            "day": "2016-08-18",
-            "name": 18,
+            "day": "2016-08-28",
+            "name": 28,
             "open_points": 159.2,
             "optimal_points": 85.86666666666662
         },
         {
-            "day": "2016-08-19",
-            "name": 19,
-            "open_points": 159.2,
+            "day": "2016-08-29",
+            "name": 29,
+            "open_points": 154.86666666666667,
             "optimal_points": 73.59999999999995
         },
         {
-            "day": "2016-08-20",
-            "name": 20,
+            "day": "2016-08-30",
+            "name": 30,
             "open_points": 154.86666666666667,
             "optimal_points": 61.333333333333286
         },
         {
-            "day": "2016-08-21",
-            "name": 21,
+            "day": "2016-08-31",
+            "name": 31,
             "open_points": 154.86666666666667,
             "optimal_points": 49.06666666666662
         },
         {
-            "day": "2016-08-22",
-            "name": 22,
+            "day": "2016-09-01",
+            "name": 1,
             "open_points": 112.86666666666667,
             "optimal_points": 36.799999999999955
         },
         {
-            "day": "2016-08-23",
-            "name": 23,
+            "day": "2016-09-02",
+            "name": 2,
             "open_points": 103.96666666666667,
             "optimal_points": 24.53333333333329
         },
         {
-            "day": "2016-08-24",
-            "name": 24,
+            "day": "2016-09-03",
+            "name": 3,
             "open_points": 103.96666666666667,
             "optimal_points": 12.266666666666621
         },
         {
-            "day": "2016-08-25",
-            "name": 25,
+            "day": "2016-09-04",
+            "name": 4,
             "open_points": 103.96666666666667,
             "optimal_points": -4.618527782440651e-14
         }
     ],
-    "estimated_finish": "2016-08-25",
-    "estimated_start": "2016-08-10",
+    "estimated_finish": "2016-09-04",
+    "estimated_start": "2016-08-20",
     "iocaine_doses": 0,
-    "name": "Sprint 2016-8-10",
+    "name": "Sprint 2016-8-20",
     "total_points": {
         "1": 88.0,
         "2": 7.5,
