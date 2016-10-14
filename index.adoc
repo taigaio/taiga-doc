@@ -147,7 +147,6 @@ Taiga supports the inclusion of contrib plugins, each plugin has its own
 documentation and repository. The currently supported plugins are:
 
 * link:http://github.com/taigaio/taiga-contrib-github-auth[taiga-github-auth]: GitHub Auth plugin
-* link:http://github.com/taigaio/taiga-contrib-gogs[taiga-contrib-gogs]: Gogs integration plugin
 * link:http://github.com/taigaio/taiga-contrib-hipchat[taiga-contrib-hipchat]: HipChat integration plugin
 * link:http://github.com/taigaio/taiga-contrib-letschat[taiga-contrib-letschat]: Lets Chat integration plugin
 * link:http://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration plugin
