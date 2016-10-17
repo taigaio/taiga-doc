@@ -74,7 +74,7 @@ AUTH_TOKEN=$( echo ${USER_AUTH_DETAIL} | grep -Po '"auth_token":.*?[^\\]",' | cu
 
 ==== Application token authentication
 
-This kind of tokes are designed for allowing external apps use the Taiga API, they are associated to an existing user and an Application. They can be manually created via the django ADMIN or programatically created via API.
+This kind of tokens are designed for allowing external apps use the Taiga API, they are associated to an existing user and an Application. They can be manually created via the django ADMIN or programatically created via API.
 
 They work in the same way than standard Taiga authentication tokens but the "Authorization" header change slightly. Its format should be:
 
