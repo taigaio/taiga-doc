@@ -96,14 +96,14 @@ How I can make a backup of the data? And then restore them?
 To backup data from your server you just need to store a copy of the database and attachments files. That is, You just need to make a dump of the database and a copy of `taiga-back/media directory`.
 
 1. Create dump:
-
++
 [source,bash]
 ----
 pg_dump taiga > taiga.sql
 ----
 
-2.C opy media to a `<dest>`:
-
+2. Copy media to a `<dest>`:
++
 [source,bash]
 ----
 cp -r taiga-back/media <dest>
