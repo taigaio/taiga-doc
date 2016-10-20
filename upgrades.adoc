@@ -8,6 +8,7 @@ in time with the *stable* branch of git or use the last major version of each co
 **No packaged version of Taiga is available at this moment.**
 
 .Frontend application
+
 [source,bash]
 ----
 cd ~/taiga-front-dist
@@ -17,8 +18,10 @@ git pull
 
 .Backend application
 
+WARNING: As user "taiga" or whatever user you use, do not run this code as "root" to avoid errors.
+
+[source,bash]
 ----
-As user "taiga" or whatever user you use, do not run this code as "root" to avoid errors.
 cd ~/taiga-back
 git checkout stable
 workon taiga
@@ -28,6 +31,7 @@ pip install --upgrade -r requirements.txt
 
 WARNING: If you have some pcontrib plugin installed you should to upgrade then before the next step.
 
+[source,bash]
 ----
 python manage.py migrate --noinput
 python manage.py compilemessages
@@ -41,9 +45,6 @@ In case taiga-celery is configured reload it too:
 ----
 circusctl reload taiga-celery
 ----
-
-
-
 
 Upgrades notes
 --------------
