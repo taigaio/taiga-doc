@@ -7,8 +7,8 @@ in time with the *stable* branch of git or use the last major version of each co
 
 **No packaged version of Taiga is available at this moment.**
 
-Default upgrade process:
-------------------------
+Default upgrade process
+-----------------------
 
 Frontend application
 ~~~~~~~~~~~~~~~~~~~~
