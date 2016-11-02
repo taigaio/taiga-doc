@@ -193,3 +193,20 @@ Reboot the system
 ----
 $ sudo reboot
 ----
+
+
+3.0.0 > 3.1.0
+-------------
+
+Follow the default process.
+
+The migration could take a long time if you have a large database: in these release PostgreSQL > 9.4 will be the oficial recomended version because all JSON columns will be migrated to JSONB.
+
+You should to reload the fixtures with:
+
+----
+cd taiga-back
+workon taiga
+python manage.py loaddata initial_project_templates --traceback
+----
+
