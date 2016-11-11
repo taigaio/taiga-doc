@@ -1,94 +1,92 @@
 [source,json]
 ----
 {
-    "assigned_to": 13,
+    "assigned_to": 14,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Alvaro Molina",
+        "full_name_display": "Miguel Molina",
+        "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+        "id": 14,
+        "is_active": true,
+        "photo": null,
+        "username": "user8"
+    },
+    "blocked_note": "",
+    "blocked_note_html": "",
+    "comment": "",
+    "created_date": "2016-11-11T07:50:27.834Z",
+    "description": "Delectus animi totam quis quia officiis ipsa alias quidem, sapiente inventore a quas libero molestias porro dolore alias, doloribus illum suscipit, velit veniam ullam quam at saepe eveniet nostrum dolor laboriosam, voluptatibus optio amet aliquam assumenda sequi aperiam at. Odio illo ullam illum eaque, quaerat saepe aspernatur error totam natus aliquid sit nostrum ducimus earum eaque.",
+    "description_html": "<p>Delectus animi totam quis quia officiis ipsa alias quidem, sapiente inventore a quas libero molestias porro dolore alias, doloribus illum suscipit, velit veniam ullam quam at saepe eveniet nostrum dolor laboriosam, voluptatibus optio amet aliquam assumenda sequi aperiam at. Odio illo ullam illum eaque, quaerat saepe aspernatur error totam natus aliquid sit nostrum ducimus earum eaque.</p>",
+    "external_reference": null,
+    "finished_date": "2016-11-11T07:50:27.840Z",
+    "generated_user_stories": null,
+    "id": 21,
+    "is_blocked": false,
+    "is_closed": true,
+    "is_voter": false,
+    "is_watcher": false,
+    "milestone": null,
+    "modified_date": "2016-11-11T07:50:28.091Z",
+    "neighbors": {
+        "next": {
+            "id": 20,
+            "ref": 61,
+            "subject": "Create testsuite with matrix builds"
+        },
+        "previous": {
+            "id": 113,
+            "ref": 77,
+            "subject": "Issue 1"
+        }
+    },
+    "owner": 13,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Mohamed Ortega",
         "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
         "id": 13,
         "is_active": true,
         "photo": null,
         "username": "user7"
     },
-    "blocked_note": "",
-    "blocked_note_html": "",
-    "comment": "",
-    "created_date": "2016-10-14T09:04:20.431Z",
-    "description": "Ipsa id modi, a illo voluptates tenetur et placeat repudiandae nisi fugiat debitis officiis, nulla aliquid dolor quaerat saepe ut quasi quas aspernatur fuga labore, a porro sit, aliquid ut laboriosam a quisquam dolore. Aut similique excepturi pariatur repudiandae. Delectus magnam eligendi voluptatibus cumque doloremque tempora dolor dignissimos doloribus expedita, nisi cum labore ex officiis nesciunt nihil ipsam odit assumenda suscipit sint, numquam expedita nam repellat nihil eum ipsam, animi tempora excepturi laborum mollitia beatae officia quod voluptas soluta sit. Excepturi rerum corporis, saepe voluptates ratione reprehenderit aut voluptatem ducimus ipsum distinctio.",
-    "description_html": "<p>Ipsa id modi, a illo voluptates tenetur et placeat repudiandae nisi fugiat debitis officiis, nulla aliquid dolor quaerat saepe ut quasi quas aspernatur fuga labore, a porro sit, aliquid ut laboriosam a quisquam dolore. Aut similique excepturi pariatur repudiandae. Delectus magnam eligendi voluptatibus cumque doloremque tempora dolor dignissimos doloribus expedita, nisi cum labore ex officiis nesciunt nihil ipsam odit assumenda suscipit sint, numquam expedita nam repellat nihil eum ipsam, animi tempora excepturi laborum mollitia beatae officia quod voluptas soluta sit. Excepturi rerum corporis, saepe voluptates ratione reprehenderit aut voluptatem ducimus ipsum distinctio.</p>",
-    "external_reference": null,
-    "finished_date": null,
-    "generated_user_stories": null,
-    "id": 23,
-    "is_blocked": false,
-    "is_closed": false,
-    "is_voter": false,
-    "is_watcher": false,
-    "milestone": null,
-    "modified_date": "2016-10-14T09:04:20.563Z",
-    "neighbors": {
-        "next": {
-            "id": 22,
-            "ref": 118,
-            "subject": "Create testsuite with matrix builds"
-        },
-        "previous": {
-            "id": 139,
-            "ref": 137,
-            "subject": "Issue 1"
-        }
-    },
-    "owner": 6,
-    "owner_extra_info": {
-        "big_photo": null,
-        "full_name_display": "Silvia Soto",
-        "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-        "id": 6,
-        "is_active": true,
-        "photo": null,
-        "username": "user6532909695705815086"
-    },
-    "priority": 1,
+    "priority": 2,
     "project": 1,
-    "ref": 119,
-    "severity": 5,
-    "status": 5,
+    "ref": 62,
+    "severity": 2,
+    "status": 6,
     "status_extra_info": {
-        "color": "#89BAB4",
-        "is_closed": false,
-        "name": "Necesita informaci\u00f3n"
+        "color": "#CC0000",
+        "is_closed": true,
+        "name": "Rechazada"
     },
-    "subject": "Migrate to Python 3 and milk a beautiful cow",
+    "subject": "Create the user model",
     "tags": [
         [
-            "earum",
+            "laboriosam",
             null
         ],
         [
-            "ab",
+            "provident",
+            "#7fdcf2"
+        ],
+        [
+            "ex",
+            "#e06613"
+        ],
+        [
+            "repellendus",
             null
-        ],
-        [
-            "modi",
-            "#494e30"
-        ],
-        [
-            "fuga",
-            "#e86797"
-        ],
-        [
-            "quod",
-            "#0e5b24"
         ]
     ],
-    "total_voters": 8,
-    "total_watchers": 2,
+    "total_voters": 3,
+    "total_watchers": 4,
     "type": 1,
     "version": 1,
     "watchers": [
-        10,
-        15
+        1,
+        3,
+        5,
+        14
     ]
 }
 ----

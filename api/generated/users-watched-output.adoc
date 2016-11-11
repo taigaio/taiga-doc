@@ -1,19 +1,19 @@
 [source,json]
 ----
 {
-    "assigned_to": 8,
+    "assigned_to": 10,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Alba Leon",
-        "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-        "id": 8,
+        "full_name_display": "Enrique Crespo",
+        "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+        "id": 10,
         "is_active": true,
         "photo": null,
-        "username": "user2"
+        "username": "user4"
     },
-    "created_date": "2016-10-14T09:07:38.005Z",
+    "created_date": "2016-11-11T07:53:40.243Z",
     "description": null,
-    "id": 113,
+    "id": 25,
     "is_private": null,
     "is_voter": false,
     "is_watcher": false,
@@ -21,46 +21,26 @@
     "name": null,
     "project": 7,
     "project_blocked_code": "blocked-by-staff",
-    "project_is_private": true,
+    "project_is_private": false,
     "project_name": "Project Example 6",
     "project_slug": "project-6",
-    "ref": 76,
+    "ref": 60,
     "slug": null,
     "status": "New",
-    "status_color": "#8C2318",
-    "subject": "Create the user model",
+    "status_color": "#999999",
+    "subject": "Create the html template",
     "tags_colors": [
         {
-            "color": null,
-            "name": "dicta"
-        },
-        {
-            "color": "#50a0d5",
-            "name": "quos"
-        },
-        {
-            "color": "#da3ba4",
-            "name": "ipsum"
-        },
-        {
-            "color": "#db7ec2",
-            "name": "dolorum"
-        },
-        {
-            "color": "#9631e4",
-            "name": "debitis"
+            "color": "#570ce3",
+            "name": "ratione"
         },
         {
             "color": null,
-            "name": "praesentium"
-        },
-        {
-            "color": null,
-            "name": "laborum"
+            "name": "iure"
         }
     ],
-    "total_voters": 4,
-    "total_watchers": 7,
-    "type": "issue"
+    "total_voters": 3,
+    "total_watchers": 5,
+    "type": "epic"
 }
 ----

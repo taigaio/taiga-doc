@@ -4,7 +4,7 @@ curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
-        "cancel_token": "eyJ1c2VyX2NhbmNlbF9hY2NvdW50X2lkIjo2fQ:1buyee:wxlHwVGDiHy6K2RlpVb0P3S_b6c"
+        "cancel_token": "eyJ1c2VyX2NhbmNlbF9hY2NvdW50X2lkIjo2fQ:1c56xv:TfWFYNTYa2OclgDX9M3FN2I8wSQ"
     }' \
 -s http://localhost:8000/api/v1/users/cancel
 ----

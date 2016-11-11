@@ -1,95 +1,76 @@
 [source,json]
 ----
 {
-    "assigned_points": 946.0,
+    "assigned_points": 181.0,
     "assigned_points_per_role": {
-        "1": 256.5,
-        "2": 243.0,
-        "3": 255.5,
-        "4": 191.0
-    },
-    "closed_points": 134.0,
-    "closed_points_per_role": {
-        "1": 24.0,
-        "2": 51.0,
-        "3": 19.0,
+        "1": 72.0,
+        "2": 37.0,
+        "3": 32.0,
         "4": 40.0
     },
-    "defined_points": 1375.0,
+    "closed_points": 0,
+    "closed_points_per_role": {},
+    "defined_points": 735.5,
     "defined_points_per_role": {
-        "1": 373.0,
-        "2": 295.5,
-        "3": 342.5,
-        "4": 364.0
+        "1": 205.5,
+        "2": 136.0,
+        "3": 164.5,
+        "4": 229.5
     },
     "milestones": [
         {
             "client-increment": 0,
-            "evolution": 1098.0,
-            "name": "Sprint 2016-8-20",
-            "optimal": 1098.0,
+            "evolution": 734.0,
+            "name": "Sprint 2016-9-17",
+            "optimal": 734.0,
             "team-increment": 0
         },
         {
             "client-increment": 0,
-            "evolution": 1056.0,
-            "name": "Sprint 2016-9-4",
-            "optimal": 960.75,
+            "evolution": 734.0,
+            "name": "Sprint 2016-10-2",
+            "optimal": 611.6666666666666,
             "team-increment": 0
         },
         {
             "client-increment": 0,
-            "evolution": 1056.0,
-            "name": "Sprint 2016-9-19",
-            "optimal": 823.5,
-            "team-increment": 0
-        },
-        {
-            "client-increment": 0,
-            "evolution": 998.0,
-            "name": "Sprint 2016-10-4",
-            "optimal": 686.25,
-            "team-increment": 0
-        },
-        {
-            "client-increment": 0,
-            "evolution": 964.0,
+            "evolution": 734.0,
             "name": "Sprint futuro",
-            "optimal": 549.0,
+            "optimal": 489.33333333333337,
             "team-increment": 0
         },
         {
             "client-increment": 0,
             "evolution": null,
             "name": "Sprint futuro",
-            "optimal": 411.75,
+            "optimal": 367.0,
             "team-increment": 0
         },
         {
             "client-increment": 0,
             "evolution": null,
             "name": "Sprint futuro",
-            "optimal": 274.5,
+            "optimal": 244.66666666666669,
             "team-increment": 0
         },
         {
             "client-increment": 0,
             "evolution": null,
             "name": "Sprint futuro",
-            "optimal": 137.25,
+            "optimal": 122.33333333333337,
             "team-increment": 0
         },
         {
             "client-increment": 0,
             "evolution": null,
             "name": "Final de proyecto",
-            "optimal": 0.0,
+            "optimal": 4.263256414560601e-14,
             "team-increment": 0
         }
     ],
     "name": "Project Example 0",
     "speed": 0,
-    "total_milestones": 8,
-    "total_points": 1098.0
+    "total_milestones": 6,
+    "total_points": 734.0
 }
 ----

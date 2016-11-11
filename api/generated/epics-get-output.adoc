@@ -1,77 +1,81 @@
 [source,json]
 ----
 {
-    "assigned_to": 11,
-    "assigned_to_extra_info": {
-        "big_photo": null,
-        "full_name_display": "German Benitez",
-        "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-        "id": 11,
-        "is_active": true,
-        "photo": null,
-        "username": "user5"
-    },
+    "assigned_to": null,
+    "assigned_to_extra_info": null,
     "attachments": [],
     "blocked_note": "",
     "blocked_note_html": "",
     "client_requirement": false,
-    "color": "#fcaf3e",
+    "color": "#f57900",
     "comment": "",
-    "created_date": "2016-10-14T09:04:28.063Z",
-    "description": "Labore voluptate omnis voluptatum eius laboriosam quam, sed nostrum rerum, ab dolorum provident repudiandae ad expedita. Perferendis non qui accusantium dolor facere voluptatum modi cumque amet esse, ad velit minus consectetur enim fugit libero officiis iusto eveniet, vel itaque voluptatum eaque? Beatae sunt amet atque ducimus perferendis inventore accusantium esse voluptatem nulla labore, similique aliquid amet libero minima.",
-    "description_html": "<p>Labore voluptate omnis voluptatum eius laboriosam quam, sed nostrum rerum, ab dolorum provident repudiandae ad expedita. Perferendis non qui accusantium dolor facere voluptatum modi cumque amet esse, ad velit minus consectetur enim fugit libero officiis iusto eveniet, vel itaque voluptatum eaque? Beatae sunt amet atque ducimus perferendis inventore accusantium esse voluptatem nulla labore, similique aliquid amet libero minima.</p>",
-    "epics_order": 1476435868063,
+    "created_date": "2016-11-11T07:50:36.441Z",
+    "description": "Distinctio minus exercitationem provident quibusdam aliquam debitis aperiam quae, corrupti tempora accusamus beatae unde quisquam aliquam, numquam quod repellat obcaecati perferendis laudantium exercitationem deleniti? Tempora quibusdam eius nostrum vero odio fugiat, velit tempore voluptatem, dolor magnam excepturi ex? Doloremque architecto officiis ex error eaque labore neque, vel eveniet dolorem porro nemo ab quidem unde consectetur atque cupiditate, nulla rem inventore quo vero voluptate officia eligendi, necessitatibus tempore voluptas quas consequuntur aliquam neque sint vitae magni blanditiis. Dicta ratione excepturi nesciunt earum ipsa necessitatibus soluta quisquam fugiat consequatur quo, et exercitationem dignissimos porro modi, perferendis quae necessitatibus debitis animi suscipit, molestiae quos quidem ab unde explicabo ducimus.",
+    "description_html": "<p>Distinctio minus exercitationem provident quibusdam aliquam debitis aperiam quae, corrupti tempora accusamus beatae unde quisquam aliquam, numquam quod repellat obcaecati perferendis laudantium exercitationem deleniti? Tempora quibusdam eius nostrum vero odio fugiat, velit tempore voluptatem, dolor magnam excepturi ex? Doloremque architecto officiis ex error eaque labore neque, vel eveniet dolorem porro nemo ab quidem unde consectetur atque cupiditate, nulla rem inventore quo vero voluptate officia eligendi, necessitatibus tempore voluptas quas consequuntur aliquam neque sint vitae magni blanditiis. Dicta ratione excepturi nesciunt earum ipsa necessitatibus soluta quisquam fugiat consequatur quo, et exercitationem dignissimos porro modi, perferendis quae necessitatibus debitis animi suscipit, molestiae quos quidem ab unde explicabo ducimus.</p>",
+    "epics_order": 1478850636441,
     "id": 1,
     "is_blocked": false,
     "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
-    "modified_date": "2016-10-14T09:04:28.220Z",
+    "modified_date": "2016-11-11T07:50:36.699Z",
     "neighbors": {
         "next": {
             "id": 2,
-            "ref": 121,
-            "subject": "Implement the form"
+            "ref": 64,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
         },
         "previous": {
             "id": 30,
-            "ref": 127,
+            "ref": 67,
             "subject": "New epic"
         }
     },
-    "owner": 7,
+    "owner": 10,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Marcos Ortiz",
-        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-        "id": 7,
+        "full_name_display": "Enrique Crespo",
+        "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+        "id": 10,
         "is_active": true,
         "photo": null,
-        "username": "user1"
+        "username": "user4"
     },
     "project": 1,
-    "ref": 120,
-    "status": 2,
+    "ref": 63,
+    "status": 4,
     "status_extra_info": {
-        "color": "#ff8a84",
+        "color": "#fcc000",
         "is_closed": false,
-        "name": "Preparada"
+        "name": "Lista para testear"
     },
-    "subject": "Add tests for bulk operations",
+    "subject": "Support for bulk actions",
     "tags": [
         [
-            "quaerat",
-            "#0b4425"
+            "libero",
+            "#5b20bf"
+        ],
+        [
+            "dolor",
+            null
+        ],
+        [
+            "ratione",
+            "#570ce3"
         ]
     ],
     "team_requirement": false,
-    "total_voters": 3,
-    "total_watchers": 0,
+    "total_voters": 7,
+    "total_watchers": 3,
     "user_stories_counts": {
         "closed": 0,
-        "opened": 0
+        "opened": 6
     },
     "version": 1,
-    "watchers": []
+    "watchers": [
+        2,
+        7,
+        12
+    ]
 }
 ----

@@ -1,13 +1,13 @@
 [source,json]
 ----
 {
-    "created_date": "2016-10-14T09:03:28.421Z",
-    "description": "accusamus sit corporis ipsum",
+    "created_date": "2016-11-11T07:49:50.159Z",
+    "description": "vel omnis culpa quisquam nulla",
     "id": 1,
-    "modified_date": "2016-10-14T09:20:05.054Z",
+    "modified_date": "2016-11-11T08:13:53.191Z",
     "name": "Duration 1",
     "order": 1,
     "project": 1,
-    "type": "date"
+    "type": "multiline"
 }
 ----

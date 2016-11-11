@@ -2,39 +2,39 @@
 ----
 {
     "closed": false,
-    "closed_points": 42.0,
-    "created_date": "2016-08-20T09:03:28.508Z",
+    "closed_points": null,
+    "created_date": "2016-09-17T07:49:50.220Z",
     "disponibility": 0.0,
-    "estimated_finish": "2016-09-04",
-    "estimated_start": "2016-08-20",
+    "estimated_finish": "2016-10-02",
+    "estimated_start": "2016-09-17",
     "id": 1,
     "is_watcher": false,
-    "modified_date": "2016-10-14T09:20:39.500Z",
+    "modified_date": "2016-11-11T08:14:26.695Z",
     "name": "Sprint 2",
     "order": 10,
-    "owner": 10,
+    "owner": 12,
     "project": 1,
-    "slug": "sprint-2016-8-20",
-    "total_points": 184.0,
+    "slug": "sprint-2016-9-17",
+    "total_points": 92.0,
     "total_watchers": 0,
     "user_stories": [
         {
-            "assigned_to": 9,
+            "assigned_to": 15,
             "assigned_to_extra_info": {
                 "big_photo": null,
-                "full_name_display": "Esther Ferrer",
-                "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-                "id": 9,
+                "full_name_display": "Virginia Castro",
+                "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+                "id": 15,
                 "is_active": true,
                 "photo": null,
-                "username": "user3"
+                "username": "user9"
             },
             "attachments": [],
             "backlog_order": 10,
             "blocked_note": "",
             "client_requirement": false,
             "comment": "",
-            "created_date": "2016-10-14T09:03:28.588Z",
+            "created_date": "2016-11-11T07:49:50.280Z",
             "epic_order": null,
             "epics": null,
             "external_reference": null,
@@ -48,24 +48,24 @@
             "kanban_order": 10,
             "milestone": 1,
             "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2016-8-20",
-            "modified_date": "2016-10-14T09:20:02.755Z",
+            "milestone_slug": "sprint-2016-9-17",
+            "modified_date": "2016-11-11T08:13:50.631Z",
             "origin_issue": null,
-            "owner": 8,
+            "owner": 12,
             "owner_extra_info": {
                 "big_photo": null,
-                "full_name_display": "Alba Leon",
-                "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-                "id": 8,
+                "full_name_display": "Vanesa Garcia",
+                "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+                "id": 12,
                 "is_active": true,
                 "photo": null,
-                "username": "user2"
+                "username": "user6"
             },
             "points": {
-                "1": 8,
+                "1": 12,
                 "2": 2,
                 "3": 5,
-                "4": 6
+                "4": 5
             },
             "project": 1,
             "project_extra_info": {
@@ -85,31 +85,29 @@
             "subject": "Patching subject",
             "tags": [
                 [
-                    "modi",
+                    "cum",
                     null
                 ]
             ],
             "tasks": [],
             "team_requirement": false,
-            "total_points": 13.0,
-            "total_voters": 0,
-            "total_watchers": 6,
+            "total_points": 44.0,
+            "total_voters": 4,
+            "total_watchers": 4,
             "tribe_gig": null,
             "version": 2,
             "watchers": [
-                3,
+                2,
                 6,
                 7,
-                10,
-                11,
-                15
+                8
             ]
         },
         {
             "assigned_to": 7,
             "assigned_to_extra_info": {
                 "big_photo": null,
-                "full_name_display": "Marcos Ortiz",
+                "full_name_display": "Bego\u00f1a Flores",
                 "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
                 "id": 7,
                 "is_active": true,
@@ -121,7 +119,7 @@
             "blocked_note": "",
             "client_requirement": false,
             "comment": "",
-            "created_date": "2016-10-14T09:03:30.053Z",
+            "created_date": "2016-11-11T07:49:52.839Z",
             "epic_order": null,
             "epics": null,
             "external_reference": null,
@@ -135,24 +133,24 @@
             "kanban_order": 15,
             "milestone": 1,
             "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2016-8-20",
-            "modified_date": "2016-10-14T09:03:30.316Z",
+            "milestone_slug": "sprint-2016-9-17",
+            "modified_date": "2016-11-11T07:49:53.273Z",
             "origin_issue": null,
-            "owner": 9,
+            "owner": 6,
             "owner_extra_info": {
                 "big_photo": null,
-                "full_name_display": "Esther Ferrer",
-                "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-                "id": 9,
+                "full_name_display": "Vanesa Torres",
+                "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+                "id": 6,
                 "is_active": true,
                 "photo": null,
-                "username": "user3"
+                "username": "user2114747470430251528"
             },
             "points": {
-                "1": 5,
-                "2": 3,
-                "3": 12,
-                "4": 5
+                "1": 8,
+                "2": 8,
+                "3": 8,
+                "4": 6
             },
             "project": 1,
             "project_extra_info": {
@@ -161,272 +159,82 @@
                 "name": "Beta project patch",
                 "slug": "project-0"
             },
-            "ref": 5,
+            "ref": 6,
             "sprint_order": 15,
-            "status": 3,
-            "status_extra_info": {
-                "color": "#ff9900",
-                "is_closed": false,
-                "name": "En curso"
-            },
-            "subject": "get_actions() does not check for 'delete_selected' in actions",
-            "tags": [
-                [
-                    "amet",
-                    null
-                ],
-                [
-                    "totam",
-                    null
-                ],
-                [
-                    "mollitia",
-                    null
-                ]
-            ],
-            "tasks": [],
-            "team_requirement": false,
-            "total_points": 44.5,
-            "total_voters": 2,
-            "total_watchers": 7,
-            "tribe_gig": null,
-            "version": 1,
-            "watchers": [
-                1,
-                5,
-                6,
-                7,
-                9,
-                10,
-                14
-            ]
-        },
-        {
-            "assigned_to": 7,
-            "assigned_to_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Marcos Ortiz",
-                "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-                "id": 7,
-                "is_active": true,
-                "photo": null,
-                "username": "user1"
-            },
-            "attachments": [],
-            "backlog_order": 1476435812338,
-            "blocked_note": "",
-            "client_requirement": false,
-            "comment": "",
-            "created_date": "2016-10-14T09:03:32.338Z",
-            "epic_order": null,
-            "epics": [
-                {
-                    "color": "#4e9a06",
-                    "id": 4,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 123,
-                    "subject": "Feature/improved image admin"
-                }
-            ],
-            "external_reference": null,
-            "finish_date": "2016-10-14T09:03:32.814Z",
-            "generated_from_issue": null,
-            "id": 3,
-            "is_blocked": false,
-            "is_closed": true,
-            "is_voter": false,
-            "is_watcher": false,
-            "kanban_order": 1476435812338,
-            "milestone": 1,
-            "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2016-8-20",
-            "modified_date": "2016-10-14T09:03:32.638Z",
-            "origin_issue": null,
-            "owner": 13,
-            "owner_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Alvaro Molina",
-                "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-                "id": 13,
-                "is_active": true,
-                "photo": null,
-                "username": "user7"
-            },
-            "points": {
-                "1": 11,
-                "2": 4,
-                "3": 4,
-                "4": 11
-            },
-            "project": 1,
-            "project_extra_info": {
-                "id": 1,
-                "logo_small_url": null,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            "ref": 11,
-            "sprint_order": 1476435812339,
             "status": 4,
             "status_extra_info": {
                 "color": "#fcc000",
                 "is_closed": false,
                 "name": "Lista para testear"
             },
-            "subject": "Add tests for bulk operations",
+            "subject": "Added file copying and processing of images (resizing)",
             "tags": [
                 [
-                    "fugiat",
+                    "incidunt",
+                    null
+                ],
+                [
+                    "fugit",
+                    null
+                ],
+                [
+                    "illum",
                     null
                 ]
             ],
             "tasks": [],
             "team_requirement": false,
-            "total_points": 42.0,
-            "total_voters": 1,
-            "total_watchers": 2,
+            "total_points": 27.0,
+            "total_voters": 2,
+            "total_watchers": 4,
             "tribe_gig": null,
             "version": 1,
             "watchers": [
-                13,
-                15
+                5,
+                6,
+                8,
+                9
             ]
         },
         {
-            "assigned_to": 6,
-            "assigned_to_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Silvia Soto",
-                "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-                "id": 6,
-                "is_active": true,
-                "photo": null,
-                "username": "user6532909695705815086"
-            },
+            "assigned_to": null,
+            "assigned_to_extra_info": null,
             "attachments": [],
-            "backlog_order": 1476435813224,
+            "backlog_order": 1478850596612,
             "blocked_note": "",
             "client_requirement": false,
             "comment": "",
-            "created_date": "2016-10-14T09:03:33.224Z",
+            "created_date": "2016-11-11T07:49:56.612Z",
             "epic_order": null,
             "epics": null,
             "external_reference": null,
             "finish_date": null,
             "generated_from_issue": null,
-            "id": 4,
+            "id": 3,
             "is_blocked": false,
             "is_closed": false,
             "is_voter": false,
             "is_watcher": false,
-            "kanban_order": 1476435813224,
+            "kanban_order": 1478850596612,
             "milestone": 1,
             "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2016-8-20",
-            "modified_date": "2016-10-14T09:03:33.529Z",
+            "milestone_slug": "sprint-2016-9-17",
+            "modified_date": "2016-11-11T07:49:56.973Z",
             "origin_issue": null,
-            "owner": 14,
+            "owner": 5,
             "owner_extra_info": {
                 "big_photo": null,
-                "full_name_display": "Andrea Fernandez",
-                "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-                "id": 14,
+                "full_name_display": "Administrator",
+                "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+                "id": 5,
                 "is_active": true,
                 "photo": null,
-                "username": "user8"
+                "username": "admin"
             },
             "points": {
-                "1": 12,
-                "2": 4,
-                "3": 4,
-                "4": 9
-            },
-            "project": 1,
-            "project_extra_info": {
-                "id": 1,
-                "logo_small_url": null,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            "ref": 13,
-            "sprint_order": 1476435813225,
-            "status": 1,
-            "status_extra_info": {
-                "color": "#999999",
-                "is_closed": false,
-                "name": "Patch status name"
-            },
-            "subject": "Support for bulk actions",
-            "tags": [
-                [
-                    "tempore",
-                    null
-                ]
-            ],
-            "tasks": [],
-            "team_requirement": false,
-            "total_points": 52.0,
-            "total_voters": 6,
-            "total_watchers": 3,
-            "tribe_gig": null,
-            "version": 1,
-            "watchers": [
-                3,
-                9,
-                11
-            ]
-        },
-        {
-            "assigned_to": 6,
-            "assigned_to_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Silvia Soto",
-                "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-                "id": 6,
-                "is_active": true,
-                "photo": null,
-                "username": "user6532909695705815086"
-            },
-            "attachments": [],
-            "backlog_order": 1476435815902,
-            "blocked_note": "",
-            "client_requirement": false,
-            "comment": "",
-            "created_date": "2016-10-14T09:03:35.902Z",
-            "epic_order": null,
-            "epics": null,
-            "external_reference": null,
-            "finish_date": null,
-            "generated_from_issue": null,
-            "id": 5,
-            "is_blocked": false,
-            "is_closed": false,
-            "is_voter": false,
-            "is_watcher": false,
-            "kanban_order": 1476435815902,
-            "milestone": 1,
-            "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2016-8-20",
-            "modified_date": "2016-10-14T09:03:36.305Z",
-            "origin_issue": null,
-            "owner": 7,
-            "owner_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Marcos Ortiz",
-                "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-                "id": 7,
-                "is_active": true,
-                "photo": null,
-                "username": "user1"
-            },
-            "points": {
-                "1": 8,
-                "2": 7,
-                "3": 3,
+                "1": 2,
+                "2": 9,
+                "3": 6,
                 "4": 8
             },
             "project": 1,
@@ -436,127 +244,34 @@
                 "name": "Beta project patch",
                 "slug": "project-0"
             },
-            "ref": 19,
-            "sprint_order": 1476435815903,
-            "status": 3,
+            "ref": 12,
+            "sprint_order": 1478850596613,
+            "status": 2,
             "status_extra_info": {
-                "color": "#ff9900",
+                "color": "#ff8a84",
                 "is_closed": false,
-                "name": "En curso"
-            },
-            "subject": "Fixing templates for Django 1.6.",
-            "tags": [
-                [
-                    "impedit",
-                    null
-                ],
-                [
-                    "voluptatem",
-                    null
-                ]
-            ],
-            "tasks": [],
-            "team_requirement": false,
-            "total_points": 21.5,
-            "total_voters": 0,
-            "total_watchers": 6,
-            "tribe_gig": null,
-            "version": 1,
-            "watchers": [
-                2,
-                9,
-                11,
-                12,
-                13,
-                15
-            ]
-        },
-        {
-            "assigned_to": 8,
-            "assigned_to_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Alba Leon",
-                "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-                "id": 8,
-                "is_active": true,
-                "photo": null,
-                "username": "user2"
-            },
-            "attachments": [],
-            "backlog_order": 1476435817671,
-            "blocked_note": "",
-            "client_requirement": false,
-            "comment": "",
-            "created_date": "2016-10-14T09:03:37.671Z",
-            "epic_order": null,
-            "epics": null,
-            "external_reference": null,
-            "finish_date": null,
-            "generated_from_issue": null,
-            "id": 6,
-            "is_blocked": false,
-            "is_closed": false,
-            "is_voter": false,
-            "is_watcher": false,
-            "kanban_order": 1476435817671,
-            "milestone": 1,
-            "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2016-8-20",
-            "modified_date": "2016-10-14T09:03:37.985Z",
-            "origin_issue": null,
-            "owner": 8,
-            "owner_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Alba Leon",
-                "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-                "id": 8,
-                "is_active": true,
-                "photo": null,
-                "username": "user2"
-            },
-            "points": {
-                "1": 9,
-                "2": 2,
-                "3": 2,
-                "4": 4
-            },
-            "project": 1,
-            "project_extra_info": {
-                "id": 1,
-                "logo_small_url": null,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            "ref": 23,
-            "sprint_order": 1476435817672,
-            "status": 3,
-            "status_extra_info": {
-                "color": "#ff9900",
-                "is_closed": false,
-                "name": "En curso"
+                "name": "Preparada"
             },
             "subject": "Create the user model",
             "tags": [
                 [
-                    "reiciendis",
+                    "dolorem",
                     null
                 ],
                 [
-                    "corrupti",
+                    "at",
                     null
                 ]
             ],
             "tasks": [],
             "team_requirement": false,
-            "total_points": 11.0,
-            "total_voters": 7,
-            "total_watchers": 3,
+            "total_points": 21.0,
+            "total_voters": 1,
+            "total_watchers": 1,
             "tribe_gig": null,
             "version": 1,
             "watchers": [
-                3,
-                11,
-                14
+                11
             ]
         }
     ],

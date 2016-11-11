@@ -1,10 +1,10 @@
 [source,json]
 ----
 {
-    "auth_token": "eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxN30:1buyeg:TVBNZqXcNmHiVeLE-0CrqNCrDgA",
+    "auth_token": "eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxN30:1c56xx:bSef2p6kIuzrodAcxE9fbi3jSkg",
     "big_photo": null,
     "bio": "",
-    "color": "#60d6ee",
+    "color": "#fc1fb8",
     "email": "test-register2@email.com",
     "full_name": "test",
     "full_name_display": "test",
@@ -17,7 +17,6 @@
     "max_private_projects": null,
     "max_public_projects": null,
     "photo": null,
-    "projects_with_me": [],
     "roles": [],
     "theme": "",
     "timezone": "",

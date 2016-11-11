@@ -9,13 +9,13 @@
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:20:03.085Z",
+        "created_date": "2016-11-11T08:13:51.062Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
-        "id": 150,
+        "id": 132,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
@@ -24,17 +24,17 @@
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-10-14T09:20:03.105Z",
+        "modified_date": "2016-11-11T08:13:51.071Z",
         "origin_issue": null,
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
             "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "user6532909695705815086"
+            "username": "user2114747470430251528"
         },
         "points": {
             "1": 4,
@@ -49,7 +49,7 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 135,
+        "ref": 75,
         "sprint_order": 2,
         "status": 2,
         "status_extra_info": {
@@ -78,22 +78,22 @@
         "watchers": []
     },
     {
-        "assigned_to": 9,
+        "assigned_to": 15,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Esther Ferrer",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
             "is_active": true,
             "photo": null,
-            "username": "user3"
+            "username": "user9"
         },
         "attachments": [],
-        "backlog_order": 1476435808588,
+        "backlog_order": 1478850590280,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:28.588Z",
+        "created_date": "2016-11-11T07:49:50.280Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -104,27 +104,27 @@
         "is_closed": false,
         "is_voter": true,
         "is_watcher": true,
-        "kanban_order": 1476435808588,
+        "kanban_order": 1478850590280,
         "milestone": 1,
-        "milestone_name": "Sprint 2016-8-20",
-        "milestone_slug": "sprint-2016-8-20",
-        "modified_date": "2016-10-14T09:20:02.755Z",
+        "milestone_name": "Sprint 2016-9-17",
+        "milestone_slug": "sprint-2016-9-17",
+        "modified_date": "2016-11-11T08:13:50.631Z",
         "origin_issue": null,
-        "owner": 8,
+        "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
             "is_active": true,
             "photo": null,
-            "username": "user2"
+            "username": "user6"
         },
         "points": {
-            "1": 8,
+            "1": 12,
             "2": 2,
             "3": 5,
-            "4": 6
+            "4": 5
         },
         "project": 1,
         "project_extra_info": {
@@ -144,31 +144,29 @@
         "subject": "Patching subject",
         "tags": [
             [
-                "modi",
-                "#494e30"
+                "cum",
+                "#ab14d9"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 13.0,
-        "total_voters": 1,
-        "total_watchers": 6,
+        "total_points": 44.0,
+        "total_voters": 5,
+        "total_watchers": 4,
         "tribe_gig": null,
         "version": 2,
         "watchers": [
-            3,
+            2,
             6,
             7,
-            10,
-            11,
-            15
+            8
         ]
     },
     {
         "assigned_to": 7,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
+            "full_name_display": "Bego\u00f1a Flores",
             "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
             "id": 7,
             "is_active": true,
@@ -176,11 +174,11 @@
             "username": "user1"
         },
         "attachments": [],
-        "backlog_order": 1476435810052,
+        "backlog_order": 1478850592839,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:30.053Z",
+        "created_date": "2016-11-11T07:49:52.839Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -191,26 +189,209 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": true,
-        "kanban_order": 1476435810053,
+        "kanban_order": 1478850592839,
         "milestone": 1,
-        "milestone_name": "Sprint 2016-8-20",
-        "milestone_slug": "sprint-2016-8-20",
-        "modified_date": "2016-10-14T09:03:30.316Z",
+        "milestone_name": "Sprint 2016-9-17",
+        "milestone_slug": "sprint-2016-9-17",
+        "modified_date": "2016-11-11T07:49:53.273Z",
         "origin_issue": null,
-        "owner": 9,
+        "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Esther Ferrer",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "user3"
+            "username": "user2114747470430251528"
         },
         "points": {
-            "1": 5,
-            "2": 3,
-            "3": 12,
+            "1": 8,
+            "2": 8,
+            "3": 8,
+            "4": 6
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 6,
+        "sprint_order": 15,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Lista para testear"
+        },
+        "subject": "Added file copying and processing of images (resizing)",
+        "tags": [
+            [
+                "incidunt",
+                null
+            ],
+            [
+                "fugit",
+                null
+            ],
+            [
+                "illum",
+                "#898c66"
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": 27.0,
+        "total_voters": 2,
+        "total_watchers": 4,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            5,
+            6,
+            8,
+            9
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "backlog_order": 1478850596612,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T07:49:56.612Z",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 3,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1478850596612,
+        "milestone": 1,
+        "milestone_name": "Sprint 2016-9-17",
+        "milestone_slug": "sprint-2016-9-17",
+        "modified_date": "2016-11-11T07:49:56.973Z",
+        "origin_issue": null,
+        "owner": 5,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
+            "is_active": true,
+            "photo": null,
+            "username": "admin"
+        },
+        "points": {
+            "1": 2,
+            "2": 9,
+            "3": 6,
+            "4": 8
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 12,
+        "sprint_order": 1478850596613,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Preparada"
+        },
+        "subject": "Create the user model",
+        "tags": [
+            [
+                "dolorem",
+                "#604860"
+            ],
+            [
+                "at",
+                null
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": 21.0,
+        "total_voters": 1,
+        "total_watchers": 1,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            11
+        ]
+    },
+    {
+        "assigned_to": 11,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Angela Perez",
+            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+            "id": 11,
+            "is_active": true,
+            "photo": null,
+            "username": "user5"
+        },
+        "attachments": [],
+        "backlog_order": 1478850598187,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T07:49:58.187Z",
+        "epic_order": null,
+        "epics": [
+            {
+                "color": "#f57900",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 63,
+                "subject": "Support for bulk actions"
+            }
+        ],
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 4,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1478850598187,
+        "milestone": 2,
+        "milestone_name": "Sprint 2016-10-2",
+        "milestone_slug": "sprint-2016-10-2",
+        "modified_date": "2016-11-11T07:49:58.546Z",
+        "origin_issue": null,
+        "owner": 15,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
+        "points": {
+            "1": 6,
+            "2": 6,
+            "3": 10,
             "4": 5
         },
         "project": 1,
@@ -220,242 +401,57 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 5,
-        "sprint_order": 15,
-        "status": 3,
+        "ref": 14,
+        "sprint_order": 1478850598187,
+        "status": 2,
         "status_extra_info": {
-            "color": "#ff9900",
+            "color": "#ff8a84",
             "is_closed": false,
-            "name": "En curso"
+            "name": "Preparada"
         },
-        "subject": "get_actions() does not check for 'delete_selected' in actions",
+        "subject": "Add setting to allow regular users to create folders at the root level.",
         "tags": [
             [
-                "amet",
+                "adipisci",
+                "#257dec"
+            ],
+            [
+                "perferendis",
                 null
             ],
             [
-                "totam",
-                "#560a5d"
-            ],
-            [
-                "mollitia",
-                "#002e7f"
+                "assumenda",
+                "#52b91a"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 44.5,
-        "total_voters": 2,
-        "total_watchers": 7,
+        "total_points": 21.0,
+        "total_voters": 4,
+        "total_watchers": 1,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            1,
-            5,
-            6,
-            7,
-            9,
-            10,
-            14
+            4
         ]
     },
     {
-        "assigned_to": 7,
+        "assigned_to": 8,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
+            "full_name_display": "Francisco Gil",
+            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+            "id": 8,
             "is_active": true,
             "photo": null,
-            "username": "user1"
+            "username": "user2"
         },
         "attachments": [],
-        "backlog_order": 1476435812338,
+        "backlog_order": 1478850600217,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:32.338Z",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#4e9a06",
-                "id": 4,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 123,
-                "subject": "Feature/improved image admin"
-            }
-        ],
-        "external_reference": null,
-        "finish_date": "2016-10-14T09:03:32.814Z",
-        "generated_from_issue": null,
-        "id": 3,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435812338,
-        "milestone": 1,
-        "milestone_name": "Sprint 2016-8-20",
-        "milestone_slug": "sprint-2016-8-20",
-        "modified_date": "2016-10-14T09:03:32.638Z",
-        "origin_issue": null,
-        "owner": 13,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alvaro Molina",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "points": {
-            "1": 11,
-            "2": 4,
-            "3": 4,
-            "4": 11
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 11,
-        "sprint_order": 1476435812339,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#fcc000",
-            "is_closed": false,
-            "name": "Lista para testear"
-        },
-        "subject": "Add tests for bulk operations",
-        "tags": [
-            [
-                "fugiat",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 42.0,
-        "total_voters": 1,
-        "total_watchers": 2,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            13,
-            15
-        ]
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "attachments": [],
-        "backlog_order": 1476435813224,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:03:33.224Z",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 4,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435813224,
-        "milestone": 1,
-        "milestone_name": "Sprint 2016-8-20",
-        "milestone_slug": "sprint-2016-8-20",
-        "modified_date": "2016-10-14T09:03:33.529Z",
-        "origin_issue": null,
-        "owner": 14,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Andrea Fernandez",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
-            "is_active": true,
-            "photo": null,
-            "username": "user8"
-        },
-        "points": {
-            "1": 12,
-            "2": 4,
-            "3": 4,
-            "4": 9
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 13,
-        "sprint_order": 1476435813225,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "is_closed": false,
-            "name": "Nueva"
-        },
-        "subject": "Support for bulk actions",
-        "tags": [
-            [
-                "tempore",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 52.0,
-        "total_voters": 6,
-        "total_watchers": 3,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            3,
-            9,
-            11
-        ]
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "attachments": [],
-        "backlog_order": 1476435815902,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:03:35.902Z",
+        "created_date": "2016-11-11T07:50:00.217Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -466,16 +462,16 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1476435815902,
-        "milestone": 1,
-        "milestone_name": "Sprint 2016-8-20",
-        "milestone_slug": "sprint-2016-8-20",
-        "modified_date": "2016-10-14T09:03:36.305Z",
+        "kanban_order": 1478850600217,
+        "milestone": 2,
+        "milestone_name": "Sprint 2016-10-2",
+        "milestone_slug": "sprint-2016-10-2",
+        "modified_date": "2016-11-11T07:50:00.484Z",
         "origin_issue": null,
         "owner": 7,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
+            "full_name_display": "Bego\u00f1a Flores",
             "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
             "id": 7,
             "is_active": true,
@@ -484,9 +480,9 @@
         },
         "points": {
             "1": 8,
-            "2": 7,
-            "3": 3,
-            "4": 8
+            "2": 10,
+            "3": 7,
+            "4": 7
         },
         "project": 1,
         "project_extra_info": {
@@ -495,60 +491,71 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 19,
-        "sprint_order": 1476435815903,
-        "status": 3,
+        "ref": 18,
+        "sprint_order": 1478850600217,
+        "status": 1,
         "status_extra_info": {
-            "color": "#ff9900",
+            "color": "#999999",
             "is_closed": false,
-            "name": "En curso"
+            "name": "Nueva"
         },
         "subject": "Fixing templates for Django 1.6.",
         "tags": [
             [
-                "impedit",
-                null
+                "similique",
+                "#710c97"
             ],
             [
-                "voluptatem",
-                "#00d60c"
+                "aliquid",
+                null
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 21.5,
-        "total_voters": 0,
-        "total_watchers": 6,
+        "total_points": 31.0,
+        "total_voters": 7,
+        "total_watchers": 5,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
             2,
-            9,
-            11,
-            12,
+            4,
+            10,
             13,
-            15
+            14
         ]
     },
     {
-        "assigned_to": 8,
+        "assigned_to": 6,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "user2"
+            "username": "user2114747470430251528"
         },
         "attachments": [],
-        "backlog_order": 1476435817671,
+        "backlog_order": 1478850602759,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:37.671Z",
+        "created_date": "2016-11-11T07:50:02.759Z",
         "epic_order": null,
-        "epics": null,
+        "epics": [
+            {
+                "color": "#f57900",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 63,
+                "subject": "Support for bulk actions"
+            }
+        ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -557,27 +564,27 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1476435817671,
-        "milestone": 1,
-        "milestone_name": "Sprint 2016-8-20",
-        "milestone_slug": "sprint-2016-8-20",
-        "modified_date": "2016-10-14T09:03:37.985Z",
+        "kanban_order": 1478850602759,
+        "milestone": 2,
+        "milestone_name": "Sprint 2016-10-2",
+        "milestone_slug": "sprint-2016-10-2",
+        "modified_date": "2016-11-11T07:50:03.209Z",
         "origin_issue": null,
-        "owner": 8,
+        "owner": 10,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
+            "full_name_display": "Enrique Crespo",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
             "is_active": true,
             "photo": null,
-            "username": "user2"
+            "username": "user4"
         },
         "points": {
-            "1": 9,
-            "2": 2,
-            "3": 2,
-            "4": 4
+            "1": 10,
+            "2": 6,
+            "3": 4,
+            "4": 11
         },
         "project": 1,
         "project_extra_info": {
@@ -586,43 +593,44 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 23,
-        "sprint_order": 1476435817672,
-        "status": 3,
+        "ref": 24,
+        "sprint_order": 1478850602759,
+        "status": 1,
         "status_extra_info": {
-            "color": "#ff9900",
+            "color": "#999999",
             "is_closed": false,
-            "name": "En curso"
+            "name": "Nueva"
         },
         "subject": "Create the user model",
         "tags": [
             [
-                "reiciendis",
-                "#560ff6"
+                "deserunt",
+                null
             ],
             [
-                "corrupti",
-                "#432493"
+                "repellat",
+                null
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 11.0,
-        "total_voters": 7,
-        "total_watchers": 3,
+        "total_points": 37.0,
+        "total_voters": 4,
+        "total_watchers": 4,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            3,
-            11,
-            14
+            4,
+            5,
+            12,
+            15
         ]
     },
     {
         "assigned_to": 12,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Pilar Herrera",
+            "full_name_display": "Vanesa Garcia",
             "gravatar_id": "74cb769a5e64d445b8550789e1553502",
             "id": 12,
             "is_active": true,
@@ -630,11 +638,11 @@
             "username": "user6"
         },
         "attachments": [],
-        "backlog_order": 1476435820667,
+        "backlog_order": 1478850607301,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:40.667Z",
+        "created_date": "2016-11-11T07:50:07.301Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -645,27 +653,27 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1476435820667,
-        "milestone": 2,
-        "milestone_name": "Sprint 2016-9-4",
-        "milestone_slug": "sprint-2016-9-4",
-        "modified_date": "2016-10-14T09:03:41.037Z",
+        "kanban_order": 1478850607301,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:07.927Z",
         "origin_issue": null,
-        "owner": 9,
+        "owner": 10,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Esther Ferrer",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
+            "full_name_display": "Enrique Crespo",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
             "is_active": true,
             "photo": null,
-            "username": "user3"
+            "username": "user4"
         },
         "points": {
-            "1": 7,
-            "2": 9,
-            "3": 7,
-            "4": 6
+            "1": 4,
+            "2": 5,
+            "3": 1,
+            "4": 5
         },
         "project": 1,
         "project_extra_info": {
@@ -674,81 +682,69 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 28,
-        "sprint_order": 1476435820667,
-        "status": 2,
+        "ref": 29,
+        "sprint_order": 1478850607301,
+        "status": 1,
         "status_extra_info": {
-            "color": "#ff8a84",
+            "color": "#999999",
             "is_closed": false,
-            "name": "Preparada"
+            "name": "Nueva"
         },
-        "subject": "Feature/improved image admin",
+        "subject": "Implement the form",
         "tags": [
             [
-                "temporibus",
-                "#a2c51a"
-            ],
-            [
-                "enim",
+                "perspiciatis",
                 null
             ],
             [
-                "repellat",
-                null
+                "tenetur",
+                "#351c86"
+            ],
+            [
+                "ipsum",
+                "#da3ba4"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 23.0,
+        "total_points": 5.0,
         "total_voters": 1,
-        "total_watchers": 2,
+        "total_watchers": 1,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            9,
             12
         ]
     },
     {
-        "assigned_to": 6,
+        "assigned_to": 8,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
+            "full_name_display": "Francisco Gil",
+            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+            "id": 8,
             "is_active": true,
             "photo": null,
-            "username": "user6532909695705815086"
+            "username": "user2"
         },
         "attachments": [],
-        "backlog_order": 1476435823517,
+        "backlog_order": 1478850608261,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:43.517Z",
+        "created_date": "2016-11-11T07:50:08.261Z",
         "epic_order": null,
         "epics": [
             {
-                "color": "#4e9a06",
-                "id": 4,
+                "color": "#f57900",
+                "id": 1,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 123,
-                "subject": "Feature/improved image admin"
-            },
-            {
-                "color": "#73d216",
-                "id": 17,
-                "project": {
-                    "id": 3,
-                    "name": "Project Example 2",
-                    "slug": "project-2"
-                },
-                "ref": 89,
-                "subject": "Fixing templates for Django 1.6."
+                "ref": 63,
+                "subject": "Support for bulk actions"
             }
         ],
         "external_reference": null,
@@ -759,27 +755,27 @@
         "is_closed": false,
         "is_voter": true,
         "is_watcher": false,
-        "kanban_order": 1476435823517,
-        "milestone": 2,
-        "milestone_name": "Sprint 2016-9-4",
-        "milestone_slug": "sprint-2016-9-4",
-        "modified_date": "2016-10-14T09:03:43.854Z",
+        "kanban_order": 1478850608261,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:08.747Z",
         "origin_issue": null,
-        "owner": 11,
+        "owner": 9,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "German Benitez",
-            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-            "id": 11,
+            "full_name_display": "Catalina Fernandez",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
             "is_active": true,
             "photo": null,
-            "username": "user5"
+            "username": "user3"
         },
         "points": {
             "1": 2,
-            "2": 11,
-            "3": 3,
-            "4": 7
+            "2": 12,
+            "3": 6,
+            "4": 12
         },
         "project": 1,
         "project_extra_info": {
@@ -788,60 +784,61 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 34,
-        "sprint_order": 1476435823517,
-        "status": 1,
+        "ref": 30,
+        "sprint_order": 1478850608261,
+        "status": 3,
         "status_extra_info": {
-            "color": "#999999",
+            "color": "#ff9900",
             "is_closed": false,
-            "name": "Nueva"
+            "name": "En curso"
         },
-        "subject": "Support for bulk actions",
+        "subject": "Experimental: modular file types",
         "tags": [
             [
-                "necessitatibus",
-                "#84e3b6"
-            ],
-            [
-                "ipsa",
-                "#ffa8ed"
+                "minima",
+                "#f0048e"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 25.5,
-        "total_voters": 9,
-        "total_watchers": 6,
+        "total_points": 83.0,
+        "total_voters": 7,
+        "total_watchers": 0,
         "tribe_gig": null,
         "version": 1,
-        "watchers": [
-            1,
-            4,
-            5,
-            7,
-            13,
-            15
-        ]
+        "watchers": []
     },
     {
-        "assigned_to": 9,
+        "assigned_to": 11,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Esther Ferrer",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
+            "full_name_display": "Angela Perez",
+            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+            "id": 11,
             "is_active": true,
             "photo": null,
-            "username": "user3"
+            "username": "user5"
         },
         "attachments": [],
-        "backlog_order": 1476435824578,
+        "backlog_order": 1478850609090,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:44.578Z",
+        "created_date": "2016-11-11T07:50:09.090Z",
         "epic_order": null,
-        "epics": null,
+        "epics": [
+            {
+                "color": "#f57900",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 63,
+                "subject": "Support for bulk actions"
+            }
+        ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -849,28 +846,28 @@
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
-        "is_watcher": true,
-        "kanban_order": 1476435824578,
-        "milestone": 2,
-        "milestone_name": "Sprint 2016-9-4",
-        "milestone_slug": "sprint-2016-9-4",
-        "modified_date": "2016-10-14T09:03:44.810Z",
+        "is_watcher": false,
+        "kanban_order": 1478850609090,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:09.551Z",
         "origin_issue": null,
-        "owner": 12,
+        "owner": 14,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Pilar Herrera",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
+            "full_name_display": "Miguel Molina",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
             "is_active": true,
             "photo": null,
-            "username": "user6"
+            "username": "user8"
         },
         "points": {
-            "1": 12,
-            "2": 2,
-            "3": 6,
-            "4": 5
+            "1": 11,
+            "2": 5,
+            "3": 4,
+            "4": 1
         },
         "project": 1,
         "project_extra_info": {
@@ -879,63 +876,71 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 36,
-        "sprint_order": 1476435824578,
+        "ref": 31,
+        "sprint_order": 1478850609090,
         "status": 4,
         "status_extra_info": {
             "color": "#fcc000",
             "is_closed": false,
             "name": "Lista para testear"
         },
-        "subject": "get_actions() does not check for 'delete_selected' in actions",
+        "subject": "Add tests for bulk operations",
         "tags": [
             [
-                "eveniet",
-                null
+                "ut",
+                "#e74669"
             ],
             [
-                "illum",
-                null
+                "cum",
+                "#ab14d9"
             ],
             [
-                "dolores",
-                "#7fea8e"
+                "provident",
+                "#7fdcf2"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 45.0,
+        "total_points": 23.0,
         "total_voters": 6,
-        "total_watchers": 5,
+        "total_watchers": 1,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            2,
-            3,
-            4,
-            6,
-            15
+            11
         ]
     },
     {
-        "assigned_to": 11,
+        "assigned_to": 14,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "German Benitez",
-            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-            "id": 11,
+            "full_name_display": "Miguel Molina",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
             "is_active": true,
             "photo": null,
-            "username": "user5"
+            "username": "user8"
         },
         "attachments": [],
-        "backlog_order": 1476435825812,
+        "backlog_order": 1478850609839,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:45.812Z",
+        "created_date": "2016-11-11T07:50:09.839Z",
         "epic_order": null,
-        "epics": null,
+        "epics": [
+            {
+                "color": "#f57900",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 63,
+                "subject": "Support for bulk actions"
+            }
+        ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -944,16 +949,16 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1476435825812,
-        "milestone": 2,
-        "milestone_name": "Sprint 2016-9-4",
-        "milestone_slug": "sprint-2016-9-4",
-        "modified_date": "2016-10-14T09:03:46.070Z",
+        "kanban_order": 1478850609839,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:10.247Z",
         "origin_issue": null,
         "owner": 10,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Marta Carmona",
+            "full_name_display": "Enrique Crespo",
             "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
             "id": 10,
             "is_active": true,
@@ -961,9 +966,182 @@
             "username": "user4"
         },
         "points": {
-            "1": 9,
-            "2": 8,
+            "1": 6,
+            "2": 6,
+            "3": 9,
+            "4": 1
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 32,
+        "sprint_order": 1478850609839,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Lista para testear"
+        },
+        "subject": "Exception is thrown if trying to add a folder with existing name",
+        "tags": [
+            [
+                "eum",
+                null
+            ],
+            [
+                "ducimus",
+                "#ea6bb9"
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": 16.0,
+        "total_voters": 6,
+        "total_watchers": 4,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            5,
+            9,
+            10,
+            13
+        ]
+    },
+    {
+        "assigned_to": 7,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Bego\u00f1a Flores",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
+            "is_active": true,
+            "photo": null,
+            "username": "user1"
+        },
+        "attachments": [],
+        "backlog_order": 1478850610616,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T07:50:10.616Z",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 11,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1478850610616,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:11.011Z",
+        "origin_issue": null,
+        "owner": 14,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Miguel Molina",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
+            "is_active": true,
+            "photo": null,
+            "username": "user8"
+        },
+        "points": {
+            "1": 6,
+            "2": 3,
             "3": 11,
+            "4": 11
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 33,
+        "sprint_order": 1478850610616,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Preparada"
+        },
+        "subject": "get_actions() does not check for 'delete_selected' in actions",
+        "tags": [
+            [
+                "ad",
+                "#4aeb19"
+            ],
+            [
+                "voluptatibus",
+                null
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": 43.5,
+        "total_voters": 6,
+        "total_watchers": 0,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": 5,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
+            "is_active": true,
+            "photo": null,
+            "username": "admin"
+        },
+        "attachments": [],
+        "backlog_order": 1478850611324,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T07:50:11.324Z",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 12,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1478850611324,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:11.813Z",
+        "origin_issue": null,
+        "owner": 10,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Enrique Crespo",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
+            "is_active": true,
+            "photo": null,
+            "username": "user4"
+        },
+        "points": {
+            "1": 4,
+            "2": 4,
+            "3": 12,
             "4": 8
         },
         "project": 1,
@@ -973,244 +1151,51 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 39,
-        "sprint_order": 1476435825812,
+        "ref": 34,
+        "sprint_order": 1478850611324,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
             "is_closed": false,
             "name": "Nueva"
         },
-        "subject": "Add setting to allow regular users to create folders at the root level.",
+        "subject": "Implement the form",
         "tags": [
             [
-                "officia",
-                "#c4f027"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 46.0,
-        "total_voters": 7,
-        "total_watchers": 4,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            2,
-            7,
-            11,
-            12
-        ]
-    },
-    {
-        "assigned_to": 8,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "attachments": [],
-        "backlog_order": 1476435827640,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:03:47.640Z",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 11,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": true,
-        "is_watcher": false,
-        "kanban_order": 1476435827640,
-        "milestone": 3,
-        "milestone_name": "Sprint 2016-9-19",
-        "milestone_slug": "sprint-2016-9-19",
-        "modified_date": "2016-10-14T09:03:47.974Z",
-        "origin_issue": null,
-        "owner": 6,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "points": {
-            "1": 3,
-            "2": 10,
-            "3": 11,
-            "4": 4
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 43,
-        "sprint_order": 1476435827640,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "is_closed": false,
-            "name": "Nueva"
-        },
-        "subject": "Lighttpd x-sendfile support",
-        "tags": [
+                "quas",
+                "#6e3390"
+            ],
             [
-                "hic",
+                "aliquam",
                 null
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 34.5,
-        "total_voters": 4,
-        "total_watchers": 2,
+        "total_points": 50.0,
+        "total_voters": 2,
+        "total_watchers": 5,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            4,
-            5
+            1,
+            8,
+            11,
+            14,
+            15
         ]
     },
     {
-        "assigned_to": 11,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "German Benitez",
-            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-            "id": 11,
-            "is_active": true,
-            "photo": null,
-            "username": "user5"
-        },
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
         "attachments": [],
-        "backlog_order": 1476435829633,
+        "backlog_order": 1478850612151,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:49.633Z",
+        "created_date": "2016-11-11T07:50:12.151Z",
         "epic_order": null,
-        "epics": [
-            {
-                "color": "#4e9a06",
-                "id": 4,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 123,
-                "subject": "Feature/improved image admin"
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 12,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": true,
-        "kanban_order": 1476435829633,
-        "milestone": 3,
-        "milestone_name": "Sprint 2016-9-19",
-        "milestone_slug": "sprint-2016-9-19",
-        "modified_date": "2016-10-14T09:03:49.924Z",
-        "origin_issue": null,
-        "owner": 11,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "German Benitez",
-            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-            "id": 11,
-            "is_active": true,
-            "photo": null,
-            "username": "user5"
-        },
-        "points": {
-            "1": 5,
-            "2": 10,
-            "3": 7,
-            "4": 2
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 48,
-        "sprint_order": 1476435829633,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff8a84",
-            "is_closed": false,
-            "name": "Preparada"
-        },
-        "subject": "get_actions() does not check for 'delete_selected' in actions",
-        "tags": [
-            [
-                "deserunt",
-                "#e7b695"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 20.0,
-        "total_voters": 7,
-        "total_watchers": 2,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            6,
-            12
-        ]
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "attachments": [],
-        "backlog_order": 1476435830732,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:03:50.733Z",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#4e9a06",
-                "id": 7,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 126,
-                "subject": "Migrate to Python 3 and milk a beautiful cow"
-            }
-        ],
+        "epics": null,
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -1218,17 +1203,17 @@
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435830733,
-        "milestone": 3,
-        "milestone_name": "Sprint 2016-9-19",
-        "milestone_slug": "sprint-2016-9-19",
-        "modified_date": "2016-10-14T09:03:51.148Z",
+        "is_watcher": true,
+        "kanban_order": 1478850612151,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:12.591Z",
         "origin_issue": null,
         "owner": 14,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Andrea Fernandez",
+            "full_name_display": "Miguel Molina",
             "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
             "id": 14,
             "is_active": true,
@@ -1236,10 +1221,10 @@
             "username": "user8"
         },
         "points": {
-            "1": 10,
-            "2": 9,
-            "3": 3,
-            "4": 7
+            "1": 6,
+            "2": 11,
+            "3": 9,
+            "4": 11
         },
         "project": 1,
         "project_extra_info": {
@@ -1248,71 +1233,57 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 50,
-        "sprint_order": 1476435830733,
-        "status": 2,
+        "ref": 35,
+        "sprint_order": 1478850612151,
+        "status": 3,
         "status_extra_info": {
-            "color": "#ff8a84",
+            "color": "#ff9900",
             "is_closed": false,
-            "name": "Preparada"
+            "name": "En curso"
         },
-        "subject": "Create the user model",
+        "subject": "Migrate to Python 3 and milk a beautiful cow",
         "tags": [
             [
-                "adipisci",
-                null
-            ],
-            [
-                "earum",
-                null
+                "provident",
+                "#7fdcf2"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 28.5,
-        "total_voters": 6,
-        "total_watchers": 5,
+        "total_points": 53.0,
+        "total_voters": 0,
+        "total_watchers": 7,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
             1,
-            2,
-            7,
+            6,
             9,
-            14
+            11,
+            12,
+            13,
+            15
         ]
     },
     {
-        "assigned_to": 13,
+        "assigned_to": 9,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Alvaro Molina",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
+            "full_name_display": "Catalina Fernandez",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
             "is_active": true,
             "photo": null,
-            "username": "user7"
+            "username": "user3"
         },
         "attachments": [],
-        "backlog_order": 1476435832993,
+        "backlog_order": 1478850612860,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:52.993Z",
+        "created_date": "2016-11-11T07:50:12.860Z",
         "epic_order": null,
-        "epics": [
-            {
-                "color": "#4e9a06",
-                "id": 7,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 126,
-                "subject": "Migrate to Python 3 and milk a beautiful cow"
-            }
-        ],
+        "epics": null,
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -1321,27 +1292,27 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1476435832993,
-        "milestone": 3,
-        "milestone_name": "Sprint 2016-9-19",
-        "milestone_slug": "sprint-2016-9-19",
-        "modified_date": "2016-10-14T09:03:53.381Z",
+        "kanban_order": 1478850612860,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:13.443Z",
         "origin_issue": null,
-        "owner": 8,
+        "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
             "is_active": true,
             "photo": null,
-            "username": "user2"
+            "username": "user6"
         },
         "points": {
-            "1": 8,
-            "2": 12,
-            "3": 8,
-            "4": 7
+            "1": 3,
+            "2": 4,
+            "3": 7,
+            "4": 11
         },
         "project": 1,
         "project_extra_info": {
@@ -1350,43 +1321,37 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 54,
-        "sprint_order": 1476435832993,
+        "ref": 36,
+        "sprint_order": 1478850612860,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
             "is_closed": false,
             "name": "Nueva"
         },
-        "subject": "Add tests for bulk operations",
+        "subject": "Fixing templates for Django 1.6.",
         "tags": [
             [
-                "quis",
-                null
-            ],
-            [
-                "dolorem",
-                null
+                "impedit",
+                "#cde1f0"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 61.0,
-        "total_voters": 4,
-        "total_watchers": 3,
+        "total_points": 26.5,
+        "total_voters": 1,
+        "total_watchers": 1,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            9,
-            11,
-            12
+            9
         ]
     },
     {
         "assigned_to": 10,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Marta Carmona",
+            "full_name_display": "Enrique Crespo",
             "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
             "id": 10,
             "is_active": true,
@@ -1394,11 +1359,11 @@
             "username": "user4"
         },
         "attachments": [],
-        "backlog_order": 1476435836291,
+        "backlog_order": 1478850613704,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:03:56.291Z",
+        "created_date": "2016-11-11T07:50:13.704Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1407,13 +1372,193 @@
         "id": 15,
         "is_blocked": false,
         "is_closed": false,
+        "is_voter": false,
+        "is_watcher": true,
+        "kanban_order": 1478850613704,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:14.165Z",
+        "origin_issue": null,
+        "owner": 5,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
+            "is_active": true,
+            "photo": null,
+            "username": "admin"
+        },
+        "points": {
+            "1": 4,
+            "2": 8,
+            "3": 1,
+            "4": 10
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 37,
+        "sprint_order": 1478850613704,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Lista para testear"
+        },
+        "subject": "Create testsuite with matrix builds",
+        "tags": [
+            [
+                "quis",
+                null
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": 22.0,
+        "total_voters": 8,
+        "total_watchers": 4,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            1,
+            2,
+            6,
+            8
+        ]
+    },
+    {
+        "assigned_to": 12,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "attachments": [],
+        "backlog_order": 1478850614756,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T07:50:14.756Z",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 16,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": true,
+        "is_watcher": true,
+        "kanban_order": 1478850614756,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:15.421Z",
+        "origin_issue": null,
+        "owner": 15,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
+        "points": {
+            "1": 12,
+            "2": 7,
+            "3": 6,
+            "4": 12
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 38,
+        "sprint_order": 1478850614756,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Preparada"
+        },
+        "subject": "Fixing templates for Django 1.6.",
+        "tags": [
+            [
+                "delectus",
+                "#959608"
+            ],
+            [
+                "adipisci",
+                "#257dec"
+            ],
+            [
+                "explicabo",
+                null
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": 88.0,
+        "total_voters": 9,
+        "total_watchers": 6,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            1,
+            4,
+            6,
+            7,
+            14,
+            15
+        ]
+    },
+    {
+        "assigned_to": 10,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Enrique Crespo",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
+            "is_active": true,
+            "photo": null,
+            "username": "user4"
+        },
+        "attachments": [],
+        "backlog_order": 1478850615862,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T07:50:15.862Z",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 17,
+        "is_blocked": false,
+        "is_closed": false,
         "is_voter": true,
         "is_watcher": false,
-        "kanban_order": 1476435836291,
-        "milestone": 3,
-        "milestone_name": "Sprint 2016-9-19",
-        "milestone_slug": "sprint-2016-9-19",
-        "modified_date": "2016-10-14T09:03:56.726Z",
+        "kanban_order": 1478850615862,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:16.205Z",
         "origin_issue": null,
         "owner": 5,
         "owner_extra_info": {
@@ -1427,9 +1572,9 @@
         },
         "points": {
             "1": 12,
-            "2": 9,
-            "3": 10,
-            "4": 8
+            "2": 6,
+            "3": 1,
+            "4": 10
         },
         "project": 1,
         "project_extra_info": {
@@ -1438,247 +1583,66 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 60,
-        "sprint_order": 1476435836291,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff8a84",
-            "is_closed": false,
-            "name": "Preparada"
-        },
-        "subject": "Experimental: modular file types",
-        "tags": [
-            [
-                "ullam",
-                "#98ad13"
-            ],
-            [
-                "eaque",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 71.0,
-        "total_voters": 2,
-        "total_watchers": 3,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            4,
-            7,
-            13
-        ]
-    },
-    {
-        "assigned_to": 15,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Roman",
-            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-            "id": 15,
-            "is_active": true,
-            "photo": null,
-            "username": "user9"
-        },
-        "attachments": [],
-        "backlog_order": 1476435838959,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:03:58.959Z",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 16,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435838959,
-        "milestone": 3,
-        "milestone_name": "Sprint 2016-9-19",
-        "milestone_slug": "sprint-2016-9-19",
-        "modified_date": "2016-10-14T09:03:59.351Z",
-        "origin_issue": null,
-        "owner": 9,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Esther Ferrer",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "points": {
-            "1": 3,
-            "2": 12,
-            "3": 7,
-            "4": 6
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 65,
-        "sprint_order": 1476435838959,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "is_closed": false,
-            "name": "Nueva"
-        },
-        "subject": "Migrate to Python 3 and milk a beautiful cow",
-        "tags": [
-            [
-                "at",
-                "#27e90d"
-            ],
-            [
-                "facilis",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 48.5,
-        "total_voters": 3,
-        "total_watchers": 5,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            2,
-            4,
-            7,
-            13,
-            15
-        ]
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "attachments": [],
-        "backlog_order": 1476435840481,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:00.481Z",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": "2016-10-14T09:04:01.025Z",
-        "generated_from_issue": null,
-        "id": 17,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": false,
-        "is_watcher": true,
-        "kanban_order": 1476435840481,
-        "milestone": 3,
-        "milestone_name": "Sprint 2016-9-19",
-        "milestone_slug": "sprint-2016-9-19",
-        "modified_date": "2016-10-14T09:04:00.825Z",
-        "origin_issue": null,
-        "owner": 9,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Esther Ferrer",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "points": {
-            "1": 6,
-            "2": 12,
-            "3": 7,
-            "4": 9
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 68,
-        "sprint_order": 1476435840481,
+        "ref": 39,
+        "sprint_order": 1478850615862,
         "status": 3,
         "status_extra_info": {
             "color": "#ff9900",
             "is_closed": false,
             "name": "En curso"
         },
-        "subject": "Migrate to Python 3 and milk a beautiful cow",
+        "subject": "Implement the form",
         "tags": [
             [
-                "cumque",
-                "#ad75ec"
+                "molestias",
+                "#92db0b"
             ],
             [
-                "expedita",
-                "#740c41"
+                "delectus",
+                "#959608"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 58.0,
-        "total_voters": 0,
-        "total_watchers": 5,
+        "total_points": 56.0,
+        "total_voters": 5,
+        "total_watchers": 2,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            1,
-            4,
-            6,
             7,
-            13
+            12
         ]
     },
     {
-        "assigned_to": 7,
+        "assigned_to": 13,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
+            "full_name_display": "Mohamed Ortega",
+            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+            "id": 13,
             "is_active": true,
             "photo": null,
-            "username": "user1"
+            "username": "user7"
         },
         "attachments": [],
-        "backlog_order": 1476435842450,
+        "backlog_order": 1478850616432,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:04:02.450Z",
+        "created_date": "2016-11-11T07:50:16.432Z",
         "epic_order": null,
         "epics": [
             {
-                "color": "#4e9a06",
-                "id": 7,
+                "color": "#f57900",
+                "id": 1,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 126,
-                "subject": "Migrate to Python 3 and milk a beautiful cow"
+                "ref": 63,
+                "subject": "Support for bulk actions"
             }
         ],
         "external_reference": null,
@@ -1689,27 +1653,27 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1476435842450,
-        "milestone": 4,
-        "milestone_name": "Sprint 2016-10-4",
-        "milestone_slug": "sprint-2016-10-4",
-        "modified_date": "2016-10-14T09:04:02.720Z",
+        "kanban_order": 1478850616432,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:16.716Z",
         "origin_issue": null,
-        "owner": 5,
+        "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "admin"
+            "username": "user2114747470430251528"
         },
         "points": {
-            "1": 2,
-            "2": 6,
-            "3": 7,
-            "4": 4
+            "1": 1,
+            "2": 8,
+            "3": 3,
+            "4": 10
         },
         "project": 1,
         "project_extra_info": {
@@ -1718,63 +1682,52 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 72,
-        "sprint_order": 1476435842450,
-        "status": 3,
+        "ref": 40,
+        "sprint_order": 1478850616432,
+        "status": 2,
         "status_extra_info": {
-            "color": "#ff9900",
+            "color": "#ff8a84",
             "is_closed": false,
-            "name": "En curso"
+            "name": "Preparada"
         },
-        "subject": "Feature/improved image admin",
+        "subject": "get_actions() does not check for 'delete_selected' in actions",
         "tags": [
             [
-                "numquam",
+                "corporis",
                 null
             ],
             [
-                "modi",
-                "#494e30"
+                "excepturi",
+                "#5c3c96"
             ],
             [
-                "dicta",
-                null
+                "dolorem",
+                "#604860"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 9.0,
-        "total_voters": 3,
-        "total_watchers": 7,
+        "total_points": 21.5,
+        "total_voters": 1,
+        "total_watchers": 4,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            1,
             2,
-            3,
-            7,
-            8,
-            13,
-            14
+            5,
+            9,
+            10
         ]
     },
     {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
         "attachments": [],
-        "backlog_order": 1476435844122,
+        "backlog_order": 1478850616875,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-10-14T09:04:04.122Z",
+        "created_date": "2016-11-11T07:50:16.875Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1784,17 +1737,17 @@
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
-        "is_watcher": true,
-        "kanban_order": 1476435844122,
-        "milestone": 4,
-        "milestone_name": "Sprint 2016-10-4",
-        "milestone_slug": "sprint-2016-10-4",
-        "modified_date": "2016-10-14T09:04:04.505Z",
+        "is_watcher": false,
+        "kanban_order": 1478850616875,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T07:50:17.096Z",
         "origin_issue": null,
         "owner": 7,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
+            "full_name_display": "Bego\u00f1a Flores",
             "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
             "id": 7,
             "is_active": true,
@@ -1802,10 +1755,287 @@
             "username": "user1"
         },
         "points": {
-            "1": 9,
-            "2": 2,
-            "3": 11,
-            "4": 10
+            "1": 11,
+            "2": 7,
+            "3": 12,
+            "4": 3
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 41,
+        "sprint_order": 1478850616875,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Lista para testear"
+        },
+        "subject": "Added file copying and processing of images (resizing)",
+        "tags": [
+            [
+                "accusamus",
+                "#801cf7"
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": 65.5,
+        "total_voters": 5,
+        "total_watchers": 3,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            7,
+            12,
+            14
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "backlog_order": 1478852029911,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T08:13:49.911Z",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 129,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1478852029911,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T08:13:49.912Z",
+        "origin_issue": null,
+        "owner": 6,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
+        "points": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 72,
+        "sprint_order": 1478852029911,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Nueva"
+        },
+        "subject": "US 1",
+        "tags": [],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": null,
+        "total_voters": 0,
+        "total_watchers": 0,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "backlog_order": 1478852029912,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T08:13:49.912Z",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 130,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1478852029912,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T08:13:49.978Z",
+        "origin_issue": null,
+        "owner": 6,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
+        "points": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 73,
+        "sprint_order": 1478852029912,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Nueva"
+        },
+        "subject": "US 2",
+        "tags": [],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": null,
+        "total_voters": 0,
+        "total_watchers": 0,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "backlog_order": 1478852029912,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T08:13:49.912Z",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 131,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1478852029912,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T08:13:50.034Z",
+        "origin_issue": null,
+        "owner": 6,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
+        "points": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 74,
+        "sprint_order": 1478852029912,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Nueva"
+        },
+        "subject": "US 3",
+        "tags": [],
+        "tasks": [],
+        "team_requirement": false,
+        "total_points": null,
+        "total_voters": 0,
+        "total_watchers": 0,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "attachments": [],
+        "backlog_order": 1478852031316,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2016-11-11T08:13:51.325Z",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "id": 133,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1478852031316,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2016-11-11T08:13:51.332Z",
+        "origin_issue": null,
+        "owner": 6,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
+        "points": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1
         },
         "project": 1,
         "project_extra_info": {
@@ -1815,980 +2045,23 @@
             "slug": "project-0"
         },
         "ref": 76,
-        "sprint_order": 1476435844122,
-        "status": 3,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "is_closed": false,
-            "name": "En curso"
-        },
-        "subject": "Implement the form",
-        "tags": [
-            [
-                "error",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 43.0,
-        "total_voters": 8,
-        "total_watchers": 4,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            3,
-            6,
-            8,
-            14
-        ]
-    },
-    {
-        "assigned_to": 14,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Andrea Fernandez",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
-            "is_active": true,
-            "photo": null,
-            "username": "user8"
-        },
-        "attachments": [],
-        "backlog_order": 1476435846148,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:06.148Z",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 20,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": true,
-        "is_watcher": false,
-        "kanban_order": 1476435846148,
-        "milestone": 4,
-        "milestone_name": "Sprint 2016-10-4",
-        "milestone_slug": "sprint-2016-10-4",
-        "modified_date": "2016-10-14T09:04:06.504Z",
-        "origin_issue": null,
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "points": {
-            "1": 11,
-            "2": 8,
-            "3": 2,
-            "4": 12
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 80,
-        "sprint_order": 1476435846148,
+        "sprint_order": 1478852031316,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
             "is_closed": false,
             "name": "Nueva"
         },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
-        "tags": [
-            [
-                "asperiores",
-                null
-            ],
-            [
-                "rerum",
-                null
-            ]
-        ],
+        "subject": "Customer personal data",
+        "tags": [],
         "tasks": [],
         "team_requirement": false,
-        "total_points": 68.0,
-        "total_voters": 8,
-        "total_watchers": 8,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            1,
-            2,
-            4,
-            5,
-            9,
-            10,
-            11,
-            15
-        ]
-    },
-    {
-        "assigned_to": 12,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Pilar Herrera",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "attachments": [],
-        "backlog_order": 1476435846921,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:06.921Z",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": "2016-10-14T09:04:07.481Z",
-        "generated_from_issue": null,
-        "id": 21,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": true,
-        "is_watcher": true,
-        "kanban_order": 1476435846921,
-        "milestone": 4,
-        "milestone_name": "Sprint 2016-10-4",
-        "milestone_slug": "sprint-2016-10-4",
-        "modified_date": "2016-10-14T09:04:07.227Z",
-        "origin_issue": null,
-        "owner": 6,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "points": {
-            "1": 4,
-            "2": 9,
-            "3": 10,
-            "4": 9
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 81,
-        "sprint_order": 1476435846921,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#fcc000",
-            "is_closed": false,
-            "name": "Lista para testear"
-        },
-        "subject": "Fixing templates for Django 1.6.",
-        "tags": [
-            [
-                "eos",
-                "#8a6433"
-            ],
-            [
-                "a",
-                null
-            ],
-            [
-                "eum",
-                "#ee6c40"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 34.0,
-        "total_voters": 7,
-        "total_watchers": 4,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            1,
-            6,
-            13,
-            15
-        ]
-    },
-    {
-        "assigned_to": 9,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Esther Ferrer",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "attachments": [],
-        "backlog_order": 1476435847826,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:07.826Z",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#4e9a06",
-                "id": 7,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 126,
-                "subject": "Migrate to Python 3 and milk a beautiful cow"
-            },
-            {
-                "color": "#73d216",
-                "id": 17,
-                "project": {
-                    "id": 3,
-                    "name": "Project Example 2",
-                    "slug": "project-2"
-                },
-                "ref": 89,
-                "subject": "Fixing templates for Django 1.6."
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 22,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435847826,
-        "milestone": 4,
-        "milestone_name": "Sprint 2016-10-4",
-        "milestone_slug": "sprint-2016-10-4",
-        "modified_date": "2016-10-14T09:04:08.081Z",
-        "origin_issue": null,
-        "owner": 5,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "points": {
-            "1": 3,
-            "2": 2,
-            "3": 12,
-            "4": 11
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 83,
-        "sprint_order": 1476435847826,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff8a84",
-            "is_closed": false,
-            "name": "Preparada"
-        },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
-        "tags": [
-            [
-                "commodi",
-                null
-            ],
-            [
-                "doloribus",
-                "#fb1b00"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 60.5,
+        "total_points": null,
         "total_voters": 0,
-        "total_watchers": 6,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            1,
-            4,
-            7,
-            9,
-            10,
-            11
-        ]
-    },
-    {
-        "assigned_to": 13,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alvaro Molina",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "attachments": [],
-        "backlog_order": 1476435848237,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:08.237Z",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 23,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435848237,
-        "milestone": 4,
-        "milestone_name": "Sprint 2016-10-4",
-        "milestone_slug": "sprint-2016-10-4",
-        "modified_date": "2016-10-14T09:04:08.511Z",
-        "origin_issue": null,
-        "owner": 13,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alvaro Molina",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "points": {
-            "1": 7,
-            "2": 3,
-            "3": 8,
-            "4": 9
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 84,
-        "sprint_order": 1476435848237,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "is_closed": false,
-            "name": "Nueva"
-        },
-        "subject": "Experimental: modular file types",
-        "tags": [
-            [
-                "in",
-                null
-            ],
-            [
-                "ducimus",
-                "#ea6bb9"
-            ],
-            [
-                "minima",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 23.5,
-        "total_voters": 6,
-        "total_watchers": 6,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            4,
-            5,
-            7,
-            12,
-            14,
-            15
-        ]
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "attachments": [],
-        "backlog_order": 1476435848721,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:08.721Z",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 24,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435848721,
-        "milestone": 4,
-        "milestone_name": "Sprint 2016-10-4",
-        "milestone_slug": "sprint-2016-10-4",
-        "modified_date": "2016-10-14T09:04:09.044Z",
-        "origin_issue": null,
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alba Leon",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "points": {
-            "1": 9,
-            "2": 9,
-            "3": 12,
-            "4": 6
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 85,
-        "sprint_order": 1476435848721,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#fcc000",
-            "is_closed": false,
-            "name": "Lista para testear"
-        },
-        "subject": "Add tests for bulk operations",
-        "tags": [
-            [
-                "quibusdam",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 63.0,
-        "total_voters": 1,
         "total_watchers": 0,
         "tribe_gig": null,
         "version": 1,
         "watchers": []
-    },
-    {
-        "assigned_to": 15,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Roman",
-            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-            "id": 15,
-            "is_active": true,
-            "photo": null,
-            "username": "user9"
-        },
-        "attachments": [],
-        "backlog_order": 1476435849473,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:09.473Z",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#4e9a06",
-                "id": 7,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 126,
-                "subject": "Migrate to Python 3 and milk a beautiful cow"
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 25,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": true,
-        "is_watcher": false,
-        "kanban_order": 1476435849473,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2016-10-14T09:04:09.669Z",
-        "origin_issue": null,
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Marta Carmona",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "points": {
-            "1": 4,
-            "2": 7,
-            "3": 12,
-            "4": 12
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 87,
-        "sprint_order": 1476435849473,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "is_closed": false,
-            "name": "Nueva"
-        },
-        "subject": "Support for bulk actions",
-        "tags": [
-            [
-                "perspiciatis",
-                null
-            ],
-            [
-                "eius",
-                "#860b86"
-            ],
-            [
-                "et",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 86.0,
-        "total_voters": 5,
-        "total_watchers": 2,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            4,
-            13
-        ]
-    },
-    {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "attachments": [],
-        "backlog_order": 1476435849839,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:09.839Z",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#4e9a06",
-                "id": 4,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 123,
-                "subject": "Feature/improved image admin"
-            },
-            {
-                "color": "#d3d7cf",
-                "id": 5,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 124,
-                "subject": "Add setting to allow regular users to create folders at the root level."
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 26,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435849839,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2016-10-14T09:04:10.028Z",
-        "origin_issue": null,
-        "owner": 13,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Alvaro Molina",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "points": {
-            "1": 2,
-            "2": 9,
-            "3": 2,
-            "4": 12
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 88,
-        "sprint_order": 1476435849839,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff8a84",
-            "is_closed": false,
-            "name": "Preparada"
-        },
-        "subject": "Create the user model",
-        "tags": [
-            [
-                "ad",
-                null
-            ],
-            [
-                "asperiores",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 50.0,
-        "total_voters": 7,
-        "total_watchers": 5,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            3,
-            8,
-            12,
-            13,
-            15
-        ]
-    },
-    {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "attachments": [],
-        "backlog_order": 1476435850226,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:10.226Z",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#4e9a06",
-                "id": 4,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 123,
-                "subject": "Feature/improved image admin"
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 27,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": true,
-        "is_watcher": false,
-        "kanban_order": 1476435850226,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2016-10-14T09:04:10.446Z",
-        "origin_issue": null,
-        "owner": 5,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "points": {
-            "1": 3,
-            "2": 2,
-            "3": 3,
-            "4": 12
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 89,
-        "sprint_order": 1476435850226,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "is_closed": false,
-            "name": "Nueva"
-        },
-        "subject": "Support for bulk actions",
-        "tags": [
-            [
-                "minima",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 41.0,
-        "total_voters": 7,
-        "total_watchers": 2,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            2,
-            3
-        ]
-    },
-    {
-        "assigned_to": 7,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Marcos Ortiz",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "attachments": [],
-        "backlog_order": 1476435850624,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:10.624Z",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#4e9a06",
-                "id": 4,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 123,
-                "subject": "Feature/improved image admin"
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 28,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435850624,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2016-10-14T09:04:10.864Z",
-        "origin_issue": null,
-        "owner": 12,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Pilar Herrera",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "points": {
-            "1": 12,
-            "2": 2,
-            "3": 6,
-            "4": 9
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 90,
-        "sprint_order": 1476435850624,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff8a84",
-            "is_closed": false,
-            "name": "Preparada"
-        },
-        "subject": "Added file copying and processing of images (resizing)",
-        "tags": [
-            [
-                "laudantium",
-                "#9e3f1f"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 53.0,
-        "total_voters": 7,
-        "total_watchers": 1,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            14
-        ]
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Silvia Soto",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user6532909695705815086"
-        },
-        "attachments": [],
-        "backlog_order": 1476435851040,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2016-10-14T09:04:11.040Z",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "id": 29,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1476435851040,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2016-10-14T09:04:11.284Z",
-        "origin_issue": null,
-        "owner": 12,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Pilar Herrera",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "points": {
-            "1": 1,
-            "2": 1,
-            "3": 3,
-            "4": 10
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 91,
-        "sprint_order": 1476435851040,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff8a84",
-            "is_closed": false,
-            "name": "Preparada"
-        },
-        "subject": "Lighttpd support",
-        "tags": [
-            [
-                "a",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_points": 13.5,
-        "total_voters": 3,
-        "total_watchers": 2,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            2,
-            7
-        ]
     }
 ]
 ----

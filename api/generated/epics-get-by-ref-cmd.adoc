@@ -3,5 +3,5 @@
 curl -X GET \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
--s http://localhost:8000/api/v1/epics/by_ref?ref=106\&project=2
+-s http://localhost:8000/api/v1/epics/by_ref?ref=86\&project=3
 ----

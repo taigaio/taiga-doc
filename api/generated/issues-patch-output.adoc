@@ -1,24 +1,24 @@
 [source,json]
 ----
 {
-    "assigned_to": 13,
+    "assigned_to": 12,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Alvaro Molina",
-        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-        "id": 13,
+        "full_name_display": "Vanesa Garcia",
+        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+        "id": 12,
         "is_active": true,
         "photo": null,
-        "username": "user7"
+        "username": "user6"
     },
     "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2016-10-14T09:04:14.084Z",
-    "description": "Sint temporibus unde tempora exercitationem ullam praesentium, consequatur veniam voluptas ut? Nihil perspiciatis iusto quas reprehenderit repellat omnis sequi dolore tempora nisi exercitationem, molestias enim aut recusandae, amet repellat eum ullam qui nostrum sint deserunt voluptate nulla exercitationem reprehenderit, mollitia id sed natus?",
-    "description_html": "<p>Sint temporibus unde tempora exercitationem ullam praesentium, consequatur veniam voluptas ut? Nihil perspiciatis iusto quas reprehenderit repellat omnis sequi dolore tempora nisi exercitationem, molestias enim aut recusandae, amet repellat eum ullam qui nostrum sint deserunt voluptate nulla exercitationem reprehenderit, mollitia id sed natus?</p>",
+    "created_date": "2016-11-11T07:50:17.982Z",
+    "description": "Omnis dolore ducimus tenetur? Soluta tempore possimus nemo odit accusamus dolor iure delectus molestias laborum, cumque earum aspernatur nesciunt quibusdam dolore sunt esse libero, fugit quod deleniti autem veritatis fugiat enim earum.",
+    "description_html": "<p>Omnis dolore ducimus tenetur? Soluta tempore possimus nemo odit accusamus dolor iure delectus molestias laborum, cumque earum aspernatur nesciunt quibusdam dolore sunt esse libero, fugit quod deleniti autem veritatis fugiat enim earum.</p>",
     "external_reference": null,
-    "finished_date": "2016-10-14T09:04:14.085Z",
+    "finished_date": "2016-11-11T07:50:17.984Z",
     "generated_user_stories": null,
     "id": 3,
     "is_blocked": false,
@@ -26,21 +26,21 @@
     "is_voter": false,
     "is_watcher": false,
     "milestone": null,
-    "modified_date": "2016-10-14T09:20:21.710Z",
-    "owner": 5,
+    "modified_date": "2016-11-11T08:14:09.049Z",
+    "owner": 8,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Administrator",
-        "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-        "id": 5,
+        "full_name_display": "Francisco Gil",
+        "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+        "id": 8,
         "is_active": true,
         "photo": null,
-        "username": "admin"
+        "username": "user2"
     },
-    "priority": 1,
+    "priority": 2,
     "project": 1,
-    "ref": 99,
-    "severity": 2,
+    "ref": 44,
+    "severity": 4,
     "status": 6,
     "status_extra_info": {
         "color": "#CC0000",
@@ -50,46 +50,37 @@
     "subject": "Patching subject",
     "tags": [
         [
-            "magni",
-            "#429e6f"
-        ],
-        [
-            "minus",
-            "#59b653"
-        ],
-        [
-            "provident",
-            "#7fdcf2"
-        ],
-        [
-            "quia",
+            "consequatur",
             null
         ],
         [
-            "repellat",
+            "eum",
             null
         ],
         [
-            "quisquam",
-            null
+            "impedit",
+            "#cde1f0"
         ],
         [
-            "temporibus",
-            "#a2c51a"
+            "totam",
+            "#560a5d"
         ],
         [
-            "eos",
-            "#8a6433"
+            "quos",
+            "#50a0d5"
         ]
     ],
     "total_voters": 3,
-    "total_watchers": 3,
-    "type": 3,
+    "total_watchers": 6,
+    "type": 2,
     "version": 2,
     "watchers": [
+        3,
         5,
-        13,
-        15
+        7,
+        8,
+        11,
+        14
     ]
 }
 ----

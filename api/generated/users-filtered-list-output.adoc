@@ -12,51 +12,10 @@
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
         "roles": [
             "Back",
             "Design",
+            "Front",
             "Product Owner",
             "Stakeholder"
         ],
@@ -65,70 +24,19 @@
         "username": "admin"
     },
     {
-        "big_photo": "http://localhost:8000/media/user/1/8/6/6/a03ff8cc6cca7142505d40033de8e7ea0854c4e98b79417dae47705ea9f2/test.png.300x300_q85_crop.png",
+        "big_photo": "http://localhost:8000/media/user/e/a/d/c/58e95ce650cbac941dc1122e93cfa36561803d7f2e6700020a475a9efac2/test.png.300x300_q85_crop.png",
         "bio": "",
-        "color": "#4B0082",
-        "full_name": "Silvia Soto",
-        "full_name_display": "Silvia Soto",
-        "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+        "color": "#40826D",
+        "full_name": "Vanesa Torres",
+        "full_name_display": "Vanesa Torres",
+        "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
         "id": 6,
         "is_active": true,
         "lang": "",
-        "photo": "http://localhost:8000/media/user/1/8/6/6/a03ff8cc6cca7142505d40033de8e7ea0854c4e98b79417dae47705ea9f2/test.png.80x80_q85_crop.png",
-        "projects_with_me": [
-            {
-                "id": 9,
-                "name": "Beta project",
-                "slug": "user6532909695705815086-beta-project"
-            },
-            {
-                "id": 10,
-                "name": "Beta project",
-                "slug": "user6532909695705815086-beta-project-1"
-            },
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
+        "photo": "http://localhost:8000/media/user/e/a/d/c/58e95ce650cbac941dc1122e93cfa36561803d7f2e6700020a475a9efac2/test.png.80x80_q85_crop.png",
         "roles": [
-            "Back",
+            "Design",
+            "Front",
             "Product Owner",
             "Stakeholder",
             "UX"
@@ -140,7 +48,7 @@
     {
         "big_photo": null,
         "bio": "",
-        "color": "#a78b21",
+        "color": "#76a8e3",
         "full_name": "test",
         "full_name_display": "test",
         "gravatar_id": "1ec29e4d0732b571e9a975e258a7e9b5",
@@ -148,13 +56,6 @@
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            }
-        ],
         "roles": [
             "Front"
         ],
@@ -165,58 +66,15 @@
     {
         "big_photo": null,
         "bio": "",
-        "color": "#B6DA55",
-        "full_name": "Marcos Ortiz",
-        "full_name_display": "Marcos Ortiz",
+        "color": "#40826D",
+        "full_name": "Bego\u00f1a Flores",
+        "full_name_display": "Bego\u00f1a Flores",
         "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
         "id": 7,
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
         "roles": [
-            "Back",
             "Design",
             "Front",
             "Product Owner",
@@ -229,120 +87,15 @@
     {
         "big_photo": null,
         "bio": "",
-        "color": "#D70A53",
-        "full_name": "Alba Leon",
-        "full_name_display": "Alba Leon",
+        "color": "#71A6D2",
+        "full_name": "Francisco Gil",
+        "full_name_display": "Francisco Gil",
         "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
         "id": 8,
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
         "roles": [
-            "Design",
-            "Front",
-            "Stakeholder"
-        ],
-        "theme": "",
-        "timezone": "",
-        "username": "user2"
-    },
-    {
-        "big_photo": null,
-        "bio": "",
-        "color": "#FFF8E7",
-        "full_name": "Esther Ferrer",
-        "full_name_display": "Esther Ferrer",
-        "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-        "id": 9,
-        "is_active": true,
-        "lang": "",
-        "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
-        "roles": [
-            "Back",
             "Design",
             "Front",
             "Product Owner",
@@ -351,65 +104,44 @@
         ],
         "theme": "",
         "timezone": "",
+        "username": "user2"
+    },
+    {
+        "big_photo": null,
+        "bio": "",
+        "color": "#B6DA55",
+        "full_name": "Catalina Fernandez",
+        "full_name_display": "Catalina Fernandez",
+        "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+        "id": 9,
+        "is_active": true,
+        "lang": "",
+        "photo": null,
+        "roles": [
+            "Design",
+            "Front",
+            "Product Owner"
+        ],
+        "theme": "",
+        "timezone": "",
         "username": "user3"
     },
     {
         "big_photo": null,
         "bio": "",
-        "color": "#67CF00",
-        "full_name": "Marta Carmona",
-        "full_name_display": "Marta Carmona",
+        "color": "#2099DB",
+        "full_name": "Enrique Crespo",
+        "full_name_display": "Enrique Crespo",
         "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
         "id": 10,
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
         "roles": [
             "Back",
             "Design",
             "Front",
+            "Product Owner",
             "Stakeholder",
             "UX"
         ],
@@ -420,60 +152,18 @@
     {
         "big_photo": null,
         "bio": "",
-        "color": "#FFFF00",
-        "full_name": "German Benitez",
-        "full_name_display": "German Benitez",
+        "color": "#FFCC00",
+        "full_name": "Angela Perez",
+        "full_name_display": "Angela Perez",
         "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
         "id": 11,
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
         "roles": [
-            "Back",
             "Front",
-            "Product Owner"
+            "Product Owner",
+            "UX"
         ],
         "theme": "",
         "timezone": "",
@@ -483,60 +173,18 @@
         "big_photo": null,
         "bio": "",
         "color": "#71A6D2",
-        "full_name": "Pilar Herrera",
-        "full_name_display": "Pilar Herrera",
+        "full_name": "Vanesa Garcia",
+        "full_name_display": "Vanesa Garcia",
         "gravatar_id": "74cb769a5e64d445b8550789e1553502",
         "id": 12,
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
         "roles": [
             "Design",
+            "Front",
             "Product Owner",
-            "Stakeholder",
-            "UX"
+            "Stakeholder"
         ],
         "theme": "",
         "timezone": "",
@@ -545,62 +193,20 @@
     {
         "big_photo": null,
         "bio": "",
-        "color": "#002e33",
-        "full_name": "Alvaro Molina",
-        "full_name_display": "Alvaro Molina",
+        "color": "#B6DA55",
+        "full_name": "Mohamed Ortega",
+        "full_name_display": "Mohamed Ortega",
         "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
         "id": 13,
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
         "roles": [
             "Back",
             "Design",
             "Front",
             "Product Owner",
-            "UX"
+            "Stakeholder"
         ],
         "theme": "",
         "timezone": "",
@@ -609,61 +215,19 @@
     {
         "big_photo": null,
         "bio": "",
-        "color": "#FFCC00",
-        "full_name": "Andrea Fernandez",
-        "full_name_display": "Andrea Fernandez",
+        "color": "#002e33",
+        "full_name": "Miguel Molina",
+        "full_name_display": "Miguel Molina",
         "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
         "id": 14,
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
         "roles": [
-            "Design",
+            "Back",
             "Front",
             "Product Owner",
-            "UX"
+            "Stakeholder"
         ],
         "theme": "",
         "timezone": "",
@@ -672,60 +236,18 @@
     {
         "big_photo": null,
         "bio": "",
-        "color": "#C0FF33",
-        "full_name": "Catalina Roman",
-        "full_name_display": "Catalina Roman",
+        "color": "#FFFF00",
+        "full_name": "Virginia Castro",
+        "full_name_display": "Virginia Castro",
         "gravatar_id": "69b60d39a450e863609ae3546b12b360",
         "id": 15,
         "is_active": true,
         "lang": "",
         "photo": null,
-        "projects_with_me": [
-            {
-                "id": 1,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            {
-                "id": 8,
-                "name": "Project Example",
-                "slug": "project-example"
-            },
-            {
-                "id": 2,
-                "name": "Project Example 1",
-                "slug": "project-1"
-            },
-            {
-                "id": 3,
-                "name": "Project Example 2",
-                "slug": "project-2"
-            },
-            {
-                "id": 4,
-                "name": "Project Example 3",
-                "slug": "project-3"
-            },
-            {
-                "id": 5,
-                "name": "Project Example 4",
-                "slug": "project-4"
-            },
-            {
-                "id": 6,
-                "name": "Project Example 5",
-                "slug": "project-5"
-            },
-            {
-                "id": 7,
-                "name": "Project Example 6",
-                "slug": "project-6"
-            }
-        ],
         "roles": [
             "Back",
             "Design",
-            "Product Owner",
+            "Front",
             "Stakeholder",
             "UX"
         ],

@@ -53,6 +53,7 @@
     ],
     "id": 1,
     "is_backlog_activated": true,
+    "is_contact_activated": true,
     "is_epics_activated": false,
     "is_issues_activated": true,
     "is_kanban_activated": false,
@@ -125,7 +126,7 @@
             "order": 3
         }
     ],
-    "modified_date": "2016-10-14T09:20:37.322Z",
+    "modified_date": "2016-11-11T08:14:24.143Z",
     "name": "Scrum",
     "order": 1,
     "points": [

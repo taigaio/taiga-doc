@@ -1,19 +1,19 @@
 [source,json]
 ----
 {
-    "assigned_to": 8,
+    "assigned_to": 12,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Alba Leon",
-        "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-        "id": 8,
+        "full_name_display": "Vanesa Garcia",
+        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+        "id": 12,
         "is_active": true,
         "photo": null,
-        "username": "user2"
+        "username": "user6"
     },
-    "created_date": "2016-10-14T09:07:35.474Z",
+    "created_date": "2016-11-11T07:53:40.878Z",
     "description": null,
-    "id": 104,
+    "id": 26,
     "is_private": null,
     "is_voter": true,
     "is_watcher": false,
@@ -21,30 +21,26 @@
     "name": null,
     "project": 7,
     "project_blocked_code": "blocked-by-staff",
-    "project_is_private": true,
+    "project_is_private": false,
     "project_name": "Project Example 6",
     "project_slug": "project-6",
-    "ref": 67,
+    "ref": 61,
     "slug": null,
-    "status": "In progress",
-    "status_color": "#5E8C6A",
-    "subject": "Create the user model",
+    "status": "New",
+    "status_color": "#999999",
+    "subject": "Migrate to Python 3 and milk a beautiful cow",
     "tags_colors": [
         {
-            "color": null,
-            "name": "ut"
-        },
-        {
-            "color": "#7fea8e",
-            "name": "dolores"
+            "color": "#13f068",
+            "name": "repellendus"
         },
         {
             "color": null,
-            "name": "nesciunt"
+            "name": "reiciendis"
         }
     ],
-    "total_voters": 5,
-    "total_watchers": 1,
-    "type": "issue"
+    "total_voters": 8,
+    "total_watchers": 0,
+    "type": "epic"
 }
 ----

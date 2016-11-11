@@ -4,7 +4,7 @@ curl -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -F attached_file=@test.png \
--F object_id=6 \
+-F object_id=4 \
 -F project=1 \
 -s http://localhost:8000/api/v1/wiki/attachments
 ----

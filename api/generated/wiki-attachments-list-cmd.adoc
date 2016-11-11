@@ -3,5 +3,5 @@
 curl -X GET \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
--s http://localhost:8000/api/v1/wiki/attachments?object_id=6\&project=1
+-s http://localhost:8000/api/v1/wiki/attachments?object_id=4\&project=1
 ----

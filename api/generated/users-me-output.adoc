@@ -1,12 +1,12 @@
 [source,json]
 ----
 {
-    "big_photo": "http://localhost:8000/media/user/1/8/6/6/a03ff8cc6cca7142505d40033de8e7ea0854c4e98b79417dae47705ea9f2/test.png.300x300_q85_crop.png",
+    "big_photo": "http://localhost:8000/media/user/e/a/d/c/58e95ce650cbac941dc1122e93cfa36561803d7f2e6700020a475a9efac2/test.png.300x300_q85_crop.png",
     "bio": "",
-    "color": "#4B0082",
+    "color": "#40826D",
     "email": "test@sample-email.com",
-    "full_name": "Silvia Soto",
-    "full_name_display": "Silvia Soto",
+    "full_name": "Vanesa Torres",
+    "full_name_display": "Vanesa Torres",
     "gravatar_id": "737cc0873c835a8c879f124c0df9a0f1",
     "id": 6,
     "is_active": true,
@@ -15,18 +15,18 @@
     "max_memberships_public_projects": null,
     "max_private_projects": null,
     "max_public_projects": null,
-    "photo": "http://localhost:8000/media/user/1/8/6/6/a03ff8cc6cca7142505d40033de8e7ea0854c4e98b79417dae47705ea9f2/test.png.80x80_q85_crop.png",
-    "projects_with_me": [],
+    "photo": "http://localhost:8000/media/user/e/a/d/c/58e95ce650cbac941dc1122e93cfa36561803d7f2e6700020a475a9efac2/test.png.80x80_q85_crop.png",
     "roles": [
-        "Back",
+        "Design",
+        "Front",
         "Product Owner",
         "Stakeholder",
         "UX"
     ],
     "theme": "",
     "timezone": "",
-    "total_private_projects": 2,
-    "total_public_projects": 3,
+    "total_private_projects": 3,
+    "total_public_projects": 2,
     "username": "patchedusername"
 }
 ----

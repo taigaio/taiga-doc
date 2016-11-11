@@ -3,11 +3,11 @@
 {
     "big_photo": null,
     "bio": "",
-    "color": "#4B0082",
-    "email": "user6532909695705815086@taigaio.demo",
-    "full_name": "Silvia Soto",
-    "full_name_display": "Silvia Soto",
-    "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+    "color": "#40826D",
+    "email": "user2114747470430251528@taigaio.demo",
+    "full_name": "Vanesa Torres",
+    "full_name_display": "Vanesa Torres",
+    "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
     "id": 6,
     "is_active": true,
     "lang": "",
@@ -16,17 +16,17 @@
     "max_private_projects": null,
     "max_public_projects": null,
     "photo": null,
-    "projects_with_me": [],
     "roles": [
-        "Back",
+        "Design",
+        "Front",
         "Product Owner",
         "Stakeholder",
         "UX"
     ],
     "theme": "",
     "timezone": "",
-    "total_private_projects": 2,
-    "total_public_projects": 3,
-    "username": "user6532909695705815086"
+    "total_private_projects": 3,
+    "total_public_projects": 2,
+    "username": "user2114747470430251528"
 }
 ----

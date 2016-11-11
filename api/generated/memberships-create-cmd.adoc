@@ -4,9 +4,9 @@ curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
-        "email": "test-user@test.com",
         "project": 1,
-        "role": 3
+        "role": 3,
+        "username": "test-user@test.com"
     }' \
 -s http://localhost:8000/api/v1/memberships
 ----

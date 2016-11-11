@@ -1,8 +1,8 @@
 [source,json]
 ----
 {
-    "full_name": "Gogs",
-    "id": 4,
-    "username": "gogs-f33ddbd6ecc64da1b18d5b9bd902d2b6"
+    "full_name": "GitHub",
+    "id": 2,
+    "username": "github-bc4eebbe27fe4a398a3435c7e4c96dcf"
 }
 ----

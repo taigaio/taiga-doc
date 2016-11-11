@@ -1,87 +1,83 @@
 [source,json]
 ----
 {
-    "assigned_to": 15,
+    "assigned_to": 12,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Catalina Roman",
-        "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-        "id": 15,
-        "is_active": true,
-        "photo": null,
-        "username": "user9"
-    },
-    "attachments": [],
-    "blocked_note": "",
-    "blocked_note_html": "",
-    "comment": "",
-    "created_date": "2016-10-14T09:03:29.043Z",
-    "description": "Perspiciatis ipsum repellat quia quidem officia, totam accusamus laboriosam, quas expedita quos dolore adipisci animi harum hic?",
-    "description_html": "<p>Perspiciatis ipsum repellat quia quidem officia, totam accusamus laboriosam, quas expedita quos dolore adipisci animi harum hic?</p>",
-    "external_reference": null,
-    "finished_date": "2016-08-29T23:17:07.508Z",
-    "id": 1,
-    "is_blocked": false,
-    "is_closed": true,
-    "is_iocaine": false,
-    "is_voter": true,
-    "is_watcher": false,
-    "milestone": 1,
-    "milestone_slug": "sprint-2016-8-20",
-    "modified_date": "2016-10-14T09:20:35.510Z",
-    "owner": 12,
-    "owner_extra_info": {
-        "big_photo": null,
-        "full_name_display": "Pilar Herrera",
+        "full_name_display": "Vanesa Garcia",
         "gravatar_id": "74cb769a5e64d445b8550789e1553502",
         "id": 12,
         "is_active": true,
         "photo": null,
         "username": "user6"
     },
+    "attachments": [],
+    "blocked_note": "",
+    "blocked_note_html": "",
+    "comment": "",
+    "created_date": "2016-11-11T07:49:50.760Z",
+    "description": "Dolorem aperiam necessitatibus itaque voluptates at excepturi quibusdam laboriosam delectus nobis illum, eaque ab minima inventore expedita, non iure quibusdam explicabo exercitationem repellendus nobis? Aliquam ullam sit ea doloribus sed iure quibusdam vel accusantium voluptates alias, dolorem alias totam quas pariatur magni ullam officiis. At porro reiciendis, animi repellat eum, impedit velit nostrum reprehenderit maiores, maxime laborum dolorum id suscipit deserunt, sequi tenetur sint?",
+    "description_html": "<p>Dolorem aperiam necessitatibus itaque voluptates at excepturi quibusdam laboriosam delectus nobis illum, eaque ab minima inventore expedita, non iure quibusdam explicabo exercitationem repellendus nobis? Aliquam ullam sit ea doloribus sed iure quibusdam vel accusantium voluptates alias, dolorem alias totam quas pariatur magni ullam officiis. At porro reiciendis, animi repellat eum, impedit velit nostrum reprehenderit maiores, maxime laborum dolorum id suscipit deserunt, sequi tenetur sint?</p>",
+    "external_reference": null,
+    "finished_date": "2016-09-27T10:12:45.220Z",
+    "id": 1,
+    "is_blocked": false,
+    "is_closed": true,
+    "is_iocaine": false,
+    "is_voter": false,
+    "is_watcher": false,
+    "milestone": 1,
+    "milestone_slug": "sprint-2016-9-17",
+    "modified_date": "2016-11-11T08:14:22.272Z",
+    "owner": 15,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Virginia Castro",
+        "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+        "id": 15,
+        "is_active": true,
+        "photo": null,
+        "username": "user9"
+    },
     "project": 1,
     "ref": 2,
-    "status": 4,
+    "status": 3,
     "status_extra_info": {
-        "color": "#669900",
+        "color": "#ffcc00",
         "is_closed": true,
-        "name": "Cerrada"
+        "name": "Lista para testear"
     },
     "subject": "Patching subject",
     "tags": [
-        [
-            "iste",
-            null
-        ],
         [
             "obcaecati",
             null
         ],
         [
-            "vel",
+            "mollitia",
             null
         ],
         [
-            "totam",
+            "quod",
             null
         ],
         [
-            "modi",
+            "qui",
             null
         ],
         [
-            "eos",
+            "beatae",
             null
         ],
         [
-            "deleniti",
+            "cum",
             null
         ]
     ],
-    "taskboard_order": 1476435809043,
-    "total_voters": 7,
-    "total_watchers": 0,
-    "us_order": 1476435809043,
+    "taskboard_order": 1478850590760,
+    "total_voters": 3,
+    "total_watchers": 3,
+    "us_order": 1478850590760,
     "user_story": 1,
     "user_story_extra_info": {
         "epics": null,
@@ -90,6 +86,10 @@
         "subject": "Patching subject"
     },
     "version": 2,
-    "watchers": []
+    "watchers": [
+        1,
+        11,
+        12
+    ]
 }
 ----

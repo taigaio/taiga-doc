@@ -2,7 +2,7 @@
 ----
 {
     "color": null,
-    "created_at": "2016-10-14T09:19:53.817Z",
+    "created_at": "2016-11-11T08:13:40.894Z",
     "email": "test-user@test.com",
     "full_name": null,
     "gravatar_id": null,
@@ -10,12 +10,12 @@
     "invitation_extra_text": null,
     "invited_by": {
         "big_photo": null,
-        "full_name_display": "Silvia Soto",
-        "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+        "full_name_display": "Vanesa Torres",
+        "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
         "id": 6,
         "is_active": true,
         "photo": null,
-        "username": "user6532909695705815086"
+        "username": "user2114747470430251528"
     },
     "is_admin": false,
     "is_owner": null,
@@ -28,6 +28,6 @@
     "role_name": "Front",
     "user": null,
     "user_email": null,
-    "user_order": 1476436793818
+    "user_order": 1478852020894
 }
 ----

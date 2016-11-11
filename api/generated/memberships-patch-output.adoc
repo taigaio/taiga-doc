@@ -1,19 +1,19 @@
 [source,json]
 ----
 {
-    "color": "#FFCC00",
-    "created_at": "2016-10-14T09:03:27.673Z",
-    "full_name": "Andrea Fernandez",
-    "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+    "color": "#40826D",
+    "created_at": "2016-11-11T07:49:49.401Z",
+    "full_name": "Bego\u00f1a Flores",
+    "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
     "id": 1,
     "invitation_extra_text": null,
     "invited_by": {
-        "big_photo": "http://localhost:8000/media/user/1/8/6/6/a03ff8cc6cca7142505d40033de8e7ea0854c4e98b79417dae47705ea9f2/test.png.300x300_q85_crop.png",
-        "full_name_display": "Silvia Soto",
+        "big_photo": "http://localhost:8000/media/user/e/a/d/c/58e95ce650cbac941dc1122e93cfa36561803d7f2e6700020a475a9efac2/test.png.300x300_q85_crop.png",
+        "full_name_display": "Vanesa Torres",
         "gravatar_id": "737cc0873c835a8c879f124c0df9a0f1",
         "id": 6,
         "is_active": true,
-        "photo": "http://localhost:8000/media/user/1/8/6/6/a03ff8cc6cca7142505d40033de8e7ea0854c4e98b79417dae47705ea9f2/test.png.80x80_q85_crop.png",
+        "photo": "http://localhost:8000/media/user/e/a/d/c/58e95ce650cbac941dc1122e93cfa36561803d7f2e6700020a475a9efac2/test.png.80x80_q85_crop.png",
         "username": "patchedusername"
     },
     "is_admin": true,
@@ -25,7 +25,7 @@
     "project_slug": "project-0",
     "role": 3,
     "role_name": "Front",
-    "user": 14,
-    "user_order": 1476435807673
+    "user": 7,
+    "user_order": 1478850589401
 }
 ----

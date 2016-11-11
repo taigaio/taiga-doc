@@ -1,123 +1,118 @@
 [source,json]
 ----
 {
-    "completed_points": [
-        20.0,
-        1.0,
-        1.0,
-        20.0
-    ],
-    "completed_tasks": 7,
-    "completed_userstories": 1,
+    "completed_points": [],
+    "completed_tasks": 4,
+    "completed_userstories": 0,
     "days": [
         {
-            "day": "2016-08-20",
+            "day": "2016-09-17",
+            "name": 17,
+            "open_points": 92.0,
+            "optimal_points": 92.0
+        },
+        {
+            "day": "2016-09-18",
+            "name": 18,
+            "open_points": 92.0,
+            "optimal_points": 85.86666666666666
+        },
+        {
+            "day": "2016-09-19",
+            "name": 19,
+            "open_points": 92.0,
+            "optimal_points": 79.73333333333332
+        },
+        {
+            "day": "2016-09-20",
             "name": 20,
-            "open_points": 184.0,
-            "optimal_points": 184.0
+            "open_points": 86.6,
+            "optimal_points": 73.59999999999998
         },
         {
-            "day": "2016-08-21",
+            "day": "2016-09-21",
             "name": 21,
-            "open_points": 184.0,
-            "optimal_points": 171.73333333333332
+            "open_points": 86.6,
+            "optimal_points": 67.46666666666664
         },
         {
-            "day": "2016-08-22",
+            "day": "2016-09-22",
             "name": 22,
-            "open_points": 184.0,
-            "optimal_points": 159.46666666666664
+            "open_points": 81.2,
+            "optimal_points": 61.33333333333331
         },
         {
-            "day": "2016-08-23",
+            "day": "2016-09-23",
             "name": 23,
-            "open_points": 184.0,
-            "optimal_points": 147.19999999999996
+            "open_points": 81.2,
+            "optimal_points": 55.199999999999974
         },
         {
-            "day": "2016-08-24",
+            "day": "2016-09-24",
             "name": 24,
-            "open_points": 181.25,
-            "optimal_points": 134.93333333333328
+            "open_points": 81.2,
+            "optimal_points": 49.06666666666664
         },
         {
-            "day": "2016-08-25",
+            "day": "2016-09-25",
             "name": 25,
-            "open_points": 181.25,
-            "optimal_points": 122.66666666666661
+            "open_points": 81.2,
+            "optimal_points": 42.93333333333331
         },
         {
-            "day": "2016-08-26",
+            "day": "2016-09-26",
             "name": 26,
-            "open_points": 181.25,
-            "optimal_points": 110.39999999999995
+            "open_points": 81.2,
+            "optimal_points": 36.799999999999976
         },
         {
-            "day": "2016-08-27",
+            "day": "2016-09-27",
             "name": 27,
-            "open_points": 181.25,
-            "optimal_points": 98.13333333333328
+            "open_points": 64.8,
+            "optimal_points": 30.666666666666643
         },
         {
-            "day": "2016-08-28",
+            "day": "2016-09-28",
             "name": 28,
-            "open_points": 159.2,
-            "optimal_points": 85.86666666666662
+            "open_points": 64.8,
+            "optimal_points": 24.53333333333331
         },
         {
-            "day": "2016-08-29",
+            "day": "2016-09-29",
             "name": 29,
-            "open_points": 154.86666666666667,
-            "optimal_points": 73.59999999999995
+            "open_points": 64.8,
+            "optimal_points": 18.399999999999977
         },
         {
-            "day": "2016-08-30",
+            "day": "2016-09-30",
             "name": 30,
-            "open_points": 154.86666666666667,
-            "optimal_points": 61.333333333333286
+            "open_points": 64.8,
+            "optimal_points": 12.266666666666644
         },
         {
-            "day": "2016-08-31",
-            "name": 31,
-            "open_points": 154.86666666666667,
-            "optimal_points": 49.06666666666662
-        },
-        {
-            "day": "2016-09-01",
+            "day": "2016-10-01",
             "name": 1,
-            "open_points": 112.86666666666667,
-            "optimal_points": 36.799999999999955
+            "open_points": 64.8,
+            "optimal_points": 6.133333333333311
         },
         {
-            "day": "2016-09-02",
+            "day": "2016-10-02",
             "name": 2,
-            "open_points": 103.96666666666667,
-            "optimal_points": 24.53333333333329
-        },
-        {
-            "day": "2016-09-03",
-            "name": 3,
-            "open_points": 103.96666666666667,
-            "optimal_points": 12.266666666666621
-        },
-        {
-            "day": "2016-09-04",
-            "name": 4,
-            "open_points": 103.96666666666667,
-            "optimal_points": -4.618527782440651e-14
+            "open_points": 64.8,
+            "optimal_points": -2.3092638912203256e-14
         }
     ],
-    "estimated_finish": "2016-09-04",
-    "estimated_start": "2016-08-20",
+    "estimated_finish": "2016-10-02",
+    "estimated_start": "2016-09-17",
     "iocaine_doses": 0,
-    "name": "Sprint 2016-8-20",
+    "name": "Sprint 2016-9-17",
     "total_points": {
-        "1": 88.0,
-        "2": 7.5,
-        "3": 44.5,
-        "4": 44.0
+        "1": 48.0,
+        "2": 18.0,
+        "3": 13.0,
+        "4": 13.0
     },
-    "total_tasks": 24,
-    "total_userstories": 6
+    "total_tasks": 13,
+    "total_userstories": 3
 }
 ----

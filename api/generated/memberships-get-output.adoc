@@ -1,11 +1,11 @@
 [source,json]
 ----
 {
-    "color": "#FFCC00",
-    "created_at": "2016-10-14T09:03:27.673Z",
-    "email": "user8@taigaio.demo",
-    "full_name": "Andrea Fernandez",
-    "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+    "color": "#40826D",
+    "created_at": "2016-11-11T07:49:49.401Z",
+    "email": "user1@taigaio.demo",
+    "full_name": "Bego\u00f1a Flores",
+    "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
     "id": 1,
     "invitation_extra_text": null,
     "invited_by": null,
@@ -18,8 +18,8 @@
     "project_slug": "project-0",
     "role": 5,
     "role_name": "Product Owner",
-    "user": 14,
-    "user_email": "user8@taigaio.demo",
-    "user_order": 1476435807673
+    "user": 7,
+    "user_email": "user1@taigaio.demo",
+    "user_order": 1478850589401
 }
 ----

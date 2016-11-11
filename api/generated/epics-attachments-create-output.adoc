@@ -1,20 +1,20 @@
 [source,json]
 ----
 {
-    "attached_file": "attachments/3/9/0/d/74eb726304c0f158090f36c72286bdf638aa38f4869a6200f763a317798e/test.png",
-    "created_date": "2016-10-14T09:19:57.888Z",
+    "attached_file": "attachments/a/9/4/d/1b7485b73a713f17c61504bb2992cc7f17025576907d8b587fe2b6d5d228/test.png",
+    "created_date": "2016-11-11T08:13:44.876Z",
     "description": "",
-    "id": 1382,
+    "id": 1043,
     "is_deprecated": false,
-    "modified_date": "2016-10-14T09:19:57.897Z",
+    "modified_date": "2016-11-11T08:13:44.885Z",
     "name": "test.png",
-    "object_id": 10,
+    "object_id": 14,
     "order": 0,
     "owner": 6,
-    "project": 2,
+    "project": 3,
     "sha1": "b2f15df34ab8da49fab6bafeac4ad98023a88adb",
     "size": 3045,
-    "thumbnail_card_url": "http://localhost:8000/media/attachments/3/9/0/d/74eb726304c0f158090f36c72286bdf638aa38f4869a6200f763a317798e/test.png.300x200_q85_crop.png",
-    "url": "http://localhost:8000/media/attachments/3/9/0/d/74eb726304c0f158090f36c72286bdf638aa38f4869a6200f763a317798e/test.png"
+    "thumbnail_card_url": "http://localhost:8000/media/attachments/a/9/4/d/1b7485b73a713f17c61504bb2992cc7f17025576907d8b587fe2b6d5d228/test.png.300x200_q85_crop.png",
+    "url": "http://localhost:8000/media/attachments/a/9/4/d/1b7485b73a713f17c61504bb2992cc7f17025576907d8b587fe2b6d5d228/test.png"
 }
 ----

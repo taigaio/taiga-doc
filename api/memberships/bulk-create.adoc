@@ -3,7 +3,7 @@ To create multiple memberships at the same time send a POST request with the fol
 * *project_id* (required)
 * *bulk_memberships* (required): a list of dicts with
 ** *role_id*
-** *email*
+** *username*: user username or email
 * *invitation_extra_text*: string
 
 

@@ -1,20 +1,20 @@
 [source,json]
 ----
 {
-    "attached_file": "attachments/6/2/6/3/6f1cf14485dc6c42108f53611c27574f7606c1ba00b102a2f92b45c46d36/sample_attachment_3.txt",
-    "created_date": "2016-10-14T09:04:32.501Z",
+    "attached_file": "attachments/a/9/e/b/60ff802a9cdae58054276f083c38afdb6e54c99e7f4dfdb311838626d740/sample_attachment_1.txt",
+    "created_date": "2016-11-11T07:51:30.594Z",
     "description": "Updated description",
-    "id": 343,
-    "is_deprecated": true,
-    "modified_date": "2016-10-14T09:20:36.509Z",
-    "name": "sample_attachment_3.txt",
-    "object_id": 63,
+    "id": 414,
+    "is_deprecated": false,
+    "modified_date": "2016-11-11T08:14:23.218Z",
+    "name": "sample_attachment_1.txt",
+    "object_id": 61,
     "order": 1,
     "owner": 5,
-    "project": 2,
-    "sha1": "da2631d805f12a1b533738a0912e9b9c2261dbef",
-    "size": 1178,
+    "project": 3,
+    "sha1": "e9913a16efd01bf9b44d712cf601802fdc8869ea",
+    "size": 289,
     "thumbnail_card_url": null,
-    "url": "http://localhost:8000/media/attachments/6/2/6/3/6f1cf14485dc6c42108f53611c27574f7606c1ba00b102a2f92b45c46d36/sample_attachment_3.txt"
+    "url": "http://localhost:8000/media/attachments/a/9/e/b/60ff802a9cdae58054276f083c38afdb6e54c99e7f4dfdb311838626d740/sample_attachment_1.txt"
 }
 ----

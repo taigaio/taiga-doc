@@ -1,87 +1,73 @@
 [source,json]
 ----
 {
-    "assigned_to": 13,
-    "assigned_to_extra_info": {
-        "big_photo": null,
-        "full_name_display": "Alvaro Molina",
-        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-        "id": 13,
-        "is_active": true,
-        "photo": null,
-        "username": "user7"
-    },
+    "assigned_to": null,
+    "assigned_to_extra_info": null,
     "attachments": [],
     "blocked_note": "",
     "blocked_note_html": "",
     "client_requirement": false,
-    "color": "#3465a4",
+    "color": "#fcaf3e",
     "comment": "",
-    "created_date": "2016-10-14T09:05:25.251Z",
-    "description": "Ullam ut officiis adipisci molestias molestiae cum soluta debitis magnam, possimus culpa ab iste maiores suscipit harum, doloremque similique amet nostrum dolorum, dolorem veritatis nobis? Enim laboriosam tempora repudiandae reiciendis nisi repellendus. Perferendis quaerat quibusdam earum quos error ipsam aut nam vitae, accusantium quas enim, asperiores qui quisquam minus ea ipsa voluptatibus cupiditate, adipisci voluptatibus dignissimos cumque iusto ullam quisquam quo quasi nihil at. Magnam fugiat accusantium fuga sunt quis eveniet nulla sequi quisquam consectetur, numquam laboriosam voluptas ipsam suscipit corporis perspiciatis officia?",
-    "description_html": "<p>Ullam ut officiis adipisci molestias molestiae cum soluta debitis magnam, possimus culpa ab iste maiores suscipit harum, doloremque similique amet nostrum dolorum, dolorem veritatis nobis? Enim laboriosam tempora repudiandae reiciendis nisi repellendus. Perferendis quaerat quibusdam earum quos error ipsam aut nam vitae, accusantium quas enim, asperiores qui quisquam minus ea ipsa voluptatibus cupiditate, adipisci voluptatibus dignissimos cumque iusto ullam quisquam quo quasi nihil at. Magnam fugiat accusantium fuga sunt quis eveniet nulla sequi quisquam consectetur, numquam laboriosam voluptas ipsam suscipit corporis perspiciatis officia?</p>",
-    "epics_order": 1476435925251,
-    "id": 10,
+    "created_date": "2016-11-11T07:52:13.658Z",
+    "description": "Asperiores harum delectus odio obcaecati at pariatur nisi fugiat ipsum, voluptate laboriosam quidem nisi odit repudiandae autem suscipit laborum molestias, error veniam soluta tempora tempore neque recusandae explicabo, atque vel cumque magnam officiis facilis esse non suscipit labore architecto id. Minima dolores explicabo labore odit id adipisci suscipit repellat cumque, nam odit soluta similique ipsa impedit officia maiores nulla quidem sunt dolorem, harum officiis unde corporis praesentium omnis odit illo quis voluptas, magni soluta obcaecati facere.",
+    "description_html": "<p>Asperiores harum delectus odio obcaecati at pariatur nisi fugiat ipsum, voluptate laboriosam quidem nisi odit repudiandae autem suscipit laborum molestias, error veniam soluta tempora tempore neque recusandae explicabo, atque vel cumque magnam officiis facilis esse non suscipit labore architecto id. Minima dolores explicabo labore odit id adipisci suscipit repellat cumque, nam odit soluta similique ipsa impedit officia maiores nulla quidem sunt dolorem, harum officiis unde corporis praesentium omnis odit illo quis voluptas, magni soluta obcaecati facere.</p>",
+    "epics_order": 1478850733658,
+    "id": 14,
     "is_blocked": false,
     "is_closed": false,
-    "is_voter": false,
+    "is_voter": true,
     "is_watcher": false,
-    "modified_date": "2016-10-14T09:05:25.425Z",
+    "modified_date": "2016-11-11T07:52:13.880Z",
     "neighbors": {
-        "next": {
-            "id": 11,
-            "ref": 107,
-            "subject": "Feature/improved image admin"
-        },
+        "next": null,
         "previous": {
-            "id": 9,
-            "ref": 105,
-            "subject": "Create the user model"
+            "id": 13,
+            "ref": 85,
+            "subject": "Exception is thrown if trying to add a folder with existing name"
         }
     },
-    "owner": 13,
+    "owner": 12,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Alvaro Molina",
-        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-        "id": 13,
+        "full_name_display": "Vanesa Garcia",
+        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+        "id": 12,
         "is_active": true,
         "photo": null,
-        "username": "user7"
+        "username": "user6"
     },
-    "project": 2,
-    "ref": 106,
-    "status": 9,
+    "project": 3,
+    "ref": 86,
+    "status": 14,
     "status_extra_info": {
         "color": "#fcc000",
         "is_closed": false,
         "name": "Lista para testear"
     },
-    "subject": "Added file copying and processing of images (resizing)",
+    "subject": "Create the user model",
     "tags": [
         [
-            "et",
-            null
+            "quod",
+            "#0e5b24"
         ],
         [
-            "ipsa",
+            "alias",
             null
-        ],
-        [
-            "fuga",
-            "#e86797"
         ]
     ],
     "team_requirement": false,
-    "total_voters": 0,
-    "total_watchers": 1,
+    "total_voters": 7,
+    "total_watchers": 3,
     "user_stories_counts": {
         "closed": 0,
-        "opened": 8
+        "opened": 2
     },
     "version": 1,
     "watchers": [
-        8
+        5,
+        8,
+        11
     ]
 }
 ----

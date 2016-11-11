@@ -5,9 +5,9 @@ curl -X PATCH \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
         "attributes_values": {
-            "8": "240 min"
+            "12": "240 min"
         },
         "version": 1
     }' \
--s http://localhost:8000/api/v1/epics/custom-attributes-values/10
+-s http://localhost:8000/api/v1/epics/custom-attributes-values/14
 ----

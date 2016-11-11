@@ -1,25 +1,25 @@
 [source,json]
 ----
 {
-    "assigned_to": 9,
+    "assigned_to": 15,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Esther Ferrer",
-        "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-        "id": 9,
+        "full_name_display": "Virginia Castro",
+        "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+        "id": 15,
         "is_active": true,
         "photo": null,
-        "username": "user3"
+        "username": "user9"
     },
     "attachments": [],
-    "backlog_order": 1476435808588,
+    "backlog_order": 1478850590280,
     "blocked_note": "",
     "blocked_note_html": "",
     "client_requirement": false,
     "comment": "",
-    "created_date": "2016-10-14T09:03:28.588Z",
-    "description": "Aspernatur perspiciatis dolores praesentium quia minima fuga?",
-    "description_html": "<p>Aspernatur perspiciatis dolores praesentium quia minima fuga?</p>",
+    "created_date": "2016-11-11T07:49:50.280Z",
+    "description": "Expedita quos dolore adipisci animi harum hic ut sed fugiat, harum voluptates iste obcaecati totam eos deleniti, dolores quo nemo quibusdam? Dolorum expedita veniam eveniet numquam officiis laudantium? Voluptate voluptas molestiae necessitatibus id facilis animi odit dolores enim, maxime cupiditate perspiciatis modi odit eveniet ullam. Consequuntur doloremque sit deserunt earum corrupti architecto eveniet quis amet obcaecati, non ex amet rerum aut facere rem vel delectus fugit tempora nobis, ut debitis ipsam alias iure tenetur, quae voluptatem illum tenetur porro voluptas doloribus, obcaecati corporis porro neque itaque temporibus nulla unde quas tempora.",
+    "description_html": "<p>Expedita quos dolore adipisci animi harum hic ut sed fugiat, harum voluptates iste obcaecati totam eos deleniti, dolores quo nemo quibusdam? Dolorum expedita veniam eveniet numquam officiis laudantium? Voluptate voluptas molestiae necessitatibus id facilis animi odit dolores enim, maxime cupiditate perspiciatis modi odit eveniet ullam. Consequuntur doloremque sit deserunt earum corrupti architecto eveniet quis amet obcaecati, non ex amet rerum aut facere rem vel delectus fugit tempora nobis, ut debitis ipsam alias iure tenetur, quae voluptatem illum tenetur porro voluptas doloribus, obcaecati corporis porro neque itaque temporibus nulla unde quas tempora.</p>",
     "epic_order": null,
     "epics": null,
     "external_reference": null,
@@ -30,27 +30,27 @@
     "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
-    "kanban_order": 1476435808588,
+    "kanban_order": 1478850590280,
     "milestone": 1,
-    "milestone_name": "Sprint 2016-8-20",
-    "milestone_slug": "sprint-2016-8-20",
-    "modified_date": "2016-10-14T09:20:02.755Z",
+    "milestone_name": "Sprint 2016-9-17",
+    "milestone_slug": "sprint-2016-9-17",
+    "modified_date": "2016-11-11T08:13:50.631Z",
     "origin_issue": null,
-    "owner": 8,
+    "owner": 12,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Alba Leon",
-        "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-        "id": 8,
+        "full_name_display": "Vanesa Garcia",
+        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+        "id": 12,
         "is_active": true,
         "photo": null,
-        "username": "user2"
+        "username": "user6"
     },
     "points": {
-        "1": 8,
+        "1": 12,
         "2": 2,
         "3": 5,
-        "4": 6
+        "4": 5
     },
     "project": 1,
     "project_extra_info": {
@@ -70,23 +70,21 @@
     "subject": "Patching subject",
     "tags": [
         [
-            "modi",
-            "#494e30"
+            "cum",
+            "#ab14d9"
         ]
     ],
     "tasks": [],
     "team_requirement": false,
-    "total_points": 13.0,
-    "total_voters": 0,
-    "total_watchers": 5,
+    "total_points": 44.0,
+    "total_voters": 4,
+    "total_watchers": 3,
     "tribe_gig": null,
     "version": 2,
     "watchers": [
-        3,
+        2,
         7,
-        10,
-        11,
-        15
+        8
     ]
 }
 ----

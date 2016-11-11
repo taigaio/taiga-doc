@@ -2,7 +2,7 @@
 ----
 {
     "projects": {
-        "total": 2
+        "total": 5
     }
 }
 ----

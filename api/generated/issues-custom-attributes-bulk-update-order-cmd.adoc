@@ -6,7 +6,7 @@ curl -X POST \
 -d '{
         "bulk_issue_custom_attributes": [
             [
-                5,
+                1,
                 10
             ],
             [

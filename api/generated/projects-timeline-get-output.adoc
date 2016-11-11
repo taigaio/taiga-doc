@@ -1,15 +1,15 @@
 [source,json]
 ----
 {
-    "content_type": 15,
-    "created": "2016-10-14T09:20:03.917Z",
+    "content_type": 18,
+    "created": "2016-11-11T08:13:51.923Z",
     "data": {
         "comment": "",
         "comment_html": "",
         "milestone": {
             "id": 1,
-            "name": "Sprint 2016-8-20",
-            "slug": "sprint-2016-8-20"
+            "name": "Sprint 2016-9-17",
+            "slug": "sprint-2016-9-17"
         },
         "project": {
             "description": "Project example 0 description",
@@ -19,13 +19,13 @@
         },
         "user": {
             "big_photo": null,
-            "date_joined": "2016-10-14T09:03:27.019Z",
-            "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+            "date_joined": "2016-11-11T07:49:48.618Z",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
             "id": 6,
             "is_profile_visible": true,
-            "name": "Silvia Soto",
+            "name": "Vanesa Torres",
             "photo": null,
-            "username": "user6532909695705815086"
+            "username": "user2114747470430251528"
         },
         "userstory": {
             "id": 1,
@@ -38,13 +38,13 @@
                     {
                         "changes": {
                             "description": [
-                                "earum vel odit ipsum dolores eos corrupti totam voluptatibus quod unde",
+                                "ipsam qui odit earum nesciunt at odio consectetur id accusamus molestiae nisi",
                                 "patching description"
                             ]
                         },
                         "filename": "sample_attachment_2.txt",
                         "thumb_url": null,
-                        "url": "http://localhost:8000/media/attachments/6/5/8/1/94a2f000d46c71d7931f1d29a02e25a235edd3c31f71d2305fd5d09698ea/sample_attachment_2.txt"
+                        "url": "http://localhost:8000/media/attachments/a/3/0/0/6393f1d90ec538e62bb183821f52e2d088e6381b978adfacca0b75c459a6/sample_attachment_2.txt"
                     }
                 ],
                 "deleted": [],
@@ -54,7 +54,7 @@
     },
     "data_content_type": 45,
     "event_type": "userstories.userstory.change",
-    "id": 8779,
+    "id": 6853,
     "namespace": "project:1",
     "object_id": 1,
     "project": 1

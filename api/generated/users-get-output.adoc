@@ -3,11 +3,11 @@
 {
     "big_photo": null,
     "bio": "",
-    "color": "#4B0082",
-    "email": "user6532909695705815086@taigaio.demo",
-    "full_name": "Silvia Soto",
-    "full_name_display": "Silvia Soto",
-    "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+    "color": "#40826D",
+    "email": "user2114747470430251528@taigaio.demo",
+    "full_name": "Vanesa Torres",
+    "full_name_display": "Vanesa Torres",
+    "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
     "id": 6,
     "is_active": true,
     "lang": "",
@@ -16,68 +16,17 @@
     "max_private_projects": null,
     "max_public_projects": null,
     "photo": null,
-    "projects_with_me": [
-        {
-            "id": 9,
-            "name": "Beta project",
-            "slug": "user6532909695705815086-beta-project"
-        },
-        {
-            "id": 10,
-            "name": "Beta project",
-            "slug": "user6532909695705815086-beta-project-1"
-        },
-        {
-            "id": 1,
-            "name": "Beta project patch",
-            "slug": "project-0"
-        },
-        {
-            "id": 8,
-            "name": "Project Example",
-            "slug": "project-example"
-        },
-        {
-            "id": 2,
-            "name": "Project Example 1",
-            "slug": "project-1"
-        },
-        {
-            "id": 3,
-            "name": "Project Example 2",
-            "slug": "project-2"
-        },
-        {
-            "id": 4,
-            "name": "Project Example 3",
-            "slug": "project-3"
-        },
-        {
-            "id": 5,
-            "name": "Project Example 4",
-            "slug": "project-4"
-        },
-        {
-            "id": 6,
-            "name": "Project Example 5",
-            "slug": "project-5"
-        },
-        {
-            "id": 7,
-            "name": "Project Example 6",
-            "slug": "project-6"
-        }
-    ],
     "roles": [
-        "Back",
+        "Design",
+        "Front",
         "Product Owner",
         "Stakeholder",
         "UX"
     ],
     "theme": "",
     "timezone": "",
-    "total_private_projects": 2,
-    "total_public_projects": 3,
+    "total_private_projects": 3,
+    "total_public_projects": 2,
     "username": "patchedusername"
 }
 ----

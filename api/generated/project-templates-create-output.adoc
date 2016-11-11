@@ -1,7 +1,7 @@
 [source,json]
 ----
 {
-    "created_date": "2016-10-14T09:20:38.360Z",
+    "created_date": "2016-11-11T08:14:25.177Z",
     "default_options": {
         "issue_status": "New",
         "issue_type": "Bug",
@@ -16,6 +16,7 @@
     "epic_statuses": null,
     "id": 4,
     "is_backlog_activated": false,
+    "is_contact_activated": true,
     "is_epics_activated": false,
     "is_issues_activated": false,
     "is_kanban_activated": true,
@@ -81,9 +82,9 @@
             "order": 3
         }
     ],
-    "modified_date": "2016-10-14T09:20:38.362Z",
+    "modified_date": "2016-11-11T08:14:25.182Z",
     "name": "New Template",
-    "order": 1476436838359,
+    "order": 1478852065174,
     "points": [
         {
             "name": "?",

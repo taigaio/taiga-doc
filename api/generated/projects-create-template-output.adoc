@@ -1,7 +1,7 @@
 [source,json]
 ----
 {
-    "created_date": "2016-10-14T09:20:25.032Z",
+    "created_date": "2016-11-11T08:14:12.056Z",
     "default_options": {
         "epic_status": null,
         "issue_status": "Patch status name",
@@ -12,7 +12,7 @@
         "task_status": "Patch status name",
         "us_status": "New"
     },
-    "default_owner_role": "stakeholder",
+    "default_owner_role": "design",
     "description": "Beta template description",
     "epic_statuses": [
         {
@@ -60,6 +60,7 @@
     ],
     "id": 3,
     "is_backlog_activated": true,
+    "is_contact_activated": true,
     "is_epics_activated": true,
     "is_issues_activated": true,
     "is_kanban_activated": true,
@@ -146,9 +147,9 @@
             "order": 3
         }
     ],
-    "modified_date": "2016-10-14T09:20:25.063Z",
+    "modified_date": "2016-11-11T08:14:12.078Z",
     "name": "Beta template",
-    "order": 1476436825032,
+    "order": 1478852052056,
     "points": [
         {
             "name": "?",

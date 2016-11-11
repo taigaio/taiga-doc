@@ -54,6 +54,7 @@
         ],
         "id": 1,
         "is_backlog_activated": true,
+        "is_contact_activated": true,
         "is_epics_activated": false,
         "is_issues_activated": true,
         "is_kanban_activated": false,
@@ -126,7 +127,7 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-10-14T09:20:37.322Z",
+        "modified_date": "2016-11-11T08:14:24.143Z",
         "name": "Scrum",
         "order": 1,
         "points": [
@@ -619,6 +620,7 @@
         ],
         "id": 2,
         "is_backlog_activated": false,
+        "is_contact_activated": true,
         "is_epics_activated": false,
         "is_issues_activated": false,
         "is_kanban_activated": true,
@@ -1132,7 +1134,7 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2016-10-14T09:20:25.032Z",
+        "created_date": "2016-11-11T08:14:12.056Z",
         "default_options": {
             "epic_status": null,
             "issue_status": "Patch status name",
@@ -1143,7 +1145,7 @@
             "task_status": "Patch status name",
             "us_status": "New"
         },
-        "default_owner_role": "stakeholder",
+        "default_owner_role": "design",
         "description": "Beta template description",
         "epic_statuses": [
             {
@@ -1191,6 +1193,7 @@
         ],
         "id": 3,
         "is_backlog_activated": true,
+        "is_contact_activated": true,
         "is_epics_activated": true,
         "is_issues_activated": true,
         "is_kanban_activated": true,
@@ -1277,9 +1280,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-10-14T09:20:25.063Z",
+        "modified_date": "2016-11-11T08:14:12.078Z",
         "name": "Beta template",
-        "order": 1476436825032,
+        "order": 1478852052056,
         "points": [
             {
                 "name": "?",
@@ -1752,7 +1755,7 @@
         "videoconferences_extra_data": null
     },
     {
-        "created_date": "2016-10-14T09:20:38.360Z",
+        "created_date": "2016-11-11T08:14:25.177Z",
         "default_options": {
             "issue_status": "New",
             "issue_type": "Bug",
@@ -1767,6 +1770,7 @@
         "epic_statuses": null,
         "id": 4,
         "is_backlog_activated": false,
+        "is_contact_activated": true,
         "is_epics_activated": false,
         "is_issues_activated": false,
         "is_kanban_activated": true,
@@ -1832,9 +1836,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-10-14T09:20:38.362Z",
+        "modified_date": "2016-11-11T08:14:25.182Z",
         "name": "New Template",
-        "order": 1476436838359,
+        "order": 1478852065174,
         "points": [
             {
                 "name": "?",
@@ -2220,22 +2224,23 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2016-10-14T09:20:38.395Z",
+        "created_date": "2016-11-11T08:14:25.222Z",
         "default_options": null,
         "default_owner_role": "product-owner",
         "description": "Sample description",
         "epic_statuses": null,
         "id": 5,
         "is_backlog_activated": true,
+        "is_contact_activated": true,
         "is_epics_activated": false,
         "is_issues_activated": true,
         "is_kanban_activated": false,
         "is_wiki_activated": true,
         "issue_statuses": null,
         "issue_types": null,
-        "modified_date": "2016-10-14T09:20:38.395Z",
+        "modified_date": "2016-11-11T08:14:25.223Z",
         "name": "New simple template",
-        "order": 1476436838394,
+        "order": 1478852065220,
         "points": null,
         "priorities": null,
         "roles": null,
