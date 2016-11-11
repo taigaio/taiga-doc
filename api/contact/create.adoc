@@ -1,0 +1,8 @@
+To contact the admins from a project (the project must have the contact option  activated) send a POST request containing the following data:
+
+- *project*: project id
+- *comment*: comment for the admin staff
+
+include::../generated/contact-create-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-contact[contact project object]

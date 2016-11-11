@@ -6,7 +6,7 @@
     "description": "Updated description",
     "id": 620,
     "is_deprecated": false,
-    "modified_date": "2016-11-11T08:13:45.449Z",
+    "modified_date": "2016-11-11T08:49:32.630Z",
     "name": "sample_attachment_2.txt",
     "object_id": 14,
     "order": 1,

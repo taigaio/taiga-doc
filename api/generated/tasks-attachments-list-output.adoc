@@ -36,12 +36,12 @@
         "url": "http://localhost:8000/media/attachments/e/2/6/6/371f5861843e1d3054f707638afa42f65dd2b5a2386375d15ed6777dc152/sample_attachment_1.txt"
     },
     {
-        "attached_file": "attachments/7/1/8/f/c087666d0816df914ee763ac616ad1ecb00cc733ce4d2358cf85b9f6258c/test.png",
-        "created_date": "2016-11-11T08:14:21.366Z",
+        "attached_file": "attachments/7/6/1/b/f7ba0216823fd18d56a94fa27b2a361a36a6e54ebd315fac93e516123414/test.png",
+        "created_date": "2016-11-11T08:50:09.025Z",
         "description": "",
         "id": 1299,
         "is_deprecated": false,
-        "modified_date": "2016-11-11T08:14:21.378Z",
+        "modified_date": "2016-11-11T08:50:09.036Z",
         "name": "test.png",
         "object_id": 1,
         "order": 0,
@@ -49,8 +49,8 @@
         "project": 1,
         "sha1": "b2f15df34ab8da49fab6bafeac4ad98023a88adb",
         "size": 3045,
-        "thumbnail_card_url": "http://localhost:8000/media/attachments/7/1/8/f/c087666d0816df914ee763ac616ad1ecb00cc733ce4d2358cf85b9f6258c/test.png.300x200_q85_crop.png",
-        "url": "http://localhost:8000/media/attachments/7/1/8/f/c087666d0816df914ee763ac616ad1ecb00cc733ce4d2358cf85b9f6258c/test.png"
+        "thumbnail_card_url": "http://localhost:8000/media/attachments/7/6/1/b/f7ba0216823fd18d56a94fa27b2a361a36a6e54ebd315fac93e516123414/test.png.300x200_q85_crop.png",
+        "url": "http://localhost:8000/media/attachments/7/6/1/b/f7ba0216823fd18d56a94fa27b2a361a36a6e54ebd315fac93e516123414/test.png"
     }
 ]
 ----

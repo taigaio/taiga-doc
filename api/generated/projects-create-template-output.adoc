@@ -1,7 +1,7 @@
 [source,json]
 ----
 {
-    "created_date": "2016-11-11T08:14:12.056Z",
+    "created_date": "2016-11-11T08:49:58.286Z",
     "default_options": {
         "epic_status": null,
         "issue_status": "Patch status name",
@@ -147,9 +147,9 @@
             "order": 3
         }
     ],
-    "modified_date": "2016-11-11T08:14:12.078Z",
+    "modified_date": "2016-11-11T08:49:58.305Z",
     "name": "Beta template",
-    "order": 1478852052056,
+    "order": 1478854198286,
     "points": [
         {
             "name": "?",

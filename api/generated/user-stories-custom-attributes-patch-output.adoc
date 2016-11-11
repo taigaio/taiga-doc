@@ -4,7 +4,7 @@
     "created_date": "2016-11-11T07:49:50.159Z",
     "description": "vel omnis culpa quisquam nulla",
     "id": 1,
-    "modified_date": "2016-11-11T08:13:53.191Z",
+    "modified_date": "2016-11-11T08:49:39.344Z",
     "name": "Duration 1",
     "order": 1,
     "project": 1,

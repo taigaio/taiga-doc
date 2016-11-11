@@ -3,7 +3,7 @@
 {
     "anon_permissions": [],
     "blocked_code": null,
-    "created_date": "2016-11-11T08:14:13.698Z",
+    "created_date": "2016-11-11T08:50:00.287Z",
     "creation_template": 1,
     "default_epic_status": 38,
     "default_issue_status": 59,
@@ -35,7 +35,7 @@
     "members": [
         6
     ],
-    "modified_date": "2016-11-11T08:14:13.983Z",
+    "modified_date": "2016-11-11T08:50:00.955Z",
     "my_permissions": [
         "view_project",
         "modify_wiki_page",
@@ -105,7 +105,7 @@
     "total_milestones": null,
     "total_story_points": null,
     "total_watchers": 1,
-    "totals_updated_datetime": "2016-11-11T08:14:14.031Z",
+    "totals_updated_datetime": "2016-11-11T08:50:01.042Z",
     "videoconferences": null,
     "videoconferences_extra_data": null
 }

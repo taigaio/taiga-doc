@@ -4,7 +4,7 @@
     "created_date": "2016-11-11T07:51:29.452Z",
     "description": "voluptates quidem vero consequatur distinctio",
     "id": 12,
-    "modified_date": "2016-11-11T08:13:46.705Z",
+    "modified_date": "2016-11-11T08:49:33.611Z",
     "name": "Duration 1",
     "order": 1,
     "project": 3,

@@ -1,0 +1,7 @@
+[source,json]
+----
+{
+    "_error_message": "No puedes abandonar el proyecto si eres el due\u00f1o o no existen m\u00e1s administradores",
+    "_error_type": "taiga.base.exceptions.PermissionDenied"
+}
+----

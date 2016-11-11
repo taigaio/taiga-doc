@@ -24,7 +24,7 @@
     "is_watcher": true,
     "milestone": 1,
     "milestone_slug": "sprint-2016-9-17",
-    "modified_date": "2016-11-11T08:14:22.272Z",
+    "modified_date": "2016-11-11T08:50:09.897Z",
     "owner": 15,
     "owner_extra_info": {
         "big_photo": null,

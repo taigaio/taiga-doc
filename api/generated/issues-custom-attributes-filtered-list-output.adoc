@@ -42,10 +42,10 @@
         "type": "text"
     },
     {
-        "created_date": "2016-11-11T08:14:19.680Z",
+        "created_date": "2016-11-11T08:50:07.373Z",
         "description": "Duration in minutes",
         "id": 31,
-        "modified_date": "2016-11-11T08:14:19.689Z",
+        "modified_date": "2016-11-11T08:50:07.382Z",
         "name": "Duration 2",
         "order": 8,
         "project": 1,
@@ -55,19 +55,19 @@
         "created_date": "2016-11-11T07:49:50.206Z",
         "description": "officiis repudiandae dignissimos similique consequatur mollitia at enim ad molestias praesentium",
         "id": 1,
-        "modified_date": "2016-11-11T08:14:19.629Z",
+        "modified_date": "2016-11-11T08:50:07.323Z",
         "name": "Duration 1",
         "order": 10,
         "project": 1,
         "type": "date"
     },
     {
-        "created_date": "2016-11-11T08:14:19.740Z",
+        "created_date": "2016-11-11T08:50:07.432Z",
         "description": "",
         "id": 32,
-        "modified_date": "2016-11-11T08:14:19.751Z",
+        "modified_date": "2016-11-11T08:50:07.443Z",
         "name": "Duration 3",
-        "order": 1478852059733,
+        "order": 1478854207425,
         "project": 1,
         "type": "text"
     }

@@ -5,7 +5,7 @@ curl -X POST \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
         "reason": "testing",
-        "token": "6:1c56xv:5kg5rk4_Imj6O81FVlsuSfrgFOI"
+        "token": "6:1c57WZ:or3FH1Rpj-DBHBJgOZvO0xw0bgU"
     }' \
 -s http://localhost:8000/api/v1/projects/3/transfer_accept
 ----

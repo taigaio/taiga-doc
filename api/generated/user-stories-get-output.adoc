@@ -34,7 +34,7 @@
     "milestone": 1,
     "milestone_name": "Sprint 2016-9-17",
     "milestone_slug": "sprint-2016-9-17",
-    "modified_date": "2016-11-11T08:13:50.631Z",
+    "modified_date": "2016-11-11T08:49:36.966Z",
     "neighbors": {
         "next": {
             "id": 2,

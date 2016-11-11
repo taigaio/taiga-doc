@@ -66,22 +66,22 @@
             "type": "url"
         },
         {
-            "created_date": "2016-11-11T08:13:46.752268+00:00",
+            "created_date": "2016-11-11T08:49:33.648343+00:00",
             "description": "Duration in minutes",
             "id": 26,
-            "modified_date": "2016-11-11T08:13:46.759402+00:00",
+            "modified_date": "2016-11-11T08:49:33.655587+00:00",
             "name": "Duration 2",
             "order": 8,
             "project_id": 1,
             "type": "text"
         },
         {
-            "created_date": "2016-11-11T08:13:46.808915+00:00",
+            "created_date": "2016-11-11T08:49:33.69272+00:00",
             "description": "",
             "id": 27,
-            "modified_date": "2016-11-11T08:13:46.816945+00:00",
+            "modified_date": "2016-11-11T08:49:33.703857+00:00",
             "name": "Duration 3",
-            "order": 1478852026802,
+            "order": 1478854173685,
             "project_id": 1,
             "type": "text"
         }
@@ -424,7 +424,7 @@
             "username": "user7"
         },
         {
-            "color": "#76a8e3",
+            "color": "#03e359",
             "full_name": "test",
             "full_name_display": "test",
             "gravatar_id": "1ec29e4d0732b571e9a975e258a7e9b5",
@@ -486,7 +486,7 @@
             "slug": "sprint-2016-10-2"
         }
     ],
-    "modified_date": "2016-11-11T08:14:15.918Z",
+    "modified_date": "2016-11-11T08:50:03.528Z",
     "my_permissions": [
         "view_project",
         "modify_wiki_page",
@@ -1095,8 +1095,8 @@
     "total_milestones": 6,
     "total_story_points": 734.0,
     "total_watchers": 15,
-    "totals_updated_datetime": "2016-11-11T08:14:15.802Z",
-    "transfer_token": "5:1c56yV:f3T1AN0WA1ADkRz_bfQdufjftQE",
+    "totals_updated_datetime": "2016-11-11T08:50:03.403Z",
+    "transfer_token": "5:1c57X9:eFtaPoXufGCwGoevPNVZUAJ_J9E",
     "us_statuses": [
         {
             "color": "#999999",
@@ -1208,10 +1208,10 @@
             "type": "date"
         },
         {
-            "created_date": "2016-11-11T08:13:53.22793+00:00",
+            "created_date": "2016-11-11T08:49:39.381483+00:00",
             "description": "Duration in minutes",
             "id": 26,
-            "modified_date": "2016-11-11T08:13:53.234886+00:00",
+            "modified_date": "2016-11-11T08:49:39.391232+00:00",
             "name": "Duration 2",
             "order": 8,
             "project_id": 1,
@@ -1221,19 +1221,19 @@
             "created_date": "2016-11-11T07:49:50.1593+00:00",
             "description": "vel omnis culpa quisquam nulla",
             "id": 1,
-            "modified_date": "2016-11-11T08:13:53.191394+00:00",
+            "modified_date": "2016-11-11T08:49:39.344327+00:00",
             "name": "Duration 1",
             "order": 10,
             "project_id": 1,
             "type": "multiline"
         },
         {
-            "created_date": "2016-11-11T08:13:53.285716+00:00",
+            "created_date": "2016-11-11T08:49:39.428701+00:00",
             "description": "",
             "id": 27,
-            "modified_date": "2016-11-11T08:13:53.293498+00:00",
+            "modified_date": "2016-11-11T08:49:39.436656+00:00",
             "name": "Duration 3",
-            "order": 1478852033279,
+            "order": 1478854179423,
             "project_id": 1,
             "type": "text"
         }

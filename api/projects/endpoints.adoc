@@ -131,4 +131,8 @@
 | /api/v1/projects/\{projectId}/transfer_reject
 | POST
 | link:#projects-transfer-reject[Transfer reject]
+
+| /api/v1/projects/\{projectId}/contact
+| POST
+| link:#projects-contact[Contact project]
 |===

@@ -115,6 +115,9 @@ include::users/endpoints.adoc[]
 === Notify policies
 include::notify-policies/endpoints.adoc[]
 
+=== Contact
+include::contact/endpoints.adoc[]
+
 === Feedback
 include::feedback/endpoints.adoc[]
 
@@ -304,6 +307,10 @@ include::stats/summary.adoc[]
 == Importers
 include::importers/summary.adoc[]
 
+
+[[contact]]
+== Contact
+include::contact/summary.adoc[]
 
 == Objects Summary
 
@@ -636,6 +643,10 @@ include::generated/users-liked-output.adoc[]
 [[object-voted-detail]]
 === Voted
 include::generated/users-voted-output.adoc[]
+
+[[object-contact]]
+=== Contact
+include::generated/contact-create-output.adoc[]
 
 [[object-discover-stats]]
 === Discover stats

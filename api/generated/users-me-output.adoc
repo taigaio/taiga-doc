@@ -1,7 +1,7 @@
 [source,json]
 ----
 {
-    "big_photo": "http://localhost:8000/media/user/e/a/d/c/58e95ce650cbac941dc1122e93cfa36561803d7f2e6700020a475a9efac2/test.png.300x300_q85_crop.png",
+    "big_photo": "http://localhost:8000/media/user/9/b/7/e/dbc6b46c3e069f3c414db23d271d61931c53e06295e61fb6db9b0954bc9f/test.png.300x300_q85_crop.png",
     "bio": "",
     "color": "#40826D",
     "email": "test@sample-email.com",
@@ -15,7 +15,7 @@
     "max_memberships_public_projects": null,
     "max_private_projects": null,
     "max_public_projects": null,
-    "photo": "http://localhost:8000/media/user/e/a/d/c/58e95ce650cbac941dc1122e93cfa36561803d7f2e6700020a475a9efac2/test.png.80x80_q85_crop.png",
+    "photo": "http://localhost:8000/media/user/9/b/7/e/dbc6b46c3e069f3c414db23d271d61931c53e06295e61fb6db9b0954bc9f/test.png.80x80_q85_crop.png",
     "roles": [
         "Design",
         "Front",

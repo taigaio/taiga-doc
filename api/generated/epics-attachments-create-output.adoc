@@ -1,12 +1,12 @@
 [source,json]
 ----
 {
-    "attached_file": "attachments/a/9/4/d/1b7485b73a713f17c61504bb2992cc7f17025576907d8b587fe2b6d5d228/test.png",
-    "created_date": "2016-11-11T08:13:44.876Z",
+    "attached_file": "attachments/8/3/d/b/c4dc7498030bd32c62725307207005b6d7eafd286bc0117f0af2c12768ef/test.png",
+    "created_date": "2016-11-11T08:49:32.139Z",
     "description": "",
     "id": 1043,
     "is_deprecated": false,
-    "modified_date": "2016-11-11T08:13:44.885Z",
+    "modified_date": "2016-11-11T08:49:32.149Z",
     "name": "test.png",
     "object_id": 14,
     "order": 0,
@@ -14,7 +14,7 @@
     "project": 3,
     "sha1": "b2f15df34ab8da49fab6bafeac4ad98023a88adb",
     "size": 3045,
-    "thumbnail_card_url": "http://localhost:8000/media/attachments/a/9/4/d/1b7485b73a713f17c61504bb2992cc7f17025576907d8b587fe2b6d5d228/test.png.300x200_q85_crop.png",
-    "url": "http://localhost:8000/media/attachments/a/9/4/d/1b7485b73a713f17c61504bb2992cc7f17025576907d8b587fe2b6d5d228/test.png"
+    "thumbnail_card_url": "http://localhost:8000/media/attachments/8/3/d/b/c4dc7498030bd32c62725307207005b6d7eafd286bc0117f0af2c12768ef/test.png.300x200_q85_crop.png",
+    "url": "http://localhost:8000/media/attachments/8/3/d/b/c4dc7498030bd32c62725307207005b6d7eafd286bc0117f0af2c12768ef/test.png"
 }
 ----

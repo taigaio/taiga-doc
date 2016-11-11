@@ -12,7 +12,7 @@
         "view_tasks"
     ],
     "blocked_code": null,
-    "created_date": "2016-11-11T08:14:14.115Z",
+    "created_date": "2016-11-11T08:50:01.134Z",
     "creation_template": 1,
     "default_epic_status": 43,
     "default_issue_status": 66,
@@ -201,7 +201,7 @@
         }
     ],
     "milestones": [],
-    "modified_date": "2016-11-11T08:14:14.415Z",
+    "modified_date": "2016-11-11T08:50:01.767Z",
     "my_permissions": [
         "view_project",
         "modify_wiki_page",
@@ -722,7 +722,7 @@
     "total_milestones": null,
     "total_story_points": null,
     "total_watchers": 1,
-    "totals_updated_datetime": "2016-11-11T08:14:14.459Z",
+    "totals_updated_datetime": "2016-11-11T08:50:01.851Z",
     "transfer_token": null,
     "us_statuses": [
         {

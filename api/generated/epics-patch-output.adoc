@@ -18,7 +18,7 @@
     "is_closed": false,
     "is_voter": true,
     "is_watcher": false,
-    "modified_date": "2016-11-11T08:13:42.847Z",
+    "modified_date": "2016-11-11T08:49:30.328Z",
     "owner": 12,
     "owner_extra_info": {
         "big_photo": null,

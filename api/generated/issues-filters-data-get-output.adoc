@@ -144,17 +144,17 @@
             "order": 4
         },
         {
-            "color": "#CC0000",
-            "count": 4,
-            "id": 5,
-            "name": "Cr\u00edtica",
-            "order": 5
-        },
-        {
             "color": "#669933",
             "count": 5,
             "id": 2,
             "name": "Menor",
+            "order": 5
+        },
+        {
+            "color": "#CC0000",
+            "count": 4,
+            "id": 5,
+            "name": "Cr\u00edtica",
             "order": 5
         },
         {
@@ -230,17 +230,17 @@
             "order": 8
         },
         {
-            "color": "#8C2318",
-            "count": 5,
-            "id": 1,
-            "name": "Patch status name",
-            "order": 10
-        },
-        {
             "color": "#999999",
             "count": 0,
             "id": 51,
             "name": "New status name",
+            "order": 10
+        },
+        {
+            "color": "#8C2318",
+            "count": 5,
+            "id": 1,
+            "name": "Patch status name",
             "order": 10
         }
     ],
