@@ -19,7 +19,7 @@ How it Works
 _Taiga_ is made up of two components: link:https://github.com/taigaio/taiga-front[taiga-front]
 and link:https://github.com/taigaio/taiga-back[taiga-back]
 
-- *taiga-front* has the frontend related code built with *angularjs* and *coffescript*.
+- *taiga-front* has the frontend related code built with *angularjs* and *coffeescript*.
   It can run on any static file server like nginx.
 - *taiga-back* has the backend related code consisting of an API, built using *django*
   and *python3*.
@@ -48,9 +48,9 @@ Compile time:
 Hardware
 
 - The main Taiga hardware restriction is having **at least 0.75 GB of RAM**. When installing
-the python requirements, the package lxml will use gcc for building itself and fail if there
+the python requirements, the package lxml will use gcc to build itself and fail if there
 is not enough memory.
-- Taiga code doesn't nedd a lot of disc space. Only the database or the media directory could need
+- Taiga code doesn't need a lot of disc space. Only the database or the media directory might need
 more space with the passage of time.
 
 
@@ -170,7 +170,7 @@ Remember, the file `variables.scss` should only contain sass declarations that d
 
 If you need to override a style and generate some new CSS, you should do it in `custom.scss`.
 
-Please, check the default Taiga theme to understand how this files work properly.
+Please, check the default Taiga theme to understand how these files work properly.
 
 When the files are created you have to run gulp with the theme name. This is the same as `gulp default` but
  uses your theme instead of the default taiga theme.
@@ -220,4 +220,4 @@ License
 Every code patch accepted in the Taiga codebase is accepted under the AGPL v3.0 license. It is important
 that you do not include any code which cannot be licensed under AGPL v3.0.
 
-You can see the complete license in the `LICENSE` file in the root of repository.
+You can see the complete license in the `LICENSE` file in the root of the repository.
