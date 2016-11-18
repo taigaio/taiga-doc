@@ -9,7 +9,7 @@
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T08:49:37.281Z",
+        "created_date": "2016-11-18T07:59:08.601Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -24,7 +24,7 @@
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T08:49:37.292Z",
+        "modified_date": "2016-11-18T07:59:08.616Z",
         "origin_issue": null,
         "owner": 6,
         "owner_extra_info": {
@@ -89,13 +89,25 @@
             "username": "user9"
         },
         "attachments": [],
-        "backlog_order": 1478850590280,
+        "backlog_order": 1479455542693,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:49:50.280Z",
+        "created_date": "2016-11-18T07:52:22.693Z",
         "epic_order": null,
-        "epics": null,
+        "epics": [
+            {
+                "color": "#f57900",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 63,
+                "subject": "Support for bulk actions"
+            }
+        ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -104,11 +116,11 @@
         "is_closed": false,
         "is_voter": true,
         "is_watcher": true,
-        "kanban_order": 1478850590280,
+        "kanban_order": 1479455542693,
         "milestone": 1,
-        "milestone_name": "Sprint 2016-9-17",
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T08:49:36.966Z",
+        "milestone_name": "Sprint 2016-9-24",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:59:08.304Z",
         "origin_issue": null,
         "owner": 12,
         "owner_extra_info": {
@@ -174,13 +186,25 @@
             "username": "user1"
         },
         "attachments": [],
-        "backlog_order": 1478850592839,
+        "backlog_order": 1479455544191,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:49:52.839Z",
+        "created_date": "2016-11-18T07:52:24.191Z",
         "epic_order": null,
-        "epics": null,
+        "epics": [
+            {
+                "color": "#f57900",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 63,
+                "subject": "Support for bulk actions"
+            }
+        ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -189,11 +213,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": true,
-        "kanban_order": 1478850592839,
+        "kanban_order": 1479455544191,
         "milestone": 1,
-        "milestone_name": "Sprint 2016-9-17",
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:53.273Z",
+        "milestone_name": "Sprint 2016-9-24",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:24.424Z",
         "origin_issue": null,
         "owner": 6,
         "owner_extra_info": {
@@ -259,11 +283,11 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "attachments": [],
-        "backlog_order": 1478850596612,
+        "backlog_order": 1479455545860,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:49:56.612Z",
+        "created_date": "2016-11-18T07:52:25.860Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -274,11 +298,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850596612,
+        "kanban_order": 1479455545860,
         "milestone": 1,
-        "milestone_name": "Sprint 2016-9-17",
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:56.973Z",
+        "milestone_name": "Sprint 2016-9-24",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:26.096Z",
         "origin_issue": null,
         "owner": 5,
         "owner_extra_info": {
@@ -304,7 +328,7 @@
             "slug": "project-0"
         },
         "ref": 12,
-        "sprint_order": 1478850596613,
+        "sprint_order": 1479455545861,
         "status": 2,
         "status_extra_info": {
             "color": "#ff8a84",
@@ -345,11 +369,11 @@
             "username": "user5"
         },
         "attachments": [],
-        "backlog_order": 1478850598187,
+        "backlog_order": 1479455546649,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:49:58.187Z",
+        "created_date": "2016-11-18T07:52:26.649Z",
         "epic_order": null,
         "epics": [
             {
@@ -362,6 +386,17 @@
                 },
                 "ref": 63,
                 "subject": "Support for bulk actions"
+            },
+            {
+                "color": "#729fcf",
+                "id": 23,
+                "project": {
+                    "id": 7,
+                    "name": "Project Example 6",
+                    "slug": "project-6"
+                },
+                "ref": 58,
+                "subject": "Added file copying and processing of images (resizing)"
             }
         ],
         "external_reference": null,
@@ -372,11 +407,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850598187,
+        "kanban_order": 1479455546649,
         "milestone": 2,
-        "milestone_name": "Sprint 2016-10-2",
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:49:58.546Z",
+        "milestone_name": "Sprint 2016-10-9",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:26.850Z",
         "origin_issue": null,
         "owner": 15,
         "owner_extra_info": {
@@ -402,7 +437,7 @@
             "slug": "project-0"
         },
         "ref": 14,
-        "sprint_order": 1478850598187,
+        "sprint_order": 1479455546649,
         "status": 2,
         "status_extra_info": {
             "color": "#ff8a84",
@@ -447,13 +482,25 @@
             "username": "user2"
         },
         "attachments": [],
-        "backlog_order": 1478850600217,
+        "backlog_order": 1479455547853,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:00.217Z",
+        "created_date": "2016-11-18T07:52:27.853Z",
         "epic_order": null,
-        "epics": null,
+        "epics": [
+            {
+                "color": "#f57900",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 63,
+                "subject": "Support for bulk actions"
+            }
+        ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -462,11 +509,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850600217,
+        "kanban_order": 1479455547853,
         "milestone": 2,
-        "milestone_name": "Sprint 2016-10-2",
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:00.484Z",
+        "milestone_name": "Sprint 2016-10-9",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:28.051Z",
         "origin_issue": null,
         "owner": 7,
         "owner_extra_info": {
@@ -492,7 +539,7 @@
             "slug": "project-0"
         },
         "ref": 18,
-        "sprint_order": 1478850600217,
+        "sprint_order": 1479455547853,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -537,25 +584,13 @@
             "username": "user2114747470430251528"
         },
         "attachments": [],
-        "backlog_order": 1478850602759,
+        "backlog_order": 1479455549662,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:02.759Z",
+        "created_date": "2016-11-18T07:52:29.662Z",
         "epic_order": null,
-        "epics": [
-            {
-                "color": "#f57900",
-                "id": 1,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 63,
-                "subject": "Support for bulk actions"
-            }
-        ],
+        "epics": null,
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -564,11 +599,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850602759,
+        "kanban_order": 1479455549662,
         "milestone": 2,
-        "milestone_name": "Sprint 2016-10-2",
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:03.209Z",
+        "milestone_name": "Sprint 2016-10-9",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:29.863Z",
         "origin_issue": null,
         "owner": 10,
         "owner_extra_info": {
@@ -594,7 +629,7 @@
             "slug": "project-0"
         },
         "ref": 24,
-        "sprint_order": 1478850602759,
+        "sprint_order": 1479455549662,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -638,13 +673,25 @@
             "username": "user6"
         },
         "attachments": [],
-        "backlog_order": 1478850607301,
+        "backlog_order": 1479455551906,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:07.301Z",
+        "created_date": "2016-11-18T07:52:31.906Z",
         "epic_order": null,
-        "epics": null,
+        "epics": [
+            {
+                "color": "#f57900",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 63,
+                "subject": "Support for bulk actions"
+            }
+        ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -653,11 +700,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850607301,
+        "kanban_order": 1479455551906,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:07.927Z",
+        "modified_date": "2016-11-18T07:52:32.108Z",
         "origin_issue": null,
         "owner": 10,
         "owner_extra_info": {
@@ -683,7 +730,7 @@
             "slug": "project-0"
         },
         "ref": 29,
-        "sprint_order": 1478850607301,
+        "sprint_order": 1479455551906,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -728,25 +775,13 @@
             "username": "user2"
         },
         "attachments": [],
-        "backlog_order": 1478850608261,
+        "backlog_order": 1479455552210,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:08.261Z",
+        "created_date": "2016-11-18T07:52:32.210Z",
         "epic_order": null,
-        "epics": [
-            {
-                "color": "#f57900",
-                "id": 1,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 63,
-                "subject": "Support for bulk actions"
-            }
-        ],
+        "epics": null,
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -755,11 +790,11 @@
         "is_closed": false,
         "is_voter": true,
         "is_watcher": false,
-        "kanban_order": 1478850608261,
+        "kanban_order": 1479455552210,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:08.747Z",
+        "modified_date": "2016-11-18T07:52:32.383Z",
         "origin_issue": null,
         "owner": 9,
         "owner_extra_info": {
@@ -785,7 +820,7 @@
             "slug": "project-0"
         },
         "ref": 30,
-        "sprint_order": 1478850608261,
+        "sprint_order": 1479455552210,
         "status": 3,
         "status_extra_info": {
             "color": "#ff9900",
@@ -820,25 +855,13 @@
             "username": "user5"
         },
         "attachments": [],
-        "backlog_order": 1478850609090,
+        "backlog_order": 1479455552511,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:09.090Z",
+        "created_date": "2016-11-18T07:52:32.511Z",
         "epic_order": null,
-        "epics": [
-            {
-                "color": "#f57900",
-                "id": 1,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 63,
-                "subject": "Support for bulk actions"
-            }
-        ],
+        "epics": null,
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -847,11 +870,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850609090,
+        "kanban_order": 1479455552511,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:09.551Z",
+        "modified_date": "2016-11-18T07:52:32.690Z",
         "origin_issue": null,
         "owner": 14,
         "owner_extra_info": {
@@ -877,7 +900,7 @@
             "slug": "project-0"
         },
         "ref": 31,
-        "sprint_order": 1478850609090,
+        "sprint_order": 1479455552511,
         "status": 4,
         "status_extra_info": {
             "color": "#fcc000",
@@ -922,25 +945,13 @@
             "username": "user8"
         },
         "attachments": [],
-        "backlog_order": 1478850609839,
+        "backlog_order": 1479455552812,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:09.839Z",
+        "created_date": "2016-11-18T07:52:32.812Z",
         "epic_order": null,
-        "epics": [
-            {
-                "color": "#f57900",
-                "id": 1,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 63,
-                "subject": "Support for bulk actions"
-            }
-        ],
+        "epics": null,
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -949,11 +960,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850609839,
+        "kanban_order": 1479455552812,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:10.247Z",
+        "modified_date": "2016-11-18T07:52:32.962Z",
         "origin_issue": null,
         "owner": 10,
         "owner_extra_info": {
@@ -979,7 +990,7 @@
             "slug": "project-0"
         },
         "ref": 32,
-        "sprint_order": 1478850609839,
+        "sprint_order": 1479455552812,
         "status": 4,
         "status_extra_info": {
             "color": "#fcc000",
@@ -1023,11 +1034,11 @@
             "username": "user1"
         },
         "attachments": [],
-        "backlog_order": 1478850610616,
+        "backlog_order": 1479455553111,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:10.616Z",
+        "created_date": "2016-11-18T07:52:33.111Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1038,11 +1049,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850610616,
+        "kanban_order": 1479455553111,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:11.011Z",
+        "modified_date": "2016-11-18T07:52:33.266Z",
         "origin_issue": null,
         "owner": 14,
         "owner_extra_info": {
@@ -1068,7 +1079,7 @@
             "slug": "project-0"
         },
         "ref": 33,
-        "sprint_order": 1478850610616,
+        "sprint_order": 1479455553111,
         "status": 2,
         "status_extra_info": {
             "color": "#ff8a84",
@@ -1107,11 +1118,11 @@
             "username": "admin"
         },
         "attachments": [],
-        "backlog_order": 1478850611324,
+        "backlog_order": 1479455553384,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:11.324Z",
+        "created_date": "2016-11-18T07:52:33.384Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1122,11 +1133,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850611324,
+        "kanban_order": 1479455553384,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:11.813Z",
+        "modified_date": "2016-11-18T07:52:33.566Z",
         "origin_issue": null,
         "owner": 10,
         "owner_extra_info": {
@@ -1152,7 +1163,7 @@
             "slug": "project-0"
         },
         "ref": 34,
-        "sprint_order": 1478850611324,
+        "sprint_order": 1479455553384,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -1189,13 +1200,25 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "attachments": [],
-        "backlog_order": 1478850612151,
+        "backlog_order": 1479455553705,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:12.151Z",
+        "created_date": "2016-11-18T07:52:33.705Z",
         "epic_order": null,
-        "epics": null,
+        "epics": [
+            {
+                "color": "#f57900",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 63,
+                "subject": "Support for bulk actions"
+            }
+        ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -1204,11 +1227,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": true,
-        "kanban_order": 1478850612151,
+        "kanban_order": 1479455553705,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:12.591Z",
+        "modified_date": "2016-11-18T07:52:33.853Z",
         "origin_issue": null,
         "owner": 14,
         "owner_extra_info": {
@@ -1234,7 +1257,7 @@
             "slug": "project-0"
         },
         "ref": 35,
-        "sprint_order": 1478850612151,
+        "sprint_order": 1479455553705,
         "status": 3,
         "status_extra_info": {
             "color": "#ff9900",
@@ -1277,11 +1300,11 @@
             "username": "user3"
         },
         "attachments": [],
-        "backlog_order": 1478850612860,
+        "backlog_order": 1479455554018,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:12.860Z",
+        "created_date": "2016-11-18T07:52:34.018Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1292,11 +1315,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850612860,
+        "kanban_order": 1479455554018,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:13.443Z",
+        "modified_date": "2016-11-18T07:52:34.202Z",
         "origin_issue": null,
         "owner": 12,
         "owner_extra_info": {
@@ -1322,7 +1345,7 @@
             "slug": "project-0"
         },
         "ref": 36,
-        "sprint_order": 1478850612860,
+        "sprint_order": 1479455554018,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -1359,11 +1382,11 @@
             "username": "user4"
         },
         "attachments": [],
-        "backlog_order": 1478850613704,
+        "backlog_order": 1479455554310,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:13.704Z",
+        "created_date": "2016-11-18T07:52:34.310Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1374,11 +1397,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": true,
-        "kanban_order": 1478850613704,
+        "kanban_order": 1479455554310,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:14.165Z",
+        "modified_date": "2016-11-18T07:52:34.492Z",
         "origin_issue": null,
         "owner": 5,
         "owner_extra_info": {
@@ -1404,7 +1427,7 @@
             "slug": "project-0"
         },
         "ref": 37,
-        "sprint_order": 1478850613704,
+        "sprint_order": 1479455554310,
         "status": 4,
         "status_extra_info": {
             "color": "#fcc000",
@@ -1444,11 +1467,11 @@
             "username": "user6"
         },
         "attachments": [],
-        "backlog_order": 1478850614756,
+        "backlog_order": 1479455554625,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:14.756Z",
+        "created_date": "2016-11-18T07:52:34.625Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1459,11 +1482,11 @@
         "is_closed": false,
         "is_voter": true,
         "is_watcher": true,
-        "kanban_order": 1478850614756,
+        "kanban_order": 1479455554625,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:15.421Z",
+        "modified_date": "2016-11-18T07:52:34.821Z",
         "origin_issue": null,
         "owner": 15,
         "owner_extra_info": {
@@ -1489,7 +1512,7 @@
             "slug": "project-0"
         },
         "ref": 38,
-        "sprint_order": 1478850614756,
+        "sprint_order": 1479455554625,
         "status": 2,
         "status_extra_info": {
             "color": "#ff8a84",
@@ -1539,11 +1562,11 @@
             "username": "user4"
         },
         "attachments": [],
-        "backlog_order": 1478850615862,
+        "backlog_order": 1479455555002,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:15.862Z",
+        "created_date": "2016-11-18T07:52:35.002Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1554,11 +1577,11 @@
         "is_closed": false,
         "is_voter": true,
         "is_watcher": false,
-        "kanban_order": 1478850615862,
+        "kanban_order": 1479455555002,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:16.205Z",
+        "modified_date": "2016-11-18T07:52:35.219Z",
         "origin_issue": null,
         "owner": 5,
         "owner_extra_info": {
@@ -1584,7 +1607,7 @@
             "slug": "project-0"
         },
         "ref": 39,
-        "sprint_order": 1478850615862,
+        "sprint_order": 1479455555002,
         "status": 3,
         "status_extra_info": {
             "color": "#ff9900",
@@ -1626,25 +1649,13 @@
             "username": "user7"
         },
         "attachments": [],
-        "backlog_order": 1478850616432,
+        "backlog_order": 1479455555365,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:16.432Z",
+        "created_date": "2016-11-18T07:52:35.365Z",
         "epic_order": null,
-        "epics": [
-            {
-                "color": "#f57900",
-                "id": 1,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 63,
-                "subject": "Support for bulk actions"
-            }
-        ],
+        "epics": null,
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
@@ -1653,11 +1664,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850616432,
+        "kanban_order": 1479455555365,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:16.716Z",
+        "modified_date": "2016-11-18T07:52:35.554Z",
         "origin_issue": null,
         "owner": 6,
         "owner_extra_info": {
@@ -1683,7 +1694,7 @@
             "slug": "project-0"
         },
         "ref": 40,
-        "sprint_order": 1478850616432,
+        "sprint_order": 1479455555365,
         "status": 2,
         "status_extra_info": {
             "color": "#ff8a84",
@@ -1723,11 +1734,11 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "attachments": [],
-        "backlog_order": 1478850616875,
+        "backlog_order": 1479455555665,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T07:50:16.875Z",
+        "created_date": "2016-11-18T07:52:35.665Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1738,11 +1749,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478850616875,
+        "kanban_order": 1479455555665,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T07:50:17.096Z",
+        "modified_date": "2016-11-18T07:52:35.817Z",
         "origin_issue": null,
         "owner": 7,
         "owner_extra_info": {
@@ -1768,7 +1779,7 @@
             "slug": "project-0"
         },
         "ref": 41,
-        "sprint_order": 1478850616875,
+        "sprint_order": 1479455555665,
         "status": 4,
         "status_extra_info": {
             "color": "#fcc000",
@@ -1799,11 +1810,11 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "attachments": [],
-        "backlog_order": 1478854176334,
+        "backlog_order": 1479455947741,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T08:49:36.334Z",
+        "created_date": "2016-11-18T07:59:07.741Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1814,11 +1825,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478854176334,
+        "kanban_order": 1479455947741,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T08:49:36.335Z",
+        "modified_date": "2016-11-18T07:59:07.742Z",
         "origin_issue": null,
         "owner": 6,
         "owner_extra_info": {
@@ -1844,7 +1855,7 @@
             "slug": "project-0"
         },
         "ref": 72,
-        "sprint_order": 1478854176334,
+        "sprint_order": 1479455947741,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -1866,11 +1877,11 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "attachments": [],
-        "backlog_order": 1478854176334,
+        "backlog_order": 1479455947741,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T08:49:36.334Z",
+        "created_date": "2016-11-18T07:59:07.742Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1881,11 +1892,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478854176334,
+        "kanban_order": 1479455947742,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T08:49:36.409Z",
+        "modified_date": "2016-11-18T07:59:07.848Z",
         "origin_issue": null,
         "owner": 6,
         "owner_extra_info": {
@@ -1911,7 +1922,7 @@
             "slug": "project-0"
         },
         "ref": 73,
-        "sprint_order": 1478854176334,
+        "sprint_order": 1479455947741,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -1933,11 +1944,11 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "attachments": [],
-        "backlog_order": 1478854176334,
+        "backlog_order": 1479455947742,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T08:49:36.334Z",
+        "created_date": "2016-11-18T07:59:07.742Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -1948,11 +1959,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478854176334,
+        "kanban_order": 1479455947742,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T08:49:36.465Z",
+        "modified_date": "2016-11-18T07:59:07.949Z",
         "origin_issue": null,
         "owner": 6,
         "owner_extra_info": {
@@ -1978,7 +1989,7 @@
             "slug": "project-0"
         },
         "ref": 74,
-        "sprint_order": 1478854176334,
+        "sprint_order": 1479455947742,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -2000,11 +2011,11 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "attachments": [],
-        "backlog_order": 1478854177498,
+        "backlog_order": 1479455948823,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2016-11-11T08:49:37.511Z",
+        "created_date": "2016-11-18T07:59:08.834Z",
         "epic_order": null,
         "epics": null,
         "external_reference": null,
@@ -2015,11 +2026,11 @@
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1478854177498,
+        "kanban_order": 1479455948823,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T08:49:37.519Z",
+        "modified_date": "2016-11-18T07:59:08.842Z",
         "origin_issue": null,
         "owner": 6,
         "owner_extra_info": {
@@ -2045,7 +2056,7 @@
             "slug": "project-0"
         },
         "ref": 76,
-        "sprint_order": 1478854177498,
+        "sprint_order": 1479455948823,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",

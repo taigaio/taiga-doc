@@ -6,106 +6,106 @@
     "completed_userstories": 0,
     "days": [
         {
-            "day": "2016-09-17",
-            "name": 17,
+            "day": "2016-09-24",
+            "name": 24,
             "open_points": 92.0,
             "optimal_points": 92.0
         },
         {
-            "day": "2016-09-18",
-            "name": 18,
+            "day": "2016-09-25",
+            "name": 25,
             "open_points": 92.0,
             "optimal_points": 85.86666666666666
         },
         {
-            "day": "2016-09-19",
-            "name": 19,
+            "day": "2016-09-26",
+            "name": 26,
             "open_points": 92.0,
             "optimal_points": 79.73333333333332
         },
         {
-            "day": "2016-09-20",
-            "name": 20,
+            "day": "2016-09-27",
+            "name": 27,
             "open_points": 86.6,
             "optimal_points": 73.59999999999998
         },
         {
-            "day": "2016-09-21",
-            "name": 21,
+            "day": "2016-09-28",
+            "name": 28,
             "open_points": 86.6,
             "optimal_points": 67.46666666666664
         },
         {
-            "day": "2016-09-22",
-            "name": 22,
+            "day": "2016-09-29",
+            "name": 29,
             "open_points": 81.2,
             "optimal_points": 61.33333333333331
         },
         {
-            "day": "2016-09-23",
-            "name": 23,
+            "day": "2016-09-30",
+            "name": 30,
             "open_points": 81.2,
             "optimal_points": 55.199999999999974
         },
         {
-            "day": "2016-09-24",
-            "name": 24,
+            "day": "2016-10-01",
+            "name": 1,
             "open_points": 81.2,
             "optimal_points": 49.06666666666664
         },
         {
-            "day": "2016-09-25",
-            "name": 25,
+            "day": "2016-10-02",
+            "name": 2,
             "open_points": 81.2,
             "optimal_points": 42.93333333333331
         },
         {
-            "day": "2016-09-26",
-            "name": 26,
+            "day": "2016-10-03",
+            "name": 3,
             "open_points": 81.2,
             "optimal_points": 36.799999999999976
         },
         {
-            "day": "2016-09-27",
-            "name": 27,
+            "day": "2016-10-04",
+            "name": 4,
             "open_points": 64.8,
             "optimal_points": 30.666666666666643
         },
         {
-            "day": "2016-09-28",
-            "name": 28,
+            "day": "2016-10-05",
+            "name": 5,
             "open_points": 64.8,
             "optimal_points": 24.53333333333331
         },
         {
-            "day": "2016-09-29",
-            "name": 29,
+            "day": "2016-10-06",
+            "name": 6,
             "open_points": 64.8,
             "optimal_points": 18.399999999999977
         },
         {
-            "day": "2016-09-30",
-            "name": 30,
+            "day": "2016-10-07",
+            "name": 7,
             "open_points": 64.8,
             "optimal_points": 12.266666666666644
         },
         {
-            "day": "2016-10-01",
-            "name": 1,
+            "day": "2016-10-08",
+            "name": 8,
             "open_points": 64.8,
             "optimal_points": 6.133333333333311
         },
         {
-            "day": "2016-10-02",
-            "name": 2,
+            "day": "2016-10-09",
+            "name": 9,
             "open_points": 64.8,
             "optimal_points": -2.3092638912203256e-14
         }
     ],
-    "estimated_finish": "2016-10-02",
-    "estimated_start": "2016-09-17",
+    "estimated_finish": "2016-10-09",
+    "estimated_start": "2016-09-24",
     "iocaine_doses": 0,
-    "name": "Sprint 2016-9-17",
+    "name": "Sprint 2016-9-24",
     "total_points": {
         "1": 48.0,
         "2": 18.0,

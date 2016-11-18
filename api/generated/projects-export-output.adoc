@@ -1,6 +1,6 @@
 [source,json]
 ----
 {
-    "export_id": "2186c878-e3a6-4f4d-9b06-0fd0198ee05f"
+    "url": "http://localhost:8000/media/exports/1/project-0-e4277591c033434294c013c8a4df58ad.json"
 }
 ----

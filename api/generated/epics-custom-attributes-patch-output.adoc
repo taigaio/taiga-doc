@@ -1,10 +1,10 @@
 [source,json]
 ----
 {
-    "created_date": "2016-11-11T07:51:29.452Z",
+    "created_date": "2016-11-18T07:53:25.752Z",
     "description": "voluptates quidem vero consequatur distinctio",
     "id": 12,
-    "modified_date": "2016-11-11T08:49:33.611Z",
+    "modified_date": "2016-11-18T07:59:05.088Z",
     "name": "Duration 1",
     "order": 1,
     "project": 3,

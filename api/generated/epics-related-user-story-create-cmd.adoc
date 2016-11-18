@@ -4,8 +4,8 @@ curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
-        "epic": 14,
+        "epic": 13,
         "user_story": 1
     }' \
--s http://localhost:8000/api/v1/epics/14/related_userstories
+-s http://localhost:8000/api/v1/epics/13/related_userstories
 ----

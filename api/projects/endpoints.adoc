@@ -132,7 +132,7 @@
 | POST
 | link:#projects-transfer-reject[Transfer reject]
 
-| /api/v1/projects/\{projectId}/contact
+| /api/v1/projects/\{projectId}/duplicate
 | POST
-| link:#projects-contact[Contact project]
+| link:#projects-duplicate[Duplicate project]
 |===

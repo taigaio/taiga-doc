@@ -14,9 +14,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:50.760Z",
+        "created_date": "2016-11-18T07:52:23.172Z",
         "external_reference": null,
-        "finished_date": "2016-09-27T10:12:45.220Z",
+        "finished_date": "2016-10-04T10:15:17.631Z",
         "id": 1,
         "is_blocked": false,
         "is_closed": true,
@@ -24,8 +24,8 @@
         "is_voter": true,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T08:50:09.897Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:59:37.373Z",
         "owner": 15,
         "owner_extra_info": {
             "big_photo": null,
@@ -71,13 +71,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850590760,
+        "taskboard_order": 1479455543172,
         "total_voters": 4,
         "total_watchers": 4,
-        "us_order": 1478850590760,
+        "us_order": 1479455543172,
         "user_story": 1,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 1,
             "ref": 1,
             "subject": "Patching subject"
@@ -103,7 +115,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:51.374Z",
+        "created_date": "2016-11-18T07:52:23.498Z",
         "external_reference": null,
         "finished_date": null,
         "id": 2,
@@ -113,8 +125,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:51.581Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:23.599Z",
         "owner": 10,
         "owner_extra_info": {
             "big_photo": null,
@@ -144,13 +156,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850591374,
+        "taskboard_order": 1479455543498,
         "total_voters": 2,
         "total_watchers": 4,
-        "us_order": 1478850591374,
+        "us_order": 1479455543498,
         "user_story": 1,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 1,
             "ref": 1,
             "subject": "Patching subject"
@@ -176,7 +200,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:51.977Z",
+        "created_date": "2016-11-18T07:52:23.744Z",
         "external_reference": null,
         "finished_date": null,
         "id": 3,
@@ -186,8 +210,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:52.183Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:23.839Z",
         "owner": 5,
         "owner_extra_info": {
             "big_photo": null,
@@ -249,13 +273,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850591977,
+        "taskboard_order": 1479455543744,
         "total_voters": 1,
         "total_watchers": 3,
-        "us_order": 1478850591977,
+        "us_order": 1479455543744,
         "user_story": 1,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 1,
             "ref": 1,
             "subject": "Patching subject"
@@ -280,7 +316,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:52.420Z",
+        "created_date": "2016-11-18T07:52:23.956Z",
         "external_reference": null,
         "finished_date": null,
         "id": 4,
@@ -290,8 +326,8 @@
         "is_voter": false,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:52.670Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:24.088Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -337,13 +373,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850592420,
+        "taskboard_order": 1479455543956,
         "total_voters": 0,
         "total_watchers": 2,
-        "us_order": 1478850592420,
+        "us_order": 1479455543956,
         "user_story": 1,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 1,
             "ref": 1,
             "subject": "Patching subject"
@@ -367,9 +415,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:53.506Z",
+        "created_date": "2016-11-18T07:52:24.566Z",
         "external_reference": null,
-        "finished_date": "2016-09-20T09:45:30.220Z",
+        "finished_date": "2016-09-27T09:48:02.631Z",
         "id": 5,
         "is_blocked": false,
         "is_closed": true,
@@ -377,8 +425,8 @@
         "is_voter": true,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:53.787Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:24.706Z",
         "owner": 15,
         "owner_extra_info": {
             "big_photo": null,
@@ -440,13 +488,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850593506,
+        "taskboard_order": 1479455544566,
         "total_voters": 7,
         "total_watchers": 6,
-        "us_order": 1478850593506,
+        "us_order": 1479455544566,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 2,
             "ref": 6,
             "subject": "Added file copying and processing of images (resizing)"
@@ -474,9 +534,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:54.184Z",
+        "created_date": "2016-11-18T07:52:24.852Z",
         "external_reference": null,
-        "finished_date": "2016-09-27T18:20:28.220Z",
+        "finished_date": "2016-10-04T18:23:00.631Z",
         "id": 6,
         "is_blocked": false,
         "is_closed": true,
@@ -484,8 +544,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:54.429Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:24.957Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -539,13 +599,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850594184,
+        "taskboard_order": 1479455544852,
         "total_voters": 0,
         "total_watchers": 6,
-        "us_order": 1478850594184,
+        "us_order": 1479455544852,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 2,
             "ref": 6,
             "subject": "Added file copying and processing of images (resizing)"
@@ -573,7 +645,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:54.772Z",
+        "created_date": "2016-11-18T07:52:25.069Z",
         "external_reference": null,
         "finished_date": null,
         "id": 7,
@@ -583,8 +655,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:55.078Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:25.172Z",
         "owner": 7,
         "owner_extra_info": {
             "big_photo": null,
@@ -642,13 +714,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850594772,
+        "taskboard_order": 1479455545069,
         "total_voters": 3,
         "total_watchers": 1,
-        "us_order": 1478850594772,
+        "us_order": 1479455545069,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 2,
             "ref": 6,
             "subject": "Added file copying and processing of images (resizing)"
@@ -671,7 +755,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:55.424Z",
+        "created_date": "2016-11-18T07:52:25.303Z",
         "external_reference": null,
         "finished_date": null,
         "id": 8,
@@ -681,8 +765,8 @@
         "is_voter": true,
         "is_watcher": true,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:55.715Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:25.471Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -708,13 +792,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850595424,
+        "taskboard_order": 1479455545303,
         "total_voters": 3,
         "total_watchers": 5,
-        "us_order": 1478850595424,
+        "us_order": 1479455545303,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 2,
             "ref": 6,
             "subject": "Added file copying and processing of images (resizing)"
@@ -741,9 +837,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:56.083Z",
+        "created_date": "2016-11-18T07:52:25.603Z",
         "external_reference": null,
-        "finished_date": "2016-09-22T13:50:34.220Z",
+        "finished_date": "2016-09-29T13:53:06.631Z",
         "id": 9,
         "is_blocked": false,
         "is_closed": true,
@@ -751,8 +847,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:56.347Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:25.727Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -794,13 +890,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850596083,
+        "taskboard_order": 1479455545603,
         "total_voters": 3,
         "total_watchers": 2,
-        "us_order": 1478850596083,
+        "us_order": 1479455545603,
         "user_story": 2,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 2,
             "ref": 6,
             "subject": "Added file copying and processing of images (resizing)"
@@ -824,7 +932,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:57.182Z",
+        "created_date": "2016-11-18T07:52:26.223Z",
         "external_reference": null,
         "finished_date": null,
         "id": 10,
@@ -834,8 +942,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T07:49:57.648Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:52:26.407Z",
         "owner": 10,
         "owner_extra_info": {
             "big_photo": null,
@@ -869,10 +977,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850597182,
+        "taskboard_order": 1479455546223,
         "total_voters": 5,
         "total_watchers": 2,
-        "us_order": 1478850597182,
+        "us_order": 1479455546223,
         "user_story": 3,
         "user_story_extra_info": {
             "epics": null,
@@ -899,9 +1007,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:58.849Z",
+        "created_date": "2016-11-18T07:52:26.971Z",
         "external_reference": null,
-        "finished_date": "2016-10-10T20:51:17.220Z",
+        "finished_date": "2016-10-17T20:53:49.631Z",
         "id": 11,
         "is_blocked": false,
         "is_closed": true,
@@ -909,8 +1017,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:49:59.223Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:27.111Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -956,10 +1064,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850598849,
+        "taskboard_order": 1479455546971,
         "total_voters": 3,
         "total_watchers": 5,
-        "us_order": 1478850598849,
+        "us_order": 1479455546971,
         "user_story": 4,
         "user_story_extra_info": {
             "epics": [
@@ -973,6 +1081,17 @@
                     },
                     "ref": 63,
                     "subject": "Support for bulk actions"
+                },
+                {
+                    "color": "#729fcf",
+                    "id": 23,
+                    "project": {
+                        "id": 7,
+                        "name": "Project Example 6",
+                        "slug": "project-6"
+                    },
+                    "ref": 58,
+                    "subject": "Added file copying and processing of images (resizing)"
                 }
             ],
             "id": 4,
@@ -1001,9 +1120,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:59.399Z",
+        "created_date": "2016-11-18T07:52:27.229Z",
         "external_reference": null,
-        "finished_date": "2016-10-14T19:43:31.220Z",
+        "finished_date": "2016-10-21T19:46:03.631Z",
         "id": 12,
         "is_blocked": false,
         "is_closed": true,
@@ -1011,8 +1130,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:49:59.533Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:27.356Z",
         "owner": 7,
         "owner_extra_info": {
             "big_photo": null,
@@ -1054,10 +1173,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850599399,
+        "taskboard_order": 1479455547229,
         "total_voters": 3,
         "total_watchers": 2,
-        "us_order": 1478850599399,
+        "us_order": 1479455547229,
         "user_story": 4,
         "user_story_extra_info": {
             "epics": [
@@ -1071,6 +1190,17 @@
                     },
                     "ref": 63,
                     "subject": "Support for bulk actions"
+                },
+                {
+                    "color": "#729fcf",
+                    "id": 23,
+                    "project": {
+                        "id": 7,
+                        "name": "Project Example 6",
+                        "slug": "project-6"
+                    },
+                    "ref": 58,
+                    "subject": "Added file copying and processing of images (resizing)"
                 }
             ],
             "id": 4,
@@ -1096,7 +1226,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:49:59.668Z",
+        "created_date": "2016-11-18T07:52:27.487Z",
         "external_reference": null,
         "finished_date": null,
         "id": 13,
@@ -1106,8 +1236,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:49:59.842Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:27.623Z",
         "owner": 9,
         "owner_extra_info": {
             "big_photo": null,
@@ -1137,10 +1267,10 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850599668,
+        "taskboard_order": 1479455547487,
         "total_voters": 3,
         "total_watchers": 6,
-        "us_order": 1478850599668,
+        "us_order": 1479455547487,
         "user_story": 4,
         "user_story_extra_info": {
             "epics": [
@@ -1154,6 +1284,17 @@
                     },
                     "ref": 63,
                     "subject": "Support for bulk actions"
+                },
+                {
+                    "color": "#729fcf",
+                    "id": 23,
+                    "project": {
+                        "id": 7,
+                        "name": "Project Example 6",
+                        "slug": "project-6"
+                    },
+                    "ref": 58,
+                    "subject": "Added file copying and processing of images (resizing)"
                 }
             ],
             "id": 4,
@@ -1183,9 +1324,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:50:00.702Z",
+        "created_date": "2016-11-18T07:52:28.225Z",
         "external_reference": null,
-        "finished_date": "2016-10-13T01:23:01.220Z",
+        "finished_date": "2016-10-20T01:25:33.631Z",
         "id": 14,
         "is_blocked": false,
         "is_closed": true,
@@ -1193,8 +1334,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:00.935Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:28.345Z",
         "owner": 11,
         "owner_extra_info": {
             "big_photo": null,
@@ -1220,13 +1361,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850600702,
+        "taskboard_order": 1479455548225,
         "total_voters": 5,
         "total_watchers": 3,
-        "us_order": 1478850600702,
+        "us_order": 1479455548225,
         "user_story": 5,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 5,
             "ref": 18,
             "subject": "Fixing templates for Django 1.6."
@@ -1251,7 +1404,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:50:01.121Z",
+        "created_date": "2016-11-18T07:52:28.460Z",
         "external_reference": null,
         "finished_date": null,
         "id": 15,
@@ -1261,8 +1414,8 @@
         "is_voter": true,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:01.300Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:28.578Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -1296,13 +1449,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850601121,
+        "taskboard_order": 1479455548460,
         "total_voters": 7,
         "total_watchers": 6,
-        "us_order": 1478850601121,
+        "us_order": 1479455548460,
         "user_story": 5,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 5,
             "ref": 18,
             "subject": "Fixing templates for Django 1.6."
@@ -1330,7 +1495,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:50:01.602Z",
+        "created_date": "2016-11-18T07:52:28.777Z",
         "external_reference": null,
         "finished_date": null,
         "id": 16,
@@ -1340,8 +1505,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:01.750Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:28.893Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -1399,13 +1564,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850601602,
+        "taskboard_order": 1479455548777,
         "total_voters": 3,
         "total_watchers": 2,
-        "us_order": 1478850601602,
+        "us_order": 1479455548777,
         "user_story": 5,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 5,
             "ref": 18,
             "subject": "Fixing templates for Django 1.6."
@@ -1429,7 +1606,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:50:01.967Z",
+        "created_date": "2016-11-18T07:52:29.056Z",
         "external_reference": null,
         "finished_date": null,
         "id": 17,
@@ -1439,8 +1616,8 @@
         "is_voter": true,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:02.140Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:29.234Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -1466,13 +1643,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850601967,
+        "taskboard_order": 1479455549056,
         "total_voters": 5,
         "total_watchers": 2,
-        "us_order": 1478850601967,
+        "us_order": 1479455549056,
         "user_story": 5,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 5,
             "ref": 18,
             "subject": "Fixing templates for Django 1.6."
@@ -1496,7 +1685,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:50:02.318Z",
+        "created_date": "2016-11-18T07:52:29.417Z",
         "external_reference": null,
         "finished_date": null,
         "id": 18,
@@ -1506,8 +1695,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:02.545Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:29.544Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -1549,13 +1738,25 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850602318,
+        "taskboard_order": 1479455549417,
         "total_voters": 4,
         "total_watchers": 0,
-        "us_order": 1478850602318,
+        "us_order": 1479455549417,
         "user_story": 5,
         "user_story_extra_info": {
-            "epics": null,
+            "epics": [
+                {
+                    "color": "#f57900",
+                    "id": 1,
+                    "project": {
+                        "id": 1,
+                        "name": "Beta project patch",
+                        "slug": "project-0"
+                    },
+                    "ref": 63,
+                    "subject": "Support for bulk actions"
+                }
+            ],
             "id": 5,
             "ref": 18,
             "subject": "Fixing templates for Django 1.6."
@@ -1576,9 +1777,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:50:03.591Z",
+        "created_date": "2016-11-18T07:52:30.029Z",
         "external_reference": null,
-        "finished_date": "2016-10-10T02:19:50.220Z",
+        "finished_date": "2016-10-17T02:22:22.631Z",
         "id": 19,
         "is_blocked": false,
         "is_closed": true,
@@ -1586,8 +1787,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:04.123Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:30.381Z",
         "owner": 9,
         "owner_extra_info": {
             "big_photo": null,
@@ -1629,25 +1830,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850603591,
+        "taskboard_order": 1479455550029,
         "total_voters": 2,
         "total_watchers": 3,
-        "us_order": 1478850603591,
+        "us_order": 1479455550029,
         "user_story": 6,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#f57900",
-                    "id": 1,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 63,
-                    "subject": "Support for bulk actions"
-                }
-            ],
+            "epics": null,
             "id": 6,
             "ref": 24,
             "subject": "Create the user model"
@@ -1672,9 +1861,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:50:04.621Z",
+        "created_date": "2016-11-18T07:52:30.619Z",
         "external_reference": null,
-        "finished_date": "2016-10-11T02:54:33.220Z",
+        "finished_date": "2016-10-18T02:57:05.631Z",
         "id": 20,
         "is_blocked": false,
         "is_closed": true,
@@ -1682,8 +1871,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:05.012Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:30.889Z",
         "owner": 15,
         "owner_extra_info": {
             "big_photo": null,
@@ -1733,25 +1922,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850604621,
+        "taskboard_order": 1479455550619,
         "total_voters": 3,
         "total_watchers": 3,
-        "us_order": 1478850604621,
+        "us_order": 1479455550619,
         "user_story": 6,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#f57900",
-                    "id": 1,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 63,
-                    "subject": "Support for bulk actions"
-                }
-            ],
+            "epics": null,
             "id": 6,
             "ref": 24,
             "subject": "Create the user model"
@@ -1776,7 +1953,7 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:50:05.347Z",
+        "created_date": "2016-11-18T07:52:31.092Z",
         "external_reference": null,
         "finished_date": null,
         "id": 21,
@@ -1786,8 +1963,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:05.717Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:31.253Z",
         "owner": 14,
         "owner_extra_info": {
             "big_photo": null,
@@ -1813,25 +1990,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850605347,
+        "taskboard_order": 1479455551092,
         "total_voters": 5,
         "total_watchers": 3,
-        "us_order": 1478850605347,
+        "us_order": 1479455551092,
         "user_story": 6,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#f57900",
-                    "id": 1,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 63,
-                    "subject": "Support for bulk actions"
-                }
-            ],
+            "epics": null,
             "id": 6,
             "ref": 24,
             "subject": "Create the user model"
@@ -1856,9 +2021,9 @@
         },
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T07:50:06.396Z",
+        "created_date": "2016-11-18T07:52:31.550Z",
         "external_reference": null,
-        "finished_date": "2016-10-12T01:13:33.220Z",
+        "finished_date": "2016-10-19T01:16:05.631Z",
         "id": 22,
         "is_blocked": false,
         "is_closed": true,
@@ -1866,8 +2031,8 @@
         "is_voter": true,
         "is_watcher": false,
         "milestone": 2,
-        "milestone_slug": "sprint-2016-10-2",
-        "modified_date": "2016-11-11T07:50:06.780Z",
+        "milestone_slug": "sprint-2016-10-9",
+        "modified_date": "2016-11-18T07:52:31.733Z",
         "owner": 14,
         "owner_extra_info": {
             "big_photo": null,
@@ -1913,25 +2078,13 @@
                 null
             ]
         ],
-        "taskboard_order": 1478850606396,
+        "taskboard_order": 1479455551550,
         "total_voters": 8,
         "total_watchers": 3,
-        "us_order": 1478850606396,
+        "us_order": 1479455551550,
         "user_story": 6,
         "user_story_extra_info": {
-            "epics": [
-                {
-                    "color": "#f57900",
-                    "id": 1,
-                    "project": {
-                        "id": 1,
-                        "name": "Beta project patch",
-                        "slug": "project-0"
-                    },
-                    "ref": 63,
-                    "subject": "Support for bulk actions"
-                }
-            ],
+            "epics": null,
             "id": 6,
             "ref": 24,
             "subject": "Create the user model"
@@ -1948,7 +2101,7 @@
         "assigned_to_extra_info": null,
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T08:50:09.356Z",
+        "created_date": "2016-11-18T07:59:36.918Z",
         "external_reference": null,
         "finished_date": null,
         "id": 176,
@@ -1958,8 +2111,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T08:50:09.357Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:59:36.918Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -1976,10 +2129,10 @@
         "status_extra_info": null,
         "subject": "Task 1",
         "tags": [],
-        "taskboard_order": 1478854209356,
+        "taskboard_order": 1479455976918,
         "total_voters": 0,
         "total_watchers": 0,
-        "us_order": 1478854209356,
+        "us_order": 1479455976918,
         "user_story": null,
         "user_story_extra_info": null,
         "version": 1,
@@ -1990,7 +2143,7 @@
         "assigned_to_extra_info": null,
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T08:50:09.356Z",
+        "created_date": "2016-11-18T07:59:36.918Z",
         "external_reference": null,
         "finished_date": null,
         "id": 177,
@@ -2000,8 +2153,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T08:50:09.438Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:59:37.036Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -2018,10 +2171,10 @@
         "status_extra_info": null,
         "subject": "Task 2",
         "tags": [],
-        "taskboard_order": 1478854209356,
+        "taskboard_order": 1479455976918,
         "total_voters": 0,
         "total_watchers": 0,
-        "us_order": 1478854209356,
+        "us_order": 1479455976918,
         "user_story": null,
         "user_story_extra_info": null,
         "version": 1,
@@ -2032,7 +2185,7 @@
         "assigned_to_extra_info": null,
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T08:50:09.357Z",
+        "created_date": "2016-11-18T07:59:36.918Z",
         "external_reference": null,
         "finished_date": null,
         "id": 178,
@@ -2042,8 +2195,8 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": 1,
-        "milestone_slug": "sprint-2016-9-17",
-        "modified_date": "2016-11-11T08:50:09.506Z",
+        "milestone_slug": "sprint-2016-9-24",
+        "modified_date": "2016-11-18T07:59:37.129Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -2060,10 +2213,10 @@
         "status_extra_info": null,
         "subject": "Task 3",
         "tags": [],
-        "taskboard_order": 1478854209357,
+        "taskboard_order": 1479455976918,
         "total_voters": 0,
         "total_watchers": 0,
-        "us_order": 1478854209357,
+        "us_order": 1479455976918,
         "user_story": null,
         "user_story_extra_info": null,
         "version": 1,
@@ -2074,7 +2227,7 @@
         "assigned_to_extra_info": null,
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T08:50:10.117Z",
+        "created_date": "2016-11-18T07:59:37.541Z",
         "external_reference": null,
         "finished_date": null,
         "id": 179,
@@ -2085,7 +2238,7 @@
         "is_watcher": false,
         "milestone": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T08:50:10.130Z",
+        "modified_date": "2016-11-18T07:59:37.554Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -2134,7 +2287,7 @@
         "assigned_to_extra_info": null,
         "attachments": [],
         "blocked_note": "",
-        "created_date": "2016-11-11T08:50:10.345Z",
+        "created_date": "2016-11-18T07:59:37.713Z",
         "external_reference": null,
         "finished_date": null,
         "id": 180,
@@ -2145,7 +2298,7 @@
         "is_watcher": false,
         "milestone": null,
         "milestone_slug": null,
-        "modified_date": "2016-11-11T08:50:10.355Z",
+        "modified_date": "2016-11-18T07:59:37.721Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -2162,10 +2315,10 @@
         "status_extra_info": null,
         "subject": "Customer personal data",
         "tags": [],
-        "taskboard_order": 1478854210332,
+        "taskboard_order": 1479455977703,
         "total_voters": 0,
         "total_watchers": 0,
-        "us_order": 1478854210332,
+        "us_order": 1479455977703,
         "user_story": null,
         "user_story_extra_info": null,
         "version": 1,

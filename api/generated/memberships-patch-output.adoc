@@ -2,18 +2,18 @@
 ----
 {
     "color": "#40826D",
-    "created_at": "2016-11-11T07:49:49.401Z",
+    "created_at": "2016-11-18T07:52:22.069Z",
     "full_name": "Bego\u00f1a Flores",
     "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
     "id": 1,
     "invitation_extra_text": null,
     "invited_by": {
-        "big_photo": "http://localhost:8000/media/user/9/b/7/e/dbc6b46c3e069f3c414db23d271d61931c53e06295e61fb6db9b0954bc9f/test.png.300x300_q85_crop.png",
+        "big_photo": "http://localhost:8000/media/user/4/b/5/1/7fa2b1cd6b5bc8b9c65a1a04e8fa63b6b3ec23c284a4806d8098d00fd39f/test.png.300x300_q85_crop.png",
         "full_name_display": "Vanesa Torres",
         "gravatar_id": "737cc0873c835a8c879f124c0df9a0f1",
         "id": 6,
         "is_active": true,
-        "photo": "http://localhost:8000/media/user/9/b/7/e/dbc6b46c3e069f3c414db23d271d61931c53e06295e61fb6db9b0954bc9f/test.png.80x80_q85_crop.png",
+        "photo": "http://localhost:8000/media/user/4/b/5/1/7fa2b1cd6b5bc8b9c65a1a04e8fa63b6b3ec23c284a4806d8098d00fd39f/test.png.80x80_q85_crop.png",
         "username": "patchedusername"
     },
     "is_admin": true,
@@ -26,6 +26,6 @@
     "role": 3,
     "role_name": "Front",
     "user": 7,
-    "user_order": 1478850589401
+    "user_order": 1479455542069
 }
 ----

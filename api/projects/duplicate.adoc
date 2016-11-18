@@ -1,0 +1,5 @@
+To duplicate a project (create a new one with the same status, colors, attributes...) send a POST request specifying the project id in the url
+
+include::../generated/projects-duplicate-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-project-detail[project detail object]

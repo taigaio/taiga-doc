@@ -121,3 +121,7 @@ include::../projects/transfer-accept.adoc[]
 [[projects-transfer-reject]]
 === Transfer reject
 include::../projects/transfer-reject.adoc[]
+
+[[projects-duplicate]]
+=== Duplicate
+include::../projects/duplicate.adoc[]

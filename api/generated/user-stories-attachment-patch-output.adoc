@@ -1,12 +1,12 @@
 [source,json]
 ----
 {
-    "attached_file": "attachments/a/3/0/0/6393f1d90ec538e62bb183821f52e2d088e6381b978adfacca0b75c459a6/sample_attachment_2.txt",
-    "created_date": "2016-11-11T07:49:50.402Z",
+    "attached_file": "attachments/e/0/4/3/e5d36cfd5d516d8d9796627be0a2fb9c4c71ae05d204e51c6be80d99d62f/sample_attachment_2.txt",
+    "created_date": "2016-11-18T07:52:22.821Z",
     "description": "patching description",
     "id": 1,
     "is_deprecated": false,
-    "modified_date": "2016-11-11T08:49:38.107Z",
+    "modified_date": "2016-11-18T07:59:09.436Z",
     "name": "sample_attachment_2.txt",
     "object_id": 1,
     "order": 1,
@@ -15,6 +15,6 @@
     "sha1": "62dbe72633a794717c1f4817d2d7d087b1c29c69",
     "size": 1688,
     "thumbnail_card_url": null,
-    "url": "http://localhost:8000/media/attachments/a/3/0/0/6393f1d90ec538e62bb183821f52e2d088e6381b978adfacca0b75c459a6/sample_attachment_2.txt"
+    "url": "http://localhost:8000/media/attachments/e/0/4/3/e5d36cfd5d516d8d9796627be0a2fb9c4c71ae05d204e51c6be80d99d62f/sample_attachment_2.txt"
 }
 ----

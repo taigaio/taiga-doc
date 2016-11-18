@@ -3,7 +3,7 @@
 [
     {
         "color": "",
-        "created_at": "2016-11-11T07:49:49.706Z",
+        "created_at": "2016-11-18T07:52:22.297Z",
         "full_name": "Administrator",
         "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
         "id": 2,
@@ -19,11 +19,11 @@
         "role": 4,
         "role_name": "Back",
         "user": 5,
-        "user_order": 1478850589706
+        "user_order": 1479455542297
     },
     {
         "color": "#FFCC00",
-        "created_at": "2016-11-11T07:49:49.933Z",
+        "created_at": "2016-11-18T07:52:22.451Z",
         "full_name": "Angela Perez",
         "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
         "id": 7,
@@ -39,11 +39,11 @@
         "role": 5,
         "role_name": "Product Owner",
         "user": 11,
-        "user_order": 1478850589933
+        "user_order": 1479455542451
     },
     {
         "color": "#40826D",
-        "created_at": "2016-11-11T07:49:49.401Z",
+        "created_at": "2016-11-18T07:52:22.069Z",
         "full_name": "Bego\u00f1a Flores",
         "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
         "id": 1,
@@ -59,11 +59,11 @@
         "role": 5,
         "role_name": "Product Owner",
         "user": 7,
-        "user_order": 1478850589401
+        "user_order": 1479455542069
     },
     {
         "color": "#B6DA55",
-        "created_at": "2016-11-11T07:49:49.851Z",
+        "created_at": "2016-11-18T07:52:22.387Z",
         "full_name": "Catalina Fernandez",
         "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
         "id": 5,
@@ -79,11 +79,11 @@
         "role": 3,
         "role_name": "Front",
         "user": 9,
-        "user_order": 1478850589851
+        "user_order": 1479455542387
     },
     {
         "color": "#2099DB",
-        "created_at": "2016-11-11T07:49:49.889Z",
+        "created_at": "2016-11-18T07:52:22.419Z",
         "full_name": "Enrique Crespo",
         "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
         "id": 6,
@@ -99,11 +99,11 @@
         "role": 4,
         "role_name": "Back",
         "user": 10,
-        "user_order": 1478850589889
+        "user_order": 1479455542419
     },
     {
         "color": "#71A6D2",
-        "created_at": "2016-11-11T07:49:49.812Z",
+        "created_at": "2016-11-18T07:52:22.356Z",
         "full_name": "Francisco Gil",
         "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
         "id": 4,
@@ -119,11 +119,11 @@
         "role": 1,
         "role_name": "UX",
         "user": 8,
-        "user_order": 1478850589812
+        "user_order": 1479455542356
     },
     {
         "color": "#002e33",
-        "created_at": "2016-11-11T07:49:50.048Z",
+        "created_at": "2016-11-18T07:52:22.541Z",
         "full_name": "Miguel Molina",
         "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
         "id": 10,
@@ -139,11 +139,11 @@
         "role": 5,
         "role_name": "Product Owner",
         "user": 14,
-        "user_order": 1478850590048
+        "user_order": 1479455542541
     },
     {
         "color": "#B6DA55",
-        "created_at": "2016-11-11T07:49:50.001Z",
+        "created_at": "2016-11-18T07:52:22.510Z",
         "full_name": "Mohamed Ortega",
         "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
         "id": 9,
@@ -159,11 +159,11 @@
         "role": 6,
         "role_name": "Stakeholder",
         "user": 13,
-        "user_order": 1478850590001
+        "user_order": 1479455542510
     },
     {
         "color": "#71A6D2",
-        "created_at": "2016-11-11T07:49:49.965Z",
+        "created_at": "2016-11-18T07:52:22.479Z",
         "full_name": "Vanesa Garcia",
         "gravatar_id": "74cb769a5e64d445b8550789e1553502",
         "id": 8,
@@ -179,11 +179,11 @@
         "role": 6,
         "role_name": "Stakeholder",
         "user": 12,
-        "user_order": 1478850589965
+        "user_order": 1479455542479
     },
     {
         "color": "#40826D",
-        "created_at": "2016-11-11T07:49:49.757Z",
+        "created_at": "2016-11-18T07:52:22.326Z",
         "full_name": "Vanesa Torres",
         "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
         "id": 3,
@@ -199,11 +199,11 @@
         "role": 2,
         "role_name": "Design",
         "user": 6,
-        "user_order": 1478850589757
+        "user_order": 1479455542326
     },
     {
         "color": "#FFFF00",
-        "created_at": "2016-11-11T07:49:50.086Z",
+        "created_at": "2016-11-18T07:52:22.573Z",
         "full_name": "Virginia Castro",
         "gravatar_id": "69b60d39a450e863609ae3546b12b360",
         "id": 11,
@@ -219,11 +219,11 @@
         "role": 6,
         "role_name": "Stakeholder",
         "user": 15,
-        "user_order": 1478850590086
+        "user_order": 1479455542573
     },
     {
         "color": null,
-        "created_at": "2016-11-11T08:49:28.153Z",
+        "created_at": "2016-11-18T07:58:59.975Z",
         "full_name": null,
         "gravatar_id": null,
         "id": 94,
@@ -247,11 +247,11 @@
         "role": 4,
         "role_name": "Back",
         "user": null,
-        "user_order": 1478854168153
+        "user_order": 1479455939975
     },
     {
         "color": null,
-        "created_at": "2016-11-11T07:49:50.142Z",
+        "created_at": "2016-11-18T07:52:22.604Z",
         "full_name": null,
         "gravatar_id": null,
         "id": 13,
@@ -267,23 +267,23 @@
         "role": 4,
         "role_name": "Back",
         "user": null,
-        "user_order": 1478850590142
+        "user_order": 1479455542604
     },
     {
         "color": null,
-        "created_at": "2016-11-11T08:49:26.471Z",
+        "created_at": "2016-11-18T07:58:58.819Z",
         "full_name": null,
         "gravatar_id": null,
         "id": 92,
         "invitation_extra_text": "",
         "invited_by": {
-            "big_photo": "http://localhost:8000/media/user/b/d/3/2/5cb75ab59dcf861906ed280f9edfaf394535e10a37610d5f0063cf8222f7/logo.png.300x300_q85_crop.png",
+            "big_photo": "http://localhost:8000/media/user/1/0/b/c/299885eafdf2bd103563187ff3c9f97d8d59cbecfe62c177420643ec208c/logo.png.300x300_q85_crop.png",
             "full_name_display": "BitBucket",
-            "gravatar_id": "bcd1853e03dbf1d34d2c8442323f0c0c",
+            "gravatar_id": "f496b94c5a465cc5f09426011066872c",
             "id": 1,
             "is_active": false,
-            "photo": "http://localhost:8000/media/user/b/d/3/2/5cb75ab59dcf861906ed280f9edfaf394535e10a37610d5f0063cf8222f7/logo.png.80x80_q85_crop.png",
-            "username": "bitbucket-4418065c59884511bf3a1f0906fda815"
+            "photo": "http://localhost:8000/media/user/1/0/b/c/299885eafdf2bd103563187ff3c9f97d8d59cbecfe62c177420643ec208c/logo.png.80x80_q85_crop.png",
+            "username": "bitbucket-534bc1d2aa9b4960bf06cb3306a102f0"
         },
         "is_admin": false,
         "is_owner": null,
@@ -299,7 +299,7 @@
     },
     {
         "color": null,
-        "created_at": "2016-11-11T08:49:28.153Z",
+        "created_at": "2016-11-18T07:58:59.975Z",
         "full_name": null,
         "gravatar_id": null,
         "id": 93,
@@ -323,11 +323,11 @@
         "role": 3,
         "role_name": "Front",
         "user": null,
-        "user_order": 1478854168153
+        "user_order": 1479455939975
     },
     {
         "color": null,
-        "created_at": "2016-11-11T08:49:28.485Z",
+        "created_at": "2016-11-18T07:59:00.333Z",
         "full_name": null,
         "gravatar_id": null,
         "id": 95,
@@ -351,11 +351,11 @@
         "role": 3,
         "role_name": "Front",
         "user": null,
-        "user_order": 1478854168485
+        "user_order": 1479455940334
     },
     {
         "color": null,
-        "created_at": "2016-11-11T07:49:50.131Z",
+        "created_at": "2016-11-18T07:52:22.602Z",
         "full_name": null,
         "gravatar_id": null,
         "id": 12,
@@ -371,11 +371,11 @@
         "role": 1,
         "role_name": "UX",
         "user": null,
-        "user_order": 1478850590131
+        "user_order": 1479455542602
     },
     {
         "color": "",
-        "created_at": "2016-11-11T07:50:38.770Z",
+        "created_at": "2016-11-18T07:52:49.924Z",
         "full_name": "Administrator",
         "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
         "id": 15,
@@ -391,11 +391,11 @@
         "role": 11,
         "role_name": "Product Owner",
         "user": 5,
-        "user_order": 1478850638770
+        "user_order": 1479455569924
     },
     {
         "color": "#FFCC00",
-        "created_at": "2016-11-11T07:50:38.967Z",
+        "created_at": "2016-11-18T07:52:50.100Z",
         "full_name": "Angela Perez",
         "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
         "id": 20,
@@ -411,11 +411,11 @@
         "role": 11,
         "role_name": "Product Owner",
         "user": 11,
-        "user_order": 1478850638967
+        "user_order": 1479455570100
     },
     {
         "color": "#40826D",
-        "created_at": "2016-11-11T07:50:38.676Z",
+        "created_at": "2016-11-18T07:52:49.853Z",
         "full_name": "Bego\u00f1a Flores",
         "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
         "id": 14,
@@ -431,11 +431,11 @@
         "role": 11,
         "role_name": "Product Owner",
         "user": 7,
-        "user_order": 1478850638676
+        "user_order": 1479455569853
     },
     {
         "color": "#B6DA55",
-        "created_at": "2016-11-11T07:50:38.883Z",
+        "created_at": "2016-11-18T07:52:50.020Z",
         "full_name": "Catalina Fernandez",
         "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
         "id": 18,
@@ -451,11 +451,11 @@
         "role": 8,
         "role_name": "Design",
         "user": 9,
-        "user_order": 1478850638883
+        "user_order": 1479455570020
     },
     {
         "color": "#2099DB",
-        "created_at": "2016-11-11T07:50:38.922Z",
+        "created_at": "2016-11-18T07:52:50.058Z",
         "full_name": "Enrique Crespo",
         "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
         "id": 19,
@@ -471,11 +471,11 @@
         "role": 12,
         "role_name": "Stakeholder",
         "user": 10,
-        "user_order": 1478850638922
+        "user_order": 1479455570058
     },
     {
         "color": "#71A6D2",
-        "created_at": "2016-11-11T07:50:38.840Z",
+        "created_at": "2016-11-18T07:52:49.977Z",
         "full_name": "Francisco Gil",
         "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
         "id": 17,
@@ -491,11 +491,11 @@
         "role": 9,
         "role_name": "Front",
         "user": 8,
-        "user_order": 1478850638840
+        "user_order": 1479455569977
     },
     {
         "color": "#002e33",
-        "created_at": "2016-11-11T07:50:39.102Z",
+        "created_at": "2016-11-18T07:52:50.184Z",
         "full_name": "Miguel Molina",
         "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
         "id": 23,
@@ -511,11 +511,11 @@
         "role": 9,
         "role_name": "Front",
         "user": 14,
-        "user_order": 1478850639102
+        "user_order": 1479455570185
     },
     {
         "color": "#B6DA55",
-        "created_at": "2016-11-11T07:50:39.056Z",
+        "created_at": "2016-11-18T07:52:50.154Z",
         "full_name": "Mohamed Ortega",
         "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
         "id": 22,
@@ -531,11 +531,11 @@
         "role": 9,
         "role_name": "Front",
         "user": 13,
-        "user_order": 1478850639056
+        "user_order": 1479455570154
     },
     {
         "color": "#71A6D2",
-        "created_at": "2016-11-11T07:50:39.006Z",
+        "created_at": "2016-11-18T07:52:50.126Z",
         "full_name": "Vanesa Garcia",
         "gravatar_id": "74cb769a5e64d445b8550789e1553502",
         "id": 21,
@@ -551,11 +551,11 @@
         "role": 9,
         "role_name": "Front",
         "user": 12,
-        "user_order": 1478850639006
+        "user_order": 1479455570126
     },
     {
         "color": "#40826D",
-        "created_at": "2016-11-11T07:50:38.807Z",
+        "created_at": "2016-11-18T07:52:49.947Z",
         "full_name": "Vanesa Torres",
         "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
         "id": 16,
@@ -571,11 +571,11 @@
         "role": 12,
         "role_name": "Stakeholder",
         "user": 6,
-        "user_order": 1478850638807
+        "user_order": 1479455569947
     },
     {
         "color": "#FFFF00",
-        "created_at": "2016-11-11T07:50:39.139Z",
+        "created_at": "2016-11-18T07:52:50.212Z",
         "full_name": "Virginia Castro",
         "gravatar_id": "69b60d39a450e863609ae3546b12b360",
         "id": 24,
@@ -591,11 +591,11 @@
         "role": 7,
         "role_name": "UX",
         "user": 15,
-        "user_order": 1478850639139
+        "user_order": 1479455570212
     },
     {
         "color": null,
-        "created_at": "2016-11-11T07:50:39.172Z",
+        "created_at": "2016-11-18T07:52:50.247Z",
         "full_name": null,
         "gravatar_id": null,
         "id": 25,
@@ -611,11 +611,11 @@
         "role": 11,
         "role_name": "Product Owner",
         "user": null,
-        "user_order": 1478850639172
+        "user_order": 1479455570247
     },
     {
         "color": null,
-        "created_at": "2016-11-11T07:50:39.177Z",
+        "created_at": "2016-11-18T07:52:50.251Z",
         "full_name": null,
         "gravatar_id": null,
         "id": 26,
@@ -631,7 +631,7 @@
         "role": 7,
         "role_name": "UX",
         "user": null,
-        "user_order": 1478850639177
+        "user_order": 1479455570251
     }
 ]
 ----

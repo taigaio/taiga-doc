@@ -2,7 +2,7 @@
 ----
 {
     "color": null,
-    "created_at": "2016-11-11T08:49:28.485Z",
+    "created_at": "2016-11-18T07:59:00.333Z",
     "email": "test-user@test.com",
     "full_name": null,
     "gravatar_id": null,
@@ -28,6 +28,6 @@
     "role_name": "Front",
     "user": null,
     "user_email": null,
-    "user_order": 1478854168485
+    "user_order": 1479455940334
 }
 ----

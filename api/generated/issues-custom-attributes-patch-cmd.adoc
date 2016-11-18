@@ -6,5 +6,5 @@ curl -X PATCH \
 -d '{
         "name": "Duration 1"
     }' \
--s http://localhost:8000/api/v1/issue-custom-attributes/1
+-s http://localhost:8000/api/v1/issue-custom-attributes/4
 ----

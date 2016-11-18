@@ -17,7 +17,7 @@
         "average_last_five_working_days": 0.0,
         "average_last_seven_days": 0.0,
         "counts_last_year_per_week": {
-            "2016-11-07": 13
+            "2016-11-14": 13
         },
         "today": 12,
         "total": 13

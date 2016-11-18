@@ -1,15 +1,15 @@
 [source,json]
 ----
 {
-    "content_type": 18,
-    "created": "2016-11-11T08:49:38.129Z",
+    "content_type": 14,
+    "created": "2016-11-18T07:59:09.463Z",
     "data": {
         "comment": "",
         "comment_html": "",
         "milestone": {
             "id": 1,
-            "name": "Sprint 2016-9-17",
-            "slug": "sprint-2016-9-17"
+            "name": "Sprint 2016-9-24",
+            "slug": "sprint-2016-9-24"
         },
         "project": {
             "description": "Project example 0 description",
@@ -19,7 +19,7 @@
         },
         "user": {
             "big_photo": null,
-            "date_joined": "2016-11-11T07:49:48.618Z",
+            "date_joined": "2016-11-18T07:52:21.532Z",
             "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
             "id": 6,
             "is_profile_visible": true,
@@ -44,7 +44,7 @@
                         },
                         "filename": "sample_attachment_2.txt",
                         "thumb_url": null,
-                        "url": "http://localhost:8000/media/attachments/a/3/0/0/6393f1d90ec538e62bb183821f52e2d088e6381b978adfacca0b75c459a6/sample_attachment_2.txt"
+                        "url": "http://localhost:8000/media/attachments/e/0/4/3/e5d36cfd5d516d8d9796627be0a2fb9c4c71ae05d204e51c6be80d99d62f/sample_attachment_2.txt"
                     }
                 ],
                 "deleted": [],
@@ -54,7 +54,7 @@
     },
     "data_content_type": 45,
     "event_type": "userstories.userstory.change",
-    "id": 6853,
+    "id": 6868,
     "namespace": "project:1",
     "object_id": 1,
     "project": 1

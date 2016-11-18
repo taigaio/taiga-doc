@@ -76,10 +76,10 @@
             "subject": "Implement the form"
         },
         {
-            "assigned_to": 11,
-            "id": 14,
-            "ref": 55,
-            "status": 7,
+            "assigned_to": null,
+            "id": 13,
+            "ref": 54,
+            "status": 5,
             "subject": "Experimental: modular file types"
         },
         {
@@ -90,10 +90,10 @@
             "subject": "Create testsuite with matrix builds"
         },
         {
-            "assigned_to": null,
-            "id": 13,
-            "ref": 54,
-            "status": 5,
+            "assigned_to": 11,
+            "id": 14,
+            "ref": 55,
+            "status": 7,
             "subject": "Experimental: modular file types"
         },
         {
@@ -118,11 +118,18 @@
             "subject": "Lighttpd support"
         },
         {
-            "assigned_to": 12,
-            "id": 7,
-            "ref": 48,
+            "assigned_to": 6,
+            "id": 12,
+            "ref": 53,
+            "status": 2,
+            "subject": "Add tests for bulk operations"
+        },
+        {
+            "assigned_to": null,
+            "id": 2,
+            "ref": 43,
             "status": 4,
-            "subject": "Migrate to Python 3 and milk a beautiful cow"
+            "subject": "Implement the form"
         },
         {
             "assigned_to": 15,
@@ -132,13 +139,6 @@
             "subject": "Implement the form"
         },
         {
-            "assigned_to": 6,
-            "id": 12,
-            "ref": 53,
-            "status": 2,
-            "subject": "Add tests for bulk operations"
-        },
-        {
             "assigned_to": 12,
             "id": 1,
             "ref": 42,
@@ -146,11 +146,11 @@
             "subject": "Exception is thrown if trying to add a folder with existing name"
         },
         {
-            "assigned_to": null,
-            "id": 2,
-            "ref": 43,
+            "assigned_to": 12,
+            "id": 7,
+            "ref": 48,
             "status": 4,
-            "subject": "Implement the form"
+            "subject": "Migrate to Python 3 and milk a beautiful cow"
         }
     ],
     "tasks": [
@@ -176,6 +176,13 @@
             "subject": "Lighttpd support"
         },
         {
+            "assigned_to": 7,
+            "id": 20,
+            "ref": 26,
+            "status": 3,
+            "subject": "Lighttpd support"
+        },
+        {
             "assigned_to": 9,
             "id": 16,
             "ref": 21,
@@ -190,25 +197,11 @@
             "subject": "Lighttpd support"
         },
         {
-            "assigned_to": 7,
-            "id": 20,
-            "ref": 26,
-            "status": 3,
-            "subject": "Lighttpd support"
-        },
-        {
-            "assigned_to": 11,
-            "id": 9,
-            "ref": 11,
-            "status": 3,
-            "subject": "Create the user model"
-        },
-        {
-            "assigned_to": 7,
-            "id": 10,
-            "ref": 13,
+            "assigned_to": 8,
+            "id": 7,
+            "ref": 9,
             "status": 1,
-            "subject": "Exception is thrown if trying to add a folder with existing name"
+            "subject": "Added file copying and processing of images (resizing)"
         },
         {
             "assigned_to": 9,
@@ -216,13 +209,6 @@
             "ref": 15,
             "status": 4,
             "subject": "Create the user model"
-        },
-        {
-            "assigned_to": 8,
-            "id": 7,
-            "ref": 9,
-            "status": 1,
-            "subject": "Added file copying and processing of images (resizing)"
         },
         {
             "assigned_to": 5,
@@ -239,32 +225,18 @@
             "subject": "Create testsuite with matrix builds"
         },
         {
-            "assigned_to": 15,
-            "id": 19,
-            "ref": 25,
+            "assigned_to": 11,
+            "id": 9,
+            "ref": 11,
             "status": 3,
-            "subject": "Create testsuite with matrix builds"
+            "subject": "Create the user model"
         },
         {
-            "assigned_to": 14,
-            "id": 5,
-            "ref": 7,
-            "status": 4,
-            "subject": "Fixing templates for Django 1.6."
-        },
-        {
-            "assigned_to": 15,
-            "id": 4,
-            "ref": 5,
-            "status": 2,
-            "subject": "Lighttpd x-sendfile support"
-        },
-        {
-            "assigned_to": 8,
-            "id": 12,
-            "ref": 16,
-            "status": 4,
-            "subject": "get_actions() does not check for 'delete_selected' in actions"
+            "assigned_to": 7,
+            "id": 10,
+            "ref": 13,
+            "status": 1,
+            "subject": "Exception is thrown if trying to add a folder with existing name"
         },
         {
             "assigned_to": 12,
@@ -272,6 +244,13 @@
             "ref": 2,
             "status": 3,
             "subject": "Patching subject"
+        },
+        {
+            "assigned_to": 14,
+            "id": 5,
+            "ref": 7,
+            "status": 4,
+            "subject": "Fixing templates for Django 1.6."
         },
         {
             "assigned_to": 13,
@@ -286,6 +265,27 @@
             "ref": 27,
             "status": 1,
             "subject": "Create the user model"
+        },
+        {
+            "assigned_to": 15,
+            "id": 4,
+            "ref": 5,
+            "status": 2,
+            "subject": "Lighttpd x-sendfile support"
+        },
+        {
+            "assigned_to": 15,
+            "id": 19,
+            "ref": 25,
+            "status": 3,
+            "subject": "Create testsuite with matrix builds"
+        },
+        {
+            "assigned_to": 8,
+            "id": 12,
+            "ref": 16,
+            "status": 4,
+            "subject": "get_actions() does not check for 'delete_selected' in actions"
         }
     ],
     "userstories": [
@@ -326,22 +326,22 @@
             "total_points": 53.0
         },
         {
-            "id": 1,
-            "milestone_name": "Sprint 2016-9-17",
-            "milestone_slug": "sprint-2016-9-17",
-            "ref": 1,
-            "status": 3,
-            "subject": "Patching subject",
-            "total_points": 44.0
-        },
-        {
             "id": 5,
-            "milestone_name": "Sprint 2016-10-2",
-            "milestone_slug": "sprint-2016-10-2",
+            "milestone_name": "Sprint 2016-10-9",
+            "milestone_slug": "sprint-2016-10-9",
             "ref": 18,
             "status": 1,
             "subject": "Fixing templates for Django 1.6.",
             "total_points": 31.0
+        },
+        {
+            "id": 1,
+            "milestone_name": "Sprint 2016-9-24",
+            "milestone_slug": "sprint-2016-9-24",
+            "ref": 1,
+            "status": 3,
+            "subject": "Patching subject",
+            "total_points": 44.0
         },
         {
             "id": 17,
@@ -353,13 +353,13 @@
             "total_points": 56.0
         },
         {
-            "id": 3,
-            "milestone_name": "Sprint 2016-9-17",
-            "milestone_slug": "sprint-2016-9-17",
-            "ref": 12,
+            "id": 16,
+            "milestone_name": null,
+            "milestone_slug": null,
+            "ref": 38,
             "status": 2,
-            "subject": "Create the user model",
-            "total_points": 21.0
+            "subject": "Fixing templates for Django 1.6.",
+            "total_points": 88.0
         },
         {
             "id": 9,
@@ -380,13 +380,13 @@
             "total_points": 21.5
         },
         {
-            "id": 16,
-            "milestone_name": null,
-            "milestone_slug": null,
-            "ref": 38,
+            "id": 3,
+            "milestone_name": "Sprint 2016-9-24",
+            "milestone_slug": "sprint-2016-9-24",
+            "ref": 12,
             "status": 2,
-            "subject": "Fixing templates for Django 1.6.",
-            "total_points": 88.0
+            "subject": "Create the user model",
+            "total_points": 21.0
         }
     ],
     "wikipages": [

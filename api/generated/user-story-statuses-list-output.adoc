@@ -190,7 +190,7 @@
     },
     {
         "color": "#AAAAAA",
-        "id": 61,
+        "id": 67,
         "is_archived": false,
         "is_closed": true,
         "name": "New status",
@@ -201,7 +201,7 @@
     },
     {
         "color": "#999999",
-        "id": 62,
+        "id": 68,
         "is_archived": false,
         "is_closed": false,
         "name": "New status name",
@@ -219,6 +219,72 @@
         "order": 10,
         "project": 1,
         "slug": "patch-status-name",
+        "wip_limit": null
+    },
+    {
+        "color": "#999999",
+        "id": 61,
+        "is_archived": false,
+        "is_closed": false,
+        "name": "Nueva",
+        "order": 1,
+        "project": 11,
+        "slug": "new",
+        "wip_limit": null
+    },
+    {
+        "color": "#ff8a84",
+        "id": 62,
+        "is_archived": false,
+        "is_closed": false,
+        "name": "Preparada",
+        "order": 2,
+        "project": 11,
+        "slug": "ready",
+        "wip_limit": null
+    },
+    {
+        "color": "#ff9900",
+        "id": 63,
+        "is_archived": false,
+        "is_closed": false,
+        "name": "En curso",
+        "order": 3,
+        "project": 11,
+        "slug": "in-progress",
+        "wip_limit": null
+    },
+    {
+        "color": "#fcc000",
+        "id": 64,
+        "is_archived": false,
+        "is_closed": false,
+        "name": "Lista para testear",
+        "order": 4,
+        "project": 11,
+        "slug": "ready-for-test",
+        "wip_limit": null
+    },
+    {
+        "color": "#669900",
+        "id": 65,
+        "is_archived": false,
+        "is_closed": true,
+        "name": "Hecha",
+        "order": 5,
+        "project": 11,
+        "slug": "done",
+        "wip_limit": null
+    },
+    {
+        "color": "#5c3566",
+        "id": 66,
+        "is_archived": true,
+        "is_closed": true,
+        "name": "Archivada",
+        "order": 6,
+        "project": 11,
+        "slug": "archived",
         "wip_limit": null
     },
     {
@@ -262,72 +328,6 @@
         "name": "Lista para testear",
         "order": 4,
         "project": 8,
-        "slug": "ready-for-test",
-        "wip_limit": null
-    },
-    {
-        "color": "#669900",
-        "id": 47,
-        "is_archived": false,
-        "is_closed": true,
-        "name": "Hecha",
-        "order": 5,
-        "project": 8,
-        "slug": "done",
-        "wip_limit": null
-    },
-    {
-        "color": "#5c3566",
-        "id": 48,
-        "is_archived": true,
-        "is_closed": true,
-        "name": "Archivada",
-        "order": 6,
-        "project": 8,
-        "slug": "archived",
-        "wip_limit": null
-    },
-    {
-        "color": "#999999",
-        "id": 7,
-        "is_archived": false,
-        "is_closed": false,
-        "name": "Nueva",
-        "order": 1,
-        "project": 2,
-        "slug": "new",
-        "wip_limit": null
-    },
-    {
-        "color": "#ff8a84",
-        "id": 8,
-        "is_archived": false,
-        "is_closed": false,
-        "name": "Preparada",
-        "order": 2,
-        "project": 2,
-        "slug": "ready",
-        "wip_limit": null
-    },
-    {
-        "color": "#ff9900",
-        "id": 9,
-        "is_archived": false,
-        "is_closed": false,
-        "name": "En curso",
-        "order": 3,
-        "project": 2,
-        "slug": "in-progress",
-        "wip_limit": null
-    },
-    {
-        "color": "#fcc000",
-        "id": 10,
-        "is_archived": false,
-        "is_closed": false,
-        "name": "Lista para testear",
-        "order": 4,
-        "project": 2,
         "slug": "ready-for-test",
         "wip_limit": null
     }

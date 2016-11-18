@@ -4,18 +4,18 @@
     {
         "closed": false,
         "closed_points": null,
-        "created_date": "2016-10-02T07:49:50.220Z",
+        "created_date": "2016-10-09T07:52:22.631Z",
         "disponibility": 0.0,
-        "estimated_finish": "2016-10-17",
-        "estimated_start": "2016-10-02",
+        "estimated_finish": "2016-10-24",
+        "estimated_start": "2016-10-09",
         "id": 2,
         "is_watcher": false,
-        "modified_date": "2016-11-11T07:49:58.092Z",
-        "name": "Sprint 2016-10-2",
+        "modified_date": "2016-11-18T07:52:26.600Z",
+        "name": "Sprint 2016-10-9",
         "order": 10,
         "owner": 15,
         "project": 1,
-        "slug": "sprint-2016-10-2",
+        "slug": "sprint-2016-10-9",
         "total_points": 89.0,
         "total_watchers": 0,
         "user_stories": [
@@ -31,11 +31,11 @@
                     "username": "user5"
                 },
                 "attachments": [],
-                "backlog_order": 1478850598187,
+                "backlog_order": 1479455546649,
                 "blocked_note": "",
                 "client_requirement": false,
                 "comment": "",
-                "created_date": "2016-11-11T07:49:58.187Z",
+                "created_date": "2016-11-18T07:52:26.649Z",
                 "epic_order": null,
                 "epics": [
                     {
@@ -48,6 +48,17 @@
                         },
                         "ref": 63,
                         "subject": "Support for bulk actions"
+                    },
+                    {
+                        "color": "#729fcf",
+                        "id": 23,
+                        "project": {
+                            "id": 7,
+                            "name": "Project Example 6",
+                            "slug": "project-6"
+                        },
+                        "ref": 58,
+                        "subject": "Added file copying and processing of images (resizing)"
                     }
                 ],
                 "external_reference": null,
@@ -58,11 +69,11 @@
                 "is_closed": false,
                 "is_voter": false,
                 "is_watcher": false,
-                "kanban_order": 1478850598187,
+                "kanban_order": 1479455546649,
                 "milestone": 2,
-                "milestone_name": "Sprint 2016-10-2",
-                "milestone_slug": "sprint-2016-10-2",
-                "modified_date": "2016-11-11T07:49:58.546Z",
+                "milestone_name": "Sprint 2016-10-9",
+                "milestone_slug": "sprint-2016-10-9",
+                "modified_date": "2016-11-18T07:52:26.850Z",
                 "origin_issue": null,
                 "owner": 15,
                 "owner_extra_info": {
@@ -88,7 +99,7 @@
                     "slug": "project-0"
                 },
                 "ref": 14,
-                "sprint_order": 1478850598187,
+                "sprint_order": 1479455546649,
                 "status": 2,
                 "status_extra_info": {
                     "color": "#ff8a84",
@@ -133,13 +144,25 @@
                     "username": "user2"
                 },
                 "attachments": [],
-                "backlog_order": 1478850600217,
+                "backlog_order": 1479455547853,
                 "blocked_note": "",
                 "client_requirement": false,
                 "comment": "",
-                "created_date": "2016-11-11T07:50:00.217Z",
+                "created_date": "2016-11-18T07:52:27.853Z",
                 "epic_order": null,
-                "epics": null,
+                "epics": [
+                    {
+                        "color": "#f57900",
+                        "id": 1,
+                        "project": {
+                            "id": 1,
+                            "name": "Beta project patch",
+                            "slug": "project-0"
+                        },
+                        "ref": 63,
+                        "subject": "Support for bulk actions"
+                    }
+                ],
                 "external_reference": null,
                 "finish_date": null,
                 "generated_from_issue": null,
@@ -148,11 +171,11 @@
                 "is_closed": false,
                 "is_voter": false,
                 "is_watcher": false,
-                "kanban_order": 1478850600217,
+                "kanban_order": 1479455547853,
                 "milestone": 2,
-                "milestone_name": "Sprint 2016-10-2",
-                "milestone_slug": "sprint-2016-10-2",
-                "modified_date": "2016-11-11T07:50:00.484Z",
+                "milestone_name": "Sprint 2016-10-9",
+                "milestone_slug": "sprint-2016-10-9",
+                "modified_date": "2016-11-18T07:52:28.051Z",
                 "origin_issue": null,
                 "owner": 7,
                 "owner_extra_info": {
@@ -178,7 +201,7 @@
                     "slug": "project-0"
                 },
                 "ref": 18,
-                "sprint_order": 1478850600217,
+                "sprint_order": 1479455547853,
                 "status": 1,
                 "status_extra_info": {
                     "color": "#999999",
@@ -223,25 +246,13 @@
                     "username": "user2114747470430251528"
                 },
                 "attachments": [],
-                "backlog_order": 1478850602759,
+                "backlog_order": 1479455549662,
                 "blocked_note": "",
                 "client_requirement": false,
                 "comment": "",
-                "created_date": "2016-11-11T07:50:02.759Z",
+                "created_date": "2016-11-18T07:52:29.662Z",
                 "epic_order": null,
-                "epics": [
-                    {
-                        "color": "#f57900",
-                        "id": 1,
-                        "project": {
-                            "id": 1,
-                            "name": "Beta project patch",
-                            "slug": "project-0"
-                        },
-                        "ref": 63,
-                        "subject": "Support for bulk actions"
-                    }
-                ],
+                "epics": null,
                 "external_reference": null,
                 "finish_date": null,
                 "generated_from_issue": null,
@@ -250,11 +261,11 @@
                 "is_closed": false,
                 "is_voter": false,
                 "is_watcher": false,
-                "kanban_order": 1478850602759,
+                "kanban_order": 1479455549662,
                 "milestone": 2,
-                "milestone_name": "Sprint 2016-10-2",
-                "milestone_slug": "sprint-2016-10-2",
-                "modified_date": "2016-11-11T07:50:03.209Z",
+                "milestone_name": "Sprint 2016-10-9",
+                "milestone_slug": "sprint-2016-10-9",
+                "modified_date": "2016-11-18T07:52:29.863Z",
                 "origin_issue": null,
                 "owner": 10,
                 "owner_extra_info": {
@@ -280,7 +291,7 @@
                     "slug": "project-0"
                 },
                 "ref": 24,
-                "sprint_order": 1478850602759,
+                "sprint_order": 1479455549662,
                 "status": 1,
                 "status_extra_info": {
                     "color": "#999999",
@@ -318,18 +329,18 @@
     {
         "closed": false,
         "closed_points": null,
-        "created_date": "2016-09-17T07:49:50.220Z",
+        "created_date": "2016-09-24T07:52:22.631Z",
         "disponibility": 0.0,
-        "estimated_finish": "2016-10-02",
-        "estimated_start": "2016-09-17",
+        "estimated_finish": "2016-10-09",
+        "estimated_start": "2016-09-24",
         "id": 1,
         "is_watcher": true,
-        "modified_date": "2016-11-11T08:50:13.968Z",
+        "modified_date": "2016-11-18T07:59:41.012Z",
         "name": "Sprint 2",
         "order": 10,
         "owner": 12,
         "project": 1,
-        "slug": "sprint-2016-9-17",
+        "slug": "sprint-2016-9-24",
         "total_points": 92.0,
         "total_watchers": 1,
         "user_stories": [
@@ -349,9 +360,21 @@
                 "blocked_note": "",
                 "client_requirement": false,
                 "comment": "",
-                "created_date": "2016-11-11T07:49:50.280Z",
+                "created_date": "2016-11-18T07:52:22.693Z",
                 "epic_order": null,
-                "epics": null,
+                "epics": [
+                    {
+                        "color": "#f57900",
+                        "id": 1,
+                        "project": {
+                            "id": 1,
+                            "name": "Beta project patch",
+                            "slug": "project-0"
+                        },
+                        "ref": 63,
+                        "subject": "Support for bulk actions"
+                    }
+                ],
                 "external_reference": null,
                 "finish_date": null,
                 "generated_from_issue": null,
@@ -363,8 +386,8 @@
                 "kanban_order": 10,
                 "milestone": 1,
                 "milestone_name": "Sprint 2",
-                "milestone_slug": "sprint-2016-9-17",
-                "modified_date": "2016-11-11T08:49:36.966Z",
+                "milestone_slug": "sprint-2016-9-24",
+                "modified_date": "2016-11-18T07:59:08.304Z",
                 "origin_issue": null,
                 "owner": 12,
                 "owner_extra_info": {
@@ -434,9 +457,21 @@
                 "blocked_note": "",
                 "client_requirement": false,
                 "comment": "",
-                "created_date": "2016-11-11T07:49:52.839Z",
+                "created_date": "2016-11-18T07:52:24.191Z",
                 "epic_order": null,
-                "epics": null,
+                "epics": [
+                    {
+                        "color": "#f57900",
+                        "id": 1,
+                        "project": {
+                            "id": 1,
+                            "name": "Beta project patch",
+                            "slug": "project-0"
+                        },
+                        "ref": 63,
+                        "subject": "Support for bulk actions"
+                    }
+                ],
                 "external_reference": null,
                 "finish_date": null,
                 "generated_from_issue": null,
@@ -448,8 +483,8 @@
                 "kanban_order": 15,
                 "milestone": 1,
                 "milestone_name": "Sprint 2",
-                "milestone_slug": "sprint-2016-9-17",
-                "modified_date": "2016-11-11T07:49:53.273Z",
+                "milestone_slug": "sprint-2016-9-24",
+                "modified_date": "2016-11-18T07:52:24.424Z",
                 "origin_issue": null,
                 "owner": 6,
                 "owner_extra_info": {
@@ -515,11 +550,11 @@
                 "assigned_to": null,
                 "assigned_to_extra_info": null,
                 "attachments": [],
-                "backlog_order": 1478850596612,
+                "backlog_order": 1479455545860,
                 "blocked_note": "",
                 "client_requirement": false,
                 "comment": "",
-                "created_date": "2016-11-11T07:49:56.612Z",
+                "created_date": "2016-11-18T07:52:25.860Z",
                 "epic_order": null,
                 "epics": null,
                 "external_reference": null,
@@ -530,11 +565,11 @@
                 "is_closed": false,
                 "is_voter": false,
                 "is_watcher": false,
-                "kanban_order": 1478850596612,
+                "kanban_order": 1479455545860,
                 "milestone": 1,
                 "milestone_name": "Sprint 2",
-                "milestone_slug": "sprint-2016-9-17",
-                "modified_date": "2016-11-11T07:49:56.973Z",
+                "milestone_slug": "sprint-2016-9-24",
+                "modified_date": "2016-11-18T07:52:26.096Z",
                 "origin_issue": null,
                 "owner": 5,
                 "owner_extra_info": {
@@ -560,7 +595,7 @@
                     "slug": "project-0"
                 },
                 "ref": 12,
-                "sprint_order": 1478850596613,
+                "sprint_order": 1479455545861,
                 "status": 2,
                 "status_extra_info": {
                     "color": "#ff8a84",
@@ -597,13 +632,13 @@
     {
         "closed": false,
         "closed_points": null,
-        "created_date": "2016-11-11T08:50:14.308Z",
+        "created_date": "2016-11-18T07:59:41.257Z",
         "disponibility": 0.0,
         "estimated_finish": "2014-11-04",
         "estimated_start": "2014-10-20",
         "id": 17,
         "is_watcher": false,
-        "modified_date": "2016-11-11T08:50:14.320Z",
+        "modified_date": "2016-11-18T07:59:41.267Z",
         "name": "Sprint 3",
         "order": 1,
         "owner": 6,
@@ -617,13 +652,13 @@
     {
         "closed": false,
         "closed_points": null,
-        "created_date": "2016-11-11T08:50:14.146Z",
+        "created_date": "2016-11-18T07:59:41.133Z",
         "disponibility": 30.0,
         "estimated_finish": "2014-11-04",
         "estimated_start": "2014-10-20",
         "id": 16,
         "is_watcher": false,
-        "modified_date": "2016-11-11T08:50:14.155Z",
+        "modified_date": "2016-11-18T07:59:41.144Z",
         "name": "Sprint 1",
         "order": 1,
         "owner": 6,

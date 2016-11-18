@@ -1,10 +1,10 @@
 [source,json]
 ----
 {
-    "created_date": "2016-11-11T07:49:50.159Z",
+    "created_date": "2016-11-18T07:52:22.611Z",
     "description": "vel omnis culpa quisquam nulla",
     "id": 1,
-    "modified_date": "2016-11-11T08:49:39.344Z",
+    "modified_date": "2016-11-18T07:59:10.584Z",
     "name": "Duration 1",
     "order": 1,
     "project": 1,

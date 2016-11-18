@@ -7,5 +7,5 @@ curl -X POST \
         "bulk_userstories": "epic 1 \n epic 2 \n epic 3",
         "project_id": 3
     }' \
--s http://localhost:8000/api/v1/epics/14/related_userstories/bulk_create
+-s http://localhost:8000/api/v1/epics/13/related_userstories/bulk_create
 ----

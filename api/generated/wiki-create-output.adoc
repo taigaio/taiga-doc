@@ -2,13 +2,13 @@
 ----
 {
     "content": "Lorem ipsum dolor.",
-    "created_date": "2016-11-11T08:50:05.318Z",
+    "created_date": "2016-11-18T07:59:33.388Z",
     "editions": 1,
     "html": "<p>Lorem ipsum dolor.</p>",
     "id": 33,
     "is_watcher": false,
     "last_modifier": 6,
-    "modified_date": "2016-11-11T08:50:05.330Z",
+    "modified_date": "2016-11-18T07:59:33.401Z",
     "owner": 6,
     "project": 1,
     "slug": "new-page",

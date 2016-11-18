@@ -2,7 +2,7 @@
 ----
 {
     "color": "#999999",
-    "id": 32,
+    "id": 35,
     "name": "New type name",
     "order": 10,
     "project": 1

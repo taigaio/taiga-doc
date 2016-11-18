@@ -59,14 +59,14 @@
     },
     {
         "color": "#AAAAAA",
-        "id": 31,
+        "id": 34,
         "name": "New type",
         "order": 8,
         "project": 1
     },
     {
         "color": "#999999",
-        "id": 32,
+        "id": 35,
         "name": "New type name",
         "order": 10,
         "project": 1
@@ -77,6 +77,27 @@
         "name": "Patch type name",
         "order": 10,
         "project": 1
+    },
+    {
+        "color": "#89BAB4",
+        "id": 31,
+        "name": "Bug",
+        "order": 1,
+        "project": 11
+    },
+    {
+        "color": "#ba89a8",
+        "id": 32,
+        "name": "Pregunta",
+        "order": 2,
+        "project": 11
+    },
+    {
+        "color": "#89a8ba",
+        "id": 33,
+        "name": "Mejora",
+        "order": 3,
+        "project": 11
     },
     {
         "color": "#89BAB4",
@@ -189,27 +210,6 @@
         "name": "Bug",
         "order": 1,
         "project": 6
-    },
-    {
-        "color": "#ba89a8",
-        "id": 17,
-        "name": "Pregunta",
-        "order": 2,
-        "project": 6
-    },
-    {
-        "color": "#89a8ba",
-        "id": 18,
-        "name": "Mejora",
-        "order": 3,
-        "project": 6
-    },
-    {
-        "color": "#89BAB4",
-        "id": 19,
-        "name": "Bug",
-        "order": 1,
-        "project": 7
     }
 ]
 ----

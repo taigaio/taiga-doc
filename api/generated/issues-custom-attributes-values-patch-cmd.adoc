@@ -5,7 +5,7 @@ curl -X PATCH \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
         "attributes_values": {
-            "1": "240 min"
+            "4": "240 min"
         },
         "version": 1
     }' \

@@ -3,8 +3,8 @@
 {
     "comment": "comment edition",
     "comment_html": "<p>comment edition</p>",
-    "created_at": "2016-11-11T07:49:53.334Z",
-    "delete_comment_date": "2016-11-11T08:49:52.288Z",
+    "created_at": "2016-11-18T07:52:24.481Z",
+    "delete_comment_date": "2016-11-18T07:59:22.366Z",
     "delete_comment_user": {
         "name": "Vanesa Torres",
         "pk": 6
@@ -15,7 +15,7 @@
             4
         ]
     },
-    "edit_comment_date": "2016-11-11T08:49:52.064Z",
+    "edit_comment_date": "2016-11-18T07:59:22.235Z",
     "id": "00000000-0000-0000-0000-000000000000",
     "is_hidden": false,
     "is_snapshot": false,

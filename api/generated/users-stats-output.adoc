@@ -2,14 +2,14 @@
 ----
 {
     "roles": [
-        "Stakeholder",
-        "UX",
+        "Dise\u00f1ador",
         "Product Owner",
+        "UX",
         "Front",
-        "Dise\u00f1ador"
+        "Stakeholder"
     ],
     "total_num_closed_userstories": 0,
     "total_num_contacts": 11,
-    "total_num_projects": 10
+    "total_num_projects": 11
 }
 ----

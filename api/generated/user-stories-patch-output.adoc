@@ -12,16 +12,28 @@
         "username": "user9"
     },
     "attachments": [],
-    "backlog_order": 1478850590280,
+    "backlog_order": 1479455542693,
     "blocked_note": "",
     "blocked_note_html": "",
     "client_requirement": false,
     "comment": "",
-    "created_date": "2016-11-11T07:49:50.280Z",
+    "created_date": "2016-11-18T07:52:22.693Z",
     "description": "Expedita quos dolore adipisci animi harum hic ut sed fugiat, harum voluptates iste obcaecati totam eos deleniti, dolores quo nemo quibusdam? Dolorum expedita veniam eveniet numquam officiis laudantium? Voluptate voluptas molestiae necessitatibus id facilis animi odit dolores enim, maxime cupiditate perspiciatis modi odit eveniet ullam. Consequuntur doloremque sit deserunt earum corrupti architecto eveniet quis amet obcaecati, non ex amet rerum aut facere rem vel delectus fugit tempora nobis, ut debitis ipsam alias iure tenetur, quae voluptatem illum tenetur porro voluptas doloribus, obcaecati corporis porro neque itaque temporibus nulla unde quas tempora.",
     "description_html": "<p>Expedita quos dolore adipisci animi harum hic ut sed fugiat, harum voluptates iste obcaecati totam eos deleniti, dolores quo nemo quibusdam? Dolorum expedita veniam eveniet numquam officiis laudantium? Voluptate voluptas molestiae necessitatibus id facilis animi odit dolores enim, maxime cupiditate perspiciatis modi odit eveniet ullam. Consequuntur doloremque sit deserunt earum corrupti architecto eveniet quis amet obcaecati, non ex amet rerum aut facere rem vel delectus fugit tempora nobis, ut debitis ipsam alias iure tenetur, quae voluptatem illum tenetur porro voluptas doloribus, obcaecati corporis porro neque itaque temporibus nulla unde quas tempora.</p>",
     "epic_order": null,
-    "epics": null,
+    "epics": [
+        {
+            "color": "#f57900",
+            "id": 1,
+            "project": {
+                "id": 1,
+                "name": "Project Example 0",
+                "slug": "project-0"
+            },
+            "ref": 63,
+            "subject": "Support for bulk actions"
+        }
+    ],
     "external_reference": null,
     "finish_date": null,
     "generated_from_issue": null,
@@ -30,11 +42,11 @@
     "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
-    "kanban_order": 1478850590280,
+    "kanban_order": 1479455542693,
     "milestone": 1,
-    "milestone_name": "Sprint 2016-9-17",
-    "milestone_slug": "sprint-2016-9-17",
-    "modified_date": "2016-11-11T08:49:36.966Z",
+    "milestone_name": "Sprint 2016-9-24",
+    "milestone_slug": "sprint-2016-9-24",
+    "modified_date": "2016-11-18T07:59:08.304Z",
     "origin_issue": null,
     "owner": 12,
     "owner_extra_info": {

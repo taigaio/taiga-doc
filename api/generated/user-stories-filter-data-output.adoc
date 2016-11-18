@@ -86,56 +86,56 @@
         {
             "count": 6,
             "id": 1,
-            "order": 1478850636441,
+            "order": 1479455568631,
             "ref": 63,
             "subject": "Support for bulk actions"
         },
         {
             "count": 0,
             "id": 2,
-            "order": 1478850637203,
+            "order": 1479455568921,
             "ref": 64,
             "subject": "get_actions() does not check for 'delete_selected' in actions"
         },
         {
             "count": 0,
             "id": 3,
-            "order": 1478850637507,
+            "order": 1479455569129,
             "ref": 65,
             "subject": "Experimental: modular file types"
         },
         {
             "count": 0,
             "id": 4,
-            "order": 1478850637963,
+            "order": 1479455569447,
             "ref": 66,
             "subject": "Create testsuite with matrix builds"
         },
         {
             "count": 0,
             "id": 31,
-            "order": 1478854169983,
+            "order": 1479455941748,
             "ref": 68,
             "subject": "New epic"
         },
         {
             "count": 0,
             "id": 32,
-            "order": 1478854170515,
+            "order": 1479455942262,
             "ref": 69,
             "subject": "EPIC 1"
         },
         {
             "count": 0,
             "id": 33,
-            "order": 1478854170515,
+            "order": 1479455942262,
             "ref": 70,
             "subject": "EPIC 2"
         },
         {
             "count": 0,
             "id": 34,
-            "order": 1478854170515,
+            "order": 1479455942262,
             "ref": 71,
             "subject": "EPIC 3"
         }

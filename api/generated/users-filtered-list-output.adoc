@@ -24,7 +24,7 @@
         "username": "admin"
     },
     {
-        "big_photo": "http://localhost:8000/media/user/9/b/7/e/dbc6b46c3e069f3c414db23d271d61931c53e06295e61fb6db9b0954bc9f/test.png.300x300_q85_crop.png",
+        "big_photo": "http://localhost:8000/media/user/4/b/5/1/7fa2b1cd6b5bc8b9c65a1a04e8fa63b6b3ec23c284a4806d8098d00fd39f/test.png.300x300_q85_crop.png",
         "bio": "",
         "color": "#40826D",
         "full_name": "Vanesa Torres",
@@ -33,7 +33,7 @@
         "id": 6,
         "is_active": true,
         "lang": "",
-        "photo": "http://localhost:8000/media/user/9/b/7/e/dbc6b46c3e069f3c414db23d271d61931c53e06295e61fb6db9b0954bc9f/test.png.80x80_q85_crop.png",
+        "photo": "http://localhost:8000/media/user/4/b/5/1/7fa2b1cd6b5bc8b9c65a1a04e8fa63b6b3ec23c284a4806d8098d00fd39f/test.png.80x80_q85_crop.png",
         "roles": [
             "Design",
             "Front",
@@ -48,7 +48,7 @@
     {
         "big_photo": null,
         "bio": "",
-        "color": "#03e359",
+        "color": "#349dea",
         "full_name": "test",
         "full_name_display": "test",
         "gravatar_id": "1ec29e4d0732b571e9a975e258a7e9b5",

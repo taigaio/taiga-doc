@@ -21,14 +21,14 @@
         {
             "client-increment": 0,
             "evolution": 734.0,
-            "name": "Sprint 2016-9-17",
+            "name": "Sprint 2016-9-24",
             "optimal": 734.0,
             "team-increment": 0
         },
         {
             "client-increment": 0,
             "evolution": 734.0,
-            "name": "Sprint 2016-10-2",
+            "name": "Sprint 2016-10-9",
             "optimal": 611.6666666666666,
             "team-increment": 0
         },

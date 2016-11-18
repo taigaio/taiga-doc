@@ -1,7 +1,7 @@
 [source,json]
 ----
 {
-    "created_date": "2016-11-11T08:50:12.844Z",
+    "created_date": "2016-11-18T07:59:39.953Z",
     "default_options": null,
     "default_owner_role": "product-owner",
     "description": "Sample description",
@@ -15,14 +15,14 @@
     "is_wiki_activated": true,
     "issue_statuses": null,
     "issue_types": null,
-    "modified_date": "2016-11-11T08:50:12.844Z",
+    "modified_date": "2016-11-18T07:59:39.953Z",
     "name": "New simple template",
-    "order": 1478854212843,
+    "order": 1479455979951,
     "points": null,
     "priorities": null,
     "roles": null,
     "severities": null,
-    "slug": "",
+    "slug": "new-simple-template",
     "task_statuses": null,
     "us_statuses": null,
     "videoconferences": null,

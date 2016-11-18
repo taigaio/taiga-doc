@@ -6,5 +6,5 @@ curl -X PATCH \
 -d '{
         "order": 100
     }' \
--s http://localhost:8000/api/v1/epics/14/related_userstories/4
+-s http://localhost:8000/api/v1/epics/13/related_userstories/53
 ----

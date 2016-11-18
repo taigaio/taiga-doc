@@ -9,5 +9,5 @@ curl -X PATCH \
         },
         "version": 1
     }' \
--s http://localhost:8000/api/v1/epics/custom-attributes-values/14
+-s http://localhost:8000/api/v1/epics/custom-attributes-values/13
 ----

@@ -1,20 +1,20 @@
 [source,json]
 ----
 {
-    "attached_file": "attachments/c/9/c/8/cb9522c3f4662aa02ee6d2878278810d58d06633af6d16135b90bc7300b5/sample_attachment_2.txt",
-    "created_date": "2016-11-11T07:52:13.753Z",
-    "description": "ab omnis quae assumenda",
-    "id": 620,
-    "is_deprecated": false,
-    "modified_date": "2016-11-11T07:52:13.753Z",
-    "name": "sample_attachment_2.txt",
-    "object_id": 14,
+    "attached_file": "attachments/9/e/5/f/0559871781fb6b22c819ecfc25abe4bdc8968feb31ef684326b858ab443c/sample_attachment_1.txt",
+    "created_date": "2016-11-18T07:53:53.993Z",
+    "description": "adipisci perferendis ad quasi",
+    "id": 619,
+    "is_deprecated": true,
+    "modified_date": "2016-11-18T07:53:53.993Z",
+    "name": "sample_attachment_1.txt",
+    "object_id": 13,
     "order": 1,
     "owner": 14,
     "project": 3,
-    "sha1": "62dbe72633a794717c1f4817d2d7d087b1c29c69",
-    "size": 1688,
+    "sha1": "e9913a16efd01bf9b44d712cf601802fdc8869ea",
+    "size": 289,
     "thumbnail_card_url": null,
-    "url": "http://localhost:8000/media/attachments/c/9/c/8/cb9522c3f4662aa02ee6d2878278810d58d06633af6d16135b90bc7300b5/sample_attachment_2.txt"
+    "url": "http://localhost:8000/media/attachments/9/e/5/f/0559871781fb6b22c819ecfc25abe4bdc8968feb31ef684326b858ab443c/sample_attachment_1.txt"
 }
 ----

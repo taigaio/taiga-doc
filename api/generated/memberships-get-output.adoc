@@ -2,7 +2,7 @@
 ----
 {
     "color": "#40826D",
-    "created_at": "2016-11-11T07:49:49.401Z",
+    "created_at": "2016-11-18T07:52:22.069Z",
     "email": "user1@taigaio.demo",
     "full_name": "Bego\u00f1a Flores",
     "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
@@ -20,6 +20,6 @@
     "role_name": "Product Owner",
     "user": 7,
     "user_email": "user1@taigaio.demo",
-    "user_order": 1478850589401
+    "user_order": 1479455542069
 }
 ----
