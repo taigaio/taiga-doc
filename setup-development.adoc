@@ -257,11 +257,7 @@ Restart the shell, source ~/.bashrc, or run bash again to make the path changes 
 NodeJS and friends
 ^^^^^^^^^^^^^^^^^^
 
-NodeJS is used to execute **gulp** and **bower**:
-
-- **gulp**: task execution tool. Used mainly for executing deployment and compilation tasks.
-- **bower**: javascript dependency management tool. Used mainly for downloading third party libraries
-  used by **taiga-front**.
+NodeJS is used to execute **gulp**, a task execution tool used mainly for executing deployment and compilation tasks.
 
 .Install nodejs
 [source,bash]
@@ -269,7 +265,7 @@ NodeJS is used to execute **gulp** and **bower**:
 sudo apt-get install -y nodejs npm
 ----
 
-.Make sure your bash responds to the node command to have a smooth installation of gulp and bower
+.Make sure your bash responds to the node command to have a smooth installation of gulp
 [source, bash]
 ----
 node
@@ -282,10 +278,10 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 (If you're on Debian, see the Debian-specific installation notes below.)
 
-.Install **gulp** and **bower** using the recently installed npm
+.Install **gulp** using the recently installed npm
 [source,bash]
 ----
-sudo npm install -g gulp bower
+sudo npm install -g gulp
 ----
 
 .Download the code
@@ -301,7 +297,6 @@ git checkout stable
 [source,bash]
 ----
 npm install
-bower install
 ----
 
 Debian installation notes
@@ -386,7 +381,6 @@ dependencies again.
 ----
 rm -rf ~/.npm; rm -rf node_modules
 npm install
-bower install
 gulp
 ----
 

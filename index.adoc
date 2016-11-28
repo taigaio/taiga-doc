@@ -43,7 +43,7 @@ Compile time:
 
 - GCC & Development Headers
 - Ruby >= 2.1 (only for compiling sass)
-- NodeJS >= 5.0 (with npm, gulp and bower for downloading dependencies and compiling coffeescript)
+- NodeJS >= 5.0 (with npm and gulp for downloading dependencies and compiling coffeescript)
 
 Hardware
 
