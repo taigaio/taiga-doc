@@ -139,6 +139,17 @@ workon taiga
 python manage.py loaddata initial_project_templates --traceback
 ----
 
+3.0.0 > 3.1.0
+~~~~~~~~~~~~~~
+
+Follow the default process.
+
+If you want to have svg thumbnails images install `cairo` library.
+
+----
+apt-get install cairo
+----
+
 Upgrade from Ubuntu 14.04 system to Ubuntu 16.04
 ------------------------------------------------
 
