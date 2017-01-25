@@ -29,11 +29,14 @@ from django.db import connection
 from taiga.users.models import User
 from taiga.auth.tokens import get_token_for_user
 
-from ._requests_data import USER_ID, reqs
+from ._requests_data import USER_ID, reqs as _reqs
 
 
 class Command(BaseCommand):
     help = 'Generate json files for documentation'
+
+    def add_arguments(self, parser):
+        parser.add_argument('requests', nargs='*')
 
     def _build_curl_cmd(self, host, req):
         data = {
@@ -79,6 +82,8 @@ class Command(BaseCommand):
         host = "http://localhost:8000"
 
         for (key, req) in reqs.items():
+            print("Generate", key)
+
             cmd_path = os.path.join("output", key + "-cmd.adoc")
             os.makedirs("output", exist_ok=True)
             curl_cmd = self._build_curl_cmd(host, req)
@@ -88,28 +93,36 @@ class Command(BaseCommand):
                 fd.write(curl_cmd.replace("$$INCLUDE_FILE$$", "@"))
                 fd.write("\n----\n")
 
+            if req['method'] == "DELETE":
+                continue
+
             curl_cmd = curl_cmd.replace("$$INCLUDE_FILE$$", "@{}/".format(os.path.dirname(__file__)))
 
             output_path = os.path.join("output", key + "-output.adoc")
-            result = subprocess.run(curl_cmd + " -f", shell=True, stdout=subprocess.PIPE)
+            if "response" in req:
+                response_data = req['response']
+            else:
+                result = subprocess.run(curl_cmd + " -f", shell=True, stdout=subprocess.PIPE)
 
-            print(key)
+                if result.returncode != 0:
+                    result = subprocess.run(curl_cmd, shell=True, stdout=subprocess.PIPE)
+                    print("ERROR on key: ", key)
+                    print(result)
 
-            if result.returncode != 0:
-                result = subprocess.run(curl_cmd, shell=True, stdout=subprocess.PIPE)
-                print("ERROR on key: ", key)
-                print(result)
+                if result.stdout == b'':
+                    response_data = None
+                else:
+                    response_data = json.loads(result.stdout.decode('utf-8'))
+                    if req.get('index', None) is not None:
+                        response_data = response_data[req['index']]
 
-            if result.stdout == b'':
+            if not response_data:
                 continue
 
             with open(output_path, "w") as fd:
                 fd.write("[source,json]\n")
                 fd.write("----\n")
-                if req.get('index', None) is not None:
-                    json.dump(json.loads(result.stdout.decode('utf-8'))[req['index']], fd, sort_keys=True, indent=4)
-                else:
-                    json.dump(json.loads(result.stdout.decode('utf-8')), fd, sort_keys=True, indent=4)
+                json.dump(response_data, fd, sort_keys=True, indent=4)
                 fd.write("\n----\n")
 
     def run_webhook_server(self):
@@ -124,6 +137,12 @@ class Command(BaseCommand):
         httpd.serve_forever()
 
     def handle(self, *args, **options):
+        reqs = {}
+        if options.get('requests'):
+            for request in options.get('requests'):
+                reqs[request] = _reqs[request]
+        else:
+            reqs = _reqs
         connection.close()
         child_pid = os.fork()
         if child_pid == 0:

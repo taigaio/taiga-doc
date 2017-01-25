@@ -1,0 +1,6 @@
+[source,json]
+----
+{
+    "url": "https://github.com/login/oauth/authorize?client_id=e5846d601714d113bf4a&scope=user,repo"
+}
+----

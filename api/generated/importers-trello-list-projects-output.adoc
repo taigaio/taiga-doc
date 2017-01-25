@@ -1,0 +1,17 @@
+[source,json]
+----
+[
+    {
+        "description": "My trello project",
+        "id": "123ABC",
+        "is_private": false,
+        "name": "Trello project"
+    },
+    {
+        "description": "My other trello project",
+        "id": "ABC123",
+        "is_private": true,
+        "name": "Other trello project"
+    }
+]
+----

@@ -1,0 +1,20 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "token": {
+            "access_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "data": {
+                "email": "user-email@email.com",
+                "id": 123,
+                "name": "User"
+            },
+            "expires_in": 3600,
+            "refresh_token": "0/000000000000000000000000000000000",
+            "token_type": "bearer"
+        }
+    }' \
+-s http://localhost:8000/api/v1/importers/asana/list_projects
+----

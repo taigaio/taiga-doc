@@ -1,0 +1,10 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    }' \
+-s http://localhost:8000/api/v1/importers/trello/auth_url
+----

@@ -1,0 +1,16 @@
+[source,json]
+----
+{
+    "token": {
+        "access_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "data": {
+            "email": "user-email@email.com",
+            "id": 123,
+            "name": "User"
+        },
+        "expires_in": 3600,
+        "refresh_token": "0/000000000000000000000000000000000",
+        "token_type": "bearer"
+    }
+}
+----

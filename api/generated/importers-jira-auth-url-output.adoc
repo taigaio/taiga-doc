@@ -1,0 +1,6 @@
+[source,json]
+----
+{
+    "url": "http://your.jira.server/plugins/servlet/oauth/authorize?oauth_token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}
+----

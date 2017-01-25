@@ -1,0 +1,8 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{}' \
+-s http://localhost:8000/api/v1/importers/asana/authorize
+----

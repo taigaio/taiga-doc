@@ -1,0 +1,22 @@
+[source,json]
+----
+[
+    {
+        "email": null,
+        "full_name": "Jira user",
+        "id": "jira-user",
+        "user": null
+    },
+    {
+        "email": "other-jira-user@email.com",
+        "full_name": "Other Jira user",
+        "id": "other-jira-user",
+        "user": {
+            "full_name": "Taiga user",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 12345,
+            "photo": "/user-photo-url"
+        }
+    }
+]
+----

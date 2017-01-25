@@ -1,0 +1,11 @@
+[source,json]
+----
+{
+    "is_backlog_activated": false,
+    "is_kanban_activated": true,
+    "my_permissions": [
+        "view_us"
+    ],
+    "slug": "my-username-new-project-name"
+}
+----

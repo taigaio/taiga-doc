@@ -133,6 +133,8 @@ include::locales/endpoints.adoc[]
 === Stats
 include::stats/endpoints.adoc[]
 
+=== Importers
+include::importers/endpoints.adoc[]
 
 [[auth]]
 == Auth
@@ -297,6 +299,10 @@ include::locales/summary.adoc[]
 [[stats]]
 == Stats
 include::stats/summary.adoc[]
+
+[[importers]]
+== Importers
+include::importers/summary.adoc[]
 
 
 == Objects Summary
@@ -639,6 +645,89 @@ include::generated/stats-discover-output.adoc[]
 === System stats
 include::generated/stats-system-output.adoc[]
 
+[[object-importers-trello-auth-url]]
+=== Importer Trello Auth Url
+include::generated/importers-trello-auth-url-output.adoc[]
+
+[[object-importers-trello-auth-token]]
+=== Importer Trello Auth Token
+include::generated/importers-trello-authorize-output.adoc[]
+
+[[object-importers-trello-list-users]]
+=== Importer Trello list users
+include::generated/importers-trello-list-users-output.adoc[]
+
+[[object-importers-trello-list-projects]]
+=== Importer Trello list projects
+include::generated/importers-trello-list-projects-output.adoc[]
+
+[[object-importers-trello-import-project]]
+=== Importer Trello import project
+include::generated/importers-trello-import-project-output.adoc[]
+
+[[object-importers-github-auth-url]]
+=== Importer Github Auth Url
+include::generated/importers-github-auth-url-output.adoc[]
+
+[[object-importers-github-auth-token]]
+=== Importer Github Auth Token
+include::generated/importers-github-authorize-output.adoc[]
+
+[[object-importers-github-list-users]]
+=== Importer Github list users
+include::generated/importers-github-list-users-output.adoc[]
+
+[[object-importers-github-list-projects]]
+=== Importer Github list projects
+include::generated/importers-github-list-projects-output.adoc[]
+
+[[object-importers-github-import-project]]
+=== Importer Github import project
+include::generated/importers-github-import-project-output.adoc[]
+
+[[object-importers-jira-auth-url]]
+=== Importer Jira Auth Url
+include::generated/importers-jira-auth-url-output.adoc[]
+
+[[object-importers-jira-auth-token]]
+=== Importer Jira Auth Token
+include::generated/importers-jira-authorize-output.adoc[]
+
+[[object-importers-jira-list-users]]
+=== Importer Jira list users
+include::generated/importers-jira-list-users-output.adoc[]
+
+[[object-importers-jira-list-projects]]
+=== Importer Jira list projects
+include::generated/importers-jira-list-projects-output.adoc[]
+
+[[object-importers-jira-import-project]]
+=== Importer Jira import project
+include::generated/importers-jira-import-project-output.adoc[]
+
+[[object-importers-asana-auth-url]]
+=== Importer Asana Auth Url
+include::generated/importers-asana-auth-url-output.adoc[]
+
+[[object-importers-asana-auth-token]]
+=== Importer Asana Auth Token
+include::generated/importers-asana-authorize-output.adoc[]
+
+[[object-importers-asana-list-users]]
+=== Importer Asana list users
+include::generated/importers-asana-list-users-output.adoc[]
+
+[[object-importers-asana-list-projects]]
+=== Importer Asana list projects
+include::generated/importers-asana-list-projects-output.adoc[]
+
+[[object-importers-asana-import-project]]
+=== Importer Asana import project
+include::generated/importers-asana-import-project-output.adoc[]
+
+[[object-importers-task-accepted]]
+=== Importer Import project task accepted
+include::importers/importers-task-accepted.adoc[]
 
 == Contrib plugins
 

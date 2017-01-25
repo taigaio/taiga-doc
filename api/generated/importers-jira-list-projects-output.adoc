@@ -1,0 +1,19 @@
+[source,json]
+----
+[
+    {
+        "description": "My jira project",
+        "id": "123",
+        "is_private": false,
+        "name": "Jira project",
+        "type": "project"
+    },
+    {
+        "description": "My other jira project",
+        "id": "456",
+        "is_private": true,
+        "name": "Other jira project",
+        "type": "board"
+    }
+]
+----

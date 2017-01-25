@@ -1,0 +1,21 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "description": "New project description",
+        "is_private": false,
+        "keep_external_reference": false,
+        "name": "New project name",
+        "project": "123",
+        "project_type": "kanban",
+        "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "url": "http://your.jira.server",
+        "users_bindings": {
+            "user-1": "123",
+            "user-2": "321"
+        }
+    }' \
+-s http://localhost:8000/api/v1/importers/jira/import
+----
