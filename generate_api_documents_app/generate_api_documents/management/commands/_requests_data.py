@@ -344,6 +344,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": epic_id,
             "project": epic.project.id,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
@@ -551,6 +552,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": 1,
             "project": 1,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
@@ -987,6 +989,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": issue_id,
             "project": 1,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
@@ -1502,6 +1505,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": wiki_id,
             "project": 1,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
@@ -1719,6 +1723,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": task_id,
             "project": 1,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
