@@ -22,6 +22,30 @@ Also you should update the domain related configuration on the backend settings 
 And finally reload the backend config with: `circusctl reload taiga`
 
 
+[[disable-registration]]
+How can I disable registration?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can disableid public registration for external user. To do this you should set
+`` to `False` in `settings/local.py` and disable too in front, in `dist/conf.json` set
+`` ro `false`.
+
+[source,python]
+----
+PUBLIC_REGISTER_ENABLED = False
+----
+
+[source,javascript]
+----
+{
+    (...)
+    "publicRegisterEnabled": false,
+    (...)
+}
+----
+
+If you disable it, only invited users can create accounts in the instance.
+
 
 [[restrict-emails-to-domain]]
 How can I restrict registration to a concrete domain?
