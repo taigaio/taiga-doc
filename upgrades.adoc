@@ -220,3 +220,12 @@ If you have modified your `REST_FRAMEWORK` settings, you have to care about the 
   `user-detail`.
 . In `REST_FRAMEWORK["DEFAULT_THROTTLE_CLASSES"]` the new default throttle
   class is `taiga.base.throttling.CommonThrottle`.
+
+We have migrated to celery 4, and splitted the configuration in two different
+files, so, if you have configured any celery setting in your
+`settings/local.py` you have to move them to the `settings/celery_local.py`
+file. Besides, before update the workers and taiga-back, ensure that your tasks
+queue is completely empty because the tasks format isn't compatible (If you
+can't stop your service during de upgrade, you have to follow the instructions
+given by celery creators here:
+http://docs.celeryproject.org/en/latest/whatsnew-4.0.html#upgrading-from-celery-3-1).
