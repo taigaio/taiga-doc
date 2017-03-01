@@ -210,3 +210,13 @@ workon taiga
 python manage.py loaddata initial_project_templates --traceback
 ----
 
+If you have modified your `REST_FRAMEWORK` settings, you have to care about the changes introducted in the new version:
+
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"]` you have care about the fact
+  that `anon` and `user` scopes settings been renamed and splited into
+  `anon-write`, `anon-read`, `user-write` and `user-read`.
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"]` we have added new scopes of
+  throttling by default set to `None`, they are `login-fail`, `register-success`,
+  `user-detail`.
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_CLASSES"]` the new default throttle
+  class is `taiga.base.throttling.CommonThrottle`.
