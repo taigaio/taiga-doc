@@ -165,14 +165,10 @@ Install `rabbitmq-server` and `redis-server`:
 sudo apt-get install -y rabbitmq-server redis-server
 ----
 
-To run celery with Taiga you have to include the following lines in your local.py:
+To run celery with Taiga you have to include the following line in your local.py:
 
 [source,python]
 ----
-from .celery import *
-
-BROKER_URL = 'amqp://guest:guest@localhost:5672//'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 CELERY_ENABLED = True
 ----
 
