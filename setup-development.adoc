@@ -47,7 +47,7 @@ sudo apt-get install -y automake libtool libffi-dev curl git tmux gettext
 Setup a database
 ~~~~~~~~~~~~~~~~
 
-**taiga-back** also requires postgresql (>= 9.3) as a database
+**taiga-back** also requires postgresql (>= 9.4) as a database
 
 Install postgresql:
 
@@ -200,7 +200,7 @@ sudo apt-get install libbz2-dev
 ----
 Or else Python will build without the bz2 module necessary for some pip installed requirements.
 
-The latest Postgresql available for Wheezy is 9.1, but a fully Wheezy-compatible 9.3 build is available from
+The latest Postgresql available for Wheezy is 9.1, but a fully Wheezy-compatible 9.4 build is available from
 the official Postgresql apt repositories, however:
 [source,bash]
 ----

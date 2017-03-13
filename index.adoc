@@ -36,14 +36,14 @@ This is a list of major _Taiga_ dependencies:
 Runtime:
 
 - Python >= 3.4
-- PostgreSQL >= 9.3
+- PostgreSQL >= 9.4
 - RabbitMQ (optional as long as you don't want async notifications)
 
 Compile time:
 
 - GCC & Development Headers
 - Ruby >= 2.1 (only for compiling sass)
-- NodeJS >= 5.0 (with npm and gulp for downloading dependencies and compiling coffeescript)
+- NodeJS >= 7.0 (with npm and gulp for downloading dependencies and compiling coffeescript)
 
 Hardware
 
