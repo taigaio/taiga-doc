@@ -139,6 +139,17 @@ workon taiga
 python manage.py loaddata initial_project_templates --traceback
 ----
 
+3.0.0 > 3.1.0
+~~~~~~~~~~~~~~
+
+Follow the default process.
+
+If you want to have svg thumbnails images install `cairo` library.
+
+----
+apt-get install cairo
+----
+
 Upgrade from Ubuntu 14.04 system to Ubuntu 16.04
 ------------------------------------------------
 
@@ -181,4 +192,54 @@ Reboot the system
 [source, txt]
 ----
 $ sudo reboot
+----
+
+
+3.0.0 > 3.1.0
+-------------
+
+[IMPORTANT]
+.PostgreSQL >= 9.4 is needed
+====
+in these release PostgreSQL > 9.4 will be the oficial recomended version because all JSON columns will be migrated to JSONB to reduce the db space and improve the performance.
+====
+
+[IMPORTANT]
+.Changes over the settings about throttling.
+====
+If you have modified your `REST_FRAMEWORK` settings, you have to care about the changes introducted in the new version:
+
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"]` you have care about the fact
+  that `anon` and `user` scopes settings been renamed and splited into
+  `anon-write`, `anon-read`, `user-write` and `user-read`.
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"]` we have added new scopes of
+  throttling by default set to `None`, they are `login-fail`, `register-success`,
+  `user-detail`.
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_CLASSES"]` the new default throttle
+  class is `taiga.base.throttling.CommonThrottle`.
+====
+
+[IMPORTANT]
+.Changes over the settings because celery upgrade from 3.x to 4.x.
+====
+We have migrated to celery 4, and splitted the configuration in two different
+files, so, if you have configured any celery setting in your
+`settings/local.py` you have to move them to the `settings/celery_local.py`
+file. Besides, before update the workers and taiga-back, ensure that your tasks
+queue is completely empty because the tasks format isn't compatible (If you
+can't stop your service during de upgrade, you have to follow the instructions
+given by celery creators here:
+http://docs.celeryproject.org/en/latest/whatsnew-4.0.html#upgrading-from-celery-3-1).
+====
+
+Follow the default process.
+
+The migration could take a long time if you have a large database.
+
+You should to reload the fixtures with:
+
+----
+cd taiga-back
+workon taiga
+python manage.py loaddata initial_project_templates --traceback
 ----

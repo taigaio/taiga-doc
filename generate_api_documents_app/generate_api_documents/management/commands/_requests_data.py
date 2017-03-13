@@ -32,50 +32,63 @@ from taiga.projects.services import transfer as transfer_service
 USER_ID = 6
 user = User.objects.get(id=USER_ID)
 
-Membership.objects.get_or_create(
-    user_id=None,
-    project_id=1,
-    role_id=3,
-    is_admin=False,
+(membership, _) = Membership.objects.get_or_create(
     token="00000000-0000-0000-0000-000000000000",
-    email="test@test.com",
-    invited_by_id=1,
-    invitation_extra_text="",
-    user_order=1,
+    defaults={
+        "user_id": None,
+        "project_id": 1,
+        "role_id": 3,
+        "is_admin": False,
+        "email": "test@test.com",
+        "invited_by_id": 1,
+        "invitation_extra_text": "",
+        "user_order": 1,
+    }
 )
+membership.user_id = None
+membership.save()
+
 
 (app, _) = Application.objects.get_or_create(
     id="00000000-0000-0000-0000-000000000000",
-    name="example application",
-    icon_url=None,
-    web="http://example.com",
-    description="description paragraph",
-    next_url="http://example.com",
+    defaults={
+        "name": "example application",
+        "icon_url": None,
+        "web": "http://example.com",
+        "description": "description paragraph",
+        "next_url": "http://example.com",
+    }
 )
 
 (app2, _) = Application.objects.get_or_create(
     id="00000000-0000-0000-0000-000000000001",
-    name="example application 2",
-    icon_url=None,
-    web="http://example.com",
-    description="description paragraph",
-    next_url="http://example.com",
+    defaults={
+        "name": "example application 2",
+        "icon_url": None,
+        "web": "http://example.com",
+        "description": "description paragraph",
+        "next_url": "http://example.com",
+    }
 )
 
 (app_token, _) = ApplicationToken.objects.get_or_create(
     user_id=USER_ID,
     application=app,
-    auth_code="00000000-0000-0000-0000-000000000002",
-    token="00000000-0000-0000-0000-000000000001",
-    state="random-state",
+    defaults={
+        "auth_code": "00000000-0000-0000-0000-000000000002",
+        "token": "00000000-0000-0000-0000-000000000001",
+        "state": "random-state",
+    }
 )
 
 (app_token2, _) = ApplicationToken.objects.get_or_create(
     user_id=USER_ID,
     application=app2,
-    auth_code="00000000-0000-0000-0000-000000000004",
-    token="00000000-0000-0000-0000-000000000003",
-    state="random-state",
+    defaults={
+        "auth_code": "00000000-0000-0000-0000-000000000004",
+        "token": "00000000-0000-0000-0000-000000000003",
+        "state": "random-state",
+    }
 )
 
 entry = HistoryEntry.objects.filter(project_id=1, key="userstories.userstory:2", type=HistoryType.change).first()
@@ -92,7 +105,7 @@ project1.owner_id = USER_ID
 project1.save()
 transfer_service.start_project_transfer(project1, user, "test")
 
-project2 = Project.objects.get(id=2)
+project2 = Project.objects.get(id=3)
 project1.owner_id = USER_ID
 project1.save()
 transfer_service.start_project_transfer(project2, user, "test")
@@ -174,8 +187,8 @@ reqs = OrderedDict([
         "body": {
             "project_id": 1,
             "bulk_memberships": [
-                {"role_id": 3, "email": "test@test.com"},
-                {"role_id": 4, "email": "john@doe.com"}
+                {"role_id": 3, "username": "test@test.com"},
+                {"role_id": 4, "username": "john@doe.com"}
             ]
         }
     }),
@@ -189,7 +202,7 @@ reqs = OrderedDict([
         "body": {
             "project": 1,
             "role": 3,
-            "email": "test-user@test.com"
+            "username": "test-user@test.com"
         }
     }),
     ("memberships-get", {
@@ -331,6 +344,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": epic_id,
             "project": epic.project.id,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
@@ -538,6 +552,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": 1,
             "project": 1,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
@@ -974,6 +989,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": issue_id,
             "project": 1,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
@@ -1363,7 +1379,7 @@ reqs = OrderedDict([
     }),
     ("projects-transfer-accept", {
         "method": "POST",
-        "url": "/api/v1/projects/2/transfer_accept",
+        "url": "/api/v1/projects/{}/transfer_accept".format(project2.id),
         "body": {
             "token": project2.transfer_token,
             "reason": "testing"
@@ -1375,6 +1391,25 @@ reqs = OrderedDict([
         "body": {
             "token": project1.transfer_token,
             "reason": "testing"
+        }
+    }),
+    ("projects-duplicate", {
+        "method": "POST",
+        "url": "/api/v1/projects/{}/duplicate".format(project2.id),
+        "body": {
+            "is_private": True,
+            "description": "c description",
+            "name": "Dup name",
+            "users": [{"id": 8}]
+
+        }
+    }),
+    ("contact-create", {
+        "method": "POST",
+        "url": "/api/v1/contact",
+        "body": {
+            "project": project2.id,
+            "comment": "Comment to admins"
         }
     }),
     ("projects-list", {
@@ -1470,6 +1505,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": wiki_id,
             "project": 1,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
@@ -1687,6 +1723,7 @@ reqs = OrderedDict([
         "body": {
             "object_id": task_id,
             "project": 1,
+            "from_comment": False,
             "attached_file": test_file
         }
     }),
@@ -2643,7 +2680,7 @@ reqs = OrderedDict([
     }),
     ("projects-leave", {
         "method": "POST",
-        "url": "/api/v1/projects/3/leave",
+        "url": "/api/v1/projects/2/leave",
     }),
     ("projects-delete", {
         "method": "DELETE",
@@ -2654,6 +2691,389 @@ reqs = OrderedDict([
         "url": "/api/v1/users/cancel",
         "body": {
           "cancel_token": get_token_for_user(user, "cancel_account")
+        }
+    }),
+    ("importers-trello-auth-url", {
+        "method": "GET",
+        "url": "/api/v1/importers/trello/auth_url",
+    }),
+    ("importers-trello-authorize", {
+        "method": "POST",
+        "url": "/api/v1/importers/trello/authorize",
+        "body": {
+          "code": "00000000000000000000000000000000"
+        },
+        "response": {
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+    }),
+    ("importers-trello-list-users", {
+        "method": "POST",
+        "url": "/api/v1/importers/trello/list_users",
+        "body": {
+          "project": "123ABC",
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "response": [
+            {
+                "id": "trello-user",
+                "full_name": "Trello user",
+                "email": None,
+                "user": None,
+            },
+            {
+                "id": "other-trello-user",
+                "full_name": "Other Trello user",
+                "email": "other-trello-user@email.com",
+                "user": {
+                    "id": 12345,
+                    "full_name": "Taiga user",
+                    "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+                    "photo": "/user-photo-url"
+                }
+            },
+        ],
+    }),
+    ("importers-trello-list-projects", {
+        "method": "POST",
+        "url": "/api/v1/importers/trello/list_projects",
+        "body": {
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "response": [
+          {
+              "id": "123ABC",
+              "name": "Trello project",
+              "description": "My trello project",
+              "is_private": False,
+          },
+          {
+              "id": "ABC123",
+              "name": "Other trello project",
+              "description": "My other trello project",
+              "is_private": True,
+          }
+        ],
+    }),
+    ("importers-trello-import-project", {
+        "method": "POST",
+        "url": "/api/v1/importers/trello/import",
+        "body": {
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "project": "123ABC",
+          "name": "New project name",
+          "description": "New project description",
+          "template": "kanban",
+          "users_bindings": {
+              "user-1": "123",
+              "user-2": "321",
+          },
+          "keep_external_reference": False,
+          "is_private": False,
+        },
+        "response": {
+          "slug": "my-username-new-project-name",
+          "my_permissions": ["view_us"],
+          "is_backlog_activated": False,
+          "is_kanban_activated": True,
+        }
+    }),
+    ("importers-github-auth-url", {
+        "method": "GET",
+        "url": "/api/v1/importers/github/auth_url",
+    }),
+    ("importers-github-authorize", {
+        "method": "POST",
+        "url": "/api/v1/importers/github/authorize",
+        "body": {
+          "code": "00000000000000000000"
+        },
+        "response": {
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+    }),
+    ("importers-github-list-users", {
+        "method": "POST",
+        "url": "/api/v1/importers/github/list_users",
+        "body": {
+          "project": "user/project",
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "response": [
+            {
+                "id": 12345,
+                "username": "github-user",
+                "full_name": "Github user",
+                "user": None,
+            },
+            {
+                "id": 12345,
+                "username": "other-github-user",
+                "full_name": "Other Github user",
+                "user": {
+                    "id": 54321,
+                    "full_name": "Taiga user",
+                    "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+                    "photo": "/user-photo-url"
+                }
+            },
+        ],
+    }),
+    ("importers-github-list-projects", {
+        "method": "POST",
+        "url": "/api/v1/importers/github/list_projects",
+        "body": {
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "response": [
+          {
+              "id": "user/project",
+              "name": "Github project",
+              "description": "My github project",
+              "is_private": False,
+          },
+          {
+              "id": "user/other-project",
+              "name": "Other github project",
+              "description": "My other github project",
+              "is_private": True,
+          }
+        ],
+    }),
+    ("importers-github-import-project", {
+        "method": "POST",
+        "url": "/api/v1/importers/github/import",
+        "body": {
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "project": "user/project",
+          "name": "New project name",
+          "description": "New project description",
+          "template": "kanban",
+          "users_bindings": {
+              "user-1": "123",
+              "user-2": "321",
+          },
+          "keep_external_reference": False,
+          "is_private": False,
+        },
+        "response": {
+          "slug": "my-username-new-project-name",
+          "my_permissions": ["view_us"],
+          "is_backlog_activated": False,
+          "is_kanban_activated": True,
+        }
+    }),
+    ("importers-jira-auth-url", {
+        "method": "GET",
+        "url": "/api/v1/importers/jira/auth_url?url=http://your.jira.server",
+        "response": {
+            "url": "http://your.jira.server/plugins/servlet/oauth/authorize?oauth_token=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+    }),
+    ("importers-jira-authorize", {
+        "method": "POST",
+        "url": "/api/v1/importers/jira/authorize",
+        "body": {},
+        "response": {
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "url": "http://your.jira.server",
+        },
+    }),
+    ("importers-jira-list-users", {
+        "method": "POST",
+        "url": "/api/v1/importers/jira/list_users",
+        "body": {
+          "project": "12345",
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "url": "http://your.jira.server",
+        },
+        "response": [
+            {
+                "id": "jira-user",
+                "full_name": "Jira user",
+                "email": None,
+                "user": None,
+            },
+            {
+                "id": "other-jira-user",
+                "full_name": "Other Jira user",
+                "email": "other-jira-user@email.com",
+                "user": {
+                    "id": 12345,
+                    "full_name": "Taiga user",
+                    "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+                    "photo": "/user-photo-url"
+                }
+            },
+        ],
+    }),
+    ("importers-jira-list-projects", {
+        "method": "POST",
+        "url": "/api/v1/importers/jira/list_projects",
+        "body": {
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "url": "http://your.jira.server",
+        },
+        "response": [
+          {
+              "id": "123",
+              "name": "Jira project",
+              "type": "project",
+              "description": "My jira project",
+              "is_private": False,
+          },
+          {
+              "id": "456",
+              "name": "Other jira project",
+              "type": "board",
+              "description": "My other jira project",
+              "is_private": True,
+          }
+        ],
+    }),
+    ("importers-jira-import-project", {
+        "method": "POST",
+        "url": "/api/v1/importers/jira/import",
+        "body": {
+          "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "url": "http://your.jira.server",
+          "project": "123",
+          "name": "New project name",
+          "description": "New project description",
+          "project_type": "kanban",
+          "users_bindings": {
+              "user-1": "123",
+              "user-2": "321",
+          },
+          "keep_external_reference": False,
+          "is_private": False,
+        },
+        "response": {
+          "slug": "my-username-new-project-name",
+          "my_permissions": ["view_us"],
+          "is_backlog_activated": False,
+          "is_kanban_activated": True,
+        }
+    }),
+    ("importers-asana-auth-url", {
+        "method": "GET",
+        "url": "/api/v1/importers/asana/auth_url",
+    }),
+    ("importers-asana-authorize", {
+        "method": "POST",
+        "url": "/api/v1/importers/asana/authorize",
+        "body": {},
+        "response": {
+          "token": {
+            "access_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "token_type": "bearer",
+            "expires_in": 3600,
+            "data": {
+              "id": 123,
+              "name": "User",
+              "email": "user-email@email.com"
+            },
+            "refresh_token": "0/000000000000000000000000000000000"
+          }
+        },
+    }),
+    ("importers-asana-list-users", {
+        "method": "POST",
+        "url": "/api/v1/importers/asana/list_users",
+        "body": {
+          "project": 12345,
+          "token": {
+            "access_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "token_type": "bearer",
+            "expires_in": 3600,
+            "data": {
+              "id": 123,
+              "name": "User",
+              "email": "user-email@email.com"
+            },
+            "refresh_token": "0/000000000000000000000000000000000"
+          },
+        },
+        "response": [
+            {
+                "id": 123,
+                "full_name": "Asana user",
+                "user": None,
+            },
+            {
+                "id": 456,
+                "full_name": "Other Asana user",
+                "user": {
+                    "id": 12345,
+                    "full_name": "Taiga user",
+                    "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+                    "photo": "/user-photo-url"
+                }
+            },
+        ],
+    }),
+    ("importers-asana-list-projects", {
+        "method": "POST",
+        "url": "/api/v1/importers/asana/list_projects",
+        "body": {
+          "token": {
+            "access_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "token_type": "bearer",
+            "expires_in": 3600,
+            "data": {
+              "id": 123,
+              "name": "User",
+              "email": "user-email@email.com"
+            },
+            "refresh_token": "0/000000000000000000000000000000000"
+          },
+        },
+        "response": [
+          {
+              "id": "123",
+              "name": "Asana project",
+              "description": "My asana project",
+              "is_private": False,
+          },
+          {
+              "id": "456",
+              "name": "Other asana project",
+              "description": "My other asana project",
+              "is_private": True,
+          }
+        ],
+    }),
+    ("importers-asana-import-project", {
+        "method": "POST",
+        "url": "/api/v1/importers/asana/import",
+        "body": {
+          "token": {
+            "access_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "token_type": "bearer",
+            "expires_in": 3600,
+            "data": {
+              "id": 123,
+              "name": "User",
+              "email": "user-email@email.com"
+            },
+            "refresh_token": "0/000000000000000000000000000000000"
+          },
+          "project": 123,
+          "name": "New project name",
+          "description": "New project description",
+          "template": "kanban",
+          "users_bindings": {
+              "user-1": "123",
+              "user-2": "321",
+          },
+          "keep_external_reference": False,
+          "is_private": False,
+        },
+        "response": {
+          "slug": "my-username-new-project-name",
+          "my_permissions": ["view_us"],
+          "is_backlog_activated": False,
+          "is_kanban_activated": True,
         }
     }),
 ])

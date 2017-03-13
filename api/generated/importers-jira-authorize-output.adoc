@@ -1,0 +1,7 @@
+[source,json]
+----
+{
+    "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "url": "http://your.jira.server"
+}
+----

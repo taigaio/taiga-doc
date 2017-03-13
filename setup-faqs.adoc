@@ -187,3 +187,134 @@ export LC_TYPE=en_US.UTF-8
 ----
 
 Restart the shell, or the machine, and try again.
+
+[[faq-configure-importers]]
+Importers
+---------
+
+You can configure importers for Jira, Github, Asana and Trello in your own instance.
+
+How can I configure Trello importers in my own instance?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For configure Trello, you have to go to https://trello.com/app-key and obtaing
+your API key and your oauth secret, and then, configure it in your settings/local.py:
+
+[source,python]
+----
+IMPORTERS["trello"] = {
+    "active": True,
+    "api_key": "your-trello-api-key",
+    "secret_key": "your-trello-oauth-secret"
+}
+----
+
+And you have to enable in your dist/conf.json in taiga-front adding it to importers list:
+
+[source,js]
+----
+{
+    ...
+    importers: ["trello", ...]
+    ...
+}
+----
+
+How can I configure Github importers in my own instance?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For configure Github, you have to go to https://github.com/settings/developers,
+register a new application and obtaing a client id and a client secret, and
+then, configure it in your settings/local.py:
+
+[source,python]
+----
+IMPORTERS["github"] = {
+    "active": True,
+    "client_id": "your-github-client-id",
+    "client_secret": "your-github-client-secret"
+}
+----
+
+And you have to enable in your dist/conf.json in taiga-front adding it to importers list:
+
+[source,js]
+----
+{
+    ...
+    importers: ["github", ...]
+    ...
+}
+----
+
+How can I configure Asana importers in my own instance?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For configure Asana, you have to go to your asana account settings, in Apps
+section, and click on "Manage Developer Apps", then you have to "Add new
+application", ensure that the callback url match with your settings, and the
+url of your service with the path /project/new/import/asana.
+After that, you can get your client id and your client secret and configure it
+in your settings/local.py:
+
+[source,python]
+----
+IMPORTERS["asana"] = {
+    "active": True,
+    "callback_url": "{}://{}/project/new/import/asana".format(SITES["front"]["scheme"],
+                                                              SITES["front"]["domain"]),
+    "app_id": "your-asana-client-id",
+    "app_secret": "your-asana-client-secret"
+}
+----
+
+And you have to enable in your dist/conf.json in taiga-front adding it to importers list:
+
+[source,js]
+----
+{
+    ...
+    importers: ["asana", ...]
+    ...
+}
+----
+
+How can I configure Jira importers in my own instance?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For configure Jira, you have to go to generate a public of private/public keys
+pair. To do this, you can run the next command:
+
+[source,bash]
+----
+openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
+openssl rsa -pubout -in private_key.pem -out public_key.pem
+----
+
+Once you have the public and private key, you can configure it in your
+settings/local.py:
+
+[source,python]
+----
+IMPORTERS["jira"] = {
+    "active": True,
+    "consumer_key": "one-key-at-your-election",
+    "cert": file('private_key.pem').read(),  # You can directly copy and paste the content here
+    "pub_cert": file('public_key.pem').read(),  # You can directly copy and paste the content here
+}
+----
+
+And you have to enable in your dist/conf.json in taiga-front adding it to importers list:
+
+[source,js]
+----
+{
+    ...
+    importers: ["jira", ...]
+    ...
+}
+----
+
+After that, you have to configure your Jira instance to allow to connect using
+this certificates, you can get more information about it in
+https://tree.taiga.io/support/.

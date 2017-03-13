@@ -1,0 +1,10 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/contact
+| POST
+| link:#contact[Contact project]
+|===

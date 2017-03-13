@@ -1,0 +1,86 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/importers/trello/auth_url
+| GET
+| link:#importers-trello-auth-url[Get the authorization url]
+
+| /api/v1/importers/trello/authorize
+| POST
+| link:#importers-trello-authorize[Obtain the authorization token]
+
+| /api/v1/importers/trello/list_projects
+| POST
+| link:#importers-trello-list-projects[List the Trello boards]
+
+| /api/v1/importers/trello/list_users
+| POST
+| link:#importers-trello-list-users[List the users related to a Trello board]
+
+| /api/v1/importers/trello/import_project
+| POST
+| link:#importers-trello-import-project[Import the Trello project]
+
+| /api/v1/importers/github/auth_url
+| GET
+| link:#importers-github-auth-url[Get the authorization url]
+
+| /api/v1/importers/github/authorize
+| POST
+| link:#importers-github-authorize[Obtain the authorization token]
+
+| /api/v1/importers/github/list_projects
+| POST
+| link:#importers-github-list-projects[List the Github boards]
+
+| /api/v1/importers/github/list_users
+| POST
+| link:#importers-github-list-users[List the users related to a Github board]
+
+| /api/v1/importers/github/import_project
+| POST
+| link:#importers-github-import-project[Import the Github project]
+
+| /api/v1/importers/jira/auth_url
+| GET
+| link:#importers-jira-auth-url[Get the authorization url]
+
+| /api/v1/importers/jira/authorize
+| POST
+| link:#importers-jira-authorize[Obtain the authorization token]
+
+| /api/v1/importers/jira/list_projects
+| POST
+| link:#importers-jira-list-projects[List the Jira boards]
+
+| /api/v1/importers/jira/list_users
+| POST
+| link:#importers-jira-list-users[List the users related to a Jira board]
+
+| /api/v1/importers/jira/import_project
+| POST
+| link:#importers-jira-import-project[Import the Jira project]
+
+| /api/v1/importers/asana/auth_url
+| GET
+| link:#importers-asana-auth-url[Get the authorization url]
+
+| /api/v1/importers/asana/authorize
+| POST
+| link:#importers-asana-authorize[Obtain the authorization token]
+
+| /api/v1/importers/asana/list_projects
+| POST
+| link:#importers-asana-list-projects[List the Asana boards]
+
+| /api/v1/importers/asana/list_users
+| POST
+| link:#importers-asana-list-users[List the users related to a Asana board]
+
+| /api/v1/importers/asana/import_project
+| POST
+| link:#importers-asana-import-project[Import the Asana project]
+|===

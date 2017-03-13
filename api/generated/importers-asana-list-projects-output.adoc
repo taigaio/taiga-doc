@@ -1,0 +1,17 @@
+[source,json]
+----
+[
+    {
+        "description": "My asana project",
+        "id": "123",
+        "is_private": false,
+        "name": "Asana project"
+    },
+    {
+        "description": "My other asana project",
+        "id": "456",
+        "is_private": true,
+        "name": "Other asana project"
+    }
+]
+----

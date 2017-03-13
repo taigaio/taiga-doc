@@ -2,7 +2,7 @@ To create memberships/invitations send a POST request with the following data:
 
 - *project* (required)
 - *role* (required): Role to the membership
-- *email* (required): user email
+- *username* (required): user username or email
 
 include::../generated/memberships-create-cmd.adoc[]
 

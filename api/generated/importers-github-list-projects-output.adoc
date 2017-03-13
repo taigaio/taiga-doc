@@ -1,0 +1,17 @@
+[source,json]
+----
+[
+    {
+        "description": "My github project",
+        "id": "user/project",
+        "is_private": false,
+        "name": "Github project"
+    },
+    {
+        "description": "My other github project",
+        "id": "user/other-project",
+        "is_private": true,
+        "name": "Other github project"
+    }
+]
+----

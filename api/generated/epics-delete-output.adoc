@@ -1,0 +1,7 @@
+[source,json]
+----
+{
+    "_error_message": "No tienes permisos para realizar esta acci\u00f3n.",
+    "_error_type": "taiga.base.exceptions.PermissionDenied"
+}
+----

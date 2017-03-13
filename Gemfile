@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 group :development do
   gem 'asciidoctor'
-  gem 'asciidoctor-pdf'
+  gem 'asciidoctor-pdf-cjk'
   gem 'pygments.rb'
   gem 'guard'
   gem 'guard-shell'

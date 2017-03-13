@@ -1,0 +1,10 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    }' \
+-s http://localhost:8000/api/v1/importers/github/list_projects
+----

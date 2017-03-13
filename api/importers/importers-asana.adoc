@@ -1,0 +1,46 @@
+[[importers-asana-auth-url]]
+==== Auth url
+
+Get the url for authorize Taiga to access to your Asana account.
+
+include::../generated/importers-asana-auth-url-cmd.adoc[]
+
+* A 200 Ok and the response body is a JSON of link:#object-importers-asana-auth-url[importer auth url object]
+
+[[importers-asana-authorize]]
+==== Authorize
+
+Complete the authorization process.
+
+include::../generated/importers-asana-authorize-cmd.adoc[]
+
+* A 200 Ok and the response body is a JSON of link:#object-importers-asana-auth-token[importer auth token object]
+
+[[importers-asana-list-users]]
+==== List users
+
+List the Asana project users.
+
+include::../generated/importers-asana-list-users-cmd.adoc[]
+
+* A 200 Ok and the response body is a JSON of link:#object-importers-asana-list-users[list of importer users object]
+
+[[importers-asana-list-projects]]
+==== List projects
+
+List your Asana projects.
+
+include::../generated/importers-asana-list-projects-cmd.adoc[]
+
+* A 200 Ok and the response body is a JSON of link:#object-importers-asana-list-projects[list of importer projects object]
+
+
+[[importers-asana-import-project]]
+==== Import project
+
+Ask the server to import a project from Asana.
+
+include::../generated/importers-asana-import-project-cmd.adoc[]
+
+* If taiga is working in synchronous mode the result is a 200 OK and as response body a JSON of link:#object-importers-asana-import-project[imported project result].
+* If taiga is working in asynchronous mode the result is a 202 Accepted and as response body a JSON of link:#object-importers-task-accepted[import project accepted].

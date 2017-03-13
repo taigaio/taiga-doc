@@ -6,12 +6,12 @@ curl -X POST \
 -d '{
         "bulk_memberships": [
             {
-                "email": "test@test.com",
-                "role_id": 3
+                "role_id": 3,
+                "username": "test@test.com"
             },
             {
-                "email": "john@doe.com",
-                "role_id": 4
+                "role_id": 4,
+                "username": "john@doe.com"
             }
         ],
         "project_id": 1

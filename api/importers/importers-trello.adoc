@@ -1,0 +1,46 @@
+[[importers-trello-auth-url]]
+==== Auth url
+
+Get the url for authorize Taiga to access to your Trello account.
+
+include::../generated/importers-trello-auth-url-cmd.adoc[]
+
+* A 200 Ok and the response body is a JSON of link:#object-importers-trello-auth-url[importer auth url object]
+
+[[importers-trello-authorize]]
+==== Authorize
+
+Complete the authorization process.
+
+include::../generated/importers-trello-authorize-cmd.adoc[]
+
+* A 200 Ok and the response body is a JSON of link:#object-importers-trello-auth-token[importer auth token object]
+
+[[importers-trello-list-users]]
+==== List users
+
+List your Trello users.
+
+include::../generated/importers-trello-list-users-cmd.adoc[]
+
+* A 200 Ok and the response body is a JSON of link:#object-importers-trello-list-users[list of importer users object]
+
+[[importers-trello-list-projects]]
+==== List projects
+
+List your Trello boards.
+
+include::../generated/importers-trello-list-projects-cmd.adoc[]
+
+* A 200 Ok and the response body is a JSON of link:#object-importers-trello-list-projects[list of importer projects object]
+
+
+[[importers-trello-import-project]]
+==== Import project
+
+Ask the server to import a project from Trello.
+
+include::../generated/importers-trello-import-project-cmd.adoc[]
+
+* If taiga is working in synchronous mode the result is a 200 OK and as response body a JSON of link:#object-importers-trello-import-project[imported project result].
+* If taiga is working in asynchronous mode the result is a 202 Accepted and as response body a JSON of link:#object-importers-task-accepted[import project accepted].

@@ -5,12 +5,12 @@ curl -X POST \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
         "from_tags": [
-            "modi",
-            "eligendi",
-            "perferendis",
-            "voluptates"
+            "cum",
+            "minus",
+            "architecto",
+            "amet"
         ],
-        "to_tag": "modi"
+        "to_tag": "cum"
     }' \
 -s http://localhost:8000/api/v1/projects/1/mix_tags
 ----

@@ -2,4 +2,8 @@ To get a user contacts send a GET request specifying the user id in the url
 
 include::../generated/users-contacts-cmd.adoc[]
 
+The results can be filtered using the following parameter:
+
+- *q*: text to search in username, full name or email
+
 The HTTP response is a 200 OK and the response body is a list of JSON link:#object-contact-detail[contact detail object]

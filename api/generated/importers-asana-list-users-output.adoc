@@ -1,0 +1,20 @@
+[source,json]
+----
+[
+    {
+        "full_name": "Asana user",
+        "id": 123,
+        "user": null
+    },
+    {
+        "full_name": "Other Asana user",
+        "id": 456,
+        "user": {
+            "full_name": "Taiga user",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 12345,
+            "photo": "/user-photo-url"
+        }
+    }
+]
+----

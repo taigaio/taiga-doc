@@ -3,22 +3,21 @@
 {
     "big_photo": null,
     "bio": "",
-    "color": "#D70A53",
-    "full_name": "Alba Leon",
-    "full_name_display": "Alba Leon",
-    "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-    "id": 8,
+    "color": "#FFCC00",
+    "full_name": "Angela Perez",
+    "full_name_display": "Angela Perez",
+    "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+    "id": 11,
     "is_active": true,
     "lang": "",
     "photo": null,
-    "projects_with_me": [],
     "roles": [
-        "Design",
         "Front",
-        "Stakeholder"
+        "Product Owner",
+        "UX"
     ],
     "theme": "",
     "timezone": "",
-    "username": "user2"
+    "username": "user5"
 }
 ----

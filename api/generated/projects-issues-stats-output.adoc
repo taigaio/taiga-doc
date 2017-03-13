@@ -1,188 +1,139 @@
 [source,json]
 ----
 {
-    "closed_issues": 16,
+    "closed_issues": 10,
     "issues_per_assigned_to": {
         "0": {
             "color": "black",
-            "count": 8,
+            "count": 9,
             "id": 0,
             "name": "No asignado",
             "username": "No asignado"
         },
         "10": {
-            "color": "#67CF00",
+            "color": "#2099DB",
             "count": 1,
             "id": 10,
-            "name": "Marta Carmona",
+            "name": "Enrique Crespo",
             "username": "user4"
         },
         "11": {
-            "color": "#FFFF00",
+            "color": "#FFCC00",
             "count": 1,
             "id": 11,
-            "name": "German Benitez",
+            "name": "Angela Perez",
             "username": "user5"
         },
         "12": {
             "color": "#71A6D2",
-            "count": 1,
+            "count": 3,
             "id": 12,
-            "name": "Pilar Herrera",
+            "name": "Vanesa Garcia",
             "username": "user6"
         },
-        "13": {
-            "color": "#002e33",
-            "count": 3,
-            "id": 13,
-            "name": "Alvaro Molina",
-            "username": "user7"
-        },
         "14": {
-            "color": "#FFCC00",
+            "color": "#002e33",
             "count": 2,
             "id": 14,
-            "name": "Andrea Fernandez",
+            "name": "Miguel Molina",
             "username": "user8"
         },
         "15": {
-            "color": "#C0FF33",
-            "count": 3,
+            "color": "#FFFF00",
+            "count": 2,
             "id": 15,
-            "name": "Catalina Roman",
+            "name": "Virginia Castro",
             "username": "user9"
         },
-        "5": {
-            "color": "",
-            "count": 1,
-            "id": 5,
-            "name": "Administrator",
-            "username": "admin"
-        },
         "6": {
-            "color": "#4B0082",
-            "count": 2,
+            "color": "#40826D",
+            "count": 3,
             "id": 6,
-            "name": "Silvia Soto",
-            "username": "user6532909695705815086"
-        },
-        "7": {
-            "color": "#B6DA55",
-            "count": 2,
-            "id": 7,
-            "name": "Marcos Ortiz",
-            "username": "user1"
+            "name": "Vanesa Torres",
+            "username": "user2114747470430251528"
         },
         "8": {
-            "color": "#D70A53",
-            "count": 3,
+            "color": "#71A6D2",
+            "count": 1,
             "id": 8,
-            "name": "Alba Leon",
+            "name": "Francisco Gil",
             "username": "user2"
         },
         "9": {
-            "color": "#FFF8E7",
-            "count": 1,
+            "color": "#B6DA55",
+            "count": 4,
             "id": 9,
-            "name": "Esther Ferrer",
+            "name": "Catalina Fernandez",
             "username": "user3"
         }
     },
     "issues_per_owner": {
         "10": {
-            "color": "#67CF00",
-            "count": 1,
+            "color": "#2099DB",
+            "count": 6,
             "id": 10,
-            "name": "Marta Carmona",
+            "name": "Enrique Crespo",
             "username": "user4"
         },
-        "11": {
-            "color": "#FFFF00",
-            "count": 1,
-            "id": 11,
-            "name": "German Benitez",
-            "username": "user5"
-        },
-        "12": {
-            "color": "#71A6D2",
-            "count": 2,
-            "id": 12,
-            "name": "Pilar Herrera",
-            "username": "user6"
-        },
         "13": {
-            "color": "#002e33",
+            "color": "#B6DA55",
             "count": 3,
             "id": 13,
-            "name": "Alvaro Molina",
+            "name": "Mohamed Ortega",
             "username": "user7"
-        },
-        "14": {
-            "color": "#FFCC00",
-            "count": 1,
-            "id": 14,
-            "name": "Andrea Fernandez",
-            "username": "user8"
-        },
-        "15": {
-            "color": "#C0FF33",
-            "count": 2,
-            "id": 15,
-            "name": "Catalina Roman",
-            "username": "user9"
         },
         "5": {
             "color": "",
-            "count": 3,
+            "count": 5,
             "id": 5,
             "name": "Administrator",
             "username": "admin"
         },
         "6": {
-            "color": "#4B0082",
-            "count": 9,
+            "color": "#40826D",
+            "count": 5,
             "id": 6,
-            "name": "Silvia Soto",
-            "username": "user6532909695705815086"
+            "name": "Vanesa Torres",
+            "username": "user2114747470430251528"
         },
         "7": {
-            "color": "#B6DA55",
-            "count": 1,
+            "color": "#40826D",
+            "count": 3,
             "id": 7,
-            "name": "Marcos Ortiz",
+            "name": "Bego\u00f1a Flores",
             "username": "user1"
         },
         "8": {
-            "color": "#D70A53",
-            "count": 3,
+            "color": "#71A6D2",
+            "count": 2,
             "id": 8,
-            "name": "Alba Leon",
+            "name": "Francisco Gil",
             "username": "user2"
         },
         "9": {
-            "color": "#FFF8E7",
+            "color": "#B6DA55",
             "count": 2,
             "id": 9,
-            "name": "Esther Ferrer",
+            "name": "Catalina Fernandez",
             "username": "user3"
         }
     },
     "issues_per_priority": {
         "1": {
             "color": "#666666",
-            "count": 13,
+            "count": 6,
             "id": 1,
             "name": "Patch name"
         },
         "2": {
             "color": "#669933",
-            "count": 10,
+            "count": 11,
             "id": 2,
             "name": "Normal"
         },
         "3": {
             "color": "#CC0000",
-            "count": 5,
+            "count": 9,
             "id": 3,
             "name": "High"
         }
@@ -190,31 +141,31 @@
     "issues_per_severity": {
         "1": {
             "color": "#666666",
-            "count": 5,
+            "count": 4,
             "id": 1,
             "name": "Patch name"
         },
         "2": {
             "color": "#669933",
-            "count": 7,
+            "count": 5,
             "id": 2,
             "name": "Minor"
         },
         "3": {
             "color": "#0000FF",
-            "count": 7,
+            "count": 10,
             "id": 3,
             "name": "Normal"
         },
         "4": {
             "color": "#FFA500",
-            "count": 2,
+            "count": 3,
             "id": 4,
             "name": "Important"
         },
         "5": {
             "color": "#CC0000",
-            "count": 7,
+            "count": 4,
             "id": 5,
             "name": "Critical"
         }
@@ -222,7 +173,7 @@
     "issues_per_status": {
         "1": {
             "color": "#8C2318",
-            "count": 6,
+            "count": 5,
             "id": 1,
             "name": "Patch status name"
         },
@@ -240,25 +191,25 @@
         },
         "4": {
             "color": "#BFB35A",
-            "count": 6,
+            "count": 4,
             "id": 4,
             "name": "Closed"
         },
         "5": {
             "color": "#89BAB4",
-            "count": 2,
+            "count": 5,
             "id": 5,
             "name": "Needs Info"
         },
         "6": {
             "color": "#CC0000",
-            "count": 8,
+            "count": 4,
             "id": 6,
             "name": "Rejected"
         },
         "7": {
             "color": "#666666",
-            "count": 2,
+            "count": 4,
             "id": 7,
             "name": "Postponed"
         }
@@ -266,7 +217,7 @@
     "issues_per_type": {
         "1": {
             "color": "#89BAB4",
-            "count": 13,
+            "count": 12,
             "id": 1,
             "name": "Bug"
         },
@@ -278,7 +229,7 @@
         },
         "3": {
             "color": "#89a8ba",
-            "count": 8,
+            "count": 7,
             "id": 3,
             "name": "Enhancement"
         }
@@ -313,7 +264,7 @@
                 0,
                 0,
                 0,
-                16
+                10
             ],
             "open": [
                 0,
@@ -343,7 +294,7 @@
                 0,
                 0,
                 0,
-                28
+                26
             ]
         },
         "by_priority": {
@@ -377,7 +328,7 @@
                     0,
                     0,
                     0,
-                    13
+                    6
                 ],
                 "id": 1,
                 "name": "Patch name"
@@ -412,7 +363,7 @@
                     0,
                     0,
                     0,
-                    10
+                    11
                 ],
                 "id": 2,
                 "name": "Normal"
@@ -447,7 +398,7 @@
                     0,
                     0,
                     0,
-                    5
+                    9
                 ],
                 "id": 3,
                 "name": "High"
@@ -484,7 +435,7 @@
                     0,
                     0,
                     0,
-                    5
+                    4
                 ],
                 "id": 1,
                 "name": "Patch name"
@@ -519,7 +470,7 @@
                     0,
                     0,
                     0,
-                    7
+                    5
                 ],
                 "id": 2,
                 "name": "Minor"
@@ -554,7 +505,7 @@
                     0,
                     0,
                     0,
-                    7
+                    10
                 ],
                 "id": 3,
                 "name": "Normal"
@@ -589,7 +540,7 @@
                     0,
                     0,
                     0,
-                    2
+                    3
                 ],
                 "id": 4,
                 "name": "Important"
@@ -624,7 +575,7 @@
                     0,
                     0,
                     0,
-                    7
+                    4
                 ],
                 "id": 5,
                 "name": "Critical"
@@ -632,7 +583,7 @@
         },
         "by_status": {}
     },
-    "opened_issues": 12,
-    "total_issues": 28
+    "opened_issues": 16,
+    "total_issues": 26
 }
 ----

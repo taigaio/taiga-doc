@@ -2,7 +2,7 @@
 ----
 {
     "attributes_values": {
-        "5": "240 min"
+        "1": "240 min"
     },
     "user_story": 1,
     "version": 2

@@ -1,0 +1,7 @@
+[source,bash]
+----
+curl -X GET \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-s http://localhost:8000/api/v1/importers/jira/auth_url?url=http://your.jira.server
+----

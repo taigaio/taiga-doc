@@ -1,0 +1,7 @@
+[source,json]
+----
+{
+    "_error_message": "token inv\u00e1lido",
+    "_error_type": "taiga.base.exceptions.WrongArguments"
+}
+----

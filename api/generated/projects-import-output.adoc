@@ -27,6 +27,7 @@
     "i_am_owner": false,
     "id": 8,
     "is_backlog_activated": true,
+    "is_contact_activated": true,
     "is_epics_activated": false,
     "is_fan": false,
     "is_featured": false,
@@ -41,16 +42,16 @@
     "looking_for_people_note": "Omnis cumque ipsam illo saepe qui, odio libero nisi iure iste esse?",
     "members": [
         5,
-        8,
-        13,
-        14,
-        15,
-        9,
         11,
         7,
+        9,
         10,
+        8,
+        14,
+        13,
         12,
-        6
+        6,
+        15
     ],
     "modified_date": "2016-08-04T11:08:31Z",
     "my_permissions": [],
@@ -58,12 +59,12 @@
     "notify_level": null,
     "owner": {
         "big_photo": null,
-        "full_name_display": "Silvia Soto",
-        "gravatar_id": "ece2f7a2dec5f21b2858fecabdcacacc",
+        "full_name_display": "Vanesa Torres",
+        "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
         "id": 6,
         "is_active": true,
         "photo": null,
-        "username": "user6532909695705815086"
+        "username": "user2114747470430251528"
     },
     "public_permissions": [
         "view_project",
@@ -247,7 +248,7 @@
     "total_milestones": 5,
     "total_story_points": 332.0,
     "total_watchers": 11,
-    "totals_updated_datetime": "2016-10-14T09:20:18.504Z",
+    "totals_updated_datetime": "2016-11-18T07:59:21.819Z",
     "videoconferences": null,
     "videoconferences_extra_data": null
 }
