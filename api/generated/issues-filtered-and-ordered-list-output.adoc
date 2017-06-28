@@ -2,8 +2,29 @@
 ----
 [
     {
-        "assigned_to": 10,
+        "assigned_to": 14,
         "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Miguel Molina",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
+            "is_active": true,
+            "photo": null,
+            "username": "user8"
+        },
+        "blocked_note": "",
+        "created_date": "2017-06-28T14:56:41.589Z",
+        "external_reference": null,
+        "finished_date": "2017-06-28T14:56:41.589Z",
+        "id": 7,
+        "is_blocked": false,
+        "is_closed": true,
+        "is_voter": true,
+        "is_watcher": false,
+        "milestone": null,
+        "modified_date": "2017-06-28T14:56:41.714Z",
+        "owner": 10,
+        "owner_extra_info": {
             "big_photo": null,
             "full_name_display": "Enrique Crespo",
             "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
@@ -12,49 +33,127 @@
             "photo": null,
             "username": "user4"
         },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:38.221Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 9,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": true,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:38.334Z",
-        "owner": 5,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
         "priority": 1,
         "project": 1,
-        "ref": 50,
-        "severity": 4,
-        "status": 7,
-        "status_extra_info": {
-            "color": "#666666",
-            "is_closed": false,
-            "name": "Pospuesta"
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
         },
-        "subject": "Implement the form",
+        "ref": 99,
+        "severity": 5,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#BFB35A",
+            "is_closed": true,
+            "name": "Closed"
+        },
+        "subject": "Create the user model",
         "tags": [
             [
-                "perferendis",
+                "facere",
+                "#113f4a"
+            ],
+            [
+                "odit",
+                "#e2b537"
+            ],
+            [
+                "provident",
                 null
             ],
             [
-                "quisquam",
-                "#ebca0b"
+                "harum",
+                "#b42d3c"
             ],
             [
-                "reiciendis",
+                "distinctio",
+                null
+            ],
+            [
+                "excepturi",
+                null
+            ],
+            [
+                "suscipit",
+                "#38abf3"
+            ]
+        ],
+        "total_voters": 7,
+        "total_watchers": 0,
+        "type": 1,
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": 8,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Francisco Gil",
+            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+            "id": 8,
+            "is_active": true,
+            "photo": null,
+            "username": "user2"
+        },
+        "blocked_note": "",
+        "created_date": "2017-06-28T14:56:40.683Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 3,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": true,
+        "is_watcher": true,
+        "milestone": null,
+        "modified_date": "2017-06-28T15:00:10.552Z",
+        "owner": 7,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Bego\u00f1a Flores",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
+            "is_active": true,
+            "photo": null,
+            "username": "user1"
+        },
+        "priority": 1,
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 95,
+        "severity": 5,
+        "status": 5,
+        "status_extra_info": {
+            "color": "#89BAB4",
+            "is_closed": false,
+            "name": "Needs Info"
+        },
+        "subject": "Patching subject",
+        "tags": [
+            [
+                "iure",
+                null
+            ],
+            [
+                "fuga",
+                null
+            ],
+            [
+                "quia",
+                "#f53074"
+            ],
+            [
+                "nemo",
+                "#e81498"
+            ],
+            [
+                "molestiae",
                 null
             ],
             [
@@ -62,188 +161,30 @@
                 null
             ],
             [
-                "earum",
-                "#24bec9"
+                "delectus",
+                null
             ],
             [
-                "illo",
-                "#3531fd"
+                "distinctio",
+                null
             ],
             [
-                "aperiam",
-                "#a2b100"
-            ],
-            [
-                "velit",
-                "#790ea4"
+                "corporis",
+                "#ed9c91"
             ],
             [
                 "iste",
                 null
-            ],
-            [
-                "consectetur",
-                null
             ]
         ],
-        "total_voters": 3,
-        "total_watchers": 3,
-        "type": 1,
-        "version": 1,
-        "watchers": [
-            5,
-            6,
-            13
-        ]
-    },
-    {
-        "assigned_to": 9,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Fernandez",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:40.686Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 19,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:40.883Z",
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "priority": 1,
-        "project": 1,
-        "ref": 60,
-        "severity": 2,
-        "status": 7,
-        "status_extra_info": {
-            "color": "#666666",
-            "is_closed": false,
-            "name": "Pospuesta"
-        },
-        "subject": "Create the html template",
-        "tags": [
-            [
-                "ducimus",
-                "#ea6bb9"
-            ],
-            [
-                "perferendis",
-                null
-            ],
-            [
-                "blanditiis",
-                "#65026b"
-            ],
-            [
-                "animi",
-                null
-            ],
-            [
-                "deserunt",
-                null
-            ],
-            [
-                "iusto",
-                null
-            ],
-            [
-                "error",
-                "#11f957"
-            ],
-            [
-                "accusamus",
-                "#801cf7"
-            ]
-        ],
-        "total_voters": 5,
-        "total_watchers": 3,
-        "type": 3,
-        "version": 1,
-        "watchers": [
-            5,
-            11,
-            15
-        ]
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Vanesa Torres",
-            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user2114747470430251528"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:38.469Z",
-        "external_reference": null,
-        "finished_date": "2016-11-18T07:52:38.471Z",
-        "id": 10,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:38.593Z",
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "priority": 1,
-        "project": 1,
-        "ref": 51,
-        "severity": 3,
-        "status": 6,
-        "status_extra_info": {
-            "color": "#CC0000",
-            "is_closed": true,
-            "name": "Rechazada"
-        },
-        "subject": "Lighttpd x-sendfile support",
-        "tags": [
-            [
-                "cupiditate",
-                null
-            ],
-            [
-                "vero",
-                "#74e191"
-            ]
-        ],
-        "total_voters": 0,
+        "total_voters": 2,
         "total_watchers": 3,
         "type": 2,
-        "version": 1,
+        "version": 2,
         "watchers": [
-            1,
-            3,
-            7
+            6,
+            9,
+            14
         ]
     },
     {
@@ -258,256 +199,16 @@
             "username": "user9"
         },
         "blocked_note": "",
-        "created_date": "2016-11-18T07:52:37.916Z",
+        "created_date": "2017-06-28T14:56:40.145Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 8,
+        "id": 1,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:52:38.077Z",
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "priority": 1,
-        "project": 1,
-        "ref": 49,
-        "severity": 3,
-        "status": 7,
-        "status_extra_info": {
-            "color": "#666666",
-            "is_closed": false,
-            "name": "Pospuesta"
-        },
-        "subject": "Implement the form",
-        "tags": [
-            [
-                "est",
-                null
-            ],
-            [
-                "iusto",
-                null
-            ],
-            [
-                "aperiam",
-                "#a2b100"
-            ],
-            [
-                "dolorum",
-                null
-            ]
-        ],
-        "total_voters": 2,
-        "total_watchers": 3,
-        "type": 3,
-        "version": 1,
-        "watchers": [
-            5,
-            10,
-            15
-        ]
-    },
-    {
-        "assigned_to": 9,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Fernandez",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:39.838Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 16,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:39.944Z",
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "priority": 1,
-        "project": 1,
-        "ref": 57,
-        "severity": 2,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#5E8C6A",
-            "is_closed": false,
-            "name": "En curso"
-        },
-        "subject": "Lighttpd support",
-        "tags": [
-            [
-                "omnis",
-                "#fc9548"
-            ],
-            [
-                "fugiat",
-                null
-            ],
-            [
-                "laboriosam",
-                null
-            ],
-            [
-                "totam",
-                "#560a5d"
-            ],
-            [
-                "enim",
-                "#150d4a"
-            ]
-        ],
-        "total_voters": 2,
-        "total_watchers": 6,
-        "type": 3,
-        "version": 1,
-        "watchers": [
-            3,
-            5,
-            7,
-            9,
-            12,
-            14
-        ]
-    },
-    {
-        "assigned_to": 12,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Vanesa Garcia",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:37.695Z",
-        "external_reference": null,
-        "finished_date": "2016-11-18T07:52:37.696Z",
-        "id": 7,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": true,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:37.792Z",
-        "owner": 9,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Fernandez",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "priority": 1,
-        "project": 1,
-        "ref": 48,
-        "severity": 1,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#BFB35A",
-            "is_closed": true,
-            "name": "Cerrada"
-        },
-        "subject": "Migrate to Python 3 and milk a beautiful cow",
-        "tags": [
-            [
-                "optio",
-                null
-            ],
-            [
-                "tempore",
-                "#ae2670"
-            ],
-            [
-                "odit",
-                null
-            ],
-            [
-                "nam",
-                null
-            ],
-            [
-                "fuga",
-                "#e86797"
-            ],
-            [
-                "esse",
-                "#d77661"
-            ],
-            [
-                "impedit",
-                "#cde1f0"
-            ],
-            [
-                "rerum",
-                "#b1c629"
-            ],
-            [
-                "corporis",
-                null
-            ]
-        ],
-        "total_voters": 4,
-        "total_watchers": 3,
-        "type": 3,
-        "version": 1,
-        "watchers": [
-            4,
-            12,
-            14
-        ]
-    },
-    {
-        "assigned_to": 14,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Miguel Molina",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
-            "is_active": true,
-            "photo": null,
-            "username": "user8"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:41.438Z",
-        "external_reference": null,
-        "finished_date": "2016-11-18T07:52:41.439Z",
-        "id": 21,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:41.529Z",
+        "modified_date": "2017-06-28T14:56:40.265Z",
         "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
@@ -518,508 +219,83 @@
             "photo": null,
             "username": "user7"
         },
-        "priority": 2,
+        "priority": 1,
         "project": 1,
-        "ref": 62,
-        "severity": 2,
-        "status": 6,
-        "status_extra_info": {
-            "color": "#CC0000",
-            "is_closed": true,
-            "name": "Rechazada"
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
         },
-        "subject": "Create the user model",
-        "tags": [
-            [
-                "laboriosam",
-                null
-            ],
-            [
-                "provident",
-                "#7fdcf2"
-            ],
-            [
-                "ex",
-                "#e06613"
-            ],
-            [
-                "repellendus",
-                null
-            ]
-        ],
-        "total_voters": 3,
-        "total_watchers": 4,
-        "type": 1,
-        "version": 1,
-        "watchers": [
-            1,
-            3,
-            5,
-            14
-        ]
-    },
-    {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:36.790Z",
-        "external_reference": null,
-        "finished_date": "2016-11-18T07:52:36.901Z",
-        "id": 4,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:36.897Z",
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "priority": 2,
-        "project": 1,
-        "ref": 45,
+        "ref": 93,
         "severity": 5,
-        "status": 3,
+        "status": 5,
         "status_extra_info": {
-            "color": "#88A65E",
-            "is_closed": true,
-            "name": "Lista para testear"
+            "color": "#89BAB4",
+            "is_closed": false,
+            "name": "Needs Info"
         },
         "subject": "Migrate to Python 3 and milk a beautiful cow",
         "tags": [
             [
                 "laborum",
-                "#67eac4"
-            ],
-            [
-                "natus",
-                "#e610c1"
-            ],
-            [
-                "sit",
-                "#abdcde"
-            ],
-            [
-                "dicta",
                 null
             ],
             [
-                "quasi",
-                "#5dae16"
-            ],
-            [
-                "necessitatibus",
+                "accusantium",
                 null
             ],
             [
-                "doloribus",
-                "#fb1b00"
-            ],
-            [
-                "quam",
-                "#0149d1"
+                "nulla",
+                null
             ],
             [
                 "iusto",
                 null
             ],
             [
+                "deleniti",
+                "#6188db"
+            ],
+            [
+                "commodi",
+                "#3b70df"
+            ],
+            [
+                "voluptate",
+                "#b0eff0"
+            ],
+            [
+                "repellendus",
+                "#13f068"
+            ],
+            [
                 "enim",
                 "#150d4a"
             ]
         ],
-        "total_voters": 5,
-        "total_watchers": 4,
-        "type": 1,
-        "version": 1,
-        "watchers": [
-            7,
-            10,
-            12,
-            15
-        ]
-    },
-    {
-        "assigned_to": 9,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Fernandez",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:37.462Z",
-        "external_reference": null,
-        "finished_date": "2016-11-18T07:52:37.563Z",
-        "id": 6,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": true,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:37.560Z",
-        "owner": 7,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "priority": 2,
-        "project": 1,
-        "ref": 47,
-        "severity": 5,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#BFB35A",
-            "is_closed": true,
-            "name": "Cerrada"
-        },
-        "subject": "Implement the form",
-        "tags": [
-            [
-                "fugiat",
-                null
-            ],
-            [
-                "odit",
-                null
-            ],
-            [
-                "exercitationem",
-                "#ac7c74"
-            ],
-            [
-                "velit",
-                "#790ea4"
-            ],
-            [
-                "beatae",
-                "#b844bd"
-            ],
-            [
-                "assumenda",
-                "#52b91a"
-            ],
-            [
-                "sed",
-                null
-            ]
-        ],
-        "total_voters": 5,
-        "total_watchers": 3,
-        "type": 2,
-        "version": 1,
-        "watchers": [
-            5,
-            9,
-            13
-        ]
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Vanesa Torres",
-            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user2114747470430251528"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:38.697Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 11,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": true,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:38.827Z",
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "priority": 2,
-        "project": 1,
-        "ref": 52,
-        "severity": 3,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#89BAB4",
-            "is_closed": false,
-            "name": "Necesita informaci\u00f3n"
-        },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
-        "tags": [
-            [
-                "a",
-                null
-            ]
-        ],
-        "total_voters": 5,
+        "total_voters": 2,
         "total_watchers": 1,
-        "type": 1,
-        "version": 1,
-        "watchers": [
-            1
-        ]
-    },
-    {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:39.625Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 15,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:39.746Z",
-        "owner": 9,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Fernandez",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "priority": 2,
-        "project": 1,
-        "ref": 56,
-        "severity": 3,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#89BAB4",
-            "is_closed": false,
-            "name": "Necesita informaci\u00f3n"
-        },
-        "subject": "Create the html template",
-        "tags": [
-            [
-                "aliquam",
-                null
-            ],
-            [
-                "aspernatur",
-                "#82854c"
-            ],
-            [
-                "fuga",
-                "#e86797"
-            ],
-            [
-                "molestiae",
-                null
-            ],
-            [
-                "praesentium",
-                null
-            ],
-            [
-                "aperiam",
-                "#a2b100"
-            ],
-            [
-                "dolore",
-                "#61b076"
-            ],
-            [
-                "corporis",
-                null
-            ]
-        ],
-        "total_voters": 1,
-        "total_watchers": 2,
-        "type": 2,
-        "version": 1,
-        "watchers": [
-            11,
-            14
-        ]
-    },
-    {
-        "assigned_to": 12,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Vanesa Garcia",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:36.507Z",
-        "external_reference": null,
-        "finished_date": "2016-11-18T07:52:36.508Z",
-        "id": 3,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": true,
-        "is_watcher": true,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:59:24.630Z",
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "priority": 2,
-        "project": 1,
-        "ref": 44,
-        "severity": 4,
-        "status": 6,
-        "status_extra_info": {
-            "color": "#CC0000",
-            "is_closed": true,
-            "name": "Rechazada"
-        },
-        "subject": "Patching subject",
-        "tags": [
-            [
-                "consequatur",
-                null
-            ],
-            [
-                "eum",
-                null
-            ],
-            [
-                "impedit",
-                "#cde1f0"
-            ],
-            [
-                "totam",
-                "#560a5d"
-            ],
-            [
-                "quos",
-                "#50a0d5"
-            ]
-        ],
-        "total_voters": 4,
-        "total_watchers": 7,
-        "type": 2,
-        "version": 2,
-        "watchers": [
-            3,
-            5,
-            6,
-            7,
-            8,
-            11,
-            14
-        ]
-    },
-    {
-        "assigned_to": 11,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Angela Perez",
-            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-            "id": 11,
-            "is_active": true,
-            "photo": null,
-            "username": "user5"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:39.372Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 14,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:39.479Z",
-        "owner": 5,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "priority": 2,
-        "project": 1,
-        "ref": 55,
-        "severity": 3,
-        "status": 7,
-        "status_extra_info": {
-            "color": "#666666",
-            "is_closed": false,
-            "name": "Pospuesta"
-        },
-        "subject": "Experimental: modular file types",
-        "tags": [
-            [
-                "est",
-                null
-            ],
-            [
-                "impedit",
-                "#cde1f0"
-            ],
-            [
-                "eius",
-                null
-            ]
-        ],
-        "total_voters": 8,
-        "total_watchers": 0,
         "type": 3,
         "version": 1,
-        "watchers": []
+        "watchers": [
+            5
+        ]
     },
     {
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "blocked_note": "",
-        "created_date": "2016-11-18T07:59:25.075Z",
+        "created_date": "2017-06-28T15:00:11.300Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 117,
+        "id": 109,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:59:25.085Z",
+        "modified_date": "2017-06-28T15:00:11.307Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -1032,7 +308,13 @@
         },
         "priority": 2,
         "project": 1,
-        "ref": 81,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 124,
         "severity": 3,
         "status": 1,
         "status_extra_info": {
@@ -1052,16 +334,16 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "blocked_note": "",
-        "created_date": "2016-11-18T07:59:24.313Z",
+        "created_date": "2017-06-28T15:00:10.214Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 115,
+        "id": 107,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:59:24.466Z",
+        "modified_date": "2017-06-28T15:00:10.356Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -1074,7 +356,13 @@
         },
         "priority": 2,
         "project": 1,
-        "ref": 79,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 122,
         "severity": 3,
         "status": 1,
         "status_extra_info": {
@@ -1094,16 +382,16 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "blocked_note": "",
-        "created_date": "2016-11-18T07:59:24.313Z",
+        "created_date": "2017-06-28T15:00:10.214Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 114,
+        "id": 106,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:59:24.397Z",
+        "modified_date": "2017-06-28T15:00:10.288Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -1116,7 +404,13 @@
         },
         "priority": 2,
         "project": 1,
-        "ref": 78,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 121,
         "severity": 3,
         "status": 1,
         "status_extra_info": {
@@ -1136,16 +430,16 @@
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "blocked_note": "",
-        "created_date": "2016-11-18T07:59:24.312Z",
+        "created_date": "2017-06-28T15:00:10.214Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 113,
+        "id": 105,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:59:24.313Z",
+        "modified_date": "2017-06-28T15:00:10.214Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -1158,7 +452,13 @@
         },
         "priority": 2,
         "project": 1,
-        "ref": 77,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 120,
         "severity": 3,
         "status": 1,
         "status_extra_info": {
@@ -1175,150 +475,29 @@
         "watchers": []
     },
     {
-        "assigned_to": 8,
+        "assigned_to": 11,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
+            "full_name_display": "Angela Perez",
+            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+            "id": 11,
             "is_active": true,
             "photo": null,
-            "username": "user2"
+            "username": "user5"
         },
         "blocked_note": "",
-        "created_date": "2016-11-18T07:52:40.363Z",
+        "created_date": "2017-06-28T14:56:42.430Z",
         "external_reference": null,
         "finished_date": null,
-        "id": 18,
+        "id": 10,
         "is_blocked": false,
         "is_closed": false,
-        "is_voter": true,
+        "is_voter": false,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:52:40.523Z",
-        "owner": 13,
+        "modified_date": "2017-06-28T14:56:42.521Z",
+        "owner": 14,
         "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Mohamed Ortega",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "priority": 3,
-        "project": 1,
-        "ref": 59,
-        "severity": 4,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#89BAB4",
-            "is_closed": false,
-            "name": "Necesita informaci\u00f3n"
-        },
-        "subject": "Create the user model",
-        "tags": [
-            [
-                "odio",
-                "#edb520"
-            ],
-            [
-                "nostrum",
-                "#0cf81b"
-            ],
-            [
-                "placeat",
-                "#d97204"
-            ]
-        ],
-        "total_voters": 4,
-        "total_watchers": 3,
-        "type": 1,
-        "version": 1,
-        "watchers": [
-            1,
-            3,
-            8
-        ]
-    },
-    {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:36.154Z",
-        "external_reference": null,
-        "finished_date": "2016-11-18T07:52:36.364Z",
-        "id": 2,
-        "is_blocked": false,
-        "is_closed": true,
-        "is_voter": true,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:36.361Z",
-        "owner": 5,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "priority": 3,
-        "project": 1,
-        "ref": 43,
-        "severity": 5,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#BFB35A",
-            "is_closed": true,
-            "name": "Cerrada"
-        },
-        "subject": "Implement the form",
-        "tags": [
-            [
-                "minima",
-                "#f0048e"
-            ],
-            [
-                "ullam",
-                null
-            ],
-            [
-                "quod",
-                null
-            ],
-            [
-                "consequuntur",
-                "#ce24ec"
-            ],
-            [
-                "unde",
-                null
-            ],
-            [
-                "voluptas",
-                "#729359"
-            ],
-            [
-                "ad",
-                "#4aeb19"
-            ],
-            [
-                "nisi",
-                "#ef7fdc"
-            ]
-        ],
-        "total_voters": 8,
-        "total_watchers": 0,
-        "type": 1,
-        "version": 1,
-        "watchers": []
-    },
-    {
-        "assigned_to": 14,
-        "assigned_to_extra_info": {
             "big_photo": null,
             "full_name_display": "Miguel Molina",
             "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
@@ -1327,227 +506,154 @@
             "photo": null,
             "username": "user8"
         },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:41.136Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 20,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:41.290Z",
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "priority": 3,
+        "priority": 2,
         "project": 1,
-        "ref": 61,
-        "severity": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 102,
+        "severity": 3,
         "status": 1,
         "status_extra_info": {
             "color": "#8C2318",
             "is_closed": false,
             "name": "Patch status name"
         },
-        "subject": "Create testsuite with matrix builds",
+        "subject": "Migrate to Python 3 and milk a beautiful cow",
         "tags": [
             [
-                "debitis",
-                "#9631e4"
+                "odit",
+                "#e2b537"
+            ],
+            [
+                "quas",
+                null
+            ],
+            [
+                "esse",
+                null
+            ],
+            [
+                "accusamus",
+                null
+            ],
+            [
+                "soluta",
+                null
             ]
         ],
-        "total_voters": 8,
+        "total_voters": 10,
         "total_watchers": 1,
-        "type": 3,
+        "type": 2,
         "version": 1,
         "watchers": [
-            8
+            14
         ]
     },
     {
-        "assigned_to": 15,
+        "assigned_to": 5,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Virginia Castro",
-            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-            "id": 15,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
             "is_active": true,
             "photo": null,
-            "username": "user9"
+            "username": "admin"
         },
         "blocked_note": "",
-        "created_date": "2016-11-18T07:52:40.081Z",
+        "created_date": "2017-06-28T14:56:40.382Z",
         "external_reference": null,
-        "finished_date": "2016-11-18T07:52:40.207Z",
-        "id": 17,
+        "finished_date": "2017-06-28T14:56:40.550Z",
+        "id": 2,
         "is_blocked": false,
         "is_closed": true,
         "is_voter": false,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:52:40.204Z",
-        "owner": 7,
+        "modified_date": "2017-06-28T14:56:40.547Z",
+        "owner": 8,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
+            "full_name_display": "Francisco Gil",
+            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+            "id": 8,
             "is_active": true,
             "photo": null,
-            "username": "user1"
+            "username": "user2"
         },
-        "priority": 3,
+        "priority": 2,
         "project": 1,
-        "ref": 58,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 94,
         "severity": 1,
-        "status": 6,
+        "status": 3,
         "status_extra_info": {
-            "color": "#CC0000",
+            "color": "#88A65E",
             "is_closed": true,
-            "name": "Rechazada"
+            "name": "Ready for test"
         },
-        "subject": "Support for bulk actions",
+        "subject": "Create the user model",
         "tags": [
             [
-                "ad",
-                "#4aeb19"
-            ],
-            [
-                "illum",
-                "#898c66"
-            ],
-            [
-                "autem",
+                "est",
                 null
             ],
             [
-                "similique",
-                "#710c97"
-            ]
-        ],
-        "total_voters": 9,
-        "total_watchers": 3,
-        "type": 2,
-        "version": 1,
-        "watchers": [
-            1,
-            4,
-            15
-        ]
-    },
-    {
-        "assigned_to": 6,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Vanesa Torres",
-            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
-            "id": 6,
-            "is_active": true,
-            "photo": null,
-            "username": "user2114747470430251528"
-        },
-        "blocked_note": "",
-        "created_date": "2016-11-18T07:52:38.942Z",
-        "external_reference": null,
-        "finished_date": null,
-        "id": 12,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "milestone": null,
-        "modified_date": "2016-11-18T07:52:39.056Z",
-        "owner": 7,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "priority": 3,
-        "project": 1,
-        "ref": 53,
-        "severity": 2,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#5E8C6A",
-            "is_closed": false,
-            "name": "En curso"
-        },
-        "subject": "Add tests for bulk operations",
-        "tags": [
-            [
-                "dolor",
+                "quasi",
                 null
             ],
             [
-                "ratione",
-                "#570ce3"
-            ],
-            [
-                "hic",
+                "totam",
                 null
             ],
             [
-                "labore",
-                null
+                "repellat",
+                "#807389"
             ],
             [
-                "deleniti",
-                "#6188db"
+                "magnam",
+                "#d1fac1"
             ],
             [
-                "dignissimos",
-                "#79b3c9"
+                "voluptate",
+                "#b0eff0"
             ],
             [
-                "dolore",
-                "#61b076"
-            ],
-            [
-                "tempora",
-                null
-            ],
-            [
-                "repellendus",
+                "laboriosam",
                 null
             ]
         ],
         "total_voters": 5,
-        "total_watchers": 2,
+        "total_watchers": 1,
         "type": 2,
         "version": 1,
         "watchers": [
-            5,
-            15
+            14
         ]
     },
     {
         "assigned_to": null,
         "assigned_to_extra_info": null,
         "blocked_note": "",
-        "created_date": "2016-11-18T07:59:24.816Z",
+        "created_date": "2017-06-28T15:00:11.131Z",
         "external_reference": null,
-        "finished_date": "2016-11-18T07:59:24.837Z",
-        "id": 116,
+        "finished_date": "2017-06-28T15:00:11.149Z",
+        "id": 108,
         "is_blocked": false,
         "is_closed": true,
         "is_voter": false,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:59:24.835Z",
+        "modified_date": "2017-06-28T15:00:11.147Z",
         "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
@@ -1560,13 +666,19 @@
         },
         "priority": 3,
         "project": 1,
-        "ref": 80,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 123,
         "severity": 2,
         "status": 3,
         "status_extra_info": {
             "color": "#88A65E",
             "is_closed": true,
-            "name": "Lista para testear"
+            "name": "Ready for test"
         },
         "subject": "Customer personal data",
         "tags": [
@@ -1586,10 +698,18 @@
         "watchers": []
     },
     {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
+        "assigned_to": 6,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
         "blocked_note": "",
-        "created_date": "2016-11-18T07:52:39.164Z",
+        "created_date": "2017-06-28T14:56:43.303Z",
         "external_reference": null,
         "finished_date": null,
         "id": 13,
@@ -1598,43 +718,332 @@
         "is_voter": false,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:52:39.286Z",
-        "owner": 5,
+        "modified_date": "2017-06-28T14:56:43.394Z",
+        "owner": 15,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
             "is_active": true,
             "photo": null,
-            "username": "admin"
+            "username": "user9"
         },
         "priority": 3,
         "project": 1,
-        "ref": 54,
-        "severity": 3,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#89BAB4",
-            "is_closed": false,
-            "name": "Necesita informaci\u00f3n"
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
         },
-        "subject": "Experimental: modular file types",
+        "ref": 105,
+        "severity": 2,
+        "status": 7,
+        "status_extra_info": {
+            "color": "#666666",
+            "is_closed": false,
+            "name": "Postponed"
+        },
+        "subject": "Fixing templates for Django 1.6.",
         "tags": [
             [
-                "quia",
-                "#f53074"
+                "quibusdam",
+                "#c49ac2"
             ],
             [
-                "non",
-                "#37031f"
+                "voluptatibus",
+                "#681ad4"
+            ],
+            [
+                "tempora",
+                null
+            ],
+            [
+                "at",
+                null
+            ],
+            [
+                "dignissimos",
+                null
+            ],
+            [
+                "ipsa",
+                null
+            ]
+        ],
+        "total_voters": 5,
+        "total_watchers": 3,
+        "type": 2,
+        "version": 1,
+        "watchers": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "blocked_note": "",
+        "created_date": "2017-06-28T14:56:43.053Z",
+        "external_reference": null,
+        "finished_date": "2017-06-28T14:56:43.183Z",
+        "id": 12,
+        "is_blocked": false,
+        "is_closed": true,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": null,
+        "modified_date": "2017-06-28T14:56:43.181Z",
+        "owner": 11,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Angela Perez",
+            "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+            "id": 11,
+            "is_active": true,
+            "photo": null,
+            "username": "user5"
+        },
+        "priority": 3,
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 104,
+        "severity": 2,
+        "status": 6,
+        "status_extra_info": {
+            "color": "#CC0000",
+            "is_closed": true,
+            "name": "Rejected"
+        },
+        "subject": "Fixing templates for Django 1.6.",
+        "tags": [
+            [
+                "recusandae",
+                null
+            ],
+            [
+                "blanditiis",
+                null
+            ],
+            [
+                "ipsum",
+                null
+            ],
+            [
+                "inventore",
+                null
+            ],
+            [
+                "reiciendis",
+                null
             ]
         ],
         "total_voters": 1,
-        "total_watchers": 0,
+        "total_watchers": 5,
+        "type": 2,
+        "version": 1,
+        "watchers": [
+            1,
+            8,
+            10,
+            13,
+            15
+        ]
+    },
+    {
+        "assigned_to": 13,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Mohamed Ortega",
+            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+            "id": 13,
+            "is_active": true,
+            "photo": null,
+            "username": "user7"
+        },
+        "blocked_note": "",
+        "created_date": "2017-06-28T14:56:42.711Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 11,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": null,
+        "modified_date": "2017-06-28T14:56:42.827Z",
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "priority": 3,
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 103,
+        "severity": 2,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#5E8C6A",
+            "is_closed": false,
+            "name": "In progress"
+        },
+        "subject": "Added file copying and processing of images (resizing)",
+        "tags": [
+            [
+                "rem",
+                null
+            ],
+            [
+                "maiores",
+                "#cbb2b3"
+            ],
+            [
+                "optio",
+                "#7617d3"
+            ],
+            [
+                "magnam",
+                "#d1fac1"
+            ],
+            [
+                "voluptate",
+                "#b0eff0"
+            ],
+            [
+                "ad",
+                "#4aeb19"
+            ],
+            [
+                "cum",
+                null
+            ],
+            [
+                "beatae",
+                "#b844bd"
+            ]
+        ],
+        "total_voters": 1,
+        "total_watchers": 4,
+        "type": 2,
+        "version": 1,
+        "watchers": [
+            2,
+            3,
+            12,
+            13
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "blocked_note": "",
+        "created_date": "2017-06-28T14:56:42.111Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 9,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": null,
+        "modified_date": "2017-06-28T14:56:42.259Z",
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "priority": 3,
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 101,
+        "severity": 1,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#8C2318",
+            "is_closed": false,
+            "name": "Patch status name"
+        },
+        "subject": "Fixing templates for Django 1.6.",
+        "tags": [
+            [
+                "similique",
+                "#710c97"
+            ],
+            [
+                "fugit",
+                null
+            ],
+            [
+                "nemo",
+                "#e81498"
+            ],
+            [
+                "asperiores",
+                "#a69134"
+            ],
+            [
+                "molestias",
+                "#92db0b"
+            ],
+            [
+                "atque",
+                null
+            ],
+            [
+                "odio",
+                "#edb520"
+            ],
+            [
+                "dignissimos",
+                null
+            ],
+            [
+                "aut",
+                "#9ae4e4"
+            ],
+            [
+                "sed",
+                null
+            ]
+        ],
+        "total_voters": 7,
+        "total_watchers": 4,
         "type": 1,
         "version": 1,
-        "watchers": []
+        "watchers": [
+            2,
+            5,
+            8,
+            14
+        ]
     },
     {
         "assigned_to": 12,
@@ -1648,16 +1057,92 @@
             "username": "user6"
         },
         "blocked_note": "",
-        "created_date": "2016-11-18T07:52:35.944Z",
+        "created_date": "2017-06-28T14:56:41.832Z",
         "external_reference": null,
-        "finished_date": "2016-11-18T07:52:35.946Z",
-        "id": 1,
+        "finished_date": null,
+        "id": 8,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": true,
+        "milestone": null,
+        "modified_date": "2017-06-28T14:56:41.944Z",
+        "owner": 15,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
+        "priority": 3,
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 100,
+        "severity": 2,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#5E8C6A",
+            "is_closed": false,
+            "name": "In progress"
+        },
+        "subject": "Experimental: modular file types",
+        "tags": [
+            [
+                "sit",
+                "#abdcde"
+            ],
+            [
+                "ex",
+                null
+            ],
+            [
+                "ea",
+                "#2c80b2"
+            ]
+        ],
+        "total_voters": 7,
+        "total_watchers": 6,
+        "type": 2,
+        "version": 1,
+        "watchers": [
+            1,
+            5,
+            6,
+            7,
+            8,
+            15
+        ]
+    },
+    {
+        "assigned_to": 13,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Mohamed Ortega",
+            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+            "id": 13,
+            "is_active": true,
+            "photo": null,
+            "username": "user7"
+        },
+        "blocked_note": "",
+        "created_date": "2017-06-28T14:56:41.380Z",
+        "external_reference": null,
+        "finished_date": "2017-06-28T14:56:41.468Z",
+        "id": 6,
         "is_blocked": false,
         "is_closed": true,
-        "is_voter": false,
+        "is_voter": true,
         "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:52:36.033Z",
+        "modified_date": "2017-06-28T14:56:41.465Z",
         "owner": 5,
         "owner_extra_info": {
             "big_photo": null,
@@ -1670,147 +1155,232 @@
         },
         "priority": 3,
         "project": 1,
-        "ref": 42,
-        "severity": 5,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#BFB35A",
-            "is_closed": true,
-            "name": "Cerrada"
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
         },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
+        "ref": 98,
+        "severity": 4,
+        "status": 6,
+        "status_extra_info": {
+            "color": "#CC0000",
+            "is_closed": true,
+            "name": "Rejected"
+        },
+        "subject": "Add tests for bulk operations",
         "tags": [
             [
-                "quidem",
+                "sit",
+                "#abdcde"
+            ],
+            [
+                "nostrum",
+                "#0cf81b"
+            ],
+            [
+                "asperiores",
+                "#a69134"
+            ],
+            [
+                "accusantium",
                 null
             ],
             [
-                "ducimus",
-                "#ea6bb9"
+                "quos",
+                "#50a0d5"
             ],
             [
-                "fugit",
-                null
+                "corporis",
+                "#ed9c91"
             ],
             [
-                "molestias",
-                "#92db0b"
-            ],
-            [
-                "aliquid",
-                null
-            ],
-            [
-                "ab",
-                null
-            ],
-            [
-                "deleniti",
-                "#6188db"
+                "architecto",
+                "#9d1e93"
             ]
         ],
-        "total_voters": 5,
-        "total_watchers": 2,
+        "total_voters": 8,
+        "total_watchers": 3,
         "type": 3,
         "version": 1,
         "watchers": [
+            4,
             7,
-            15
+            13
         ]
     },
     {
-        "assigned_to": 9,
+        "assigned_to": 5,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Catalina Fernandez",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
             "is_active": true,
             "photo": null,
-            "username": "user3"
+            "username": "admin"
         },
         "blocked_note": "",
-        "created_date": "2016-11-18T07:52:37.047Z",
+        "created_date": "2017-06-28T14:56:41.066Z",
         "external_reference": null,
         "finished_date": null,
         "id": 5,
         "is_blocked": false,
         "is_closed": false,
-        "is_voter": true,
-        "is_watcher": true,
+        "is_voter": false,
+        "is_watcher": false,
         "milestone": null,
-        "modified_date": "2016-11-18T07:52:37.161Z",
-        "owner": 13,
+        "modified_date": "2017-06-28T14:56:41.167Z",
+        "owner": 8,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Mohamed Ortega",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
+            "full_name_display": "Francisco Gil",
+            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+            "id": 8,
             "is_active": true,
             "photo": null,
-            "username": "user7"
+            "username": "user2"
         },
         "priority": 3,
         "project": 1,
-        "ref": 46,
-        "severity": 1,
-        "status": 5,
-        "status_extra_info": {
-            "color": "#89BAB4",
-            "is_closed": false,
-            "name": "Necesita informaci\u00f3n"
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
         },
-        "subject": "Experimental: modular file types",
+        "ref": 97,
+        "severity": 5,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#8C2318",
+            "is_closed": false,
+            "name": "Patch status name"
+        },
+        "subject": "Lighttpd support",
         "tags": [
             [
                 "incidunt",
+                "#3099ec"
+            ],
+            [
+                "dolor",
                 null
             ],
             [
-                "temporibus",
-                "#a2c51a"
+                "repellat",
+                "#807389"
             ],
             [
-                "nulla",
-                "#894727"
-            ],
-            [
-                "esse",
-                "#d77661"
-            ],
-            [
-                "deserunt",
+                "soluta",
                 null
             ],
             [
-                "at",
+                "id",
                 null
             ],
             [
-                "modi",
+                "voluptatem",
+                null
+            ],
+            [
+                "odio",
+                "#edb520"
+            ],
+            [
+                "error",
+                null
+            ],
+            [
+                "illum",
                 null
             ],
             [
                 "voluptatibus",
-                null
-            ],
-            [
-                "enim",
-                "#150d4a"
+                "#681ad4"
             ]
         ],
-        "total_voters": 8,
-        "total_watchers": 7,
-        "type": 2,
+        "total_voters": 7,
+        "total_watchers": 4,
+        "type": 3,
         "version": 1,
         "watchers": [
             3,
-            6,
+            4,
             7,
-            11,
-            12,
-            14,
-            15
+            9
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "blocked_note": "",
+        "created_date": "2017-06-28T14:56:40.850Z",
+        "external_reference": null,
+        "finished_date": null,
+        "id": 4,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "milestone": null,
+        "modified_date": "2017-06-28T14:56:40.937Z",
+        "owner": 14,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Miguel Molina",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
+            "is_active": true,
+            "photo": null,
+            "username": "user8"
+        },
+        "priority": 3,
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 96,
+        "severity": 1,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#5E8C6A",
+            "is_closed": false,
+            "name": "In progress"
+        },
+        "subject": "Create the user model",
+        "tags": [
+            [
+                "tempore",
+                null
+            ],
+            [
+                "illo",
+                "#3531fd"
+            ],
+            [
+                "laboriosam",
+                null
+            ],
+            [
+                "quisquam",
+                null
+            ],
+            [
+                "quae",
+                "#d91a8b"
+            ]
+        ],
+        "total_voters": 8,
+        "total_watchers": 1,
+        "type": 3,
+        "version": 1,
+        "watchers": [
+            14
         ]
     }
 ]

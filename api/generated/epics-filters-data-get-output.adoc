@@ -3,7 +3,7 @@
 {
     "assigned_to": [
         {
-            "count": 7,
+            "count": 6,
             "full_name": "",
             "id": null
         },
@@ -18,14 +18,9 @@
             "id": 11
         },
         {
-            "count": 0,
+            "count": 1,
             "full_name": "Bego\u00f1a Flores",
             "id": 7
-        },
-        {
-            "count": 1,
-            "full_name": "Catalina Fernandez",
-            "id": 9
         },
         {
             "count": 0,
@@ -33,12 +28,12 @@
             "id": 10
         },
         {
-            "count": 0,
+            "count": 1,
             "full_name": "Francisco Gil",
             "id": 8
         },
         {
-            "count": 1,
+            "count": 0,
             "full_name": "Miguel Molina",
             "id": 14
         },
@@ -48,7 +43,7 @@
             "id": 13
         },
         {
-            "count": 0,
+            "count": 1,
             "full_name": "Vanesa Garcia",
             "id": 12
         },
@@ -71,23 +66,23 @@
     "owners": [
         {
             "count": 1,
-            "full_name": "Catalina Fernandez",
-            "id": 9
+            "full_name": "Angela Perez",
+            "id": 11
         },
         {
             "count": 1,
-            "full_name": "Enrique Crespo",
-            "id": 10
+            "full_name": "Mohamed Ortega",
+            "id": 13
+        },
+        {
+            "count": 2,
+            "full_name": "Vanesa Garcia",
+            "id": 12
         },
         {
             "count": 5,
             "full_name": "Vanesa Torres",
             "id": 6
-        },
-        {
-            "count": 2,
-            "full_name": "Virginia Castro",
-            "id": 15
         }
     ],
     "statuses": [
@@ -95,41 +90,41 @@
             "color": "#999999",
             "count": 5,
             "id": 1,
-            "name": "Nueva",
+            "name": "New",
             "order": 1
         },
         {
             "color": "#ff8a84",
-            "count": 1,
+            "count": 2,
             "id": 2,
-            "name": "Preparada",
+            "name": "Ready",
             "order": 2
         },
         {
             "color": "#ff9900",
             "count": 1,
             "id": 3,
-            "name": "En curso",
+            "name": "In progress",
             "order": 3
         },
         {
             "color": "#fcc000",
-            "count": 2,
+            "count": 1,
             "id": 4,
-            "name": "Lista para testear",
+            "name": "Ready for test",
             "order": 4
         },
         {
             "color": "#669900",
             "count": 0,
             "id": 5,
-            "name": "Hecha",
+            "name": "Done",
             "order": 5
         }
     ],
     "tags": [
         {
-            "color": null,
+            "color": "#86f7e4",
             "count": 0,
             "name": "a"
         },
@@ -139,12 +134,12 @@
             "name": "ab"
         },
         {
-            "color": "#801cf7",
+            "color": null,
             "count": 0,
             "name": "accusamus"
         },
         {
-            "color": "#b36f86",
+            "color": null,
             "count": 0,
             "name": "accusantium"
         },
@@ -159,7 +154,7 @@
             "name": "adipisci"
         },
         {
-            "color": "#cdb6fd",
+            "color": null,
             "count": 0,
             "name": "alias"
         },
@@ -174,9 +169,9 @@
             "name": "aliquid"
         },
         {
-            "color": null,
+            "color": "#db04fb",
             "count": 0,
-            "name": "animi"
+            "name": "amet"
         },
         {
             "color": "#a2b100",
@@ -184,7 +179,17 @@
             "name": "aperiam"
         },
         {
-            "color": "#82854c",
+            "color": "#9d1e93",
+            "count": 0,
+            "name": "architecto"
+        },
+        {
+            "color": "#a69134",
+            "count": 0,
+            "name": "asperiores"
+        },
+        {
+            "color": null,
             "count": 0,
             "name": "aspernatur"
         },
@@ -201,10 +206,15 @@
         {
             "color": null,
             "count": 0,
+            "name": "atque"
+        },
+        {
+            "color": "#9ae4e4",
+            "count": 0,
             "name": "aut"
         },
         {
-            "color": null,
+            "color": "#5e8c91",
             "count": 0,
             "name": "autem"
         },
@@ -214,12 +224,12 @@
             "name": "beatae"
         },
         {
-            "color": "#65026b",
+            "color": null,
             "count": 0,
             "name": "blanditiis"
         },
         {
-            "color": null,
+            "color": "#3b70df",
             "count": 0,
             "name": "commodi"
         },
@@ -239,28 +249,28 @@
             "name": "consequuntur"
         },
         {
-            "color": null,
-            "count": 1,
+            "color": "#ed9c91",
+            "count": 0,
             "name": "corporis"
         },
         {
-            "color": null,
+            "color": "#432493",
             "count": 0,
             "name": "corrupti"
         },
         {
-            "color": null,
+            "color": "#f5e53b",
             "count": 0,
             "name": "culpa"
         },
         {
-            "color": "#ab14d9",
-            "count": 1,
+            "color": null,
+            "count": 0,
             "name": "cum"
         },
         {
             "color": null,
-            "count": 0,
+            "count": 1,
             "name": "cumque"
         },
         {
@@ -274,12 +284,12 @@
             "name": "customer"
         },
         {
-            "color": "#9631e4",
+            "color": null,
             "count": 0,
             "name": "debitis"
         },
         {
-            "color": "#959608",
+            "color": null,
             "count": 0,
             "name": "delectus"
         },
@@ -294,18 +304,23 @@
             "name": "deserunt"
         },
         {
-            "color": null,
+            "color": "#939b44",
             "count": 0,
             "name": "dicta"
         },
         {
-            "color": "#79b3c9",
+            "color": null,
             "count": 0,
             "name": "dignissimos"
         },
         {
             "color": null,
-            "count": 1,
+            "count": 0,
+            "name": "distinctio"
+        },
+        {
+            "color": null,
+            "count": 0,
             "name": "dolor"
         },
         {
@@ -314,22 +329,22 @@
             "name": "dolore"
         },
         {
-            "color": "#604860",
+            "color": "#61405d",
             "count": 0,
-            "name": "dolorem"
+            "name": "doloremque"
         },
         {
-            "color": null,
+            "color": "#7fea8e",
             "count": 0,
             "name": "dolores"
         },
         {
-            "color": "#fb1b00",
+            "color": null,
             "count": 0,
             "name": "doloribus"
         },
         {
-            "color": null,
+            "color": "#db7ec2",
             "count": 0,
             "name": "dolorum"
         },
@@ -339,12 +354,12 @@
             "name": "ducimus"
         },
         {
-            "color": null,
+            "color": "#2c80b2",
             "count": 0,
             "name": "ea"
         },
         {
-            "color": "#3e7c66",
+            "color": null,
             "count": 0,
             "name": "eaque"
         },
@@ -354,9 +369,14 @@
             "name": "earum"
         },
         {
-            "color": null,
+            "color": "#860b86",
             "count": 0,
             "name": "eius"
+        },
+        {
+            "color": "#5d8273",
+            "count": 0,
+            "name": "eligendi"
         },
         {
             "color": "#150d4a",
@@ -364,12 +384,17 @@
             "name": "enim"
         },
         {
-            "color": "#11f957",
+            "color": null,
+            "count": 0,
+            "name": "eos"
+        },
+        {
+            "color": null,
             "count": 0,
             "name": "error"
         },
         {
-            "color": "#d77661",
+            "color": null,
             "count": 0,
             "name": "esse"
         },
@@ -380,16 +405,26 @@
         },
         {
             "color": null,
-            "count": 0,
+            "count": 1,
+            "name": "et"
+        },
+        {
+            "color": null,
+            "count": 1,
             "name": "eum"
         },
         {
-            "color": "#e06613",
+            "color": null,
+            "count": 0,
+            "name": "eveniet"
+        },
+        {
+            "color": null,
             "count": 0,
             "name": "ex"
         },
         {
-            "color": "#5c3c96",
+            "color": null,
             "count": 0,
             "name": "excepturi"
         },
@@ -399,22 +434,27 @@
             "name": "exercitationem"
         },
         {
-            "color": null,
-            "count": 0,
-            "name": "expedita"
-        },
-        {
-            "color": null,
+            "color": "#2892cb",
             "count": 0,
             "name": "explicabo"
         },
         {
-            "color": "#e86797",
+            "color": "#113f4a",
+            "count": 0,
+            "name": "facere"
+        },
+        {
+            "color": "#0f6b6b",
+            "count": 0,
+            "name": "facilis"
+        },
+        {
+            "color": null,
             "count": 0,
             "name": "fuga"
         },
         {
-            "color": null,
+            "color": "#1c563a",
             "count": 0,
             "name": "fugiat"
         },
@@ -424,9 +464,19 @@
             "name": "fugit"
         },
         {
+            "color": "#b42d3c",
+            "count": 0,
+            "name": "harum"
+        },
+        {
             "color": null,
             "count": 0,
             "name": "hic"
+        },
+        {
+            "color": null,
+            "count": 0,
+            "name": "id"
         },
         {
             "color": "#3531fd",
@@ -434,7 +484,7 @@
             "name": "illo"
         },
         {
-            "color": "#898c66",
+            "color": null,
             "count": 0,
             "name": "illum"
         },
@@ -449,17 +499,27 @@
             "name": "in"
         },
         {
-            "color": null,
+            "color": "#3099ec",
             "count": 0,
             "name": "incidunt"
         },
         {
-            "color": "#ffa8ed",
-            "count": 1,
+            "color": null,
+            "count": 0,
+            "name": "inventore"
+        },
+        {
+            "color": null,
+            "count": 0,
             "name": "ipsa"
         },
         {
-            "color": "#da3ba4",
+            "color": "#fa74af",
+            "count": 0,
+            "name": "ipsam"
+        },
+        {
+            "color": null,
             "count": 0,
             "name": "ipsum"
         },
@@ -467,11 +527,6 @@
             "color": null,
             "count": 0,
             "name": "iste"
-        },
-        {
-            "color": "#090d7d",
-            "count": 0,
-            "name": "itaque"
         },
         {
             "color": null,
@@ -494,19 +549,24 @@
             "name": "laboriosam"
         },
         {
-            "color": "#67eac4",
+            "color": null,
             "count": 0,
             "name": "laborum"
         },
         {
-            "color": null,
+            "color": "#9e3f1f",
             "count": 0,
             "name": "laudantium"
         },
         {
-            "color": "#5b20bf",
-            "count": 1,
-            "name": "libero"
+            "color": "#d1fac1",
+            "count": 0,
+            "name": "magnam"
+        },
+        {
+            "color": "#429e6f",
+            "count": 0,
+            "name": "magni"
         },
         {
             "color": "#cbb2b3",
@@ -514,9 +574,19 @@
             "name": "maiores"
         },
         {
+            "color": "#1acc29",
+            "count": 0,
+            "name": "maxime"
+        },
+        {
             "color": "#f0048e",
             "count": 0,
             "name": "minima"
+        },
+        {
+            "color": "#59b653",
+            "count": 0,
+            "name": "minus"
         },
         {
             "color": null,
@@ -534,8 +604,8 @@
             "name": "molestias"
         },
         {
-            "color": "#002e7f",
-            "count": 0,
+            "color": null,
+            "count": 1,
             "name": "mollitia"
         },
         {
@@ -544,7 +614,7 @@
             "name": "nam"
         },
         {
-            "color": "#e610c1",
+            "color": null,
             "count": 0,
             "name": "natus"
         },
@@ -554,19 +624,34 @@
             "name": "necessitatibus"
         },
         {
-            "color": "#98a352",
+            "color": "#e81498",
+            "count": 0,
+            "name": "nemo"
+        },
+        {
+            "color": null,
+            "count": 0,
+            "name": "neque"
+        },
+        {
+            "color": null,
+            "count": 0,
+            "name": "nesciunt"
+        },
+        {
+            "color": null,
             "count": 0,
             "name": "nihil"
         },
         {
-            "color": "#ef7fdc",
+            "color": null,
             "count": 0,
             "name": "nisi"
         },
         {
-            "color": "#37031f",
+            "color": null,
             "count": 0,
-            "name": "non"
+            "name": "nobis"
         },
         {
             "color": "#0cf81b",
@@ -574,12 +659,12 @@
             "name": "nostrum"
         },
         {
-            "color": "#894727",
+            "color": null,
             "count": 0,
             "name": "nulla"
         },
         {
-            "color": null,
+            "color": "#9ccd46",
             "count": 0,
             "name": "obcaecati"
         },
@@ -589,7 +674,7 @@
             "name": "odio"
         },
         {
-            "color": null,
+            "color": "#e2b537",
             "count": 0,
             "name": "odit"
         },
@@ -599,32 +684,32 @@
             "name": "officia"
         },
         {
-            "color": null,
+            "color": "#964862",
             "count": 0,
             "name": "officiis"
         },
         {
-            "color": "#fc9548",
+            "color": null,
             "count": 0,
             "name": "omnis"
         },
         {
-            "color": null,
+            "color": "#7617d3",
             "count": 0,
             "name": "optio"
         },
         {
-            "color": "#7b0e4e",
-            "count": 0,
+            "color": null,
+            "count": 1,
             "name": "pariatur"
         },
         {
-            "color": null,
+            "color": "#999645",
             "count": 0,
             "name": "perferendis"
         },
         {
-            "color": null,
+            "color": "#afb825",
             "count": 0,
             "name": "perspiciatis"
         },
@@ -641,10 +726,15 @@
         {
             "color": null,
             "count": 0,
+            "name": "possimus"
+        },
+        {
+            "color": null,
+            "count": 0,
             "name": "praesentium"
         },
         {
-            "color": "#7fdcf2",
+            "color": null,
             "count": 0,
             "name": "provident"
         },
@@ -654,7 +744,7 @@
             "name": "quae"
         },
         {
-            "color": null,
+            "color": "#0b4425",
             "count": 0,
             "name": "quaerat"
         },
@@ -664,17 +754,17 @@
             "name": "quam"
         },
         {
-            "color": "#6e3390",
+            "color": null,
             "count": 0,
             "name": "quas"
         },
         {
-            "color": "#5dae16",
+            "color": null,
             "count": 0,
             "name": "quasi"
         },
         {
-            "color": "#61f611",
+            "color": null,
             "count": 0,
             "name": "qui"
         },
@@ -684,34 +774,29 @@
             "name": "quia"
         },
         {
-            "color": null,
+            "color": "#c49ac2",
             "count": 0,
             "name": "quibusdam"
         },
         {
-            "color": null,
+            "color": "#ae6519",
             "count": 0,
             "name": "quidem"
         },
         {
-            "color": null,
+            "color": "#223610",
             "count": 0,
             "name": "quis"
         },
         {
-            "color": "#ebca0b",
-            "count": 0,
+            "color": null,
+            "count": 1,
             "name": "quisquam"
         },
         {
-            "color": null,
+            "color": "#857670",
             "count": 0,
             "name": "quo"
-        },
-        {
-            "color": null,
-            "count": 0,
-            "name": "quod"
         },
         {
             "color": "#50a0d5",
@@ -720,28 +805,43 @@
         },
         {
             "color": "#570ce3",
-            "count": 1,
+            "count": 0,
             "name": "ratione"
         },
         {
             "color": null,
             "count": 0,
-            "name": "reiciendis"
-        },
-        {
-            "color": "#688119",
-            "count": 0,
-            "name": "rem"
+            "name": "recusandae"
         },
         {
             "color": null,
+            "count": 1,
+            "name": "reiciendis"
+        },
+        {
+            "color": null,
+            "count": 1,
+            "name": "rem"
+        },
+        {
+            "color": "#807389",
             "count": 0,
             "name": "repellat"
         },
         {
-            "color": null,
+            "color": "#13f068",
             "count": 0,
             "name": "repellendus"
+        },
+        {
+            "color": null,
+            "count": 1,
+            "name": "reprehenderit"
+        },
+        {
+            "color": null,
+            "count": 0,
+            "name": "repudiandae"
         },
         {
             "color": "#b1c629",
@@ -749,9 +849,9 @@
             "name": "rerum"
         },
         {
-            "color": "#850c56",
+            "color": null,
             "count": 0,
-            "name": "sapiente"
+            "name": "saepe"
         },
         {
             "color": null,
@@ -774,14 +874,29 @@
             "name": "similique"
         },
         {
-            "color": "#abdcde",
+            "color": "#3b2404",
             "count": 0,
+            "name": "sint"
+        },
+        {
+            "color": "#abdcde",
+            "count": 1,
             "name": "sit"
         },
         {
             "color": null,
             "count": 0,
+            "name": "soluta"
+        },
+        {
+            "color": "#98f4c9",
+            "count": 0,
             "name": "sunt"
+        },
+        {
+            "color": "#38abf3",
+            "count": 0,
+            "name": "suscipit"
         },
         {
             "color": null,
@@ -789,7 +904,7 @@
             "name": "tempora"
         },
         {
-            "color": "#ae2670",
+            "color": null,
             "count": 0,
             "name": "tempore"
         },
@@ -799,12 +914,12 @@
             "name": "temporibus"
         },
         {
-            "color": "#351c86",
-            "count": 1,
+            "color": null,
+            "count": 0,
             "name": "tenetur"
         },
         {
-            "color": "#560a5d",
+            "color": null,
             "count": 0,
             "name": "totam"
         },
@@ -814,14 +929,14 @@
             "name": "ullam"
         },
         {
-            "color": null,
+            "color": "#da2470",
             "count": 0,
             "name": "unde"
         },
         {
-            "color": "#e74669",
+            "color": "#91e065",
             "count": 0,
-            "name": "ut"
+            "name": "vel"
         },
         {
             "color": "#790ea4",
@@ -829,28 +944,33 @@
             "name": "velit"
         },
         {
-            "color": "#74e191",
-            "count": 1,
-            "name": "vero"
-        },
-        {
-            "color": "#d9fe5e",
-            "count": 1,
-            "name": "vitae"
-        },
-        {
-            "color": "#729359",
+            "color": null,
             "count": 0,
-            "name": "voluptas"
+            "name": "veniam"
+        },
+        {
+            "color": "#768459",
+            "count": 0,
+            "name": "veritatis"
         },
         {
             "color": null,
+            "count": 0,
+            "name": "vero"
+        },
+        {
+            "color": null,
+            "count": 0,
+            "name": "vitae"
+        },
+        {
+            "color": "#b0eff0",
             "count": 0,
             "name": "voluptate"
         },
         {
             "color": null,
-            "count": 1,
+            "count": 0,
             "name": "voluptatem"
         },
         {
@@ -859,7 +979,7 @@
             "name": "voluptates"
         },
         {
-            "color": null,
+            "color": "#681ad4",
             "count": 0,
             "name": "voluptatibus"
         },

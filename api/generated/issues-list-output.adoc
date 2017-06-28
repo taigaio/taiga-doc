@@ -7,7 +7,7 @@
     "created_date": "2016-08-04T11:08:19Z",
     "external_reference": null,
     "finished_date": null,
-    "id": 112,
+    "id": 104,
     "is_blocked": false,
     "is_closed": false,
     "is_voter": false,
@@ -26,13 +26,19 @@
     },
     "priority": 23,
     "project": 8,
+    "project_extra_info": {
+        "id": 8,
+        "logo_small_url": null,
+        "name": "Project Example",
+        "slug": "project-example"
+    },
     "ref": 59,
     "severity": 38,
     "status": 58,
     "status_extra_info": {
         "color": "#666666",
         "is_closed": false,
-        "name": "Pospuesta"
+        "name": "Postponed"
     },
     "subject": "Exception is thrown if trying to add a folder with existing name",
     "tags": [

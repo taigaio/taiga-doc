@@ -1,5 +1,5 @@
 To get a project issue stats send a GET request specifying the project id in the url
 
-include::../generated/projects-issues-stats-output.adoc[]
+include::../generated/projects-issues-stats-cmd.adoc[]
 
 The HTTP response is a 200 OK and the response body is a JSON link:#object-project-issue-stats-detail[project issue stats object]

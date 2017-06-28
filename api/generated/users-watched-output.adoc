@@ -1,19 +1,19 @@
 [source,json]
 ----
 {
-    "assigned_to": 10,
+    "assigned_to": 14,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Enrique Crespo",
-        "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-        "id": 10,
+        "full_name_display": "Miguel Molina",
+        "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+        "id": 14,
         "is_active": true,
         "photo": null,
-        "username": "user4"
+        "username": "user8"
     },
-    "created_date": "2016-11-18T07:54:56.110Z",
+    "created_date": "2017-06-28T14:58:56.509Z",
     "description": null,
-    "id": 25,
+    "id": 66,
     "is_private": null,
     "is_voter": false,
     "is_watcher": false,
@@ -24,23 +24,47 @@
     "project_is_private": false,
     "project_name": "Project Example 6",
     "project_slug": "project-6",
-    "ref": 60,
+    "ref": 83,
     "slug": null,
-    "status": "New",
-    "status_color": "#999999",
+    "status": "Ready for test",
+    "status_color": "#88A65E",
     "subject": "Create the html template",
     "tags_colors": [
         {
-            "color": "#570ce3",
-            "name": "ratione"
+            "color": "#f5e53b",
+            "name": "culpa"
+        },
+        {
+            "color": "#e86797",
+            "name": "fuga"
         },
         {
             "color": null,
-            "name": "iure"
+            "name": "eveniet"
+        },
+        {
+            "color": "#9345df",
+            "name": "fugit"
+        },
+        {
+            "color": null,
+            "name": "molestiae"
+        },
+        {
+            "color": "#05175b",
+            "name": "porro"
+        },
+        {
+            "color": "#ad75ec",
+            "name": "cumque"
+        },
+        {
+            "color": "#f53074",
+            "name": "quia"
         }
     ],
-    "total_voters": 3,
-    "total_watchers": 5,
-    "type": "epic"
+    "total_voters": 1,
+    "total_watchers": 7,
+    "type": "issue"
 }
 ----

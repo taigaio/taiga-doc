@@ -3,7 +3,7 @@
 {
     "anon_permissions": [],
     "blocked_code": null,
-    "created_date": "2016-11-18T07:59:29.387Z",
+    "created_date": "2017-06-28T15:00:15.647Z",
     "creation_template": 1,
     "default_epic_status": 38,
     "default_issue_status": 59,
@@ -20,7 +20,7 @@
             "color": "#999999",
             "id": 38,
             "is_closed": false,
-            "name": "Nueva",
+            "name": "New",
             "order": 1,
             "project_id": 9,
             "slug": "new"
@@ -29,7 +29,7 @@
             "color": "#ff8a84",
             "id": 39,
             "is_closed": false,
-            "name": "Preparada",
+            "name": "Ready",
             "order": 2,
             "project_id": 9,
             "slug": "ready"
@@ -38,7 +38,7 @@
             "color": "#ff9900",
             "id": 40,
             "is_closed": false,
-            "name": "En curso",
+            "name": "In progress",
             "order": 3,
             "project_id": 9,
             "slug": "in-progress"
@@ -47,7 +47,7 @@
             "color": "#fcc000",
             "id": 41,
             "is_closed": false,
-            "name": "Lista para testear",
+            "name": "Ready for test",
             "order": 4,
             "project_id": 9,
             "slug": "ready-for-test"
@@ -56,7 +56,7 @@
             "color": "#669900",
             "id": 42,
             "is_closed": true,
-            "name": "Hecha",
+            "name": "Done",
             "order": 5,
             "project_id": 9,
             "slug": "done"
@@ -89,7 +89,7 @@
             "color": "#8C2318",
             "id": 59,
             "is_closed": false,
-            "name": "Nueva",
+            "name": "New",
             "order": 1,
             "project_id": 9,
             "slug": "new"
@@ -98,7 +98,7 @@
             "color": "#5E8C6A",
             "id": 60,
             "is_closed": false,
-            "name": "En curso",
+            "name": "In progress",
             "order": 2,
             "project_id": 9,
             "slug": "in-progress"
@@ -107,7 +107,7 @@
             "color": "#88A65E",
             "id": 61,
             "is_closed": true,
-            "name": "Lista para testear",
+            "name": "Ready for test",
             "order": 3,
             "project_id": 9,
             "slug": "ready-for-test"
@@ -116,7 +116,7 @@
             "color": "#BFB35A",
             "id": 62,
             "is_closed": true,
-            "name": "Cerrada",
+            "name": "Closed",
             "order": 4,
             "project_id": 9,
             "slug": "closed"
@@ -125,7 +125,7 @@
             "color": "#89BAB4",
             "id": 63,
             "is_closed": false,
-            "name": "Necesita informaci\u00f3n",
+            "name": "Needs Info",
             "order": 5,
             "project_id": 9,
             "slug": "needs-info"
@@ -134,7 +134,7 @@
             "color": "#CC0000",
             "id": 64,
             "is_closed": true,
-            "name": "Rechazada",
+            "name": "Rejected",
             "order": 6,
             "project_id": 9,
             "slug": "rejected"
@@ -143,7 +143,7 @@
             "color": "#666666",
             "id": 65,
             "is_closed": false,
-            "name": "Pospuesta",
+            "name": "Postponed",
             "order": 7,
             "project_id": 9,
             "slug": "postponed"
@@ -160,14 +160,14 @@
         {
             "color": "#ba89a8",
             "id": 26,
-            "name": "Pregunta",
+            "name": "Question",
             "order": 2,
             "project_id": 9
         },
         {
             "color": "#89a8ba",
             "id": 27,
-            "name": "Mejora",
+            "name": "Enhancement",
             "order": 3,
             "project_id": 9
         }
@@ -192,48 +192,48 @@
         }
     ],
     "milestones": [],
-    "modified_date": "2016-11-18T07:59:29.501Z",
+    "modified_date": "2017-06-28T15:00:15.839Z",
     "my_permissions": [
-        "modify_issue",
-        "modify_epic",
-        "add_issue",
-        "modify_us",
-        "delete_wiki_page",
-        "delete_epic",
-        "modify_milestone",
-        "add_wiki_page",
-        "comment_wiki_page",
-        "view_wiki_pages",
-        "add_member",
-        "delete_us",
-        "modify_project",
-        "delete_project",
-        "remove_member",
-        "view_epics",
-        "modify_wiki_page",
         "view_wiki_links",
-        "view_tasks",
-        "add_wiki_link",
-        "view_issues",
+        "modify_epic",
+        "view_wiki_pages",
         "comment_us",
-        "modify_wiki_link",
-        "view_project",
-        "comment_task",
-        "delete_wiki_link",
-        "admin_project_values",
         "add_us",
-        "delete_task",
-        "add_epic",
-        "delete_milestone",
-        "admin_roles",
         "view_milestones",
-        "modify_task",
-        "comment_issue",
-        "delete_issue",
-        "comment_epic",
-        "view_us",
         "add_milestone",
-        "add_task"
+        "modify_issue",
+        "modify_project",
+        "admin_roles",
+        "delete_milestone",
+        "remove_member",
+        "delete_wiki_page",
+        "add_issue",
+        "add_member",
+        "add_epic",
+        "add_wiki_link",
+        "delete_wiki_link",
+        "comment_issue",
+        "modify_milestone",
+        "modify_task",
+        "comment_wiki_page",
+        "delete_issue",
+        "delete_us",
+        "add_task",
+        "view_us",
+        "view_issues",
+        "view_epics",
+        "view_tasks",
+        "delete_task",
+        "modify_wiki_link",
+        "comment_task",
+        "admin_project_values",
+        "modify_us",
+        "delete_project",
+        "comment_epic",
+        "modify_wiki_page",
+        "view_project",
+        "delete_epic",
+        "add_wiki_page"
     ],
     "name": "Beta project",
     "notify_level": 1,
@@ -336,7 +336,7 @@
         {
             "color": "#666666",
             "id": 27,
-            "name": "Baja",
+            "name": "Low",
             "order": 1,
             "project_id": 9
         },
@@ -350,7 +350,7 @@
         {
             "color": "#CC0000",
             "id": 29,
-            "name": "Alta",
+            "name": "High",
             "order": 5,
             "project_id": 9
         }
@@ -403,7 +403,7 @@
         {
             "computable": true,
             "id": 50,
-            "name": "Dise\u00f1ador",
+            "name": "Design",
             "order": 20,
             "permissions": [
                 "add_issue",
@@ -606,14 +606,14 @@
         {
             "color": "#666666",
             "id": 43,
-            "name": "Deseada",
+            "name": "Wishlist",
             "order": 1,
             "project_id": 9
         },
         {
             "color": "#669933",
             "id": 44,
-            "name": "Menor",
+            "name": "Minor",
             "order": 2,
             "project_id": 9
         },
@@ -627,14 +627,14 @@
         {
             "color": "#FFA500",
             "id": 46,
-            "name": "Importante",
+            "name": "Important",
             "order": 4,
             "project_id": 9
         },
         {
             "color": "#CC0000",
             "id": 47,
-            "name": "Cr\u00edtica",
+            "name": "Critical",
             "order": 5,
             "project_id": 9
         }
@@ -648,7 +648,7 @@
             "color": "#999999",
             "id": 43,
             "is_closed": false,
-            "name": "Nueva",
+            "name": "New",
             "order": 1,
             "project_id": 9,
             "slug": "new"
@@ -657,7 +657,7 @@
             "color": "#ff9900",
             "id": 44,
             "is_closed": false,
-            "name": "En curso",
+            "name": "In progress",
             "order": 2,
             "project_id": 9,
             "slug": "in-progress"
@@ -666,7 +666,7 @@
             "color": "#ffcc00",
             "id": 45,
             "is_closed": true,
-            "name": "Lista para testear",
+            "name": "Ready for test",
             "order": 3,
             "project_id": 9,
             "slug": "ready-for-test"
@@ -675,7 +675,7 @@
             "color": "#669900",
             "id": 46,
             "is_closed": true,
-            "name": "Cerrada",
+            "name": "Closed",
             "order": 4,
             "project_id": 9,
             "slug": "closed"
@@ -684,7 +684,7 @@
             "color": "#999999",
             "id": 47,
             "is_closed": false,
-            "name": "Necesita informaci\u00f3n",
+            "name": "Needs Info",
             "order": 5,
             "project_id": 9,
             "slug": "needs-info"
@@ -704,7 +704,7 @@
     "total_milestones": null,
     "total_story_points": null,
     "total_watchers": 1,
-    "totals_updated_datetime": "2016-11-18T07:59:29.532Z",
+    "totals_updated_datetime": "2017-06-28T15:00:15.932Z",
     "transfer_token": null,
     "us_statuses": [
         {
@@ -712,7 +712,7 @@
             "id": 49,
             "is_archived": false,
             "is_closed": false,
-            "name": "Nueva",
+            "name": "New",
             "order": 1,
             "project_id": 9,
             "slug": "new",
@@ -723,7 +723,7 @@
             "id": 50,
             "is_archived": false,
             "is_closed": false,
-            "name": "Preparada",
+            "name": "Ready",
             "order": 2,
             "project_id": 9,
             "slug": "ready",
@@ -734,7 +734,7 @@
             "id": 51,
             "is_archived": false,
             "is_closed": false,
-            "name": "En curso",
+            "name": "In progress",
             "order": 3,
             "project_id": 9,
             "slug": "in-progress",
@@ -745,7 +745,7 @@
             "id": 52,
             "is_archived": false,
             "is_closed": false,
-            "name": "Lista para testear",
+            "name": "Ready for test",
             "order": 4,
             "project_id": 9,
             "slug": "ready-for-test",
@@ -756,7 +756,7 @@
             "id": 53,
             "is_archived": false,
             "is_closed": true,
-            "name": "Hecha",
+            "name": "Done",
             "order": 5,
             "project_id": 9,
             "slug": "done",
@@ -767,7 +767,7 @@
             "id": 54,
             "is_archived": true,
             "is_closed": true,
-            "name": "Archivada",
+            "name": "Archived",
             "order": 6,
             "project_id": 9,
             "slug": "archived",

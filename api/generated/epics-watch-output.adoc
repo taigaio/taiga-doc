@@ -1,0 +1,6 @@
+[source,json]
+----
+{
+    "_error_message": "No Epic matches the given query."
+}
+----

@@ -38,6 +38,16 @@
     },
     {
         "bidi": false,
+        "code": "ja",
+        "name": "\u65e5\u672c\u8a9e"
+    },
+    {
+        "bidi": false,
+        "code": "ko",
+        "name": "\ud55c\uad6d\uc5b4"
+    },
+    {
+        "bidi": false,
         "code": "nb",
         "name": "Norsk (bokm\u00e5l)"
     },
@@ -70,6 +80,11 @@
         "bidi": false,
         "code": "tr",
         "name": "T\u00fcrk\u00e7e"
+    },
+    {
+        "bidi": false,
+        "code": "zh-hans",
+        "name": "\u4e2d\u6587(\u7b80\u4f53)"
     },
     {
         "bidi": false,

@@ -2,7 +2,6 @@
 ----
 curl -X POST \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
         "email": "test-register@email.com",
         "existing": false,

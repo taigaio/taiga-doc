@@ -6,11 +6,11 @@ curl -X POST \
 -d '{
         "bulk_task_custom_attributes": [
             [
-                5,
+                4,
                 10
             ],
             [
-                2,
+                3,
                 15
             ]
         ],

@@ -45,7 +45,8 @@ class Command(BaseCommand):
             "host": host,
             "body": req.get('body', None),
             "fields": None,
-            "admin_needed": req.get('admin_needed', False)
+            "admin_needed": req.get('admin_needed', False),
+            "is_public": req.get('is_public', False)
         }
 
         if data['method'] == "MULTIPART-POST":
@@ -57,7 +58,15 @@ class Command(BaseCommand):
             data['body'] = json.dumps(data['body'], sort_keys=True, indent=4)
             data['body'] = "\n".join(["    "+line for line in data['body'].split("\n")])[4:]
 
-        template = Template("""curl -X {{method}} \\
+        if data['is_public']:
+            template = Template("""curl -X {{method}} \\
+{% if fields %}-H "Content-Type: multipart/form-data"{% else %}-H "Content-Type: application/json"{% endif %} \\
+{% if fields %}{% for (key,value) in sorted(fields.items()) %}-F {{key}}={{value}} \\
+{% endfor %}{% endif %}{% if body %}-d '{{body}}' \\
+{% endif %}-s {{host}}{{url}}
+""")
+        else:
+            template = Template("""curl -X {{method}} \\
 {% if fields %}-H "Content-Type: multipart/form-data"{% else %}-H "Content-Type: application/json"{% endif %} \\
 {% if admin_needed %}-H "Authorization: Bearer ${ADMIN_AUTH_TOKEN}"{% else %}-H "Authorization: Bearer ${AUTH_TOKEN}"{% endif %} \\
 {% if fields %}{% for (key,value) in sorted(fields.items()) %}-F {{key}}={{value}} \\

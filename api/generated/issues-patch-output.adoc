@@ -1,34 +1,8 @@
 [source,json]
 ----
 {
-    "assigned_to": 12,
+    "assigned_to": 8,
     "assigned_to_extra_info": {
-        "big_photo": null,
-        "full_name_display": "Vanesa Garcia",
-        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-        "id": 12,
-        "is_active": true,
-        "photo": null,
-        "username": "user6"
-    },
-    "blocked_note": "",
-    "blocked_note_html": "",
-    "comment": "",
-    "created_date": "2016-11-18T07:52:36.507Z",
-    "description": "Omnis dolore ducimus tenetur? Soluta tempore possimus nemo odit accusamus dolor iure delectus molestias laborum, cumque earum aspernatur nesciunt quibusdam dolore sunt esse libero, fugit quod deleniti autem veritatis fugiat enim earum.",
-    "description_html": "<p>Omnis dolore ducimus tenetur? Soluta tempore possimus nemo odit accusamus dolor iure delectus molestias laborum, cumque earum aspernatur nesciunt quibusdam dolore sunt esse libero, fugit quod deleniti autem veritatis fugiat enim earum.</p>",
-    "external_reference": null,
-    "finished_date": "2016-11-18T07:52:36.508Z",
-    "generated_user_stories": null,
-    "id": 3,
-    "is_blocked": false,
-    "is_closed": true,
-    "is_voter": false,
-    "is_watcher": false,
-    "milestone": null,
-    "modified_date": "2016-11-18T07:59:24.630Z",
-    "owner": 8,
-    "owner_extra_info": {
         "big_photo": null,
         "full_name_display": "Francisco Gil",
         "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
@@ -37,49 +11,97 @@
         "photo": null,
         "username": "user2"
     },
-    "priority": 2,
+    "blocked_note": "",
+    "blocked_note_html": "",
+    "comment": "",
+    "created_date": "2017-06-28T14:56:40.683Z",
+    "description": "At voluptates impedit libero ullam quisquam itaque odio explicabo repellat a veniam, sit totam rerum quod, eveniet ut repellat similique accusamus tempora tenetur? Magni minima quibusdam placeat sapiente, fugit voluptatibus dignissimos architecto, nesciunt voluptas tenetur magnam praesentium et rerum, quia cupiditate culpa?",
+    "description_html": "<p>At voluptates impedit libero ullam quisquam itaque odio explicabo repellat a veniam, sit totam rerum quod, eveniet ut repellat similique accusamus tempora tenetur? Magni minima quibusdam placeat sapiente, fugit voluptatibus dignissimos architecto, nesciunt voluptas tenetur magnam praesentium et rerum, quia cupiditate culpa?</p>",
+    "external_reference": null,
+    "finished_date": null,
+    "generated_user_stories": null,
+    "id": 3,
+    "is_blocked": false,
+    "is_closed": false,
+    "is_voter": false,
+    "is_watcher": false,
+    "milestone": null,
+    "modified_date": "2017-06-28T15:00:10.552Z",
+    "owner": 7,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Bego\u00f1a Flores",
+        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+        "id": 7,
+        "is_active": true,
+        "photo": null,
+        "username": "user1"
+    },
+    "priority": 1,
     "project": 1,
-    "ref": 44,
-    "severity": 4,
-    "status": 6,
+    "project_extra_info": {
+        "id": 1,
+        "logo_small_url": null,
+        "name": "Project Example 0",
+        "slug": "project-0"
+    },
+    "ref": 95,
+    "severity": 5,
+    "status": 5,
     "status_extra_info": {
-        "color": "#CC0000",
-        "is_closed": true,
-        "name": "Rechazada"
+        "color": "#89BAB4",
+        "is_closed": false,
+        "name": "Needs Info"
     },
     "subject": "Patching subject",
     "tags": [
         [
-            "consequatur",
+            "iure",
             null
         ],
         [
-            "eum",
+            "fuga",
             null
         ],
         [
-            "impedit",
-            "#cde1f0"
+            "quia",
+            "#f53074"
         ],
         [
-            "totam",
-            "#560a5d"
+            "nemo",
+            "#e81498"
         ],
         [
-            "quos",
-            "#50a0d5"
+            "molestiae",
+            null
+        ],
+        [
+            "officia",
+            null
+        ],
+        [
+            "delectus",
+            null
+        ],
+        [
+            "distinctio",
+            null
+        ],
+        [
+            "corporis",
+            "#ed9c91"
+        ],
+        [
+            "iste",
+            null
         ]
     ],
-    "total_voters": 3,
-    "total_watchers": 6,
+    "total_voters": 1,
+    "total_watchers": 2,
     "type": 2,
     "version": 2,
     "watchers": [
-        3,
-        5,
-        7,
-        8,
-        11,
+        9,
         14
     ]
 }

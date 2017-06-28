@@ -1,9 +1,9 @@
 [source,json]
 ----
 {
-    "created_date": "2016-11-18T07:59:27.784Z",
+    "created_date": "2017-06-28T15:00:14.076Z",
     "default_options": {
-        "epic_status": null,
+        "epic_status": "Patch status name",
         "issue_status": "Patch status name",
         "issue_type": "Bug",
         "points": "?",
@@ -56,6 +56,13 @@
             "name": "New status name",
             "order": 10,
             "slug": "new-status-name"
+        },
+        {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "Patch status name",
+            "order": 10,
+            "slug": "patch-status-name"
         }
     ],
     "id": 3,
@@ -147,9 +154,9 @@
             "order": 3
         }
     ],
-    "modified_date": "2016-11-18T07:59:27.810Z",
+    "modified_date": "2017-06-28T15:00:14.103Z",
     "name": "Beta template",
-    "order": 1479455967784,
+    "order": 1498662014076,
     "points": [
         {
             "name": "?",

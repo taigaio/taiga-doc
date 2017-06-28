@@ -1,19 +1,19 @@
 [source,json]
 ----
 {
-    "assigned_to": 12,
+    "assigned_to": 13,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Vanesa Garcia",
-        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-        "id": 12,
+        "full_name_display": "Mohamed Ortega",
+        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+        "id": 13,
         "is_active": true,
         "photo": null,
-        "username": "user6"
+        "username": "user7"
     },
-    "created_date": "2016-11-18T07:54:56.390Z",
+    "created_date": "2017-06-28T14:59:04.543Z",
     "description": null,
-    "id": 26,
+    "id": 30,
     "is_private": null,
     "is_voter": true,
     "is_watcher": false,
@@ -24,23 +24,27 @@
     "project_is_private": false,
     "project_name": "Project Example 6",
     "project_slug": "project-6",
-    "ref": 61,
+    "ref": 101,
     "slug": null,
     "status": "New",
     "status_color": "#999999",
-    "subject": "Migrate to Python 3 and milk a beautiful cow",
+    "subject": "Lighttpd support",
     "tags_colors": [
         {
-            "color": "#13f068",
-            "name": "repellendus"
+            "color": "#7fea8e",
+            "name": "dolores"
         },
         {
-            "color": null,
-            "name": "reiciendis"
+            "color": "#6188db",
+            "name": "deleniti"
+        },
+        {
+            "color": "#1f8960",
+            "name": "distinctio"
         }
     ],
     "total_voters": 8,
-    "total_watchers": 0,
+    "total_watchers": 2,
     "type": "epic"
 }
 ----

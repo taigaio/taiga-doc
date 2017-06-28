@@ -4,7 +4,7 @@ curl -X POST \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
 -d '{
-        "token": "6:1c7e4Y:dCsDFlmNGeYnAKwHVdehYq8w-ZI"
+        "token": "6:1dQERT:dTmTxvgrw2-MpFE13-OWtOrE6KQ"
     }' \
 -s http://localhost:8000/api/v1/projects/1/transfer_validate_token
 ----

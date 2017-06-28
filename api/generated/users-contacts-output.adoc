@@ -14,7 +14,7 @@
     "roles": [
         "Front",
         "Product Owner",
-        "UX"
+        "Stakeholder"
     ],
     "theme": "",
     "timezone": "",

@@ -4,14 +4,14 @@
     {
         "color": "#666666",
         "id": 36,
-        "name": "Deseada",
+        "name": "Wishlist",
         "order": 1,
         "project": 8
     },
     {
         "color": "#669933",
         "id": 37,
-        "name": "Menor",
+        "name": "Minor",
         "order": 2,
         "project": 8
     },
@@ -25,14 +25,14 @@
     {
         "color": "#FFA500",
         "id": 39,
-        "name": "Importante",
+        "name": "Important",
         "order": 4,
         "project": 8
     },
     {
         "color": "#CC0000",
         "id": 40,
-        "name": "Cr\u00edtica",
+        "name": "Critical",
         "order": 5,
         "project": 8
     },
@@ -46,21 +46,21 @@
     {
         "color": "#FFA500",
         "id": 4,
-        "name": "Importante",
+        "name": "Important",
         "order": 4,
         "project": 1
     },
     {
         "color": "#CC0000",
         "id": 5,
-        "name": "Cr\u00edtica",
+        "name": "Critical",
         "order": 5,
         "project": 1
     },
     {
         "color": "#669933",
         "id": 2,
-        "name": "Menor",
+        "name": "Minor",
         "order": 5,
         "project": 1
     },
@@ -88,14 +88,14 @@
     {
         "color": "#666666",
         "id": 6,
-        "name": "Deseada",
+        "name": "Wishlist",
         "order": 1,
         "project": 2
     },
     {
         "color": "#669933",
         "id": 7,
-        "name": "Menor",
+        "name": "Minor",
         "order": 2,
         "project": 2
     },
@@ -109,28 +109,28 @@
     {
         "color": "#FFA500",
         "id": 9,
-        "name": "Importante",
+        "name": "Important",
         "order": 4,
         "project": 2
     },
     {
         "color": "#CC0000",
         "id": 10,
-        "name": "Cr\u00edtica",
+        "name": "Critical",
         "order": 5,
         "project": 2
     },
     {
         "color": "#666666",
         "id": 11,
-        "name": "Deseada",
+        "name": "Wishlist",
         "order": 1,
         "project": 3
     },
     {
         "color": "#669933",
         "id": 12,
-        "name": "Menor",
+        "name": "Minor",
         "order": 2,
         "project": 3
     },
@@ -144,28 +144,28 @@
     {
         "color": "#FFA500",
         "id": 14,
-        "name": "Importante",
+        "name": "Important",
         "order": 4,
         "project": 3
     },
     {
         "color": "#CC0000",
         "id": 15,
-        "name": "Cr\u00edtica",
+        "name": "Critical",
         "order": 5,
         "project": 3
     },
     {
         "color": "#666666",
         "id": 16,
-        "name": "Deseada",
+        "name": "Wishlist",
         "order": 1,
         "project": 4
     },
     {
         "color": "#669933",
         "id": 17,
-        "name": "Menor",
+        "name": "Minor",
         "order": 2,
         "project": 4
     },
@@ -179,28 +179,28 @@
     {
         "color": "#FFA500",
         "id": 19,
-        "name": "Importante",
+        "name": "Important",
         "order": 4,
         "project": 4
     },
     {
         "color": "#CC0000",
         "id": 20,
-        "name": "Cr\u00edtica",
+        "name": "Critical",
         "order": 5,
         "project": 4
     },
     {
         "color": "#666666",
         "id": 21,
-        "name": "Deseada",
+        "name": "Wishlist",
         "order": 1,
         "project": 5
     },
     {
         "color": "#669933",
         "id": 22,
-        "name": "Menor",
+        "name": "Minor",
         "order": 2,
         "project": 5
     },
