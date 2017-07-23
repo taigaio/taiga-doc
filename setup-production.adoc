@@ -21,15 +21,15 @@ This type of setup should suffice for small/medium production environments.
 
 Overview
 --------
-This tutorial assumes that you are using a clean, recently updated, **Ubuntu 16.04** image.
+This tutorial assumes that you are using a clean, recently updated **Ubuntu 16.04** image.
 
 Due to the nature of the frontend application, you must know that this service will be used
-through the domain/public-ip. This is because the frontend application will run in your browser
-and it should communicate with the backend/api.
+through a domain/public-ip. It's because the frontend application will run in your browser
+and it should communicate with the backend/API.
 
 **Taiga installation must be done with a "normal" user, never with root.**
 
-We assume the following:
+During tutorial, We assume the following details:
 
 - **ip:** `80.88.23.45`
 - **hostname:** `example.com` (which points to 80.88.23.45)
@@ -54,7 +54,7 @@ sudo apt-get install -y rabbitmq-server redis-server
 sudo apt-get install -y circus
 ----
 
-.taiga-back uses postgresql (>= 9.4) as database:
+.Component taiga-back uses postgresql (>= 9.4) as database:
 [source,bash]
 ----
 sudo apt-get install -y postgresql-9.6 postgresql-contrib-9.6
@@ -72,9 +72,12 @@ sudo apt-get install -y libxml2-dev libxslt-dev
 **virtualenvwrapper** helps keeping the system clean of third party libraries, installed
 with the language package manager by installing these packages in an isolated virtual environment.
 
+**This step is mandatory before continuing the installation:**
+
 Restart the shell or run `bash` again, to reload the bash environment with virtualenvwrapper
 variables and functions. 
-**This step is mandatory before continuing the installation**
+
+
 
 .Create the taiga user and give it root permissions
 [source,bash]
@@ -98,7 +101,7 @@ sudo -u postgres createuser taiga
 sudo -u postgres createdb taiga -O taiga
 ----
 
-.Create a taiga user and virtualhost for rabbitmq
+.Create a taiga user and virtualhost for rabbitmq (taiga-events)
 [source,bash]
 ----
 sudo rabbitmqctl add_user taiga PASSWORD
@@ -106,7 +109,7 @@ sudo rabbitmqctl add_vhost taiga
 sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
 ----
 
-.Create the logs folder 
+.Create the logs folder (mandatory)
 [source,bash]
 ----
 mkdir -p ~/logs
@@ -147,10 +150,10 @@ python manage.py compilemessages
 python manage.py collectstatic --noinput
 ----
 
-This creates a the administrator. The login credentials are **admin** with password **123123**.
+This creates the administrator account. The login credentials are **admin** with password **123123**.
 
-**OPTIONAL**
-If you would like to have some example data loaded into Taiga, execute the following command
+**OPTIONAL:**
+If you would like to have some example data loaded into Taiga, execute the following command, 
 which populates the database with sample projects and random data (useful for demos):
 
 [source,bash]
@@ -162,6 +165,7 @@ To finish the setup of **taiga-back**, create the intial configuration file
 for proper static/media files resolution and optionally, email sending support:
 
 .Copy-paste this on `~/taiga-back/settings/local.py` and replace with your own details:
+
 [source,python]
 ----
 from .common import *
@@ -202,7 +206,7 @@ EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD_FOR_EVENTS@localhos
 Verification
 ~~~~~~~~~~~~
 
-To make sure everything is working, you can run the backend in development mode by executing the following command:
+To make sure everything works, you can run the backend in development mode for a test by executing the following command:
 
 [source,bash]
 ----
@@ -215,7 +219,7 @@ Then you must be able to see a json representing the list of endpoints at the ur
 
 [NOTE]
 At this stage the backend has been installed successfully, but to run the python backend in production,
-an application server must be confogure first. The details for this are explained later in Section 6.1 in this doc.
+an application server must be configured first. The details for this are explained later in this doc.
 
 Frontend installation
 ---------------------
