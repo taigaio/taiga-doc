@@ -7,7 +7,7 @@
 Introduction
 ------------
 
-This documentation explains how to deploy a Taiga service (each module is part of the Taiga platform).
+This documentation explains how to deploy the full Taiga service (each module is part of the Taiga platform).
 
 The Taiga platform consists of three main components
 and each one has its own dependencies, at compile time and runtime:
@@ -22,8 +22,7 @@ In this tutorial we will setup everything on one single machine.
 This type of setup should suffice for small/medium production environments.
 
 Overview
----------------
-
+------------
 This tutorial assumes that you are using a clean, recently updated, **Ubuntu 16.04** image.
 
 Due to the nature of frontend application, you should know that this service will be used
@@ -41,7 +40,7 @@ We assume the following:
 
 
 Prerequisites
---------------------
+------------
 
 The Backend is written mainly in python (3.5) but for some third party libraries we need to install a
 C compiller and development headers.
@@ -86,7 +85,8 @@ Do **not** change to root user.
 The installation must be done with the `taiga` user.
 
 Backend configuration
---------------------
+------------
+
 This section helps configuring the backend (api) Taiga service and its dependencies.
 
 Configure the database
