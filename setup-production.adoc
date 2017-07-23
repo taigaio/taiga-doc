@@ -6,7 +6,6 @@
 
 Introduction
 ------------
-
 This documentation explains how to deploy the full Taiga service (each module is part of the Taiga platform).
 
 The Taiga platform consists of three main components
@@ -38,40 +37,44 @@ We assume the following:
 - **username:** `taiga`
 - **system ram** `>=1GB` (needed for compilation of lxml)
 
-
 Prerequisites
 -------------
 
-The Backend is written mainly in python (3.5) but for some third party libraries we need to install a
+The backend is written mainly in python (3.5) but for some third party libraries we need to install a
 C compiller and development headers.
-Issue the following commands in order to install the required dependencies for Taiga(front-end,backend,events):
+Issue the following commands in order to install the required dependencies for Taiga (front-end,backend,events):
 
+.Essential packages:
 [source,bash]
 ----
 sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
 sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
 sudo apt-get install -y automake libtool libffi-dev curl git tmux gettext
+----
 
-**taiga-back** uses postgresql (>= 9.4) as database:
+.taiga-back uses postgresql (>= 9.4) as database:
+[source,bash]
+----
 sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
 sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
+----
 
-To run **taiga-back**, python (3.5) must be installed along with a few third-party
-libraries.
-First install python and virtualenvwrapper:
+.Python (3.5) and virtualenvwrapper must be installed along with a few third-party libraries:
 [source,bash]
 ----
 sudo apt-get install -y python3 python3-pip python-dev python3-dev python-pip virtualenvwrapper
 sudo apt-get install -y libxml2-dev libxslt-dev
+----
 
 [NOTE]
-**virtualenvwrapper** helps maintain the system clean of third party libraries installed
-with language package manager, installing them in isolated virtual environment.
+**virtualenvwrapper** helps keeping the system clean of third party libraries, installed
+with the language package manager by installing these packages in an isolated virtual environment.
 
 Restart the shell or run `bash` again, to reload the bash environment with virtualenvwrapper
-variables and functions. **This is a mandatory step before continuing the installation**
+variables and functions. 
+**This is a mandatory step before continuing the installation**
 
-Create the taiga user give it root permissions
+.Create the taiga user and give it root permissions
 [source,bash]
 ----
 sudo adduser taiga
@@ -86,13 +89,12 @@ The installation must be done with the `taiga` user.
 
 Backend configuration
 ---------------------
-
 This section helps configuring the backend (api) Taiga service and its dependencies.
 
 Configure the database
 ~~~~~~~~~~~~~~~~~~~~~~
-Setup the initial user and database in postgresql:
 
+.Setup the initial user and database in postgresql:
 [source,bash]
 ----
 sudo -u postgres createuser taiga
@@ -101,7 +103,6 @@ sudo -u postgres createdb taiga -O taiga
 
 Download taiga-back
 ~~~~~~~~~~~~~~~~~~~
-
 Download the code from github and install its dependencies:
 
 .Download the code
