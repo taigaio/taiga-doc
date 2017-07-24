@@ -527,10 +527,17 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
 ----
 
-You can verify the nginx configuration with the following command
-to track any error preventing the service to start with `sudo nginx -t`.
+.Issue the following command to verify the nginx configuration and track any error preventing the service:
+[source,bash]
+----
+sudo nginx -t
+----
 
-Finally, restart nginx with `sudo service nginx restart`.
+Finally, restart nginx:
+[source,bash]
+----
+sudo service nginx restart
+----
 
 **Now you should have the service up and running on `http://example.com/`**
 
@@ -544,8 +551,8 @@ Async tasks (Optional)
 ~~~~~~~~~~~~~~~~~~~~~~
 
 The default behavior in Taiga is to do all tasks in a synchronous way, but some of them
-can be completely asynchronous (for example webhooks or import/export). To do
-this, you have to configure and install the celery service requirements.
+can be completely asynchronous (for example webhooks or import/export).
+To do this, you have to configure and install the celery service requirements.
 
 There is just an exception related to exported files, if your instance works in asynchronous mode the exported project files will be
 automatically removed from the storage after 24 hours, if not those media files won't be automatically removed (taiga-back doesn't really know anything about
@@ -566,7 +573,7 @@ or remove the `#` if you followed this tutorial entirely:
 CELERY_ENABLED = True
 ----
 
-You can configure other broker or results backend. If you need more info about it you can check the celery documentation web page:
+You can configure other broker or results backend. If you need more info about it, check the celery documentation web page:
 http://docs.celeryproject.org/en/latest/index.html
 
 Once you have configured celery on Taiga, you have to add celery to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
@@ -612,8 +619,8 @@ circusctl start taiga-celery
 ----
 
 
-Taiga Hardening
-~~~~~~~~~~~~~~~
+Taiga Hardening - HTTPS
+~~~~~~~~~~~~~~~~~~~~~~~
 Follow the instructions in this section to server Taiga under HTTPS.
 
 Place your SSL certificates in `/etc/nginx/ssl`. It is recommended to replace
@@ -702,8 +709,8 @@ server {
 }
 ----
 
-Before activating the HTTPS site, the configuration for the front-end and back-end have to be updated;
-change the scheme from `http` to `https`.
+Before activating the HTTPS site, the configuration for the frontend and the backend must be updated.
+Change the scheme from `http` to `https` thorough the configurations.
 
 .Update ~/taiga-back/settings/local.py
 [source,python]
