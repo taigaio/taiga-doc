@@ -15,8 +15,8 @@ and each one has its own dependencies, at compile time and runtime:
 - **taiga-front-dist** (frontend)
 - **taiga-events** (websockets gateway) (optional)
 
-Each component can be run on one unique machine or all of them can be installed to a different machine.
-In this tutorial we will setup everything on one single machine.
+Each component can be run on one unique machine or all of them can be installed to a different machine aswell.
+In this tutorial we will setup everything on one single machine, installing all three Taiga components.
 This type of setup should suffice for small/medium production environments.
 
 Overview
@@ -27,9 +27,9 @@ Due to the nature of the frontend application, you must know that this service w
 through a domain/public-ip. It's because the frontend application will run in your browser
 and it should communicate with the backend/API.
 
-**Taiga installation must be done with a "normal" user, never with root.**
+**The Taiga installation must be done with a "normal" user, never with root.**
 
-During tutorial, We assume the following details:
+During the tutorial, We assume the following details:
 
 - **ip:** `80.88.23.45`
 - **hostname:** `example.com` (which points to 80.88.23.45)
@@ -39,14 +39,24 @@ During tutorial, We assume the following details:
 
 System Architecture Description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-This is a short system architecture description to help you understand the way Taiga is built and runs before you go further in the installation.
+This is a short system architecture description to help you understand the way Taiga is built and works.
+Before you go any further in the installation, make sure you read this description to get a high-level overview.
+
 Taiga consists of 2 core (mandatory) modules:
+
 - **taiga-back**
 - **taiga-front**
 
-**Taiga-back** is written in python and serves API endpoints for the frontend.
-To run Taiga, the backend must be executed and monitored by **circus** and **gunicorn**.
-Technically the backend reads the database(postgresql) and allows the frontend to read its content.
+**Taiga-back** is written in django, python3 and serves API endpoints for the frontend.
+
+**Taiga-front** is written mostly in angularjs and coffeescript.
+
+The python backend is exposed by gunicorn, which is a python WSGI HTTP server. The process manager running gunicorn and taiga-back together is Circus. 
+Technically the backend allows the database(postgresql) and the frontend to communicate with each-other securely, meeting many criteria.
+The communication is done using APIs.
+
+The backend is expo
+
 
 
 Prerequisites
