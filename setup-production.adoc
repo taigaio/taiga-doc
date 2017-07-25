@@ -52,7 +52,7 @@ Taiga consists of 2 core (mandatory) modules:
 
 **Taiga-front** is written mostly in angularjs and coffeescript and depends on the backend.
 
-The python backend is exposed by gunicorn(port 9001), which is a python WSGI HTTP server. The process manager is Circus, which runs gunicorn and taiga-back together.
+The python backend is exposed by gunicorn (port 9001), which is a Python WSGI HTTP server. The process manager is Circus, which runs gunicorn and taiga-back together.
 Technically the backend communicates with the database(postgresql) and through the frontend, it allows the user to use the features of Taiga.
 The communication between the front- and backend is done using APIs.
 
@@ -425,7 +425,7 @@ PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.5/site-packages
 ====
 
 Circus stats can generate a high cpu usage without any load you can set statsd
-in /etc/circus/circusd.conf to false if you don't need them.
+in `/etc/circus/circusd.conf` to false if you don't need them.
 
 Taiga stores logs on the user home, making them available and immediately accessible when
 you enter a machine. To make everything work, make sure you have the logs directory
@@ -562,8 +562,7 @@ Install `rabbitmq-server` and `redis-server`:
 sudo apt-get install -y rabbitmq-server redis-server
 ----
 
-To run celery with Taiga, you have to include the following line in your local.py
-or remove the `#` if you followed this tutorial entirely:
+To run celery with Taiga, include the following code line in the `local.py` file:
 
 [source,python]
 ----
@@ -605,8 +604,7 @@ HOME=/home/taiga
 PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.5/site-packages
 ----
 
-Then you have to reload your circus configuration, restart taiga and start
-taiga-celery:
+Reload the circus configuration, restart taiga, then start taiga-celery:
 
 [source,bash]
 ----
@@ -620,18 +618,18 @@ Taiga Hardening - HTTPS
 ~~~~~~~~~~~~~~~~~~~~~~~
 Follow the instructions in this section to server Taiga under HTTPS.
 
-Place your SSL certificates in `/etc/nginx/ssl`. It is recommended to replace
-the original configuration for port 80 so that users are redirected to the HTTPS
+Place the SSL certificates in `/etc/nginx/ssl`. It is recommended to replace
+the original configuration for `port 80` so that users are redirected to the HTTPS
 version automatically.
 
-Second we need to generate a stronger GHE parameter
+Second we need to generate a stronger GHE parameter:
 [source,nginx]
 ----
 cd /etc/ssl
 sudo openssl dhparam -out dhparam.pem 4096
 ----
 
-.New configuration in /etc/nginx/sites-available/taiga
+.Update the configuration in /etc/nginx/conf.d/taiga.conf
 (Taiga-events not included)
 [source,nginx]
 ----
@@ -707,7 +705,7 @@ server {
 ----
 
 Before activating the HTTPS site, the configuration for the frontend and the backend must be updated.
-Change the scheme from `http` to `https` thorough the configurations.
+Change the scheme from `http` to `https` throughout the configurations.
 
 .Update ~/taiga-back/settings/local.py
 [source,python]
@@ -742,11 +740,6 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 #GITHUB_API_CLIENT_SECRET = "yourgithubclientsecret"
 ----
 
-.Restart circus after updating the configuration
-[source,bash]
-----
-sudo service circusd restart
-----
 
 .Update ~/taiga-front-dist/dist/conf.json
 [source,json]
@@ -763,7 +756,13 @@ sudo service circusd restart
 }
 ----
 
-.Reload the nginx configuration
+.Restart circus after updating the configuration:
+[source,bash]
+----
+sudo service circusd restart
+----
+
+.Reload the nginx configuration:
 [source,bash]
 ----
 sudo service nginx reload
