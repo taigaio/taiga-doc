@@ -9,11 +9,13 @@ Introduction
 This documentation explains how to deploy the full Taiga service (each module is part of the Taiga platform).
 
 The Taiga platform consists of three main components
-and each one has its own dependencies, at compile time and runtime:
+and each one has its own dependencies both at compile time and runtime:
 
 - **taiga-back** (backend/api)
 - **taiga-front-dist** (frontend)
 - **taiga-events** (websockets gateway) (optional)
+
+Each component can be either run on one unique machine 
 
 Each component can be run on one unique machine or all of them can be installed to a different machine aswell.
 In this tutorial we will setup everything on one single machine, installing all three Taiga components.
@@ -23,11 +25,10 @@ Overview
 --------
 This tutorial assumes that you are using a clean, recently updated **Ubuntu 16.04** image.
 
-Due to the nature of the frontend application, you must know that this service will be used
-through a domain/public-ip. It's because the frontend application will run in your browser
-and it should communicate with the backend/API.
+Due to the nature of the frontend, Taiga is used through a domain/public-ip, because the frontend application runs in your browser.
+The frontend must be able to communicate with the backend/API, therefore both the frontend and the backend must be accessible through a domain/public-ip too.
 
-**The Taiga installation must be done with a "normal" user, never with root.**
+**The installation of Taiga must be done with a "regular" user, never with root.**
 
 During the tutorial, We assume the following details:
 
@@ -49,14 +50,14 @@ Taiga consists of 2 core (mandatory) modules:
 
 **Taiga-back** is written in django, python3 and serves API endpoints for the frontend.
 
-**Taiga-front** is written mostly in angularjs and coffeescript.
+**Taiga-front** is written mostly in angularjs and coffeescript and depends on the backend.
 
-The python backend is exposed by gunicorn, which is a python WSGI HTTP server. The process manager running gunicorn and taiga-back together is Circus. 
-Technically the backend allows the database(postgresql) and the frontend to communicate with each-other securely, meeting many criteria.
-The communication is done using APIs.
+The python backend is exposed by gunicorn(port 9001), which is a python WSGI HTTP server. The process manager is Circus, which runs gunicorn and taiga-back together.
+Technically the backend communicates with the database(postgresql) and through the frontend, it allows the user to use the features of Taiga.
+The communication between the front- and backend is done using APIs.
 
-The backend is expo
-
+The backend is then publicly exposed by nginx which acts as a reverse-proxy for this case.
+The frontend is located in the `dist` folder and is exposed publcy by nginx which acts as a static webserver for this case.
 
 
 Prerequisites
@@ -68,6 +69,7 @@ In this section we will install all dependencies for all modules, including the 
 .Essential packages:
 [source,bash]
 ----
+sudo apt-get update
 sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
 sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
 sudo apt-get install -y automake libtool libffi-dev curl git tmux gettext
@@ -79,8 +81,8 @@ sudo apt-get install -y circus
 .Component taiga-back uses postgresql (>= 9.4) as database:
 [source,bash]
 ----
-sudo apt-get install -y postgresql-9.6 postgresql-contrib-9.6
-sudo apt-get install -y postgresql-doc-9.6 postgresql-server-dev-9.6
+sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
+sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
 ----
 
 .Python (3.5) and virtualenvwrapper must be installed along with a few third-party libraries:
@@ -94,11 +96,10 @@ sudo apt-get install -y libxml2-dev libxslt-dev
 **virtualenvwrapper** helps keeping the system clean of third party libraries, installed
 with the language package manager by installing these packages in an isolated virtual environment.
 
-**This step is mandatory before continuing the installation:**
-
-Restart the shell or run `bash` again, to reload the bash environment with virtualenvwrapper
+Restart the shell or run `bash` to reload the bash environment with the new virtualenvwrapper
 variables and functions. 
 
+**This step is mandatory before continuing the installation!**
 
 
 .Create the taiga user and give it root permissions
@@ -126,7 +127,7 @@ sudo -u postgres createdb taiga -O taiga
 .Create a taiga user and virtualhost for rabbitmq (taiga-events)
 [source,bash]
 ----
-sudo rabbitmqctl add_user taiga PASSWORD
+sudo rabbitmqctl add_user taiga PASSWORD_FoR_RabbitMQ
 sudo rabbitmqctl add_vhost taiga
 sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
 ----
@@ -184,9 +185,9 @@ python manage.py sample_data
 ----
 
 To finish the setup of **taiga-back**, create the intial configuration file
-for proper static/media files resolution and optionally, email sending support:
+for proper static/media file resolution, optionally with email sending support:
 
-.Copy-paste this on `~/taiga-back/settings/local.py` and replace with your own details:
+.Copy-paste the following config into `~/taiga-back/settings/local.py` and update it with your own details:
 
 [source,python]
 ----
@@ -227,8 +228,8 @@ EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD_FOR_EVENTS@localhos
 
 Verification
 ~~~~~~~~~~~~
-
-To make sure everything works, you can run the backend in development mode for a test by executing the following command:
+(Optional)
+To make sure that everything works, issue the following command to run the backend in development mode for a test:
 
 [source,bash]
 ----
@@ -278,10 +279,13 @@ cp ~/taiga-front-dist/dist/conf.example.json ~/taiga-front-dist/dist/conf.json
 }
 ----
 
+[NOTE]
+Be careful using copy-paste from browser to avoid `http://` duplication.
+
 Having **taiga-front-dist** downloaded and configured is insufficient. The next step is to expose the code
 (in **dist** directory) under a static file web server.
-In this guide We use **nginx**. 
-The configuration of nginx is explained later in Section 6.
+In this tutorial We use **nginx** as a static file web server and reverse-proxy. 
+The configuration of nginx is explained later.
 
 Events installation
 -------------------
@@ -342,7 +346,7 @@ Add taiga-events to circus configuration.
 ----
 [watcher:taiga-events]
 working_dir = /home/taiga/taiga-events
-cmd = /usr/local/bin/coffee
+cmd = /usr/bin/coffee
 args = index.coffee
 uid = taiga
 numprocesses = 1
@@ -361,7 +365,8 @@ stderr_stream.backup_count = 12
 .Reload the circusd configurations:
 [source,bash]
 ----
-circusctl reloadconfig
+sudo service circusd restart
+sudo service circusd status
 ----
 
 [[start-and-expose]]
@@ -381,12 +386,12 @@ web server. For this purpose We use **nginx**.
 Circus and gunicorn
 ~~~~~~~~~~~~~~~~~~~
 
-Circus is a process manager written by **Mozilla** and you will use it to execute **gunicorn**.
-Circus not only serves to execute processes, it also has utils for monitoring them, collecting logs,
-restarting processes if something goes wrong, and starting processes on system boot.
+Circus is a process manager written by **Mozilla** and Taiga uses it to execute **gunicorn**.
+Circus is not only for executing processes, but it also has utils for monitoring them, collecting logs, and 
+restarting processes if something goes wrong, and also for starting processes on system boot.
 
 
-.Initial Taiga configuration for circus on /etc/circus/conf.d/taiga.ini
+.Initial Taiga configuration for circus in /etc/circus/conf.d/taiga.ini
 [source,ini]
 ----
 [watcher:taiga]
@@ -448,8 +453,13 @@ Nginx
 
 Nginx is used as a static file web server to serve **taiga-front-dist** and send proxy requests to **taiga-back**.
 
+.Remove the default nginx config file to avoid collision with Taiga:
+[source,bash]
+----
+sudo rm /etc/nginx/sites-enabled/default
+----
 
-.Add specific configuration for **taiga-front-dist** and **taiga-back** on /etc/nginx/sites-available/taiga
+.Add specific configuration for **taiga-front-dist** and **taiga-back** in /etc/nginx/conf.d/taiga.conf
 [source,nginx]
 ----
 server {
@@ -512,19 +522,6 @@ server {
 	proxy_read_timeout 7d;
 	}
 }
-----
-
-.Disable the default nginx site (virtualhost)
-[source,nginx]
-----
-sudo rm /etc/nginx/sites-enabled/default
-----
-
-
-.Enable the recently created Taiga site (virtualhost)
-[source,nginx]
-----
-sudo ln -s /etc/nginx/sites-available/taiga /etc/nginx/sites-enabled/taiga
 ----
 
 .Issue the following command to verify the nginx configuration and track any error preventing the service:
