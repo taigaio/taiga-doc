@@ -575,7 +575,7 @@ http://docs.celeryproject.org/en/latest/index.html
 
 Once you have configured celery on Taiga, you have to add celery to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
 
-.Taiga celery configuration block for circus on /etc/circus/conf.d/taiga-celery.ini
+.Taiga celery configuration block for circus on `/etc/circus/conf.d/taiga-celery.ini`
 [source,ini]
 ----
 [watcher:taiga-celery]
@@ -630,7 +630,7 @@ cd /etc/ssl
 sudo openssl dhparam -out dhparam.pem 4096
 ----
 
-.Update the configuration in /etc/nginx/conf.d/taiga.conf
+.Update the configuration in `/etc/nginx/conf.d/taiga.conf`
 (Taiga-events not included)
 [source,nginx]
 ----
@@ -708,7 +708,7 @@ server {
 Before activating the HTTPS site, the configuration for the frontend and the backend must be updated.
 Change the scheme from `http` to `https` throughout the configurations.
 
-.Update ~/taiga-back/settings/local.py
+.Update `~/taiga-back/settings/local.py`
 [source,python]
 ----
 from .common import *
@@ -742,7 +742,7 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 ----
 
 
-.Update ~/taiga-front-dist/dist/conf.json
+.Update `~/taiga-front-dist/dist/conf.json`
 [source,json]
 ----
 {
@@ -774,14 +774,14 @@ Troubleshooting
 
 .If you face any issue during or after installing Taiga, please collect the content of the following files:
 
-/etc/nginx/conf.d/taiga.conf
-/etc/circus/conf.d/taiga.ini
-/etc/circus/conf.d/taiga-celery.ini
-/etc/circus/conf.d/taiga-events.ini
-/home/taiga/taiga-back/settings/local.py
-/home/taiga/taiga-front-dist/dist/conf.json
-/home/taiga/taiga-events/config.json
-All files in /home/taiga/logs
+- `/etc/nginx/conf.d/taiga.conf`
+- `/etc/circus/conf.d/taiga.ini`
+- `/etc/circus/conf.d/taiga-celery.ini`
+- `/etc/circus/conf.d/taiga-events.ini`
+- `/home/taiga/taiga-back/settings/local.py`
+- `/home/taiga/taiga-front-dist/dist/conf.json`
+- `/home/taiga/taiga-events/config.json`
+- All files in `/home/taiga/logs`
 
 .Issue the following commands to check the status of services used by Taiga:
 [source,bash]
