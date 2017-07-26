@@ -6,7 +6,7 @@
 
 Introduction
 ------------
-This documentation explains how to deploy the full Taiga service (each module is part of the Taiga platform).
+This documentation explains how to deploy a full Taiga service (each module is part of the Taiga platform).
 
 The Taiga platform consists of three main components
 and each one has its own dependencies both at compile time and runtime:
@@ -48,9 +48,9 @@ Taiga consists of 2 core (mandatory) modules:
 - **taiga-back**
 - **taiga-front**
 
-**Taiga-back** is written in django, python3 and serves API endpoints for the frontend.
+**taiga-back** is written in django, python3 and serves API endpoints for the frontend.
 
-**Taiga-front** is written mostly in angularjs and coffeescript and depends on the backend.
+**taiga-front** is written mostly in angularjs and coffeescript and depends on the backend.
 
 The python backend is exposed by gunicorn (port 9001), which is a Python WSGI HTTP server. The process manager is Circus, which runs gunicorn and taiga-back together.
 Technically the backend communicates with the database(postgresql) and through the frontend, it allows the user to use the features of Taiga.
@@ -78,7 +78,7 @@ sudo apt-get install -y rabbitmq-server redis-server
 sudo apt-get install -y circus
 ----
 
-.Component taiga-back uses postgresql (>= 9.4) as database:
+.The component `taiga-back` uses postgresql (>= 9.4) as database:
 [source,bash]
 ----
 sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
@@ -102,7 +102,7 @@ variables and functions.
 **This step is mandatory before continuing the installation!**
 
 
-.Create the taiga user and give it root permissions
+.Create a user named `taiga`, and give it root permissions
 [source,bash]
 ----
 sudo adduser taiga
@@ -124,10 +124,10 @@ sudo -u postgres createuser taiga
 sudo -u postgres createdb taiga -O taiga
 ----
 
-.Create a taiga user and virtualhost for rabbitmq (taiga-events)
+.Create a user named `taiga`, and a virtualhost for RabbitMQ (taiga-events)
 [source,bash]
 ----
-sudo rabbitmqctl add_user taiga PASSWORD_FoR_RabbitMQ
+sudo rabbitmqctl add_user taiga PASSWORD_FOR_EVENTS
 sudo rabbitmqctl add_vhost taiga
 sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
 ----
@@ -287,6 +287,7 @@ Having **taiga-front-dist** downloaded and configured is insufficient. The next 
 In this tutorial We use **nginx** as a static file web server and reverse-proxy. 
 The configuration of nginx is explained later.
 
+[[taiga-events]]
 Events installation
 -------------------
 
@@ -341,7 +342,7 @@ The 'secret' in `config.json` must be the same as the "SECRET_KEY" in `~/taiga-b
 
 Add taiga-events to circus configuration. 
 
-.Copy-paste the code below into /etc/circus/conf.d/taiga-events.ini
+.Copy-paste the code below into `/etc/circus/conf.d/taiga-events.ini`
 [source,ini]
 ----
 [watcher:taiga-events]
@@ -378,8 +379,8 @@ Before moving further, make sure you installed  **taiga-back** and **taiga-front
 **taiga-back** should run under an application server, which in turn, should be executed and monitored
 by a process manager. For this task we will use **gunicorn** and **circus** respectively.
 
-**taiga-front-dist** and **taiga-back** should be exposed to the outside, using a good proxy/static-file
-web server. For this purpose We use **nginx**.
+Both **taiga-front-dist** and **taiga-back** must be exposed to the outside using a proxy/static-file
+web server. For this purpose, Taiga uses **nginx**.
 
 
 [[circus-and-gunicorn]]
@@ -459,7 +460,7 @@ Nginx is used as a static file web server to serve **taiga-front-dist** and send
 sudo rm /etc/nginx/sites-enabled/default
 ----
 
-.Add specific configuration for **taiga-front-dist** and **taiga-back** in /etc/nginx/conf.d/taiga.conf
+.To create a new nginx virtualhost for Taiga, create and edit the `/etc/nginx/conf.d/taiga.conf` file, as follows:
 [source,nginx]
 ----
 server {
@@ -524,7 +525,7 @@ server {
 }
 ----
 
-.Issue the following command to verify the nginx configuration and track any error preventing the service:
+.Issue the following command to verify the nginx configuration and to track any error in the service:
 [source,bash]
 ----
 sudo nginx -t
@@ -536,7 +537,7 @@ Finally, restart nginx:
 sudo service nginx restart
 ----
 
-**Now you should have the service up and running on `http://example.com/`**
+**Now you should have the service up and running on: `http://example.com/`**
 
 
 Optional Components and Settings
@@ -768,3 +769,26 @@ sudo service circusd restart
 sudo service nginx reload
 ----
 
+Troubleshooting
+---------------
+
+.If you face any issue during or after installing Taiga, please collect the content of the following files:
+
+/etc/nginx/conf.d/taiga.conf
+/etc/circus/conf.d/taiga.ini
+/etc/circus/conf.d/taiga-celery.ini
+/etc/circus/conf.d/taiga-events.ini
+/home/taiga/taiga-back/settings/local.py
+/home/taiga/taiga-front-dist/dist/conf.json
+/home/taiga/taiga-events/config.json
+All files in /home/taiga/logs
+
+.Issue the following commands to check the status of services used by Taiga:
+[source,bash]
+----
+sudo service nginx status
+sudo service circusd status
+sudo service rabbitmq-server status
+sudo service postgresql status
+----
+Check If you see any error in the service statuses and make sure all service status is Active.
