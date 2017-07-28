@@ -2,10 +2,10 @@
 ----
 {
     "roles": [
-        "Dise\u00f1ador",
+        "Back",
         "Product Owner",
         "UX",
-        "Front",
+        "Design",
         "Stakeholder"
     ],
     "total_num_closed_userstories": 0,

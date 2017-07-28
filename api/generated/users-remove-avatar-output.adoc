@@ -17,8 +17,8 @@
     "max_public_projects": null,
     "photo": null,
     "roles": [
+        "Back",
         "Design",
-        "Front",
         "Product Owner",
         "Stakeholder",
         "UX"

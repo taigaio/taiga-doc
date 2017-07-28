@@ -6,5 +6,5 @@ curl -X POST \
 -d '{
         "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     }' \
--s http://localhost:8000/api/v1/importers/trello/auth_url
+-s http://localhost:8000/api/v1/importers/trello/list_projects
 ----

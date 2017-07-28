@@ -9,16 +9,16 @@
     "client_requirement": false,
     "color": "#ABCABC",
     "comment": "",
-    "created_date": "2016-11-18T07:59:01.547Z",
+    "created_date": "2017-06-28T14:59:46.081Z",
     "description": "New epic description",
     "description_html": "<p>New epic description</p>",
     "epics_order": 2,
-    "id": 30,
+    "id": 32,
     "is_blocked": true,
     "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
-    "modified_date": "2016-11-18T07:59:01.559Z",
+    "modified_date": "2017-06-28T14:59:46.092Z",
     "owner": 6,
     "owner_extra_info": {
         "big_photo": null,
@@ -30,12 +30,18 @@
         "username": "user2114747470430251528"
     },
     "project": 1,
-    "ref": 67,
+    "project_extra_info": {
+        "id": 1,
+        "logo_small_url": null,
+        "name": "Project Example 0",
+        "slug": "project-0"
+    },
+    "ref": 110,
     "status": 2,
     "status_extra_info": {
         "color": "#ff8a84",
         "is_closed": false,
-        "name": "Preparada"
+        "name": "Ready"
     },
     "subject": "New epic",
     "tags": [
@@ -52,8 +58,8 @@
     "total_voters": 0,
     "total_watchers": 0,
     "user_stories_counts": {
-        "closed": 0,
-        "opened": 0
+        "progress": null,
+        "total": 0
     },
     "version": 1,
     "watchers": []

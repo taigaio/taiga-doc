@@ -1,42 +1,38 @@
 [source,json]
 ----
 {
-    "assigned_to": 13,
+    "assigned_to": 11,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Mohamed Ortega",
-        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-        "id": 13,
+        "full_name_display": "Angela Perez",
+        "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+        "id": 11,
         "is_active": true,
         "photo": null,
-        "username": "user7"
+        "username": "user5"
     },
     "attachments": [],
     "blocked_note": "",
     "blocked_note_html": "",
     "client_requirement": false,
-    "color": "#73d216",
+    "color": "#fcaf3e",
     "comment": "",
-    "created_date": "2016-11-18T07:53:53.966Z",
-    "description": "Labore nemo molestiae?",
-    "description_html": "<p>Labore nemo molestiae?</p>",
-    "epics_order": 1479455633966,
-    "id": 13,
+    "created_date": "2017-06-28T14:57:43.126Z",
+    "description": "Incidunt ad tempore fugit itaque alias hic, soluta consectetur impedit vitae excepturi quod, doloremque culpa nesciunt labore sapiente molestiae reiciendis praesentium placeat totam animi? Molestias autem debitis repellat? Consectetur vitae assumenda pariatur nesciunt rerum? Doloremque quisquam repellat laudantium consequatur veniam beatae laboriosam quos, nobis illum vitae repellat officia fugit dolorum tenetur sunt molestias assumenda, expedita sunt explicabo officiis possimus doloremque nam ullam nisi eum, quisquam incidunt sint facilis aliquid asperiores earum voluptatum itaque, obcaecati cum rem?",
+    "description_html": "<p>Incidunt ad tempore fugit itaque alias hic, soluta consectetur impedit vitae excepturi quod, doloremque culpa nesciunt labore sapiente molestiae reiciendis praesentium placeat totam animi? Molestias autem debitis repellat? Consectetur vitae assumenda pariatur nesciunt rerum? Doloremque quisquam repellat laudantium consequatur veniam beatae laboriosam quos, nobis illum vitae repellat officia fugit dolorum tenetur sunt molestias assumenda, expedita sunt explicabo officiis possimus doloremque nam ullam nisi eum, quisquam incidunt sint facilis aliquid asperiores earum voluptatum itaque, obcaecati cum rem?</p>",
+    "epics_order": 1498661863126,
+    "id": 17,
     "is_blocked": false,
     "is_closed": false,
-    "is_voter": false,
-    "is_watcher": true,
-    "modified_date": "2016-11-18T07:53:54.053Z",
+    "is_voter": true,
+    "is_watcher": false,
+    "modified_date": "2017-06-28T14:57:43.425Z",
     "neighbors": {
-        "next": {
-            "id": 14,
-            "ref": 86,
-            "subject": "Create the user model"
-        },
+        "next": null,
         "previous": {
-            "id": 12,
-            "ref": 84,
-            "subject": "Support for bulk actions"
+            "id": 16,
+            "ref": 41,
+            "subject": "Add tests for bulk operations"
         }
     },
     "owner": 12,
@@ -50,33 +46,40 @@
         "username": "user6"
     },
     "project": 3,
-    "ref": 85,
-    "status": 12,
-    "status_extra_info": {
-        "color": "#ff8a84",
-        "is_closed": false,
-        "name": "Preparada"
+    "project_extra_info": {
+        "id": 3,
+        "logo_small_url": null,
+        "name": "Project Example 2",
+        "slug": "project-2"
     },
-    "subject": "Exception is thrown if trying to add a folder with existing name",
+    "ref": 42,
+    "status": 11,
+    "status_extra_info": {
+        "color": "#999999",
+        "is_closed": false,
+        "name": "New"
+    },
+    "subject": "Lighttpd x-sendfile support",
     "tags": [
         [
-            "ut",
+            "doloremque",
             null
         ]
     ],
     "team_requirement": false,
-    "total_voters": 8,
-    "total_watchers": 4,
+    "total_voters": 7,
+    "total_watchers": 5,
     "user_stories_counts": {
-        "closed": 0,
-        "opened": 7
+        "progress": 0,
+        "total": 5
     },
     "version": 1,
     "watchers": [
-        3,
-        6,
-        8,
-        14
+        1,
+        2,
+        4,
+        11,
+        15
     ]
 }
 ----

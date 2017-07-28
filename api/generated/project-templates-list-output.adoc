@@ -127,7 +127,7 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-11-18T07:59:38.889Z",
+        "modified_date": "2017-06-28T15:00:26.644Z",
         "name": "Scrum",
         "order": 1,
         "points": [
@@ -580,7 +580,7 @@
             "us_status": "New"
         },
         "default_owner_role": "product-owner",
-        "description": "Kanban es un sistema de informaci\u00f3n para gestionar arm\u00f3nicamente el proceso de creaci\u00f3n del producto garantizando el cumplimiento de los tiempos, detectando los posibles sobrecargas del equipo durante las diferentes fases. En esta aproximaci\u00f3n, el proceso, desde su definici\u00f3n hasta la entrega final al cliente, se mostrar\u00e1 a los participantes, siendo los miembros del equipo los encargados de que el trabajo fluya haciendo pull de las tareas sobre las diferentes colas.",
+        "description": "Kanban is a method for managing knowledge work with an emphasis on just-in-time delivery while not overloading the team members. In this approach, the process, from definition of a task to its delivery to the customer, is displayed for participants to see and team members pull work from a queue.",
         "epic_statuses": [
             {
                 "color": "#999999",
@@ -1134,9 +1134,9 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2016-11-18T07:59:27.784Z",
+        "created_date": "2017-06-28T15:00:14.076Z",
         "default_options": {
-            "epic_status": null,
+            "epic_status": "Patch status name",
             "issue_status": "Patch status name",
             "issue_type": "Bug",
             "points": "?",
@@ -1189,6 +1189,13 @@
                 "name": "New status name",
                 "order": 10,
                 "slug": "new-status-name"
+            },
+            {
+                "color": "#999999",
+                "is_closed": false,
+                "name": "Patch status name",
+                "order": 10,
+                "slug": "patch-status-name"
             }
         ],
         "id": 3,
@@ -1280,9 +1287,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-11-18T07:59:27.810Z",
+        "modified_date": "2017-06-28T15:00:14.103Z",
         "name": "Beta template",
-        "order": 1479455967784,
+        "order": 1498662014076,
         "points": [
             {
                 "name": "?",
@@ -1755,7 +1762,7 @@
         "videoconferences_extra_data": null
     },
     {
-        "created_date": "2016-11-18T07:59:39.918Z",
+        "created_date": "2017-06-28T15:00:27.683Z",
         "default_options": {
             "issue_status": "New",
             "issue_type": "Bug",
@@ -1836,9 +1843,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2016-11-18T07:59:39.920Z",
+        "modified_date": "2017-06-28T15:00:27.692Z",
         "name": "New Template",
-        "order": 1479455979917,
+        "order": 1498662027676,
         "points": [
             {
                 "name": "?",
@@ -2224,7 +2231,7 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2016-11-18T07:59:39.953Z",
+        "created_date": "2017-06-28T15:00:27.752Z",
         "default_options": null,
         "default_owner_role": "product-owner",
         "description": "Sample description",
@@ -2238,9 +2245,9 @@
         "is_wiki_activated": true,
         "issue_statuses": null,
         "issue_types": null,
-        "modified_date": "2016-11-18T07:59:39.953Z",
+        "modified_date": "2017-06-28T15:00:27.752Z",
         "name": "New simple template",
-        "order": 1479455979951,
+        "order": 1498662027750,
         "points": null,
         "priorities": null,
         "roles": null,

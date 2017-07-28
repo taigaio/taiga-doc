@@ -5,7 +5,7 @@
         "color": "#88A65E",
         "id": 3,
         "is_closed": true,
-        "name": "Lista para testear",
+        "name": "Ready for test",
         "order": 3,
         "project": 1,
         "slug": "ready-for-test"
@@ -14,7 +14,7 @@
         "color": "#BFB35A",
         "id": 4,
         "is_closed": true,
-        "name": "Cerrada",
+        "name": "Closed",
         "order": 4,
         "project": 1,
         "slug": "closed"
@@ -23,7 +23,7 @@
         "color": "#5E8C6A",
         "id": 2,
         "is_closed": false,
-        "name": "En curso",
+        "name": "In progress",
         "order": 5,
         "project": 1,
         "slug": "in-progress"
@@ -32,7 +32,7 @@
         "color": "#89BAB4",
         "id": 5,
         "is_closed": false,
-        "name": "Necesita informaci\u00f3n",
+        "name": "Needs Info",
         "order": 5,
         "project": 1,
         "slug": "needs-info"
@@ -41,7 +41,7 @@
         "color": "#CC0000",
         "id": 6,
         "is_closed": true,
-        "name": "Rechazada",
+        "name": "Rejected",
         "order": 6,
         "project": 1,
         "slug": "rejected"
@@ -50,7 +50,7 @@
         "color": "#666666",
         "id": 7,
         "is_closed": false,
-        "name": "Pospuesta",
+        "name": "Postponed",
         "order": 7,
         "project": 1,
         "slug": "postponed"

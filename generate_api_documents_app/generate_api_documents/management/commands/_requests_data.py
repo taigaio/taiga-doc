@@ -222,6 +222,7 @@ reqs = OrderedDict([
         "url": "/api/v1/memberships?project=1",
     }),
     ("register-user", {
+        "is_public": True,
         "method": "POST",
         "url": "/api/v1/auth/register",
         "body": {
@@ -235,6 +236,7 @@ reqs = OrderedDict([
         }
     }),
     ("normal-register", {
+        "is_public": True,
         "method": "POST",
         "url": "/api/v1/auth/register",
         "body": {
@@ -246,6 +248,7 @@ reqs = OrderedDict([
         }
     }),
     ("normal-login", {
+        "is_public": True,
         "method": "POST",
         "url": "/api/v1/auth",
         "body": {
@@ -1840,6 +1843,7 @@ reqs = OrderedDict([
         "url": "/api/v1/tasks/attachments/{}".format(tasks_attachment),
     }),
     ("application-tokens-validate", {
+        "is_public": True,
         "method": "POST",
         "url": "/api/v1/application-tokens/validate",
         "body": {
@@ -2511,6 +2515,7 @@ reqs = OrderedDict([
         "url": "/api/v1/users/1/watched?type=project\&q=test",
     }),
     ("users-password-recovery", {
+        "is_public": True,
         "method": "POST",
         "url": "/api/v1/users/password_recovery",
         "body": {

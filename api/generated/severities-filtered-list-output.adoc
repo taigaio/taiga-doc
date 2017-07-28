@@ -11,21 +11,21 @@
     {
         "color": "#FFA500",
         "id": 4,
-        "name": "Importante",
+        "name": "Important",
         "order": 4,
         "project": 1
     },
     {
         "color": "#CC0000",
         "id": 5,
-        "name": "Cr\u00edtica",
+        "name": "Critical",
         "order": 5,
         "project": 1
     },
     {
         "color": "#669933",
         "id": 2,
-        "name": "Menor",
+        "name": "Minor",
         "order": 5,
         "project": 1
     },

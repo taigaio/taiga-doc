@@ -5,7 +5,7 @@
         "color": "#ff9900",
         "id": 3,
         "is_closed": false,
-        "name": "En curso",
+        "name": "In progress",
         "order": 3,
         "project": 1,
         "slug": "in-progress"
@@ -14,7 +14,7 @@
         "color": "#fcc000",
         "id": 4,
         "is_closed": false,
-        "name": "Lista para testear",
+        "name": "Ready for test",
         "order": 4,
         "project": 1,
         "slug": "ready-for-test"
@@ -23,7 +23,7 @@
         "color": "#669900",
         "id": 5,
         "is_closed": true,
-        "name": "Hecha",
+        "name": "Done",
         "order": 5,
         "project": 1,
         "slug": "done"
@@ -32,7 +32,7 @@
         "color": "#ff8a84",
         "id": 2,
         "is_closed": false,
-        "name": "Preparada",
+        "name": "Ready",
         "order": 5,
         "project": 1,
         "slug": "ready"

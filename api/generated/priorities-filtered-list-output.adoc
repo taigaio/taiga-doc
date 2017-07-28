@@ -4,7 +4,7 @@
     {
         "color": "#CC0000",
         "id": 3,
-        "name": "Alta",
+        "name": "High",
         "order": 5,
         "project": 1
     },

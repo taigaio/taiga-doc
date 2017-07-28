@@ -1,96 +1,87 @@
 [source,json]
 ----
 {
-    "assigned_to": 12,
+    "assigned_to": 8,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Vanesa Garcia",
-        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-        "id": 12,
+        "full_name_display": "Francisco Gil",
+        "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+        "id": 8,
         "is_active": true,
         "photo": null,
-        "username": "user6"
+        "username": "user2"
     },
     "attachments": [],
     "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2016-11-18T07:52:23.172Z",
-    "description": "Dolorem aperiam necessitatibus itaque voluptates at excepturi quibusdam laboriosam delectus nobis illum, eaque ab minima inventore expedita, non iure quibusdam explicabo exercitationem repellendus nobis? Aliquam ullam sit ea doloribus sed iure quibusdam vel accusantium voluptates alias, dolorem alias totam quas pariatur magni ullam officiis. At porro reiciendis, animi repellat eum, impedit velit nostrum reprehenderit maiores, maxime laborum dolorum id suscipit deserunt, sequi tenetur sint?",
-    "description_html": "<p>Dolorem aperiam necessitatibus itaque voluptates at excepturi quibusdam laboriosam delectus nobis illum, eaque ab minima inventore expedita, non iure quibusdam explicabo exercitationem repellendus nobis? Aliquam ullam sit ea doloribus sed iure quibusdam vel accusantium voluptates alias, dolorem alias totam quas pariatur magni ullam officiis. At porro reiciendis, animi repellat eum, impedit velit nostrum reprehenderit maiores, maxime laborum dolorum id suscipit deserunt, sequi tenetur sint?</p>",
+    "created_date": "2017-06-28T14:56:12.984Z",
+    "description": "Facere sequi consequuntur saepe accusantium suscipit, quos dolor deserunt voluptatum, sed incidunt sequi at veniam nulla cupiditate nesciunt rem quam aliquid, ipsum vitae fuga perferendis totam nobis.",
+    "description_html": "<p>Facere sequi consequuntur saepe accusantium suscipit, quos dolor deserunt voluptatum, sed incidunt sequi at veniam nulla cupiditate nesciunt rem quam aliquid, ipsum vitae fuga perferendis totam nobis.</p>",
     "external_reference": null,
-    "finished_date": "2016-10-04T10:15:17.631Z",
+    "finished_date": "2017-05-10T17:39:19.591Z",
     "id": 1,
     "is_blocked": false,
     "is_closed": true,
     "is_iocaine": false,
-    "is_voter": false,
+    "is_voter": true,
     "is_watcher": false,
     "milestone": 1,
-    "milestone_slug": "sprint-2016-9-24",
-    "modified_date": "2016-11-18T07:59:37.373Z",
-    "owner": 15,
+    "milestone_slug": "sprint-2017-5-4",
+    "modified_date": "2017-06-28T15:00:24.473Z",
+    "owner": 13,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Virginia Castro",
-        "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-        "id": 15,
+        "full_name_display": "Mohamed Ortega",
+        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+        "id": 13,
         "is_active": true,
         "photo": null,
-        "username": "user9"
+        "username": "user7"
     },
     "project": 1,
+    "project_extra_info": {
+        "id": 1,
+        "logo_small_url": null,
+        "name": "Beta project patch",
+        "slug": "project-0"
+    },
     "ref": 2,
     "status": 3,
     "status_extra_info": {
         "color": "#ffcc00",
         "is_closed": true,
-        "name": "Lista para testear"
+        "name": "Ready for test"
     },
     "subject": "Patching subject",
     "tags": [
         [
-            "obcaecati",
+            "possimus",
             null
         ],
         [
-            "mollitia",
-            null
-        ],
-        [
-            "quod",
-            null
-        ],
-        [
-            "qui",
-            null
-        ],
-        [
-            "beatae",
-            null
-        ],
-        [
-            "cum",
+            "voluptate",
             null
         ]
     ],
-    "taskboard_order": 1479455543172,
-    "total_voters": 3,
-    "total_watchers": 3,
-    "us_order": 1479455543172,
+    "taskboard_order": 1498661772984,
+    "total_comments": 1,
+    "total_voters": 6,
+    "total_watchers": 2,
+    "us_order": 1498661772984,
     "user_story": 1,
     "user_story_extra_info": {
         "epics": [
             {
-                "color": "#f57900",
-                "id": 1,
+                "color": "#fcaf3e",
+                "id": 17,
                 "project": {
-                    "id": 1,
-                    "name": "Beta project patch",
-                    "slug": "project-0"
+                    "id": 3,
+                    "name": "Project Example 2",
+                    "slug": "project-2"
                 },
-                "ref": 63,
-                "subject": "Support for bulk actions"
+                "ref": 42,
+                "subject": "Patching subject"
             }
         ],
         "id": 1,
@@ -99,9 +90,8 @@
     },
     "version": 2,
     "watchers": [
-        1,
-        11,
-        12
+        15,
+        3
     ]
 }
 ----

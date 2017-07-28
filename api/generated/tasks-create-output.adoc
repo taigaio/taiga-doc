@@ -7,20 +7,20 @@
     "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2016-11-18T07:59:37.541Z",
+    "created_date": "2017-06-28T15:00:24.919Z",
     "description": "Implement API CALL",
     "description_html": "<p>Implement API CALL</p>",
     "external_reference": null,
     "finished_date": null,
-    "id": 179,
+    "id": 229,
     "is_blocked": false,
     "is_closed": false,
     "is_iocaine": false,
     "is_voter": false,
     "is_watcher": false,
-    "milestone": null,
-    "milestone_slug": null,
-    "modified_date": "2016-11-18T07:59:37.554Z",
+    "milestone": 3,
+    "milestone_slug": "sprint-2017-6-3",
+    "modified_date": "2017-06-28T15:00:24.934Z",
     "owner": 6,
     "owner_extra_info": {
         "big_photo": null,
@@ -32,7 +32,13 @@
         "username": "user2114747470430251528"
     },
     "project": 1,
-    "ref": 85,
+    "project_extra_info": {
+        "id": 1,
+        "logo_small_url": null,
+        "name": "Beta project patch",
+        "slug": "project-0"
+    },
+    "ref": 128,
     "status": 1,
     "status_extra_info": {
         "color": "#999999",
@@ -51,6 +57,7 @@
         ]
     ],
     "taskboard_order": 1,
+    "total_comments": 0,
     "total_voters": 0,
     "total_watchers": 0,
     "us_order": 1,
@@ -58,8 +65,8 @@
     "user_story_extra_info": {
         "epics": null,
         "id": 17,
-        "ref": 39,
-        "subject": "Implement the form"
+        "ref": 68,
+        "subject": "Create testsuite with matrix builds"
     },
     "version": 1,
     "watchers": []

@@ -4,14 +4,14 @@
     {
         "color": "#89a8ba",
         "id": 3,
-        "name": "Mejora",
+        "name": "Enhancement",
         "order": 3,
         "project": 1
     },
     {
         "color": "#ba89a8",
         "id": 2,
-        "name": "Pregunta",
+        "name": "Question",
         "order": 5,
         "project": 1
     },

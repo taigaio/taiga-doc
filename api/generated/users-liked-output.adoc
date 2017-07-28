@@ -4,7 +4,7 @@
     {
         "assigned_to": null,
         "assigned_to_extra_info": null,
-        "created_date": "2016-11-18T07:59:31.606Z",
+        "created_date": "2017-06-28T15:00:18.208Z",
         "description": "Beta description",
         "id": 1,
         "is_fan": true,
@@ -23,14 +23,99 @@
         "status_color": null,
         "subject": null,
         "tags_colors": [],
-        "total_fans": 9,
+        "total_fans": 7,
         "total_watchers": 15,
         "type": "project"
     },
     {
         "assigned_to": null,
         "assigned_to_extra_info": null,
-        "created_date": "2016-11-18T07:54:26.565Z",
+        "created_date": "2017-06-28T14:59:05.083Z",
+        "description": "Project example 6 description",
+        "id": 7,
+        "is_fan": true,
+        "is_private": false,
+        "is_watcher": true,
+        "logo_small_url": null,
+        "name": "Project Example 6",
+        "project": null,
+        "project_blocked_code": "blocked-by-staff",
+        "project_is_private": null,
+        "project_name": null,
+        "project_slug": null,
+        "ref": null,
+        "slug": "project-6",
+        "status": null,
+        "status_color": null,
+        "subject": null,
+        "tags_colors": [
+            {
+                "color": "#e74669",
+                "name": "ut"
+            },
+            {
+                "color": "#b2966d",
+                "name": "laboriosam"
+            },
+            {
+                "color": "#ebca0b",
+                "name": "quisquam"
+            },
+            {
+                "color": null,
+                "name": "quo"
+            },
+            {
+                "color": "#6fdf52",
+                "name": "labore"
+            },
+            {
+                "color": "#ad75ec",
+                "name": "cumque"
+            },
+            {
+                "color": "#3a10e8",
+                "name": "iusto"
+            },
+            {
+                "color": "#1f8960",
+                "name": "distinctio"
+            }
+        ],
+        "total_fans": 8,
+        "total_watchers": 15,
+        "type": "project"
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "created_date": "2017-06-28T14:58:29.612Z",
+        "description": "Project example 5 description",
+        "id": 6,
+        "is_fan": true,
+        "is_private": false,
+        "is_watcher": true,
+        "logo_small_url": null,
+        "name": "Project Example 5",
+        "project": null,
+        "project_blocked_code": null,
+        "project_is_private": null,
+        "project_name": null,
+        "project_slug": null,
+        "ref": null,
+        "slug": "project-5",
+        "status": null,
+        "status_color": null,
+        "subject": null,
+        "tags_colors": [],
+        "total_fans": 8,
+        "total_watchers": 13,
+        "type": "project"
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "created_date": "2017-06-28T14:58:28.622Z",
         "description": "Project example 4 description",
         "id": 5,
         "is_fan": true,
@@ -49,8 +134,39 @@
         "status_color": null,
         "subject": null,
         "tags_colors": [],
-        "total_fans": 11,
+        "total_fans": 12,
         "total_watchers": 12,
+        "type": "project"
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "created_date": "2017-06-28T14:57:28.238Z",
+        "description": "Project example 2 description",
+        "id": 3,
+        "is_fan": true,
+        "is_private": true,
+        "is_watcher": true,
+        "logo_small_url": null,
+        "name": "Project Example 2",
+        "project": null,
+        "project_blocked_code": null,
+        "project_is_private": null,
+        "project_name": null,
+        "project_slug": null,
+        "ref": null,
+        "slug": "project-2",
+        "status": null,
+        "status_color": null,
+        "subject": null,
+        "tags_colors": [
+            {
+                "color": null,
+                "name": "obcaecati"
+            }
+        ],
+        "total_fans": 11,
+        "total_watchers": 15,
         "type": "project"
     }
 ]

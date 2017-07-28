@@ -8,7 +8,7 @@ curl -X POST \
         "is_private": false,
         "keep_external_reference": false,
         "name": "New project name",
-        "project": "123ABC",
+        "project": "user/project",
         "template": "kanban",
         "token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         "users_bindings": {
