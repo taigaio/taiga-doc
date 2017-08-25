@@ -57,7 +57,7 @@ Technically the backend communicates with the database(postgresql) and through t
 The communication between the front- and backend is done using APIs.
 
 The backend is then publicly exposed by nginx which acts as a reverse-proxy for this case.
-The frontend is located in the `dist` folder and is exposed publcy by nginx which acts as a static webserver for this case.
+The frontend is located in the `dist` folder and is exposed publicly by nginx which acts as a static webserver for this case.
 
 
 Prerequisites
