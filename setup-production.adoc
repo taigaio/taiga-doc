@@ -15,8 +15,6 @@ and each one has its own dependencies both at compile time and runtime:
 - **taiga-front-dist** (frontend)
 - **taiga-events** (websockets gateway) (optional)
 
-Each component can be either run on one unique machine 
-
 Each component can be run on one unique machine or all of them can be installed to a different machine aswell.
 In this tutorial we will setup everything on one single machine, installing all three Taiga components.
 This type of setup should suffice for small/medium production environments.
