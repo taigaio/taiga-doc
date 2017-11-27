@@ -96,7 +96,7 @@ sudo apt-get install -y libssl-dev libffi-dev
 with the language package manager by installing these packages in an isolated virtual environment.
 
 Restart the shell or run `bash` to reload the bash environment with the new virtualenvwrapper
-variables and functions. 
+variables and functions.
 
 **This step is mandatory before continuing the installation!**
 
@@ -120,7 +120,8 @@ Configuring Dependencies
 [source,bash]
 ----
 sudo -u postgres createuser taiga
-sudo -u postgres createdb taiga -O taiga
+sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 --template=template0
+
 ----
 
 .Create a user named `taiga`, and a virtualhost for RabbitMQ (taiga-events)
@@ -175,7 +176,7 @@ python manage.py collectstatic --noinput
 This creates the administrator account. The login credentials are **admin** with password **123123**.
 
 **OPTIONAL:**
-If you would like to have some example data loaded into Taiga, execute the following command, 
+If you would like to have some example data loaded into Taiga, execute the following command,
 which populates the database with sample projects and random data (useful for demos):
 
 [source,bash]
@@ -283,7 +284,7 @@ Be careful using copy-paste from browser to avoid `http://` duplication.
 
 Having **taiga-front-dist** downloaded and configured is insufficient. The next step is to expose the code
 (in **dist** directory) under a static file web server.
-In this tutorial We use **nginx** as a static file web server and reverse-proxy. 
+In this tutorial We use **nginx** as a static file web server and reverse-proxy.
 The configuration of nginx is explained later.
 
 [[taiga-events]]
@@ -339,7 +340,7 @@ cp config.example.json config.json
 
 The 'secret' in `config.json` must be the same as the "SECRET_KEY" in `~/taiga-back/settings/local.py`
 
-Add taiga-events to circus configuration. 
+Add taiga-events to circus configuration.
 
 .Copy-paste the code below into `/etc/circus/conf.d/taiga-events.ini`
 [source,ini]
@@ -387,7 +388,7 @@ Circus and gunicorn
 ~~~~~~~~~~~~~~~~~~~
 
 Circus is a process manager written by **Mozilla** and Taiga uses it to execute **gunicorn**.
-Circus is not only for executing processes, but it also has utils for monitoring them, collecting logs, and 
+Circus is not only for executing processes, but it also has utils for monitoring them, collecting logs, and
 restarting processes if something goes wrong, and also for starting processes on system boot.
 
 

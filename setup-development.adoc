@@ -62,7 +62,7 @@ And setup the initial user, database, and permissions:
 [source,bash]
 ----
 sudo -u postgres psql -c "CREATE ROLE taiga LOGIN PASSWORD 'changeme';"
-sudo -u postgres createdb taiga -O taiga
+sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 --template=template0
 echo 'local all taiga peer' | sudo -u postgres tee -a /etc/postgresql/9.5/main/pg_hba.conf > /dev/null
 sudo service postgresql reload
 ----
