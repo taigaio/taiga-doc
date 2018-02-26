@@ -115,9 +115,11 @@ You can tune your own environment configuration by editing a `settings/local.py`
 configuration file to overwrite any setting in `settings/common.py`.
 
 For a basic configuration that works with these instructions, simply copy
-settings/local.py.example to settings/local.py.
+`settings/local.py.example` to `settings/local.py` 
+(but remember to edit your postgresql password, to match what you picked for the 
+`CREATE ROLE taiga LOGIN PASSWORD` command above).
 
-Otherwise, just put this in your own ~/taiga-back/settings/local.py
+Otherwise, just put this in your own `~/taiga-back/settings/local.py`
 [source,python]
 ----
 from .common import *
