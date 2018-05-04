@@ -243,3 +243,15 @@ cd taiga-back
 workon taiga
 python manage.py loaddata initial_project_templates --traceback
 ----
+
+3.1.0 > 3.2.x
+-------------
+
+Follow the default process.
+
+3.2.3 > 3.3.x
+-------------
+
+Follow the default process.
+
+The migration could take a long time if you have a large database.
