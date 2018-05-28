@@ -274,6 +274,7 @@ cp ~/taiga-front-dist/dist/conf.example.json ~/taiga-front-dist/dist/conf.json
 	"feedbackEnabled": true,
 	"privacyPolicyUrl": null,
 	"termsOfServiceUrl": null,
+	"GDPRUrl": null,
 	"maxUploadFileSize": null,
 	"contribPlugins": []
 }
