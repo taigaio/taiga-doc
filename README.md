@@ -13,7 +13,7 @@ Install requirements: Ruby / `asciidoctor` + `pygments.rb` (installed via. `bund
 
 You can install Ruby through the apt package manager, pacman, rbenv, or rvm.
 
-Confirm that `Gemfile` is in the base `taiga-doc` directory and then perform the installation from that directory:
+Confirm that `Gemfile` is in the base `taiga-doc` directory, and then perform the installation from that directory:
 
     $ cd taiga-doc
     $ export PATH=$(ruby -e "print Gem.user_dir")"/bin:$PATH"
@@ -24,9 +24,9 @@ Confirm that `Gemfile` is in the base `taiga-doc` directory and then perform the
 
 ### (Optional) Regenerating curls and json responses
 
-Taiga doc include a django app that help us to generate the curl commands and
+Taiga doc includes a django app that helps us generate the curl commands and
 the json responses from the api. To use it, you have to activate your
-taiga-back virtualenv, install the `generate_api_documents`.
+taiga-back virtualenv, and install the `generate_api_documents`.
 
     $ workon taiga
     $ cd generate_api_documents_app
@@ -39,7 +39,7 @@ Now add it to your taiga settings installed apps; Modify in taiga-back your
 INSTALLED_APPS += ["generate_api_documents"]
 ```
 
-Now regenerate the taiga-back database with the sample data
+Now regenerate the taiga-back database with the sample data:
 
     $ cd taiga-back
     $ workon taiga
@@ -54,11 +54,11 @@ And finally, in a new terminal, run the `generate_api_examples`
     $ python manage.py generate_api_examples
 
 After that, you have to copy the content generated in the output directory to
-the api/generated/ directory in taiga-doc.
+the api/generated/ directory in taiga-doc:
 
     $ mv output/* ../taiga-doc/api/generated/
 
-Now you can rebuild your documentation running `make`.
+Now you can rebuild your documentation running `make`:
 
     $ make
 
