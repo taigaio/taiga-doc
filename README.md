@@ -53,7 +53,7 @@ And finally, in a new terminal, run the `generate_api_examples`
     $ workon taiga
     $ python manage.py generate_api_examples
 
-After that, you have to copy the contente generated in the output directory to
+After that, you have to copy the content generated in the output directory to
 the api/generated/ directory in taiga-doc.
 
     $ mv output/* ../taiga-doc/api/generated/
