@@ -255,3 +255,18 @@ Follow the default process.
 Follow the default process.
 
 The migration could take a long time if you have a large database.
+
+3.3.0 > 3.4.x
+-------------
+
+Follow the default process.
+
+The migration could take a long time if you have a large database.
+
+You should to reload the fixtures with:
+
+----
+cd taiga-back
+workon taiga
+python manage.py loaddata initial_project_templates --traceback
+----
