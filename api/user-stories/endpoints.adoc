@@ -46,11 +46,11 @@
 
 | /api/v1/userstories/bulk_update_sprint_order
 | POST
-| link:#user-stories-bulk-udate-sprint-order[Update user stories order for sprint in bulk mode]
+| link:#user-stories-bulk-update-sprint-order[Update user stories order for sprint in bulk mode]
 
 | /api/v1/userstories/bulk_update_milestone
 | POST
-| link:#user-stories-bulk-udate-milestone[Update user stories sprint in bulk mode]
+| link:#user-stories-bulk-update-milestone[Update user stories sprint in bulk mode]
 
 | /api/v1/userstories/filters_data?project=\{projectId}
 | GET
