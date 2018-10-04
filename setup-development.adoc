@@ -53,8 +53,8 @@ Install postgresql:
 
 [source,bash]
 ----
-sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
-sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
+sudo apt-get install -y postgresql postgresql-contrib
+sudo apt-get install -y postgresql-doc postgresql-server-dev-all
 ----
 
 And setup the initial user, database, and permissions:
@@ -63,7 +63,7 @@ And setup the initial user, database, and permissions:
 ----
 sudo -u postgres psql -c "CREATE ROLE taiga LOGIN PASSWORD 'changeme';"
 sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 --template=template0
-echo 'local all taiga peer' | sudo -u postgres tee -a /etc/postgresql/9.5/main/pg_hba.conf > /dev/null
+echo 'local all taiga peer' | sudo -u postgres tee -a $(sudo -u postgres psql -t -P format=unaligned -c 'show hba_file') > /dev/null
 sudo service postgresql reload
 ----
 
@@ -100,7 +100,7 @@ git checkout stable
 .Create a new virtualenv named **taiga**
 [source,bash]
 ----
-mkvirtualenv -p /usr/bin/python3.5 taiga
+mkvirtualenv -p /usr/bin/python3 taiga
 ----
 
 .Install dependencies
@@ -115,8 +115,8 @@ You can tune your own environment configuration by editing a `settings/local.py`
 configuration file to overwrite any setting in `settings/common.py`.
 
 For a basic configuration that works with these instructions, simply copy
-`settings/local.py.example` to `settings/local.py` 
-(but remember to edit your postgresql password, to match what you picked for the 
+`settings/local.py.example` to `settings/local.py`
+(but remember to edit your postgresql password, to match what you picked for the
 `CREATE ROLE taiga LOGIN PASSWORD` command above).
 
 Otherwise, just put this in your own `~/taiga-back/settings/local.py`
@@ -211,8 +211,8 @@ sudo apt-get update
 ----
 
 
-Frontend installation
----------------------
+Frontend environment
+--------------------
 
 This section helps you install the frontend application
 
@@ -235,6 +235,7 @@ is only in development environments.
 [source,bash]
 ----
 sudo apt-get install -y ruby
+sudo apt-get install -y ruby-all-dev
 ----
 
 .Install required gems
@@ -246,7 +247,9 @@ gem install --user-install sass scss_lint
 .Make gems' scripts available from your path by putting this in your *~/.bashrc*
 [source,bash]
 ----
-export PATH=~/.gem/ruby/2.3.0/bin:$PATH
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
 ----
 
 Restart the shell, source ~/.bashrc, or run bash again to make the path changes available.
@@ -271,7 +274,7 @@ node
 If you get a "Command not found" error, then run
 [source, bash]
 ----
-sudo ln -s /usr/bin/nodejs /usr/bin/node
+sudo update-alternatives --install /usr/bin/node nodejs /usr/bin/nodejs 100
 ----
 
 (If you're on Debian, see the Debian-specific installation notes below.)
