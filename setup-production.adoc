@@ -733,7 +733,7 @@ sudo systemctl restart 'taiga*'
 .Reload the nginx configuration:
 [source,bash]
 ----
-sudo systemctl reload  nginx
+sudo systemctl reload nginx
 ----
 
 Troubleshooting

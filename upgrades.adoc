@@ -2,7 +2,7 @@ How to upgrade Taiga
 ====================
 :toc: left
 
-The Taiga platform is developed on github. For consistences you should alway maintain the same version
+The Taiga platform is developed on github. For consistences you should always maintain the same version
 in time with the *stable* branch of git or use the last major version of each component.
 
 **No packaged version of Taiga is available at this moment.**
@@ -34,7 +34,7 @@ cd ~/taiga-back
 git checkout stable
 workon taiga
 git pull
-pip install --upgrade -r requirements.txt
+pip install -r requirements.txt
 ----
 
 [WARNING]
@@ -47,14 +47,36 @@ If you have some contrib plugin installed you should to upgrade then before the 
 python manage.py migrate --noinput
 python manage.py compilemessages
 python manage.py collectstatic --noinput
+----
+
+In case you are using circus as the process manager:
+
+[source,bash]
+----
 circusctl reload taiga
 ----
 
-In case taiga-celery is configured reload it too:
+In case you are using systemd as the process manager (recommended since taiga 4.0):
+
+[source,bash]
+----
+systemctl restart taiga
+----
+
+In case taiga-celery is configured reload it too.
+
+With circus:
 
 [source,bash]
 ----
 circusctl reload taiga-celery
+----
+
+With systemd:
+
+[source,bash]
+----
+systemctl restart taiga_celery
 ----
 
 1.9.0 > 1.9.1
@@ -270,3 +292,10 @@ cd taiga-back
 workon taiga
 python manage.py loaddata initial_project_templates --traceback
 ----
+
+3.4.x > 4.0
+-----------
+
+Follow the default process.
+Please note that several libraries were updated in this release so
+it is very important to not miss the `pip install -r requirements.txt` step.
