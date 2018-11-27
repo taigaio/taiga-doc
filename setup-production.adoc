@@ -50,7 +50,7 @@ Taiga consists of 2 core (mandatory) modules:
 
 **taiga-front** is written mostly in angularjs and coffeescript and depends on the backend.
 
-The python backend is exposed by gunicorn (port 9001), which is a Python WSGI HTTP server. The process manager is Circus, which runs gunicorn and taiga-back together.
+The python backend is exposed by gunicorn (port 9001), which is a Python WSGI HTTP server. The process manager is systemd, which runs gunicorn and taiga-back together.
 Technically the backend communicates with the database(postgresql) and through the frontend, it allows the user to use the features of Taiga.
 The communication between the front- and backend is done using APIs.
 
@@ -73,7 +73,6 @@ sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libn
 sudo apt-get install -y automake libtool libffi-dev curl git tmux gettext
 sudo apt-get install -y nginx
 sudo apt-get install -y rabbitmq-server redis-server
-sudo apt-get install -y circus
 ----
 
 .The component `taiga-back` uses postgresql (>= 9.4) as database:
@@ -83,7 +82,7 @@ sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
 sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
 ----
 
-.Python (3.5) and virtualenvwrapper must be installed along with a few third-party libraries:
+.Python (3) and virtualenvwrapper must be installed along with a few third-party libraries:
 [source,bash]
 ----
 sudo apt-get install -y python3 python3-pip python-dev python3-dev python-pip virtualenvwrapper
@@ -132,11 +131,6 @@ sudo rabbitmqctl add_vhost taiga
 sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
 ----
 
-.Create the logs folder (mandatory)
-[source,bash]
-----
-mkdir -p ~/logs
-----
 
 Backend configuration
 ---------------------
@@ -154,7 +148,7 @@ git checkout stable
 .Create new virtualenv named **taiga**
 [source,bash]
 ----
-mkvirtualenv -p /usr/bin/python3.5 taiga
+mkvirtualenv -p /usr/bin/python3 taiga
 ----
 
 .Install dependencies
@@ -184,7 +178,7 @@ which populates the database with sample projects and random data (useful for de
 python manage.py sample_data
 ----
 
-To finish the setup of **taiga-back**, create the intial configuration file
+To finish the setup of **taiga-back**, create the initial configuration file
 for proper static/media file resolution, optionally with email sending support:
 
 .Copy-paste the following config into `~/taiga-back/settings/local.py` and update it with your own details:
@@ -310,7 +304,7 @@ cd taiga-events
 .Install nodejs
 [source,bash]
 ----
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ----
 
@@ -318,7 +312,6 @@ sudo apt-get install -y nodejs
 [source,bash]
 ----
 npm install
-sudo npm install -g coffee-script
 ----
 
 .Copy and edit the config.json file. Update with your rabbitmq uri and the secret key.
@@ -341,34 +334,32 @@ cp config.example.json config.json
 
 The 'secret' in `config.json` must be the same as the "SECRET_KEY" in `~/taiga-back/settings/local.py`
 
-Add taiga-events to circus configuration.
+Add taiga-events to systemd configuration.
 
-.Copy-paste the code below into `/etc/circus/conf.d/taiga-events.ini`
+.Copy-paste the code below into `/etc/systemd/system/taiga_events.service`
 [source,ini]
 ----
-[watcher:taiga-events]
-working_dir = /home/taiga/taiga-events
-cmd = /usr/bin/coffee
-args = index.coffee
-uid = taiga
-numprocesses = 1
-autostart = true
-send_hup = true
-stdout_stream.class = FileStream
-stdout_stream.filename = /home/taiga/logs/taigaevents.stdout.log
-stdout_stream.max_bytes = 10485760
-stdout_stream.backup_count = 12
-stderr_stream.class = FileStream
-stderr_stream.filename = /home/taiga/logs/taigaevents.stderr.log
-stderr_stream.max_bytes = 10485760
-stderr_stream.backup_count = 12
+[Unit]
+Description=taiga_events
+After=network.target
+
+[Service]
+User=taiga
+WorkingDirectory=/home/taiga/taiga-events
+ExecStart=/bin/bash -c "node_modules/coffeescript/bin/coffee index.coffee"
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
 ----
 
-.Reload the circusd configurations:
+.Reload the systemd configurations:
 [source,bash]
 ----
-sudo service circusd restart
-sudo service circusd status
+sudo systemctl daemon-reload
+sudo systemctl start taiga_events
+sudo systemctl enable taiga_events
 ----
 
 [[start-and-expose]]
@@ -378,75 +369,53 @@ Start and Expose Taiga
 Before moving further, make sure you installed  **taiga-back** and **taiga-front-dist**, however, having installed them is insufficient to run Taiga.
 
 **taiga-back** should run under an application server, which in turn, should be executed and monitored
-by a process manager. For this task we will use **gunicorn** and **circus** respectively.
+by a process manager. For this task we will use **gunicorn** and **systemd** respectively.
 
 Both **taiga-front-dist** and **taiga-back** must be exposed to the outside using a proxy/static-file
 web server. For this purpose, Taiga uses **nginx**.
 
 
-[[circus-and-gunicorn]]
-Circus and gunicorn
-~~~~~~~~~~~~~~~~~~~
+[[systemd-and-gunicorn]]
+systemd and gunicorn
+~~~~~~~~~~~~~~~~~~~~
 
-Circus is a process manager written by **Mozilla** and Taiga uses it to execute **gunicorn**.
-Circus is not only for executing processes, but it also has utils for monitoring them, collecting logs, and
+Systemd is the process supervisor used by Ubuntu and Taiga uses it to execute **gunicorn**.
+Systemd is not only for executing processes, but it also has utils for monitoring them, collecting logs, and
 restarting processes if something goes wrong, and also for starting processes on system boot.
 
 
-.Initial Taiga configuration for circus in /etc/circus/conf.d/taiga.ini
+.Initial Taiga configuration for systemd in `/etc/systemd/system/taiga.service`
 [source,ini]
 ----
-[watcher:taiga]
-working_dir = /home/taiga/taiga-back
-cmd = gunicorn
-args = -w 3 -t 60 --pythonpath=. -b 127.0.0.1:8001 taiga.wsgi
-uid = taiga
-numprocesses = 1
-autostart = true
-send_hup = true
-stdout_stream.class = FileStream
-stdout_stream.filename = /home/taiga/logs/gunicorn.stdout.log
-stdout_stream.max_bytes = 10485760
-stdout_stream.backup_count = 4
-stderr_stream.class = FileStream
-stderr_stream.filename = /home/taiga/logs/gunicorn.stderr.log
-stderr_stream.max_bytes = 10485760
-stderr_stream.backup_count = 4
+[Unit]
+Description=taiga_back
+After=network.target
 
-[env:taiga]
-PATH = /home/taiga/.virtualenvs/taiga/bin:$PATH
-TERM=rxvt-256color
-SHELL=/bin/bash
-USER=taiga
-LANG=en_US.UTF-8
-HOME=/home/taiga
-PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.5/site-packages
+[Service]
+User=taiga
+Environment=PYTHONUNBUFFERED=true
+WorkingDirectory=/home/taiga/taiga-back
+ExecStart=/home/taiga/.virtualenvs/taiga/bin/gunicorn --workers 4 --timeout 60 -b 127.0.0.1:8001 taiga.wsgi
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
 ----
 
-[NOTE]
-====
-
-Circus stats can generate a high cpu usage without any load you can set statsd
-in `/etc/circus/circusd.conf` to false if you don't need them.
-
-Taiga stores logs on the user home, making them available and immediately accessible when
-you enter a machine. To make everything work, make sure you have the logs directory
-created.
-
-
-====
-
-Final step is restarting circus:
+Final step is reloading systemd daemon and starting taiga service:
 
 [source,bash]
 ----
-sudo service circusd restart
+sudo systemctl daemon-reload
+sudo systemctl start taiga
+sudo systemctl enable taiga
 ----
 
 .To verify that the services are running, issue:
 [source,bash]
 ----
-circusctl status
+sudo systemctl status taiga
 ----
 
 [[nginx]]
@@ -459,6 +428,12 @@ Nginx is used as a static file web server to serve **taiga-front-dist** and send
 [source,bash]
 ----
 sudo rm /etc/nginx/sites-enabled/default
+----
+
+.Create the logs folder (mandatory)
+[source,bash]
+----
+mkdir -p ~/logs
 ----
 
 .To create a new nginx virtualhost for Taiga, create and edit the `/etc/nginx/conf.d/taiga.conf` file, as follows:
@@ -535,7 +510,7 @@ sudo nginx -t
 Finally, restart nginx:
 [source,bash]
 ----
-sudo service nginx restart
+sudo systemctl restart nginx
 ----
 
 **Now you should have the service up and running on: `http://example.com/`**
@@ -555,7 +530,7 @@ To do this, you have to configure and install the celery service requirements.
 
 There is just an exception related to exported files, if your instance works in asynchronous mode the exported project files will be
 automatically removed from the storage after 24 hours, if not those media files won't be automatically removed (taiga-back doesn't really know anything about
-the existance of those files).
+the existence of those files).
 
 Install `rabbitmq-server` and `redis-server`:
 
@@ -574,45 +549,36 @@ CELERY_ENABLED = True
 You can configure other broker or results backend. If you need more info about it, check the celery documentation web page:
 http://docs.celeryproject.org/en/latest/index.html
 
-Once you have configured celery on Taiga, you have to add celery to circus configuration. See link:#circus-and-gunicorn[Circus and gunicorn] section.
+Once you have configured celery on Taiga, you have to add celery to systemd configuration. See link:#systemd-and-gunicorn[Systemd and gunicorn] section.
 
-.Taiga celery configuration block for circus on `/etc/circus/conf.d/taiga-celery.ini`
+.Taiga celery configuration block for systemd on `/etc/systemd/system/taiga_celery.service`
 [source,ini]
 ----
-[watcher:taiga-celery]
-working_dir = /home/taiga/taiga-back
-cmd = celery
-args = -A taiga worker -c 4
-uid = taiga
-numprocesses = 1
-autostart = true
-send_hup = true
-stdout_stream.class = FileStream
-stdout_stream.filename = /home/taiga/logs/celery.stdout.log
-stdout_stream.max_bytes = 10485760
-stdout_stream.backup_count = 4
-stderr_stream.class = FileStream
-stderr_stream.filename = /home/taiga/logs/celery.stderr.log
-stderr_stream.max_bytes = 10485760
-stderr_stream.backup_count = 4
+[Unit]
+Description=taiga_celery
+After=network.target
 
-[env:taiga-celery]
-PATH = /home/taiga/.virtualenvs/taiga/bin:$PATH
-TERM=rxvt-256color
-SHELL=/bin/bash
-USER=taiga
-LANG=en_US.UTF-8
-HOME=/home/taiga
-PYTHONPATH=/home/taiga/.virtualenvs/taiga/lib/python3.5/site-packages
+[Service]
+User=taiga
+Environment=PYTHONUNBUFFERED=true
+WorkingDirectory=/home/taiga/taiga-back
+ExecStart=/home/taiga/.virtualenvs/taiga/bin/celery -A taiga worker --concurrency 4 -l INFO
+Restart=always
+RestartSec=3
+ExecStop=/bin/kill -s TERM $MAINPID
+
+[Install]
+WantedBy=default.target
 ----
 
 Reload the circus configuration, restart taiga, then start taiga-celery:
 
 [source,bash]
 ----
-circusctl reloadconfig
-circusctl restart taiga
-circusctl start taiga-celery
+sudo systemctl daemon-reload
+sudo systemctl start taiga_celery
+sudo systemctl enable taiga_celery
+sudo systemctl restart taiga
 ----
 
 
@@ -758,16 +724,16 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 }
 ----
 
-.Restart circus after updating the configuration:
+.Restart taiga services after updating the configuration:
 [source,bash]
 ----
-sudo service circusd restart
+sudo systemctl restart 'taiga*'
 ----
 
 .Reload the nginx configuration:
 [source,bash]
 ----
-sudo service nginx reload
+sudo systemctl reload  nginx
 ----
 
 Troubleshooting
@@ -776,20 +742,19 @@ Troubleshooting
 .If you face any issue during or after installing Taiga, please collect the content of the following files:
 
 - `/etc/nginx/conf.d/taiga.conf`
-- `/etc/circus/conf.d/taiga.ini`
-- `/etc/circus/conf.d/taiga-celery.ini`
-- `/etc/circus/conf.d/taiga-events.ini`
+- `/etc/systemd/system/taiga.service`
+- `/etc/systemd/system/taiga_celery.service`
+- `/etc/systemd/system/taiga_events.service`
 - `/home/taiga/taiga-back/settings/local.py`
 - `/home/taiga/taiga-front-dist/dist/conf.json`
 - `/home/taiga/taiga-events/config.json`
-- All files in `/home/taiga/logs`
+- The result of command `sudo systemctl status 'taiga*'`
 
 .Issue the following commands to check the status of services used by Taiga:
 [source,bash]
 ----
-sudo service nginx status
-sudo service circusd status
-sudo service rabbitmq-server status
-sudo service postgresql status
+sudo systemctl status nginx
+sudo systemctl status rabbitmq-server
+sudo systemctl status postgresql
 ----
-Check If you see any error in the service statuses and make sure all service status is Active.
+Check If you see any error in the service statuses and make sure all service status is `Active: active (running)`.
