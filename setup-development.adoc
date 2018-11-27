@@ -70,21 +70,20 @@ sudo service postgresql reload
 Setup python environment
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To run **taiga-back** you should have python (3.5) installed along with some other third party
-libraries. As a first step, start installing python and virtualenvwrapper:
+To run **taiga-back** you should have python (>=3.5) installed along with some other third party
+libraries. As a first step, start installing python:
 
 [source,bash]
 ----
-sudo apt-get install -y python3 python3-pip python-dev python3-dev python-pip virtualenvwrapper
+sudo apt-get install -y python3 python3-pip python3-virtualenv python-dev python3-dev python-pip python-virtualenv
 sudo apt-get install libxml2-dev libxslt-dev
 ----
 
-[NOTE]
-**virtualenvwrapper** helps keep the system clean from third party libraries installed
-with the language's package manager by installing them in isolated virtual environments.
+To manage dependencies taiga uses pipenv.
 
-Restart the shell or run `bash` again, to reload the bash environment with virtualenvwrapper's
-variables and functions.
+[NOTE]
+As of November 2018, there are several options for installing pipenv.
+Please check the https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv[pipenv documentation] and choose your preferred method.
 
 The next step is to download the code from GitHub and install its dependencies:
 
@@ -94,19 +93,26 @@ The next step is to download the code from GitHub and install its dependencies:
 cd ~
 git clone https://github.com/taigaio/taiga-back.git taiga-back
 cd taiga-back
-git checkout stable
+git checkout master
 ----
 
-.Create a new virtualenv named **taiga**
+.Create a new virtualenv and install dependencies
 [source,bash]
 ----
-mkvirtualenv -p /usr/bin/python3 taiga
+pipenv sync --dev
 ----
 
-.Install dependencies
-[source, bash]
+[NOTE]
+It is important to use the `pipenv sync` command instead of `pipenv install`.
+The latter will update versions and perform a dependency resolution so the file `Pipfile.lock` might be modified
+and probably this is not intended.
+Of course you should use `pipenv install` when the goal is to add or upgrade a package.
+
+
+.Activate the virtualenv
+[source,bash]
 ----
-pip install -r requirements-devel.txt
+pipenv shell
 ----
 
 .Adjust Django Configuration
@@ -147,7 +153,7 @@ To run the development environment you can run:
 
 [source,bash]
 ----
-workon taiga  # enable the taiga virtualenv
+pipenv shell  # enable the taiga virtualenv
 python manage.py runserver
 ----
 
@@ -183,7 +189,7 @@ tasks. You can run celery with:
 
 [source,bash]
 ----
-workon taiga  # enable the taiga virtualenv
+pipenv shell taiga  # enable the taiga virtualenv
 celery -A taiga worker -l info -E
 ----
 
