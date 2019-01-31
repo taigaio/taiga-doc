@@ -14,8 +14,19 @@ The results can be filtered using the following parameters:
 - *assigned_to*: assigned to user id
 - *tags*: separated by ","
 - *type*: issue type id
+- *role*: role id
 - *watchers*: watching user id
 - *status__is_closed*: (true|false)
+- *exclude_status*: status id
+- *exclude_severity*: severity id
+- *exclude_priority*: priority id
+- *exclude_owner*: user owner id
+- *exclude_assigned_to*: assigned to user id
+- *exlcude_tags*: separated by ","
+- *exclude_type*: issue type id
+- *exclude role*: role id
+
+the "exclude_" params work excluding from the response the results with which they match.
 
 include::../generated/issues-filtered-list-cmd.adoc[]
 

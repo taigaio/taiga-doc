@@ -7,10 +7,21 @@ The HTTP response is a 200 OK and the response body is a JSON list of link:#obje
 The results can be filtered using the following parameters:
 
 - *project*: project id
+- *status*: status id
+- *tags*: separated by ","
 - *user_story*: user story id
+- *role*: role id
+- *owner*: owner id
 - *milestone*: milestone id
 - *watchers*: watching user id
 - *assigned_to*: assigned to user id
 - *status__is_closed*: (true|false)
+- *exclude_status*: status id
+- *exclude_tags*: separared by ","
+- *exclude_role*: role id
+- *exclude_owner*: owner id
+- *exclude_assigned_to*: assigned to user id
+
+the "exclude_" params work excluding from the response the results with which they match.
 
 include::../generated/tasks-filtered-list-cmd.adoc[]

@@ -11,8 +11,18 @@ The results can be filtered using the following parameters:
 - *milestone__isnull*: (true|false) if you are looking for user stories associated with a milestone or not
 - *status*: status id
 - *status__is_archived*: (true|false)
+- *tags*: separated by ","
 - *watchers*: watching user id
 - *assigned_to*: assigned to user id
+- *epic*: epic id
+- *role*: role id
 - *status__is_closed*: (true|false)
+- *exclude_status*: status id
+- *exclude_tags*: separated by ","
+- *exclude_assigned_to*: assigned to user id
+- *exclude role*: role id
+- *exclude epic*: epic id
+
+ the "exclude_" params work excluding from the response the results with which they match.
 
 include::../generated/user-stories-filtered-list-cmd.adoc[]
