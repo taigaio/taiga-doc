@@ -2,7 +2,7 @@ How to upgrade Taiga
 ====================
 :toc: left
 
-The Taiga platform is developed on github. For consistences you should always maintain the same version
+The Taiga platform is developed on github. For consistency you should always remain
 in time with the *stable* branch of git or use the last major version of each component.
 
 **No packaged version of Taiga is available at this moment.**
@@ -25,7 +25,7 @@ Backend application
 
 [WARNING]
 ====
-As user `taiga` or whatever user you use, do not run this code as `root` to avoid errors.
+Run as user `taiga` or whatever user you use, do not run this code as `root` to avoid errors.
 ====
 
 [source,bash]
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 [WARNING]
 ====
-If you have some contrib plugin installed you should to upgrade then before the next step.
+If you have some contrib plugins installed you should to upgrade them before the next step.
 ====
 
 [source,bash]
@@ -86,7 +86,7 @@ Copy your conf.json from `taiga-front-dist/dist/js/conf.json` to `taiga-front-di
 
 Remove the following folders `dist/fonts`, `dist/images`, `dist/js`, `dist/locales`, `dist/styles`, `dist/svg`.
 
-Download the latest plugins version following their installation instructions.
+Download the latest version of plugins following their installation instructions.
 
 
 1.9.1 > 1.10.0
@@ -94,7 +94,7 @@ Download the latest plugins version following their installation instructions.
 
 Follow the default process.
 
-The migration could take a long time if you have a large database.
+The migration may take a long time if you have a large database.
 
 
 1.10.0 > 2.0.0
@@ -102,7 +102,7 @@ The migration could take a long time if you have a large database.
 
 Follow the default process.
 
-This version upgrade Django to 1.9, so if you overwrited the DB settings in `taiga-back/settings/local.py` you have to change the DB backend to use the default one.
+This version upgrades Django to 1.9, so if you overwrote the DB settings in `taiga-back/settings/local.py` you have to change the DB backend to use the default.
 
 So, change...
 
@@ -139,7 +139,7 @@ Follow the default process.
 .Extra step for instances with gogs plugin installed
 ====
 
-Taiga contrib gogs plugin has been moved to taiga core so in case you installed the plugin you must uninstall it first:
+Taiga contrib gogs plugin has been moved to taiga core so if you installed the plugin you must uninstall it first:
 
 - In `taiga-back/settings/local.py`
     * Remove `taiga_contrib_gogs` from your `INSTALLED_APPS`
@@ -151,9 +151,9 @@ Taiga contrib gogs plugin has been moved to taiga core so in case you installed 
 
 Follow the default process.
 
-The migration could take a long time if you have a large database: now a new permissions has been included to allow to add comments instead of use the __modify object permission__ for this purpose.
+The migration may take a long time if you have a large database.
 
-Now project templates can be sorted and a new permission has been added to allow users to add comments. The fixtures must reloaded using:
+Now project templates can be sorted and a new permission has been added to allow users to add comments (instead of using the __modify object permission__ for this purpose). The fixtures must reloaded using:
 
 ----
 cd taiga-back
@@ -166,7 +166,7 @@ python manage.py loaddata initial_project_templates --traceback
 
 Follow the default process.
 
-If you want to have svg thumbnails images install `cairo` library.
+If you want to have svg thumbnail images install `cairo` library.
 
 ----
 apt-get install cairo
@@ -223,42 +223,42 @@ $ sudo reboot
 [IMPORTANT]
 .PostgreSQL >= 9.4 is needed
 ====
-in these release PostgreSQL > 9.4 will be the oficial recomended version because all JSON columns will be migrated to JSONB to reduce the db space and improve the performance.
+in this release PostgreSQL > 9.4 is the officially recomended version because all JSON columns will be migrated to JSONB to reduce the db disk space usage and improve performance.
 ====
 
 [IMPORTANT]
-.Changes over the settings about throttling.
+.Changes to settings for REST_FRAMEWORK throttling.
 ====
 If you have modified your `REST_FRAMEWORK` settings, you have to care about the changes introducted in the new version:
 
-. In `REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"]` you have care about the fact
-  that `anon` and `user` scopes settings been renamed and splited into
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"]` you must handle the fact
+  that `anon` and `user` scopes settings have been renamed and split into
   `anon-write`, `anon-read`, `user-write` and `user-read`.
 . In `REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"]` we have added new scopes of
-  throttling by default set to `None`, they are `login-fail`, `register-success`,
+  throttling (by default set to `None`), they are `login-fail`, `register-success`,
   `user-detail`.
 . In `REST_FRAMEWORK["DEFAULT_THROTTLE_CLASSES"]` the new default throttle
   class is `taiga.base.throttling.CommonThrottle`.
 ====
 
 [IMPORTANT]
-.Changes over the settings because celery upgrade from 3.x to 4.x.
+.Changes to settings because celery upgrade from 3.x to 4.x.
 ====
-We have migrated to celery 4, and splitted the configuration in two different
-files, so, if you have configured any celery setting in your
-`settings/local.py` you have to move them to the `settings/celery_local.py`
+We have migrated to celery 4, and split the configuration in two different
+files. Therefore if you have configured any celery settings in your
+`settings/local.py` you must move them to the `settings/celery_local.py`
 file. Besides, before update the workers and taiga-back, ensure that your tasks
-queue is completely empty because the tasks format isn't compatible (If you
-can't stop your service during de upgrade, you have to follow the instructions
+queue is completely empty because the tasks format isn't compatible (if you
+can't stop your service during the upgrade, you have to follow the instructions
 given by celery creators here:
 http://docs.celeryproject.org/en/latest/whatsnew-4.0.html#upgrading-from-celery-3-1).
 ====
 
 Follow the default process.
 
-The migration could take a long time if you have a large database.
+The migration may take a long time if you have a large database.
 
-You should to reload the fixtures with:
+You should reload the fixtures with:
 
 ----
 cd taiga-back
@@ -276,7 +276,7 @@ Follow the default process.
 
 Follow the default process.
 
-The migration could take a long time if you have a large database.
+The migration may take a long time if you have a large database.
 
 3.3.0 > 3.4.x
 -------------
