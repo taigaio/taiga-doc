@@ -467,7 +467,7 @@ server {
         proxy_redirect off;
     }
 
-    # Django admin access (/admin/)
+    # Admin access (/admin/)
     location /admin {
         proxy_set_header Host $http_host;
         proxy_set_header X-Real-IP $remote_addr;
@@ -488,15 +488,15 @@ server {
         alias /home/taiga/taiga-back/media;
     }
 
-	# Taiga-events
-	location /events {
-	proxy_pass http://127.0.0.1:8888/events;
-	proxy_http_version 1.1;
-	proxy_set_header Upgrade $http_upgrade;
-	proxy_set_header Connection "upgrade";
-	proxy_connect_timeout 7d;
-	proxy_send_timeout 7d;
-	proxy_read_timeout 7d;
+    # Events
+        location /events {
+        proxy_pass http://127.0.0.1:8888/events;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_connect_timeout 7d;
+        proxy_send_timeout 7d;
+        proxy_read_timeout 7d;
 	}
 }
 ----
@@ -634,6 +634,7 @@ server {
         proxy_redirect off;
     }
 
+    # Admin access (/admin/)
     location /admin {
         proxy_set_header Host $http_host;
         proxy_set_header X-Real-IP $remote_addr;
@@ -654,6 +655,18 @@ server {
         alias /home/taiga/taiga-back/media;
     }
 
+	# Events
+	location /events {
+        proxy_pass http://127.0.0.1:8888/events;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_connect_timeout 7d;
+        proxy_send_timeout 7d;
+        proxy_read_timeout 7d;
+	}
+
+    # SSL
     add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; preload";
     add_header Public-Key-Pins 'pin-sha256="klO23nT2ehFDXCfx3eHTDRESMz3asj1muO+4aIdjiuY="; pin-sha256="633lt352PKRXbOwf4xSEa1M517scpD3l5f79xMD9r9Q="; max-age=2592000; includeSubDomains';
 
