@@ -39,6 +39,17 @@ Now add it to your taiga settings installed apps; Modify in taiga-back your
 INSTALLED_APPS += ["generate_api_documents"]
 ```
 
+For generating api examples you need to disable `DEBUG` option in your settings
+as well as enable the following importers:
+
+```python
+IMPORTERS["github"]
+IMPORTERS["trello"]
+IMPORTERS["jira"]
+IMPORTERS["asana"] 
+```
+If you copied local.py.example, uncommenting the importers code should be enough.
+
 Now regenerate the taiga-back database with the sample data:
 
     $ cd taiga-back
@@ -52,6 +63,8 @@ And finally, in a new terminal, run the `generate_api_examples`
     $ cd taiga-back
     $ workon taiga
     $ python manage.py generate_api_examples
+
+If you get some error, check your settings and regenerate the database again.
 
 After that, you have to copy the content generated in the output directory to
 the api/generated/ directory in taiga-doc:
