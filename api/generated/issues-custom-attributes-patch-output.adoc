@@ -1,13 +1,14 @@
 [source,json]
 ----
 {
-    "created_date": "2017-06-28T14:56:12.588Z",
-    "description": "rem perspiciatis ipsum repellat quia quidem officia",
+    "created_date": "2019-04-10T10:34:12.611Z",
+    "description": "voluptate rem perspiciatis ipsum",
+    "extra": null,
     "id": 5,
-    "modified_date": "2017-06-28T15:00:21.771Z",
+    "modified_date": "2019-04-10T10:56:04.777Z",
     "name": "Duration 1",
     "order": 1,
     "project": 1,
-    "type": "text"
+    "type": "checkbox"
 }
 ----

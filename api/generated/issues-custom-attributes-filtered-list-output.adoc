@@ -2,72 +2,79 @@
 ----
 [
     {
-        "created_date": "2017-06-28T14:56:12.578Z",
-        "description": "minus quibusdam neque eveniet repellendus ex dolorum optio ullam vitae",
-        "id": 2,
-        "modified_date": "2017-06-28T14:56:12.578Z",
-        "name": "doloribus ducimus nulla",
+        "created_date": "2019-04-10T10:34:12.608Z",
+        "description": "facere corrupti ipsa odit mollitia saepe officiis",
+        "extra": null,
+        "id": 3,
+        "modified_date": "2019-04-10T10:34:12.608Z",
+        "name": "doloremque id",
         "order": 1,
         "project": 1,
-        "type": "date"
+        "type": "dropdown"
     },
     {
-        "created_date": "2017-06-28T14:56:12.582Z",
-        "description": "facere corrupti ipsa odit mollitia saepe officiis",
-        "id": 3,
-        "modified_date": "2017-06-28T14:56:12.582Z",
+        "created_date": "2019-04-10T10:34:12.604Z",
+        "description": "officiis repudiandae dignissimos similique consequatur mollitia at enim ad molestias praesentium",
+        "extra": null,
+        "id": 1,
+        "modified_date": "2019-04-10T10:34:12.604Z",
         "name": "fugiat optio consequuntur",
         "order": 1,
         "project": 1,
-        "type": "url"
+        "type": "dropdown"
     },
     {
-        "created_date": "2017-06-28T14:56:12.574Z",
-        "description": "officiis repudiandae dignissimos similique consequatur mollitia at enim ad molestias praesentium",
-        "id": 1,
-        "modified_date": "2017-06-28T14:56:12.574Z",
-        "name": "minima",
-        "order": 1,
-        "project": 1,
-        "type": "richtext"
-    },
-    {
-        "created_date": "2017-06-28T14:56:12.585Z",
-        "description": "aliquid fugiat porro officia deleniti quidem ipsam cum",
+        "created_date": "2019-04-10T10:34:12.609Z",
+        "description": "fugiat porro officia deleniti quidem ipsam",
+        "extra": null,
         "id": 4,
-        "modified_date": "2017-06-28T14:56:12.585Z",
-        "name": "exercitationem",
-        "order": 5,
+        "modified_date": "2019-04-10T10:34:12.609Z",
+        "name": "velit",
+        "order": 1,
         "project": 1,
         "type": "text"
     },
     {
-        "created_date": "2017-06-28T15:00:21.823Z",
+        "created_date": "2019-04-10T10:34:12.606Z",
+        "description": "minus quibusdam neque eveniet repellendus ex dolorum optio ullam vitae",
+        "extra": null,
+        "id": 2,
+        "modified_date": "2019-04-10T10:34:12.607Z",
+        "name": "doloribus ducimus nulla",
+        "order": 5,
+        "project": 1,
+        "type": "checkbox"
+    },
+    {
+        "created_date": "2019-04-10T10:56:04.844Z",
         "description": "Duration in minutes",
-        "id": 36,
-        "modified_date": "2017-06-28T15:00:21.832Z",
+        "extra": null,
+        "id": 31,
+        "modified_date": "2019-04-10T10:56:04.847Z",
         "name": "Duration 2",
         "order": 8,
         "project": 1,
         "type": "text"
     },
     {
-        "created_date": "2017-06-28T14:56:12.588Z",
-        "description": "rem perspiciatis ipsum repellat quia quidem officia",
+        "created_date": "2019-04-10T10:34:12.611Z",
+        "description": "voluptate rem perspiciatis ipsum",
+        "extra": null,
         "id": 5,
-        "modified_date": "2017-06-28T15:00:21.771Z",
+        "modified_date": "2019-04-10T10:56:04.777Z",
         "name": "Duration 1",
         "order": 10,
         "project": 1,
-        "type": "text"
+        "type": "checkbox"
     },
     {
-        "created_date": "2017-06-28T15:00:21.872Z",
+        "created_date": "2019-04-10T10:56:04.908Z",
         "description": "",
-        "id": 37,
-        "modified_date": "2017-06-28T15:00:21.884Z",
+        "extra": null,
+        "id": 32,
+        "modified_date": "2019-04-10T10:56:04.911Z",
         "name": "Duration 3",
-        "order": 1498662021866,
+        "order": 1554893764898,
         "project": 1,
         "type": "text"
     }

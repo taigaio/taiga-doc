@@ -2,9 +2,9 @@
 ----
 {
     "attributes_values": {
-        "11": "240 min"
+        "12": "240 min"
     },
-    "epic": 17,
-    "version": 2
+    "epic": 14,
+    "version": 3
 }
 ----

@@ -2,17 +2,16 @@
 ----
 {
     "closed": false,
-    "closed_points": 23.5,
-    "created_date": "2017-05-04T14:56:12.591Z",
+    "closed_points": null,
+    "created_date": "2019-02-14T10:34:12.612Z",
     "disponibility": 0.0,
-    "estimated_finish": "2017-05-19",
-    "estimated_start": "2017-05-04",
+    "estimated_finish": "2019-03-01",
+    "estimated_start": "2019-02-14",
     "id": 1,
-    "is_watcher": false,
-    "modified_date": "2017-06-28T15:00:28.728Z",
+    "modified_date": "2019-04-10T11:00:05.116Z",
     "name": "Sprint 2",
     "order": 10,
-    "owner": 6,
+    "owner": 12,
     "project": 1,
     "project_extra_info": {
         "id": 1,
@@ -20,70 +19,38 @@
         "name": "Beta project patch",
         "slug": "project-0"
     },
-    "slug": "sprint-2017-5-4",
-    "total_points": 225.5,
-    "total_watchers": 0,
+    "slug": "sprint-2019-2-14",
+    "total_points": 107.0,
     "user_stories": [
         {
-            "assigned_to": 13,
+            "assigned_to": 7,
             "assigned_to_extra_info": {
                 "big_photo": null,
-                "full_name_display": "Mohamed Ortega",
-                "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-                "id": 13,
+                "full_name_display": "Bego\u00f1a Flores",
+                "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+                "id": 7,
                 "is_active": true,
                 "photo": null,
-                "username": "user7"
+                "username": "user1"
             },
-            "attachments": [],
-            "backlog_order": 10,
             "blocked_note": "",
             "client_requirement": false,
-            "comment": "",
-            "created_date": "2017-06-28T14:56:12.663Z",
-            "epic_order": null,
-            "epics": [
-                {
-                    "color": "#fcaf3e",
-                    "id": 17,
-                    "project": {
-                        "id": 3,
-                        "name": "Project Example 2",
-                        "slug": "project-2"
-                    },
-                    "ref": 42,
-                    "subject": "Patching subject"
-                }
-            ],
+            "created_date": "2019-04-10T10:34:12.670Z",
+            "due_date": null,
+            "due_date_reason": "",
+            "due_date_status": "not_set",
             "external_reference": null,
-            "finish_date": "2017-06-28T14:56:13.001Z",
-            "generated_from_issue": null,
+            "finish_date": null,
             "id": 1,
             "is_blocked": false,
-            "is_closed": true,
-            "is_voter": false,
-            "is_watcher": false,
-            "kanban_order": 10,
+            "is_closed": false,
             "milestone": 1,
-            "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2017-5-4",
-            "modified_date": "2017-06-28T14:59:53.920Z",
-            "origin_issue": null,
-            "owner": 12,
-            "owner_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Vanesa Garcia",
-                "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-                "id": 12,
-                "is_active": true,
-                "photo": null,
-                "username": "user6"
-            },
+            "modified_date": "2019-04-10T10:44:07.267Z",
             "points": {
-                "1": 8,
-                "2": 5,
-                "3": 10,
-                "4": 3
+                "1": 12,
+                "2": 2,
+                "3": 5,
+                "4": 5
             },
             "project": 1,
             "project_extra_info": {
@@ -94,30 +61,16 @@
             },
             "ref": 1,
             "sprint_order": 10,
-            "status": 3,
+            "status": 4,
             "status_extra_info": {
-                "color": "#ff9900",
+                "color": "#fcc000",
                 "is_closed": false,
-                "name": "In progress"
+                "name": "Ready for test"
             },
             "subject": "Patching subject",
-            "tags": [
-                [
-                    "voluptate",
-                    null
-                ]
-            ],
-            "tasks": [],
             "team_requirement": false,
-            "total_comments": 0,
-            "total_points": 23.5,
-            "total_voters": 5,
-            "total_watchers": 1,
-            "tribe_gig": null,
-            "version": 2,
-            "watchers": [
-                6
-            ]
+            "total_points": 44.0,
+            "version": 2
         },
         {
             "assigned_to": 10,
@@ -130,137 +83,24 @@
                 "photo": null,
                 "username": "user4"
             },
-            "attachments": [],
-            "backlog_order": 15,
             "blocked_note": "",
             "client_requirement": false,
-            "comment": "",
-            "created_date": "2017-06-28T14:56:13.265Z",
-            "epic_order": null,
-            "epics": null,
+            "created_date": "2019-04-10T10:34:14.800Z",
+            "due_date": null,
+            "due_date_reason": "",
+            "due_date_status": "not_set",
             "external_reference": null,
             "finish_date": null,
-            "generated_from_issue": null,
             "id": 2,
             "is_blocked": false,
             "is_closed": false,
-            "is_voter": false,
-            "is_watcher": false,
-            "kanban_order": 15,
             "milestone": 1,
-            "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2017-5-4",
-            "modified_date": "2017-06-28T14:56:13.491Z",
-            "origin_issue": null,
-            "owner": 7,
-            "owner_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Bego\u00f1a Flores",
-                "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-                "id": 7,
-                "is_active": true,
-                "photo": null,
-                "username": "user1"
-            },
-            "points": {
-                "1": 11,
-                "2": 12,
-                "3": 10,
-                "4": 9
-            },
-            "project": 1,
-            "project_extra_info": {
-                "id": 1,
-                "logo_small_url": null,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            "ref": 3,
-            "sprint_order": 15,
-            "status": 2,
-            "status_extra_info": {
-                "color": "#ff8a84",
-                "is_closed": false,
-                "name": "Ready"
-            },
-            "subject": "get_actions() does not check for 'delete_selected' in actions",
-            "tags": [
-                [
-                    "delectus",
-                    null
-                ],
-                [
-                    "ipsa",
-                    null
-                ],
-                [
-                    "explicabo",
-                    null
-                ]
-            ],
-            "tasks": [],
-            "team_requirement": false,
-            "total_comments": 0,
-            "total_points": 83.0,
-            "total_voters": 1,
-            "total_watchers": 4,
-            "tribe_gig": null,
-            "version": 1,
-            "watchers": [
-                2,
-                8,
-                3,
-                14
-            ]
-        },
-        {
-            "assigned_to": 7,
-            "assigned_to_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Bego\u00f1a Flores",
-                "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-                "id": 7,
-                "is_active": true,
-                "photo": null,
-                "username": "user1"
-            },
-            "attachments": [],
-            "backlog_order": 1498661775033,
-            "blocked_note": "",
-            "client_requirement": false,
-            "comment": "",
-            "created_date": "2017-06-28T14:56:15.033Z",
-            "epic_order": null,
-            "epics": null,
-            "external_reference": null,
-            "finish_date": null,
-            "generated_from_issue": null,
-            "id": 3,
-            "is_blocked": false,
-            "is_closed": false,
-            "is_voter": false,
-            "is_watcher": false,
-            "kanban_order": 1498661775033,
-            "milestone": 1,
-            "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2017-5-4",
-            "modified_date": "2017-06-28T14:56:15.234Z",
-            "origin_issue": null,
-            "owner": 15,
-            "owner_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Virginia Castro",
-                "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-                "id": 15,
-                "is_active": true,
-                "photo": null,
-                "username": "user9"
-            },
+            "modified_date": "2019-04-10T10:34:15.107Z",
             "points": {
                 "1": 9,
-                "2": 12,
-                "3": 6,
-                "4": 5
+                "2": 8,
+                "3": 8,
+                "4": 6
             },
             "project": 1,
             "project_extra_info": {
@@ -269,121 +109,18 @@
                 "name": "Beta project patch",
                 "slug": "project-0"
             },
-            "ref": 9,
-            "sprint_order": 1498661775034,
-            "status": 2,
+            "ref": 6,
+            "sprint_order": 15,
+            "status": 1,
             "status_extra_info": {
-                "color": "#ff8a84",
+                "color": "#999999",
                 "is_closed": false,
-                "name": "Ready"
+                "name": "Patch status name"
             },
-            "subject": "Feature/improved image admin",
-            "tags": [
-                [
-                    "et",
-                    null
-                ]
-            ],
-            "tasks": [],
+            "subject": "Fixing templates for Django 1.6.",
             "team_requirement": false,
-            "total_comments": 0,
-            "total_points": 55.0,
-            "total_voters": 8,
-            "total_watchers": 5,
-            "tribe_gig": null,
-            "version": 1,
-            "watchers": [
-                1,
-                11,
-                3,
-                2,
-                4
-            ]
-        },
-        {
-            "assigned_to": 11,
-            "assigned_to_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Angela Perez",
-                "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-                "id": 11,
-                "is_active": true,
-                "photo": null,
-                "username": "user5"
-            },
-            "attachments": [],
-            "backlog_order": 1498661776195,
-            "blocked_note": "",
-            "client_requirement": false,
-            "comment": "",
-            "created_date": "2017-06-28T14:56:16.195Z",
-            "epic_order": null,
-            "epics": null,
-            "external_reference": null,
-            "finish_date": null,
-            "generated_from_issue": null,
-            "id": 4,
-            "is_blocked": false,
-            "is_closed": false,
-            "is_voter": false,
-            "is_watcher": false,
-            "kanban_order": 1498661776195,
-            "milestone": 1,
-            "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2017-5-4",
-            "modified_date": "2017-06-28T14:56:16.409Z",
-            "origin_issue": null,
-            "owner": 10,
-            "owner_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Enrique Crespo",
-                "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-                "id": 10,
-                "is_active": true,
-                "photo": null,
-                "username": "user4"
-            },
-            "points": {
-                "1": 11,
-                "2": 6,
-                "3": 7,
-                "4": 10
-            },
-            "project": 1,
-            "project_extra_info": {
-                "id": 1,
-                "logo_small_url": null,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            "ref": 13,
-            "sprint_order": 1498661776196,
-            "status": 2,
-            "status_extra_info": {
-                "color": "#ff8a84",
-                "is_closed": false,
-                "name": "Ready"
-            },
-            "subject": "Implement the form",
-            "tags": [
-                [
-                    "iusto",
-                    null
-                ]
-            ],
-            "tasks": [],
-            "team_requirement": false,
-            "total_comments": 0,
-            "total_points": 41.0,
-            "total_voters": 4,
-            "total_watchers": 3,
-            "tribe_gig": null,
-            "version": 1,
-            "watchers": [
-                4,
-                13,
-                15
-            ]
+            "total_points": 29.0,
+            "version": 1
         },
         {
             "assigned_to": 8,
@@ -396,43 +133,24 @@
                 "photo": null,
                 "username": "user2"
             },
-            "attachments": [],
-            "backlog_order": 1498661777712,
             "blocked_note": "",
             "client_requirement": false,
-            "comment": "",
-            "created_date": "2017-06-28T14:56:17.712Z",
-            "epic_order": null,
-            "epics": null,
+            "created_date": "2019-04-10T10:34:16.098Z",
+            "due_date": null,
+            "due_date_reason": "",
+            "due_date_status": "not_set",
             "external_reference": null,
             "finish_date": null,
-            "generated_from_issue": null,
-            "id": 5,
+            "id": 3,
             "is_blocked": false,
             "is_closed": false,
-            "is_voter": true,
-            "is_watcher": false,
-            "kanban_order": 1498661777712,
             "milestone": 1,
-            "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2017-5-4",
-            "modified_date": "2017-06-28T14:56:17.940Z",
-            "origin_issue": null,
-            "owner": 11,
-            "owner_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Angela Perez",
-                "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-                "id": 11,
-                "is_active": true,
-                "photo": null,
-                "username": "user5"
-            },
+            "modified_date": "2019-04-10T10:34:16.412Z",
             "points": {
-                "1": 4,
+                "1": 8,
                 "2": 4,
-                "3": 7,
-                "4": 3
+                "3": 11,
+                "4": 7
             },
             "project": 1,
             "project_extra_info": {
@@ -441,127 +159,19 @@
                 "name": "Beta project patch",
                 "slug": "project-0"
             },
-            "ref": 18,
-            "sprint_order": 1498661777713,
+            "ref": 9,
+            "sprint_order": 1554892456098,
             "status": 1,
             "status_extra_info": {
                 "color": "#999999",
                 "is_closed": false,
                 "name": "Patch status name"
             },
-            "subject": "Implement the form",
-            "tags": [
-                [
-                    "quis",
-                    null
-                ],
-                [
-                    "ab",
-                    null
-                ]
-            ],
-            "tasks": [],
+            "subject": "Exception is thrown if trying to add a folder with existing name",
             "team_requirement": false,
-            "total_comments": 0,
-            "total_points": 7.5,
-            "total_voters": 6,
-            "total_watchers": 3,
-            "tribe_gig": null,
-            "version": 1,
-            "watchers": [
-                1,
-                13,
-                8
-            ]
-        },
-        {
-            "assigned_to": 15,
-            "assigned_to_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Virginia Castro",
-                "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-                "id": 15,
-                "is_active": true,
-                "photo": null,
-                "username": "user9"
-            },
-            "attachments": [],
-            "backlog_order": 1498661779470,
-            "blocked_note": "",
-            "client_requirement": false,
-            "comment": "",
-            "created_date": "2017-06-28T14:56:19.470Z",
-            "epic_order": null,
-            "epics": null,
-            "external_reference": null,
-            "finish_date": null,
-            "generated_from_issue": null,
-            "id": 6,
-            "is_blocked": false,
-            "is_closed": false,
-            "is_voter": true,
-            "is_watcher": false,
-            "kanban_order": 1498661779470,
-            "milestone": 1,
-            "milestone_name": "Sprint 2",
-            "milestone_slug": "sprint-2017-5-4",
-            "modified_date": "2017-06-28T14:56:19.721Z",
-            "origin_issue": null,
-            "owner": 11,
-            "owner_extra_info": {
-                "big_photo": null,
-                "full_name_display": "Angela Perez",
-                "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
-                "id": 11,
-                "is_active": true,
-                "photo": null,
-                "username": "user5"
-            },
-            "points": {
-                "1": 9,
-                "2": 2,
-                "3": 7,
-                "4": 3
-            },
-            "project": 1,
-            "project_extra_info": {
-                "id": 1,
-                "logo_small_url": null,
-                "name": "Beta project patch",
-                "slug": "project-0"
-            },
-            "ref": 24,
-            "sprint_order": 1498661779471,
-            "status": 1,
-            "status_extra_info": {
-                "color": "#999999",
-                "is_closed": false,
-                "name": "Patch status name"
-            },
-            "subject": "Migrate to Python 3 and milk a beautiful cow",
-            "tags": [
-                [
-                    "nesciunt",
-                    null
-                ]
-            ],
-            "tasks": [],
-            "team_requirement": false,
-            "total_comments": 0,
-            "total_points": 15.5,
-            "total_voters": 7,
-            "total_watchers": 5,
-            "tribe_gig": null,
-            "version": 1,
-            "watchers": [
-                15,
-                9,
-                11,
-                13,
-                8
-            ]
+            "total_points": 34.0,
+            "version": 1
         }
-    ],
-    "watchers": []
+    ]
 }
 ----

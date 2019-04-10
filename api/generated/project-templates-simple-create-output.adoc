@@ -1,7 +1,7 @@
 [source,json]
 ----
 {
-    "created_date": "2017-06-28T15:00:27.752Z",
+    "created_date": "2019-04-10T11:00:02.798Z",
     "default_options": null,
     "default_owner_role": "product-owner",
     "description": "Sample description",
@@ -15,9 +15,9 @@
     "is_wiki_activated": true,
     "issue_statuses": null,
     "issue_types": null,
-    "modified_date": "2017-06-28T15:00:27.752Z",
+    "modified_date": "2019-04-10T11:00:02.798Z",
     "name": "New simple template",
-    "order": 1498662027750,
+    "order": 1554894002796,
     "points": null,
     "priorities": null,
     "roles": null,

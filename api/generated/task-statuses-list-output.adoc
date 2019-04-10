@@ -2,51 +2,6 @@
 ----
 [
     {
-        "color": "#999999",
-        "id": 36,
-        "is_closed": false,
-        "name": "New",
-        "order": 1,
-        "project": 8,
-        "slug": "new"
-    },
-    {
-        "color": "#ff9900",
-        "id": 37,
-        "is_closed": false,
-        "name": "In progress",
-        "order": 2,
-        "project": 8,
-        "slug": "in-progress"
-    },
-    {
-        "color": "#ffcc00",
-        "id": 38,
-        "is_closed": true,
-        "name": "Ready for test",
-        "order": 3,
-        "project": 8,
-        "slug": "ready-for-test"
-    },
-    {
-        "color": "#669900",
-        "id": 39,
-        "is_closed": true,
-        "name": "Closed",
-        "order": 4,
-        "project": 8,
-        "slug": "closed"
-    },
-    {
-        "color": "#999999",
-        "id": 40,
-        "is_closed": false,
-        "name": "Needs Info",
-        "order": 5,
-        "project": 8,
-        "slug": "needs-info"
-    },
-    {
         "color": "#ffcc00",
         "id": 3,
         "is_closed": true,
@@ -84,7 +39,7 @@
     },
     {
         "color": "#AAAAAA",
-        "id": 41,
+        "id": 36,
         "is_closed": true,
         "name": "New status",
         "order": 8,
@@ -93,7 +48,7 @@
     },
     {
         "color": "#999999",
-        "id": 42,
+        "id": 37,
         "is_closed": false,
         "name": "New status name",
         "order": 10,
@@ -269,6 +224,51 @@
         "name": "Ready for test",
         "order": 3,
         "project": 5,
+        "slug": "ready-for-test"
+    },
+    {
+        "color": "#669900",
+        "id": 24,
+        "is_closed": true,
+        "name": "Closed",
+        "order": 4,
+        "project": 5,
+        "slug": "closed"
+    },
+    {
+        "color": "#999999",
+        "id": 25,
+        "is_closed": false,
+        "name": "Needs Info",
+        "order": 5,
+        "project": 5,
+        "slug": "needs-info"
+    },
+    {
+        "color": "#999999",
+        "id": 26,
+        "is_closed": false,
+        "name": "New",
+        "order": 1,
+        "project": 6,
+        "slug": "new"
+    },
+    {
+        "color": "#ff9900",
+        "id": 27,
+        "is_closed": false,
+        "name": "In progress",
+        "order": 2,
+        "project": 6,
+        "slug": "in-progress"
+    },
+    {
+        "color": "#ffcc00",
+        "id": 28,
+        "is_closed": true,
+        "name": "Ready for test",
+        "order": 3,
+        "project": 6,
         "slug": "ready-for-test"
     }
 ]

@@ -17,14 +17,14 @@
     },
     {
         "color": "#AAAAAA",
-        "id": 25,
+        "id": 22,
         "name": "New priority",
         "order": 8,
         "project": 1
     },
     {
         "color": "#999999",
-        "id": 26,
+        "id": 23,
         "name": "New priority name",
         "order": 10,
         "project": 1

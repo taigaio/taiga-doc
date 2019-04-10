@@ -2,7 +2,7 @@
 ----
 {
     "color": "#999999",
-    "id": 42,
+    "id": 37,
     "name": "New severity name",
     "order": 10,
     "project": 1

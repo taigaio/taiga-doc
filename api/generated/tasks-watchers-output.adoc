@@ -1,8 +1,8 @@
 [source,json]
 ----
 {
-    "full_name": "GitLab",
-    "id": 3,
-    "username": "gitlab-5e8f2ccaeb8345328615e5f687993bc5"
+    "full_name": "Administrator",
+    "id": 5,
+    "username": "admin"
 }
 ----

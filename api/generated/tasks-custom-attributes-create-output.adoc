@@ -1,10 +1,11 @@
 [source,json]
 ----
 {
-    "created_date": "2017-06-28T15:00:28.322Z",
+    "created_date": "2019-04-10T11:00:04.200Z",
     "description": "Duration in minutes",
-    "id": 36,
-    "modified_date": "2017-06-28T15:00:28.330Z",
+    "extra": null,
+    "id": 31,
+    "modified_date": "2019-04-10T11:00:04.203Z",
     "name": "Duration 2",
     "order": 8,
     "project": 1,

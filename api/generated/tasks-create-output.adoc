@@ -7,29 +7,33 @@
     "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2017-06-28T15:00:24.919Z",
+    "created_date": "2019-04-10T10:58:41.711Z",
     "description": "Implement API CALL",
     "description_html": "<p>Implement API CALL</p>",
+    "due_date": null,
+    "due_date_reason": "",
+    "due_date_status": "not_set",
     "external_reference": null,
     "finished_date": null,
-    "id": 229,
+    "generated_user_stories": null,
+    "id": 182,
     "is_blocked": false,
     "is_closed": false,
     "is_iocaine": false,
     "is_voter": false,
     "is_watcher": false,
-    "milestone": 3,
-    "milestone_slug": "sprint-2017-6-3",
-    "modified_date": "2017-06-28T15:00:24.934Z",
-    "owner": 6,
+    "milestone": null,
+    "milestone_slug": null,
+    "modified_date": "2019-04-10T10:58:41.725Z",
+    "owner": 5,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Vanesa Torres",
-        "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
-        "id": 6,
+        "full_name_display": "Administrator",
+        "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+        "id": 5,
         "is_active": true,
         "photo": null,
-        "username": "user2114747470430251528"
+        "username": "admin"
     },
     "project": 1,
     "project_extra_info": {
@@ -38,7 +42,7 @@
         "name": "Beta project patch",
         "slug": "project-0"
     },
-    "ref": 128,
+    "ref": 96,
     "status": 1,
     "status_extra_info": {
         "color": "#999999",
@@ -63,10 +67,33 @@
     "us_order": 1,
     "user_story": 17,
     "user_story_extra_info": {
-        "epics": null,
+        "epics": [
+            {
+                "color": "#3465a4",
+                "id": 7,
+                "project": {
+                    "id": 1,
+                    "name": "Beta project patch",
+                    "slug": "project-0"
+                },
+                "ref": 74,
+                "subject": "Create the html template"
+            },
+            {
+                "color": "#ef2929",
+                "id": 14,
+                "project": {
+                    "id": 3,
+                    "name": "Project Example 2",
+                    "slug": "project-2"
+                },
+                "ref": 68,
+                "subject": "Patching subject"
+            }
+        ],
         "id": 17,
-        "ref": 68,
-        "subject": "Create testsuite with matrix builds"
+        "ref": 42,
+        "subject": "Implement the form"
     },
     "version": 1,
     "watchers": []

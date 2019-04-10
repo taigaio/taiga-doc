@@ -1,8 +1,8 @@
 [source,json]
 ----
 {
-    "full_name": "Catalina Fernandez",
-    "id": 9,
-    "username": "user3"
+    "full_name": "Administrator",
+    "id": 5,
+    "username": "admin"
 }
 ----

@@ -6,11 +6,11 @@ curl -X POST \
 -d '{
         "bulk_epic_custom_attributes": [
             [
-                11,
+                12,
                 10
             ],
             [
-                13,
+                15,
                 15
             ]
         ],

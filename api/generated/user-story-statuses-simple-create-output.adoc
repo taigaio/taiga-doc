@@ -2,7 +2,7 @@
 ----
 {
     "color": "#999999",
-    "id": 68,
+    "id": 62,
     "is_archived": false,
     "is_closed": false,
     "name": "New status name",

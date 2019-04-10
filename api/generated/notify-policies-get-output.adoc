@@ -1,9 +1,11 @@
 [source,json]
 ----
 {
-    "id": 7,
+    "id": 6,
+    "live_notify_level": 1,
     "notify_level": 2,
     "project": 1,
-    "project_name": "Project Example 0"
+    "project_name": "Project Example 0",
+    "web_notify_level": true
 }
 ----

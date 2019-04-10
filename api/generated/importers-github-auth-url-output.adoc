@@ -1,6 +1,6 @@
 [source,json]
 ----
 {
-    "url": "https://github.com/login/oauth/authorize?client_id=e5846d601714d113bf4a&scope=user,repo"
+    "url": "https://github.com/login/oauth/authorize?client_id=XXXXXX_get_a_valid_client_id_from_github_XXXXXX&scope=user,repo"
 }
 ----

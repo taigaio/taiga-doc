@@ -1,21 +1,21 @@
 [source,json]
 ----
 {
-    "assigned_to": 14,
+    "assigned_to": 7,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Miguel Molina",
-        "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-        "id": 14,
+        "full_name_display": "Bego\u00f1a Flores",
+        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+        "id": 7,
         "is_active": true,
         "photo": null,
-        "username": "user8"
+        "username": "user1"
     },
-    "created_date": "2017-06-28T14:58:56.509Z",
+    "created_date": "2019-04-10T10:38:00.198Z",
     "description": null,
-    "id": 66,
+    "id": 101,
     "is_private": null,
-    "is_voter": false,
+    "is_voter": true,
     "is_watcher": false,
     "logo_small_url": null,
     "name": null,
@@ -24,43 +24,31 @@
     "project_is_private": false,
     "project_name": "Project Example 6",
     "project_slug": "project-6",
-    "ref": 83,
+    "ref": 100,
     "slug": null,
-    "status": "Ready for test",
-    "status_color": "#88A65E",
-    "subject": "Create the html template",
+    "status": "Needs Info",
+    "status_color": "#89BAB4",
+    "subject": "Feature/improved image admin",
     "tags_colors": [
         {
-            "color": "#f5e53b",
-            "name": "culpa"
-        },
-        {
-            "color": "#e86797",
-            "name": "fuga"
-        },
-        {
             "color": null,
-            "name": "eveniet"
+            "name": "impedit"
         },
         {
-            "color": "#9345df",
-            "name": "fugit"
+            "color": "#e610c1",
+            "name": "natus"
         },
         {
-            "color": null,
-            "name": "molestiae"
+            "color": "#665de1",
+            "name": "est"
         },
         {
-            "color": "#05175b",
-            "name": "porro"
+            "color": "#e7b695",
+            "name": "deserunt"
         },
         {
-            "color": "#ad75ec",
-            "name": "cumque"
-        },
-        {
-            "color": "#f53074",
-            "name": "quia"
+            "color": "#713547",
+            "name": "atque"
         }
     ],
     "total_voters": 1,

@@ -2,52 +2,60 @@
 ----
 [
     {
-        "id": 7,
+        "id": 6,
+        "live_notify_level": 1,
         "notify_level": 2,
         "project": 1,
-        "project_name": "Project Example 0"
+        "project_name": "Project Example 0",
+        "web_notify_level": true
     },
     {
         "id": 19,
+        "live_notify_level": 1,
         "notify_level": 1,
         "project": 2,
-        "project_name": "Project Example 1"
+        "project_name": "Project Example 1",
+        "web_notify_level": true
     },
     {
-        "id": 35,
+        "id": 38,
+        "live_notify_level": 1,
         "notify_level": 1,
         "project": 3,
-        "project_name": "Project Example 2"
+        "project_name": "Project Example 2",
+        "web_notify_level": true
     },
     {
-        "id": 51,
+        "id": 48,
+        "live_notify_level": 1,
         "notify_level": 1,
         "project": 4,
-        "project_name": "Project Example 3"
+        "project_name": "Project Example 3",
+        "web_notify_level": true
     },
     {
-        "id": 64,
+        "id": 62,
+        "live_notify_level": 1,
         "notify_level": 1,
         "project": 5,
-        "project_name": "Project Example 4"
+        "project_name": "Project Example 4",
+        "web_notify_level": true
     },
     {
-        "id": 80,
+        "id": 74,
+        "live_notify_level": 1,
         "notify_level": 1,
         "project": 6,
-        "project_name": "Project Example 5"
+        "project_name": "Project Example 5",
+        "web_notify_level": true
     },
     {
-        "id": 89,
+        "id": 87,
+        "live_notify_level": 1,
         "notify_level": 1,
         "project": 7,
-        "project_name": "Project Example 6"
-    },
-    {
-        "id": 112,
-        "notify_level": 1,
-        "project": 8,
-        "project_name": "Project Example"
+        "project_name": "Project Example 6",
+        "web_notify_level": true
     }
 ]
 ----

@@ -2,72 +2,79 @@
 ----
 [
     {
-        "created_date": "2017-06-28T14:56:12.555Z",
-        "description": "unde sit obcaecati quasi impedit",
-        "id": 5,
-        "modified_date": "2017-06-28T14:56:12.555Z",
-        "name": "ipsum",
-        "order": 1,
-        "project": 1,
-        "type": "multiline"
-    },
-    {
-        "created_date": "2017-06-28T14:56:12.552Z",
-        "description": "necessitatibus velit aliquam exercitationem debitis laboriosam",
-        "id": 4,
-        "modified_date": "2017-06-28T14:56:12.552Z",
-        "name": "maiores harum ipsa",
-        "order": 1,
-        "project": 1,
-        "type": "multiline"
-    },
-    {
-        "created_date": "2017-06-28T14:56:12.551Z",
+        "created_date": "2019-04-10T10:34:12.594Z",
         "description": "vitae error dignissimos ipsa minus nostrum",
-        "id": 3,
-        "modified_date": "2017-06-28T14:56:12.551Z",
-        "name": "nulla",
+        "extra": null,
+        "id": 4,
+        "modified_date": "2019-04-10T10:34:12.594Z",
+        "name": "eveniet",
         "order": 1,
         "project": 1,
-        "type": "multiline"
+        "type": "richtext"
     },
     {
-        "created_date": "2017-06-28T14:56:12.549Z",
-        "description": "iusto optio tempora hic voluptas illo ex a nihil porro placeat",
-        "id": 2,
-        "modified_date": "2017-06-28T14:56:12.549Z",
-        "name": "vel",
-        "order": 5,
+        "created_date": "2019-04-10T10:34:12.592Z",
+        "description": "ex a nihil porro placeat",
+        "extra": null,
+        "id": 3,
+        "modified_date": "2019-04-10T10:34:12.592Z",
+        "name": "obcaecati quaerat",
+        "order": 1,
+        "project": 1,
+        "type": "checkbox"
+    },
+    {
+        "created_date": "2019-04-10T10:34:12.595Z",
+        "description": "necessitatibus velit aliquam exercitationem debitis laboriosam",
+        "extra": null,
+        "id": 5,
+        "modified_date": "2019-04-10T10:34:12.595Z",
+        "name": "pariatur",
+        "order": 1,
         "project": 1,
         "type": "date"
     },
     {
-        "created_date": "2017-06-28T14:59:56.403Z",
+        "created_date": "2019-04-10T10:34:12.591Z",
+        "description": "inventore ab iusto optio tempora hic",
+        "extra": null,
+        "id": 2,
+        "modified_date": "2019-04-10T10:34:12.591Z",
+        "name": "facilis temporibus",
+        "order": 5,
+        "project": 1,
+        "type": "url"
+    },
+    {
+        "created_date": "2019-04-10T10:44:12.964Z",
         "description": "Duration in minutes",
+        "extra": null,
         "id": 26,
-        "modified_date": "2017-06-28T14:59:56.410Z",
+        "modified_date": "2019-04-10T10:44:12.967Z",
         "name": "Duration 2",
         "order": 8,
         "project": 1,
         "type": "text"
     },
     {
-        "created_date": "2017-06-28T14:56:12.547Z",
-        "description": "culpa quisquam nulla inventore minus iste ad modi aliquid",
+        "created_date": "2019-04-10T10:34:12.589Z",
+        "description": "vel omnis culpa quisquam nulla",
+        "extra": null,
         "id": 1,
-        "modified_date": "2017-06-28T14:59:56.366Z",
+        "modified_date": "2019-04-10T10:44:12.874Z",
         "name": "Duration 1",
         "order": 10,
         "project": 1,
-        "type": "url"
+        "type": "richtext"
     },
     {
-        "created_date": "2017-06-28T14:59:56.447Z",
+        "created_date": "2019-04-10T10:44:13.048Z",
         "description": "",
+        "extra": null,
         "id": 27,
-        "modified_date": "2017-06-28T14:59:56.454Z",
+        "modified_date": "2019-04-10T10:44:13.051Z",
         "name": "Duration 3",
-        "order": 1498661996441,
+        "order": 1554893053034,
         "project": 1,
         "type": "text"
     }

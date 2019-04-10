@@ -1,22 +1,22 @@
 [source,json]
 ----
 {
-    "attached_file": "attachments/9/9/1/3/4f69aae6d83230999d008b849f58bfe00139e89ac6fc0d6c4a1d19386202/test.png",
-    "created_date": "2017-06-28T14:59:52.668Z",
+    "attached_file": "attachments/6/2/b/7/d0d683596d3e2451dcc0cbe6003d7b9d9490c141bb047a4580ac2ba22244/test.png",
+    "created_date": "2019-04-10T10:44:04.441Z",
     "description": "",
     "from_comment": false,
-    "id": 1190,
+    "id": 1176,
     "is_deprecated": false,
-    "modified_date": "2017-06-28T14:59:52.690Z",
+    "modified_date": "2019-04-10T10:44:04.450Z",
     "name": "test.png",
     "object_id": 1,
     "order": 0,
-    "owner": 6,
-    "preview_url": "http://localhost:8000/media/attachments/9/9/1/3/4f69aae6d83230999d008b849f58bfe00139e89ac6fc0d6c4a1d19386202/test.png",
+    "owner": 5,
+    "preview_url": "http://localhost:8000/media/attachments/6/2/b/7/d0d683596d3e2451dcc0cbe6003d7b9d9490c141bb047a4580ac2ba22244/test.png?token=XK3I9Q%3AN5b6CWNfvyV8TtR22ZWAUQlmvap2Lz-UUuK-baeJoXNH9oVjv4B3hcjVYigMDLzU6ri2o6UH-8HBQ2XEJE532Q",
     "project": 1,
     "sha1": "b2f15df34ab8da49fab6bafeac4ad98023a88adb",
     "size": 3045,
-    "thumbnail_card_url": "http://localhost:8000/media/attachments/9/9/1/3/4f69aae6d83230999d008b849f58bfe00139e89ac6fc0d6c4a1d19386202/test.png.300x200_q85_crop.png",
-    "url": "http://localhost:8000/media/attachments/9/9/1/3/4f69aae6d83230999d008b849f58bfe00139e89ac6fc0d6c4a1d19386202/test.png"
+    "thumbnail_card_url": "http://localhost:8000/media/attachments/6/2/b/7/d0d683596d3e2451dcc0cbe6003d7b9d9490c141bb047a4580ac2ba22244/test.png.300x200_q85_crop.png?token=XK3I9Q%3ANp7OW7MJlUaCp7BjdSUSmFjILxYNm8-aqfuiLG1b8ieQl48nhdf1293yvQlT0QL-Kak5tRAi8uxZN7qnA3AEUA",
+    "url": "http://localhost:8000/media/attachments/6/2/b/7/d0d683596d3e2451dcc0cbe6003d7b9d9490c141bb047a4580ac2ba22244/test.png?token=XK3I9Q%3AN5b6CWNfvyV8TtR22ZWAUQlmvap2Lz-UUuK-baeJoXNH9oVjv4B3hcjVYigMDLzU6ri2o6UH-8HBQ2XEJE532Q"
 }
 ----

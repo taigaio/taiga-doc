@@ -1,123 +1,118 @@
 [source,json]
 ----
 {
-    "completed_points": [
-        8.0,
-        2.0,
-        13.0,
-        0.5
-    ],
-    "completed_tasks": 11,
-    "completed_userstories": 1,
+    "completed_points": [],
+    "completed_tasks": 2,
+    "completed_userstories": 0,
     "days": [
         {
-            "day": "2017-05-04",
-            "name": 4,
-            "open_points": 225.5,
-            "optimal_points": 225.5
-        },
-        {
-            "day": "2017-05-05",
-            "name": 5,
-            "open_points": 198.65,
-            "optimal_points": 210.46666666666667
-        },
-        {
-            "day": "2017-05-06",
-            "name": 6,
-            "open_points": 198.65,
-            "optimal_points": 195.43333333333334
-        },
-        {
-            "day": "2017-05-07",
-            "name": 7,
-            "open_points": 182.05,
-            "optimal_points": 180.4
-        },
-        {
-            "day": "2017-05-08",
-            "name": 8,
-            "open_points": 180.55,
-            "optimal_points": 165.36666666666667
-        },
-        {
-            "day": "2017-05-09",
-            "name": 9,
-            "open_points": 180.55,
-            "optimal_points": 150.33333333333334
-        },
-        {
-            "day": "2017-05-10",
-            "name": 10,
-            "open_points": 157.05,
-            "optimal_points": 135.3
-        },
-        {
-            "day": "2017-05-11",
-            "name": 11,
-            "open_points": 138.71666666666667,
-            "optimal_points": 120.26666666666668
-        },
-        {
-            "day": "2017-05-12",
-            "name": 12,
-            "open_points": 122.11666666666667,
-            "optimal_points": 105.23333333333335
-        },
-        {
-            "day": "2017-05-13",
-            "name": 13,
-            "open_points": 122.11666666666667,
-            "optimal_points": 90.20000000000002
-        },
-        {
-            "day": "2017-05-14",
+            "day": "2019-02-14",
             "name": 14,
-            "open_points": 120.61666666666667,
-            "optimal_points": 75.16666666666669
+            "open_points": 107.0,
+            "optimal_points": 107.0
         },
         {
-            "day": "2017-05-15",
+            "day": "2019-02-15",
             "name": 15,
-            "open_points": 110.36666666666667,
-            "optimal_points": 60.133333333333354
+            "open_points": 107.0,
+            "optimal_points": 99.86666666666666
         },
         {
-            "day": "2017-05-16",
+            "day": "2019-02-16",
             "name": 16,
-            "open_points": 110.36666666666667,
-            "optimal_points": 45.10000000000002
+            "open_points": 96.0,
+            "optimal_points": 92.73333333333332
         },
         {
-            "day": "2017-05-17",
+            "day": "2019-02-17",
             "name": 17,
-            "open_points": 98.61666666666667,
-            "optimal_points": 30.06666666666669
+            "open_points": 96.0,
+            "optimal_points": 85.59999999999998
         },
         {
-            "day": "2017-05-18",
+            "day": "2019-02-18",
             "name": 18,
-            "open_points": 98.61666666666667,
-            "optimal_points": 15.033333333333358
+            "open_points": 96.0,
+            "optimal_points": 78.46666666666664
         },
         {
-            "day": "2017-05-19",
+            "day": "2019-02-19",
             "name": 19,
-            "open_points": 98.61666666666667,
-            "optimal_points": 2.4868995751603507e-14
+            "open_points": 96.0,
+            "optimal_points": 71.3333333333333
+        },
+        {
+            "day": "2019-02-20",
+            "name": 20,
+            "open_points": 96.0,
+            "optimal_points": 64.19999999999996
+        },
+        {
+            "day": "2019-02-21",
+            "name": 21,
+            "open_points": 96.0,
+            "optimal_points": 57.06666666666663
+        },
+        {
+            "day": "2019-02-22",
+            "name": 22,
+            "open_points": 96.0,
+            "optimal_points": 49.933333333333294
+        },
+        {
+            "day": "2019-02-23",
+            "name": 23,
+            "open_points": 96.0,
+            "optimal_points": 42.79999999999996
+        },
+        {
+            "day": "2019-02-24",
+            "name": 24,
+            "open_points": 96.0,
+            "optimal_points": 35.66666666666663
+        },
+        {
+            "day": "2019-02-25",
+            "name": 25,
+            "open_points": 96.0,
+            "optimal_points": 28.533333333333296
+        },
+        {
+            "day": "2019-02-26",
+            "name": 26,
+            "open_points": 96.0,
+            "optimal_points": 21.399999999999963
+        },
+        {
+            "day": "2019-02-27",
+            "name": 27,
+            "open_points": 85.0,
+            "optimal_points": 14.26666666666663
+        },
+        {
+            "day": "2019-02-28",
+            "name": 28,
+            "open_points": 85.0,
+            "optimal_points": 7.1333333333332964
+        },
+        {
+            "day": "2019-03-01",
+            "name": 1,
+            "open_points": 85.0,
+            "optimal_points": -3.730349362740526e-14
         }
     ],
-    "estimated_finish": "2017-05-19",
-    "estimated_start": "2017-05-04",
+    "estimated_finish": "2019-03-01",
+    "estimated_start": "2019-02-14",
     "iocaine_doses": 0,
-    "name": "Sprint 2017-5-4",
+    "name": "Sprint 2019-2-14",
     "total_points": {
-        "1": 69.0,
-        "2": 86.0,
-        "3": 44.0,
-        "4": 26.5
+        "1": 58.0,
+        "2": 9.0,
+        "3": 30.0,
+        "4": 10.0
     },
-    "total_tasks": 24,
-    "total_userstories": 6
+    "total_tasks": 13,
+    "total_userstories": 3
 }
 ----

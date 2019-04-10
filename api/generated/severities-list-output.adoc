@@ -2,41 +2,6 @@
 ----
 [
     {
-        "color": "#666666",
-        "id": 36,
-        "name": "Wishlist",
-        "order": 1,
-        "project": 8
-    },
-    {
-        "color": "#669933",
-        "id": 37,
-        "name": "Minor",
-        "order": 2,
-        "project": 8
-    },
-    {
-        "color": "#0000FF",
-        "id": 38,
-        "name": "Normal",
-        "order": 3,
-        "project": 8
-    },
-    {
-        "color": "#FFA500",
-        "id": 39,
-        "name": "Important",
-        "order": 4,
-        "project": 8
-    },
-    {
-        "color": "#CC0000",
-        "id": 40,
-        "name": "Critical",
-        "order": 5,
-        "project": 8
-    },
-    {
         "color": "#0000FF",
         "id": 3,
         "name": "Normal",
@@ -66,14 +31,14 @@
     },
     {
         "color": "#AAAAAA",
-        "id": 41,
+        "id": 36,
         "name": "New severity",
         "order": 8,
         "project": 1
     },
     {
         "color": "#999999",
-        "id": 42,
+        "id": 37,
         "name": "New severity name",
         "order": 10,
         "project": 1
@@ -210,6 +175,41 @@
         "name": "Normal",
         "order": 3,
         "project": 5
+    },
+    {
+        "color": "#FFA500",
+        "id": 24,
+        "name": "Important",
+        "order": 4,
+        "project": 5
+    },
+    {
+        "color": "#CC0000",
+        "id": 25,
+        "name": "Critical",
+        "order": 5,
+        "project": 5
+    },
+    {
+        "color": "#666666",
+        "id": 26,
+        "name": "Wishlist",
+        "order": 1,
+        "project": 6
+    },
+    {
+        "color": "#669933",
+        "id": 27,
+        "name": "Minor",
+        "order": 2,
+        "project": 6
+    },
+    {
+        "color": "#0000FF",
+        "id": 28,
+        "name": "Normal",
+        "order": 3,
+        "project": 6
     }
 ]
 ----

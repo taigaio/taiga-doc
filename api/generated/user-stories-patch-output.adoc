@@ -1,53 +1,61 @@
 [source,json]
 ----
 {
-    "assigned_to": 13,
+    "assigned_to": 7,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Mohamed Ortega",
-        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-        "id": 13,
+        "full_name_display": "Bego\u00f1a Flores",
+        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+        "id": 7,
         "is_active": true,
         "photo": null,
-        "username": "user7"
+        "username": "user1"
     },
+    "assigned_users": [
+        7
+    ],
     "attachments": [],
-    "backlog_order": 1498661772663,
+    "backlog_order": 1554892452670,
     "blocked_note": "",
     "blocked_note_html": "",
     "client_requirement": false,
     "comment": "",
-    "created_date": "2017-06-28T14:56:12.663Z",
-    "description": "Animi harum hic ut sed fugiat, harum voluptates iste obcaecati totam eos deleniti, dolores quo nemo quibusdam, nam mollitia saepe dolorum expedita, numquam officiis laudantium?",
-    "description_html": "<p>Animi harum hic ut sed fugiat, harum voluptates iste obcaecati totam eos deleniti, dolores quo nemo quibusdam, nam mollitia saepe dolorum expedita, numquam officiis laudantium?</p>",
+    "created_date": "2019-04-10T10:34:12.670Z",
+    "description": "Expedita quos dolore adipisci animi harum hic ut sed fugiat, harum voluptates iste obcaecati totam eos deleniti, dolores quo nemo quibusdam? Dolorum expedita veniam eveniet numquam officiis laudantium? Voluptate voluptas molestiae necessitatibus id facilis animi odit dolores enim, maxime cupiditate perspiciatis modi odit eveniet ullam. Consequuntur doloremque sit deserunt earum corrupti architecto eveniet quis amet obcaecati, non ex amet rerum aut facere rem vel delectus fugit tempora nobis, ut debitis ipsam alias iure tenetur, quae voluptatem illum tenetur porro voluptas doloribus, obcaecati corporis porro neque itaque temporibus nulla unde quas tempora.",
+    "description_html": "<p>Expedita quos dolore adipisci animi harum hic ut sed fugiat, harum voluptates iste obcaecati totam eos deleniti, dolores quo nemo quibusdam? Dolorum expedita veniam eveniet numquam officiis laudantium? Voluptate voluptas molestiae necessitatibus id facilis animi odit dolores enim, maxime cupiditate perspiciatis modi odit eveniet ullam. Consequuntur doloremque sit deserunt earum corrupti architecto eveniet quis amet obcaecati, non ex amet rerum aut facere rem vel delectus fugit tempora nobis, ut debitis ipsam alias iure tenetur, quae voluptatem illum tenetur porro voluptas doloribus, obcaecati corporis porro neque itaque temporibus nulla unde quas tempora.</p>",
+    "due_date": null,
+    "due_date_reason": "",
+    "due_date_status": "not_set",
     "epic_order": null,
     "epics": [
         {
-            "color": "#fcaf3e",
-            "id": 17,
+            "color": "#ef2929",
+            "id": 14,
             "project": {
                 "id": 3,
                 "name": "Project Example 2",
                 "slug": "project-2"
             },
-            "ref": 42,
+            "ref": 68,
             "subject": "Patching subject"
         }
     ],
     "external_reference": null,
-    "finish_date": "2017-06-28T14:56:13.001Z",
+    "finish_date": null,
     "generated_from_issue": null,
+    "generated_from_task": null,
     "id": 1,
     "is_blocked": false,
-    "is_closed": true,
+    "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
-    "kanban_order": 1498661772663,
+    "kanban_order": 1554892452670,
     "milestone": 1,
-    "milestone_name": "Sprint 2017-5-4",
-    "milestone_slug": "sprint-2017-5-4",
-    "modified_date": "2017-06-28T14:59:53.920Z",
+    "milestone_name": "Sprint 2019-2-14",
+    "milestone_slug": "sprint-2019-2-14",
+    "modified_date": "2019-04-10T10:44:07.267Z",
     "origin_issue": null,
+    "origin_task": null,
     "owner": 12,
     "owner_extra_info": {
         "big_photo": null,
@@ -59,10 +67,10 @@
         "username": "user6"
     },
     "points": {
-        "1": 8,
-        "2": 5,
-        "3": 10,
-        "4": 3
+        "1": 12,
+        "2": 2,
+        "3": 5,
+        "4": 5
     },
     "project": 1,
     "project_extra_info": {
@@ -73,27 +81,30 @@
     },
     "ref": 1,
     "sprint_order": 10,
-    "status": 3,
+    "status": 4,
     "status_extra_info": {
-        "color": "#ff9900",
+        "color": "#fcc000",
         "is_closed": false,
-        "name": "In progress"
+        "name": "Ready for test"
     },
     "subject": "Patching subject",
     "tags": [
         [
-            "voluptate",
-            "#b0eff0"
+            "cum",
+            "#ab14d9"
         ]
     ],
     "tasks": [],
     "team_requirement": false,
+    "total_attachments": 4,
     "total_comments": 1,
-    "total_points": 23.5,
-    "total_voters": 5,
-    "total_watchers": 0,
+    "total_points": 44.0,
+    "total_voters": 1,
+    "total_watchers": 1,
     "tribe_gig": null,
     "version": 2,
-    "watchers": []
+    "watchers": [
+        6
+    ]
 }
 ----

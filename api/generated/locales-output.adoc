@@ -23,6 +23,16 @@
     },
     {
         "bidi": false,
+        "code": "eu",
+        "name": "Euskara"
+    },
+    {
+        "bidi": true,
+        "code": "fa",
+        "name": "\u0641\u0627\u0631\u0633\u06cc\u200f"
+    },
+    {
+        "bidi": false,
         "code": "fi",
         "name": "Suomi"
     },
@@ -30,6 +40,11 @@
         "bidi": false,
         "code": "fr",
         "name": "Fran\u00e7ais"
+    },
+    {
+        "bidi": true,
+        "code": "he",
+        "name": "\u05e2\u05d1\u05e8\u05d9\u05ea\u200f"
     },
     {
         "bidi": false,
@@ -80,6 +95,11 @@
         "bidi": false,
         "code": "tr",
         "name": "T\u00fcrk\u00e7e"
+    },
+    {
+        "bidi": false,
+        "code": "uk",
+        "name": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430"
     },
     {
         "bidi": false,

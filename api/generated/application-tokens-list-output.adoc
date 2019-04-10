@@ -5,27 +5,27 @@
         "application": {
             "description": "description paragraph",
             "icon_url": null,
-            "id": "00000000-0000-0000-0000-000000000001",
-            "name": "example application 2",
+            "id": "00000000-0000-0000-0000-000000000000",
+            "name": "example application",
             "web": "http://example.com"
         },
-        "auth_code": "00000000-0000-0000-0000-000000000004",
-        "id": 2,
-        "next_url": "http://example.com?auth_code=00000000-0000-0000-0000-000000000004",
-        "user": 6
+        "auth_code": "00000000-0000-0000-0000-000000000001",
+        "id": 3,
+        "next_url": "http://example.com?auth_code=00000000-0000-0000-0000-000000000001",
+        "user": 5
     },
     {
         "application": {
             "description": "description paragraph",
             "icon_url": null,
-            "id": "00000000-0000-0000-0000-000000000000",
-            "name": "example application",
+            "id": "00000000-0000-0000-0000-000000000001",
+            "name": "example application 2",
             "web": "http://example.com"
         },
-        "auth_code": "84d9908c-5c12-11e7-af58-c85b767e7e40",
-        "id": 1,
-        "next_url": "http://example.com?auth_code=84d9908c-5c12-11e7-af58-c85b767e7e40",
-        "user": 6
+        "auth_code": "00000000-0000-0000-0000-000000000004",
+        "id": 4,
+        "next_url": "http://example.com?auth_code=00000000-0000-0000-0000-000000000004",
+        "user": 5
     }
 ]
 ----

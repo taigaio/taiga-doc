@@ -1,21 +1,24 @@
 [source,json]
 ----
 {
-    "assigned_to": 8,
+    "assigned_to": 15,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Francisco Gil",
-        "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-        "id": 8,
+        "full_name_display": "Virginia Castro",
+        "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+        "id": 15,
         "is_active": true,
         "photo": null,
-        "username": "user2"
+        "username": "user9"
     },
     "attachments": [],
     "blocked_note": "",
-    "created_date": "2017-06-28T14:56:12.984Z",
+    "created_date": "2019-04-10T10:34:13.155Z",
+    "due_date": null,
+    "due_date_reason": "",
+    "due_date_status": "not_set",
     "external_reference": null,
-    "finished_date": "2017-05-10T17:39:19.591Z",
+    "finished_date": "2019-02-16T04:10:24.612Z",
     "id": 1,
     "is_blocked": false,
     "is_closed": true,
@@ -23,17 +26,17 @@
     "is_voter": true,
     "is_watcher": true,
     "milestone": 1,
-    "milestone_slug": "sprint-2017-5-4",
-    "modified_date": "2017-06-28T15:00:24.473Z",
-    "owner": 13,
+    "milestone_slug": "sprint-2019-2-14",
+    "modified_date": "2019-04-10T10:57:25.048Z",
+    "owner": 8,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Mohamed Ortega",
-        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-        "id": 13,
+        "full_name_display": "Francisco Gil",
+        "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+        "id": 8,
         "is_active": true,
         "photo": null,
-        "username": "user7"
+        "username": "user2"
     },
     "project": 1,
     "project_extra_info": {
@@ -52,31 +55,55 @@
     "subject": "Patching subject",
     "tags": [
         [
-            "possimus",
+            "perspiciatis",
             null
         ],
         [
-            "voluptate",
+            "cum",
+            null
+        ],
+        [
+            "architecto",
+            null
+        ],
+        [
+            "eveniet",
+            null
+        ],
+        [
+            "reiciendis",
+            null
+        ],
+        [
+            "cumque",
+            null
+        ],
+        [
+            "animi",
+            null
+        ],
+        [
+            "atque",
             null
         ]
     ],
-    "taskboard_order": 1498661772984,
+    "taskboard_order": 1554892453155,
     "total_comments": 1,
-    "total_voters": 6,
-    "total_watchers": 3,
-    "us_order": 1498661772984,
+    "total_voters": 4,
+    "total_watchers": 6,
+    "us_order": 1554892453155,
     "user_story": 1,
     "user_story_extra_info": {
         "epics": [
             {
-                "color": "#fcaf3e",
-                "id": 17,
+                "color": "#ef2929",
+                "id": 14,
                 "project": {
                     "id": 3,
                     "name": "Project Example 2",
                     "slug": "project-2"
                 },
-                "ref": 42,
+                "ref": 68,
                 "subject": "Patching subject"
             }
         ],
@@ -86,9 +113,12 @@
     },
     "version": 2,
     "watchers": [
-        15,
+        2,
+        11,
+        8,
         3,
-        6
+        13,
+        5
     ]
 }
 ----

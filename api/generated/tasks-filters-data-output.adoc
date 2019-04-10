@@ -3,111 +3,106 @@
 {
     "assigned_to": [
         {
-            "count": 5,
+            "count": 9,
             "full_name": "",
             "id": null
         },
         {
-            "count": 3,
+            "count": 1,
             "full_name": "Administrator",
             "id": 5
         },
         {
-            "count": 6,
+            "count": 2,
             "full_name": "Angela Perez",
             "id": 11
         },
         {
-            "count": 8,
+            "count": 4,
             "full_name": "Bego\u00f1a Flores",
             "id": 7
         },
         {
-            "count": 7,
+            "count": 1,
+            "full_name": "Catalina Fernandez",
+            "id": 9
+        },
+        {
+            "count": 6,
             "full_name": "Enrique Crespo",
             "id": 10
         },
         {
-            "count": 3,
+            "count": 2,
             "full_name": "Francisco Gil",
             "id": 8
         },
         {
-            "count": 6,
+            "count": 1,
             "full_name": "Miguel Molina",
             "id": 14
         },
         {
-            "count": 7,
+            "count": 2,
             "full_name": "Mohamed Ortega",
             "id": 13
         },
         {
-            "count": 3,
+            "count": 2,
             "full_name": "Vanesa Garcia",
             "id": 12
         },
         {
-            "count": 8,
-            "full_name": "Vanesa Torres",
-            "id": 6
-        },
-        {
-            "count": 7,
+            "count": 4,
             "full_name": "Virginia Castro",
             "id": 15
-        },
-        {
-            "count": 0,
-            "full_name": "test",
-            "id": 16
         }
     ],
     "owners": [
         {
-            "count": 7,
+            "count": 10,
             "full_name": "Administrator",
             "id": 5
         },
         {
-            "count": 3,
+            "count": 1,
             "full_name": "Angela Perez",
             "id": 11
         },
         {
-            "count": 5,
+            "count": 3,
             "full_name": "Bego\u00f1a Flores",
             "id": 7
         },
         {
             "count": 5,
+            "full_name": "Catalina Fernandez",
+            "id": 9
+        },
+        {
+            "count": 2,
             "full_name": "Enrique Crespo",
             "id": 10
         },
         {
-            "count": 9,
+            "count": 5,
             "full_name": "Francisco Gil",
             "id": 8
         },
         {
-            "count": 8,
+            "count": 5,
             "full_name": "Miguel Molina",
             "id": 14
         },
         {
-            "count": 5,
+            "count": 1,
             "full_name": "Mohamed Ortega",
             "id": 13
         },
         {
-            "count": 6,
+            "count": 1,
             "full_name": "Vanesa Garcia",
             "id": 12
-        },
-        {
-            "count": 14,
-            "full_name": "Vanesa Torres",
-            "id": 6
         },
         {
             "count": 1,
@@ -115,17 +110,61 @@
             "id": 15
         }
     ],
+    "roles": [
+        {
+            "color": null,
+            "count": 4,
+            "id": 1,
+            "name": "UX",
+            "order": 10
+        },
+        {
+            "color": null,
+            "count": 0,
+            "id": 2,
+            "name": "Design",
+            "order": 20
+        },
+        {
+            "color": null,
+            "count": 2,
+            "id": 3,
+            "name": "Front",
+            "order": 30
+        },
+        {
+            "color": null,
+            "count": 2,
+            "id": 4,
+            "name": "Back",
+            "order": 40
+        },
+        {
+            "color": null,
+            "count": 9,
+            "id": 5,
+            "name": "Product Owner",
+            "order": 50
+        },
+        {
+            "color": null,
+            "count": 8,
+            "id": 6,
+            "name": "Stakeholder",
+            "order": 60
+        }
+    ],
     "statuses": [
         {
             "color": "#ffcc00",
-            "count": 13,
+            "count": 6,
             "id": 3,
             "name": "Ready for test",
             "order": 3
         },
         {
             "color": "#669900",
-            "count": 14,
+            "count": 3,
             "id": 4,
             "name": "Closed",
             "order": 4
@@ -139,7 +178,7 @@
         },
         {
             "color": "#999999",
-            "count": 15,
+            "count": 5,
             "id": 5,
             "name": "Needs Info",
             "order": 5
@@ -147,13 +186,13 @@
         {
             "color": "#AAAAAA",
             "count": 0,
-            "id": 41,
+            "id": 36,
             "name": "New status",
             "order": 8
         },
         {
             "color": "#999999",
-            "count": 13,
+            "count": 8,
             "id": 1,
             "name": "Patch status name",
             "order": 10
@@ -161,7 +200,7 @@
         {
             "color": "#999999",
             "count": 0,
-            "id": 42,
+            "id": 37,
             "name": "New status name",
             "order": 10
         }
@@ -169,23 +208,53 @@
     "tags": [
         {
             "color": null,
+            "count": 2,
+            "name": "animi"
+        },
+        {
+            "color": null,
+            "count": 1,
+            "name": "architecto"
+        },
+        {
+            "color": null,
+            "count": 2,
+            "name": "atque"
+        },
+        {
+            "color": null,
+            "count": 4,
+            "name": "cum"
+        },
+        {
+            "color": null,
+            "count": 1,
+            "name": "cumque"
+        },
+        {
+            "color": null,
             "count": 1,
             "name": "customer"
         },
         {
             "color": null,
-            "count": 3,
-            "name": "possimus"
+            "count": 1,
+            "name": "eveniet"
+        },
+        {
+            "color": null,
+            "count": 1,
+            "name": "perspiciatis"
+        },
+        {
+            "color": null,
+            "count": 2,
+            "name": "reiciendis"
         },
         {
             "color": null,
             "count": 1,
             "name": "service catalog"
-        },
-        {
-            "color": null,
-            "count": 9,
-            "name": "voluptate"
         }
     ]
 }

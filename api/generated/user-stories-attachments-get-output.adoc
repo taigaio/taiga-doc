@@ -1,22 +1,22 @@
 [source,json]
 ----
 {
-    "attached_file": "attachments/9/f/e/e/e6b31a59bb1de26ba3c5c4f1d279b6ee654d27112a8bb160a12422c45daa/sample_attachment_3.txt",
-    "created_date": "2017-06-28T14:57:06.331Z",
-    "description": "cum obcaecati blanditiis quam maiores",
+    "attached_file": "attachments/c/8/e/6/5ff7b2211a1bc55cc39e10324e558a1f709c393e2f4fdbe7c42d963aa0eb/sample_attachment_2.txt",
+    "created_date": "2019-04-10T10:35:32.081Z",
+    "description": "possimus mollitia blanditiis fugiat perferendis placeat vero molestiae magni",
     "from_comment": false,
     "id": 415,
     "is_deprecated": false,
-    "modified_date": "2017-06-28T14:57:06.331Z",
-    "name": "sample_attachment_3.txt",
-    "object_id": 94,
+    "modified_date": "2019-04-10T10:35:32.081Z",
+    "name": "sample_attachment_2.txt",
+    "object_id": 35,
     "order": 2,
-    "owner": 12,
-    "preview_url": "http://localhost:8000/media/attachments/9/f/e/e/e6b31a59bb1de26ba3c5c4f1d279b6ee654d27112a8bb160a12422c45daa/sample_attachment_3.txt",
+    "owner": 11,
+    "preview_url": "http://localhost:8000/media/attachments/c/8/e/6/5ff7b2211a1bc55cc39e10324e558a1f709c393e2f4fdbe7c42d963aa0eb/sample_attachment_2.txt?token=XK3I-w%3AlGwTpclA66F6LDsedQmsmieSXuFlIggvbrPSV8f4emwl9di3WLgt6ARgVQY_IdFTZGHUizWqJWFSCcjeqq207g",
     "project": 2,
-    "sha1": "da2631d805f12a1b533738a0912e9b9c2261dbef",
-    "size": 1178,
+    "sha1": "62dbe72633a794717c1f4817d2d7d087b1c29c69",
+    "size": 1688,
     "thumbnail_card_url": null,
-    "url": "http://localhost:8000/media/attachments/9/f/e/e/e6b31a59bb1de26ba3c5c4f1d279b6ee654d27112a8bb160a12422c45daa/sample_attachment_3.txt"
+    "url": "http://localhost:8000/media/attachments/c/8/e/6/5ff7b2211a1bc55cc39e10324e558a1f709c393e2f4fdbe7c42d963aa0eb/sample_attachment_2.txt?token=XK3I-w%3AlGwTpclA66F6LDsedQmsmieSXuFlIggvbrPSV8f4emwl9di3WLgt6ARgVQY_IdFTZGHUizWqJWFSCcjeqq207g"
 }
 ----

@@ -2,14 +2,14 @@
 ----
 {
     "content_type": 13,
-    "created": "2017-06-28T14:59:55.100Z",
+    "created": "2019-04-10T10:44:09.985Z",
     "data": {
         "comment": "",
         "comment_html": "",
         "milestone": {
             "id": 1,
-            "name": "Sprint 2017-5-4",
-            "slug": "sprint-2017-5-4"
+            "name": "Sprint 2019-2-14",
+            "slug": "sprint-2019-2-14"
         },
         "project": {
             "description": "Project example 0 description",
@@ -19,13 +19,13 @@
         },
         "user": {
             "big_photo": null,
-            "date_joined": "2017-06-28T14:56:11.455Z",
-            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
-            "id": 6,
+            "date_joined": "2013-04-01T13:48:21.711Z",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
             "is_profile_visible": true,
-            "name": "Vanesa Torres",
+            "name": "Administrator",
             "photo": null,
-            "username": "user2114747470430251528"
+            "username": "admin"
         },
         "userstory": {
             "id": 1,
@@ -38,13 +38,13 @@
                     {
                         "changes": {
                             "description": [
-                                "ea repellendus accusamus consequuntur doloremque sit deserunt earum",
+                                "mollitia illo sed expedita voluptates necessitatibus ratione sapiente laudantium",
                                 "patching description"
                             ]
                         },
-                        "filename": "sample_attachment_1.txt",
+                        "filename": "sample_attachment_2.txt",
                         "thumb_url": null,
-                        "url": "http://localhost:8000/media/attachments/d/7/b/d/6a01d3ee0c02dc148487de70ece86ff798aeb7dfd837860fbd0234487a15/sample_attachment_1.txt"
+                        "url": "http://localhost:8000/media/attachments/0/2/3/e/0b62f01db6040f75201a34c0ec526bc4da0f54069e5e02429ecb4ed84d99/sample_attachment_2.txt?token=XK3I_A%3AaCe8UO-1hXj2NvndoSsuwLwyX5s12LgaYt-S6LYwDHWsVuoTHW7G2om153MeRnu3HEfywkCzoEdXTzWMS520Fg"
                     }
                 ],
                 "deleted": [],
@@ -52,9 +52,9 @@
             }
         }
     },
-    "data_content_type": 45,
+    "data_content_type": 49,
     "event_type": "userstories.userstory.change",
-    "id": 7881,
+    "id": 7826,
     "namespace": "project:1",
     "object_id": 1,
     "project": 1

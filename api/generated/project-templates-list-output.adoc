@@ -127,7 +127,7 @@
                 "order": 3
             }
         ],
-        "modified_date": "2017-06-28T15:00:26.644Z",
+        "modified_date": "2019-04-10T11:00:01.628Z",
         "name": "Scrum",
         "order": 1,
         "points": [
@@ -1134,7 +1134,7 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2017-06-28T15:00:14.076Z",
+        "created_date": "2019-04-10T10:45:46.332Z",
         "default_options": {
             "epic_status": "Patch status name",
             "issue_status": "Patch status name",
@@ -1145,7 +1145,7 @@
             "task_status": "Patch status name",
             "us_status": "New"
         },
-        "default_owner_role": "design",
+        "default_owner_role": "back",
         "description": "Beta template description",
         "epic_statuses": [
             {
@@ -1287,9 +1287,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2017-06-28T15:00:14.103Z",
+        "modified_date": "2019-04-10T10:45:46.369Z",
         "name": "Beta template",
-        "order": 1498662014076,
+        "order": 1554893146332,
         "points": [
             {
                 "name": "?",
@@ -1762,7 +1762,7 @@
         "videoconferences_extra_data": null
     },
     {
-        "created_date": "2017-06-28T15:00:27.683Z",
+        "created_date": "2019-04-10T11:00:02.707Z",
         "default_options": {
             "issue_status": "New",
             "issue_type": "Bug",
@@ -1843,9 +1843,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2017-06-28T15:00:27.692Z",
+        "modified_date": "2019-04-10T11:00:02.711Z",
         "name": "New Template",
-        "order": 1498662027676,
+        "order": 1554894002703,
         "points": [
             {
                 "name": "?",
@@ -2231,7 +2231,7 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2017-06-28T15:00:27.752Z",
+        "created_date": "2019-04-10T11:00:02.798Z",
         "default_options": null,
         "default_owner_role": "product-owner",
         "description": "Sample description",
@@ -2245,9 +2245,9 @@
         "is_wiki_activated": true,
         "issue_statuses": null,
         "issue_types": null,
-        "modified_date": "2017-06-28T15:00:27.752Z",
+        "modified_date": "2019-04-10T11:00:02.798Z",
         "name": "New simple template",
-        "order": 1498662027750,
+        "order": 1554894002796,
         "points": null,
         "priorities": null,
         "roles": null,

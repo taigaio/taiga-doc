@@ -2,27 +2,6 @@
 ----
 [
     {
-        "color": "#666666",
-        "id": 22,
-        "name": "Low",
-        "order": 1,
-        "project": 8
-    },
-    {
-        "color": "#669933",
-        "id": 23,
-        "name": "Normal",
-        "order": 3,
-        "project": 8
-    },
-    {
-        "color": "#CC0000",
-        "id": 24,
-        "name": "High",
-        "order": 5,
-        "project": 8
-    },
-    {
         "color": "#CC0000",
         "id": 3,
         "name": "High",
@@ -38,14 +17,14 @@
     },
     {
         "color": "#AAAAAA",
-        "id": 25,
+        "id": 22,
         "name": "New priority",
         "order": 8,
         "project": 1
     },
     {
         "color": "#999999",
-        "id": 26,
+        "id": 23,
         "name": "New priority name",
         "order": 10,
         "project": 1

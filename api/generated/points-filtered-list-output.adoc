@@ -51,7 +51,7 @@
         "value": 8.0
     },
     {
-        "id": 133,
+        "id": 121,
         "name": "Huge",
         "order": 8,
         "project": 1,
@@ -79,7 +79,7 @@
         "value": null
     },
     {
-        "id": 134,
+        "id": 122,
         "name": "Very huge",
         "order": 10,
         "project": 1,

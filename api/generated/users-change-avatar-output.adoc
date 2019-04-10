@@ -1,24 +1,27 @@
 [source,json]
 ----
 {
-    "big_photo": "http://localhost:8000/media/user/9/b/1/6/0ab3d39e5b95b18e85c9295328c38da98d7e9460f1501e6a04e811b801da/test.png.300x300_q85_crop.png",
+    "accepted_terms": true,
+    "big_photo": "http://localhost:8000/media/user/0/8/2/8/849b8da655ad07ea31b497fd71200567a12cc2262ece78fc052bb5aa8a43/test.png.300x300_q85_crop.png?token=XK3NnA%3Akb-UfXC__etS1TA3-slp6p99eq0LKbTXHfNZNSW1ZOuZ3m4wsVED77TBTm69AiW4HPpTWBR0YmQ-wt3xugQEIA",
     "bio": "",
-    "color": "#40826D",
-    "email": "user2114747470430251528@taigaio.demo",
-    "full_name": "Vanesa Torres",
-    "full_name_display": "Vanesa Torres",
-    "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
-    "id": 6,
+    "color": "",
+    "date_joined": "2013-04-01T13:48:21.711Z",
+    "email": "admin@admin.com",
+    "full_name": "Administrator",
+    "full_name_display": "Administrator",
+    "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+    "id": 5,
     "is_active": true,
     "lang": "",
     "max_memberships_private_projects": null,
     "max_memberships_public_projects": null,
     "max_private_projects": null,
     "max_public_projects": null,
-    "photo": "http://localhost:8000/media/user/9/b/1/6/0ab3d39e5b95b18e85c9295328c38da98d7e9460f1501e6a04e811b801da/test.png.80x80_q85_crop.png",
+    "photo": "http://localhost:8000/media/user/0/8/2/8/849b8da655ad07ea31b497fd71200567a12cc2262ece78fc052bb5aa8a43/test.png.80x80_q85_crop.png?token=XK3NnA%3A68Ql5J1tI-mxOuBJLAZVcNjiMT1j5RAaIE_avbxVRZMt6x277VhYteSgpkDCo8lRdExUnKPmo0jJsSLFGCvmOA",
+    "read_new_terms": false,
     "roles": [
         "Back",
-        "Design",
+        "Front",
         "Product Owner",
         "Stakeholder",
         "UX"
@@ -26,7 +29,8 @@
     "theme": "",
     "timezone": "",
     "total_private_projects": 4,
-    "total_public_projects": 2,
-    "username": "patchedusername"
+    "total_public_projects": 1,
+    "username": "patchedusername",
+    "uuid": "567aab5ca9e24d79a81ac20aa175282b"
 }
 ----
