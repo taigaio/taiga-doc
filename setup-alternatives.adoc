@@ -122,9 +122,8 @@ Important notes about using **taiga-docker**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Docker is not officially supported by the Taiga development team but a link:https://github.com/ipedrazas/taiga-docker[docker script]
-has been developed by link:https://github.com/ipedrazas[Iván Pedrazas], link:https://github.com/htdvisser/taiga-docker[another docker script]
-has been developed by link:https://github.com/htdvisser[Hylke Visser], and
-link:https://github.com/benhutchins/docker-taiga[yet another docker script]
+has been developed by link:https://github.com/ipedrazas[Iván Pedrazas], and
+link:https://github.com/benhutchins/docker-taiga[another docker script]
 has been developed by link:https://github.com/benhutchins[Benjamin Hutchins].
 
 [[setup-taiga-puppet]]
