@@ -1,7 +1,7 @@
 To get a user story send a GET request specifying the user story reference and one of the following parameters:
 
 - project (project id)
-- project_slug
+- project__slug
 
 include::../generated/user-stories-get-by-ref-cmd.adoc[]
 

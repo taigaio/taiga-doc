@@ -1,7 +1,7 @@
 To get an epic send a GET request specifying the epic reference and one of the following parameters:
 
 - project (project id)
-- project_slug
+- project__slug
 
 include::../generated/epics-get-by-ref-cmd.adoc[]
 

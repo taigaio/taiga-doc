@@ -1,7 +1,7 @@
 To get an issue send a GET request specifying the issue reference and one of the following parameters:
 
 - project (project id)
-- project_slug
+- project__slug
 
 include::../generated/issues-get-by-ref-cmd.adoc[]
 

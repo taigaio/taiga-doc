@@ -1,7 +1,7 @@
 To get a task send a GET request specifying the task reference and one of the following parameters:
 
 - project (project id)
-- project_slug
+- project__slug
 
 include::../generated/tasks-by-ref-output.adoc[]
 
