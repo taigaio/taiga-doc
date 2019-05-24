@@ -5,6 +5,7 @@ To register a user without invitation send a POST request containing the followi
 - *password* (required)
 - *email* (required)
 - *full_name* (required)
+- *accepted_terms* (required): boolean
 
 include::../generated/normal-register-cmd.adoc[]
 
