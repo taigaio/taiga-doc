@@ -223,9 +223,11 @@ And you have to enable in your dist/conf.json in taiga-front adding it to import
 How can I configure Github importers in my own instance?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For configure Github, you have to go to https://github.com/settings/developers,
-register a new application and obtaing a client id and a client secret, and
-then, configure it in your settings/local.py:
+To configure Github, you have to go to https://github.com/settings/developers,
+register a new application and obtain a client id and a client secret. When creating
+the GitHub OAuth app the "Authorization callback URL" should be set to the base url
+for your Taiga instance. After you have created the app you have to configure Taiga
+for it in your settings/local.py:
 
 [source,python]
 ----
