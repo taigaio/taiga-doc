@@ -131,6 +131,9 @@ sudo rabbitmqctl add_vhost taiga
 sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
 ----
 
+[NOTE]
+As the password will be used inside an URL later, please use only web safe
+characters: a-z, A-Z, 0-9, and  - . _ ~
 
 Backend configuration
 ---------------------
