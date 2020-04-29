@@ -278,7 +278,10 @@ cp ~/taiga-front-dist/dist/conf.example.json ~/taiga-front-dist/dist/conf.json
 ----
 
 [NOTE]
-Be careful using copy-paste from browser to avoid `http://` duplication.
+Be careful using copy-paste from browser to avoid `http://` duplication.  
+
+[NOTE]
+Also, make sure to remove the `:8000` portion of the api string. Causes 404 page on public facing sites if left in.
 
 Having **taiga-front-dist** downloaded and configured is insufficient. The next step is to expose the code
 (in **dist** directory) under a static file web server.
