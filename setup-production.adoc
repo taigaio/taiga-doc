@@ -36,27 +36,41 @@ During the tutorial, We assume the following details:
 - **system ram** `>=1GB` (needed for compilation of lxml)
 - **working dir** `/home/taiga/` (default for user `taiga`)
 
+Dependencies
+~~~~~~~~~~~~
+The typical Taiga setup described in this documentation depends on the following standalone major software installed separately from Taiga:
+
+- https://www.nginx.com/[NGINX] - web server and reverse proxy
+- https://www.postgresql.org[PostgreSQL] - database
+- https://gunicorn.org[gunicorn] - Python WSGI HTTP server
+- https://www.rabbitmq.com[rabbitmq-server] - message broker
+- https://redis.io[redis-server] - in-memory key-value database
+- https://nodejs.org/en[Node.js] - JavaScript runtime (required if **taiga-events** is present)
+- https://virtualenv.pypa.io/[Virtualenv] and https://virtualenvwrapper.readthedocs.io[virtualenvwrapper] - Python virtual environment managers
+
+
+[NOTE]
+This list does not contain libraries and the Python dependencies required by **taiga-back**. For Python dependencies, refer to https://github.com/taigaio/taiga-back/blob/stable/requirements.txt[taiga-back/stable/requirements.txt].
+
 System Architecture Description
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This is a short system architecture description to help you understand the way Taiga is built and works.
-Before you go any further in the installation, make sure you read this description to get a high-level overview.
+Before you go any further in the installation procedure, make sure you read this description to get a high-level overview on the architecture.
 
-Taiga consists of 2 core (mandatory) modules:
+Taiga consists of 2 core modules:
 
 - **taiga-back**
 - **taiga-front**
 
-**taiga-back** is written in django, python3 and serves API endpoints for the frontend.
+**taiga-back** is written in https://www.djangoproject.com[Django], https://www.python.org/[Python 3]. This serves the API endpoints for the frontend. +
+**taiga-front** is written mostly in https://angularjs.org[AngularJS] and https://coffeescript.org[CoffeeScript]. This consumes the API endpoints provided by the backend.
 
-**taiga-front** is written mostly in angularjs and coffeescript and depends on the backend.
+The Python backend is exposed by gunicorn (port `8001/tcp`), which is a https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface[Python WSGI HTTP server]. The process manager is https://systemd.io[systemd], which runs gunicorn and taiga-back together.
+Technically the backend communicates with the https://en.wikipedia.org/wiki/Relational_database[RDBMS], and through the frontend it allows the user to use the features of Taiga.
+The communication between the front- and backend is done using REST APIs.
 
-The python backend is exposed by gunicorn (port 9001), which is a Python WSGI HTTP server. The process manager is systemd, which runs gunicorn and taiga-back together.
-Technically the backend communicates with the database(postgresql) and through the frontend, it allows the user to use the features of Taiga.
-The communication between the front- and backend is done using APIs.
-
-The backend is then publicly exposed by nginx which acts as a reverse-proxy for this case.
-The frontend is located in the `dist` folder and is exposed publicly by nginx which acts as a static webserver for this case.
-
+The **backend** is publicly exposed by NGINX which acts as a reverse-proxy in this case. +
+The **frontend** is located in the `dist` folder and is also exposed publicly by NGINX which acts as a static webserver in this case.
 
 Prerequisites
 -------------
