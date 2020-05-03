@@ -416,12 +416,12 @@ web server. For this purpose, Taiga uses **nginx**.
 systemd and gunicorn
 ~~~~~~~~~~~~~~~~~~~~
 
-Systemd is the process supervisor used by Ubuntu and Taiga uses it to execute **gunicorn**.
-Systemd is not only for executing processes, but it also has utils for monitoring them, collecting logs, and
+**systemd** is the process supervisor used by Ubuntu, and Taiga uses it to run **gunicorn**. +
+**systemd** is not only for executing processes, but it also has utils for monitoring them, collecting logs, and
 restarting processes if something goes wrong, and also for starting processes on system boot.
 
 
-.Initial Taiga configuration for systemd in `/etc/systemd/system/taiga.service`
+.Create a new systemd file at `/etc/systemd/system/taiga.service` to run **taiga-back**:
 [source,ini]
 ----
 [Unit]
@@ -440,7 +440,7 @@ RestartSec=3
 WantedBy=default.target
 ----
 
-Final step is reloading systemd daemon and starting taiga service:
+Reload the systemd daemon and start the `taiga` service:
 
 [source,bash]
 ----
@@ -449,7 +449,7 @@ sudo systemctl start taiga
 sudo systemctl enable taiga
 ----
 
-.To verify that the services are running, issue:
+.To verify that the service is running, execute the following command:
 [source,bash]
 ----
 sudo systemctl status taiga
@@ -473,12 +473,12 @@ sudo rm /etc/nginx/sites-enabled/default
 mkdir -p ~/logs
 ----
 
-.To create a new nginx virtualhost for Taiga, create and edit the `/etc/nginx/conf.d/taiga.conf` file, as follows:
+.To configure a new nginx virtualhost for Taiga, create and edit the `/etc/nginx/conf.d/taiga.conf` file, as follows:
 [source,nginx]
 ----
 server {
     listen 80 default_server;
-    server_name _;
+    server_name _;  #  See http://nginx.org/en/docs/http/server_names.html
 
     large_client_header_buffers 4 32k;
     client_max_body_size 50M;
@@ -538,13 +538,13 @@ server {
 }
 ----
 
-.Issue the following command to verify the nginx configuration and to track any error in the service:
+.Execute the following command to verify the nginx configuration and to track any error in the service:
 [source,bash]
 ----
 sudo nginx -t
 ----
 
-Finally, restart nginx:
+Finally, restart the nginx service:
 [source,bash]
 ----
 sudo systemctl restart nginx
