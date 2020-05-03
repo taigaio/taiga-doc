@@ -1,4 +1,4 @@
-= Taiga: Setup production environment
+= Taiga: Setup Production Environment
 :toc: left
 :numbered:
 :source-highlighter: pygments
@@ -149,9 +149,9 @@ sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
 As the password will be used inside an URL later, please use only web safe
 characters: a-z, A-Z, 0-9, and  - . _ ~
 
-Backend configuration
----------------------
-This section helps configuring the backend (api) Taiga service and its dependencies.
+[[taiga-back]]
+Backend Setup
+-------------
 
 .Download the code
 [source,bash]
@@ -255,8 +255,9 @@ Then you must be able to see a json representing the list of endpoints at the ur
 At this stage the backend has been installed successfully, but to run the python backend in production,
 an application server must be configured first. The details for this are explained later in this doc.
 
-Frontend installation
----------------------
+[[taiga-front]]
+Frontend Setup
+--------------
 Download the code from Github:
 
 .Download the code
@@ -300,8 +301,8 @@ In this tutorial We use **nginx** as a static file web server and reverse-proxy.
 The configuration of nginx is explained later.
 
 [[taiga-events]]
-Events installation
--------------------
+Events Setup
+------------
 
 **This step is optional and can be skipped**
 
@@ -534,7 +535,7 @@ sudo systemctl restart nginx
 
 
 Optional Modules and Settings
---------------------------------
+-----------------------------
 The following items are completely optional and are up for you to configure them.
 Taiga-events module is also an optional feature, but its installation is part of this tutorial.
 
