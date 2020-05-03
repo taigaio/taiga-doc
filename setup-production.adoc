@@ -634,8 +634,7 @@ cd /etc/ssl
 sudo openssl dhparam -out dhparam.pem 4096
 ----
 
-.Update the configuration in `/etc/nginx/conf.d/taiga.conf`
-(Taiga-events not included)
+.Update the configuration in `/etc/nginx/conf.d/taiga.conf` as follows:
 [source,nginx]
 ----
 server {
@@ -725,7 +724,7 @@ server {
 Before activating the HTTPS site, the configuration for the frontend and the backend must be updated.
 Change the scheme from `http` to `https` throughout the configurations.
 
-.Update `~/taiga-back/settings/local.py`
+.Update `~/taiga-back/settings/local.py`:
 [source,python]
 ----
 from .common import *
@@ -759,7 +758,7 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 ----
 
 
-.Update `~/taiga-front-dist/dist/conf.json`
+.Update `~/taiga-front-dist/dist/conf.json`:
 [source,json]
 ----
 {
@@ -774,7 +773,7 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 }
 ----
 
-.Restart taiga services after updating the configuration:
+.Restart all Taiga services after updating the configuration:
 [source,bash]
 ----
 sudo systemctl restart 'taiga*'
@@ -800,11 +799,12 @@ Troubleshooting
 - `/home/taiga/taiga-events/config.json`
 - The result of command `sudo systemctl status 'taiga*'`
 
-.Issue the following commands to check the status of services used by Taiga:
+.Execute the following commands to check the status of services used by Taiga:
 [source,bash]
 ----
 sudo systemctl status nginx
 sudo systemctl status rabbitmq-server
 sudo systemctl status postgresql
 ----
+
 Check If you see any error in the service statuses and make sure all service status is `Active: active (running)`.
