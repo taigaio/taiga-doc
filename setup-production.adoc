@@ -36,6 +36,9 @@ During the tutorial, We assume the following details:
 - **system ram** `>=1GB` (needed for compilation of lxml)
 - **working dir** `/home/taiga/` (default for user `taiga`)
 
+Changing the username from `taiga` to something else is not recommended at any point of the deployment unless you're well aware of what you're doing. +
+Changing the username may result in unexpected behavior or failed deployment!
+
 Dependencies
 ~~~~~~~~~~~~
 The typical Taiga setup described in this documentation depends on the following standalone major software installed separately from Taiga:
@@ -124,8 +127,8 @@ cd ~
 ----
 
 [NOTE]
-Do **not** change to root user.
-The installation must be done with the `taiga` user.
+Do **not** change to the root user (`uid=0`) at this point! +
+Taiga deployment must be finished with the `taiga` user!
 
 Configuring Dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,7 +187,14 @@ python manage.py compilemessages
 python manage.py collectstatic --noinput
 ----
 
-This creates the administrator account. The login credentials are **admin** with password **123123**.
+The above migrations create an administrator account. The login credentials are the following:
+
+- **username**: admin
+- **password**: 123123
+
+[NOTE]
+**Attention!** Change the administrator account password to a strong password before enabling public access to your Taiga instance. If you miss this action, unathorized persons can log in to your Taiga instance equipped with administrator privileges.
+
 
 **OPTIONAL:**
 If you would like to have some example data loaded into Taiga, execute the following command,
@@ -608,7 +618,7 @@ Place the SSL certificates in `/etc/nginx/ssl`. It is recommended to replace
 the original configuration for `port 80` so that users are redirected to the HTTPS
 version automatically.
 
-Second we need to generate a stronger GHE parameter:
+Second we need to generate a strong DH parameter:
 [source,nginx]
 ----
 cd /etc/ssl
