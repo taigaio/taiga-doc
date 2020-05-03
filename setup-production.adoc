@@ -8,15 +8,15 @@ Introduction
 ------------
 This documentation explains how to deploy a full Taiga service (each module is part of the Taiga platform).
 
-The Taiga platform consists of three main components
+The Taiga platform consists of three main modules, 
 and each one has its own dependencies both at compile time and runtime:
 
 - **taiga-back** (backend/api)
 - **taiga-front-dist** (frontend)
 - **taiga-events** (websockets gateway) (optional)
 
-Each component can be run on one unique machine or all of them can be installed to a different machine aswell.
-In this tutorial we will setup everything on one single machine, installing all three Taiga components.
+Each module can be run on one unique machine or all of them can be installed to a different machine aswell.
+In this tutorial we will setup everything on one single machine, installing all three Taiga modules.
 This type of setup should suffice for small/medium production environments.
 
 Overview
@@ -89,7 +89,7 @@ sudo apt-get install -y nginx
 sudo apt-get install -y rabbitmq-server redis-server
 ----
 
-.The component `taiga-back` uses postgresql (>= 9.4) as database:
+.The module `taiga-back` uses postgresql (>= 9.4) as database:
 [source,bash]
 ----
 sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
@@ -533,7 +533,7 @@ sudo systemctl restart nginx
 **Now you should have the service up and running on: `http://example.com/`**
 
 
-Optional Components and Settings
+Optional Modules and Settings
 --------------------------------
 The following items are completely optional and are up for you to configure them.
 Taiga-events module is also an optional feature, but its installation is part of this tutorial.
