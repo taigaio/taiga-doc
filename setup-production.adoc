@@ -78,10 +78,14 @@ The **frontend** is located in the `dist` folder and is also exposed publicly by
 
 Prerequisites
 -------------
-Taiga consists of three modules and each of them require different packages and third-party packages.
-This sections collects the required packages for a successful Taiga installation and configuration.
-In this section we will install all dependencies for all modules, including the optional modules and services.
+This guide describes a configuration of Taiga which consists of three core modules. Each module has its own dependencies on various packages. +
+The following subsections list the required packages and provide instructions on their installation and configuration for a successful Taiga deployment.
 
+Installing Dependencies
+~~~~~~~~~~~~~~~~~~~~~~~
+Execute the following commands to install all dependencies for all modules. Optional dependencies are marked with an inline comment, i.e.: `# Optional: taiga-events`.
+
+[[essential-packages]]
 .Essential packages:
 [source,bash]
 ----
@@ -90,17 +94,17 @@ sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg
 sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
 sudo apt-get install -y automake libtool curl git tmux gettext
 sudo apt-get install -y nginx
-sudo apt-get install -y rabbitmq-server redis-server
+sudo apt-get install -y rabbitmq-server redis-server  # Optional: taiga-events or async tasks
 ----
 
-.The module `taiga-back` uses postgresql (>= 9.4) as database:
+.The **taiga-back** module depends on PostgreSQL (>= 9.4) as its database:
 [source,bash]
 ----
 sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
 sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
 ----
 
-.Python (3) and virtualenvwrapper must be installed along with a few third-party libraries:
+.Python 3 must be installed along with a few third-party libraries:
 [source,bash]
 ----
 sudo apt-get install -y python3 python3-pip python3-dev virtualenvwrapper
@@ -112,13 +116,13 @@ sudo apt-get install -y libssl-dev libffi-dev
 **virtualenvwrapper** helps keeping the system clean of third party libraries, installed
 with the language package manager by installing these packages in an isolated virtual environment.
 
-Restart the shell or run `bash` to reload the bash environment with the new virtualenvwrapper
-variables and functions.
-
-**This step is mandatory before continuing the installation!**
+Restart the shell or type `bash` and press `Enter` to reload the shell environment with the new virtualenvwrapper variables and functions.
 
 
-.Create a user named `taiga`, and give it root permissions
+**This step is mandatory before continuing with the deployment!**
+
+
+.Create a user with root privileges named `taiga`:
 [source,bash]
 ----
 sudo adduser taiga
@@ -141,7 +145,7 @@ sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 
 
 ----
 
-.Create a user named `taiga`, and a virtualhost for RabbitMQ (taiga-events)
+.Create a user named `taiga`, and a virtualhost for RabbitMQ (Optional: taiga-events or async tasks)
 [source,bash]
 ----
 sudo rabbitmqctl add_user taiga PASSWORD_FOR_EVENTS
