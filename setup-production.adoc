@@ -160,8 +160,10 @@ characters: a-z, A-Z, 0-9, and  - . _ ~
 [[taiga-back]]
 Backend Setup
 -------------
+This section describes the installation and configuration of the *taiga-back* module which serves the REST API endpoints.
 
-.Download the code
+
+.Download the code:
 [source,bash]
 ----
 cd ~
@@ -170,19 +172,19 @@ cd taiga-back
 git checkout stable
 ----
 
-.Create new virtualenv named **taiga**
+.Create a new virtualenv named **taiga**:
 [source,bash]
 ----
 mkvirtualenv -p /usr/bin/python3 taiga
 ----
 
-.Install dependencies
+.Install all Python dependencies:
 [source, bash]
 ----
 pip install -r requirements.txt
 ----
 
-.Populate the database with initial basic data
+.Execute all migrations to populate the database with basic necessary initial data:
 [source,bash]
 ----
 python manage.py migrate --noinput
@@ -202,8 +204,8 @@ The above migrations create an administrator account. The login credentials are 
 
 
 **OPTIONAL:**
-If you would like to have some example data loaded into Taiga, execute the following command,
-which populates the database with sample projects and random data (useful for demos):
+If you would like to have some example data loaded into Taiga, 
+execute the following command to populate the database with sample projects and random data (useful for demos):
 
 [source,bash]
 ----
@@ -254,8 +256,8 @@ EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD_FOR_EVENTS@localhos
 
 Verification
 ~~~~~~~~~~~~
-(Optional)
-To make sure that everything works, issue the following command to run the backend in development mode for a test:
+(Optional step)
+To make sure that everything works, execute the following commands to run the backend in development mode for a quick test:
 
 [source,bash]
 ----
@@ -263,12 +265,13 @@ workon taiga
 python manage.py runserver
 ----
 
-Then you must be able to see a json representing the list of endpoints at the url: http://localhost:8000/api/v1/ .
-
+Open your browser at http://localhost:8000/api/v1/. +
+If your configuration is correct, you will see a 
+JSON representation of REST API endpoints.
 
 [NOTE]
-At this stage the backend has been installed successfully, but to run the python backend in production,
-an application server must be configured first. The details for this are explained later in this doc.
+At this stage the backend has been deployed successfully, but to run the Python backend in production,
+a WSGI server must be configured first. The WSGI server confuguration is explained later in this documentation.
 
 [[taiga-front]]
 Frontend Setup
