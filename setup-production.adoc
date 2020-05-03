@@ -321,15 +321,15 @@ The configuration of nginx is explained later.
 [[taiga-events]]
 Events Setup
 ------------
-
 **This step is optional and can be skipped**
 
-Taiga-events is the Taiga websocket server, it allows taiga-front to show realtime changes in the backlog, taskboard, kanban and issues listing.
-Taiga-events use rabbitmq (the message broker).
+This section provides instructions on downloading **taiga-events**, installing its dependencies and configuring it for use in production:
 
-Download taiga-events from Github and install its dependencies:
+The **taiga-events** module is the Taiga websocket server which allows **taiga-front** to show realtime changes in the backlog, taskboard, kanban and issues listing.
 
-.Download the code
+The **taiga-events** module depends on <<essential-packages, rabbitmq-server>> as its message broker.
+
+.Download the code:
 [source,bash]
 ----
 cd ~
@@ -337,26 +337,26 @@ git clone https://github.com/taigaio/taiga-events.git taiga-events
 cd taiga-events
 ----
 
-.Install nodejs
+.Install Node.js
 [source,bash]
 ----
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ----
 
-.Install the javascript dependencies needed
+.Install the required JavaScript dependencies:
 [source,bash]
 ----
 npm install
 ----
 
-.Copy and edit the config.json file. Update with your rabbitmq uri and the secret key.
+.Create `config.json` file based on the provided example.
 [source,bash]
 ----
 cp config.example.json config.json
 ----
 
-.Your config.json should be like:
+.Update it with your RabbitMQ URL and your unique secret key. Your final `config.json` should look similar:
 [source,json]
 ----
 {
@@ -368,9 +368,10 @@ cp config.example.json config.json
 }
 ----
 
-The 'secret' in `config.json` must be the same as the "SECRET_KEY" in `~/taiga-back/settings/local.py`
+The `secret` value in `config.json` must be the same as the `SECRET_KEY` in `~/taiga-back/settings/local.py`!
 
-Add taiga-events to systemd configuration.
+[[taiga-events-systemd]]
+Add **taiga-events** to systemd configuration.
 
 .Copy-paste the code below into `/etc/systemd/system/taiga_events.service`
 [source,ini]
