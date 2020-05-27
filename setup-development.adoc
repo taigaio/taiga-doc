@@ -79,11 +79,10 @@ sudo apt-get install -y python3 python3-pip python3-virtualenv python-dev python
 sudo apt-get install libxml2-dev libxslt-dev
 ----
 
-To manage dependencies taiga uses pipenv.
-
 [NOTE]
-As of November 2018, there are several options for installing pipenv.
-Please check the https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv[pipenv documentation] and choose your preferred method.
+Between November 2018 and May 2020,
+taiga-back relied on https://pypi.org/project/pipenv/[pipenv] to manage dependencies and the virtualenv.
+Currently, taiga-back uses `pip` and https://pypi.org/project/pip-tools/[pip-tools] to manage dependecies.
 
 The next step is to download the code from GitHub and install its dependencies:
 
@@ -96,23 +95,25 @@ cd taiga-back
 git checkout master
 ----
 
-.Create a new virtualenv and install dependencies
+.Create a new virtualenv, activate it and install base requirements
 [source,bash]
 ----
-pipenv sync --dev
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip setuptools wheels
+python -m pip install --upgrade pip-tools
 ----
 
 [NOTE]
-It is important to use the `pipenv sync` command instead of `pipenv install`.
-The latter will update versions and perform a dependency resolution so the file `Pipfile.lock` might be modified
-and probably this is not intended.
-Of course you should use `pipenv install` when the goal is to add or upgrade a package.
+We will use the `venv` module included in the standard library to manage the taiga-back virtual environmnent
+but you could use other ways to manage the virtual environment
+like https://pypi.org/project/virtualenvwrapper/[virtualenvwrapper]
+or https://pypi.org/project/pew/[pew].
 
-
-.Activate the virtualenv
+.Install dependencies
 [source,bash]
 ----
-pipenv shell
+python -m pip install -r requirements.txt -r requirements-devel.txt
 ----
 
 .Adjust Django Configuration
@@ -153,7 +154,6 @@ To run the development environment you can run:
 
 [source,bash]
 ----
-pipenv shell  # enable the taiga virtualenv
 python manage.py runserver
 ----
 
@@ -189,8 +189,7 @@ tasks. You can run celery with:
 
 [source,bash]
 ----
-pipenv shell taiga  # enable the taiga virtualenv
-celery -A taiga worker -l info -E
+python -m celery -A taiga worker -l info -E
 ----
 
 Debian installation notes
