@@ -240,7 +240,7 @@ EVENTS_PUSH_BACKEND = "taiga.events.backends.rabbitmq.EventsPushBackend"
 EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD_FOR_EVENTS@localhost:5672/taiga"}
 
 # Uncomment and populate with proper connection parameters
-# for enable email sending. EMAIL_HOST_USER should end by @domain.tld
+# to enable email sending. `EMAIL_HOST_USER` should end by @<domain>.<tld>
 #EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 #EMAIL_USE_TLS = False
 #EMAIL_HOST = "localhost"
@@ -249,7 +249,7 @@ EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD_FOR_EVENTS@localhos
 #EMAIL_PORT = 25
 
 # Uncomment and populate with proper connection parameters
-# for enable GitHub login/sign in.
+# to enable GitHub login/sign-in.
 #GITHUB_API_CLIENT_ID = "yourgithubclientid"
 #GITHUB_API_CLIENT_SECRET = "yourgithubclientsecret"
 ----
@@ -562,12 +562,13 @@ Async tasks (Optional)
 ~~~~~~~~~~~~~~~~~~~~~~
 
 The default behavior in Taiga is to do all tasks in a synchronous way, but some of them
-can be completely asynchronous (such as webhooks or import/export).
-To do this, you have to configure and install the celery service requirements.
+can be completely asynchronous (such as webhook or import/export tasks).
+To do this, you have to configure and install the https://github.com/celery/celery[Celery] service requirements.
 
-There is just an exception related to exported files if your instance works in asynchronous mode the exported project files will be
-automatically removed from the storage after 24 hours, if not those media files won't be automatically removed (taiga-back doesn't really know anything about
-the existence of those files).
+There is an exception related to exported files:
+
+- If your instance works in *asynchronous mode*, the exported project files will be automatically removed from the storage after 24 hours.
+- If your instance works in *synchronous mode*, the exported project files will not be automatically removed (taiga-back doesn't know anything about the existence of such files).
 
 Install `rabbitmq-server` and `redis-server`:
 
@@ -576,19 +577,19 @@ Install `rabbitmq-server` and `redis-server`:
 sudo apt-get install -y rabbitmq-server redis-server
 ----
 
-To run celery with Taiga, include the following code line in the `local.py` file:
+To run Celery with Taiga, include the following code line in the `local.py` file:
 
 [source,python]
 ----
 CELERY_ENABLED = True
 ----
 
-You can configure other broker or results backend. If you need more info about it, check the celery documentation web page:
+You can configure other broker or results backend. If you need more info about it, check the Celery documentation web page:
 http://docs.celeryproject.org/en/latest/index.html
 
-Once you have configured celery on Taiga, you have to add celery to systemd configuration. See link:#systemd-and-gunicorn[Systemd and gunicorn] section.
+Once you have configured Celery on Taiga, you have to add Celery to systemd configuration. See link:#systemd-and-gunicorn[Systemd and gunicorn] section.
 
-.Taiga celery configuration block for systemd on `/etc/systemd/system/taiga_celery.service`
+.Taiga Celery configuration block for systemd on `/etc/systemd/system/taiga_celery.service`
 [source,ini]
 ----
 [Unit]
@@ -743,7 +744,7 @@ DEFAULT_FROM_EMAIL = "no-reply@example.com"
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 # Uncomment and populate with proper connection parameters
-# for enable email sending.
+# to enable email sending.
 #EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 #EMAIL_USE_TLS = False
 #EMAIL_HOST = "localhost"
@@ -752,7 +753,7 @@ SERVER_EMAIL = DEFAULT_FROM_EMAIL
 #EMAIL_PORT = 25
 
 # Uncomment and populate with proper connection parameters
-# for enable GitHub login/sign in.
+# to enable GitHub login/sign-in.
 #GITHUB_API_CLIENT_ID = "yourgithubclientid"
 #GITHUB_API_CLIENT_SECRET = "yourgithubclientsecret"
 ----
