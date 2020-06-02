@@ -106,7 +106,7 @@ python -m pip install --upgrade pip-tools
 ----
 
 [NOTE]
-We are using the `venv` module included in the standard library to manage the taiga-back virtual environmnent
+We are using the `venv` module, included in the standard library, to manage the taiga-back virtual environmnent
 but you can choose other ways to manage the virtual environment
 like https://pypi.org/project/virtualenvwrapper/[virtualenvwrapper]
 or https://pypi.org/project/pew/[pew].
