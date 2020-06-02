@@ -101,7 +101,7 @@ git checkout master
 ----
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install --upgrade pip setuptools wheels
+python -m pip install --upgrade pip setuptools wheel
 python -m pip install --upgrade pip-tools
 ----
 
