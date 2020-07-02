@@ -3,5 +3,5 @@
 curl -X GET \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer ${AUTH_TOKEN}" \
--s http://localhost:8000/api/v1/resolver?project=project-0\&milestone=sprint-2019-2-14
+-s http://localhost:8000/api/v1/resolver?project=project-0\&milestone=sprint-2020-5-8
 ----

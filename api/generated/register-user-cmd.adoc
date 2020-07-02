@@ -3,6 +3,7 @@
 curl -X POST \
 -H "Content-Type: application/json" \
 -d '{
+        "accepted_terms": "true",
         "email": "test-register@email.com",
         "existing": false,
         "full_name": "test",

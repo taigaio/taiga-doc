@@ -1,21 +1,21 @@
 [source,json]
 ----
 {
-    "assigned_to": 7,
+    "assigned_to": 12,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Bego\u00f1a Flores",
-        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-        "id": 7,
+        "full_name_display": "Vanesa Garcia",
+        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+        "id": 12,
         "is_active": true,
         "photo": null,
-        "username": "user1"
+        "username": "user6"
     },
-    "created_date": "2019-04-10T10:38:00.198Z",
+    "created_date": "2020-07-02T11:59:19.011Z",
     "description": null,
-    "id": 101,
+    "id": 25,
     "is_private": null,
-    "is_voter": true,
+    "is_voter": false,
     "is_watcher": false,
     "logo_small_url": null,
     "name": null,
@@ -24,35 +24,27 @@
     "project_is_private": false,
     "project_name": "Project Example 6",
     "project_slug": "project-6",
-    "ref": 100,
+    "ref": 50,
     "slug": null,
-    "status": "Needs Info",
-    "status_color": "#89BAB4",
-    "subject": "Feature/improved image admin",
+    "status": "Ready for test",
+    "status_color": "#fcc000",
+    "subject": "Fixing templates for Django 1.6.",
     "tags_colors": [
         {
+            "color": "#c4f027",
+            "name": "officia"
+        },
+        {
             "color": null,
-            "name": "impedit"
+            "name": "perferendis"
         },
         {
-            "color": "#e610c1",
-            "name": "natus"
-        },
-        {
-            "color": "#665de1",
-            "name": "est"
-        },
-        {
-            "color": "#e7b695",
-            "name": "deserunt"
-        },
-        {
-            "color": "#713547",
-            "name": "atque"
+            "color": null,
+            "name": "minima"
         }
     ],
-    "total_voters": 1,
-    "total_watchers": 7,
-    "type": "issue"
+    "total_voters": 2,
+    "total_watchers": 1,
+    "type": "epic"
 }
 ----

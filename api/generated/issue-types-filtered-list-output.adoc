@@ -17,14 +17,14 @@
     },
     {
         "color": "#AAAAAA",
-        "id": 31,
+        "id": 34,
         "name": "New type",
         "order": 8,
         "project": 1
     },
     {
         "color": "#999999",
-        "id": 32,
+        "id": 35,
         "name": "New type name",
         "order": 10,
         "project": 1

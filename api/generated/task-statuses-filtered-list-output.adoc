@@ -39,7 +39,7 @@
     },
     {
         "color": "#AAAAAA",
-        "id": 36,
+        "id": 41,
         "is_closed": true,
         "name": "New status",
         "order": 8,
@@ -48,7 +48,7 @@
     },
     {
         "color": "#999999",
-        "id": 37,
+        "id": 42,
         "is_closed": false,
         "name": "New status name",
         "order": 10,

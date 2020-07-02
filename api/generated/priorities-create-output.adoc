@@ -2,7 +2,7 @@
 ----
 {
     "color": "#AAAAAA",
-    "id": 22,
+    "id": 25,
     "name": "New priority",
     "order": 8,
     "project": 1

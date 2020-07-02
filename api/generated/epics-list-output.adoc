@@ -1,37 +1,37 @@
 [source,json]
 ----
 {
-    "assigned_to": 12,
+    "assigned_to": 15,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Vanesa Garcia",
-        "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-        "id": 12,
+        "full_name_display": "Virginia Castro",
+        "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+        "id": 15,
         "is_active": true,
         "photo": null,
-        "username": "user6"
+        "username": "user9"
     },
     "attachments": [],
     "blocked_note": "",
     "client_requirement": false,
-    "color": "#729fcf",
-    "created_date": "2019-04-10T10:34:47.233Z",
-    "epics_order": 1554892487233,
+    "color": "#3465a4",
+    "created_date": "2020-07-02T11:56:44.275Z",
+    "epics_order": 1593691004275,
     "id": 1,
     "is_blocked": false,
     "is_closed": false,
-    "is_voter": false,
+    "is_voter": true,
     "is_watcher": false,
-    "modified_date": "2019-04-10T10:34:47.677Z",
-    "owner": 7,
+    "modified_date": "2020-07-02T11:56:44.453Z",
+    "owner": 14,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Bego\u00f1a Flores",
-        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-        "id": 7,
+        "full_name_display": "Miguel Molina",
+        "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+        "id": 14,
         "is_active": true,
         "photo": null,
-        "username": "user1"
+        "username": "user8"
     },
     "project": 1,
     "project_extra_info": {
@@ -40,40 +40,31 @@
         "name": "Project Example 0",
         "slug": "project-0"
     },
-    "ref": 68,
-    "status": 3,
+    "ref": 64,
+    "status": 4,
     "status_extra_info": {
-        "color": "#ff9900",
+        "color": "#fcc000",
         "is_closed": false,
-        "name": "In progress"
+        "name": "Ready for test"
     },
-    "subject": "Add tests for bulk operations",
+    "subject": "Added file copying and processing of images (resizing)",
     "tags": [
         [
-            "praesentium",
-            null
-        ],
-        [
-            "dolorem",
-            null
-        ],
-        [
-            "impedit",
-            "#cde1f0"
+            "eligendi",
+            "#5d8273"
         ]
     ],
     "team_requirement": false,
-    "total_voters": 5,
-    "total_watchers": 3,
+    "total_voters": 3,
+    "total_watchers": 2,
     "user_stories_counts": {
-        "progress": 0,
-        "total": 1
+        "progress": 1.5,
+        "total": 8
     },
     "version": 1,
     "watchers": [
-        6,
-        7,
-        9
+        12,
+        14
     ]
 }
 ----

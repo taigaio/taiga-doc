@@ -63,6 +63,11 @@
     },
     {
         "bidi": false,
+        "code": "lv",
+        "name": "Latvie\u0161u"
+    },
+    {
+        "bidi": false,
         "code": "nb",
         "name": "Norsk (bokm\u00e5l)"
     },

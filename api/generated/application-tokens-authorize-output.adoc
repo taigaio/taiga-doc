@@ -1,8 +1,8 @@
 [source,json]
 ----
 {
-    "auth_code": "00000000-0000-0000-0000-000000000001",
-    "next_url": "http://example.com?auth_code=00000000-0000-0000-0000-000000000001",
+    "auth_code": "bd7c35d8-2138-4fe6-8109-09b9935b7736",
+    "next_url": "http://example.com?auth_code=bd7c35d8-2138-4fe6-8109-09b9935b7736",
     "state": "random-state"
 }
 ----

@@ -1,7 +1,33 @@
 [source,json]
 ----
 {
-    "_error_message": "Username or password does not matches user.",
-    "_error_type": "taiga.base.exceptions.WrongArguments"
+    "accepted_terms": true,
+    "auth_token": "eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxNn0:1jrHFG:QR38NU7tHvPzl_s7BvgWEgnoxIc",
+    "big_photo": null,
+    "bio": "",
+    "color": "#c9f5fe",
+    "date_joined": "2020-07-03T08:40:29.738Z",
+    "email": "test-register@email.com",
+    "full_name": "test",
+    "full_name_display": "test",
+    "gravatar_id": "1ec29e4d0732b571e9a975e258a7e9b5",
+    "id": 16,
+    "is_active": true,
+    "lang": "",
+    "max_memberships_private_projects": null,
+    "max_memberships_public_projects": null,
+    "max_private_projects": null,
+    "max_public_projects": null,
+    "photo": null,
+    "read_new_terms": false,
+    "roles": [
+        "Front"
+    ],
+    "theme": "",
+    "timezone": "",
+    "total_private_projects": 0,
+    "total_public_projects": 0,
+    "username": "test-username",
+    "uuid": "c30015cc735e4b33b008139b58f13791"
 }
 ----

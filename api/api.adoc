@@ -308,7 +308,7 @@ include::stats/summary.adoc[]
 include::importers/summary.adoc[]
 
 
-[[contact]]
+[[contact-api]]
 == Contact
 include::contact/summary.adoc[]
 

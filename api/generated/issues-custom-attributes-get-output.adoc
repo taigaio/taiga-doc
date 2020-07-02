@@ -1,11 +1,11 @@
 [source,json]
 ----
 {
-    "created_date": "2019-04-10T10:34:12.611Z",
+    "created_date": "2020-07-02T11:56:21.171Z",
     "description": "voluptate rem perspiciatis ipsum",
     "extra": null,
     "id": 5,
-    "modified_date": "2019-04-10T10:56:04.777Z",
+    "modified_date": "2020-07-03T08:40:59.952Z",
     "name": "Duration 1",
     "order": 1,
     "project": 1,

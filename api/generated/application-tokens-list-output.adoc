@@ -9,10 +9,10 @@
             "name": "example application",
             "web": "http://example.com"
         },
-        "auth_code": "00000000-0000-0000-0000-000000000001",
-        "id": 3,
-        "next_url": "http://example.com?auth_code=00000000-0000-0000-0000-000000000001",
-        "user": 5
+        "auth_code": "bd7c35d8-2138-4fe6-8109-09b9935b7736",
+        "id": 1,
+        "next_url": "http://example.com?auth_code=bd7c35d8-2138-4fe6-8109-09b9935b7736",
+        "user": 6
     },
     {
         "application": {
@@ -23,9 +23,9 @@
             "web": "http://example.com"
         },
         "auth_code": "00000000-0000-0000-0000-000000000004",
-        "id": 4,
+        "id": 2,
         "next_url": "http://example.com?auth_code=00000000-0000-0000-0000-000000000004",
-        "user": 5
+        "user": 6
     }
 ]
 ----

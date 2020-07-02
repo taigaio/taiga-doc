@@ -31,6 +31,8 @@ from taiga.projects.services import transfer as transfer_service
 
 USER_ID = 6
 user = User.objects.get(id=USER_ID)
+user.is_superuser = True
+user.save()
 
 (membership, _) = Membership.objects.get_or_create(
     token="00000000-0000-0000-0000-000000000000",
@@ -202,7 +204,7 @@ reqs = OrderedDict([
         "body": {
             "project": 1,
             "role": 3,
-            "username": "test-user@test.com"
+            "username": "test-user@email-test.com"
         }
     }),
     ("memberships-get", {
@@ -232,7 +234,8 @@ reqs = OrderedDict([
             "username": "test-username",
             "password": "password",
             "email": "test-register@email.com",
-            "full_name": "test"
+            "full_name": "test",
+            "accepted_terms": "true"
         }
     }),
     ("normal-register", {
@@ -244,7 +247,8 @@ reqs = OrderedDict([
             "username": "test-username2",
             "password": "password",
             "email": "test-register2@email.com",
-            "full_name": "test"
+            "full_name": "test",
+            "accepted_terms": "true"
         }
     }),
     ("normal-login", {
@@ -1321,7 +1325,7 @@ reqs = OrderedDict([
             "is_kanban_activated": True,
             "is_private": False,
             "is_wiki_activated": True,
-            "videoconferences": "appear-in",
+            "videoconferences": "jitsi",
             "videoconferences_extra_data": None,
             "total_milestones": 3,
             "total_story_points": 20.0

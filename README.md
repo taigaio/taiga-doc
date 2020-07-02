@@ -39,16 +39,48 @@ Now add it to your taiga settings installed apps; Modify in taiga-back your
 INSTALLED_APPS += ["generate_api_documents"]
 ```
 
-For generating api examples you need to disable `DEBUG` option in your settings
-as well as enable the following importers:
+For generating api examples you need to apply this settings:
 
-```python
-IMPORTERS["github"]
-IMPORTERS["trello"]
-IMPORTERS["jira"]
-IMPORTERS["asana"] 
-```
-If you copied local.py.example, uncommenting the importers code should be enough.
+- Disable debug mode
+  ```
+  DEBUG=False
+  ```
+- Enable public register
+  ```
+  PUBLIC_REGISTER_ENABLED = True
+  ```
+- Use dummy email backend (recommended)
+  ```
+  EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
+  ```
+- Disable API throttling
+  ```
+  REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"] = {
+      "anon-write": None,
+      "user-write": None,
+      "anon-read": None,
+      "user-read": None,
+      "import-mode": None,
+      "import-dump-mode": None,
+      "create-memberships": None,
+      "login-fail": None,
+      "register-success": None,
+      "user-detail": None,
+      "user-update": None,
+  }
+  ```
+- Enable system stats
+  ```
+  STATS_ENABLED = True
+  ```
+- Enable the following importers:
+  ```python
+  IMPORTERS["github"]
+  IMPORTERS["trello"]
+  IMPORTERS["jira"]
+  IMPORTERS["asana"]
+  ```
+  If you copied local.py.example, uncommenting the importers code should be enough.
 
 Now regenerate the taiga-back database with the sample data:
 

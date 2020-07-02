@@ -127,7 +127,7 @@
                 "order": 3
             }
         ],
-        "modified_date": "2019-04-10T11:00:01.628Z",
+        "modified_date": "2020-07-03T08:41:04.047Z",
         "name": "Scrum",
         "order": 1,
         "points": [
@@ -1134,7 +1134,7 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2019-04-10T10:45:46.332Z",
+        "created_date": "2020-07-03T08:40:54.130Z",
         "default_options": {
             "epic_status": "Patch status name",
             "issue_status": "Patch status name",
@@ -1145,7 +1145,7 @@
             "task_status": "Patch status name",
             "us_status": "New"
         },
-        "default_owner_role": "back",
+        "default_owner_role": "design",
         "description": "Beta template description",
         "epic_statuses": [
             {
@@ -1287,9 +1287,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2019-04-10T10:45:46.369Z",
+        "modified_date": "2020-07-03T08:40:54.162Z",
         "name": "Beta template",
-        "order": 1554893146332,
+        "order": 1593765654130,
         "points": [
             {
                 "name": "?",
@@ -1382,7 +1382,24 @@
         "roles": [
             {
                 "computable": true,
-                "name": "UX",
+                "name": "New role",
+                "order": 10,
+                "permissions": [
+                    "view_us",
+                    "view_project"
+                ],
+                "slug": "new-role"
+            },
+            {
+                "computable": true,
+                "name": "New role name",
+                "order": 10,
+                "permissions": [],
+                "slug": "new-role-name"
+            },
+            {
+                "computable": true,
+                "name": "Patch name",
                 "order": 10,
                 "permissions": [
                     "add_issue",
@@ -1762,7 +1779,7 @@
         "videoconferences_extra_data": null
     },
     {
-        "created_date": "2019-04-10T11:00:02.707Z",
+        "created_date": "2020-07-03T08:41:04.085Z",
         "default_options": {
             "issue_status": "New",
             "issue_type": "Bug",
@@ -1843,9 +1860,9 @@
                 "order": 3
             }
         ],
-        "modified_date": "2019-04-10T11:00:02.711Z",
+        "modified_date": "2020-07-03T08:41:04.087Z",
         "name": "New Template",
-        "order": 1554894002703,
+        "order": 1593765664084,
         "points": [
             {
                 "name": "?",
@@ -2231,7 +2248,7 @@
         "videoconferences_extra_data": ""
     },
     {
-        "created_date": "2019-04-10T11:00:02.798Z",
+        "created_date": "2020-07-03T08:41:04.123Z",
         "default_options": null,
         "default_owner_role": "product-owner",
         "description": "Sample description",
@@ -2245,9 +2262,9 @@
         "is_wiki_activated": true,
         "issue_statuses": null,
         "issue_types": null,
-        "modified_date": "2019-04-10T11:00:02.798Z",
+        "modified_date": "2020-07-03T08:41:04.123Z",
         "name": "New simple template",
-        "order": 1554894002796,
+        "order": 1593765664122,
         "points": null,
         "priorities": null,
         "roles": null,

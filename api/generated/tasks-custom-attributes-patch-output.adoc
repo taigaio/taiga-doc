@@ -1,14 +1,14 @@
 [source,json]
 ----
 {
-    "created_date": "2019-04-10T10:34:12.599Z",
-    "description": "laudantium totam dolorem minima nemo quaerat voluptate aliquam autem quasi distinctio inventore",
+    "created_date": "2020-07-02T11:56:21.156Z",
+    "description": "a sequi saepe quibusdam culpa optio accusantium minima obcaecati",
     "extra": null,
-    "id": 2,
-    "modified_date": "2019-04-10T11:00:04.103Z",
+    "id": 1,
+    "modified_date": "2020-07-03T08:41:04.666Z",
     "name": "Duration 1",
     "order": 1,
     "project": 1,
-    "type": "richtext"
+    "type": "dropdown"
 }
 ----

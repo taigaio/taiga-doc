@@ -5,51 +5,94 @@
     "assigned_to_extra_info": null,
     "attachments": [],
     "blocked_note": "",
-    "created_date": "2019-04-10T10:44:25.063Z",
+    "created_date": "2016-08-04T11:08:19Z",
     "due_date": null,
     "due_date_reason": "",
     "due_date_status": "not_set",
     "external_reference": null,
     "finished_date": null,
-    "id": 110,
+    "id": 114,
     "is_blocked": false,
     "is_closed": false,
     "is_voter": false,
     "is_watcher": false,
     "milestone": null,
-    "modified_date": "2019-04-10T10:44:25.064Z",
-    "owner": 5,
+    "modified_date": "2016-08-04T11:08:19Z",
+    "owner": 13,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Administrator",
-        "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-        "id": 5,
+        "full_name_display": "Mohamed Ortega",
+        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+        "id": 13,
         "is_active": true,
         "photo": null,
-        "username": "admin"
+        "username": "user7"
     },
-    "priority": 2,
-    "project": 1,
+    "priority": 23,
+    "project": 8,
     "project_extra_info": {
-        "id": 1,
+        "id": 8,
         "logo_small_url": null,
-        "name": "Project Example 0",
-        "slug": "project-0"
+        "name": "Project Example",
+        "slug": "project-example"
     },
-    "ref": 89,
-    "severity": 3,
-    "status": 1,
+    "ref": 59,
+    "severity": 38,
+    "status": 58,
     "status_extra_info": {
-        "color": "#8C2318",
+        "color": "#666666",
         "is_closed": false,
-        "name": "Patch status name"
+        "name": "Postponed"
     },
-    "subject": "Customer personal data",
-    "tags": [],
+    "subject": "Exception is thrown if trying to add a folder with existing name",
+    "tags": [
+        [
+            "excepturi",
+            null
+        ],
+        [
+            "quidem",
+            "#ae6519"
+        ],
+        [
+            "adipisci",
+            null
+        ],
+        [
+            "nisi",
+            null
+        ],
+        [
+            "voluptatum",
+            "#02d22f"
+        ],
+        [
+            "alias",
+            "#cdb6fd"
+        ],
+        [
+            "vero",
+            "#74e191"
+        ],
+        [
+            "asperiores",
+            null
+        ],
+        [
+            "quibusdam",
+            null
+        ],
+        [
+            "omnis",
+            "#fc9548"
+        ]
+    ],
     "total_voters": 0,
-    "total_watchers": 0,
-    "type": 1,
+    "total_watchers": 1,
+    "type": 23,
     "version": 1,
-    "watchers": []
+    "watchers": [
+        13
+    ]
 }
 ----

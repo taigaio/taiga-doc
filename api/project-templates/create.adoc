@@ -8,7 +8,7 @@ To create project templates send a POST request with the following data:
 * *is_kanban_activated*: boolean
 * *is_wiki_activated*: boolean
 * *is_issues_activated*: boolean
-* *videoconferences*: (talky|appear-in)
+* *videoconferences*: ("whereby-com" | "jitsi" | "talky" | "custom")
 * *videoconferences_extra_data*: string
 * *default_options*: a json with a list of objects with:
 ** *points*: slug

@@ -9,5 +9,5 @@ curl -X PATCH \
         },
         "version": 1
     }' \
--s http://localhost:8000/api/v1/issues/custom-attributes-values/24
+-s http://localhost:8000/api/v1/issues/custom-attributes-values/22
 ----

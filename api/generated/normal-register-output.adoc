@@ -1,7 +1,31 @@
 [source,json]
 ----
 {
-    "_error_message": "You must accept our terms of service and privacy policy",
-    "_error_type": "taiga.base.exceptions.BadRequest"
+    "accepted_terms": true,
+    "auth_token": "eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxN30:1jrHFG:n8szmh23JfYpbib52V7Sv9mVYto",
+    "big_photo": null,
+    "bio": "",
+    "color": "#1b258c",
+    "date_joined": "2020-07-03T08:40:29.966Z",
+    "email": "test-register2@email.com",
+    "full_name": "test",
+    "full_name_display": "test",
+    "gravatar_id": "2eaaf209aa89ca205b61856915f3a8a2",
+    "id": 17,
+    "is_active": true,
+    "lang": "",
+    "max_memberships_private_projects": null,
+    "max_memberships_public_projects": null,
+    "max_private_projects": null,
+    "max_public_projects": null,
+    "photo": null,
+    "read_new_terms": true,
+    "roles": [],
+    "theme": "",
+    "timezone": "",
+    "total_private_projects": 0,
+    "total_public_projects": 0,
+    "username": "test-username2",
+    "uuid": "9afb882167fc473f98e3fc57bd9de91b"
 }
 ----

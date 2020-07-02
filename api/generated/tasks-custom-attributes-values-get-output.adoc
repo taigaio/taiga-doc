@@ -2,7 +2,7 @@
 ----
 {
     "attributes_values": {
-        "2": "240 min"
+        "1": "240 min"
     },
     "task": 1,
     "version": 2

@@ -301,7 +301,7 @@ Please note that several libraries were updated in this release so
 it is very important to not miss the `pip install -r requirements.txt` step.
 
 4.0 > 4.2.6
--------------
+-----------
 
 Follow the default process.
 

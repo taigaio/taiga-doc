@@ -4,13 +4,13 @@
     "accepted_terms": true,
     "big_photo": null,
     "bio": "",
-    "color": "",
-    "date_joined": "2013-04-01T13:48:21.711Z",
-    "email": "admin@admin.com",
-    "full_name": "Administrator",
-    "full_name_display": "Administrator",
-    "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-    "id": 5,
+    "color": "#40826D",
+    "date_joined": "2020-07-02T11:56:19.209Z",
+    "email": "user2114747470430251528@taigaio.demo",
+    "full_name": "Vanesa Torres",
+    "full_name_display": "Vanesa Torres",
+    "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+    "id": 6,
     "is_active": true,
     "lang": "",
     "max_memberships_private_projects": null,
@@ -20,17 +20,16 @@
     "photo": null,
     "read_new_terms": false,
     "roles": [
-        "Back",
+        "Design",
         "Front",
         "Product Owner",
-        "Stakeholder",
         "UX"
     ],
     "theme": "",
     "timezone": "",
     "total_private_projects": 4,
-    "total_public_projects": 1,
+    "total_public_projects": 4,
     "username": "patchedusername",
-    "uuid": "567aab5ca9e24d79a81ac20aa175282b"
+    "uuid": "e9296d489b6a42d79048df2f3789b396"
 }
 ----
