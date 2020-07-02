@@ -1,0 +1,6 @@
+To delete roles send a DELETE specifying the role id in the url. You can use `moveTo` as query param
+with the new role id for the users that have this one.
+
+include::../generated/roles-delete-cmd.adoc[]
+
+When delete succeeded, the HTTP response is a 204 NO CONTENT with an empty body response

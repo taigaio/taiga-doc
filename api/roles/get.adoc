@@ -1,0 +1,5 @@
+To get a role send a GET request specifying the role id in the url
+
+include::../generated/roles-get-cmd.adoc[]
+
+The HTTP response is a 200 OK and the response body is a JSON link:#object-role-detail[role detail object]

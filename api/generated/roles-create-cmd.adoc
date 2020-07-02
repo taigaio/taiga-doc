@@ -1,0 +1,16 @@
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer ${AUTH_TOKEN}" \
+-d '{
+        "name": "New role",
+        "order": 10,
+        "permissions": [
+            "view_us",
+            "view_project"
+        ],
+        "project": 1
+    }' \
+-s http://localhost:8000/api/v1/roles
+----

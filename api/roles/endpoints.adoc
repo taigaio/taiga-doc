@@ -1,0 +1,30 @@
+[cols="3*", options="header"]
+|===
+| URL
+| Method
+| Functionality
+
+| /api/v1/roles
+| GET
+| link:#roles-list[List roles]
+
+| /api/v1/roles
+| POST
+| link:#roles-create[Create role]
+
+| /api/v1/roles/\{roleId}
+| GET
+| link:#roles-get[Get role]
+
+| /api/v1/roles/\{roleId}
+| PUT
+| link:#roles-edit[Modify role]
+
+| /api/v1/roles/\{roleId}
+| PATCH
+| link:#roles-edit[Modify partially a role]
+
+| /api/v1/roles/\{roleId}
+| DELETE
+| link:#roles-delete[Delete a role]
+|===

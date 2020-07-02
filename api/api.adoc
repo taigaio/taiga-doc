@@ -37,6 +37,9 @@ include::projects/endpoints.adoc[]
 === Memberships/Invitations
 include::memberships/endpoints.adoc[]
 
+=== Roles
+include::roles/endpoints.adoc[]
+
 === Milestones
 include::milestones/endpoints.adoc[]
 
@@ -174,6 +177,10 @@ include::projects/summary.adoc[]
 [[memberships]]
 == Memberships/Invitations
 include::memberships/summary.adoc[]
+
+[[roles]]
+== Roles
+include::roles/summary.adoc[]
 
 [[milestones]]
 == Milestones
@@ -396,6 +403,10 @@ include::generated/projects-watchers-output.adoc[]
 [[object-membership-detail]]
 ===  Membership detail
 include::generated/memberships-get-output.adoc[]
+
+[[object-role-detail]]
+===  Role detail
+include::generated/roles-get-output.adoc[]
 
 [[object-milestone-detail]]
 ===  Milestone detail

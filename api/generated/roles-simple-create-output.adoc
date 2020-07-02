@@ -1,0 +1,13 @@
+[source,json]
+----
+{
+    "computable": true,
+    "id": 44,
+    "members_count": 0,
+    "name": "New role name",
+    "order": 10,
+    "permissions": [],
+    "project": 1,
+    "slug": "new-role-name"
+}
+----

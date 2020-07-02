@@ -139,6 +139,8 @@ wiki_link_id = project1.wiki_links.first().id
 wiki_attachment = project2.wiki_pages.first().attachments.all().first().id
 milestone_id = project1.milestones.first().id
 milestone_slug = project1.milestones.first().slug
+role_from_id = project1.roles.last().id
+role_to_id = project1.roles.first().id
 
 notify_policy_id = NotifyPolicy.objects.filter(user_id=USER_ID).first().id
 owned_project = Project.objects.filter(owner_id=USER_ID).first()
@@ -260,6 +262,43 @@ reqs = OrderedDict([
             "username": "test-username",
             "password": "password"
         }
+    }),
+    ("roles-patch", {
+        "method": "PATCH",
+        "url": "/api/v1/roles/1",
+        "body": {
+            "name": "Patch name"
+        }
+    }),
+    ("roles-create", {
+        "method": "POST",
+        "url": "/api/v1/roles",
+        "body": {
+            "name": "New role",
+            "order": 10,
+            "project": 1,
+            "permissions": ["view_us", "view_project"]
+        }
+    }),
+    ("roles-simple-create", {
+        "method": "POST",
+        "url": "/api/v1/roles",
+        "body": {
+            "project": 1,
+            "name": "New role name"
+        }
+    }),
+    ("roles-get", {
+        "method": "GET",
+        "url": "/api/v1/roles/1",
+    }),
+    ("roles-list", {
+        "method": "GET",
+        "url": "/api/v1/roles",
+    }),
+    ("roles-filtered-list", {
+        "method": "GET",
+        "url": "/api/v1/roles?project=1",
     }),
     ("epics-list", {
         "method": "GET",
@@ -2654,6 +2693,10 @@ reqs = OrderedDict([
     ("memberships-delete", {
         "method": "DELETE",
         "url": "/api/v1/memberships/2",
+    }),
+    ("roles-delete", {
+        "method": "DELETE",
+        "url": "/api/v1/roles/{}/?moveTo={}".format(role_from_id, role_to_id),
     }),
     ("issue-statuses-delete", {
         "method": "DELETE",

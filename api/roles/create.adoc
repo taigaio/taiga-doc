@@ -1,0 +1,13 @@
+To create roles send a POST request with the following data:
+
+- *name* (required)
+- *order*: integer
+- *project*: (required): project id
+- *computable*: `true` if this role has estimations
+- *permissions*: list of permmissions (strings) allowed for this role
+
+include::../generated/roles-create-cmd.adoc[]
+
+include::../generated/roles-simple-create-cmd.adoc[]
+
+When the creation is successful, the HTTP response is a 201 Created and the response body is a JSON link:#object-role-detail[role detail object]
