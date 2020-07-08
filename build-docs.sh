@@ -4,7 +4,7 @@
 tests/check_JSON_trailing_commas.sh
 
 make doc || exit 1
-#make pdf || exit 1
+make pdf || exit 1
 rm -rf /tmp/taiga-doc-dist || exit 1
 cp -r dist /tmp/taiga-doc-dist || exit 1
 git checkout gh-pages || exit 1
