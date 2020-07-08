@@ -1,8 +1,8 @@
 [source,json]
 ----
 {
-    "full_name": "Administrator",
-    "id": 5,
-    "username": "admin"
+    "full_name": "GitHub",
+    "id": 2,
+    "username": "github-ecf32e2347fd4afda1b4914414a965cf"
 }
 ----

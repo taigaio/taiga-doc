@@ -1,8 +1,8 @@
 [source,json]
 ----
 {
-    "full_name": "BitBucket",
-    "id": 1,
-    "username": "bitbucket-859c1167172a4e57b530e13913122853"
+    "full_name": "Bego\u00f1a Flores",
+    "id": 7,
+    "username": "user1"
 }
 ----

@@ -1,32 +1,32 @@
 [source,json]
 ----
 {
-    "closed_issues": 14,
+    "closed_issues": 10,
     "issues_per_assigned_to": {
         "0": {
             "color": "black",
-            "count": 10,
+            "count": 8,
             "id": 0,
             "name": "Unassigned",
             "username": "Unassigned"
         },
         "10": {
             "color": "#2099DB",
-            "count": 4,
+            "count": 1,
             "id": 10,
             "name": "Enrique Crespo",
             "username": "user4"
         },
         "12": {
             "color": "#71A6D2",
-            "count": 1,
+            "count": 3,
             "id": 12,
             "name": "Vanesa Garcia",
             "username": "user6"
         },
         "13": {
             "color": "#B6DA55",
-            "count": 3,
+            "count": 1,
             "id": 13,
             "name": "Mohamed Ortega",
             "username": "user7"
@@ -40,14 +40,21 @@
         },
         "5": {
             "color": "",
-            "count": 3,
+            "count": 5,
             "id": 5,
             "name": "Administrator",
             "username": "admin"
         },
+        "6": {
+            "color": "#40826D",
+            "count": 3,
+            "id": 6,
+            "name": "Vanesa Torres",
+            "username": "user2114747470430251528"
+        },
         "7": {
             "color": "#40826D",
-            "count": 2,
+            "count": 1,
             "id": 7,
             "name": "Bego\u00f1a Flores",
             "username": "user1"
@@ -61,7 +68,7 @@
         },
         "9": {
             "color": "#B6DA55",
-            "count": 3,
+            "count": 2,
             "id": 9,
             "name": "Catalina Fernandez",
             "username": "user3"
@@ -70,28 +77,21 @@
     "issues_per_owner": {
         "10": {
             "color": "#2099DB",
-            "count": 2,
+            "count": 1,
             "id": 10,
             "name": "Enrique Crespo",
             "username": "user4"
         },
-        "11": {
-            "color": "#FFCC00",
-            "count": 1,
-            "id": 11,
-            "name": "Angela Perez",
-            "username": "user5"
-        },
         "12": {
             "color": "#71A6D2",
-            "count": 4,
+            "count": 2,
             "id": 12,
             "name": "Vanesa Garcia",
             "username": "user6"
         },
         "13": {
             "color": "#B6DA55",
-            "count": 3,
+            "count": 4,
             "id": 13,
             "name": "Mohamed Ortega",
             "username": "user7"
@@ -105,42 +105,56 @@
         },
         "15": {
             "color": "#FFFF00",
-            "count": 1,
+            "count": 3,
             "id": 15,
             "name": "Virginia Castro",
             "username": "user9"
         },
         "5": {
             "color": "",
-            "count": 7,
+            "count": 2,
             "id": 5,
             "name": "Administrator",
             "username": "admin"
         },
+        "6": {
+            "color": "#40826D",
+            "count": 6,
+            "id": 6,
+            "name": "Vanesa Torres",
+            "username": "user2114747470430251528"
+        },
         "7": {
             "color": "#40826D",
-            "count": 9,
+            "count": 4,
             "id": 7,
             "name": "Bego\u00f1a Flores",
             "username": "user1"
+        },
+        "9": {
+            "color": "#B6DA55",
+            "count": 3,
+            "id": 9,
+            "name": "Catalina Fernandez",
+            "username": "user3"
         }
     },
     "issues_per_priority": {
         "1": {
             "color": "#666666",
-            "count": 8,
+            "count": 9,
             "id": 1,
             "name": "Patch name"
         },
         "2": {
             "color": "#669933",
-            "count": 11,
+            "count": 13,
             "id": 2,
             "name": "Normal"
         },
         "3": {
             "color": "#CC0000",
-            "count": 10,
+            "count": 5,
             "id": 3,
             "name": "High"
         }
@@ -154,13 +168,13 @@
         },
         "2": {
             "color": "#669933",
-            "count": 2,
+            "count": 4,
             "id": 2,
             "name": "Minor"
         },
         "3": {
             "color": "#0000FF",
-            "count": 11,
+            "count": 9,
             "id": 3,
             "name": "Normal"
         },
@@ -172,7 +186,7 @@
         },
         "5": {
             "color": "#CC0000",
-            "count": 6,
+            "count": 4,
             "id": 5,
             "name": "Critical"
         }
@@ -180,43 +194,43 @@
     "issues_per_status": {
         "1": {
             "color": "#8C2318",
-            "count": 5,
+            "count": 7,
             "id": 1,
             "name": "Patch status name"
         },
         "2": {
             "color": "#5E8C6A",
-            "count": 4,
+            "count": 2,
             "id": 2,
             "name": "In progress"
         },
         "3": {
             "color": "#88A65E",
-            "count": 6,
+            "count": 4,
             "id": 3,
             "name": "Ready for test"
         },
         "4": {
             "color": "#BFB35A",
-            "count": 2,
+            "count": 3,
             "id": 4,
             "name": "Closed"
         },
         "5": {
             "color": "#89BAB4",
-            "count": 2,
+            "count": 3,
             "id": 5,
             "name": "Needs Info"
         },
         "6": {
             "color": "#CC0000",
-            "count": 6,
+            "count": 3,
             "id": 6,
             "name": "Rejected"
         },
         "7": {
             "color": "#666666",
-            "count": 4,
+            "count": 5,
             "id": 7,
             "name": "Postponed"
         }
@@ -224,19 +238,19 @@
     "issues_per_type": {
         "1": {
             "color": "#89BAB4",
-            "count": 8,
+            "count": 12,
             "id": 1,
             "name": "Bug"
         },
         "2": {
             "color": "#ba89a8",
-            "count": 10,
+            "count": 7,
             "id": 2,
             "name": "Question"
         },
         "3": {
             "color": "#89a8ba",
-            "count": 11,
+            "count": 8,
             "id": 3,
             "name": "Enhancement"
         }
@@ -270,8 +284,8 @@
                 0,
                 0,
                 0,
-                0,
-                14
+                9,
+                1
             ],
             "open": [
                 0,
@@ -300,8 +314,8 @@
                 0,
                 0,
                 0,
-                0,
-                29
+                22,
+                5
             ]
         },
         "by_priority": {
@@ -334,8 +348,8 @@
                     0,
                     0,
                     0,
-                    0,
-                    8
+                    9,
+                    5
                 ],
                 "id": 1,
                 "name": "Patch name"
@@ -369,8 +383,8 @@
                     0,
                     0,
                     0,
-                    0,
-                    11
+                    9,
+                    9
                 ],
                 "id": 2,
                 "name": "Normal"
@@ -404,8 +418,8 @@
                     0,
                     0,
                     0,
-                    0,
-                    10
+                    4,
+                    4
                 ],
                 "id": 3,
                 "name": "High"
@@ -441,8 +455,8 @@
                     0,
                     0,
                     0,
-                    0,
-                    5
+                    5,
+                    2
                 ],
                 "id": 1,
                 "name": "Patch name"
@@ -476,8 +490,8 @@
                     0,
                     0,
                     0,
-                    0,
-                    2
+                    3,
+                    4
                 ],
                 "id": 2,
                 "name": "Minor"
@@ -511,8 +525,8 @@
                     0,
                     0,
                     0,
-                    0,
-                    11
+                    5,
+                    9
                 ],
                 "id": 3,
                 "name": "Normal"
@@ -546,8 +560,8 @@
                     0,
                     0,
                     0,
-                    0,
-                    5
+                    5,
+                    0
                 ],
                 "id": 4,
                 "name": "Important"
@@ -581,8 +595,8 @@
                     0,
                     0,
                     0,
-                    0,
-                    6
+                    4,
+                    3
                 ],
                 "id": 5,
                 "name": "Critical"
@@ -590,7 +604,7 @@
         },
         "by_status": {}
     },
-    "opened_issues": 15,
-    "total_issues": 29
+    "opened_issues": 17,
+    "total_issues": 27
 }
 ----

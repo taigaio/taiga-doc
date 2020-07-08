@@ -2,19 +2,19 @@
 ----
 {
     "color": null,
-    "created_at": "2019-04-10T10:41:56.211Z",
+    "created_at": "2020-07-03T08:40:27.241Z",
     "full_name": null,
     "gravatar_id": null,
     "id": 92,
     "invitation_extra_text": "",
     "invited_by": {
-        "big_photo": "http://localhost:8000/media/user/5/0/3/a/c8bb5e7bf957c717e5dec39a01c8f10d36dc777039af476d57c637be4634/logo.png.300x300_q85_crop.png?token=XK3I6g%3AbprP-6IMceVlb02jN_V_YEjWDSSDHGHSU5ysxA4w-Y-DXXMwiH_xd4gV-vn8dLPem1cgpCmIiosEJw60B6JOPg",
+        "big_photo": "http://localhost:8000/media/user/6/2/b/1/77722412390b939d7d3131c385b83d83f8ed462e2ed94be9e8275d529965/logo.png.300x300_q85_crop.png",
         "full_name_display": "BitBucket",
-        "gravatar_id": "e09e540bbe293090c7e38305a272582f",
+        "gravatar_id": "38a67b9891ac737293d7c87f698c19af",
         "id": 1,
         "is_active": false,
-        "photo": "http://localhost:8000/media/user/5/0/3/a/c8bb5e7bf957c717e5dec39a01c8f10d36dc777039af476d57c637be4634/logo.png.80x80_q85_crop.png?token=XK3I6g%3ApeU6pJXyR1FOtrm_IqVt4dPKAPMxkBWTwNBnXtAV0-lBWZHQN0ezIkYkhYmatSxPHGRwfEwOoywvMphf3LKK8Q",
-        "username": "bitbucket-859c1167172a4e57b530e13913122853"
+        "photo": "http://localhost:8000/media/user/6/2/b/1/77722412390b939d7d3131c385b83d83f8ed462e2ed94be9e8275d529965/logo.png.80x80_q85_crop.png",
+        "username": "bitbucket-39e1bd53be764862bb63edb881e16f8a"
     },
     "is_admin": false,
     "is_owner": null,

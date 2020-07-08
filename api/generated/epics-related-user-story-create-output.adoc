@@ -1,8 +1,8 @@
 [source,json]
 ----
 {
-    "__all__": [
-        "Related user story with this User story and Epic already exists."
-    ]
+    "epic": 15,
+    "order": 1593765635314,
+    "user_story": 1
 }
 ----

@@ -1,22 +1,22 @@
 [source,json]
 ----
 {
-    "attached_file": "attachments/c/8/e/6/5ff7b2211a1bc55cc39e10324e558a1f709c393e2f4fdbe7c42d963aa0eb/sample_attachment_2.txt",
-    "created_date": "2019-04-10T10:35:32.081Z",
-    "description": "possimus mollitia blanditiis fugiat perferendis placeat vero molestiae magni",
+    "attached_file": "attachments/f/7/0/0/b89c9d9aaf3de48f2486e1f5dc2f897a321bfa861cc5cb59b5936f0ebc40/sample_attachment_2.txt",
+    "created_date": "2020-07-02T11:57:14.266Z",
+    "description": "ipsam impedit dignissimos sed ea",
     "from_comment": false,
     "id": 415,
     "is_deprecated": false,
-    "modified_date": "2019-04-10T10:35:32.081Z",
+    "modified_date": "2020-07-02T11:57:14.266Z",
     "name": "sample_attachment_2.txt",
-    "object_id": 35,
-    "order": 2,
-    "owner": 11,
-    "preview_url": "http://localhost:8000/media/attachments/c/8/e/6/5ff7b2211a1bc55cc39e10324e558a1f709c393e2f4fdbe7c42d963aa0eb/sample_attachment_2.txt?token=XK3I-w%3AlGwTpclA66F6LDsedQmsmieSXuFlIggvbrPSV8f4emwl9di3WLgt6ARgVQY_IdFTZGHUizWqJWFSCcjeqq207g",
+    "object_id": 28,
+    "order": 1,
+    "owner": 13,
+    "preview_url": "http://localhost:8000/media/attachments/f/7/0/0/b89c9d9aaf3de48f2486e1f5dc2f897a321bfa861cc5cb59b5936f0ebc40/sample_attachment_2.txt",
     "project": 2,
     "sha1": "62dbe72633a794717c1f4817d2d7d087b1c29c69",
     "size": 1688,
     "thumbnail_card_url": null,
-    "url": "http://localhost:8000/media/attachments/c/8/e/6/5ff7b2211a1bc55cc39e10324e558a1f709c393e2f4fdbe7c42d963aa0eb/sample_attachment_2.txt?token=XK3I-w%3AlGwTpclA66F6LDsedQmsmieSXuFlIggvbrPSV8f4emwl9di3WLgt6ARgVQY_IdFTZGHUizWqJWFSCcjeqq207g"
+    "url": "http://localhost:8000/media/attachments/f/7/0/0/b89c9d9aaf3de48f2486e1f5dc2f897a321bfa861cc5cb59b5936f0ebc40/sample_attachment_2.txt"
 }
 ----

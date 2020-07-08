@@ -1,19 +1,19 @@
 [source,json]
 ----
 {
-    "assigned_to": 9,
+    "assigned_to": 5,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Catalina Fernandez",
-        "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-        "id": 9,
+        "full_name_display": "Administrator",
+        "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+        "id": 5,
         "is_active": true,
         "photo": null,
-        "username": "user3"
+        "username": "admin"
     },
-    "created_date": "2019-04-10T10:38:10.164Z",
+    "created_date": "2020-07-02T11:59:14.599Z",
     "description": null,
-    "id": 24,
+    "id": 88,
     "is_private": null,
     "is_voter": true,
     "is_watcher": false,
@@ -24,19 +24,55 @@
     "project_is_private": false,
     "project_name": "Project Example 6",
     "project_slug": "project-6",
-    "ref": 106,
+    "ref": 46,
     "slug": null,
-    "status": "Ready",
-    "status_color": "#ff8a84",
-    "subject": "Support for bulk actions",
+    "status": "Needs Info",
+    "status_color": "#89BAB4",
+    "subject": "Create the user model",
     "tags_colors": [
         {
+            "color": "#9f6274",
+            "name": "sequi"
+        },
+        {
             "color": null,
-            "name": "non"
+            "name": "dolorum"
+        },
+        {
+            "color": null,
+            "name": "voluptate"
+        },
+        {
+            "color": "#7b0e4e",
+            "name": "pariatur"
+        },
+        {
+            "color": "#47e087",
+            "name": "recusandae"
+        },
+        {
+            "color": null,
+            "name": "at"
+        },
+        {
+            "color": "#86f7e4",
+            "name": "a"
+        },
+        {
+            "color": null,
+            "name": "velit"
+        },
+        {
+            "color": null,
+            "name": "alias"
+        },
+        {
+            "color": null,
+            "name": "incidunt"
         }
     ],
-    "total_voters": 6,
-    "total_watchers": 1,
-    "type": "epic"
+    "total_voters": 9,
+    "total_watchers": 3,
+    "type": "issue"
 }
 ----

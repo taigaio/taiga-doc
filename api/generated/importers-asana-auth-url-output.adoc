@@ -1,6 +1,6 @@
 [source,json]
 ----
 {
-    "url": "https://app.asana.com/-/oauth_authorize?response_type=code&client_id=XXXXXX_get_a_valid_app_id_from_asana_XXXXXX&redirect_uri=http%3A%2F%2Flocalhost%3A9001%2Fproject%2Fnew%2Fimport%2Fasana&state=RZ3pNI1k9VC1UXqAR3OWoBWa1deLcs"
+    "url": "https://app.asana.com/-/oauth_authorize?response_type=code&client_id=XXXXXX_get_a_valid_app_id_from_asana_XXXXXX&redirect_uri=http%3A%2F%2Flocalhost%3A9001%2Fproject%2Fnew%2Fimport%2Fasana&state=RbbNm2iNITQqbv1jgnWJrusPz2w2BP"
 }
 ----

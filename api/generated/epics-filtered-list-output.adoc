@@ -2,104 +2,28 @@
 ----
 [
     {
-        "assigned_to": 12,
+        "assigned_to": 15,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Vanesa Garcia",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
             "is_active": true,
             "photo": null,
-            "username": "user6"
+            "username": "user9"
         },
         "attachments": [],
         "blocked_note": "",
         "client_requirement": false,
-        "color": "#729fcf",
-        "created_date": "2019-04-10T10:34:47.233Z",
-        "epics_order": 1554892487233,
+        "color": "#3465a4",
+        "created_date": "2020-07-02T11:56:44.275Z",
+        "epics_order": 1593691004275,
         "id": 1,
         "is_blocked": false,
         "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "modified_date": "2019-04-10T10:34:47.677Z",
-        "owner": 7,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 68,
-        "status": 3,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "is_closed": false,
-            "name": "In progress"
-        },
-        "subject": "Add tests for bulk operations",
-        "tags": [
-            [
-                "praesentium",
-                null
-            ],
-            [
-                "dolorem",
-                null
-            ],
-            [
-                "impedit",
-                "#cde1f0"
-            ]
-        ],
-        "team_requirement": false,
-        "total_voters": 5,
-        "total_watchers": 3,
-        "user_stories_counts": {
-            "progress": 0,
-            "total": 1
-        },
-        "version": 1,
-        "watchers": [
-            6,
-            7,
-            9
-        ]
-    },
-    {
-        "assigned_to": 7,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "client_requirement": false,
-        "color": "#4e9a06",
-        "created_date": "2019-04-10T10:34:47.790Z",
-        "epics_order": 1554892487790,
-        "id": 2,
-        "is_blocked": false,
-        "is_closed": false,
         "is_voter": true,
-        "is_watcher": true,
-        "modified_date": "2019-04-10T10:34:48.132Z",
+        "is_watcher": false,
+        "modified_date": "2020-07-02T11:56:44.453Z",
         "owner": 14,
         "owner_extra_info": {
             "big_photo": null,
@@ -117,69 +41,428 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 69,
+        "ref": 64,
         "status": 4,
         "status_extra_info": {
             "color": "#fcc000",
             "is_closed": false,
             "name": "Ready for test"
         },
-        "subject": "Create the user model",
+        "subject": "Added file copying and processing of images (resizing)",
         "tags": [
             [
-                "delectus",
-                null
-            ],
-            [
-                "ea",
-                "#2c80b2"
-            ],
-            [
-                "dolore",
-                "#61b076"
+                "eligendi",
+                "#5d8273"
             ]
         ],
         "team_requirement": false,
         "total_voters": 3,
-        "total_watchers": 7,
+        "total_watchers": 2,
         "user_stories_counts": {
-            "progress": null,
-            "total": 0
+            "progress": 1.5,
+            "total": 8
         },
         "version": 1,
         "watchers": [
-            1,
-            2,
-            5,
-            6,
-            7,
-            8,
-            10
+            12,
+            14
         ]
     },
     {
-        "assigned_to": 7,
+        "assigned_to": 15,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
             "is_active": true,
             "photo": null,
-            "username": "user1"
+            "username": "user9"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#ad7fa8",
+        "created_date": "2020-07-02T11:56:44.514Z",
+        "epics_order": 1593691004514,
+        "id": 2,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": true,
+        "modified_date": "2020-07-02T11:56:44.746Z",
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 65,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "New"
+        },
+        "subject": "Experimental: modular file types",
+        "tags": [
+            [
+                "tempora",
+                null
+            ],
+            [
+                "sit",
+                "#abdcde"
+            ],
+            [
+                "facilis",
+                "#0f6b6b"
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 9,
+        "total_watchers": 6,
+        "user_stories_counts": {
+            "progress": 1,
+            "total": 3
+        },
+        "version": 1,
+        "watchers": [
+            2,
+            3,
+            5,
+            6,
+            9,
+            14
+        ]
+    },
+    {
+        "assigned_to": 10,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Enrique Crespo",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
+            "is_active": true,
+            "photo": null,
+            "username": "user4"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#729fcf",
+        "created_date": "2020-07-02T11:56:44.798Z",
+        "epics_order": 1593691004798,
+        "id": 3,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": true,
+        "modified_date": "2020-07-02T11:56:44.950Z",
+        "owner": 10,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Enrique Crespo",
+            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
+            "id": 10,
+            "is_active": true,
+            "photo": null,
+            "username": "user4"
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 66,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Ready for test"
+        },
+        "subject": "Added file copying and processing of images (resizing)",
+        "tags": [
+            [
+                "aliquam",
+                null
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 1,
+        "total_watchers": 3,
+        "user_stories_counts": {
+            "progress": 1,
+            "total": 2
+        },
+        "version": 1,
+        "watchers": [
+            2,
+            6,
+            8
+        ]
+    },
+    {
+        "assigned_to": 5,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
+            "is_active": true,
+            "photo": null,
+            "username": "admin"
         },
         "attachments": [],
         "blocked_note": "",
         "client_requirement": false,
         "color": "#fcaf3e",
-        "created_date": "2019-04-10T10:34:48.225Z",
-        "epics_order": 1554892488225,
-        "id": 3,
+        "created_date": "2020-07-02T11:56:45.001Z",
+        "epics_order": 1593691005001,
+        "id": 4,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "modified_date": "2019-04-10T10:34:48.526Z",
+        "modified_date": "2020-07-02T11:56:45.148Z",
+        "owner": 5,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
+            "is_active": true,
+            "photo": null,
+            "username": "admin"
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 67,
+        "status": 3,
+        "status_extra_info": {
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "In progress"
+        },
+        "subject": "Feature/improved image admin",
+        "tags": [
+            [
+                "dicta",
+                "#939b44"
+            ],
+            [
+                "laborum",
+                "#67eac4"
+            ],
+            [
+                "enim",
+                null
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 2,
+        "total_watchers": 0,
+        "user_stories_counts": {
+            "progress": null,
+            "total": 0
+        },
+        "version": 1,
+        "watchers": []
+    },
+    {
+        "assigned_to": 12,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#888a85",
+        "created_date": "2020-07-02T11:56:45.198Z",
+        "epics_order": 1593691005198,
+        "id": 5,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2020-07-02T11:56:45.413Z",
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 68,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Ready"
+        },
+        "subject": "Migrate to Python 3 and milk a beautiful cow",
+        "tags": [
+            [
+                "repellat",
+                "#807389"
+            ],
+            [
+                "totam",
+                "#560a5d"
+            ],
+            [
+                "exercitationem",
+                null
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 7,
+        "total_watchers": 4,
+        "user_stories_counts": {
+            "progress": 3.083333333333333,
+            "total": 9
+        },
+        "version": 1,
+        "watchers": [
+            4,
+            7,
+            13,
+            15
+        ]
+    },
+    {
+        "assigned_to": 6,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#d3d7cf",
+        "created_date": "2020-07-02T11:56:45.461Z",
+        "epics_order": 1593691005461,
+        "id": 6,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": true,
+        "is_watcher": true,
+        "modified_date": "2020-07-02T11:56:45.673Z",
+        "owner": 15,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 69,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Ready"
+        },
+        "subject": "Experimental: modular file types",
+        "tags": [
+            [
+                "pariatur",
+                "#7b0e4e"
+            ],
+            [
+                "provident",
+                null
+            ],
+            [
+                "culpa",
+                null
+            ]
+        ],
+        "team_requirement": false,
+        "total_voters": 8,
+        "total_watchers": 3,
+        "user_stories_counts": {
+            "progress": 1.5,
+            "total": 5
+        },
+        "version": 1,
+        "watchers": [
+            1,
+            6,
+            7
+        ]
+    },
+    {
+        "assigned_to": 12,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "attachments": [],
+        "blocked_note": "",
+        "client_requirement": false,
+        "color": "#f57900",
+        "created_date": "2020-07-02T11:56:45.723Z",
+        "epics_order": 1593691005723,
+        "id": 7,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "modified_date": "2020-07-02T11:56:45.900Z",
         "owner": 12,
         "owner_extra_info": {
             "big_photo": null,
@@ -198,333 +481,38 @@
             "slug": "project-0"
         },
         "ref": 70,
-        "status": 3,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "is_closed": false,
-            "name": "In progress"
-        },
-        "subject": "Create the user model",
-        "tags": [
-            [
-                "vel",
-                null
-            ],
-            [
-                "labore",
-                "#6fdf52"
-            ]
-        ],
-        "team_requirement": false,
-        "total_voters": 0,
-        "total_watchers": 1,
-        "user_stories_counts": {
-            "progress": 0,
-            "total": 1
-        },
-        "version": 1,
-        "watchers": [
-            12
-        ]
-    },
-    {
-        "assigned_to": 14,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Miguel Molina",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
-            "is_active": true,
-            "photo": null,
-            "username": "user8"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "client_requirement": false,
-        "color": "#4e9a06",
-        "created_date": "2019-04-10T10:34:48.622Z",
-        "epics_order": 1554892488622,
-        "id": 4,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "modified_date": "2019-04-10T10:34:49.004Z",
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 71,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "is_closed": false,
-            "name": "New"
-        },
-        "subject": "Added file copying and processing of images (resizing)",
-        "tags": [
-            [
-                "aliquam",
-                null
-            ],
-            [
-                "amet",
-                null
-            ],
-            [
-                "assumenda",
-                "#52b91a"
-            ]
-        ],
-        "team_requirement": false,
-        "total_voters": 3,
-        "total_watchers": 3,
-        "user_stories_counts": {
-            "progress": 0,
-            "total": 1
-        },
-        "version": 1,
-        "watchers": [
-            4,
-            8,
-            10
-        ]
-    },
-    {
-        "assigned_to": 5,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "client_requirement": false,
-        "color": "#edd400",
-        "created_date": "2019-04-10T10:34:49.122Z",
-        "epics_order": 1554892489122,
-        "id": 5,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "modified_date": "2019-04-10T10:34:49.367Z",
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 72,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "is_closed": false,
-            "name": "New"
-        },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
-        "tags": [
-            [
-                "officia",
-                "#c4f027"
-            ],
-            [
-                "voluptas",
-                "#729359"
-            ]
-        ],
-        "team_requirement": false,
-        "total_voters": 0,
-        "total_watchers": 6,
-        "user_stories_counts": {
-            "progress": null,
-            "total": 0
-        },
-        "version": 1,
-        "watchers": [
-            2,
-            7,
-            8,
-            11,
-            13,
-            15
-        ]
-    },
-    {
-        "assigned_to": 12,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Vanesa Garcia",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "client_requirement": false,
-        "color": "#fce94f",
-        "created_date": "2019-04-10T10:34:49.451Z",
-        "epics_order": 1554892489451,
-        "id": 6,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": true,
-        "modified_date": "2019-04-10T10:34:49.705Z",
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 73,
         "status": 2,
         "status_extra_info": {
             "color": "#ff8a84",
             "is_closed": false,
             "name": "Ready"
         },
-        "subject": "Create the html template",
+        "subject": "Add tests for bulk operations",
         "tags": [
             [
-                "similique",
-                "#710c97"
+                "ipsum",
+                "#da3ba4"
             ],
             [
-                "dicta",
-                "#939b44"
+                "ea",
+                null
             ],
             [
-                "consequatur",
+                "possimus",
                 null
             ]
         ],
         "team_requirement": false,
-        "total_voters": 4,
-        "total_watchers": 5,
-        "user_stories_counts": {
-            "progress": 0,
-            "total": 1
-        },
-        "version": 1,
-        "watchers": [
-            2,
-            3,
-            5,
-            8,
-            11
-        ]
-    },
-    {
-        "assigned_to": 13,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Mohamed Ortega",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "attachments": [],
-        "blocked_note": "",
-        "client_requirement": false,
-        "color": "#3465a4",
-        "created_date": "2019-04-10T10:34:49.785Z",
-        "epics_order": 1554892489785,
-        "id": 7,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": true,
-        "is_watcher": true,
-        "modified_date": "2019-04-10T10:34:50.225Z",
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 74,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#fcc000",
-            "is_closed": false,
-            "name": "Ready for test"
-        },
-        "subject": "Create the html template",
-        "tags": [
-            [
-                "officiis",
-                null
-            ],
-            [
-                "fugiat",
-                "#1c563a"
-            ]
-        ],
-        "team_requirement": false,
-        "total_voters": 1,
+        "total_voters": 3,
         "total_watchers": 2,
         "user_stories_counts": {
-            "progress": 0,
-            "total": 6
+            "progress": null,
+            "total": 0
         },
         "version": 1,
         "watchers": [
-            5,
-            6
+            1,
+            5
         ]
     }
 ]

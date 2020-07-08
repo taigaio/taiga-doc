@@ -2,7 +2,7 @@
 ----
 {
     "color": "#AAAAAA",
-    "id": 36,
+    "id": 41,
     "is_closed": true,
     "name": "New status",
     "order": 8,

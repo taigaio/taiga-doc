@@ -1,6 +1,60 @@
 [source,json]
 ----
 {
-    "error": "Server application error"
+    "assigned_to": null,
+    "assigned_to_extra_info": null,
+    "attachments": [],
+    "blocked_note": "",
+    "blocked_note_html": "",
+    "comment": "",
+    "created_date": "2020-07-03T08:41:02.440Z",
+    "description": "",
+    "description_html": "",
+    "due_date": null,
+    "due_date_reason": "",
+    "due_date_status": "not_set",
+    "external_reference": null,
+    "finished_date": null,
+    "generated_user_stories": null,
+    "id": 230,
+    "is_blocked": false,
+    "is_closed": false,
+    "is_iocaine": false,
+    "is_voter": false,
+    "is_watcher": false,
+    "milestone": null,
+    "milestone_slug": null,
+    "modified_date": "2020-07-03T08:41:02.441Z",
+    "owner": 6,
+    "owner_extra_info": {
+        "big_photo": null,
+        "full_name_display": "Vanesa Torres",
+        "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+        "id": 6,
+        "is_active": true,
+        "photo": null,
+        "username": "user2114747470430251528"
+    },
+    "project": 1,
+    "project_extra_info": {
+        "id": 1,
+        "logo_small_url": null,
+        "name": "Beta project patch",
+        "slug": "project-0"
+    },
+    "ref": 90,
+    "status": null,
+    "status_extra_info": null,
+    "subject": "Customer personal data",
+    "tags": [],
+    "taskboard_order": 1593765662429,
+    "total_comments": 0,
+    "total_voters": 0,
+    "total_watchers": 0,
+    "us_order": 1593765662429,
+    "user_story": null,
+    "user_story_extra_info": null,
+    "version": 1,
+    "watchers": []
 }
 ----

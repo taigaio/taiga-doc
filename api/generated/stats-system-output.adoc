@@ -7,26 +7,26 @@
         "percent_with_backlog": 0.0,
         "percent_with_backlog_and_kanban": 100.0,
         "percent_with_kanban": 0.0,
-        "today": 7,
-        "total": 7,
+        "today": 0,
+        "total": 8,
         "total_with_backlog": 0,
-        "total_with_backlog_and_kanban": 7,
+        "total_with_backlog_and_kanban": 8,
         "total_with_kanban": 0
     },
     "users": {
         "average_last_five_working_days": 0.0,
         "average_last_seven_days": 0.0,
         "counts_last_year_per_week": {
-            "2019-04-08": 11
+            "2020-06-29": 13
         },
-        "today": 10,
-        "total": 11
+        "today": 2,
+        "total": 13
     },
     "userstories": {
         "average_last_five_working_days": 0.0,
         "average_last_seven_days": 0.0,
-        "today": 139,
-        "total": 139
+        "today": 8,
+        "total": 172
     }
 }
 ----

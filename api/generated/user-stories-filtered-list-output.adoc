@@ -10,7 +10,7 @@
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:44:08.286Z",
+        "created_date": "2020-07-03T08:40:37.245Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
@@ -20,7 +20,7 @@
         "finish_date": null,
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 138,
+        "id": 142,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
@@ -29,24 +29,26 @@
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2019-04-10T10:44:08.291Z",
+        "modified_date": "2020-07-03T08:40:37.249Z",
         "origin_issue": null,
         "origin_task": null,
-        "owner": 5,
+        "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "admin"
+            "username": "user2114747470430251528"
         },
         "points": {
             "1": 4,
             "2": 3,
             "3": 2,
-            "4": 1
+            "4": 1,
+            "43": 1,
+            "44": 1
         },
         "project": 1,
         "project_extra_info": {
@@ -55,7 +57,7 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 83,
+        "ref": 79,
         "sprint_order": 2,
         "status": 2,
         "status_extra_info": {
@@ -86,39 +88,39 @@
         "watchers": []
     },
     {
-        "assigned_to": 7,
+        "assigned_to": 9,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
+            "full_name_display": "Catalina Fernandez",
+            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
+            "id": 9,
             "is_active": true,
             "photo": null,
-            "username": "user1"
+            "username": "user3"
         },
         "assigned_users": [
-            7
+            9
         ],
         "attachments": [],
-        "backlog_order": 1554892452670,
+        "backlog_order": 1593690981217,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:34:12.670Z",
+        "created_date": "2020-07-02T11:56:21.217Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
         "epic_order": null,
         "epics": [
             {
-                "color": "#ef2929",
-                "id": 14,
+                "color": "#f57900",
+                "id": 15,
                 "project": {
                     "id": 3,
                     "name": "Project Example 2",
                     "slug": "project-2"
                 },
-                "ref": 68,
+                "ref": 121,
                 "subject": "Patching subject"
             }
         ],
@@ -131,22 +133,22 @@
         "is_closed": false,
         "is_voter": true,
         "is_watcher": true,
-        "kanban_order": 1554892452670,
+        "kanban_order": 1593690981217,
         "milestone": 1,
-        "milestone_name": "Sprint 2019-2-14",
-        "milestone_slug": "sprint-2019-2-14",
-        "modified_date": "2019-04-10T10:44:07.267Z",
+        "milestone_name": "Sprint 2020-5-8",
+        "milestone_slug": "sprint-2020-5-8",
+        "modified_date": "2020-07-03T08:40:36.879Z",
         "origin_issue": null,
         "origin_task": null,
-        "owner": 12,
+        "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Vanesa Garcia",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "user6"
+            "username": "user2114747470430251528"
         },
         "points": {
             "1": 12,
@@ -173,7 +175,7 @@
         "tags": [
             [
                 "cum",
-                "#ab14d9"
+                null
             ]
         ],
         "tasks": [],
@@ -182,59 +184,58 @@
         "total_comments": 1,
         "total_points": 44.0,
         "total_voters": 2,
-        "total_watchers": 2,
+        "total_watchers": 1,
         "tribe_gig": null,
         "version": 2,
         "watchers": [
-            6,
-            5
+            6
         ]
     },
     {
-        "assigned_to": 10,
+        "assigned_to": 15,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
             "is_active": true,
             "photo": null,
-            "username": "user4"
+            "username": "user9"
         },
         "assigned_users": [
-            10
+            15
         ],
         "attachments": [],
-        "backlog_order": 1554892454800,
+        "backlog_order": 1593690982518,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:34:14.800Z",
+        "created_date": "2020-07-02T11:56:22.518Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
         "epic_order": null,
         "epics": [
             {
-                "color": "#3465a4",
-                "id": 7,
+                "color": "#888a85",
+                "id": 5,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 74,
-                "subject": "Create the html template"
+                "ref": 68,
+                "subject": "Migrate to Python 3 and milk a beautiful cow"
             },
             {
-                "color": "#ef2929",
-                "id": 14,
+                "color": "#f57900",
+                "id": 15,
                 "project": {
                     "id": 3,
                     "name": "Project Example 2",
                     "slug": "project-2"
                 },
-                "ref": 68,
+                "ref": 121,
                 "subject": "Patching subject"
             }
         ],
@@ -246,29 +247,29 @@
         "is_blocked": false,
         "is_closed": false,
         "is_voter": true,
-        "is_watcher": true,
-        "kanban_order": 1554892454800,
+        "is_watcher": false,
+        "kanban_order": 1593690982518,
         "milestone": 1,
-        "milestone_name": "Sprint 2019-2-14",
-        "milestone_slug": "sprint-2019-2-14",
-        "modified_date": "2019-04-10T10:34:15.107Z",
+        "milestone_name": "Sprint 2020-5-8",
+        "milestone_slug": "sprint-2020-5-8",
+        "modified_date": "2020-07-02T11:56:22.697Z",
         "origin_issue": null,
         "origin_task": null,
-        "owner": 7,
+        "owner": 13,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
+            "full_name_display": "Mohamed Ortega",
+            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+            "id": 13,
             "is_active": true,
             "photo": null,
-            "username": "user1"
+            "username": "user7"
         },
         "points": {
-            "1": 9,
-            "2": 8,
-            "3": 8,
-            "4": 6
+            "1": 11,
+            "2": 4,
+            "3": 7,
+            "4": 3
         },
         "project": 1,
         "project_extra_info": {
@@ -279,81 +280,89 @@
         },
         "ref": 6,
         "sprint_order": 15,
-        "status": 1,
+        "status": 2,
         "status_extra_info": {
-            "color": "#999999",
+            "color": "#ff8a84",
             "is_closed": false,
-            "name": "New"
+            "name": "Ready"
         },
-        "subject": "Fixing templates for Django 1.6.",
+        "subject": "Lighttpd x-sendfile support",
         "tags": [
             [
-                "dolore",
-                "#61b076"
+                "pariatur",
+                "#7b0e4e"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_attachments": 4,
+        "total_attachments": 2,
         "total_comments": 2,
-        "total_points": 29.0,
-        "total_voters": 1,
-        "total_watchers": 4,
+        "total_points": 26.5,
+        "total_voters": 9,
+        "total_watchers": 1,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            15,
-            7,
-            3,
-            5
+            7
         ]
     },
     {
-        "assigned_to": 8,
+        "assigned_to": 7,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
+            "full_name_display": "Bego\u00f1a Flores",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
             "is_active": true,
             "photo": null,
-            "username": "user2"
+            "username": "user1"
         },
         "assigned_users": [
-            8
+            7
         ],
         "attachments": [],
-        "backlog_order": 1554892456097,
+        "backlog_order": 1593690983608,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:34:16.098Z",
+        "created_date": "2020-07-02T11:56:23.608Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
         "epic_order": null,
         "epics": [
             {
-                "color": "#729fcf",
+                "color": "#3465a4",
                 "id": 1,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 68,
-                "subject": "Add tests for bulk operations"
+                "ref": 64,
+                "subject": "Added file copying and processing of images (resizing)"
             },
             {
-                "color": "#3465a4",
-                "id": 7,
+                "color": "#ad7fa8",
+                "id": 2,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 74,
-                "subject": "Create the html template"
+                "ref": 65,
+                "subject": "Experimental: modular file types"
+            },
+            {
+                "color": "#888a85",
+                "id": 5,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 68,
+                "subject": "Migrate to Python 3 and milk a beautiful cow"
             }
         ],
         "external_reference": null,
@@ -364,219 +373,28 @@
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
-        "is_watcher": true,
-        "kanban_order": 1554892456097,
-        "milestone": 1,
-        "milestone_name": "Sprint 2019-2-14",
-        "milestone_slug": "sprint-2019-2-14",
-        "modified_date": "2019-04-10T10:34:16.412Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 13,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Mohamed Ortega",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "points": {
-            "1": 8,
-            "2": 4,
-            "3": 11,
-            "4": 7
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 9,
-        "sprint_order": 1554892456098,
-        "status": 1,
-        "status_extra_info": {
-            "color": "#999999",
-            "is_closed": false,
-            "name": "New"
-        },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
-        "tags": [
-            [
-                "neque",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 4,
-        "total_comments": 1,
-        "total_points": 34.0,
-        "total_voters": 5,
-        "total_watchers": 6,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            8,
-            1,
-            9,
-            2,
-            5,
-            7
-        ]
-    },
-    {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "assigned_users": [],
-        "attachments": [],
-        "backlog_order": 1554892457035,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:17.035Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 4,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1554892457035,
-        "milestone": 2,
-        "milestone_name": "Sprint 2019-3-1",
-        "milestone_slug": "sprint-2019-3-1",
-        "modified_date": "2019-04-10T10:34:17.336Z",
+        "kanban_order": 1593690983608,
+        "milestone": 1,
+        "milestone_name": "Sprint 2020-5-8",
+        "milestone_slug": "sprint-2020-5-8",
+        "modified_date": "2020-07-02T11:56:23.834Z",
         "origin_issue": null,
         "origin_task": null,
-        "owner": 8,
+        "owner": 7,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
+            "full_name_display": "Bego\u00f1a Flores",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
             "is_active": true,
             "photo": null,
-            "username": "user2"
+            "username": "user1"
         },
         "points": {
             "1": 6,
-            "2": 8,
-            "3": 2,
-            "4": 10
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 11,
-        "sprint_order": 1554892457035,
-        "status": 3,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "is_closed": false,
-            "name": "In progress"
-        },
-        "subject": "Fixing templates for Django 1.6.",
-        "tags": [
-            [
-                "libero",
-                "#5b20bf"
-            ],
-            [
-                "hic",
-                "#f75f0b"
-            ],
-            [
-                "quas",
-                "#6e3390"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 4,
-        "total_comments": 1,
-        "total_points": 24.0,
-        "total_voters": 3,
-        "total_watchers": 5,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            1,
-            8,
-            14,
-            2,
-            12
-        ]
-    },
-    {
-        "assigned_to": 14,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Miguel Molina",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
-            "is_active": true,
-            "photo": null,
-            "username": "user8"
-        },
-        "assigned_users": [
-            14
-        ],
-        "attachments": [],
-        "backlog_order": 1554892459055,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:19.055Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 5,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1554892459055,
-        "milestone": 2,
-        "milestone_name": "Sprint 2019-3-1",
-        "milestone_slug": "sprint-2019-3-1",
-        "modified_date": "2019-04-10T10:34:19.345Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 15,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Virginia Castro",
-            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-            "id": 15,
-            "is_active": true,
-            "photo": null,
-            "username": "user9"
-        },
-        "points": {
-            "1": 10,
             "2": 12,
-            "3": 4,
+            "3": 9,
             "4": 3
         },
         "project": 1,
@@ -586,447 +404,37 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 17,
-        "sprint_order": 1554892459055,
+        "ref": 10,
+        "sprint_order": 1593690983609,
         "status": 4,
         "status_extra_info": {
             "color": "#fcc000",
             "is_closed": false,
             "name": "Ready for test"
         },
-        "subject": "Fixing templates for Django 1.6.",
+        "subject": "get_actions() does not check for 'delete_selected' in actions",
         "tags": [
             [
-                "quis",
-                "#223610"
+                "neque",
+                "#150607"
             ],
             [
-                "quibusdam",
-                "#c49ac2"
-            ],
-            [
-                "doloremque",
-                null
+                "unde",
+                "#da2470"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
         "total_attachments": 3,
         "total_comments": 1,
-        "total_points": 54.5,
-        "total_voters": 4,
-        "total_watchers": 0,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": []
-    },
-    {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "assigned_users": [],
-        "attachments": [],
-        "backlog_order": 1554892461084,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:21.084Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#ef2929",
-                "id": 14,
-                "project": {
-                    "id": 3,
-                    "name": "Project Example 2",
-                    "slug": "project-2"
-                },
-                "ref": 68,
-                "subject": "Patching subject"
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 6,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1554892461084,
-        "milestone": 2,
-        "milestone_name": "Sprint 2019-3-1",
-        "milestone_slug": "sprint-2019-3-1",
-        "modified_date": "2019-04-10T10:34:21.302Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 7,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "points": {
-            "1": 4,
-            "2": 8,
-            "3": 3,
-            "4": 7
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 22,
-        "sprint_order": 1554892461084,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#fcc000",
-            "is_closed": false,
-            "name": "Ready for test"
-        },
-        "subject": "Add setting to allow regular users to create folders at the root level.",
-        "tags": [
-            [
-                "tenetur",
-                null
-            ],
-            [
-                "exercitationem",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 1,
-        "total_comments": 1,
-        "total_points": 14.5,
+        "total_points": 53.5,
         "total_voters": 6,
         "total_watchers": 2,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
             13,
-            7
-        ]
-    },
-    {
-        "assigned_to": 12,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Vanesa Garcia",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "assigned_users": [
-            12
-        ],
-        "attachments": [],
-        "backlog_order": 1554892463153,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:23.153Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 7,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1554892463153,
-        "milestone": 2,
-        "milestone_name": "Sprint 2019-3-1",
-        "milestone_slug": "sprint-2019-3-1",
-        "modified_date": "2019-04-10T10:34:23.479Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 7,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "points": {
-            "1": 5,
-            "2": 2,
-            "3": 4,
-            "4": 6
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 27,
-        "sprint_order": 1554892463153,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff8a84",
-            "is_closed": false,
-            "name": "Ready"
-        },
-        "subject": "Create testsuite with matrix builds",
-        "tags": [
-            [
-                "maxime",
-                null
-            ],
-            [
-                "dolorem",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 3,
-        "total_comments": 1,
-        "total_points": 6.0,
-        "total_voters": 0,
-        "total_watchers": 3,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            11,
-            6,
             3
-        ]
-    },
-    {
-        "assigned_to": 9,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Fernandez",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "assigned_users": [
-            9
-        ],
-        "attachments": [],
-        "backlog_order": 1554892465750,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:25.750Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#ef2929",
-                "id": 14,
-                "project": {
-                    "id": 3,
-                    "name": "Project Example 2",
-                    "slug": "project-2"
-                },
-                "ref": 68,
-                "subject": "Patching subject"
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 8,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1554892465750,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:25.987Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 10,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
-            "is_active": true,
-            "photo": null,
-            "username": "user4"
-        },
-        "points": {
-            "1": 8,
-            "2": 12,
-            "3": 4,
-            "4": 1
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 33,
-        "sprint_order": 1554892465750,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#fcc000",
-            "is_closed": false,
-            "name": "Ready for test"
-        },
-        "subject": "Lighttpd x-sendfile support",
-        "tags": [
-            [
-                "incidunt",
-                "#3099ec"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 3,
-        "total_comments": 1,
-        "total_points": 49.0,
-        "total_voters": 1,
-        "total_watchers": 7,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            14,
-            1,
-            15,
-            7,
-            12,
-            10,
-            3
-        ]
-    },
-    {
-        "assigned_to": 12,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Vanesa Garcia",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "assigned_users": [
-            12
-        ],
-        "attachments": [],
-        "backlog_order": 1554892466206,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:26.206Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 9,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1554892466206,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:26.420Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 8,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
-            "is_active": true,
-            "photo": null,
-            "username": "user2"
-        },
-        "points": {
-            "1": 4,
-            "2": 11,
-            "3": 9,
-            "4": 7
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 34,
-        "sprint_order": 1554892466206,
-        "status": 3,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "is_closed": false,
-            "name": "In progress"
-        },
-        "subject": "Lighttpd x-sendfile support",
-        "tags": [
-            [
-                "harum",
-                null
-            ],
-            [
-                "voluptates",
-                "#6639aa"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 2,
-        "total_comments": 1,
-        "total_points": 36.0,
-        "total_voters": 7,
-        "total_watchers": 7,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            2,
-            8,
-            15,
-            9,
-            6,
-            14,
-            11
         ]
     },
     {
@@ -1034,11 +442,11 @@
         "assigned_to_extra_info": null,
         "assigned_users": [],
         "attachments": [],
-        "backlog_order": 1554892466617,
+        "backlog_order": 1593690984552,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:34:26.617Z",
+        "created_date": "2020-07-02T11:56:24.552Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
@@ -1046,465 +454,57 @@
         "epics": [
             {
                 "color": "#3465a4",
-                "id": 7,
+                "id": 1,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 74,
-                "subject": "Create the html template"
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 10,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1554892466617,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:26.780Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 13,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Mohamed Ortega",
-            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-            "id": 13,
-            "is_active": true,
-            "photo": null,
-            "username": "user7"
-        },
-        "points": {
-            "1": 6,
-            "2": 4,
-            "3": 4,
-            "4": 10
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 35,
-        "sprint_order": 1554892466617,
-        "status": 3,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "is_closed": false,
-            "name": "In progress"
-        },
-        "subject": "get_actions() does not check for 'delete_selected' in actions",
-        "tags": [
-            [
-                "cumque",
-                "#ad75ec"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 1,
-        "total_comments": 1,
-        "total_points": 18.0,
-        "total_voters": 3,
-        "total_watchers": 6,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            2,
-            10,
-            3,
-            7,
-            8,
-            11
-        ]
-    },
-    {
-        "assigned_to": 12,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Vanesa Garcia",
-            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
-            "id": 12,
-            "is_active": true,
-            "photo": null,
-            "username": "user6"
-        },
-        "assigned_users": [
-            12
-        ],
-        "attachments": [],
-        "backlog_order": 1554892466937,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:26.937Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 11,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1554892466937,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:27.184Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 15,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Virginia Castro",
-            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
-            "id": 15,
-            "is_active": true,
-            "photo": null,
-            "username": "user9"
-        },
-        "points": {
-            "1": 12,
-            "2": 8,
-            "3": 8,
-            "4": 11
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 36,
-        "sprint_order": 1554892466937,
-        "status": 3,
-        "status_extra_info": {
-            "color": "#ff9900",
-            "is_closed": false,
-            "name": "In progress"
-        },
-        "subject": "Added file copying and processing of images (resizing)",
-        "tags": [
-            [
-                "iure",
-                "#019320"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 4,
-        "total_comments": 1,
-        "total_points": 76.0,
-        "total_voters": 0,
-        "total_watchers": 2,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            12,
-            7
-        ]
-    },
-    {
-        "assigned_to": 14,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Miguel Molina",
-            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
-            "id": 14,
-            "is_active": true,
-            "photo": null,
-            "username": "user8"
-        },
-        "assigned_users": [
-            14
-        ],
-        "attachments": [],
-        "backlog_order": 1554892467335,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:27.335Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#fcaf3e",
-                "id": 3,
-                "project": {
-                    "id": 1,
-                    "name": "Project Example 0",
-                    "slug": "project-0"
-                },
-                "ref": 70,
-                "subject": "Create the user model"
+                "ref": 64,
+                "subject": "Added file copying and processing of images (resizing)"
             },
             {
-                "color": "#a40000",
-                "id": 9,
-                "project": {
-                    "id": 2,
-                    "name": "Project Example 1",
-                    "slug": "project-1"
-                },
-                "ref": 95,
-                "subject": "Lighttpd support"
-            }
-        ],
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 12,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1554892467335,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:27.524Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 7,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "points": {
-            "1": 8,
-            "2": 11,
-            "3": 9,
-            "4": 4
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 37,
-        "sprint_order": 1554892467335,
-        "status": 2,
-        "status_extra_info": {
-            "color": "#ff8a84",
-            "is_closed": false,
-            "name": "Ready"
-        },
-        "subject": "Support for bulk actions",
-        "tags": [
-            [
-                "sed",
-                null
-            ],
-            [
-                "quaerat",
-                null
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 1,
-        "total_comments": 1,
-        "total_points": 39.0,
-        "total_voters": 7,
-        "total_watchers": 3,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            3,
-            15,
-            11
-        ]
-    },
-    {
-        "assigned_to": 9,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Catalina Fernandez",
-            "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-            "id": 9,
-            "is_active": true,
-            "photo": null,
-            "username": "user3"
-        },
-        "assigned_users": [
-            9
-        ],
-        "attachments": [],
-        "backlog_order": 1554892467689,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:27.689Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": [
-            {
-                "color": "#3465a4",
-                "id": 7,
+                "color": "#d3d7cf",
+                "id": 6,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 74,
-                "subject": "Create the html template"
+                "ref": 69,
+                "subject": "Experimental: modular file types"
             }
         ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 13,
-        "is_blocked": false,
-        "is_closed": false,
-        "is_voter": true,
-        "is_watcher": false,
-        "kanban_order": 1554892467689,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:27.918Z",
-        "origin_issue": null,
-        "origin_task": null,
-        "owner": 7,
-        "owner_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Bego\u00f1a Flores",
-            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-            "id": 7,
-            "is_active": true,
-            "photo": null,
-            "username": "user1"
-        },
-        "points": {
-            "1": 6,
-            "2": 9,
-            "3": 12,
-            "4": 6
-        },
-        "project": 1,
-        "project_extra_info": {
-            "id": 1,
-            "logo_small_url": null,
-            "name": "Project Example 0",
-            "slug": "project-0"
-        },
-        "ref": 38,
-        "sprint_order": 1554892467689,
-        "status": 4,
-        "status_extra_info": {
-            "color": "#fcc000",
-            "is_closed": false,
-            "name": "Ready for test"
-        },
-        "subject": "Create the user model",
-        "tags": [
-            [
-                "vero",
-                "#74e191"
-            ],
-            [
-                "possimus",
-                "#fccc1b"
-            ]
-        ],
-        "tasks": [],
-        "team_requirement": false,
-        "total_attachments": 3,
-        "total_comments": 1,
-        "total_points": 56.0,
-        "total_voters": 4,
-        "total_watchers": 1,
-        "tribe_gig": null,
-        "version": 1,
-        "watchers": [
-            8
-        ]
-    },
-    {
-        "assigned_to": 5,
-        "assigned_to_extra_info": {
-            "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
-            "is_active": true,
-            "photo": null,
-            "username": "admin"
-        },
-        "assigned_users": [
-            5
-        ],
-        "attachments": [],
-        "backlog_order": 1554892468075,
-        "blocked_note": "",
-        "client_requirement": false,
-        "comment": "",
-        "created_date": "2019-04-10T10:34:28.075Z",
-        "due_date": null,
-        "due_date_reason": "",
-        "due_date_status": "not_set",
-        "epic_order": null,
-        "epics": null,
-        "external_reference": null,
-        "finish_date": null,
-        "generated_from_issue": null,
-        "generated_from_task": null,
-        "id": 14,
+        "id": 4,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1554892468075,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:28.277Z",
+        "kanban_order": 1593690984552,
+        "milestone": 2,
+        "milestone_name": "Sprint 2020-5-23",
+        "milestone_slug": "sprint-2020-5-23",
+        "modified_date": "2020-07-02T11:56:24.735Z",
         "origin_issue": null,
         "origin_task": null,
-        "owner": 8,
+        "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Francisco Gil",
-            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
-            "id": 8,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "user2"
+            "username": "user2114747470430251528"
         },
         "points": {
-            "1": 10,
-            "2": 9,
-            "3": 1,
+            "1": 11,
+            "2": 12,
+            "3": 9,
             "4": 12
         },
         "project": 1,
@@ -1514,84 +514,177 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 39,
-        "sprint_order": 1554892468075,
-        "status": 4,
+        "ref": 13,
+        "sprint_order": 1593690984552,
+        "status": 3,
         "status_extra_info": {
-            "color": "#fcc000",
+            "color": "#ff9900",
             "is_closed": false,
-            "name": "Ready for test"
+            "name": "In progress"
         },
-        "subject": "Added file copying and processing of images (resizing)",
+        "subject": "Support for bulk actions",
         "tags": [
             [
-                "a",
-                null
+                "vel",
+                "#91e065"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_attachments": 1,
+        "total_attachments": 4,
         "total_comments": 1,
-        "total_points": 63.0,
-        "total_voters": 1,
-        "total_watchers": 0,
+        "total_points": 110.0,
+        "total_voters": 6,
+        "total_watchers": 6,
         "tribe_gig": null,
         "version": 1,
-        "watchers": []
+        "watchers": [
+            8,
+            11,
+            13,
+            2,
+            9,
+            4
+        ]
     },
     {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "assigned_users": [],
+        "assigned_to": 7,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Bego\u00f1a Flores",
+            "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
+            "id": 7,
+            "is_active": true,
+            "photo": null,
+            "username": "user1"
+        },
+        "assigned_users": [
+            7
+        ],
         "attachments": [],
-        "backlog_order": 1554892468388,
+        "backlog_order": 1593690985487,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:34:28.388Z",
+        "created_date": "2020-07-02T11:56:25.487Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
         "epic_order": null,
         "epics": [
             {
-                "color": "#fce94f",
-                "id": 6,
+                "color": "#888a85",
+                "id": 5,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 73,
-                "subject": "Create the html template"
-            },
-            {
-                "color": "#ef2929",
-                "id": 14,
-                "project": {
-                    "id": 3,
-                    "name": "Project Example 2",
-                    "slug": "project-2"
-                },
                 "ref": 68,
-                "subject": "Patching subject"
+                "subject": "Migrate to Python 3 and milk a beautiful cow"
             }
         ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 15,
+        "id": 5,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1554892468388,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:28.562Z",
+        "kanban_order": 1593690985487,
+        "milestone": 2,
+        "milestone_name": "Sprint 2020-5-23",
+        "milestone_slug": "sprint-2020-5-23",
+        "modified_date": "2020-07-02T11:56:25.698Z",
+        "origin_issue": null,
+        "origin_task": null,
+        "owner": 12,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "points": {
+            "1": 6,
+            "2": 5,
+            "3": 9,
+            "4": 5
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 16,
+        "sprint_order": 1593690985487,
+        "status": 3,
+        "status_extra_info": {
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "In progress"
+        },
+        "subject": "Add tests for bulk operations",
+        "tags": [
+            [
+                "eveniet",
+                "#5d26b5"
+            ],
+            [
+                "ad",
+                null
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_attachments": 3,
+        "total_comments": 1,
+        "total_points": 17.0,
+        "total_voters": 5,
+        "total_watchers": 2,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            11,
+            10
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "assigned_users": [],
+        "attachments": [],
+        "backlog_order": 1593690986943,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2020-07-02T11:56:26.943Z",
+        "due_date": null,
+        "due_date_reason": "",
+        "due_date_status": "not_set",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "generated_from_task": null,
+        "id": 6,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1593690986943,
+        "milestone": 2,
+        "milestone_name": "Sprint 2020-5-23",
+        "milestone_slug": "sprint-2020-5-23",
+        "modified_date": "2020-07-02T11:56:27.108Z",
         "origin_issue": null,
         "origin_task": null,
         "owner": 9,
@@ -1605,10 +698,10 @@
             "username": "user3"
         },
         "points": {
-            "1": 11,
-            "2": 4,
-            "3": 8,
-            "4": 9
+            "1": 3,
+            "2": 2,
+            "3": 11,
+            "4": 6
         },
         "project": 1,
         "project_extra_info": {
@@ -1617,36 +710,35 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 40,
-        "sprint_order": 1554892468388,
-        "status": 4,
+        "ref": 21,
+        "sprint_order": 1593690986943,
+        "status": 1,
         "status_extra_info": {
-            "color": "#fcc000",
+            "color": "#999999",
             "is_closed": false,
-            "name": "Ready for test"
+            "name": "New"
         },
-        "subject": "Support for bulk actions",
+        "subject": "Lighttpd x-sendfile support",
         "tags": [
             [
-                "vel",
+                "inventore",
                 null
+            ],
+            [
+                "voluptatum",
+                "#02d22f"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_attachments": 1,
+        "total_attachments": 4,
         "total_comments": 1,
-        "total_points": 39.0,
-        "total_voters": 1,
-        "total_watchers": 4,
+        "total_points": 23.5,
+        "total_voters": 3,
+        "total_watchers": 0,
         "tribe_gig": null,
         "version": 1,
-        "watchers": [
-            7,
-            10,
-            11,
-            15
-        ]
+        "watchers": []
     },
     {
         "assigned_to": 12,
@@ -1663,11 +755,11 @@
             12
         ],
         "attachments": [],
-        "backlog_order": 1554892468698,
+        "backlog_order": 1593690987753,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:34:28.698Z",
+        "created_date": "2020-07-02T11:56:27.753Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
@@ -1675,30 +767,200 @@
         "epics": [
             {
                 "color": "#3465a4",
-                "id": 7,
+                "id": 1,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 74,
-                "subject": "Create the html template"
+                "ref": 64,
+                "subject": "Added file copying and processing of images (resizing)"
+            },
+            {
+                "color": "#729fcf",
+                "id": 3,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 66,
+                "subject": "Added file copying and processing of images (resizing)"
+            },
+            {
+                "color": "#888a85",
+                "id": 5,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 68,
+                "subject": "Migrate to Python 3 and milk a beautiful cow"
+            },
+            {
+                "color": "#d3d7cf",
+                "id": 6,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 69,
+                "subject": "Experimental: modular file types"
             }
         ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 16,
+        "id": 7,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
+        "is_watcher": true,
+        "kanban_order": 1593690987753,
+        "milestone": 2,
+        "milestone_name": "Sprint 2020-5-23",
+        "milestone_slug": "sprint-2020-5-23",
+        "modified_date": "2020-07-02T11:56:28.005Z",
+        "origin_issue": null,
+        "origin_task": null,
+        "owner": 13,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Mohamed Ortega",
+            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+            "id": 13,
+            "is_active": true,
+            "photo": null,
+            "username": "user7"
+        },
+        "points": {
+            "1": 6,
+            "2": 11,
+            "3": 9,
+            "4": 10
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 24,
+        "sprint_order": 1593690987753,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Ready for test"
+        },
+        "subject": "Lighttpd x-sendfile support",
+        "tags": [
+            [
+                "mollitia",
+                "#002e7f"
+            ],
+            [
+                "atque",
+                "#713547"
+            ],
+            [
+                "reprehenderit",
+                null
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_attachments": 2,
+        "total_comments": 1,
+        "total_points": 46.0,
+        "total_voters": 7,
+        "total_watchers": 3,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            15,
+            9,
+            6
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "assigned_users": [],
+        "attachments": [],
+        "backlog_order": 1593690989778,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2020-07-02T11:56:29.778Z",
+        "due_date": null,
+        "due_date_reason": "",
+        "due_date_status": "not_set",
+        "epic_order": null,
+        "epics": [
+            {
+                "color": "#3465a4",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 64,
+                "subject": "Added file copying and processing of images (resizing)"
+            },
+            {
+                "color": "#729fcf",
+                "id": 3,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 66,
+                "subject": "Added file copying and processing of images (resizing)"
+            },
+            {
+                "color": "#888a85",
+                "id": 5,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 68,
+                "subject": "Migrate to Python 3 and milk a beautiful cow"
+            },
+            {
+                "color": "#d3d7cf",
+                "id": 6,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 69,
+                "subject": "Experimental: modular file types"
+            }
+        ],
+        "external_reference": null,
+        "finish_date": "2020-07-02T11:56:30.051Z",
+        "generated_from_issue": null,
+        "generated_from_task": null,
+        "id": 8,
+        "is_blocked": false,
+        "is_closed": true,
+        "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1554892468698,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:28.889Z",
+        "kanban_order": 1593690989778,
+        "milestone": 2,
+        "milestone_name": "Sprint 2020-5-23",
+        "milestone_slug": "sprint-2020-5-23",
+        "modified_date": "2020-07-02T11:56:29.949Z",
         "origin_issue": null,
         "origin_task": null,
         "owner": 14,
@@ -1712,9 +974,9 @@
             "username": "user8"
         },
         "points": {
-            "1": 3,
+            "1": 8,
             "2": 4,
-            "3": 2,
+            "3": 6,
             "4": 10
         },
         "project": 1,
@@ -1724,101 +986,100 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 41,
-        "sprint_order": 1554892468698,
-        "status": 4,
+        "ref": 30,
+        "sprint_order": 1593690989778,
+        "status": 1,
         "status_extra_info": {
-            "color": "#fcc000",
+            "color": "#999999",
             "is_closed": false,
-            "name": "Ready for test"
+            "name": "New"
         },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
+        "subject": "Add setting to allow regular users to create folders at the root level.",
         "tags": [
             [
-                "distinctio",
-                "#1f8960"
+                "cum",
+                null
             ],
             [
-                "necessitatibus",
-                null
+                "modi",
+                "#494e30"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_attachments": 1,
+        "total_attachments": 3,
         "total_comments": 1,
-        "total_points": 14.5,
-        "total_voters": 5,
-        "total_watchers": 2,
+        "total_points": 25.0,
+        "total_voters": 0,
+        "total_watchers": 1,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            7,
-            2
+            13
         ]
     },
     {
-        "assigned_to": 10,
+        "assigned_to": 14,
         "assigned_to_extra_info": {
             "big_photo": null,
-            "full_name_display": "Enrique Crespo",
-            "gravatar_id": "f31e0063c7cd6da19b6467bc48d2b14b",
-            "id": 10,
+            "full_name_display": "Miguel Molina",
+            "gravatar_id": "dce0e8ed702cd85d5132e523121e619b",
+            "id": 14,
             "is_active": true,
             "photo": null,
-            "username": "user4"
+            "username": "user8"
         },
         "assigned_users": [
-            10
+            14
         ],
         "attachments": [],
-        "backlog_order": 1554892469030,
+        "backlog_order": 1593690990338,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:34:29.030Z",
+        "created_date": "2020-07-02T11:56:30.338Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
         "epic_order": null,
         "epics": [
             {
-                "color": "#3465a4",
-                "id": 7,
+                "color": "#ad7fa8",
+                "id": 2,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 74,
-                "subject": "Create the html template"
+                "ref": 65,
+                "subject": "Experimental: modular file types"
             },
             {
-                "color": "#ef2929",
-                "id": 14,
+                "color": "#888a85",
+                "id": 5,
                 "project": {
-                    "id": 3,
-                    "name": "Project Example 2",
-                    "slug": "project-2"
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
                 },
                 "ref": 68,
-                "subject": "Patching subject"
+                "subject": "Migrate to Python 3 and milk a beautiful cow"
             }
         ],
         "external_reference": null,
-        "finish_date": null,
+        "finish_date": "2020-07-02T11:56:30.762Z",
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 17,
+        "id": 9,
         "is_blocked": false,
-        "is_closed": false,
+        "is_closed": true,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1554892469030,
-        "milestone": null,
-        "milestone_name": null,
-        "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:29.262Z",
+        "kanban_order": 1593690990338,
+        "milestone": 2,
+        "milestone_name": "Sprint 2020-5-23",
+        "milestone_slug": "sprint-2020-5-23",
+        "modified_date": "2020-07-02T11:56:30.588Z",
         "origin_issue": null,
         "origin_task": null,
         "owner": 8,
@@ -1834,8 +1095,8 @@
         "points": {
             "1": 10,
             "2": 3,
-            "3": 1,
-            "4": 9
+            "3": 3,
+            "4": 7
         },
         "project": 1,
         "project_extra_info": {
@@ -1844,84 +1105,235 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 42,
-        "sprint_order": 1554892469030,
-        "status": 1,
+        "ref": 32,
+        "sprint_order": 1593690990338,
+        "status": 2,
         "status_extra_info": {
-            "color": "#999999",
+            "color": "#ff8a84",
             "is_closed": false,
-            "name": "New"
+            "name": "Ready"
         },
-        "subject": "Implement the form",
+        "subject": "Feature/improved image admin",
         "tags": [
             [
-                "praesentium",
+                "maiores",
                 null
             ],
             [
-                "assumenda",
-                "#52b91a"
+                "fuga",
+                null
             ],
             [
-                "maxime",
-                null
+                "necessitatibus",
+                "#84e3b6"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_attachments": 1,
+        "total_attachments": 3,
         "total_comments": 1,
-        "total_points": 23.5,
-        "total_voters": 2,
-        "total_watchers": 2,
+        "total_points": 19.0,
+        "total_voters": 8,
+        "total_watchers": 4,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
+            4,
             3,
-            1
+            13,
+            12
         ]
     },
     {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "assigned_users": [],
+        "assigned_to": 15,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
+        "assigned_users": [
+            15
+        ],
         "attachments": [],
-        "backlog_order": 1554892469387,
+        "backlog_order": 1593690991145,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:34:29.387Z",
+        "created_date": "2020-07-02T11:56:31.145Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
         "epic_order": null,
         "epics": [
             {
-                "color": "#4e9a06",
-                "id": 4,
+                "color": "#3465a4",
+                "id": 1,
                 "project": {
                     "id": 1,
                     "name": "Project Example 0",
                     "slug": "project-0"
                 },
-                "ref": 71,
+                "ref": 64,
                 "subject": "Added file copying and processing of images (resizing)"
+            },
+            {
+                "color": "#ad7fa8",
+                "id": 2,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 65,
+                "subject": "Experimental: modular file types"
+            },
+            {
+                "color": "#d3d7cf",
+                "id": 6,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 69,
+                "subject": "Experimental: modular file types"
             }
         ],
         "external_reference": null,
         "finish_date": null,
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 18,
+        "id": 10,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1554892469387,
+        "kanban_order": 1593690991145,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2019-04-10T10:34:29.588Z",
+        "modified_date": "2020-07-02T11:56:31.296Z",
+        "origin_issue": null,
+        "origin_task": null,
+        "owner": 15,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
+        "points": {
+            "1": 6,
+            "2": 9,
+            "3": 5,
+            "4": 6
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 34,
+        "sprint_order": 1593690991145,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Ready for test"
+        },
+        "subject": "Experimental: modular file types",
+        "tags": [
+            [
+                "nihil",
+                "#98a352"
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_attachments": 2,
+        "total_comments": 1,
+        "total_points": 18.0,
+        "total_voters": 4,
+        "total_watchers": 3,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            3,
+            10,
+            7
+        ]
+    },
+    {
+        "assigned_to": 13,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Mohamed Ortega",
+            "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
+            "id": 13,
+            "is_active": true,
+            "photo": null,
+            "username": "user7"
+        },
+        "assigned_users": [
+            13
+        ],
+        "attachments": [],
+        "backlog_order": 1593690991398,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2020-07-02T11:56:31.398Z",
+        "due_date": null,
+        "due_date_reason": "",
+        "due_date_status": "not_set",
+        "epic_order": null,
+        "epics": [
+            {
+                "color": "#3465a4",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 64,
+                "subject": "Added file copying and processing of images (resizing)"
+            },
+            {
+                "color": "#888a85",
+                "id": 5,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 68,
+                "subject": "Migrate to Python 3 and milk a beautiful cow"
+            }
+        ],
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "generated_from_task": null,
+        "id": 11,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": true,
+        "is_watcher": false,
+        "kanban_order": 1593690991398,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2020-07-02T11:56:31.549Z",
         "origin_issue": null,
         "origin_task": null,
         "owner": 13,
@@ -1935,10 +1347,10 @@
             "username": "user7"
         },
         "points": {
-            "1": 8,
-            "2": 4,
-            "3": 1,
-            "4": 4
+            "1": 2,
+            "2": 6,
+            "3": 2,
+            "4": 12
         },
         "project": 1,
         "project_extra_info": {
@@ -1947,53 +1359,62 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 43,
-        "sprint_order": 1554892469387,
-        "status": 1,
+        "ref": 35,
+        "sprint_order": 1593690991398,
+        "status": 3,
         "status_extra_info": {
-            "color": "#999999",
+            "color": "#ff9900",
             "is_closed": false,
-            "name": "New"
+            "name": "In progress"
         },
-        "subject": "Exception is thrown if trying to add a folder with existing name",
+        "subject": "Added file copying and processing of images (resizing)",
         "tags": [
             [
-                "assumenda",
-                "#52b91a"
+                "esse",
+                "#d77661"
             ],
             [
-                "minus",
-                "#59b653"
-            ],
-            [
-                "architecto",
-                "#9d1e93"
+                "sint",
+                "#3b2404"
             ]
         ],
         "tasks": [],
         "team_requirement": false,
-        "total_attachments": 3,
+        "total_attachments": 2,
         "total_comments": 1,
-        "total_points": 10.0,
-        "total_voters": 7,
-        "total_watchers": 2,
+        "total_points": 43.0,
+        "total_voters": 3,
+        "total_watchers": 5,
         "tribe_gig": null,
         "version": 1,
         "watchers": [
-            2,
-            3
+            4,
+            10,
+            11,
+            3,
+            2
         ]
     },
     {
-        "assigned_to": null,
-        "assigned_to_extra_info": null,
-        "assigned_users": [],
+        "assigned_to": 6,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
+        "assigned_users": [
+            6
+        ],
         "attachments": [],
-        "backlog_order": 1554893045535,
+        "backlog_order": 1593690991659,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:44:05.535Z",
+        "created_date": "2020-07-02T11:56:31.659Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
@@ -2003,16 +1424,134 @@
         "finish_date": null,
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 135,
+        "id": 12,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
-        "is_watcher": false,
-        "kanban_order": 1554893045535,
+        "is_watcher": true,
+        "kanban_order": 1593690991659,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2019-04-10T10:44:05.536Z",
+        "modified_date": "2020-07-02T11:56:31.783Z",
+        "origin_issue": null,
+        "origin_task": null,
+        "owner": 15,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Virginia Castro",
+            "gravatar_id": "69b60d39a450e863609ae3546b12b360",
+            "id": 15,
+            "is_active": true,
+            "photo": null,
+            "username": "user9"
+        },
+        "points": {
+            "1": 11,
+            "2": 9,
+            "3": 4,
+            "4": 1
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 36,
+        "sprint_order": 1593690991659,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "New"
+        },
+        "subject": "get_actions() does not check for 'delete_selected' in actions",
+        "tags": [
+            [
+                "ea",
+                null
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_attachments": 2,
+        "total_comments": 1,
+        "total_points": 31.0,
+        "total_voters": 4,
+        "total_watchers": 4,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            3,
+            6,
+            9,
+            12
+        ]
+    },
+    {
+        "assigned_to": 12,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "assigned_users": [
+            12
+        ],
+        "attachments": [],
+        "backlog_order": 1593690991905,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2020-07-02T11:56:31.905Z",
+        "due_date": null,
+        "due_date_reason": "",
+        "due_date_status": "not_set",
+        "epic_order": null,
+        "epics": [
+            {
+                "color": "#3465a4",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 64,
+                "subject": "Added file copying and processing of images (resizing)"
+            },
+            {
+                "color": "#d3d7cf",
+                "id": 6,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 69,
+                "subject": "Experimental: modular file types"
+            }
+        ],
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "generated_from_task": null,
+        "id": 13,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": true,
+        "is_watcher": false,
+        "kanban_order": 1593690991905,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2020-07-02T11:56:32.042Z",
         "origin_issue": null,
         "origin_task": null,
         "owner": 5,
@@ -2026,10 +1565,10 @@
             "username": "admin"
         },
         "points": {
-            "1": 1,
-            "2": 1,
-            "3": 1,
-            "4": 1
+            "1": 2,
+            "2": 3,
+            "3": 6,
+            "4": 11
         },
         "project": 1,
         "project_extra_info": {
@@ -2038,8 +1577,505 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 80,
-        "sprint_order": 1554893045535,
+        "ref": 37,
+        "sprint_order": 1593690991905,
+        "status": 4,
+        "status_extra_info": {
+            "color": "#fcc000",
+            "is_closed": false,
+            "name": "Ready for test"
+        },
+        "subject": "Create the html template",
+        "tags": [
+            [
+                "suscipit",
+                "#38abf3"
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_attachments": 3,
+        "total_comments": 1,
+        "total_points": 23.5,
+        "total_voters": 4,
+        "total_watchers": 5,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            14,
+            7,
+            12,
+            15,
+            4
+        ]
+    },
+    {
+        "assigned_to": 6,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
+        "assigned_users": [
+            6
+        ],
+        "attachments": [],
+        "backlog_order": 1593690992206,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2020-07-02T11:56:32.206Z",
+        "due_date": null,
+        "due_date_reason": "",
+        "due_date_status": "not_set",
+        "epic_order": null,
+        "epics": [
+            {
+                "color": "#888a85",
+                "id": 5,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 68,
+                "subject": "Migrate to Python 3 and milk a beautiful cow"
+            }
+        ],
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "generated_from_task": null,
+        "id": 14,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1593690992206,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2020-07-02T11:56:32.412Z",
+        "origin_issue": null,
+        "origin_task": null,
+        "owner": 8,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Francisco Gil",
+            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+            "id": 8,
+            "is_active": true,
+            "photo": null,
+            "username": "user2"
+        },
+        "points": {
+            "1": 7,
+            "2": 11,
+            "3": 3,
+            "4": 7
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 38,
+        "sprint_order": 1593690992206,
+        "status": 3,
+        "status_extra_info": {
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "In progress"
+        },
+        "subject": "Create testsuite with matrix builds",
+        "tags": [
+            [
+                "deserunt",
+                "#e7b695"
+            ],
+            [
+                "autem",
+                null
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_attachments": 4,
+        "total_comments": 1,
+        "total_points": 30.5,
+        "total_voters": 1,
+        "total_watchers": 1,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            12
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "assigned_users": [],
+        "attachments": [],
+        "backlog_order": 1593690992484,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2020-07-02T11:56:32.484Z",
+        "due_date": null,
+        "due_date_reason": "",
+        "due_date_status": "not_set",
+        "epic_order": null,
+        "epics": [
+            {
+                "color": "#3465a4",
+                "id": 1,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 64,
+                "subject": "Added file copying and processing of images (resizing)"
+            }
+        ],
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "generated_from_task": null,
+        "id": 15,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1593690992484,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2020-07-02T11:56:32.627Z",
+        "origin_issue": null,
+        "origin_task": null,
+        "owner": 8,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Francisco Gil",
+            "gravatar_id": "5c921c7bd676b7b4992501005d243c42",
+            "id": 8,
+            "is_active": true,
+            "photo": null,
+            "username": "user2"
+        },
+        "points": {
+            "1": 8,
+            "2": 12,
+            "3": 3,
+            "4": 9
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 39,
+        "sprint_order": 1593690992484,
+        "status": 2,
+        "status_extra_info": {
+            "color": "#ff8a84",
+            "is_closed": false,
+            "name": "Ready"
+        },
+        "subject": "Support for bulk actions",
+        "tags": [
+            [
+                "assumenda",
+                null
+            ],
+            [
+                "blanditiis",
+                "#65026b"
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_attachments": 4,
+        "total_comments": 1,
+        "total_points": 58.5,
+        "total_voters": 4,
+        "total_watchers": 3,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            12,
+            1,
+            3
+        ]
+    },
+    {
+        "assigned_to": 12,
+        "assigned_to_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Garcia",
+            "gravatar_id": "74cb769a5e64d445b8550789e1553502",
+            "id": 12,
+            "is_active": true,
+            "photo": null,
+            "username": "user6"
+        },
+        "assigned_users": [
+            12
+        ],
+        "attachments": [],
+        "backlog_order": 1593690992725,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2020-07-02T11:56:32.725Z",
+        "due_date": null,
+        "due_date_reason": "",
+        "due_date_status": "not_set",
+        "epic_order": null,
+        "epics": [
+            {
+                "color": "#888a85",
+                "id": 5,
+                "project": {
+                    "id": 1,
+                    "name": "Project Example 0",
+                    "slug": "project-0"
+                },
+                "ref": 68,
+                "subject": "Migrate to Python 3 and milk a beautiful cow"
+            }
+        ],
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "generated_from_task": null,
+        "id": 16,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": true,
+        "is_watcher": false,
+        "kanban_order": 1593690992725,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2020-07-02T11:56:32.847Z",
+        "origin_issue": null,
+        "origin_task": null,
+        "owner": 6,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
+        "points": {
+            "1": 7,
+            "2": 7,
+            "3": 2,
+            "4": 2
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 40,
+        "sprint_order": 1593690992725,
+        "status": 3,
+        "status_extra_info": {
+            "color": "#ff9900",
+            "is_closed": false,
+            "name": "In progress"
+        },
+        "subject": "Added file copying and processing of images (resizing)",
+        "tags": [
+            [
+                "non",
+                "#37031f"
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_attachments": 2,
+        "total_comments": 1,
+        "total_points": 10.0,
+        "total_voters": 7,
+        "total_watchers": 7,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            10,
+            9,
+            4,
+            15,
+            2,
+            7,
+            3
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "assigned_users": [],
+        "attachments": [],
+        "backlog_order": 1593690992998,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2020-07-02T11:56:32.998Z",
+        "due_date": null,
+        "due_date_reason": "",
+        "due_date_status": "not_set",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "generated_from_task": null,
+        "id": 17,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1593690992998,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2020-07-02T11:56:33.118Z",
+        "origin_issue": null,
+        "origin_task": null,
+        "owner": 5,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Administrator",
+            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+            "id": 5,
+            "is_active": true,
+            "photo": null,
+            "username": "admin"
+        },
+        "points": {
+            "1": 9,
+            "2": 11,
+            "3": 7,
+            "4": 10
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 41,
+        "sprint_order": 1593690992998,
+        "status": 1,
+        "status_extra_info": {
+            "color": "#999999",
+            "is_closed": false,
+            "name": "New"
+        },
+        "subject": "Implement the form",
+        "tags": [
+            [
+                "numquam",
+                null
+            ],
+            [
+                "nesciunt",
+                "#4c8404"
+            ]
+        ],
+        "tasks": [],
+        "team_requirement": false,
+        "total_attachments": 3,
+        "total_comments": 1,
+        "total_points": 48.0,
+        "total_voters": 0,
+        "total_watchers": 6,
+        "tribe_gig": null,
+        "version": 1,
+        "watchers": [
+            3,
+            9,
+            10,
+            12,
+            1,
+            8
+        ]
+    },
+    {
+        "assigned_to": null,
+        "assigned_to_extra_info": null,
+        "assigned_users": [],
+        "attachments": [],
+        "backlog_order": 1593765636263,
+        "blocked_note": "",
+        "client_requirement": false,
+        "comment": "",
+        "created_date": "2020-07-03T08:40:36.263Z",
+        "due_date": null,
+        "due_date_reason": "",
+        "due_date_status": "not_set",
+        "epic_order": null,
+        "epics": null,
+        "external_reference": null,
+        "finish_date": null,
+        "generated_from_issue": null,
+        "generated_from_task": null,
+        "id": 139,
+        "is_blocked": false,
+        "is_closed": false,
+        "is_voter": false,
+        "is_watcher": false,
+        "kanban_order": 1593765636263,
+        "milestone": null,
+        "milestone_name": null,
+        "milestone_slug": null,
+        "modified_date": "2020-07-03T08:40:36.263Z",
+        "origin_issue": null,
+        "origin_task": null,
+        "owner": 6,
+        "owner_extra_info": {
+            "big_photo": null,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
+            "is_active": true,
+            "photo": null,
+            "username": "user2114747470430251528"
+        },
+        "points": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "43": 1,
+            "44": 1
+        },
+        "project": 1,
+        "project_extra_info": {
+            "id": 1,
+            "logo_small_url": null,
+            "name": "Project Example 0",
+            "slug": "project-0"
+        },
+        "ref": 76,
+        "sprint_order": 1593765636263,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -2064,11 +2100,11 @@
         "assigned_to_extra_info": null,
         "assigned_users": [],
         "attachments": [],
-        "backlog_order": 1554893045536,
+        "backlog_order": 1593765636263,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:44:05.536Z",
+        "created_date": "2020-07-03T08:40:36.263Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
@@ -2078,33 +2114,35 @@
         "finish_date": null,
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 136,
+        "id": 140,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1554893045536,
+        "kanban_order": 1593765636263,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2019-04-10T10:44:05.724Z",
+        "modified_date": "2020-07-03T08:40:36.404Z",
         "origin_issue": null,
         "origin_task": null,
-        "owner": 5,
+        "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "admin"
+            "username": "user2114747470430251528"
         },
         "points": {
             "1": 1,
             "2": 1,
             "3": 1,
-            "4": 1
+            "4": 1,
+            "43": 1,
+            "44": 1
         },
         "project": 1,
         "project_extra_info": {
@@ -2113,8 +2151,8 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 81,
-        "sprint_order": 1554893045536,
+        "ref": 77,
+        "sprint_order": 1593765636263,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -2139,11 +2177,11 @@
         "assigned_to_extra_info": null,
         "assigned_users": [],
         "attachments": [],
-        "backlog_order": 1554893045536,
+        "backlog_order": 1593765636263,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:44:05.536Z",
+        "created_date": "2020-07-03T08:40:36.263Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
@@ -2153,33 +2191,35 @@
         "finish_date": null,
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 137,
+        "id": 141,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1554893045536,
+        "kanban_order": 1593765636263,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2019-04-10T10:44:05.851Z",
+        "modified_date": "2020-07-03T08:40:36.503Z",
         "origin_issue": null,
         "origin_task": null,
-        "owner": 5,
+        "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "admin"
+            "username": "user2114747470430251528"
         },
         "points": {
             "1": 1,
             "2": 1,
             "3": 1,
-            "4": 1
+            "4": 1,
+            "43": 1,
+            "44": 1
         },
         "project": 1,
         "project_extra_info": {
@@ -2188,8 +2228,8 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 82,
-        "sprint_order": 1554893045536,
+        "ref": 78,
+        "sprint_order": 1593765636263,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",
@@ -2214,11 +2254,11 @@
         "assigned_to_extra_info": null,
         "assigned_users": [],
         "attachments": [],
-        "backlog_order": 1554893048806,
+        "backlog_order": 1593765637448,
         "blocked_note": "",
         "client_requirement": false,
         "comment": "",
-        "created_date": "2019-04-10T10:44:08.822Z",
+        "created_date": "2020-07-03T08:40:37.460Z",
         "due_date": null,
         "due_date_reason": "",
         "due_date_status": "not_set",
@@ -2228,33 +2268,35 @@
         "finish_date": null,
         "generated_from_issue": null,
         "generated_from_task": null,
-        "id": 139,
+        "id": 143,
         "is_blocked": false,
         "is_closed": false,
         "is_voter": false,
         "is_watcher": false,
-        "kanban_order": 1554893048806,
+        "kanban_order": 1593765637448,
         "milestone": null,
         "milestone_name": null,
         "milestone_slug": null,
-        "modified_date": "2019-04-10T10:44:08.824Z",
+        "modified_date": "2020-07-03T08:40:37.461Z",
         "origin_issue": null,
         "origin_task": null,
-        "owner": 5,
+        "owner": 6,
         "owner_extra_info": {
             "big_photo": null,
-            "full_name_display": "Administrator",
-            "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-            "id": 5,
+            "full_name_display": "Vanesa Torres",
+            "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+            "id": 6,
             "is_active": true,
             "photo": null,
-            "username": "admin"
+            "username": "user2114747470430251528"
         },
         "points": {
             "1": 1,
             "2": 1,
             "3": 1,
-            "4": 1
+            "4": 1,
+            "43": 1,
+            "44": 1
         },
         "project": 1,
         "project_extra_info": {
@@ -2263,8 +2305,8 @@
             "name": "Project Example 0",
             "slug": "project-0"
         },
-        "ref": 84,
-        "sprint_order": 1554893048806,
+        "ref": 80,
+        "sprint_order": 1593765637448,
         "status": 1,
         "status_extra_info": {
             "color": "#999999",

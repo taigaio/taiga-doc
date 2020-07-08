@@ -3,16 +3,16 @@
 {
     "big_photo": null,
     "bio": "",
-    "color": "#40826D",
-    "full_name": "Bego\u00f1a Flores",
-    "full_name_display": "Bego\u00f1a Flores",
-    "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-    "id": 7,
+    "color": "#FFCC00",
+    "full_name": "Angela Perez",
+    "full_name_display": "Angela Perez",
+    "gravatar_id": "c9ba9d485f9a9153ebf53758feb0980c",
+    "id": 11,
     "is_active": true,
     "lang": "",
     "photo": null,
     "roles": [
-        "Back",
+        "Design",
         "Front",
         "Product Owner",
         "Stakeholder",
@@ -20,6 +20,6 @@
     ],
     "theme": "",
     "timezone": "",
-    "username": "user1"
+    "username": "user5"
 }
 ----

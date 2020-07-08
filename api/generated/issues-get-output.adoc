@@ -1,46 +1,38 @@
 [source,json]
 ----
 {
-    "assigned_to": 9,
-    "assigned_to_extra_info": {
-        "big_photo": null,
-        "full_name_display": "Catalina Fernandez",
-        "gravatar_id": "9971a763f5dfc5cbd1ce1d2865b4fcfa",
-        "id": 9,
-        "is_active": true,
-        "photo": null,
-        "username": "user3"
-    },
+    "assigned_to": null,
+    "assigned_to_extra_info": null,
     "attachments": [],
     "blocked_note": "",
     "blocked_note_html": "",
     "comment": "",
-    "created_date": "2019-04-10T10:34:30.358Z",
-    "description": "Quo laborum voluptates hic nesciunt veniam, incidunt magni labore nisi magnam exercitationem aliquam asperiores est assumenda quidem optio, accusamus in debitis accusantium quis? Tempore maiores blanditiis iste magnam quis eaque ex minus, tenetur voluptas unde, magnam dicta autem vitae harum.",
-    "description_html": "<p>Quo laborum voluptates hic nesciunt veniam, incidunt magni labore nisi magnam exercitationem aliquam asperiores est assumenda quidem optio, accusamus in debitis accusantium quis? Tempore maiores blanditiis iste magnam quis eaque ex minus, tenetur voluptas unde, magnam dicta autem vitae harum.</p>",
+    "created_date": "2020-07-02T11:56:33.680Z",
+    "description": "Non laborum officia quae veritatis vel ab voluptas esse beatae doloribus ipsa, recusandae possimus debitis tempore iusto aspernatur ad quo, repudiandae error praesentium, perspiciatis modi aliquam quisquam quos debitis reiciendis excepturi? Ex aliquam laboriosam sequi minus dolore nisi dolorem quidem aliquid, inventore doloribus non illum nulla minus recusandae tempore error aut praesentium, perferendis recusandae possimus accusamus vitae illo, neque quod cumque temporibus modi rerum eum praesentium ea ex? Laudantium illum possimus veniam impedit qui amet aliquam, quos vero est eligendi asperiores quasi reprehenderit tempora doloremque? Amet laudantium iusto reprehenderit in eveniet voluptatem expedita cupiditate odio explicabo quasi, eveniet quis et est cumque eum nobis nihil aut quasi, soluta consequuntur minima quam quod exercitationem iste illum culpa nemo, aliquid magni nulla accusamus esse libero at.",
+    "description_html": "<p>Non laborum officia quae veritatis vel ab voluptas esse beatae doloribus ipsa, recusandae possimus debitis tempore iusto aspernatur ad quo, repudiandae error praesentium, perspiciatis modi aliquam quisquam quos debitis reiciendis excepturi? Ex aliquam laboriosam sequi minus dolore nisi dolorem quidem aliquid, inventore doloribus non illum nulla minus recusandae tempore error aut praesentium, perferendis recusandae possimus accusamus vitae illo, neque quod cumque temporibus modi rerum eum praesentium ea ex? Laudantium illum possimus veniam impedit qui amet aliquam, quos vero est eligendi asperiores quasi reprehenderit tempora doloremque? Amet laudantium iusto reprehenderit in eveniet voluptatem expedita cupiditate odio explicabo quasi, eveniet quis et est cumque eum nobis nihil aut quasi, soluta consequuntur minima quam quod exercitationem iste illum culpa nemo, aliquid magni nulla accusamus esse libero at.</p>",
     "due_date": null,
     "due_date_reason": "",
     "due_date_status": "not_set",
     "external_reference": null,
-    "finished_date": null,
+    "finished_date": "2020-07-02T11:56:33.756Z",
     "generated_user_stories": null,
     "id": 3,
     "is_blocked": false,
-    "is_closed": false,
+    "is_closed": true,
     "is_voter": true,
     "is_watcher": false,
     "milestone": null,
-    "modified_date": "2019-04-10T10:44:23.927Z",
+    "modified_date": "2020-07-03T08:40:51.052Z",
     "neighbors": {
         "next": {
             "id": 2,
-            "ref": 45,
-            "subject": "Implement the form"
+            "ref": 43,
+            "subject": "Added file copying and processing of images (resizing)"
         },
         "previous": {
             "id": 4,
-            "ref": 47,
-            "subject": "Support for bulk actions"
+            "ref": 45,
+            "subject": "Add setting to allow regular users to create folders at the root level."
         }
     },
     "owner": 7,
@@ -53,7 +45,7 @@
         "photo": null,
         "username": "user1"
     },
-    "priority": 1,
+    "priority": 2,
     "project": 1,
     "project_extra_info": {
         "id": 1,
@@ -61,69 +53,25 @@
         "name": "Project Example 0",
         "slug": "project-0"
     },
-    "ref": 46,
-    "severity": 3,
-    "status": 2,
+    "ref": 44,
+    "severity": 1,
+    "status": 4,
     "status_extra_info": {
-        "color": "#5E8C6A",
-        "is_closed": false,
-        "name": "In progress"
+        "color": "#BFB35A",
+        "is_closed": true,
+        "name": "Closed"
     },
     "subject": "Patching subject",
     "tags": [
         [
-            "numquam",
-            null
-        ],
-        [
-            "qui",
-            null
-        ],
-        [
-            "earum",
-            null
-        ],
-        [
-            "excepturi",
-            "#5c3c96"
-        ],
-        [
-            "accusantium",
-            null
-        ],
-        [
-            "minima",
-            "#f0048e"
-        ],
-        [
-            "fugiat",
-            "#1c563a"
-        ],
-        [
-            "libero",
-            "#5b20bf"
-        ],
-        [
-            "ipsum",
-            null
-        ],
-        [
-            "beatae",
-            "#b844bd"
+            "dicta",
+            "#939b44"
         ]
     ],
-    "total_voters": 6,
-    "total_watchers": 7,
-    "type": 3,
+    "total_voters": 4,
+    "total_watchers": 0,
+    "type": 2,
     "version": 2,
-    "watchers": [
-        3,
-        11,
-        4,
-        7,
-        2,
-        1,
-        9
-    ]
+    "watchers": []
 }
 ----

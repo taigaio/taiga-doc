@@ -1,22 +1,22 @@
 [source,json]
 ----
 {
-    "attached_file": "attachments/c/3/6/6/b440f53ad92b8f4798c3ef49860cc7c39064bf982091eb4ba0820803123b/sample_attachment_1.txt",
-    "created_date": "2019-04-10T10:36:19.190Z",
+    "attached_file": "attachments/6/2/d/2/9fd8261a62f1be8d66867e604b81eeab08e4e28382c23f1ca8e5e7d90c49/sample_attachment_3.txt",
+    "created_date": "2020-07-02T11:58:05.759Z",
     "description": "Updated description",
     "from_comment": false,
-    "id": 647,
+    "id": 749,
     "is_deprecated": true,
-    "modified_date": "2019-04-10T10:53:31.868Z",
-    "name": "sample_attachment_1.txt",
-    "object_id": 19,
+    "modified_date": "2020-07-03T08:40:58.624Z",
+    "name": "sample_attachment_3.txt",
+    "object_id": 7,
     "order": 1,
-    "owner": 12,
-    "preview_url": "http://localhost:8000/media/attachments/c/3/6/6/b440f53ad92b8f4798c3ef49860cc7c39064bf982091eb4ba0820803123b/sample_attachment_1.txt?token=XK3LLA%3AhrYf7pReWqNMK78GzIz09uqv2M2ZoXlojjL0ikiyfpwIX9_sSJf90NEsRypxzg8SWIKER1sXVlnsyZnEAu44Vg",
+    "owner": 7,
+    "preview_url": "http://localhost:8000/media/attachments/6/2/d/2/9fd8261a62f1be8d66867e604b81eeab08e4e28382c23f1ca8e5e7d90c49/sample_attachment_3.txt",
     "project": 3,
-    "sha1": "e9913a16efd01bf9b44d712cf601802fdc8869ea",
-    "size": 289,
+    "sha1": "da2631d805f12a1b533738a0912e9b9c2261dbef",
+    "size": 1178,
     "thumbnail_card_url": null,
-    "url": "http://localhost:8000/media/attachments/c/3/6/6/b440f53ad92b8f4798c3ef49860cc7c39064bf982091eb4ba0820803123b/sample_attachment_1.txt?token=XK3LLA%3AhrYf7pReWqNMK78GzIz09uqv2M2ZoXlojjL0ikiyfpwIX9_sSJf90NEsRypxzg8SWIKER1sXVlnsyZnEAu44Vg"
+    "url": "http://localhost:8000/media/attachments/6/2/d/2/9fd8261a62f1be8d66867e604b81eeab08e4e28382c23f1ca8e5e7d90c49/sample_attachment_3.txt"
 }
 ----

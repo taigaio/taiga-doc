@@ -31,14 +31,14 @@
     },
     {
         "color": "#AAAAAA",
-        "id": 36,
+        "id": 41,
         "name": "New severity",
         "order": 8,
         "project": 1
     },
     {
         "color": "#999999",
-        "id": 37,
+        "id": 42,
         "name": "New severity name",
         "order": 10,
         "project": 1

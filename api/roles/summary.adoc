@@ -1,0 +1,19 @@
+[[roles-list]]
+=== List
+include::../roles/list.adoc[]
+
+[[roles-create]]
+=== Create
+include::../roles/create.adoc[]
+
+[[roles-get]]
+=== Get
+include::../roles/get.adoc[]
+
+[[roles-edit]]
+=== Edit
+include::../roles/edit.adoc[]
+
+[[roles-delete]]
+=== Delete
+include::../roles/delete.adoc[]

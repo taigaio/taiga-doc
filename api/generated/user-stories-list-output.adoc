@@ -9,7 +9,7 @@
     "blocked_note": "",
     "client_requirement": false,
     "comment": "",
-    "created_date": "2019-04-10T10:44:08.286Z",
+    "created_date": "2020-07-03T08:40:37.245Z",
     "due_date": null,
     "due_date_reason": "",
     "due_date_status": "not_set",
@@ -19,7 +19,7 @@
     "finish_date": null,
     "generated_from_issue": null,
     "generated_from_task": null,
-    "id": 138,
+    "id": 142,
     "is_blocked": false,
     "is_closed": false,
     "is_voter": false,
@@ -28,24 +28,26 @@
     "milestone": null,
     "milestone_name": null,
     "milestone_slug": null,
-    "modified_date": "2019-04-10T10:44:08.291Z",
+    "modified_date": "2020-07-03T08:40:37.249Z",
     "origin_issue": null,
     "origin_task": null,
-    "owner": 5,
+    "owner": 6,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Administrator",
-        "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
-        "id": 5,
+        "full_name_display": "Vanesa Torres",
+        "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+        "id": 6,
         "is_active": true,
         "photo": null,
-        "username": "admin"
+        "username": "user2114747470430251528"
     },
     "points": {
         "1": 4,
         "2": 3,
         "3": 2,
-        "4": 1
+        "4": 1,
+        "43": 1,
+        "44": 1
     },
     "project": 1,
     "project_extra_info": {
@@ -54,7 +56,7 @@
         "name": "Project Example 0",
         "slug": "project-0"
     },
-    "ref": 83,
+    "ref": 79,
     "sprint_order": 2,
     "status": 2,
     "status_extra_info": {

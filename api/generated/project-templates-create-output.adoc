@@ -1,7 +1,7 @@
 [source,json]
 ----
 {
-    "created_date": "2019-04-10T11:00:02.707Z",
+    "created_date": "2020-07-03T08:41:04.085Z",
     "default_options": {
         "issue_status": "New",
         "issue_type": "Bug",
@@ -82,9 +82,9 @@
             "order": 3
         }
     ],
-    "modified_date": "2019-04-10T11:00:02.711Z",
+    "modified_date": "2020-07-03T08:41:04.087Z",
     "name": "New Template",
-    "order": 1554894002703,
+    "order": 1593765664084,
     "points": [
         {
             "name": "?",

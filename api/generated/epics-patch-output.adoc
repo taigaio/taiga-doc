@@ -1,41 +1,41 @@
 [source,json]
 ----
 {
-    "assigned_to": 7,
+    "assigned_to": 6,
     "assigned_to_extra_info": {
         "big_photo": null,
-        "full_name_display": "Bego\u00f1a Flores",
-        "gravatar_id": "aed1e43be0f69f07ce6f34a907bc6328",
-        "id": 7,
+        "full_name_display": "Vanesa Torres",
+        "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+        "id": 6,
         "is_active": true,
         "photo": null,
-        "username": "user1"
+        "username": "user2114747470430251528"
     },
     "attachments": [],
     "blocked_note": "",
     "blocked_note_html": "",
     "client_requirement": false,
-    "color": "#ef2929",
+    "color": "#f57900",
     "comment": "",
-    "created_date": "2019-04-10T10:36:23.368Z",
-    "description": "Natus velit consectetur dignissimos incidunt quo omnis ut illum earum ad, vero iste est, molestias totam itaque veritatis neque tempora? Deleniti nisi illo recusandae esse minima porro et hic eveniet alias aut, possimus quia ut delectus eius? Ipsum esse nam ad magnam fuga, repudiandae esse excepturi, commodi possimus blanditiis praesentium quaerat.",
-    "description_html": "<p>Natus velit consectetur dignissimos incidunt quo omnis ut illum earum ad, vero iste est, molestias totam itaque veritatis neque tempora? Deleniti nisi illo recusandae esse minima porro et hic eveniet alias aut, possimus quia ut delectus eius? Ipsum esse nam ad magnam fuga, repudiandae esse excepturi, commodi possimus blanditiis praesentium quaerat.</p>",
-    "epics_order": 1554892583368,
-    "id": 14,
+    "created_date": "2020-07-02T11:58:14.636Z",
+    "description": "Temporibus asperiores saepe ea officiis similique hic, aliquam reiciendis consequatur aliquid qui perspiciatis obcaecati?",
+    "description_html": "<p>Temporibus asperiores saepe ea officiis similique hic, aliquam reiciendis consequatur aliquid qui perspiciatis obcaecati?</p>",
+    "epics_order": 1593691094636,
+    "id": 15,
     "is_blocked": false,
     "is_closed": false,
-    "is_voter": true,
+    "is_voter": false,
     "is_watcher": false,
-    "modified_date": "2019-04-10T10:43:56.662Z",
-    "owner": 13,
+    "modified_date": "2020-07-03T08:40:31.382Z",
+    "owner": 5,
     "owner_extra_info": {
         "big_photo": null,
-        "full_name_display": "Mohamed Ortega",
-        "gravatar_id": "6d7e702bd6c6fc568fca7577f9ca8c55",
-        "id": 13,
+        "full_name_display": "Administrator",
+        "gravatar_id": "64e1b8d34f425d19e1ee2ea7236d3028",
+        "id": 5,
         "is_active": true,
         "photo": null,
-        "username": "user7"
+        "username": "admin"
     },
     "project": 3,
     "project_extra_info": {
@@ -44,7 +44,7 @@
         "name": "Project Example 2",
         "slug": "project-2"
     },
-    "ref": 68,
+    "ref": 121,
     "status": 11,
     "status_extra_info": {
         "color": "#999999",
@@ -54,22 +54,29 @@
     "subject": "Patching subject",
     "tags": [
         [
-            "optio",
+            "corporis",
             null
         ],
         [
-            "fugit",
+            "modi",
             null
         ]
     ],
     "team_requirement": false,
-    "total_voters": 3,
-    "total_watchers": 0,
+    "total_voters": 5,
+    "total_watchers": 6,
     "user_stories_counts": {
-        "progress": 0.75,
-        "total": 12
+        "progress": 4.066666666666666,
+        "total": 10
     },
-    "version": 3,
-    "watchers": []
+    "version": 2,
+    "watchers": [
+        1,
+        4,
+        9,
+        11,
+        12,
+        15
+    ]
 }
 ----

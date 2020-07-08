@@ -2,7 +2,7 @@
 ----
 [
     {
-        "big_photo": "http://localhost:8000/media/user/0/8/2/8/849b8da655ad07ea31b497fd71200567a12cc2262ece78fc052bb5aa8a43/test.png.300x300_q85_crop.png?token=XK3NnQ%3At9fzl3czS6N_9gkuVLPr3W4MOlK4d1QtmvwhjwhrY3YGxM8eqNhOrX5R3EmP3wsb_h-XyxrbOCF2Q8su-uU9YA",
+        "big_photo": null,
         "bio": "",
         "color": "",
         "full_name": "Administrator",
@@ -11,7 +11,7 @@
         "id": 5,
         "is_active": true,
         "lang": "",
-        "photo": "http://localhost:8000/media/user/0/8/2/8/849b8da655ad07ea31b497fd71200567a12cc2262ece78fc052bb5aa8a43/test.png.80x80_q85_crop.png?token=XK3NnQ%3AouVm_-4ReKgJrjW81S5Km6IHFXRYdCeCVsjUh3SJRIiEB38b1oyLPvjQZyWkWFo4PFa1SIfxtooQiRJ46zNeug",
+        "photo": null,
         "roles": [
             "Back",
             "Front",
@@ -21,7 +21,62 @@
         ],
         "theme": "",
         "timezone": "",
+        "username": "admin"
+    },
+    {
+        "big_photo": "http://localhost:8000/media/user/4/2/0/a/ee53713413ca7b4a3c5446b166a0240b221cd850f47b41c743b8eaa97d54/test.png.300x300_q85_crop.png",
+        "bio": "",
+        "color": "#40826D",
+        "full_name": "Vanesa Torres",
+        "full_name_display": "Vanesa Torres",
+        "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
+        "id": 6,
+        "is_active": true,
+        "lang": "",
+        "photo": "http://localhost:8000/media/user/4/2/0/a/ee53713413ca7b4a3c5446b166a0240b221cd850f47b41c743b8eaa97d54/test.png.80x80_q85_crop.png",
+        "roles": [
+            "Design",
+            "Front",
+            "Product Owner",
+            "UX"
+        ],
+        "theme": "",
+        "timezone": "",
         "username": "patchedusername"
+    },
+    {
+        "big_photo": null,
+        "bio": "",
+        "color": "#c9f5fe",
+        "full_name": "test",
+        "full_name_display": "test",
+        "gravatar_id": "1ec29e4d0732b571e9a975e258a7e9b5",
+        "id": 16,
+        "is_active": true,
+        "lang": "",
+        "photo": null,
+        "roles": [
+            "Front"
+        ],
+        "theme": "",
+        "timezone": "",
+        "username": "test-username"
+    },
+    {
+        "big_photo": null,
+        "bio": "",
+        "color": "#1b258c",
+        "full_name": "test",
+        "full_name_display": "test",
+        "gravatar_id": "2eaaf209aa89ca205b61856915f3a8a2",
+        "id": 17,
+        "is_active": true,
+        "lang": "",
+        "photo": null,
+        "roles": [],
+        "theme": "",
+        "timezone": "",
+        "username": "test-username2"
     },
     {
         "big_photo": null,
@@ -37,9 +92,9 @@
         "roles": [
             "Back",
             "Front",
+            "Patch name",
             "Product Owner",
-            "Stakeholder",
-            "UX"
+            "Stakeholder"
         ],
         "theme": "",
         "timezone": "",
@@ -60,33 +115,12 @@
             "Design",
             "Front",
             "Product Owner",
-            "Stakeholder"
-        ],
-        "theme": "",
-        "timezone": "",
-        "username": "user2"
-    },
-    {
-        "big_photo": null,
-        "bio": "",
-        "color": "#40826D",
-        "full_name": "Vanesa Torres",
-        "full_name_display": "Vanesa Torres",
-        "gravatar_id": "b579f05d7d36f4588b11887093e4ce44",
-        "id": 6,
-        "is_active": true,
-        "lang": "",
-        "photo": null,
-        "roles": [
-            "Back",
-            "Design",
-            "Front",
-            "Product Owner",
+            "Stakeholder",
             "UX"
         ],
         "theme": "",
         "timezone": "",
-        "username": "user2114747470430251528"
+        "username": "user2"
     },
     {
         "big_photo": null,
@@ -102,8 +136,10 @@
         "roles": [
             "Back",
             "Design",
+            "Front",
             "Product Owner",
-            "Stakeholder"
+            "Stakeholder",
+            "UX"
         ],
         "theme": "",
         "timezone": "",
@@ -123,8 +159,9 @@
         "roles": [
             "Back",
             "Design",
-            "Front",
-            "Product Owner"
+            "Product Owner",
+            "Stakeholder",
+            "UX"
         ],
         "theme": "",
         "timezone": "",
@@ -142,7 +179,6 @@
         "lang": "",
         "photo": null,
         "roles": [
-            "Back",
             "Design",
             "Front",
             "Product Owner",
@@ -165,10 +201,9 @@
         "lang": "",
         "photo": null,
         "roles": [
-            "Front",
+            "Design",
             "Product Owner",
-            "Stakeholder",
-            "UX"
+            "Stakeholder"
         ],
         "theme": "",
         "timezone": "",
@@ -187,7 +222,6 @@
         "photo": null,
         "roles": [
             "Back",
-            "Design",
             "Front",
             "Product Owner",
             "Stakeholder"
@@ -208,9 +242,9 @@
         "lang": "",
         "photo": null,
         "roles": [
+            "Back",
             "Front",
             "Product Owner",
-            "Stakeholder",
             "UX"
         ],
         "theme": "",

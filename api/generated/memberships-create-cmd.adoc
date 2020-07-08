@@ -6,7 +6,7 @@ curl -X POST \
 -d '{
         "project": 1,
         "role": 3,
-        "username": "test-user@test.com"
+        "username": "test-user@email-test.com"
     }' \
 -s http://localhost:8000/api/v1/memberships
 ----

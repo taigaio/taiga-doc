@@ -2,90 +2,6 @@
 ----
 [
     {
-        "id": 85,
-        "name": "?",
-        "order": 1,
-        "project": 8,
-        "value": null
-    },
-    {
-        "id": 86,
-        "name": "0",
-        "order": 2,
-        "project": 8,
-        "value": 0.0
-    },
-    {
-        "id": 87,
-        "name": "1/2",
-        "order": 3,
-        "project": 8,
-        "value": 0.5
-    },
-    {
-        "id": 88,
-        "name": "1",
-        "order": 4,
-        "project": 8,
-        "value": 1.0
-    },
-    {
-        "id": 89,
-        "name": "2",
-        "order": 5,
-        "project": 8,
-        "value": 2.0
-    },
-    {
-        "id": 90,
-        "name": "3",
-        "order": 6,
-        "project": 8,
-        "value": 3.0
-    },
-    {
-        "id": 91,
-        "name": "5",
-        "order": 7,
-        "project": 8,
-        "value": 5.0
-    },
-    {
-        "id": 92,
-        "name": "8",
-        "order": 8,
-        "project": 8,
-        "value": 8.0
-    },
-    {
-        "id": 93,
-        "name": "10",
-        "order": 9,
-        "project": 8,
-        "value": 10.0
-    },
-    {
-        "id": 94,
-        "name": "13",
-        "order": 10,
-        "project": 8,
-        "value": 13.0
-    },
-    {
-        "id": 95,
-        "name": "20",
-        "order": 11,
-        "project": 8,
-        "value": 20.0
-    },
-    {
-        "id": 96,
-        "name": "40",
-        "order": 12,
-        "project": 8,
-        "value": 40.0
-    },
-    {
         "id": 97,
         "name": "?",
         "order": 1,
@@ -167,6 +83,90 @@
         "name": "40",
         "order": 12,
         "project": 9,
+        "value": 40.0
+    },
+    {
+        "id": 109,
+        "name": "?",
+        "order": 1,
+        "project": 10,
+        "value": null
+    },
+    {
+        "id": 110,
+        "name": "0",
+        "order": 2,
+        "project": 10,
+        "value": 0.0
+    },
+    {
+        "id": 111,
+        "name": "1/2",
+        "order": 3,
+        "project": 10,
+        "value": 0.5
+    },
+    {
+        "id": 112,
+        "name": "1",
+        "order": 4,
+        "project": 10,
+        "value": 1.0
+    },
+    {
+        "id": 113,
+        "name": "2",
+        "order": 5,
+        "project": 10,
+        "value": 2.0
+    },
+    {
+        "id": 114,
+        "name": "3",
+        "order": 6,
+        "project": 10,
+        "value": 3.0
+    },
+    {
+        "id": 115,
+        "name": "5",
+        "order": 7,
+        "project": 10,
+        "value": 5.0
+    },
+    {
+        "id": 116,
+        "name": "8",
+        "order": 8,
+        "project": 10,
+        "value": 8.0
+    },
+    {
+        "id": 117,
+        "name": "10",
+        "order": 9,
+        "project": 10,
+        "value": 10.0
+    },
+    {
+        "id": 118,
+        "name": "13",
+        "order": 10,
+        "project": 10,
+        "value": 13.0
+    },
+    {
+        "id": 119,
+        "name": "20",
+        "order": 11,
+        "project": 10,
+        "value": 20.0
+    },
+    {
+        "id": 120,
+        "name": "40",
+        "order": 12,
+        "project": 10,
         "value": 40.0
     },
     {

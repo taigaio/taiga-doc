@@ -2,14 +2,13 @@
 ----
 {
     "roles": [
-        "Stakeholder",
-        "UX",
-        "Back",
+        "Design",
         "Front",
+        "UX",
         "Product Owner"
     ],
-    "total_num_closed_userstories": 1,
-    "total_num_contacts": 10,
-    "total_num_projects": 10
+    "total_num_closed_userstories": 2,
+    "total_num_contacts": 11,
+    "total_num_projects": 11
 }
 ----

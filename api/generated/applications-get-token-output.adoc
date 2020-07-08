@@ -8,9 +8,9 @@
         "name": "example application",
         "web": "http://example.com"
     },
-    "auth_code": "c9b77306-5b7f-11e9-963f-600308aa7e90",
-    "id": 3,
-    "next_url": "http://example.com?auth_code=c9b77306-5b7f-11e9-963f-600308aa7e90",
-    "user": 5
+    "auth_code": "1b40f0f8-085d-4c47-a867-eb7d4f760177",
+    "id": 1,
+    "next_url": "http://example.com?auth_code=1b40f0f8-085d-4c47-a867-eb7d4f760177",
+    "user": 6
 }
 ----
