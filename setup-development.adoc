@@ -314,11 +314,11 @@ Final steps
 
 Having installed all the dependencies, all you have left to do is to run the code itself.
 
-.Run gulp
+.Run
 [source,bash]
 ----
 cd ~/taiga-front
-gulp
+npm start
 ----
 
 And now, you can configure it copying the
