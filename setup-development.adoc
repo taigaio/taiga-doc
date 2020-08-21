@@ -231,36 +231,6 @@ In the case of **taiga-front** we have used other languages. Because of this, yo
 additional dependencies that compile **taiga-front** code into something the browser can understand.
 
 
-Ruby and Gems
-^^^^^^^^^^^^^
-
-Ruby is used mainly for compiling *sass* (css preprocessor). It is also used for sass linting but that
-is only in development environments.
-
-.Install ruby
-[source,bash]
-----
-sudo apt-get install -y ruby
-sudo apt-get install -y ruby-all-dev
-----
-
-.Install required gems
-[source,bash]
-----
-gem install --user-install sass scss_lint
-----
-
-.Make gems' scripts available from your path by putting this in your *~/.bashrc*
-[source,bash]
-----
-if which ruby >/dev/null && which gem >/dev/null; then
-    PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
-fi
-----
-
-Restart the shell, source ~/.bashrc, or run bash again to make the path changes available.
-
-
 NodeJS and friends
 ^^^^^^^^^^^^^^^^^^
 
