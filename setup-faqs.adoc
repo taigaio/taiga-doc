@@ -301,8 +301,8 @@ settings/local.py:
 IMPORTERS["jira"] = {
     "active": True,
     "consumer_key": "one-key-at-your-election",
-    "cert": file('private_key.pem').read(),  # You can directly copy and paste the content here
-    "pub_cert": file('public_key.pem').read(),  # You can directly copy and paste the content here
+    "cert": open('private_key.pem').read(),  # You can directly copy and paste the content here
+    "pub_cert": open('public_key.pem').read()  # You can directly copy and paste the content here
 }
 ----
 
