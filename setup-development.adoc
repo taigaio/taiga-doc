@@ -34,7 +34,7 @@ This section helps with the download and configuration of the backend (api) Taig
 Install dependencies
 ~~~~~~~~~~~~~~~~~~~~
 
-The backend is written mainly in python (3.5) but for some third party libraries we need to install a
+The backend is written mainly in python (3.6) but for some third party libraries we need to install a
 C compiler and development headers.
 
 [source,bash]
@@ -70,7 +70,7 @@ sudo service postgresql reload
 Setup python environment
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To run **taiga-back** you should have python (>=3.5) installed along with some other third party
+To run **taiga-back** you should have python (>=3.6) installed along with some other third party
 libraries. As a first step, start installing python:
 
 [source,bash]
@@ -199,8 +199,8 @@ Debian installation notes
 Debian stable (Jessie) provides all needed requirements, but old-stable (Wheezy) does not.
 
 The latest Python available from Wheezy's apt repositories is only 3.1 and insufficient for taiga-back.
-Python 3.5 is available from stable (Jessie) if you are comfortable using mixed versions in your apt sources.
-Otherwise, you must build Python 3.5 from source (see https://www.python.org/downloads/source/ for links).
+Python 3.6 is available from stable (Jessie) if you are comfortable using mixed versions in your apt sources.
+Otherwise, you must build Python 3.6 from source (see https://www.python.org/downloads/source/ for links).
 When building from source, if the bz2 development libraries are not already present on your system, then you must first:
 [source,bash]
 ----

@@ -35,7 +35,7 @@ This is a list of major _Taiga_ dependencies:
 
 Runtime:
 
-- Python >= 3.4
+- Python >= 3.6
 - PostgreSQL >= 9.4
 - RabbitMQ (optional as long as you don't want async notifications)
 
