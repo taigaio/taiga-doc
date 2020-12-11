@@ -73,9 +73,7 @@ development environment].
 
 === Other Ways to Setup an Initial Environment
 
-In addition to the traditional step-by-step manuals, _Taiga_ comes with a
-collection of provisioning scripts and Vagrant support, and
-link:setup-alternatives.html[complete documentation of how to use them].
+In addition to the traditional step-by-step manuals you have link:setup-alternatives.html[other ways to setup _Taiga_].
 
 === Setup FAQs and common Bugs
 
