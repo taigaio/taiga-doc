@@ -1,0 +1,322 @@
+= Upgrade between old versions of Taiga
+:toc: left
+:numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
+
+Default upgrade process
+-----------------------
+
+Frontend application
+~~~~~~~~~~~~~~~~~~~~
+
+[source,bash]
+----
+cd ~/taiga-front-dist
+git checkout stable
+git pull
+----
+
+Backend application
+~~~~~~~~~~~~~~~~~~~
+
+[WARNING]
+====
+Run as user `taiga` or whatever user you use, do not run this code as `root` to avoid errors.
+====
+
+[source,bash]
+----
+cd ~/taiga-back
+git checkout stable
+workon taiga
+git pull
+pip install -r requirements.txt
+----
+
+[WARNING]
+====
+If you have some contrib plugins installed you should to upgrade them before the next step.
+====
+
+[source,bash]
+----
+python manage.py migrate --noinput
+python manage.py compilemessages
+python manage.py collectstatic --noinput
+----
+
+In case you are using circus as the process manager:
+
+[source,bash]
+----
+circusctl reload taiga
+----
+
+In case you are using systemd as the process manager (recommended since taiga 4.0):
+
+[source,bash]
+----
+systemctl restart taiga
+----
+
+In case taiga-celery is configured reload it too.
+
+With circus:
+
+[source,bash]
+----
+circusctl reload taiga-celery
+----
+
+With systemd:
+
+[source,bash]
+----
+systemctl restart taiga_celery
+----
+
+
+4.0 > 4.2.6
+-----------
+
+Follow the default process.
+
+The migration could take a long time if you have a large database.
+
+
+
+3.4.x > 4.0
+-----------
+
+Follow the default process.
+Please note that several libraries were updated in this release so
+it is very important to not miss the `pip install -r requirements.txt` step.
+
+
+
+3.3.0 > 3.4.x
+-------------
+
+Follow the default process.
+
+The migration could take a long time if you have a large database.
+
+You should to reload the fixtures with:
+
+----
+cd taiga-back
+workon taiga
+python manage.py loaddata initial_project_templates --traceback
+----
+
+
+3.2.3 > 3.3.x
+-------------
+
+Follow the default process.
+
+The migration may take a long time if you have a large database.
+
+
+3.1.0 > 3.2.x
+-------------
+
+Follow the default process.
+
+
+
+3.0.0 > 3.1.0
+-------------
+
+[IMPORTANT]
+.PostgreSQL >= 9.4 is needed
+====
+in this release PostgreSQL > 9.4 is the officially recomended version because all JSON columns will be migrated to JSONB to reduce the db disk space usage and improve performance.
+====
+
+[IMPORTANT]
+.Changes to settings for REST_FRAMEWORK throttling.
+====
+If you have modified your `REST_FRAMEWORK` settings, you have to care about the changes introducted in the new version:
+
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"]` you must handle the fact
+  that `anon` and `user` scopes settings have been renamed and split into
+  `anon-write`, `anon-read`, `user-write` and `user-read`.
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_RATES"]` we have added new scopes of
+  throttling (by default set to `None`), they are `login-fail`, `register-success`,
+  `user-detail`.
+. In `REST_FRAMEWORK["DEFAULT_THROTTLE_CLASSES"]` the new default throttle
+  class is `taiga.base.throttling.CommonThrottle`.
+====
+
+[IMPORTANT]
+.Changes to settings because celery upgrade from 3.x to 4.x.
+====
+We have migrated to celery 4, and split the configuration in two different
+files. Therefore if you have configured any celery settings in your
+`settings/local.py` you must move them to the `settings/celery_local.py`
+file. Besides, before update the workers and taiga-back, ensure that your tasks
+queue is completely empty because the tasks format isn't compatible (if you
+can't stop your service during the upgrade, you have to follow the instructions
+given by celery creators here:
+http://docs.celeryproject.org/en/latest/whatsnew-4.0.html#upgrading-from-celery-3-1).
+====
+
+Follow the default process.
+
+The migration may take a long time if you have a large database.
+
+You should reload the fixtures with:
+
+----
+cd taiga-back
+workon taiga
+python manage.py loaddata initial_project_templates --traceback
+----
+
+
+Upgrade from Ubuntu 14.04 system to Ubuntu 16.04
+------------------------------------------------
+
+To upgrade from 14.04 to 16.04 you have to follow the official Ubuntu process:
+
+[source, txt]
+----
+$ sudo apt-get install update-manager-core
+$ sudo do-release-upgrade -p
+----
+
+Then you have to upgrade to the new postgres version maintaining the old data:
+[source, txt]
+----
+$ sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
+$ sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
+$ sudo pg_dropcluster 9.5 main --stop
+$ sudo pg_upgradecluster 9.3 main
+$ sudo reboot
+----
+
+Then you have to use the circus service from ubuntu.
+[source, txt]
+----
+$ sudo pip uninstall circus pyzmq
+$ sudo apt-get install circus
+$ sudo mv ~/conf/circus.ini /etc/circus/conf.d/taiga.ini
+----
+
+Rebuild your virtualenv
+[source, txt]
+----
+$ rmvirtualenv taiga
+$ mkvirtualenv taiga -p /usr/bin/python3.5
+$ cd ~/taiga-back
+$ pip install -r requirements.txt
+----
+
+Reboot the system
+[source, txt]
+----
+$ sudo reboot
+----
+
+
+
+
+3.0.0 > 3.1.0
+~~~~~~~~~~~~~~
+
+Follow the default process.
+
+If you want to have svg thumbnail images install `cairo` library.
+
+----
+apt-get install cairo
+----
+
+
+
+2.1.0 > 3.0.0
+-------------
+
+[IMPORTANT]
+.Extra step for instances with gogs plugin installed
+====
+
+Taiga contrib gogs plugin has been moved to taiga core so if you installed the plugin you must uninstall it first:
+
+- In `taiga-back/settings/local.py`
+    * Remove `taiga_contrib_gogs` from your `INSTALLED_APPS`
+    * Remove the `PROJECT_MODULES_CONFIGURATORS["gogs"]` setting added
+
+- In `taiga-front/dist/conf.json` remove `/plugins/gogs/gogs.json` from the `contribPlugins` section
+- In `taiga-front/dist/plugins` remove the folder `gogs`
+====
+
+Follow the default process.
+
+The migration may take a long time if you have a large database.
+
+Now project templates can be sorted and a new permission has been added to allow users to add comments (instead of using the __modify object permission__ for this purpose). The fixtures must reloaded using:
+
+----
+cd taiga-back
+workon taiga
+python manage.py loaddata initial_project_templates --traceback
+----
+
+
+2.0.0 > 2.1.0
+--------------
+
+Follow the default process.
+
+
+1.10.0 > 2.0.0
+--------------
+
+Follow the default process.
+
+This version upgrades Django to 1.9, so if you overwrote the DB settings in `taiga-back/settings/local.py` you have to change the DB backend to use the default.
+
+So, change...
+
+[source,python]
+----
+# In Taiga <= 1.9
+DATABASES = {
+    "default": {
+        "ENGINE": "transaction_hooks.backends.postgresql_psycopg2",
+        (...)
+----
+
+to:
+
+[source,python]
+----
+# In Taiga >= 2.0
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        (...)
+----
+
+
+
+1.9.1 > 1.10.0
+--------------
+
+Follow the default process.
+
+The migration may take a long time if you have a large database.
+
+
+1.9.0 > 1.9.1
+-------------
+
+Copy your conf.json from `taiga-front-dist/dist/js/conf.json` to `taiga-front-dist/dist/conf.json`.
+
+Remove the following folders `dist/fonts`, `dist/images`, `dist/js`, `dist/locales`, `dist/styles`, `dist/svg`.
+
+Download the latest version of plugins following their installation instructions.
+

@@ -58,8 +58,7 @@ more space with the passage of time.
 Installation Guide
 ------------------
 
-This section details everything you need to know to get _Taiga_ up and running
-in both development and production environments.
+This section details everything you need to know to get _Taiga_ up and running in both development and production environments.
 
 === Setup Production Environment
 
@@ -80,9 +79,25 @@ In addition to the traditional step-by-step manuals you have link:setup-alternat
 You can view a list of common FAQs and bugs related to the setup process link:setup-faqs.html[FAQs
 and common bugs].
 
-=== Upgrades
 
-Instructions on link:upgrades.html[how to upgrade your Taiga instance].
+[[upgrading-guide]]
+Upgrading Guide
+---------------
+
+This section explains how to upgrade your current Taiga to a newer version
+
+=== Upgrade from Taiga5 to Taiga6
+
+Update your link:upgrades-5to6.html[Taiga5 instance to a new Taiga6 version].
+This section covers different upgrade scenarios:
+
+- from Taiga5 source code to Taiga6 in docker
+- from Taiga5 in docker to Taiga6 in docker
+- from Taiga5 source code to Taiga6 source code
+
+=== Older versions
+
+Update between link:upgrades-older.html[versions].
 
 
 [[how-to-contribute]]

@@ -5,7 +5,7 @@
 
 > *Status:* _Still a work in progress_
 
-Web: http://taigaio.github.io/taiga-doc/dist/
+Web: https://taigaio.github.io/taiga-doc/dist/
 
 ### Setup initial environment (for developers)
 

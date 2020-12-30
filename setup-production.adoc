@@ -8,7 +8,7 @@ Introduction
 ------------
 This document explains how to deploy a full Taiga service for a production environment. A Taiga service consists of multiple Taiga modules which altogether make the Taiga platform.
 
-The standard Taiga platform consists of three main modules, 
+The standard Taiga platform consists of three main modules,
 and each one has its own dependencies both at compile time and runtime:
 
 - **taiga-back** (backend/API)
@@ -204,7 +204,7 @@ The above migrations create an administrator account. The login credentials are 
 
 
 **OPTIONAL:**
-If you would like to have some example data loaded into Taiga, 
+If you would like to have some example data loaded into Taiga,
 execute the following command to populate the database with sample projects and random data (useful for demos):
 
 [source,bash]
@@ -266,7 +266,7 @@ python manage.py runserver
 ----
 
 Open your browser at http://localhost:8000/api/v1/. +
-If your configuration is correct, you will see a 
+If your configuration is correct, you will see a
 JSON representation of REST API endpoints.
 
 [NOTE]
@@ -311,7 +311,7 @@ cp ~/taiga-front-dist/dist/conf.example.json ~/taiga-front-dist/dist/conf.json
 ----
 
 [NOTE]
-Be careful using copy-paste from browser to avoid `http://` duplication.  
+Be careful using copy-paste from browser to avoid `http://` duplication.
 
 [NOTE]
 Also, make sure to remove the `:8000` portion of the api string. Causes 404 page on public facing sites if left in.
