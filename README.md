@@ -103,9 +103,13 @@ the api/generated/ directory in taiga-doc:
 
     $ mv output/* ../taiga-doc/api/generated/
 
-Now you can rebuild your documentation running `make`:
+### Generate the documentation
+
+Check the `Makefile` in order to have all the files indexed and now you can rebuild your documentation running `make`:
 
     $ make
+
+The result will appear in the `dist` directory.
 
 ### (Optional) Setup live preview in browser
 

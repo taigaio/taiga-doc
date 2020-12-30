@@ -1,16 +1,14 @@
 = Upgrade from Taiga5 to Taiga6
 :toc: left
+:toclevels: 1
 :numbered:
-:source-highlighter: pygments
-:pygments-style: friendly
 
-From Taiga5 source code to Taiga6 in docker
--------------------------------------------
+[[taiga5src-to-taiga6dckr]]
+== From Taiga5 source code to Taiga6 in docker
 
 This is the recommended migration process, as using Taiga6 with docker is the recommended way to run Taiga in production.
 
-Requirements and caveats
-~~~~~~~~~~~~~~~~~~~~~~~~
+=== Requirements and caveats
 
 Prior to start the migration, ensure:
 
@@ -23,8 +21,7 @@ Besides, have in mind that:
 - for this migration, you should stop the Taiga5 service, or stop the access to Taiga5 service to prevent state modifications (bbdd and media files)
 - this tutorial asumes that the destination bbdd is empty or may be emptied
 
-Get the data from Taiga5
-~~~~~~~~~~~~~~~~~~~~~~~~
+=== Get the data from Taiga5
 
 .Media files
 Typically media files are in `taiga-back/media`. Create a tar with all the media files:
@@ -42,13 +39,11 @@ $ pg_dump -U $TAIGA_DB_USER -h $TAIGA_DB_HOST $TAIGA_DB_NAME > taiga5_db.sql
 
 Move these two files to the server where Taiga6 will be.
 
-Get Taiga6
-~~~~~~~~~~
+=== Get Taiga6
 
 Clone link:https://github.com/taigaio/taiga-docker[this repository] in the Taiga6 server.
 
-Configuration
-~~~~~~~~~~~~~
+=== Configuration
 
 There are two options to migrate the configuration:
 
@@ -56,8 +51,7 @@ There are two options to migrate the configuration:
 
 **Complex configuration**: if you have a `local.py` with some complex settings, you can ignore the environment variables and map a `config.py` file (check the `x-volumes` section in docker-compose.yml).
 
-Load the old dump
-~~~~~~~~~~~~~~~~~
+=== Load the old dump
 
 Follow these steps:
 [source,bash]
@@ -80,8 +74,7 @@ And inside the container, load the dump:
 
 Check that the data have been properly migrated. Delete the taiga5_db.sql file and exit the container.
 
-Migrate the database
-~~~~~~~~~~~~~~~~~~~~
+=== Migrate the database
 
 Next step is to run Taiga6 backend so the database can be migrated to the new schema:
 [source,bash]
@@ -89,8 +82,7 @@ Next step is to run Taiga6 backend so the database can be migrated to the new sc
 $ docker-compose up -d taiga-back
 ----
 
-Migrate the media files
-~~~~~~~~~~~~~~~~~~~~~~~
+=== Migrate the media files
 
 With the backend up and running, copy the taiga5_media.tar.gz file inside the backend container and access the container:
 [source,bash]
@@ -110,13 +102,11 @@ And inside the container, remove the old media and extract the files:
 :/# chown -R taiga:taiga *
 ----
 
-Other configurations
-~~~~~~~~~~~~~~~~~~~~
+=== Other configurations
 
 Before going on, check all the configurations recommended in the environment files.
 
-Run Taiga6
-~~~~~~~~~~
+=== Run Taiga6
 
 Once everything has been migrated, launch all the services and check the result:
 
@@ -127,8 +117,7 @@ $ docker-compose up -d
 
 Go to `http://localhost:9000` where everything should be migrated and available.
 
-Confingure the proxy
-~~~~~~~~~~~~~~~~~~~~
+=== Confingure the proxy
 
 Your host configuration needs to make a proxy to `http://localhost:9000`. Example:
 
@@ -151,15 +140,15 @@ server {
 ----
 
 
-From Taiga5 docker to Taiga6 docker
------------------------------------
+== From Taiga5 docker to Taiga6 docker
+
+(TODO)
 
 This is the recommended migration if you were using the Taiga5 docker image.
+
+[[taiga5src-to-taiga6src]]
+== From Taiga5 source code to Taiga6 source code
+
 (TODO)
-
-
-From Taiga5 source code to Taiga6 source code
----------------------------------------------
 
 This is the recommended migration if you installed Taiga5 from source code and want to keep it that way.
-(TODO)

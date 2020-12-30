@@ -1,11 +1,10 @@
 = Taiga Documentation
 :toc: left
-:numbered:
+:toclevels: 1
 
 
 [[introduction]]
-Introduction
-------------
+== Introduction
 
 Free. Open Source. Powerful. _Taiga_ is a project management platform for startups
 and agile developers & designers who want a simple, beautiful tool that makes work
@@ -13,8 +12,7 @@ truly enjoyable.
 
 
 [[how-it-works]]
-How it Works
-------------
+== How it Works
 
 _Taiga_ is made up of two components: link:https://github.com/taigaio/taiga-front[taiga-front]
 and link:https://github.com/taigaio/taiga-back[taiga-back]
@@ -28,8 +26,7 @@ _Taiga_ has some other modules, but they are optional and documented in other se
 
 
 [[requirements]]
-Requirements
-------------
+== Requirements
 
 This is a list of major _Taiga_ dependencies:
 
@@ -55,8 +52,7 @@ more space with the passage of time.
 
 
 [[installation-guide]]
-Installation Guide
-------------------
+== Installation Guide
 
 This section details everything you need to know to get _Taiga_ up and running in both development and production environments.
 
@@ -81,8 +77,7 @@ and common bugs].
 
 
 [[upgrading-guide]]
-Upgrading Guide
----------------
+== Upgrading Guide
 
 This section explains how to upgrade your current Taiga to a newer version
 
@@ -101,8 +96,7 @@ Update between link:upgrades-older.html[versions].
 
 
 [[how-to-contribute]]
-How to Contribute
------------------
+== How to Contribute
 
 Because _Taiga_ is an open source project, we gratefully accept contributions in various forms.
 
@@ -121,8 +115,7 @@ strongly recommended that you reach out to us on the link:http://groups.google.c
 
 
 [[reporting-bugs]]
-Reporting Bugs
-~~~~~~~~~~~~~~
+=== Reporting Bugs
 
 Before reporting a bug or requesting a new feature, please consider these general points:
 
@@ -140,21 +133,20 @@ Before reporting a bug or requesting a new feature, please consider these genera
 
 
 [[api]]
-API
----
+== API
+
 _Taiga_ has a complete REST API (the one used by the web app), check the full API
 documentation link:api.html[here].
 
 
 [[webhooks]]
-Webhooks
---------
+== Webhooks
+
 _Taiga_ has a webhooks notification system, check the full documentation link:webhooks.html[here].
 
 
 [[contrib-plugins]]
-Contrib Plugins
----------------
+== Contrib Plugins
 
 Taiga supports the inclusion of contrib plugins, each plugin has its own
 documentation and repository. The currently supported plugins are:
@@ -166,8 +158,7 @@ documentation and repository. The currently supported plugins are:
 
 
 [[themes]]
-Themes
--------
+== Themes
 
 You can create custom themes in Taiga.
 
@@ -202,8 +193,7 @@ gulp compile-themes
 
 
 [[community]]
-Community
----------
+== Community
 
 link:http://groups.google.com/d/forum/taigaio[Taiga has a mailing list]. Feel free to join it
 and ask any questions you may have.
@@ -213,8 +203,7 @@ link:https://twitter.com/taigaio[@taigaio] on Twitter or read our link:https://b
 
 
 [[license]]
-License
--------
+== License
 
 Every code patch accepted in the Taiga codebase is accepted under the AGPL v3.0 license. It is important
 that you do not include any code which cannot be licensed under AGPL v3.0.

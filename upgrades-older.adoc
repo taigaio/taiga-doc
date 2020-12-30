@@ -1,14 +1,12 @@
 = Upgrade between old versions of Taiga
 :toc: left
-:numbered:
+:toclevels: 1
 :source-highlighter: pygments
 :pygments-style: friendly
 
-Default upgrade process
------------------------
+== Default upgrade process
 
-Frontend application
-~~~~~~~~~~~~~~~~~~~~
+=== Frontend application
 
 [source,bash]
 ----
@@ -17,8 +15,7 @@ git checkout stable
 git pull
 ----
 
-Backend application
-~~~~~~~~~~~~~~~~~~~
+=== Backend application
 
 [WARNING]
 ====
@@ -77,8 +74,7 @@ systemctl restart taiga_celery
 ----
 
 
-4.0 > 4.2.6
------------
+== 4.0 > 4.2.6
 
 Follow the default process.
 
@@ -86,8 +82,7 @@ The migration could take a long time if you have a large database.
 
 
 
-3.4.x > 4.0
------------
+== 3.4.x > 4.0
 
 Follow the default process.
 Please note that several libraries were updated in this release so
@@ -95,8 +90,7 @@ it is very important to not miss the `pip install -r requirements.txt` step.
 
 
 
-3.3.0 > 3.4.x
--------------
+== 3.3.0 > 3.4.x
 
 Follow the default process.
 
@@ -111,23 +105,20 @@ python manage.py loaddata initial_project_templates --traceback
 ----
 
 
-3.2.3 > 3.3.x
--------------
+== 3.2.3 > 3.3.x
 
 Follow the default process.
 
 The migration may take a long time if you have a large database.
 
 
-3.1.0 > 3.2.x
--------------
+== 3.1.0 > 3.2.x
 
 Follow the default process.
 
 
 
-3.0.0 > 3.1.0
--------------
+== 3.0.0 > 3.1.0
 
 [IMPORTANT]
 .PostgreSQL >= 9.4 is needed
@@ -176,8 +167,7 @@ python manage.py loaddata initial_project_templates --traceback
 ----
 
 
-Upgrade from Ubuntu 14.04 system to Ubuntu 16.04
-------------------------------------------------
+== Upgrade from Ubuntu 14.04 system to Ubuntu 16.04
 
 To upgrade from 14.04 to 16.04 you have to follow the official Ubuntu process:
 
@@ -221,10 +211,7 @@ $ sudo reboot
 ----
 
 
-
-
-3.0.0 > 3.1.0
-~~~~~~~~~~~~~~
+== 3.0.0 > 3.1.0
 
 Follow the default process.
 
@@ -236,8 +223,7 @@ apt-get install cairo
 
 
 
-2.1.0 > 3.0.0
--------------
+== 2.1.0 > 3.0.0
 
 [IMPORTANT]
 .Extra step for instances with gogs plugin installed
@@ -266,14 +252,12 @@ python manage.py loaddata initial_project_templates --traceback
 ----
 
 
-2.0.0 > 2.1.0
---------------
+== 2.0.0 > 2.1.0
 
 Follow the default process.
 
 
-1.10.0 > 2.0.0
---------------
+== 1.10.0 > 2.0.0
 
 Follow the default process.
 
@@ -303,16 +287,14 @@ DATABASES = {
 
 
 
-1.9.1 > 1.10.0
---------------
+== 1.9.1 > 1.10.0
 
 Follow the default process.
 
 The migration may take a long time if you have a large database.
 
 
-1.9.0 > 1.9.1
--------------
+== 1.9.0 > 1.9.1
 
 Copy your conf.json from `taiga-front-dist/dist/js/conf.json` to `taiga-front-dist/dist/conf.json`.
 
