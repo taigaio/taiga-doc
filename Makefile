@@ -32,7 +32,8 @@ doc:
 	asciidoctor -T custom-html5 -o dist/setup-development.html setup-development.adoc
 	asciidoctor -T custom-html5 -o dist/setup-alternatives.html setup-alternatives.adoc
 	asciidoctor -T custom-html5 -o dist/setup-faqs.html setup-faqs.adoc
-	asciidoctor -T custom-html5 -o dist/upgrades.html upgrades.adoc
+	asciidoctor -T custom-html5 -o dist/upgrades-older.html upgrades-older.adoc
+	asciidoctor -T custom-html5 -o dist/upgrades-5to6.html upgrades-5to6.adoc
 	asciidoctor -T custom-html5 -o dist/api.html api/api.adoc
 	asciidoctor -T custom-html5 -o dist/webhooks.html webhooks.adoc
 	cp -r assets/* dist || exit 1
@@ -42,6 +43,7 @@ pdf:
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/setup-development.pdf setup-development.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/setup-alternatives.pdf setup-alternatives.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/setup-faqs.pdf setup-faqs.adoc
-	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/upgrades.html upgrades.adoc
+	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/upgrades-older.html upgrades-older.adoc
+	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/upgrades-5to6.html upgrades-5to6.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/api/api.pdf api/api.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/webhooks.pdf webhooks.adoc
