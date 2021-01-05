@@ -4,8 +4,7 @@
 :source-highlighter: pygments
 :pygments-style: friendly
 
-Introduction
-------------
+== Introduction
 
 This documentation explains how to setup the Taiga development environment.
 
@@ -17,22 +16,19 @@ The Taiga platform consists of three main components:
 
 And each one has its own dependencies, at compile time and runtime.
 
-Before starting
----------------
+== Before starting
 
 This tutorial assumes that you are using a clean, recently updated, **ubuntu 16.04** image.
 Notes for Debian installations are included at the end of the appropriate sections.
 
 **Taiga installation must be done with a "normal" user, never with root.**
 
-Backend environment
--------------------
+== Backend environment
 
 This section helps with the download and configuration of the backend (api) Taiga service.
 
 
-Install dependencies
-~~~~~~~~~~~~~~~~~~~~
+=== Install dependencies
 
 The backend is written mainly in python (3.5) but for some third party libraries we need to install a
 C compiler and development headers.
@@ -44,8 +40,7 @@ sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libn
 sudo apt-get install -y automake libtool libffi-dev libssl-dev curl git tmux gettext
 ----
 
-Setup a database
-~~~~~~~~~~~~~~~~
+=== Setup a database
 
 **taiga-back** also requires postgresql (>= 9.4) as a database
 
@@ -67,8 +62,7 @@ echo 'local all taiga peer' | sudo -u postgres tee -a $(sudo -u postgres psql -t
 sudo service postgresql reload
 ----
 
-Setup python environment
-~~~~~~~~~~~~~~~~~~~~~~~~
+=== Setup python environment
 
 To run **taiga-back** you should have python (>=3.5) installed along with some other third party
 libraries. As a first step, start installing python:
@@ -148,8 +142,7 @@ python manage.py sample_data
 
 This creates a new user **admin** with password **123123** and some sample data.
 
-Run
-~~~
+=== Run
 
 To run the development environment you can run:
 
@@ -160,8 +153,7 @@ python manage.py runserver
 
 Then you should be able to see a json represention of the list of endpoints at the url http://localhost:8000/api/v1/
 
-Async tasks (Optional)
-~~~~~~~~~~~~~~~~~~~~~~
+=== Async tasks (Optional)
 
 The default behavior in Taiga is to do all tasks synchronously, but some of them
 can be completely asynchronous (for example webhooks or import/export). To do
@@ -193,8 +185,7 @@ tasks. You can run celery with:
 python -m celery -A taiga worker -l info -E
 ----
 
-Debian installation notes
-~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Debian installation notes
 
 Debian stable (Jessie) provides all needed requirements, but old-stable (Wheezy) does not.
 
@@ -217,14 +208,12 @@ sudo apt-get update
 ----
 
 
-Frontend environment
---------------------
+== Frontend environment
 
 This section helps you install the frontend application
 
 
-Install dependencies
-~~~~~~~~~~~~~~~~~~~~
+=== Install dependencies
 
 The frontend application runs entirely in a browser, and thus must be deployed as javascript, css and html.
 In the case of **taiga-front** we have used other languages. Because of this, you will need to install some
@@ -276,8 +265,7 @@ git checkout stable
 npm install
 ----
 
-Debian installation notes
-~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Debian installation notes
 
 While Debian stable (Jessie), provides a nodejs package out of the box, old-stable (Wheezy) does not.
 You can access one via the wheezy-backports apt repository, however, which can be added to your system as follows:
@@ -309,8 +297,7 @@ Thus, you will need to install it manually via:
 curl https://www.npmjs.com/install.sh | sudo sh
 ----
 
-Final steps
-~~~~~~~~~~~
+=== Final steps
 
 Having installed all the dependencies, all you have left to do is to run the code itself.
 
@@ -361,8 +348,7 @@ npm install
 gulp
 ----
 
-Events installation
--------------------
+== Events installation
 
 **This step is completelly optional and can be skipped**
 

@@ -9,8 +9,7 @@ FAQs
 ----
 
 [[faq-change-domain]]
-How can I change the domain name?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How can I change the domain name?
 
 The domain name mainly affects the frontend application, because it needs to comunicate with the
 backend through the domain/public-ip.
@@ -23,8 +22,7 @@ And finally reload the backend config with: `circusctl reload taiga`
 
 
 [[disable-registration]]
-How can I disable registration?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How can I disable registration?
 
 You can disableid public registration for external user. To do this you should set
 `` to `False` in `settings/local.py` and disable too in front, in `dist/conf.json` set
@@ -48,8 +46,7 @@ If you disable it, only invited users can create accounts in the instance.
 
 
 [[restrict-emails-to-domain]]
-How can I restrict registration to a concrete domain?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How can I restrict registration to a concrete domain?
 
 You can restrict the usage of the platform to a set of valid email domains, so
 this allows you to restrict the registration to users that have a valid company
@@ -69,8 +66,7 @@ And finally reload the backend config with: `circusctl reload taiga`
 
 
 [[faq-restart-backend]]
-How can I restart the backend application?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How can I restart the backend application?
 
 The Backend application is running under circus. To restart any application running
 with circus use the `circusctl` command:
@@ -89,15 +85,13 @@ circusctl restart taiga-celery
 
 
 [[faq-maintain-update]]
-How I can keep my app up to date with the most recent Taiga version?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How I can keep my app up to date with the most recent Taiga version?
 
 link:upgrades.html[Check the upgrades instructions].
 
 
 [[faq-add-extra-functionality]]
-How I can add extra functionality to Taiga?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How I can add extra functionality to Taiga?
 
 Taiga allows adding functionality through contrib plugins. The installation of each
 plugin depends on the plugin itself and must be documented in the plugin
@@ -114,8 +108,7 @@ The current supported plugins are:
 
 
 [[faq-backup]]
-How I can make a backup of the data? And then restore them?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How I can make a backup of the data? And then restore them?
 
 To backup data from your server you just need to store a copy of the database and attachments files. That is, You just need to make a dump of the database and a copy of `taiga-back/media directory`.
 
@@ -143,12 +136,10 @@ cp -r <dest> taiga-back/media
 ----
 
 
-Common Bugs
------------
+== Common Bugs
 
 [[bug-unicodeencodeerror]]
-UnicodeEncodeError
-~~~~~~~~~~~~~~~~~~
+=== UnicodeEncodeError
 
 If you have some error like this:
 
@@ -189,13 +180,11 @@ export LC_TYPE=en_US.UTF-8
 Restart the shell, or the machine, and try again.
 
 [[faq-configure-importers]]
-Importers
----------
+== Importers
 
 You can configure importers for Jira, Github, Asana and Trello in your own instance.
 
-How can I configure Trello importers in my own instance?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How can I configure Trello importers in my own instance?
 
 For configure Trello, you have to go to https://trello.com/app-key and obtaing
 your API key and your oauth secret, and then, configure it in your settings/local.py:
@@ -220,8 +209,7 @@ And you have to enable in your dist/conf.json in taiga-front adding it to import
 }
 ----
 
-How can I configure Github importers in my own instance?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How can I configure Github importers in my own instance?
 
 To configure Github, you have to go to https://github.com/settings/developers,
 register a new application and obtain a client id and a client secret. When creating
@@ -249,8 +237,7 @@ And you have to enable in your dist/conf.json in taiga-front adding it to import
 }
 ----
 
-How can I configure Asana importers in my own instance?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How can I configure Asana importers in my own instance?
 
 For configure Asana, you have to go to your asana account settings, in Apps
 section, and click on "Manage Developer Apps", then you have to "Add new
@@ -281,8 +268,7 @@ And you have to enable in your dist/conf.json in taiga-front adding it to import
 }
 ----
 
-How can I configure Jira importers in my own instance?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== How can I configure Jira importers in my own instance?
 
 For configure Jira, you have to go to generate a public of private/public keys
 pair. To do this, you can run the next command:

@@ -4,8 +4,7 @@
 :source-highlighter: pygments
 :pygments-style: friendly
 
-Introduction
-------------
+== Introduction
 This document explains how to deploy a full Taiga service for a production environment. A Taiga service consists of multiple Taiga modules which altogether make the Taiga platform.
 
 The standard Taiga platform consists of three main modules,
@@ -19,8 +18,7 @@ Each module can be run on a unique machine or all of them can be installed to a 
 In this tutorial we will setup everything on a single machine, and will be installing all three main Taiga modules. +
 This type of setup should suffice for small/medium production environments with low traffic.
 
-Overview
---------
+== Overview
 This tutorial assumes that you are using a clean, recently updated **Ubuntu 16.04** image.
 
 Due to the nature of the frontend, Taiga is accessed through a domain/public IP address, because the frontend application runs in your browser.
@@ -39,8 +37,7 @@ During the tutorial, the following conditions are assumed:
 Changing the user from `taiga` to something else is not recommended at any point during deployment unless you're well aware of what you're doing. +
 Changing user may result in unexpected behavior or failed deployment!
 
-Dependencies
-~~~~~~~~~~~~
+=== Dependencies
 The typical Taiga setup described in this documentation depends on the following standalone major software installed separately from Taiga:
 
 - https://www.python.org/[Python 3] - programming language and runtime environment of **taiga-back**
@@ -56,8 +53,7 @@ The typical Taiga setup described in this documentation depends on the following
 [NOTE]
 This list does not contain libraries and the Python dependencies required by **taiga-back**. For Python dependencies, refer to https://github.com/taigaio/taiga-back/blob/stable/requirements.txt[taiga-back/stable/requirements.txt].
 
-System Architecture Description
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== System Architecture Description
 This is a short system architecture description to help you understand the way Taiga is built and works.
 Before you go any further in the installation procedure, make sure you read this description to get a high-level overview of the architecture.
 
@@ -76,13 +72,11 @@ The communication between the front- and backend is done using REST APIs.
 The **backend** is publicly exposed by NGINX which acts as a reverse-proxy in this case. +
 The **frontend** is located in the `dist` folder and is also exposed publicly by NGINX which acts as a static webserver in this case.
 
-Prerequisites
--------------
+== Prerequisites
 This guide describes a configuration of Taiga which consists of three Taiga modules. Each module has its own dependencies on various packages. +
 The following subsections list the required packages and provide instructions on their installation and configuration for a successful Taiga deployment.
 
-Installing Dependencies
-~~~~~~~~~~~~~~~~~~~~~~~
+=== Installing Dependencies
 Execute the following commands to install all dependencies for all modules. Optional dependencies are marked with an inline comment, i.e.: `# Optional: taiga-events`.
 
 [[essential-packages]]
@@ -135,8 +129,7 @@ cd ~
 Do **not** change to the root user (`uid=0`) at this point! +
 Taiga deployment must be finished with the `taiga` user!
 
-Configuring Dependencies
-~~~~~~~~~~~~~~~~~~~~~~~~
+=== Configuring Dependencies
 .Configure PostgreSQL with the initial user and database:
 [source,bash]
 ----
@@ -158,8 +151,7 @@ As the password will be used inside an URL later, please use only web safe
 characters: a-z, A-Z, 0-9, and  - . _ ~
 
 [[taiga-back]]
-Backend Setup
--------------
+== Backend Setup
 This section describes the installation and configuration of the *taiga-back* module which serves the REST API endpoints.
 
 
@@ -254,8 +246,7 @@ EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD_FOR_EVENTS@localhos
 #GITHUB_API_CLIENT_SECRET = "yourgithubclientsecret"
 ----
 
-Verification
-~~~~~~~~~~~~
+=== Verification
 (Optional step)
 To make sure that everything works, execute the following commands to run the backend in development mode for a quick test:
 
@@ -274,8 +265,7 @@ At this stage, the backend has been deployed successfully, but to run the Python
 a WSGI server must be configured first. The WSGI server configuration is explained later in this documentation.
 
 [[taiga-front]]
-Frontend Setup
---------------
+== Frontend Setup
 Download the code from GitHub:
 
 .Download the code
@@ -322,8 +312,7 @@ In this tutorial We use **NGINX** as a static file web server and reverse-proxy.
 The configuration of NGINX is explained later.
 
 [[taiga-events]]
-Events Setup
-------------
+== Events Setup
 **This step is optional and can be skipped**
 
 This section provides instructions on downloading **taiga-events**, installing its dependencies and configuring it for use in production:
@@ -403,8 +392,7 @@ sudo systemctl enable taiga_events
 ----
 
 [[start-and-expose]]
-Start and Expose Taiga
-----------------------
+== Start and Expose Taiga
 
 Before moving further, make sure you installed  **taiga-back** and **taiga-front-dist**, however, having installed them is insufficient to run Taiga.
 
@@ -416,8 +404,7 @@ web server. For this purpose, Taiga uses **NGINX**.
 
 
 [[systemd-and-gunicorn]]
-systemd and gunicorn
-~~~~~~~~~~~~~~~~~~~~
+=== systemd and gunicorn
 
 **systemd** is the process supervisor used by Ubuntu, and Taiga uses it to run **gunicorn**. +
 **systemd** is not only for executing processes, but it also has utils for monitoring them, collecting logs, and
@@ -459,8 +446,7 @@ sudo systemctl status taiga
 ----
 
 [[nginx]]
-NGINX
-~~~~~
+=== NGINX
 
 NGINX is used as a static file web server to serve **taiga-front-dist** and send proxy requests to **taiga-back**.
 
@@ -556,13 +542,11 @@ sudo systemctl restart nginx
 **Now you should have the service up and running on: `http://example.com/`**
 
 
-Optional Modules and Settings
------------------------------
+== Optional Modules and Settings
 The following items are completely optional and are up for you to configure them.
 Taiga-events module is also an optional feature, but its installation is part of this tutorial.
 
-Async tasks (Optional)
-~~~~~~~~~~~~~~~~~~~~~~
+=== Async tasks (Optional)
 
 The default behavior in Taiga is to do all tasks in a synchronous way, but some of them
 can be completely asynchronous (such as webhook or import/export tasks).
@@ -623,8 +607,7 @@ sudo systemctl restart taiga
 ----
 
 
-Taiga Hardening - HTTPS
-~~~~~~~~~~~~~~~~~~~~~~~
+=== Taiga Hardening - HTTPS
 Follow the instructions in this section to server Taiga under HTTPS.
 
 Place the SSL certificates in `/etc/nginx/ssl`. It is recommended to replace
@@ -789,8 +772,7 @@ sudo systemctl restart 'taiga*'
 sudo systemctl reload nginx
 ----
 
-Troubleshooting
----------------
+== Troubleshooting
 
 .If you face any issue during or after installing Taiga, please collect the content of the following files:
 
