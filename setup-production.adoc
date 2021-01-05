@@ -64,13 +64,19 @@ sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libn
 sudo apt-get install -y automake libtool curl git tmux gettext
 sudo apt-get install -y nginx
 sudo apt-get install -y rabbitmq-server
+----
+
+Install PostgreSQL and remember to start the database server:
+[source,bash]
+----
 sudo apt-get install -y postgresql-12 postgresql-contrib-12 postgresql-doc-12 postgresql-server-dev-12
+sudo pg_ctlcluster 12 main start
 ----
 
 .Python 3 must be installed along with a few third-party libraries:
 [source,bash]
 ----
-sudo apt-get install -y python3 python3-pip python3-dev
+sudo apt-get install -y python3 python3-pip python3-dev python3-venv
 sudo apt-get install -y libxml2-dev libxslt-dev
 sudo apt-get install -y libssl-dev libffi-dev
 ----
@@ -78,7 +84,7 @@ sudo apt-get install -y libssl-dev libffi-dev
 .Install Node.js
 [source,bash]
 ----
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ----
 
@@ -101,7 +107,7 @@ Do **not** change to the root user (`uid=0`) at this point. Taiga deployment mus
 .Configure PostgreSQL with the initial user and database:
 [source,bash]
 ----
-sudo -u postgres createuser taiga
+sudo -u postgres createuser taiga --interactive --pwprompt
 sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 --template=template0
 ----
 
@@ -133,8 +139,8 @@ git checkout stable
 .Create a virtualenv:
 [source,bash]
 ----
-python3 -m venv .env --prompt taiga-back
-source .env/bin/activate
+python3 -m venv .venv --prompt taiga-back
+source .venv/bin/activate
 (taiga-back) pip install --upgrade pip wheel
 ----
 
@@ -170,9 +176,10 @@ Check as well the rest of the configuration if you need to enable some adavanced
 .Execute all migrations to populate the database with basic necessary initial data:
 [source,bash]
 ----
-source .env/bin/activate
+source .venv/bin/activate
 (taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py migrate --noinput
-(taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py createsuperuser # create an administrator with strong password
+# create an administrator with strong password
+(taiga-back) CELERY_ENABLED=False DJANGO_SETTINGS_MODULE=settings.config python manage.py createsuperuser
 (taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py loaddata initial_project_templates
 (taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py compilemessages
 (taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py collectstatic --noinput
@@ -183,7 +190,7 @@ If you would like to have some example data loaded into Taiga, execute the follo
 
 [source,bash]
 ----
-(taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py sample_data
+(taiga-back) CELERY_ENABLED=False DJANGO_SETTINGS_MODULE=settings.config python manage.py sample_data
 ----
 
 .Verification
@@ -191,7 +198,7 @@ To make sure that everything works, execute the following commands to run the ba
 
 [source,bash]
 ----
-source .env/bin/activate
+source .venv/bin/activate
 (taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py runserver
 ----
 
@@ -262,25 +269,22 @@ git checkout master
 npm install
 ----
 
-.Create `config.json` file based on the provided example.
+.Create `.env` file based on the provided example.
 [source,bash]
 ----
-cp config.example.json config.json
+cp .env.example .env
 ----
 
-.Update it with your RabbitMQ URL and your unique secret key. Your final `config.json` should look similar to the following example:
-[source,json]
+.Update it with your RabbitMQ URL and your unique secret key. Your final `.env` should look similar to the following example:
+[source]
 ----
-{
-    "url": "amqp://rabbitmquser:rabbitmqpassword@rabbitmqhost:5672/taiga",
-    "secret": "theveryultratopsecretkey",
-    "webSocketServer": {
-        "port": 8888
-    }
-}
+RABBITMQ_URL="amqp://rabbitmquser:rabbitmqpassword@rabbitmqhost:5672"
+SECRET="mysecret"
+WEB_SOCKET_SERVER_PORT=8888
+APP_PORT=3023
 ----
 
-The `secret` value in `config.json` must be the same as the `SECRET_KEY` in `~/taiga-back/settings/config.py`.
+The `secret` value in `.env` must be the same as the `SECRET_KEY` in `~/taiga-back/settings/config.py`.
 
 [[install-protected]]
 === Taiga protected Setup
@@ -299,8 +303,8 @@ git checkout master
 .Create a virtualenv:
 [source,bash]
 ----
-python3 -m venv .env --prompt taiga-protected
-source .env/bin/activate
+python3 -m venv .venv --prompt taiga-protected
+source .venv/bin/activate
 (taiga-protected) pip install --upgrade pip wheel
 ----
 
@@ -323,6 +327,7 @@ The `SECRET_KEY` value in `.env` must be the same as the `SECRET_KEY` in `~/taig
 
 Now it's time to create the different systemd services to serve different modules of Taiga.
 
+[[expose-taiga-back]]
 .Create a new systemd file at `/etc/systemd/system/taiga.service` to run **taiga-back**:
 [source,ini]
 ----
@@ -333,7 +338,7 @@ After=network.target
 [Service]
 User=taiga
 WorkingDirectory=/home/taiga/taiga-back
-ExecStart=/home/taiga/taiga-back/.env/bin/gunicorn --workers 4 --timeout 60 --log-level=info --access-logfile - --bind 0.0.0.0:8001 taiga.wsgi
+ExecStart=/home/taiga/taiga-back/.venv/bin/gunicorn --workers 4 --timeout 60 --log-level=info --access-logfile - --bind 0.0.0.0:8001 taiga.wsgi
 Restart=always
 RestartSec=3
 
@@ -370,7 +375,7 @@ After=network.target
 [Service]
 User=taiga
 WorkingDirectory=/home/taiga/taiga-back
-ExecStart=/home/taiga/taiga-back/.env/bin/celery -A taiga.celery worker --concurrency 4 -l INFO
+ExecStart=/home/taiga/taiga-back/.venv/bin/celery -A taiga.celery worker --concurrency 4 -l INFO
 Restart=always
 RestartSec=3
 ExecStop=/bin/kill -s TERM $MAINPID
@@ -397,6 +402,7 @@ sudo systemctl enable taiga-async
 sudo systemctl status taiga-async
 ----
 
+[[expose-taiga-events]]
 .Create a new systemd file at `/etc/systemd/system/taiga-events.service` to run **taiga-events**:
 [source,ini]
 ----
@@ -407,7 +413,7 @@ After=network.target
 [Service]
 User=taiga
 WorkingDirectory=/home/taiga/taiga-events
-ExecStart=/bin/bash -c "node_modules/coffeescript/bin/coffee index.coffee"
+ExecStart=npm run start:production
 Restart=always
 RestartSec=3
 
@@ -441,7 +447,7 @@ After=network.target
 [Service]
 User=taiga
 WorkingDirectory=/home/taiga/taiga-protected
-ExecStart=/home/taiga/taiga-protected/.env/bin/gunicorn --workers 4 --timeout 60 --log-level=info --access-logfile - --bind 0.0.0.0:8003 server:app
+ExecStart=/home/taiga/taiga-protected/.venv/bin/gunicorn --workers 4 --timeout 60 --log-level=info --access-logfile - --bind 0.0.0.0:8003 server:app
 Restart=always
 RestartSec=3
 
@@ -466,6 +472,7 @@ sudo systemctl enable taiga-protected
 sudo systemctl status taiga-protected
 ----
 
+[[nginx]]
 .Remove the default NGINX config file to avoid collision with Taiga:
 [source,bash]
 ----
@@ -603,7 +610,7 @@ sudo systemctl restart 'taiga*'
 - `/home/taiga/taiga-back/settings/config.py`
 - `/home/taiga/taiga-front-dist/dist/conf.json`
 - `/home/taiga/taiga-events/config.json`
-- `/home/taiga/taiga-protected/.env`
+- `/home/taiga/taiga-protected/.venv`
 - The result of command `sudo systemctl status 'taiga*'`
 
 .Execute the following commands to check the status of services used by Taiga:

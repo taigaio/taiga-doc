@@ -2,6 +2,8 @@
 :toc: left
 :toclevels: 1
 :numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
 
 [[taiga5src-to-taiga6dckr]]
 == From Taiga5 source code to Taiga6 in docker
@@ -146,9 +148,169 @@ server {
 
 This is the recommended migration if you were using the Taiga5 docker image.
 
+
 [[taiga5src-to-taiga6src]]
 == From Taiga5 source code to Taiga6 source code
 
-(TODO)
-
 This is the recommended migration if you installed Taiga5 from source code and want to keep it that way.
+
+=== PostgreSQL
+
+Although it's not strictly mandatory, it's highly recommended to keep PostgreSQL updated. Check the link:https://www.postgresql.org/docs/13/upgrading.html[official documentation] and choose the best way that fits your scenario.
+
+=== RabbitMQ
+
+Although it's not strictly mandatory, it's highly recommended to keep RabbitMQ updated. Check the link:https://www.rabbitmq.com/upgrade.html[official documentation] and choose the best way that fits your scenario.
+
+=== Back
+
+[WARNING]
+====
+Run as a non-priviledged user like `taiga`, do not run this code as `root`.
+====
+
+[source,bash]
+----
+# Update the code
+$ cd ~/taiga-back
+$ git checkout stable
+$ git fetch && git reset --hard origin/stable
+
+# Activate your virtual environment
+
+# Update the dependencies
+$ pip install -r requirements.txt
+----
+
+**Configuration** has changed the way it's used. Now, it's expected to read a DJANGO_SETTINGS_MODULE from environment with the namespace to the configuration file. Example:
+
+[source,bash]
+----
+$ DJANGO_SETTINGS_MODULE=settings.local python manage.py
+----
+
+If this envvar doesn't exist, the system defaults to `settings.common`.
+Besides this change in the configuration system, you should check and use the file `settings/config.py.prod.example` with all the options. We strongly recommend that you copy this file and port your `local.py` settings:
+
+[source, bash]
+----
+cp settings/config.py.prod.example settings/config.py
+----
+
+Edit this file with your settings from `local.py` and check the new settings.
+
+**Important note**: new `config.py` expects a database configuration, instead of relying in the database configuration of `common.py`. Make sure you migrate your database credentials to `config.py` file.
+
+[WARNING]
+====
+Check out the new `ENABLE_TELEMETRY` setting.
+====
+
+[WARNING]
+====
+If you have some contrib plugins installed you should to upgrade them before the next step.
+====
+
+[source,bash]
+----
+$ DJANGO_SETTINGS_MODULE=settings.local python manage.py migrate --noinput
+$ DJANGO_SETTINGS_MODULE=settings.local python manage.py compilemessages
+$ DJANGO_SETTINGS_MODULE=settings.local python manage.py collectstatic --noinput
+----
+
+Update `/etc/systemd/system/taiga.service` to have all the options shown at link:setup-production.html#expose-taiga-back[these instructions].
+
+Restart taiga service.
+
+=== Async tasks
+
+Upgrade this module always after the backend.
+
+If you are not using the `async tasks` service, we strongly recommend you to do. Update your `local.py` file to have `CELERY_ENABLED=True`, the corresponding credentials, and create the systemd unit as referred in link:setup-production.html#expose-taiga-async[these instructions] to set up the service.
+
+Restart the taiga-async service.
+
+=== Front
+
+[source,bash]
+----
+$ cd ~/taiga-front-dist
+$ git checkout stable
+$ git rebase && git reset --hard origin/stable
+----
+
+Restart nginx service.
+
+=== Events
+
+If you are not using the `events` service, we strongly recommend you to do:
+
+- Install the service following link:setup-production.html#taiga-events[these_instructions]
+- Create the systemd unit following link:setup-production.html#expose-taiga-events[these instructions]
+
+If you were already using `events` these are the steps to update it:
+
+[source,bash]
+----
+$ cd ~/taiga-events
+$ git checkout master
+$ git rebase && git reset --hard origin/master
+----
+
+Use the new config file `.env`:
+[source,bash]
+----
+cp .env.example .env
+----
+Edit the file and put your own data (before it was in a `config.json` file).
+
+Edit the systemd unit (most likely in `/etc/systemd/system/taiga-events.service`) to be like:
+[source,ini]
+----
+[Unit]
+Description=taiga_events
+After=network.target
+
+[Service]
+User=taiga
+WorkingDirectory=/home/taiga/taiga-events
+ExecStart=npm run start:production
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
+----
+
+Reload the systemd daemon and restart the `taiga-events` service:
+
+[source,bash]
+----
+sudo systemctl daemon-reload
+sudo systemctl restart taiga-events
+----
+
+
+=== Protected
+
+If you are not using the `protected` service, we strongly recommend you to do:
+
+- Install the service following link:setup-production.html#install-protected[these instructions]
+- Add the contrib protected plugin following link:setup-production.html#add_contrib_protected[these instructions]
+- Create the systemd unit following link:setup-production.html#expose-taiga-protected[these instructions]
+
+To update it:
+[source,bash]
+----
+$ cd ~/taiga-protected
+$ git checkout master
+$ git rebase && git reset --hard origin/master
+----
+
+Restart the taiga-protected and taiga-back services.
+
+=== Nginx
+
+Although it's not strictly mandatory, it's highly recommended to keep Nginx updated. Check the link:http://nginx.org/en/docs/install.html[official documentation] and choose the best way that fits your scenario.
+
+Besides, there is a new recommended base configuration for Nginx (slightly different from Taiga5), so we encourage you to link:setup-production.html#nginx[check it and update it].
