@@ -1,28 +1,37 @@
-= Taiga: Setup Production Environment
+= Install Taiga in Production
 :toc: left
+:toclevels: 1
 :numbered:
 :source-highlighter: pygments
 :pygments-style: friendly
 
-== Introduction
+== Docker
+
+This is the easiest and recommended way to install Taiga.
+(TODO)
+
+== From source code
+
+=== Introduction
+
 This document explains how to deploy a full Taiga service for a production environment. A Taiga service consists of multiple Taiga modules which altogether make the Taiga platform.
 
-The standard Taiga platform consists of three main modules,
-and each one has its own dependencies both at compile time and runtime:
+The standard Taiga platform consists of several modules, and each one has its own dependencies both at compile time and runtime:
 
-- **taiga-back** (backend/API)
+- **taiga-back** (API)
+- **taiga-async-tasks** (async tasks, like bulk email or exports generation)
 - **taiga-front-dist** (frontend)
-- **taiga-events** (websockets gateway) (optional)
+- **taiga-events** (websockets gateway)
+- **taiga-protected** (protected attachments)
 
-Each module can be run on a unique machine or all of them can be installed to a different machine as well.
-In this tutorial we will setup everything on a single machine, and will be installing all three main Taiga modules. +
-This type of setup should suffice for small/medium production environments with low traffic.
+Each module can be run on a unique machine or all of them can be installed to a different machine as well. In this tutorial we will setup everything on a single machine. This type of setup should suffice for small/medium production environments with low traffic.
 
-== Overview
-This tutorial assumes that you are using a clean, recently updated **Ubuntu 16.04** image.
+=== Pre-requisites
 
-Due to the nature of the frontend, Taiga is accessed through a domain/public IP address, because the frontend application runs in your browser.
-The frontend must be able to communicate with the backend/API, therefore both the frontend and the backend must be accessible through a domain/public IP address too.
+- A clean, recently updated **Ubuntu 20.04** image
+- At least 1GB RAM
+- At least 20GB of free storage
+- TLS certificate to serve Taiga with HTTPS
 
 **Taiga installation must be done with a "regular" user, never with root!**
 
@@ -31,56 +40,22 @@ During the tutorial, the following conditions are assumed:
 - **IP:** `80.88.23.45`
 - **Hostname:** `example.com` (which points to 80.88.23.45)
 - **Username:** `taiga`
-- **System memory:** `>=1GB` (needed for compilation of lxml)
 - **Working directory:** `/home/taiga/` (default for user `taiga`)
 
-Changing the user from `taiga` to something else is not recommended at any point during deployment unless you're well aware of what you're doing. +
-Changing user may result in unexpected behavior or failed deployment!
-
 === Dependencies
+
 The typical Taiga setup described in this documentation depends on the following standalone major software installed separately from Taiga:
 
-- https://www.python.org/[Python 3] - programming language and runtime environment of **taiga-back**
+- https://www.python.org/[Python 3] - taiga-back, taiga-async and taiga-protected
+- https://nodejs.org/en[Node.js] - taiga-events
 - https://www.nginx.com/[NGINX] - web server and reverse proxy
 - https://www.postgresql.org[PostgreSQL] - database
-- https://gunicorn.org[Gunicorn] - Python WSGI HTTP server
-- https://www.rabbitmq.com[RabbitMQ] - message broker
-- https://redis.io[Redis] - in-memory key-value database
-- https://nodejs.org/en[Node.js] - JavaScript runtime (required if **taiga-events** is present)
-- https://virtualenv.pypa.io/[Virtualenv] and https://virtualenvwrapper.readthedocs.io[virtualenvwrapper] - Python virtual environment managers
+- https://www.rabbitmq.com[RabbitMQ] - message broker, for taiga-async and taiga-events
 
+=== Install System Dependencies
 
-[NOTE]
-This list does not contain libraries and the Python dependencies required by **taiga-back**. For Python dependencies, refer to https://github.com/taigaio/taiga-back/blob/stable/requirements.txt[taiga-back/stable/requirements.txt].
+Install the following dependencies:
 
-=== System Architecture Description
-This is a short system architecture description to help you understand the way Taiga is built and works.
-Before you go any further in the installation procedure, make sure you read this description to get a high-level overview of the architecture.
-
-Taiga consists of 2 core modules:
-
-- **taiga-back**
-- **taiga-front**
-
-**taiga-back** is built with https://www.djangoproject.com[Django] and written in Python 3. This serves the API endpoints for the frontend. +
-**taiga-front** is written mostly in https://angularjs.org[AngularJS] and https://coffeescript.org[CoffeeScript]. This consumes the API endpoints provided by the backend.
-
-The Python backend is exposed by gunicorn (port `8001/tcp`), which is a https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface[Python WSGI HTTP server]. The process manager is https://systemd.io[systemd], which runs gunicorn and taiga-back together.
-Technically the backend communicates with the https://en.wikipedia.org/wiki/Relational_database[RDBMS], and through the frontend it allows the user to use the features of Taiga.
-The communication between the front- and backend is done using REST APIs.
-
-The **backend** is publicly exposed by NGINX which acts as a reverse-proxy in this case. +
-The **frontend** is located in the `dist` folder and is also exposed publicly by NGINX which acts as a static webserver in this case.
-
-== Prerequisites
-This guide describes a configuration of Taiga which consists of three Taiga modules. Each module has its own dependencies on various packages. +
-The following subsections list the required packages and provide instructions on their installation and configuration for a successful Taiga deployment.
-
-=== Installing Dependencies
-Execute the following commands to install all dependencies for all modules. Optional dependencies are marked with an inline comment, i.e.: `# Optional: taiga-events`.
-
-[[essential-packages]]
-.Essential packages:
 [source,bash]
 ----
 sudo apt-get update
@@ -88,33 +63,26 @@ sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg
 sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
 sudo apt-get install -y automake libtool curl git tmux gettext
 sudo apt-get install -y nginx
-sudo apt-get install -y rabbitmq-server redis-server  # Optional: taiga-events or async tasks
-----
-
-.The **taiga-back** module depends on PostgreSQL (>= 9.4) as its database:
-[source,bash]
-----
-sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
-sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
+sudo apt-get install -y rabbitmq-server
+sudo apt-get install -y postgresql-12 postgresql-contrib-12 postgresql-doc-12 postgresql-server-dev-12
 ----
 
 .Python 3 must be installed along with a few third-party libraries:
 [source,bash]
 ----
-sudo apt-get install -y python3 python3-pip python3-dev virtualenvwrapper
+sudo apt-get install -y python3 python3-pip python3-dev
 sudo apt-get install -y libxml2-dev libxslt-dev
 sudo apt-get install -y libssl-dev libffi-dev
 ----
 
-[NOTE]
-**virtualenvwrapper** helps keeping the system clean of third party libraries, installed
-with the language package manager by installing these packages in an isolated virtual environment.
+.Install Node.js
+[source,bash]
+----
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+----
 
-Restart the shell or type `bash` and press `Enter` to reload the shell environment with the new virtualenvwrapper variables and functions.
-
-
-**This step is mandatory before continuing with the deployment!**
-
+=== Create a user `taiga`
 
 .Create a user with root privileges named `taiga`:
 [source,bash]
@@ -126,19 +94,18 @@ cd ~
 ----
 
 [NOTE]
-Do **not** change to the root user (`uid=0`) at this point! +
-Taiga deployment must be finished with the `taiga` user!
+Do **not** change to the root user (`uid=0`) at this point. Taiga deployment must be finished with the `taiga` user!
 
-=== Configuring Dependencies
+=== Configuring PostgreSQL and RabbitMQ
+
 .Configure PostgreSQL with the initial user and database:
 [source,bash]
 ----
 sudo -u postgres createuser taiga
 sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 --template=template0
-
 ----
 
-.Create a user named `taiga`, and a virtualhost for RabbitMQ (Optional: taiga-events or async tasks)
+.Create a user named `taiga`, and a virtualhost for RabbitMQ (taiga-events and async tasks)
 [source,bash]
 ----
 sudo rabbitmqctl add_user taiga PASSWORD_FOR_EVENTS
@@ -147,15 +114,14 @@ sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
 ----
 
 [NOTE]
-As the password will be used inside an URL later, please use only web safe
-characters: a-z, A-Z, 0-9, and  - . _ ~
+As the password will be used inside the Postgresql URL later, use only web safe characters: a-z, A-Z, 0-9, and  - . _ ~
 
 [[taiga-back]]
-== Backend Setup
-This section describes the installation and configuration of the *taiga-back* module which serves the REST API endpoints.
+=== Backend Setup
 
+This section describes the installation and configuration of the *taiga-back* and *taiga-async* modules which serves the REST API endpoints and the async tasks respectively.
 
-.Download the code:
+.Get the code:
 [source,bash]
 ----
 cd ~
@@ -164,111 +130,81 @@ cd taiga-back
 git checkout stable
 ----
 
-.Create a new virtualenv named **taiga**:
+.Create a virtualenv:
 [source,bash]
 ----
-mkvirtualenv -p /usr/bin/python3 taiga
+python3 -m venv .env --prompt taiga-back
+source .env/bin/activate
+(taiga-back) pip install --upgrade pip wheel
 ----
 
 .Install all Python dependencies:
 [source, bash]
 ----
-pip install -r requirements.txt
+(taiga-back) pip install -r requirements.txt
 ----
+
+[[add_contrib_protected]]
+.Install taiga-contrib-protected:
+[source, bash]
+----
+(taiga-back) pip install git+https://github.com/taigaio/taiga-contrib-protected.git@master#egg=taiga-contrib-protected
+----
+
+.Settings file:
+Create a `settings/config.py` file based on the example provided:
+[source, bash]
+----
+cp settings/config.py.prod.example settings/config.py
+----
+Edit the file and configure:
+
+- connection to PostgreSQL
+- connection to RabbitMQ for `taiga-events` and `taiga-async`
+- credentials for email
+- Enable/disable anonymous telemetry
+- Enable/disable public registration
+
+Check as well the rest of the configuration if you need to enable some adavanced features.
 
 .Execute all migrations to populate the database with basic necessary initial data:
 [source,bash]
 ----
-python manage.py migrate --noinput
-python manage.py loaddata initial_user
-python manage.py loaddata initial_project_templates
-python manage.py compilemessages
-python manage.py collectstatic --noinput
+source .env/bin/activate
+(taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py migrate --noinput
+(taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py createsuperuser # create an administrator with strong password
+(taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py loaddata initial_project_templates
+(taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py compilemessages
+(taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py collectstatic --noinput
 ----
 
-The above migrations create an administrator account. The login credentials are the following:
-
-- **username**: admin
-- **password**: 123123
-
-[NOTE]
-**Attention!** Change the administrator account password to a strong password before enabling public access to your Taiga instance. If you miss this action, unauthorized persons can log in to your Taiga instance equipped with administrator privileges.
-
-
 **OPTIONAL:**
-If you would like to have some example data loaded into Taiga,
-execute the following command to populate the database with sample projects and random data (useful for demos):
+If you would like to have some example data loaded into Taiga, execute the following command to populate the database with sample projects and random data (useful for demos):
 
 [source,bash]
 ----
-python manage.py sample_data
+(taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py sample_data
 ----
 
-To finish the setup of **taiga-back**, create the initial configuration file
-for proper static/media file resolution, optionally with email sending support:
-
-.Copy-paste the following config into `~/taiga-back/settings/local.py` and update it with your own details:
-
-[source,python]
-----
-from .common import *
-
-MEDIA_URL = "http://example.com/media/"
-STATIC_URL = "http://example.com/static/"
-SITES["front"]["scheme"] = "http"
-SITES["front"]["domain"] = "example.com"
-
-SECRET_KEY = "theveryultratopsecretkey"
-
-DEBUG = False
-PUBLIC_REGISTER_ENABLED = True
-
-DEFAULT_FROM_EMAIL = "no-reply@example.com"
-SERVER_EMAIL = DEFAULT_FROM_EMAIL
-
-#CELERY_ENABLED = True
-
-EVENTS_PUSH_BACKEND = "taiga.events.backends.rabbitmq.EventsPushBackend"
-EVENTS_PUSH_BACKEND_OPTIONS = {"url": "amqp://taiga:PASSWORD_FOR_EVENTS@localhost:5672/taiga"}
-
-# Uncomment and populate with proper connection parameters
-# to enable email sending. `EMAIL_HOST_USER` should end by @<domain>.<tld>
-#EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-#EMAIL_USE_TLS = False
-#EMAIL_HOST = "localhost"
-#EMAIL_HOST_USER = ""
-#EMAIL_HOST_PASSWORD = ""
-#EMAIL_PORT = 25
-
-# Uncomment and populate with proper connection parameters
-# to enable GitHub login/sign-in.
-#GITHUB_API_CLIENT_ID = "yourgithubclientid"
-#GITHUB_API_CLIENT_SECRET = "yourgithubclientsecret"
-----
-
-=== Verification
-(Optional step)
+.Verification
 To make sure that everything works, execute the following commands to run the backend in development mode for a quick test:
 
 [source,bash]
 ----
-workon taiga
-python manage.py runserver
+source .env/bin/activate
+(taiga-back) DJANGO_SETTINGS_MODULE=settings.config python manage.py runserver
 ----
 
-Open your browser at http://localhost:8000/api/v1/. +
-If your configuration is correct, you will see a
-JSON representation of REST API endpoints.
-
-[NOTE]
-At this stage, the backend has been deployed successfully, but to run the Python backend in production,
-a WSGI server must be configured first. The WSGI server configuration is explained later in this documentation.
+Open your browser at http://localhost:8000/api/v1/. If your configuration is correct, you will see a JSON representation of REST API endpoints.
+Open your browser at http://localhost:8000/admin/ and log-in with your admin credentials.
+Stop the developtment server (Ctrl+C) before continuing.
 
 [[taiga-front]]
-== Frontend Setup
-Download the code from GitHub:
+=== Frontend Setup
 
-.Download the code
+This section describes the installation and configuration of the *taiga-front* module which serves the frontend application.
+
+.Get the code
 [source,bash]
 ----
 cd ~
@@ -287,8 +223,8 @@ cp ~/taiga-front-dist/dist/conf.example.json ~/taiga-front-dist/dist/conf.json
 [source,json]
 ----
 {
-	"api": "http://example.com/api/v1/",
-	"eventsUrl": "ws://example.com/events",
+	"api": "https://example.com/api/v1/",
+	"eventsUrl": "wss://example.com/events",
 	"debug": "true",
 	"publicRegisterEnabled": true,
 	"feedbackEnabled": true,
@@ -300,40 +236,24 @@ cp ~/taiga-front-dist/dist/conf.example.json ~/taiga-front-dist/dist/conf.json
 }
 ----
 
-[NOTE]
-Be careful using copy-paste from browser to avoid `http://` duplication.
+Having **taiga-front-dist** downloaded and configured is insufficient. The next step is to expose the code (in **dist** directory) under a static file web server.
 
-[NOTE]
-Also, make sure to remove the `:8000` portion of the api string. Causes 404 page on public facing sites if left in.
-
-Having **taiga-front-dist** downloaded and configured is insufficient. The next step is to expose the code
-(in **dist** directory) under a static file web server.
-In this tutorial We use **NGINX** as a static file web server and reverse-proxy.
-The configuration of NGINX is explained later.
+In this tutorial We use **NGINX** as a static file web server and reverse-proxy. The configuration of NGINX is explained later.
 
 [[taiga-events]]
-== Events Setup
-**This step is optional and can be skipped**
+=== Events Setup
 
 This section provides instructions on downloading **taiga-events**, installing its dependencies and configuring it for use in production:
 
 The **taiga-events** module is the Taiga websocket server which allows **taiga-front** to show realtime changes in the backlog, taskboard, kanban and issues listing.
 
-The **taiga-events** module depends on <<essential-packages, rabbitmq-server>> as its message broker.
-
-.Download the code:
+.Get the code:
 [source,bash]
 ----
 cd ~
 git clone https://github.com/taigaio/taiga-events.git taiga-events
 cd taiga-events
-----
-
-.Install Node.js
-[source,bash]
-----
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+git checkout master
 ----
 
 .Install the required JavaScript dependencies:
@@ -352,7 +272,7 @@ cp config.example.json config.json
 [source,json]
 ----
 {
-    "url": "amqp://taiga:PASSWORD_FOR_EVENTS@localhost:5672/taiga",
+    "url": "amqp://rabbitmquser:rabbitmqpassword@rabbitmqhost:5672/taiga",
     "secret": "theveryultratopsecretkey",
     "webSocketServer": {
         "port": 8888
@@ -360,56 +280,48 @@ cp config.example.json config.json
 }
 ----
 
-The `secret` value in `config.json` must be the same as the `SECRET_KEY` in `~/taiga-back/settings/local.py`!
+The `secret` value in `config.json` must be the same as the `SECRET_KEY` in `~/taiga-back/settings/config.py`.
 
-[[taiga-events-systemd]]
-Add **taiga-events** to systemd configuration.
+[[install-protected]]
+=== Taiga protected Setup
 
-.Copy-paste the code below into `/etc/systemd/system/taiga_events.service`
-[source,ini]
-----
-[Unit]
-Description=taiga_events
-After=network.target
+This section describes the installation and configuration of the *taiga-protected* modules which protects the attachments from external downloads.
 
-[Service]
-User=taiga
-WorkingDirectory=/home/taiga/taiga-events
-ExecStart=/bin/bash -c "node_modules/coffeescript/bin/coffee index.coffee"
-Restart=always
-RestartSec=3
-
-[Install]
-WantedBy=default.target
-----
-
-.Reload the systemd configurations:
+.Get the code:
 [source,bash]
 ----
-sudo systemctl daemon-reload
-sudo systemctl start taiga_events
-sudo systemctl enable taiga_events
+cd ~
+git clone https://github.com/taigaio/taiga-protected.git taiga-protected
+cd taiga-protected
+git checkout master
 ----
 
+.Create a virtualenv:
+[source,bash]
+----
+python3 -m venv .env --prompt taiga-protected
+source .env/bin/activate
+(taiga-protected) pip install --upgrade pip wheel
+----
+
+.Install all Python dependencies:
+[source, bash]
+----
+(taiga-protected) pip install -r requirements.txt
+----
+
+.Copy the example config file:
+[source,bash]
+----
+cp ~/taiga-protected/env.sample ~/taiga-protected/.env
+----
+
+The `SECRET_KEY` value in `.env` must be the same as the `SECRET_KEY` in `~/taiga-back/settings/config.py`.
+
 [[start-and-expose]]
-== Start and Expose Taiga
+=== Start and Expose Taiga
 
-Before moving further, make sure you installed  **taiga-back** and **taiga-front-dist**, however, having installed them is insufficient to run Taiga.
-
-**taiga-back** should run under an application server, which in turn, should be executed and monitored
-by a process manager. For this task we will use **gunicorn** and **systemd** respectively.
-
-Both **taiga-front-dist** and **taiga-back** must be exposed to the outside using a proxy/static-file
-web server. For this purpose, Taiga uses **NGINX**.
-
-
-[[systemd-and-gunicorn]]
-=== systemd and gunicorn
-
-**systemd** is the process supervisor used by Ubuntu, and Taiga uses it to run **gunicorn**. +
-**systemd** is not only for executing processes, but it also has utils for monitoring them, collecting logs, and
-restarting processes if something goes wrong, and for starting processes on system boot.
-
+Now it's time to create the different systemd services to serve different modules of Taiga.
 
 .Create a new systemd file at `/etc/systemd/system/taiga.service` to run **taiga-back**:
 [source,ini]
@@ -420,11 +332,13 @@ After=network.target
 
 [Service]
 User=taiga
-Environment=PYTHONUNBUFFERED=true
 WorkingDirectory=/home/taiga/taiga-back
-ExecStart=/home/taiga/.virtualenvs/taiga/bin/gunicorn --workers 4 --timeout 60 -b 127.0.0.1:8001 taiga.wsgi
+ExecStart=/home/taiga/taiga-back/.env/bin/gunicorn --workers 4 --timeout 60 --log-level=info --access-logfile - --bind 0.0.0.0:8001 taiga.wsgi
 Restart=always
 RestartSec=3
+
+Environment=PYTHONUNBUFFERED=true
+Environment=DJANGO_SETTINGS_MODULE=settings.config
 
 [Install]
 WantedBy=default.target
@@ -445,10 +359,112 @@ sudo systemctl enable taiga
 sudo systemctl status taiga
 ----
 
-[[nginx]]
-=== NGINX
+[[expose-taiga-async]]
+.Create a new systemd file at `/etc/systemd/system/taiga-async.service` to run **taiga-async**:
+[source,ini]
+----
+[Unit]
+Description=taiga_async
+After=network.target
 
-NGINX is used as a static file web server to serve **taiga-front-dist** and send proxy requests to **taiga-back**.
+[Service]
+User=taiga
+WorkingDirectory=/home/taiga/taiga-back
+ExecStart=/home/taiga/taiga-back/.env/bin/celery -A taiga.celery worker --concurrency 4 -l INFO
+Restart=always
+RestartSec=3
+ExecStop=/bin/kill -s TERM $MAINPID
+
+Environment=PYTHONUNBUFFERED=true
+Environment=DJANGO_SETTINGS_MODULE=settings.config
+
+[Install]
+WantedBy=default.target
+----
+
+Reload the systemd daemon and start the `taiga-async` service:
+
+[source,bash]
+----
+sudo systemctl daemon-reload
+sudo systemctl start taiga-async
+sudo systemctl enable taiga-async
+----
+
+.To verify that the service is running, execute the following command:
+[source,bash]
+----
+sudo systemctl status taiga-async
+----
+
+.Create a new systemd file at `/etc/systemd/system/taiga-events.service` to run **taiga-events**:
+[source,ini]
+----
+[Unit]
+Description=taiga_events
+After=network.target
+
+[Service]
+User=taiga
+WorkingDirectory=/home/taiga/taiga-events
+ExecStart=/bin/bash -c "node_modules/coffeescript/bin/coffee index.coffee"
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
+----
+
+Reload the systemd daemon and start the `taiga-events` service:
+
+[source,bash]
+----
+sudo systemctl daemon-reload
+sudo systemctl start taiga-events
+sudo systemctl enable taiga-events
+----
+
+.To verify that the service is running, execute the following command:
+[source,bash]
+----
+sudo systemctl status taiga-events
+----
+
+[[expose-taiga-protected]]
+.Create a new systemd file at `/etc/systemd/system/taiga-protected.service` to run **taiga-protected**:
+[source,ini]
+----
+[Unit]
+Description=taiga_protected
+After=network.target
+
+[Service]
+User=taiga
+WorkingDirectory=/home/taiga/taiga-protected
+ExecStart=/home/taiga/taiga-protected/.env/bin/gunicorn --workers 4 --timeout 60 --log-level=info --access-logfile - --bind 0.0.0.0:8003 server:app
+Restart=always
+RestartSec=3
+
+Environment=PYTHONUNBUFFERED=true
+
+[Install]
+WantedBy=default.target
+----
+
+Reload the systemd daemon and start the `taiga-protected` service:
+
+[source,bash]
+----
+sudo systemctl daemon-reload
+sudo systemctl start taiga-protected
+sudo systemctl enable taiga-protected
+----
+
+.To verify that the service is running, execute the following command:
+[source,bash]
+----
+sudo systemctl status taiga-protected
+----
 
 .Remove the default NGINX config file to avoid collision with Taiga:
 [source,bash]
@@ -467,6 +483,12 @@ mkdir -p ~/logs
 ----
 server {
     listen 80 default_server;
+    server_name _;
+    return 301 https://$server_name$request_uri;
+}
+
+server {
+    listen 443 default_server;
     server_name _;  #  See http://nginx.org/en/docs/http/server_names.html
 
     large_client_header_buffers 4 32k;
@@ -509,9 +531,27 @@ server {
         alias /home/taiga/taiga-back/static;
     }
 
-    # Media files
+    # Media
+    location /_protected {
+        internal;
+        alias /home/taiga/taiga-back/media/;
+        add_header Content-disposition "attachment";
+    }
+
+    # Unprotected section
+    location /media/exports {
+        alias /home/taiga/taiga-back/media/exports/;
+        add_header Content-disposition "attachment";
+    }
+
     location /media {
-        alias /home/taiga/taiga-back/media;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8003/;
+        proxy_redirect off;
     }
 
     # Events
@@ -524,6 +564,9 @@ server {
         proxy_send_timeout 7d;
         proxy_read_timeout 7d;
     }
+
+    # TLS
+    # Configure your TLS following the best practices inside your company
 }
 ----
 
@@ -539,250 +582,28 @@ Finally, restart the `nginx` service:
 sudo systemctl restart nginx
 ----
 
-**Now you should have the service up and running on: `http://example.com/`**
-
-
-== Optional Modules and Settings
-The following items are completely optional and are up for you to configure them.
-Taiga-events module is also an optional feature, but its installation is part of this tutorial.
-
-=== Async tasks (Optional)
-
-The default behavior in Taiga is to do all tasks in a synchronous way, but some of them
-can be completely asynchronous (such as webhook or import/export tasks).
-To do this, you have to configure and install the https://github.com/celery/celery[Celery] service requirements.
-
-There is an exception related to exported files:
-
-- If your instance works in *asynchronous mode*, the exported project files will be automatically removed from the storage after 24 hours.
-- If your instance works in *synchronous mode*, the exported project files will not be automatically removed (taiga-back doesn't know anything about the existence of such files).
-
-Install `rabbitmq-server` and `redis-server`:
-
-[source,bash]
-----
-sudo apt-get install -y rabbitmq-server redis-server
-----
-
-To run Celery with Taiga, include the following code line in the `local.py` file:
-
-[source,python]
-----
-CELERY_ENABLED = True
-----
-
-You can configure other broker or results backend. If you need more info about it, check the Celery documentation web page:
-http://docs.celeryproject.org/en/latest/index.html
-
-Once you have configured Celery on Taiga, you have to add Celery to systemd configuration. See link:#systemd-and-gunicorn[Systemd and gunicorn] section.
-
-.Taiga Celery configuration block for systemd on `/etc/systemd/system/taiga_celery.service`
-[source,ini]
-----
-[Unit]
-Description=taiga_celery
-After=network.target
-
-[Service]
-User=taiga
-Environment=PYTHONUNBUFFERED=true
-WorkingDirectory=/home/taiga/taiga-back
-ExecStart=/home/taiga/.virtualenvs/taiga/bin/celery -A taiga worker --concurrency 4 -l INFO
-Restart=always
-RestartSec=3
-ExecStop=/bin/kill -s TERM $MAINPID
-
-[Install]
-WantedBy=default.target
-----
-
-Reload the circus configuration, restart taiga, then start taiga-celery:
-
-[source,bash]
-----
-sudo systemctl daemon-reload
-sudo systemctl start taiga_celery
-sudo systemctl enable taiga_celery
-sudo systemctl restart taiga
-----
-
-
-=== Taiga Hardening - HTTPS
-Follow the instructions in this section to server Taiga under HTTPS.
-
-Place the SSL certificates in `/etc/nginx/ssl`. It is recommended to replace
-the original configuration for `port 80` so that users are redirected to the HTTPS
-version automatically.
-
-Second, we need to generate a strong DH parameter:
-[source,nginx]
-----
-cd /etc/ssl
-sudo openssl dhparam -out dhparam.pem 4096
-----
-
-.Update the configuration in `/etc/nginx/conf.d/taiga.conf` as follows:
-[source,nginx]
-----
-server {
-    listen 80 default_server;
-    server_name _;
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl default_server;
-    server_name _;
-
-    large_client_header_buffers 4 32k;
-    client_max_body_size 50M;
-    charset utf-8;
-
-    index index.html;
-
-    # Frontend
-    location / {
-        root /home/taiga/taiga-front-dist/dist/;
-        try_files $uri $uri/ /index.html;
-    }
-
-    # Backend
-    location /api {
-        proxy_set_header Host $http_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Scheme $scheme;
-        proxy_set_header X-Forwarded-Proto $scheme;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://127.0.0.1:8001/api;
-        proxy_redirect off;
-    }
-
-    # Admin access (/admin/)
-    location /admin {
-        proxy_set_header Host $http_host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Scheme $scheme;
-        proxy_set_header X-Forwarded-Proto $scheme;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://127.0.0.1:8001$request_uri;
-        proxy_redirect off;
-    }
-
-    # Static files
-    location /static {
-        alias /home/taiga/taiga-back/static;
-    }
-
-    # Media files
-    location /media {
-        alias /home/taiga/taiga-back/media;
-    }
-
-    # Events
-    location /events {
-        proxy_pass http://127.0.0.1:8888/events;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-        proxy_connect_timeout 7d;
-        proxy_send_timeout 7d;
-        proxy_read_timeout 7d;
-    }
-
-    # SSL
-    add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; preload";
-    add_header Public-Key-Pins 'pin-sha256="klO23nT2ehFDXCfx3eHTDRESMz3asj1muO+4aIdjiuY="; pin-sha256="633lt352PKRXbOwf4xSEa1M517scpD3l5f79xMD9r9Q="; max-age=2592000; includeSubDomains';
-
-    ssl on;
-    ssl_certificate /etc/nginx/ssl/example.com/ssl-bundle.crt;
-    ssl_certificate_key /etc/nginx/ssl/example.com/example_com.key;
-    ssl_session_timeout 5m;
-    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-    ssl_prefer_server_ciphers on;
-    ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:!aNULL:!eNULL:!EXPORT:!DES:!RC4:!3DES:!MD5:!PSK';
-    ssl_session_cache shared:SSL:10m;
-    ssl_dhparam /etc/ssl/dhparam.pem;
-    ssl_stapling on;
-    ssl_stapling_verify on;
-
-}
-----
-
-Before activating the HTTPS site, the configuration for the frontend and the backend must be updated.
-Change the scheme from `http` to `https` throughout the configurations.
-
-.Update `~/taiga-back/settings/local.py`:
-[source,python]
-----
-from .common import *
-
-MEDIA_URL = "https://example.com/media/"
-STATIC_URL = "https://example.com/static/"
-SITES["front"]["scheme"] = "https"
-SITES["front"]["domain"] = "example.com"
-
-SECRET_KEY = "theveryultratopsecretkey"
-
-DEBUG = False
-PUBLIC_REGISTER_ENABLED = True
-
-DEFAULT_FROM_EMAIL = "no-reply@example.com"
-SERVER_EMAIL = DEFAULT_FROM_EMAIL
-
-# Uncomment and populate with proper connection parameters
-# to enable email sending.
-#EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-#EMAIL_USE_TLS = False
-#EMAIL_HOST = "localhost"
-#EMAIL_HOST_USER = ""
-#EMAIL_HOST_PASSWORD = ""
-#EMAIL_PORT = 25
-
-# Uncomment and populate with proper connection parameters
-# to enable GitHub login/sign-in.
-#GITHUB_API_CLIENT_ID = "yourgithubclientid"
-#GITHUB_API_CLIENT_SECRET = "yourgithubclientsecret"
-----
-
-
-.Update `~/taiga-front-dist/dist/conf.json`:
-[source,json]
-----
-{
-    "api": "https://example.com/api/v1/",
-    "eventsUrl": "wss://example.com/events",
-    "debug": "true",
-    "publicRegisterEnabled": true,
-    "feedbackEnabled": true,
-    "privacyPolicyUrl": null,
-    "termsOfServiceUrl": null,
-    "maxUploadFileSize": null
-}
-----
-
 .Restart all Taiga services after updating the configuration:
 [source,bash]
 ----
 sudo systemctl restart 'taiga*'
 ----
 
-.Reload the `nginx` configuration:
-[source,bash]
-----
-sudo systemctl reload nginx
-----
+**Now you should have the service up and running on: `https://example.com/`**
 
-== Troubleshooting
+[[troubleshooting]]
+=== Troubleshooting
 
-.If you face any issue during or after installing Taiga, please collect the content of the following files:
+.If you face any issue during or after installing Taiga, please check the content of the following files:
 
 - `/etc/nginx/conf.d/taiga.conf`
 - `/etc/systemd/system/taiga.service`
-- `/etc/systemd/system/taiga_celery.service`
-- `/etc/systemd/system/taiga_events.service`
-- `/home/taiga/taiga-back/settings/local.py`
+- `/etc/systemd/system/taiga-async.service`
+- `/etc/systemd/system/taiga-events.service`
+- `/etc/systemd/system/taiga-protected.service`
+- `/home/taiga/taiga-back/settings/config.py`
 - `/home/taiga/taiga-front-dist/dist/conf.json`
 - `/home/taiga/taiga-events/config.json`
+- `/home/taiga/taiga-protected/.env`
 - The result of command `sudo systemctl status 'taiga*'`
 
 .Execute the following commands to check the status of services used by Taiga:
