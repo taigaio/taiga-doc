@@ -260,7 +260,7 @@ The **taiga-events** module is the Taiga websocket server which allows **taiga-f
 cd ~
 git clone https://github.com/taigaio/taiga-events.git taiga-events
 cd taiga-events
-git checkout master
+git checkout stable
 ----
 
 .Install the required JavaScript dependencies:
@@ -297,7 +297,7 @@ This section describes the installation and configuration of the *taiga-protecte
 cd ~
 git clone https://github.com/taigaio/taiga-protected.git taiga-protected
 cd taiga-protected
-git checkout master
+git checkout stable
 ----
 
 .Create a virtualenv:

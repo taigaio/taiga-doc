@@ -253,8 +253,8 @@ If you were already using `events` these are the steps to update it:
 [source,bash]
 ----
 $ cd ~/taiga-events
-$ git checkout master
-$ git rebase && git reset --hard origin/master
+$ git checkout stable
+$ git rebase && git reset --hard origin/stable
 ----
 
 Use the new config file `.env`:
@@ -303,8 +303,8 @@ To update it:
 [source,bash]
 ----
 $ cd ~/taiga-protected
-$ git checkout master
-$ git rebase && git reset --hard origin/master
+$ git checkout stable
+$ git rebase && git reset --hard origin/stable
 ----
 
 Restart the taiga-protected and taiga-back services.
