@@ -213,9 +213,9 @@ If you have some contrib plugins installed you should to upgrade them before the
 
 [source,bash]
 ----
-$ DJANGO_SETTINGS_MODULE=settings.local python manage.py migrate --noinput
-$ DJANGO_SETTINGS_MODULE=settings.local python manage.py compilemessages
-$ DJANGO_SETTINGS_MODULE=settings.local python manage.py collectstatic --noinput
+$ DJANGO_SETTINGS_MODULE=settings.config python manage.py migrate --noinput
+$ DJANGO_SETTINGS_MODULE=settings.config python manage.py compilemessages
+$ DJANGO_SETTINGS_MODULE=settings.config python manage.py collectstatic --noinput
 ----
 
 Update `/etc/systemd/system/taiga.service` to have all the options shown at link:setup-production.html#expose-taiga-back[these instructions].
@@ -226,9 +226,14 @@ Restart taiga service.
 
 Upgrade this module always after the backend.
 
-If you are not using the `async tasks` service, we strongly recommend you to do. Update your `local.py` file to have `CELERY_ENABLED=True`, the corresponding credentials, and create the systemd unit as referred in link:setup-production.html#expose-taiga-async[these instructions] to set up the service.
+If you are not using the `async tasks` service, we strongly recommend you to do:
+- Make sure you have `CELERY_ENABLED=True` in your `config.py` file
+- Make s ure you have the RabbitMQ credentials in the `config.py` file
+- Create the systemd unit following link:setup-production.html#expose-taiga-async[these instructions]
 
-Restart the taiga-async service.
+If you were already using `async tasks`, then update `/etc/systemd/system/taiga-async.service` to have all the options shown at link:setup-production.html#expose-taiga-async[these instructions].
+
+Restart taiga-async service.
 
 === Front
 
