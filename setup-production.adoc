@@ -5,11 +5,13 @@
 :source-highlighter: pygments
 :pygments-style: friendly
 
+[[setup-prod-with-docker]]
 == Docker
 
 This is the easiest and recommended way to install Taiga.
 (TODO)
 
+[[setup-prod-from-source-code]]
 == From source code
 
 === Introduction
@@ -46,10 +48,10 @@ During the tutorial, the following conditions are assumed:
 
 The typical Taiga setup described in this documentation depends on the following standalone major software installed separately from Taiga:
 
-- https://www.python.org/[Python 3] - taiga-back, taiga-async and taiga-protected
+- https://www.python.org/[Python 3] - taiga-back, taiga-async and taiga-protected (Python >= 3.6)
 - https://nodejs.org/en[Node.js] - taiga-events
 - https://www.nginx.com/[NGINX] - web server and reverse proxy
-- https://www.postgresql.org[PostgreSQL] - database
+- https://www.postgresql.org[PostgreSQL] - database (PostgreSQL >= 9.4)
 - https://www.rabbitmq.com[RabbitMQ] - message broker, for taiga-async and taiga-events
 
 === Install System Dependencies
