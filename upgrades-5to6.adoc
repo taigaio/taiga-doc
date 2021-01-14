@@ -5,34 +5,52 @@
 :source-highlighter: pygments
 :pygments-style: friendly
 
-[[taiga5src-to-taiga6dckr]]
-== From Taiga5 source code to Taiga6 in docker
+[[taiga5-to-taiga6dckr]]
+== Recommended Installation
 
-This is the recommended migration process, as using Taiga6 with docker is the recommended way to run Taiga in production.
+This is the recommended migration process, as using Taiga6 with docker is the recommended way to run Taiga in production. This tutorial assumes that you have a Taiga5 instance running either from source code or from Taiga5 docker images.
+
+**Note** Although there are different Taiga docker images, this tutorial has been tested with:
+
+- link:https://hub.docker.com/r/devinsolutions/taiga[devinsolutions/taiga]
+
+- link:https://hub.docker.com/r/taigaio/taiga5[official taigaio/taiga5]
+
+For other installations, the steps to "Get the data from Taiga5" may differ.
 
 === Requirements and caveats
 
 Prior to start the migration, ensure:
 
-- you have access to the Taiga5 server and its configuration, typically in a `local.py` file
-- you have access to the Taiga6 server, and have cloned the link:https://github.com/taigaio/taiga-docker[taiga-docker] repository
-- the Taiga6 server has `docker` and `docker-compose`
+* you have access to the Taiga5 server and its configuration:
+** in a source code installation, a `local.py` file
+** in a docker installation, the `docker-compose.yml` file
+* you have access to the Taiga6 server, and have cloned the link:https://github.com/taigaio/taiga-docker[taiga-docker] repository
+* the Taiga6 server has `docker` and `docker-compose`
 
 Besides, have in mind that:
 
-- for this migration, you should stop the Taiga5 service, or stop the access to Taiga5 service to prevent state modifications (bbdd and media files)
+- for this migration, you stop the access to Taiga5 service to prevent state modifications (bbdd and media files)
 - this tutorial asumes that the destination bbdd is empty or may be emptied
 
 === Get the data from Taiga5
+
+[WARNING]
+====
+Before moving on through this tutorial, this could be a perfect moment to prevent other users from changing data in Taiga5. Remove the access to Taiga5.
+====
+
+==== ... in a source code installation
 
 .Media files
 Typically media files are in `taiga-back/media`. Create a tar with all the media files:
 [source,bash]
 ----
+$ cd taiga-back/
 $ tar -czf taiga5_media.tar.gz media
 ----
 
-.Data base dump
+.Database dump
 Create a dump with the data; with postgres, it would be:
 [source,bash]
 ----
@@ -41,9 +59,47 @@ $ pg_dump -U $TAIGA_DB_USER -h $TAIGA_DB_HOST $TAIGA_DB_NAME > taiga5_db.sql
 
 Move these two files to the server where Taiga6 will be.
 
+==== ... in a docker installation
+
+.Media files
+Inside the container, media files are in `/srv/taiga-back/media`. To get them, enter the server container interactively and follow these steps:
+[source,bash]
+----
+:/# cd /srv/taiga-back
+:/# tar -czf media/taiga5_media.tar.gz media
+----
+
+Exit the container and get the media file:
+[source,bash]
+----
+$ docker cp {CONTAINER_NAME}:/srv/taiga-back/media/taiga5_media.tar.gz .
+----
+
+.Database dump
+Enter the database container interactively and:
+[source,bash]
+----
+:/# cd
+:/# pg_dump -U $TAIGA_DB_USER -h $TAIGA_DB_HOST $TAIGA_DB_NAME > taiga5_db.sql
+----
+
+Exit the container and get the dump file:
+[source,bash]
+----
+$ docker cp {CONTAINER_NAME}:/taiga5_db.sql .
+----
+
+Move these two files to the server where Taiga6 will be.
+
+[[install-taiga6]]
 === Get Taiga6
 
 Clone link:https://github.com/taigaio/taiga-docker[this repository] in the Taiga6 server.
+[source,bash]
+----
+$ cd taiga-docker/
+$ git checkout stable
+----
 
 === Configuration
 
@@ -96,13 +152,14 @@ $ docker exec -ti taiga-docker_taiga-back_1 /bin/bash
 And inside the container, remove the old media and extract the files:
 [source,bash]
 ----
-:/# rm -rf /taiga-back/media
 :/# mv /taiga5_media.tar.gz /taiga-back/media
 :/# cd /taiga-back/media
 :/# tar -xzvf taiga5_media.tar.gz --strip 1
 :/# rm taiga5_media.tar.gz
 :/# chown -R taiga:taiga *
 ----
+
+Exit the container, and continue with other configurations.
 
 === Other configurations
 
@@ -140,13 +197,6 @@ server {
   }
 }
 ----
-
-
-== From Taiga5 docker to Taiga6 docker
-
-(TODO)
-
-This is the recommended migration if you were using the Taiga5 docker image.
 
 
 [[taiga5src-to-taiga6src]]
