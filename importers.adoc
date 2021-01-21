@@ -4,7 +4,7 @@
 :source-highlighter: pygments
 :pygments-style: friendly
 
-You can configure importers for Jira, Github, Asana and Trello in your own instance.
+You can configure importers for Jira, Github and Trello in your own instance.
 
 == Trello
 
@@ -59,37 +59,6 @@ And you have to enable in your dist/conf.json in taiga-front adding it to import
 }
 ----
 
-== Asana
-
-For configure Asana, you have to go to your asana account settings, in Apps
-section, and click on "Manage Developer Apps", then you have to "Add new
-application", ensure that the callback url match with your settings, and the
-url of your service with the path /project/new/import/asana.
-After that, you can get your client id and your client secret and configure it
-in your settings/config.py:
-
-[source,python]
-----
-IMPORTERS["asana"] = {
-    "active": True,
-    "callback_url": "{}://{}/project/new/import/asana".format(SITES["front"]["scheme"],
-                                                              SITES["front"]["domain"]),
-    "app_id": "your-asana-client-id",
-    "app_secret": "your-asana-client-secret"
-}
-----
-
-And you have to enable in your dist/conf.json in taiga-front adding it to importers list:
-
-[source,js]
-----
-{
-    ...
-    importers: ["asana", ...]
-    ...
-}
-----
-
 == Jira
 
 === Important notice about Jira releases and Taiga compatibility
@@ -117,8 +86,8 @@ settings/config.py:
 IMPORTERS["jira"] = {
     "active": True,
     "consumer_key": "one-key-at-your-election",
-    "cert": file('private_key.pem').read(),  # You can directly copy and paste the content here
-    "pub_cert": file('public_key.pem').read(),  # You can directly copy and paste the content here
+    "cert": open('private_key.pem').read(),  # You can directly copy and paste the content here
+    "pub_cert": open('public_key.pem').read(),  # You can directly copy and paste the content here
 }
 ----
 
