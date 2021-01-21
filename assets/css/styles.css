@@ -4,22 +4,22 @@ body {
 }
 
 ::selection {
-    background: #70aa7d;
+    background: #008AA8;
     color: #fff;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    background: #70aa7d;
+    background: #008AA8;
     color: #fff;
     text-shadow: none;
 }
 
 a {
-    color: #70aa7d;
+    color: #008AA8;
 }
 a:hover {
-    color: #74887c;
+    color: #70728F;
 }
 
 .mp-level > ul > li > a {
@@ -48,7 +48,7 @@ p {
     color: #808080;
 }
 td.content>.title, .audioblock>.title, .exampleblock>.title, .imageblock>.title, .listingblock>.title, .literalblock>.title, .stemblock>.title, .openblock>.title, .paragraph>.title, .quoteblock>.title, table.tableblock>.title, .verseblock>.title, .videoblock>.title, .dlist>.title, .olist>.title, .ulist>.title, .qlist>.title, .hdlist>.title {
-    color: #70aa7d;
+    color: #008AA8;
     font-family: inherit;
     font-size: 1.2rem;
     font-style: normal;
