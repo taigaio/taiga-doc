@@ -35,7 +35,7 @@ There are two options to configurate taiga-docker, a simple and a complex config
 
 ==== Simple configuration:
 
-This configuration is likely to suit what you need. Edit environment variables in `docker-compose.yml`.
+This configuration is likely to suit what you need. Edit environment variables in `docker-compose.yml` and `docker-compose-inits.yml`. Have in mind that some of the variables are in both files, and you need to edit both.
 
 .taiga-db
 
@@ -175,7 +175,7 @@ Configure this service to generate messages from `rabbitmq` for `taiga-events`.
 
 ==== Complex configuration:
 
-In a complex configuration you ignore the environment variables in `docker-compose.yml`.
+In a complex configuration you ignore the environment variables in `docker-compose.yml` or `docker-compose-inits.yml`.
 
 .Map a `config.py` file
 
@@ -196,7 +196,7 @@ Edit it with your own configuration:
 
 Check as well the rest of the configuration if you need to enable some advanced features.
 
-Map the file into `/taiga-back/settings/config.py`. You can check the x-volumes section in docker-compose.yml with an example.
+Map the file into `/taiga-back/settings/config.py`. Have in mind that you have to map it both in `docker-compose.yml` and `docker-compose-inits.yml`. You can check the `x-volumes` section in docker-compose.yml with an example.
 
 .Map a `conf.json` file
 
