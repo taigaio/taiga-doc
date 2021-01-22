@@ -72,8 +72,8 @@ Besides, this should have the same value of `SECRET_KEY` in `taiga-protected`.
 
 Session Settings:
 
-You can add `SESSION_COOKIE_SECURE` and `CSRF_COOKIE_SECURE` to x-environment and change its value. By default is "True".
-More info about this environment variables link:https://docs.djangoproject.com/en/2.1/ref/settings/[here].
+You can add `SESSION_COOKIE_SECURE` and `CSRF_COOKIE_SECURE` to x-environment and change its value. By default is "True", so some browsers only accept https connections.
+More info about this environment variables link:https://docs.djangoproject.com/en/3.1/ref/settings/#csrf-cookie-secure[here].
 
 Registration Settings:
 
