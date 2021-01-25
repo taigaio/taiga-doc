@@ -281,7 +281,7 @@ If you are not using the `async tasks` service, we strongly recommend you to do:
 - Make s ure you have the RabbitMQ credentials in the `config.py` file
 - Create the systemd unit following link:setup-production.html#expose-taiga-async[these instructions]
 
-If you were already using `async tasks`, then update `/etc/systemd/system/taiga-async.service` to have all the options shown at link:setup-production.html#expose-taiga-async[these instructions].
+If you were already using `async tasks`, then update `/etc/systemd/system/taiga-async.service` (it was called `taiga-celery.service`) to have all the options shown at link:setup-production.html#expose-taiga-async[these instructions].
 
 Restart taiga-async service.
 
@@ -303,13 +303,16 @@ If you are not using the `events` service, we strongly recommend you to do:
 - Install the service following link:setup-production.html#taiga-events[these_instructions]
 - Create the systemd unit following link:setup-production.html#expose-taiga-events[these instructions]
 
-If you were already using `events` these are the steps to update it:
+If you were already using `events`, it's important that you update all dependencies, because they have completely changed. Configuration and systemd unit have changed as well. These are the steps to update it:
 
 [source,bash]
 ----
 $ cd ~/taiga-events
 $ git checkout stable
 $ git rebase && git reset --hard origin/stable
+
+# Update the dependencies
+$ npm install
 ----
 
 Use the new config file `.env`:
