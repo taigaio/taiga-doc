@@ -6,7 +6,7 @@
 :pygments-style: friendly
 
 [[taiga5-to-taiga6dckr]]
-== Recommended Installation
+== Recommended Upgrade Process
 
 This is the recommended migration process, as using Taiga6 with docker is the recommended way to run Taiga in production. This tutorial assumes that you have a Taiga5 instance running either from source code or from Taiga5 docker images.
 
@@ -278,10 +278,12 @@ Upgrade this module always after the backend.
 
 If you are not using the `async tasks` service, we strongly recommend you to do:
 - Make sure you have `CELERY_ENABLED=True` in your `config.py` file
-- Make s ure you have the RabbitMQ credentials in the `config.py` file
+- Make sure you have the RabbitMQ credentials in the `config.py` file
 - Create the systemd unit following link:setup-production.html#expose-taiga-async[these instructions]
 
-If you were already using `async tasks`, then update `/etc/systemd/system/taiga-async.service` (it was called `taiga-celery.service`) to have all the options shown at link:setup-production.html#expose-taiga-async[these instructions].
+If you were already using `async tasks`, then:
+- update your `config.py` file with the new environment variables (check link:https://github.com/taigaio/taiga-back/blob/stable/settings/confi.py.prod.example[the example])
+- update `/etc/systemd/system/taiga-async.service` (it was called `taiga-celery.service`) to have all the options shown at link:setup-production.html#expose-taiga-async[these instructions].
 
 Restart taiga-async service.
 
