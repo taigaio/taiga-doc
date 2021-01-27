@@ -107,7 +107,7 @@ There are two options to migrate the configuration:
 
 **Simple configuration**: most likely this configuration will serve to your scenario. Open `docker-compose.yml` and migrate your configuration in `local.py` to the corresponding environment variables.
 
-**Complex configuration**: if you have a `local.py` with some complex settings, you can ignore the environment variables and map a `config.py` file (check the `x-volumes` section in docker-compose.yml).
+**Advanced configuration**: if you have a `local.py` with some complex settings, you can ignore the environment variables and map a `config.py` file (check the `x-volumes` section in docker-compose.yml).
 
 === Load the old dump
 
@@ -365,6 +365,13 @@ To update it:
 $ cd ~/taiga-protected
 $ git checkout stable
 $ git rebase && git reset --hard origin/stable
+----
+
+**Important note**: check the configuration variables needed for this module:
+[source,bash]
+----
+DEFAULT_FILE_STORAGE = "taiga_contrib_protected.storage.ProtectedFileSystemStorage"
+THUMBNAIL_DEFAULT_STORAGE = DEFAULT_FILE_STORAGE
 ----
 
 Restart the taiga-protected and taiga-back services.
