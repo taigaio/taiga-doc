@@ -31,7 +31,7 @@ $ git checkout stable
 
 === Configuration
 
-There are two options to configurate taiga-docker, a simple and a complex configuration:
+There are two options to configure taiga-docker, a simple and a complex configuration:
 
 ==== Simple configuration:
 
@@ -50,7 +50,7 @@ These vars should have the same values as `taiga-back` vars.
 
 .taiga-back and taiga-async
 
-This services are for the REST API endpoints and the async tasks respectively.
+These services are for the REST API endpoints and the async tasks respectively.
 
 Database settings:
 
@@ -157,7 +157,7 @@ Configure this service and protects the attachments from external downloads.
 
 `SECRET_KEY` should be the same as this var in `taiga-back`.
 
-`MAX_AGE` variable does that the attachments will be accesible with a token during a maximum (in seconds). After that, the token will expire.
+`MAX_AGE` variable does that the attachments will be accessible with a token during a maximum (in seconds). After that, the token will expire.
 
 
 .taiga-events
