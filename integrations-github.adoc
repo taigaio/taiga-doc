@@ -37,7 +37,7 @@ If you need help in a specific feature, you can always get in touch with the com
 . Fill *secret key* or use the auto generated one
 . Copy the *payload URL* input
 
-image::github_in_taiga.png[Admin > Integrations > GitHub Panel]
+image::imgs/github_in_taiga.png[Admin > Integrations > GitHub Panel]
 
 
 == Configure Webhooks in your GitHub repository
@@ -57,7 +57,7 @@ Be careful if you use *organization webhooks* instead of *repository webhooks* b
 .. *Issue comment*: issue comments created in GitHub appear automatically in Taiga
 . Press *Add webhook* button to create the new webhook
 
-image::github_webhook.png[GitHub Webhooks]
+image::imgs/github_webhook.png[GitHub Webhooks]
 
 Here you can find a video describing the whole process:
 

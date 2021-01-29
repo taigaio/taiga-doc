@@ -42,7 +42,7 @@ If you need help in a specific feature, you can always get in touch with the com
 . Copy the *payload URL* input
 . Optionaly you can define the valid emitter IPs or IP ranges to validate the origin of the requests
 
-image::gitlab_in_taiga.png[Admin > Integrations > GitLab Panel]
+image::imgs/gitlab_in_taiga.png[Admin > Integrations > GitLab Panel]
 
 
 == Configure Webhooks in your GitLab repository
@@ -57,4 +57,4 @@ Go to your repository
 .. Issues events: issues created in GitLab appear automatically in Taiga
 .  Click on *"Add Webhook"*
 
-image::gitlab_webhook.png[GitLab Webhook]
+image::imgs/gitlab_webhook.png[GitLab Webhook]

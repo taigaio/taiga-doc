@@ -28,4 +28,4 @@ In this example, *123* is an issue reference and with this command, the issue wi
 
 If you are the project admin you can manage the statuses atribute in the admin pane: **Admin > Attributes > Status**. You can find all of them for stories, tasks and issues
 
-image::statuses_panel.png[Manage Statuses inn the project admin panel]
+image::imgs/statuses_panel.png[Manage Statuses inn the project admin panel]

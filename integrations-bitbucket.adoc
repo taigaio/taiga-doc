@@ -43,7 +43,7 @@ If you need help in a specific feature, you can always get in touch with the com
 . Copy the Payload URL field.
 . Optionaly you can define the valid emitter IPs or IP ranges to validate the origin of the requests. You can find the valid IP ranges for the Bitbucked Cloud service link:https://confluence.atlassian.com/bitbucket/manage-webhooks-735643732.html#Managewebhooks-trigger_webhookTriggeringwebhooks[here].
 
-image::bitbucket_in_taiga.png[Bitbucket Panel]
+image::imgs/bitbucket_in_taiga.png[Bitbucket Panel]
 
 == Configure Webhooks in your Bitbucket repository
 
@@ -56,4 +56,4 @@ image::bitbucket_in_taiga.png[Bitbucket Panel]
 .. *Issue - Comment created*: To add new comments to related issues
 . Press *Save* button to create the new webhook
 
-image::bitbucket_webhook.png[Bitbucket Webhooks]
+image::imgs/bitbucket_webhook.png[Bitbucket Webhooks]

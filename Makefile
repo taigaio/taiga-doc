@@ -36,9 +36,9 @@ doc:
 	asciidoctor -T custom-html5 -o dist/api.html api/api.adoc
 	asciidoctor -T custom-html5 -o dist/importers.html importers.adoc
 	asciidoctor -T custom-html5 -o dist/webhooks.html webhooks.adoc
-	asciidoctor -T custom-html5 -o dist/integrations-github.html integrations-github.adoc
 	asciidoctor -T custom-html5 -o dist/changing-elements-status-via-commit-message.html changing-elements-status-via-commit-message.adoc
 	asciidoctor -T custom-html5 -o dist/attach-commits-to-elements-via-commit-message.html attach-commits-to-elements-via-commit-message.adoc
+	asciidoctor -T custom-html5 -o dist/integrations-github.html integrations-github.adoc
 	asciidoctor -T custom-html5 -o dist/integrations-gitlab.html integrations-gitlab.adoc
 	asciidoctor -T custom-html5 -o dist/integrations-bitbucket.html integrations-bitbucket.adoc
 	asciidoctor -T custom-html5 -o dist/integrations-gogs.html integrations-gogs.adoc
@@ -53,9 +53,9 @@ pdf:
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/api/api.pdf api/api.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/importers.pdf importers.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/webhooks.pdf webhooks.adoc
-	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-github.pdf integrations-github.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/changing-elements-status-via-commit-message.pdf changing-elements-status-via-commit-message.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/attach-commits-to-elements-via-commit-message.pdf attach-commits-to-elements-via-commit-message.adoc
+	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-github.pdf integrations-github.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-gitlab.pdf integrations-gitlab.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-bitbucket.pdf integrations-bitbucket.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-gogs.pdf integrations-gogs.adoc

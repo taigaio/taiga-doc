@@ -39,7 +39,7 @@ If you need help in a specific feature, you can always get in touch with the com
 . Fill *secret key* or use the auto generated one
 . Copy the *payload URL* input
 
-image::taiga-gogs-integration.png[Gogs Panel]
+image::imgs/taiga-gogs-integration.png[Gogs Panel]
 
 
 == Configure Webhooks in your Gogs repository
@@ -50,4 +50,4 @@ Go to your repository
 . On the form set the *Payload URL* and the *Secret* with the payload URL and Secret key from Taiga.
 . Taiga only listen for push events (changing element status via commit message) in the case of gogs.
 
-image::gogs-webhooks.png[Gogs Webhooks]
+image::imgs/gogs-webhooks.png[Gogs Webhooks]
