@@ -5,10 +5,6 @@
 
 Web: https://taigaio.github.io/taiga-doc/dist/
 
-
-
-
-
 ### Setup initial environment (for developers)
 
 Install requirements: Ruby / `asciidoctor` + `pygments.rb` (installed via. `bundler` using the provided `Gemfile`)
@@ -80,7 +76,6 @@ For generating api examples you need to apply this settings:
   IMPORTERS["github"]
   IMPORTERS["trello"]
   IMPORTERS["jira"]
-  IMPORTERS["asana"]
   ```
   If you copied local.py.example, uncommenting the importers code should be enough.
 

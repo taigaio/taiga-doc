@@ -727,26 +727,6 @@ include::generated/importers-jira-list-projects-output.adoc[]
 === Importer Jira import project
 include::generated/importers-jira-import-project-output.adoc[]
 
-[[object-importers-asana-auth-url]]
-=== Importer Asana Auth Url
-include::generated/importers-asana-auth-url-output.adoc[]
-
-[[object-importers-asana-auth-token]]
-=== Importer Asana Auth Token
-include::generated/importers-asana-authorize-output.adoc[]
-
-[[object-importers-asana-list-users]]
-=== Importer Asana list users
-include::generated/importers-asana-list-users-output.adoc[]
-
-[[object-importers-asana-list-projects]]
-=== Importer Asana list projects
-include::generated/importers-asana-list-projects-output.adoc[]
-
-[[object-importers-asana-import-project]]
-=== Importer Asana import project
-include::generated/importers-asana-import-project-output.adoc[]
-
 [[object-importers-task-accepted]]
 === Importer Import project task accepted
 include::importers/importers-task-accepted.adoc[]

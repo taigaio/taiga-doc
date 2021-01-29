@@ -9,7 +9,3 @@ include::importers-github.adoc[]
 [[importers-jira]]
 === Jira
 include::importers-jira.adoc[]
-
-[[importers-asana]]
-=== Asana
-include::importers-asana.adoc[]

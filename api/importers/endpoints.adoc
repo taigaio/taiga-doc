@@ -63,24 +63,5 @@
 | /api/v1/importers/jira/import_project
 | POST
 | link:#importers-jira-import-project[Import the Jira project]
-
-| /api/v1/importers/asana/auth_url
-| GET
-| link:#importers-asana-auth-url[Get the authorization url]
-
-| /api/v1/importers/asana/authorize
-| POST
-| link:#importers-asana-authorize[Obtain the authorization token]
-
-| /api/v1/importers/asana/list_projects
-| POST
-| link:#importers-asana-list-projects[List the Asana boards]
-
-| /api/v1/importers/asana/list_users
-| POST
-| link:#importers-asana-list-users[List the users related to a Asana board]
-
-| /api/v1/importers/asana/import_project
-| POST
-| link:#importers-asana-import-project[Import the Asana project]
 |===
+
