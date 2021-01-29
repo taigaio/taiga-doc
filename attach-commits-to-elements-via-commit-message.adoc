@@ -1,0 +1,25 @@
+= Integration: Attach commits to elements via commit message
+:toc: left
+:numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
+
+You can mention any epic, user story, task or issue via commit message to show a commit link in the history panel.
+
+
+== How?
+
+Just add to your commit message something like:
+
+```
+TG-REF
+```
+- **REF**: US/Issue/Task reference of the element you want to modify
+
+
+== An example, please!
+
+```
+Fix Issue TG-123
+```
+In this example, *123* is an issue reference.

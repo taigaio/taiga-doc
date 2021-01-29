@@ -112,6 +112,17 @@ _Taiga_ importers are designed to ease the migration of data from others platfor
 _Taiga_ has a webhooks notification system, check the full documentation link:webhooks.html[here].
 
 
+[[integrations]]
+== Integrations
+
+You can integrate _Taiga_ with:
+
+* link:integrations-github.html[GitHub]
+* link:integrations-gitlab.html[Gitlab]
+* link:integrations-bitbucket.html[Bitbucket]
+* link:integrations-gogs.html[Gogs]
+
+
 [[contrib-plugins]]
 == Contrib Plugins
 

@@ -1,0 +1,53 @@
+= Gogs Integration
+:toc: left
+:numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
+
+*Gogs* is a self-hosted Git service written in Go.
+
+
+== What can we do currently?
+
+Right now you can connect a Gogs repository with a Taiga project and generate a one-way communication (from Gogs to Taiga) to:
+
+- *Change the status of an epic, user story, issue, or task in Taiga with the commit message*: you may want to read more about this feature in the article link:changing-elements-status-via-commit-message.html["Changing elements status via commit message"].
+- *Attach commits in an epic, user story, issue, or task of Taiga with the commit message*: you may want to read more about this feature in the article link:attach-commits-to-elements-via-commit-message.html["Attach commits to elements via commit message"].
+
+
+== And what can't we do?
+
+- *Create issues on Taiga when they are created on Gogs*.
+- *Add comments to the connected issues on Taiga when they are created on Gogs*.
+- *Dual synchronization*: currently the integration functionality only allows receiving messages from Gogs. Taiga can't communicate with Gogs (the one-way communication is from Gogs to Taiga), so changes made in Taiga won't be reflected in Gogs.
+- *Show commit links in Taiga issues*: If you name a story, task or issue in a commit message (by its reference number) a link to commit won't appear in Taiga.
+- *Sync current Gogs issues and comment when the integration module in Taiga is enabled*: the integration only works with the future issues and comments added in Gogs.
+
+Currently Gogs offers a limitation on its webhooks system that must be considered. It is not hardcore but it's good to know them to be aware of the limitation that exist.
+
+- Gogs doesn't sign the messages so Taiga only can confirm the origin checking the IPs in the request.
+
+[WARNING]
+====
+Integration will always take time so please be patient. If you need a specific integration and you feel ready to get a machete and get into the Taiga, please review our link:http://taigaio.github.io/taiga-doc/dist/api.html[API Docs] and our section in `Taiga` resources about link:https://resources.taiga.io/contributions/["How you can contribute?"].
+If you need help in a specific feature, you can always get in touch with the community in link:https://resources.taiga.io/[https://resources.taiga.io/].
+====
+
+== Configure the integration module in Taiga
+
+. Go to *Admin > Integrations > Gogs*
+. Fill *secret key* or use the auto generated one
+. Copy the *payload URL* input
+
+image::taiga-gogs-integration.png[Gogs Panel]
+
+
+== Configure Webhooks in your Gogs repository
+
+Go to your repository
+
+. Click on *Settings > Webhooks > Add webhook*
+. On the form set the *Payload URL* and the *Secret* with the payload URL and Secret key from Taiga.
+. Taiga only listen for push events (changing element status via commit message) in the case of gogs.
+
+image::gogs-webhooks.png[Gogs Webhooks]
