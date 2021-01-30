@@ -25,8 +25,7 @@ to properly setup _Taiga_ for a low traffic production environment.
 
 === Setup FAQs and common Bugs
 
-You can view a list of common FAQs and bugs related to the setup process link:setup-faqs.html[FAQs
-and common bugs].
+You can view a list of common FAQs and bugs related to the setup process link:setup-faqs.html[FAQs and common bugs].
 
 [[upgrading-guide]]
 == Upgrading Guide
@@ -46,44 +45,6 @@ This section covers different upgrade scenarios:
 
 Update between link:upgrades-older.html[versions].
 
-
-[[how-to-contribute]]
-== How to Contribute
-
-Because _Taiga_ is an open source project, we gratefully accept contributions in various forms.
-
-Examples of contributions include:
-
-- link:#reporting-bugs[Bug reports]
-- Code patches
-- Improvements
-- Patch reviews
-- link:#translate[Translate]
-- link:#themes[Create a theme]
-- link:#contrib-plugins[Code contrib plugins]
-
-Before starting to develop a big feature (intended to be included on the _Taiga_ code base), it is
-strongly recommended that you reach out to us on the link:http://groups.google.com/d/forum/taigaio[mailing list].
-
-
-[[reporting-bugs]]
-=== Reporting Bugs
-
-Before reporting a bug or requesting a new feature, please consider these general points:
-
-- Check that someone hasn't already filed the bug or feature request by searching, or running custom
-  queries in, the link:https://tree.taiga.io/project/taiga/issues[issue tracker].
-- Check the right repository to use for reporting an issue: bugs related to UI should go to *taiga-front*,
-  but if something is broken on the backend, an issue should be opened on the *taiga-back* repository.
-- Ask on the link:http://groups.google.com/d/forum/taigaio[mailing list] first if you're not sure if
-  what you're seeing is a bug.
-- Don't use the GitHub issues system to ask support questions. Use the
-  link:http://groups.google.com/d/forum/taigaio[mailing list] for that.
-- Don’t use GitHub issues for lengthy discussions, because they're likely to get lost. If a particular
-  ticket is controversial, please move the discussion to the
-  link:http://groups.google.com/d/forum/taigaio[mailing list].
-
-
 [[development]]
 == Development
 
@@ -91,15 +52,12 @@ This section details everything you need to know to get _Taiga_ up and running i
 
 === Setup Development Environment
 
-You can view the complete documentation on how to link:setup-development.html[setup a proper
-development environment].
-
+You can view the complete documentation on how to link:setup-development.html[setup a proper development environment].
 
 [[api]]
 == API
 
-_Taiga_ has a complete REST API (the one used by the web app), check the full API
-documentation link:api.html[here].
+_Taiga_ has a complete REST API (the one used by the web app), check the full API documentation link:api.html[here].
 
 
 [[importers]]
@@ -111,31 +69,35 @@ _Taiga_ importers are designed to ease the migration of data from others platfor
 [[webhooks]]
 == Webhooks
 
-_Taiga_ has a webhooks notification system, check the full documentation link:webhooks.html[here].
+_Taiga_ has a webhook notification system, to easily integrate with third party systems.
 
+Check the documentation about how to link:webhooks-configuration.html[configure webhooks] or the detailed link:webhooks.html[webhooks payload] if you'd like to integrate your own system with Taiga webhooks.
 
 [[integrations]]
 == Integrations
 
 You can integrate _Taiga_ with:
 
+**Repositories**
+
 * link:integrations-github.html[GitHub]
 * link:integrations-gitlab.html[Gitlab]
 * link:integrations-bitbucket.html[Bitbucket]
 * link:integrations-gogs.html[Gogs]
 
+**Chats**
+
+* link:integrations-slack.html[Slack]
+
+[[how-to-contribute]]
+== Contribute to Taiga
+
+Because _Taiga_ is an open source project, we gratefully accept contributions in various forms. There are many different ways to contribute to Taiga's platform, from patches, to documentation and UI enhancements, just find the one that best fits with your skills. Check out our link:https://resources.taiga.io/how-can-i-contribute[detailed contribution guide] if you'd like to support Taiga.
 
 [[contrib-plugins]]
 == Contrib Plugins
 
-Taiga supports the inclusion of contrib plugins, each plugin has its own
-documentation and repository. The currently supported plugins are:
-
-* link:http://github.com/taigaio/taiga-contrib-github-auth[taiga-github-auth]: GitHub Auth plugin
-* link:http://github.com/taigaio/taiga-contrib-hipchat[taiga-contrib-hipchat]: HipChat integration plugin
-* link:http://github.com/taigaio/taiga-contrib-letschat[taiga-contrib-letschat]: Lets Chat integration plugin
-* link:http://github.com/taigaio/taiga-contrib-slack[taiga-contrib-slack]: Slack integration plugin
-
+Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of link:https://resources.taiga.io/contributions[contributions] as well as a link:https://resources.taiga.io/extend/how-to-extend-taiga[detailed tutorial] on the many ways to extend Taiga.
 
 [[community]]
 == Community
