@@ -62,4 +62,4 @@ pdf:
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-gitlab.pdf integrations-gitlab.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-bitbucket.pdf integrations-bitbucket.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-gogs.pdf integrations-gogs.adoc
-	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-slack.pdf integrations-slac.adoc
+	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-slack.pdf integrations-slack.adoc

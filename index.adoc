@@ -6,7 +6,7 @@ Free. Open Source. Powerful. _Taiga_ is a project management platform for startu
 and agile developers & designers who want a simple, beautiful tool that makes work
 truly enjoyable.
 
-image::imgs/logo.jpg[Taiga Agile]
+image::imgs/logo.png[Taiga Agile]
 
 Version: 6.0.0 Lynx lynx
 
