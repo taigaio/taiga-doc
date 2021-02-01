@@ -1,6 +1,6 @@
 = Install Taiga in Production
 :toc: left
-:toclevels: 1
+:toclevels: 2
 :numbered:
 :source-highlighter: pygments
 :pygments-style: friendly
