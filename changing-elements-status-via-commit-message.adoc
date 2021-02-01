@@ -1,4 +1,4 @@
-= Integration: Changing elements status via commit message
+= Changing elements status via commit message
 :toc: left
 :numbered:
 :source-highlighter: pygments

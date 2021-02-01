@@ -26,8 +26,8 @@ In Taiga an issue is connected with a GitHub issue if it was created by the GitH
 
 [WARNING]
 ====
-Integration will always take time so please be patient. If you need a specific integration and you feel ready to get a machete and get into the Taiga, please review our link:http://taigaio.github.io/taiga-doc/dist/api.html[API Docs] and our section in `Taiga` resources about link:https://resources.taiga.io/contributions/["How you can contribute?"].
-If you need help in a specific feature, you can always get in touch with the community in link:https://resources.taiga.io/[https://resources.taiga.io/].
+Integration will always take time so please be patient. If you need a specific integration and you feel ready to get a machete and get into the Taiga, please review our link:http://taigaio.github.io/taiga-doc/dist/api.html[API Docs] and our section in `Taiga` resources about link:https://resources.taiga.io/extend/how-can-i-contribute["How you can contribute?"].
+If you need help with a specific feature, you can always get in touch with our community through our link:https://groups.google.com/forum/#!forum/taigaio[mailing list].
 ====
 
 
@@ -58,8 +58,3 @@ Be careful if you use *organization webhooks* instead of *repository webhooks* b
 . Press *Add webhook* button to create the new webhook
 
 image::imgs/github_webhook.png[GitHub Webhooks]
-
-Here you can find a video describing the whole process:
-
-video::KwrwpDsGt78[youtube, height=480, width=100%]
-

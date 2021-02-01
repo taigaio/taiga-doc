@@ -92,12 +92,12 @@ You can integrate _Taiga_ with:
 [[how-to-contribute]]
 == Contribute to Taiga
 
-Because _Taiga_ is an open source project, we gratefully accept contributions in various forms. There are many different ways to contribute to Taiga's platform, from patches, to documentation and UI enhancements, just find the one that best fits with your skills. Check out our link:https://resources.taiga.io/how-can-i-contribute[detailed contribution guide] if you'd like to support Taiga.
+Because _Taiga_ is an open source project, we gratefully accept contributions in various forms. There are many different ways to contribute to Taiga's platform, from patches, to documentation and UI enhancements, just find the one that best fits with your skills. Check out our link:https://resources.taiga.io/extend/how-can-i-contribute[detailed contribution guide] if you'd like to support Taiga.
 
 [[contrib-plugins]]
 == Contrib Plugins
 
-Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of link:https://resources.taiga.io/contributions[contributions] as well as a link:https://resources.taiga.io/extend/how-to-extend-taiga[detailed tutorial] on the many ways to extend Taiga.
+Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of link:https://resources.taiga.io/extend/contributions[contributions] as well as a link:https://resources.taiga.io/extend/how-to-extend-taiga[detailed tutorial] on the many ways to extend Taiga.
 
 [[community]]
 == Community

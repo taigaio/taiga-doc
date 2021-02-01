@@ -1,4 +1,4 @@
-= Integration: Attach commits to elements via commit message
+= Attach commits to elements via commit message
 :toc: left
 :numbered:
 :source-highlighter: pygments

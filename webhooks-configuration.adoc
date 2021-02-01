@@ -22,7 +22,7 @@ Taiga emits a webhook when
 - a wiki page is created, updated or deleted.
 
 
-== First: Configure the third party service
+== Configure the third party service
 
 First of all, be sure that the service supports the Taiga webhooks and it's able to understand and process the messages Taiga sends. If we are sure that it's possible we can start:
 
@@ -31,9 +31,8 @@ First of all, be sure that the service supports the Taiga webhooks and it's able
    - The *payload url* is the service endpoint that will receive the information sent by Taiga.
    - A *secret key* is a string (long is better) that is used to encrypt and decrypt a message so that only those who know the key can decrypt and read it.
 
-![Webhook integration for GetBadges](webhooks-integration-getbadges.png "Webhook integration for GetBadges")
 
-== Second: Configure webhooks in Taiga
+== Configure webhooks in Taiga
 
 - Go to *Admin > Integrations > Webhooks*.
 
@@ -49,13 +48,11 @@ image::imgs/webhooks-3.png[Webhook created]
 
 After creating a webhook you'll be able to edit, delete, or test if it works properly.
 
-image::imgs/webhooks-4.png[Actions over a created webhook]
-
 And you can view the history of the calls done.
 
-image::imgs/webhooks-5.png[Webhook history entries list]
+image::imgs/webhooks-4.png[Webhook history entries list]
 
-image::imgs/webhooks-6.png[Webhook history entry details]
+image::imgs/webhooks-5.png[Webhook history entry details]
 
 == Developing your own integration
 
