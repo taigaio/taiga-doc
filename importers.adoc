@@ -26,7 +26,7 @@ And you have to enable in your dist/conf.json in taiga-front adding it to import
 ----
 {
     ...
-    importers: ["trello", ...]
+    "enableTrelloImporter": true,
     ...
 }
 ----
@@ -54,7 +54,7 @@ And you have to enable in your dist/conf.json in taiga-front adding it to import
 ----
 {
     ...
-    importers: ["github", ...]
+    "enableGithubImporter": true,
     ...
 }
 ----
@@ -97,11 +97,9 @@ And you have to enable in your dist/conf.json in taiga-front adding it to import
 ----
 {
     ...
-    importers: ["jira", ...]
+    "enableJiraImporter": true,
     ...
 }
 ----
 
-After that, you have to configure your Jira instance to allow to connect using
-this certificates, you can get more information about it in
-https://tree.taiga.io/support/.
+After that, you have to configure your Jira instance to allow to connect using this certificates, you can get more information about it in https://resources.taiga.io/extend/importer-jira/

@@ -65,8 +65,9 @@ _Taiga_ has a complete REST API (the one used by the web app), check the full AP
 [[importers]]
 == Importers
 
-_Taiga_ importers are designed to ease the migration of data from others platforms. Check the full documentation link:importers.html[here].
+Checkout the documentation about how to import a project link:https://resources.taiga.io/extend/importer-github/[from Github], link:https://resources.taiga.io/extend/importer-jira/[from Jira], or link:https://resources.taiga.io/extend/importer-trello/[from Trello].
 
+If you're using a self-hosted _Taiga_, check the link:importers.html[documentation] to integrate them in your instance.
 
 [[webhooks]]
 == Webhooks
