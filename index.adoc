@@ -8,7 +8,7 @@ truly enjoyable.
 
 image::imgs/logo.png[Taiga Agile]
 
-Version: 6.0.0 Lynx lynx
+Version: 6 Lynx lynx
 
 [[installation-guide]]
 == Installation Guide
