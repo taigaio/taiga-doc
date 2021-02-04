@@ -4,7 +4,7 @@
 :source-highlighter: pygments
 :pygments-style: friendly
 
-*Bitbucket* is a web-based hosting service for projects that use either Mercurial (since the origin) or Git (since October 2011) revision control systems.
+*Bitbucket* is a web-based hosting service for projects that use Git revision control systems.
 
 
 == What can we do currently?
@@ -13,14 +13,11 @@ Right now you can connect a Bitbucket repository with a Taiga project and genera
 
 - *Change the status of an epic, user story, issue, or task in Taiga with the commit message*: you may want to read more about this feature in the article link:changing-elements-status-via-commit-message.html["Changing elements status via commit message"].
 - *Attach commits in an epic, user story, issue, or task of Taiga with the commit message*: you may want to read more about this feature in the article link:attach-commits-to-elements-via-commit-message.html["Attach commits to elements via commit message"].
-- *Create issues on Taiga when they are created on Bitbucket.*
-- *Add comments to the connected issues on Taiga when they are created on Bitbucket*.
-
-In Taiga an issue is connected with a Bitbucket issue if it was created by the Bitbucket integration. In the detail page of an issue on Taiga you can see a link under the subject to the original issue in Bitbucket.
-
 
 == And what can't we do?
 
+- *Create issues on Taiga when they are created on Bitbucket.*
+- *Add comments to the connected issues on Taiga when they are created on Bitbucket*.
 - *Dual synchronization*: currently the integration functionality only allows receiving messages from Bitbucket. Taiga can't communicate with Bitbucket (the one-way communication is from Bitbucket to Taiga), so changes made in Taiga won't be reflected in Bitbucket.
 - *Show commit links in Taiga issues*: If you name a story, task or issue in a commit message (by its reference number) a link to commit not appear in Taiga.
 - *Sync current Bitbucket issues and comment when the integration module in Taiga is enabled*: the integration only works with the future issues and comments added in Bitbucket.
@@ -52,8 +49,6 @@ image::imgs/bitbucket_in_taiga.png[Bitbucket Panel]
 . On that form set the url with the *payload url* of this screen and choose some title (ex. "Taiga.io").
 . Taiga listens for three different triggers, you can select all of them or just some:
 .. *Repository - Push*: Changing element status via commit message
-.. *Issue - Created*: To clone new issues created in Bitbucket to Taiga
-.. *Issue - Comment created*: To add new comments to related issues
 . Press *Save* button to create the new webhook
 
 image::imgs/bitbucket_webhook.png[Bitbucket Webhooks]
