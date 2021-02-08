@@ -205,11 +205,11 @@ Map the file into `/taiga-back/settings/config.py`. Have in mind that you have t
 
 .Map a `conf.json` file
 
-From https://github.com/taigaio/taiga-front[taiga-front] download the file `dist/config.example.json` and rename it:
+From https://github.com/taigaio/taiga-front[taiga-front] download the file `dist/conf.example.json` and rename it:
 
 [source,bash]
 ----
-mv dist/config.example.json dist/config.json
+mv dist/conf.example.json dist/conf.json
 ----
 
 Edit it with your own configuration and map the file into `/taiga-front/dist/config.py`.
