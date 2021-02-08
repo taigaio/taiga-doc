@@ -178,7 +178,7 @@ Configure this service to generate messages from `rabbitmq` for `taiga-events`.
 `RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, `RABBITMQ_DEFAULT_VHOST` vars will be used to connect to rabbitmq.
 
 
-==== Complex configuration:
+==== Advanced configuration:
 
 In a complex configuration you ignore the environment variables in `docker-compose.yml` or `docker-compose-inits.yml`.
 
