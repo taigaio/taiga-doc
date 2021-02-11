@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.2 (unreleased)
+
+- Document configuration update
+
 ## 6.0.1 (2020-02-08)
 
 Minor improvements in documentation
