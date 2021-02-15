@@ -650,7 +650,7 @@ After=network.target
 [Service]
 User=taiga
 WorkingDirectory=/home/taiga/taiga-back
-ExecStart=/home/taiga/taiga-back/.venv/bin/celery -A taiga.celery worker --concurrency 4 -l INFO
+ExecStart=/home/taiga/taiga-back/.venv/bin/celery -A taiga.celery worker -B --concurrency 4 -l INFO
 Restart=always
 RestartSec=3
 ExecStop=/bin/kill -s TERM $MAINPID
