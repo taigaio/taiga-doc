@@ -3,6 +3,7 @@
 ## 6.0.3 (unreleased)
 
 - Fix typo in Celery configuration
+- Simplify docker configuration
 
 ## 6.0.2 (2021-02-15)
 
