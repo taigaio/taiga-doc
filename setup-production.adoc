@@ -386,12 +386,12 @@ sudo -u postgres createuser taiga --interactive --pwprompt
 sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 --template=template0
 ----
 
-.Create a user named `taiga`, and a virtualhost for RabbitMQ (taiga-events and async tasks)
+.Create a rabbitmquser named `taiga` and a virtualhost for RabbitMQ (taiga-events and async tasks)
 [source,bash]
 ----
-sudo rabbitmqctl add_user taiga PASSWORD_FOR_EVENTS
+sudo rabbitmqctl add_user rabbitmquser rabbitmqpassword
 sudo rabbitmqctl add_vhost taiga
-sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
+sudo rabbitmqctl set_permissions -p rabbitmquser taiga ".*" ".*" ".*"
 ----
 
 [NOTE]
@@ -554,7 +554,7 @@ cp .env.example .env
 [source]
 ----
 RABBITMQ_URL="amqp://rabbitmquser:rabbitmqpassword@rabbitmqhost:5672/taiga"
-SECRET="mysecret"
+SECRET="taiga-back-secret-key"
 WEB_SOCKET_SERVER_PORT=8888
 APP_PORT=3023
 ----
