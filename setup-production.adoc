@@ -492,7 +492,7 @@ cd ~
 ----
 
 [NOTE]
-Do **not** change to the root user (`uid=0`) at this point. Taiga deployment must be finished with the `taiga` user!
+Do **not** change back to the root user (`uid=0`) at this point. Taiga deployment must be finished with the `taiga` user!
 
 === Configuring PostgreSQL and RabbitMQ
 
@@ -988,6 +988,11 @@ sudo systemctl restart 'taiga*'
 ----
 
 **Now you should have the service up and running on: `https://example.com/`**
+
+[[extend-taiga]]
+=== Extend Taiga
+
+With this installation, you have access to a fair amount of features of Taiga. However, you may want to extend it with other functionalities or plugins, such Slack integration or login with Github. To extend Taiga, check all the available options at https://resources.taiga.io/extend/how-to-extend-taiga/.
 
 [[troubleshooting]]
 === Troubleshooting
