@@ -73,8 +73,35 @@ With systemd:
 systemctl restart taiga_celery
 ----
 
+== 5.0.x > 5.5.x
 
-== 4.0 > 4.2.6
+[IMPORTANT]
+.Python >= 3.6 is needed
+====
+There is a BREAKING CHANGE here because you need to upgrade to python >= 3.6. one solution
+could be upgrade to upgrading to Ubuntu >= 18.04 and regenerate the virtualenv with the
+new python version.
+
+[source,bash]
+----
+$ cd ~/taiga-back
+$ mkvirtualenv -p /usr/bin/python3 taiga
+$ workon taiga
+$ python --version
+Python 3.6.9    # or latest
+----
+====
+
+Follow the default process.
+
+
+== 4.2.x > 5.0.x
+
+Follow the default process.
+
+
+
+== 4.0.x > 4.2.x
 
 Follow the default process.
 
@@ -82,7 +109,7 @@ The migration could take a long time if you have a large database.
 
 
 
-== 3.4.x > 4.0
+== 3.4.x > 4.0.x
 
 Follow the default process.
 Please note that several libraries were updated in this release so
