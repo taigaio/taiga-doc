@@ -1,8 +1,12 @@
 # Changelog
 
-## 6.0.3 (unreleased)
+## 6.0.4 (unreleased)
 
-- Fix typo in Celery configuration
+- ...
+
+## 6.0.3 (2021-02-22)
+
+- Fix some typos and improve some sections
 - Simplify docker configuration
 
 ## 6.0.2 (2021-02-15)
