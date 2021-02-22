@@ -562,7 +562,7 @@ source .venv/bin/activate
 .Install taiga-contrib-protected:
 [source, bash]
 ----
-(taiga-back) pip install git+https://github.com/taigaio/taiga-contrib-protected.git@master#egg=taiga-contrib-protected
+(taiga-back) pip install git+https://github.com/taigaio/taiga-contrib-protected.git@6.0.0#egg=taiga-contrib-protected
 ----
 
 .Settings file:
