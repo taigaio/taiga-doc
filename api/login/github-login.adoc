@@ -2,7 +2,7 @@ To login a user via GitHub send a POST request containing the following data:
 
 - *type* with value "github"
 - *code* (required): your github authentication code
-- *token*: generated when creating a project's membership (for accept invitations to projects)
+- *token* (optional): generated when creating a project's membership (for accept invitations to projects)
 
 [source,bash]
 ----
