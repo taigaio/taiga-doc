@@ -102,6 +102,38 @@ Because _Taiga_ is an open source project, we gratefully accept contributions in
 
 Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of link:https://resources.taiga.io/extend/contributions[contributions] as well as a link:https://resources.taiga.io/extend/how-to-extend-taiga[detailed tutorial] on the many ways to extend Taiga.
 
+[[themes]]
+== Themes
+
+Taiga support themes: it allows customizing app colors and overwriting or adding CSS to any part of Taiga.
+
+Duplicate the folder `taiga` (or another theme) under `/app/themes` and rename it with the theme name.
+
+You'll find two files inside:
+
+* `variables.scss` - to override sass variables, fonts, mixins helpers, etc.
+
+* `custom.scss` - to override any defined Taiga style for any module or layout.
+
+Remember, the file `variables.scss` should only contain sass declarations that do not generate code by themselves (like variables or mixins).
+
+If you need to override a style and generate some new CSS, you should do it in `custom.scss`.
+
+Please, check the default Taiga theme to understand how these files work properly.
+
+Add the theme to the theme array in `dist/conf.json`.
+
+Deploy your code
+
+[source]
+----
+gulp deploy
+----
+
+After that, you should be able to update your theme from your user profile in your user settings.
+
+If you create public themes, please share it with the community. Share the link in social media and ping link:http://twitter.com/taigaio/[@taigaio].
+
 [[community]]
 == Community
 
