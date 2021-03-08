@@ -365,7 +365,7 @@ sudo  apt-get install rabbitmq-server
 ----
 sudo rabbitmqctl add_user rabbitmquser rabbitmqpassword
 sudo rabbitmqctl add_vhost taiga
-sudo rabbitmqctl set_permissions -p rabbitmquser taiga ".*" ".*" ".*"
+sudo rabbitmqctl set_permissions -p taiga rabbitmquser ".*" ".*" ".*"
 ----
 
 .Update your taiga-back settings to include the following lines in your local.py:

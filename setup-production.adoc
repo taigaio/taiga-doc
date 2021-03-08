@@ -526,7 +526,7 @@ sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 
 ----
 sudo rabbitmqctl add_user rabbitmquser rabbitmqpassword
 sudo rabbitmqctl add_vhost taiga
-sudo rabbitmqctl set_permissions -p rabbitmquser taiga ".*" ".*" ".*"
+sudo rabbitmqctl set_permissions -p taiga rabbitmquser ".*" ".*" ".*"
 ----
 
 [NOTE]
