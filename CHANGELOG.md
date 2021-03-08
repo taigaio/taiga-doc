@@ -2,7 +2,7 @@
 
 ## 6.0.6 (unreleased)
 
-- ...
+- Improve docker configuration with POSTGRES_PORT variable
 
 ## 6.0.5 (2021-03-09)
 
@@ -11,7 +11,7 @@
 
 ## 6.0.4 (2021-03-01)
 
-- Fix some typos 
+- Fix some typos
 
 ## 6.0.3 (2021-02-22)
 
