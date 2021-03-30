@@ -15,8 +15,8 @@ This document explains how to deploy a full Taiga service for a production envir
 
 Prior to start the installation, ensure you have installed:
 
-* `docker`
-* `docker-compose`
+* `docker`: version >= 17.09.0+
+* `docker-compose`: version >= 1.27.0+
 
 Additionally, it's necessary to have familiarity with Docker, docker-compose and Docker repositories.
 
