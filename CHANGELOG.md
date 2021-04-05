@@ -1,6 +1,10 @@
 # Changelog
 
-## 6.0.6 (unreleased)
+## 6.0.7 (unreleased)
+
+- ...
+
+## 6.0.6 (2021-04-06)
 
 - Improve docker configuration with POSTGRES_PORT variable
 - Add minimum version for docker and docker-compose
