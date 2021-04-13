@@ -12,7 +12,7 @@ setup(
     author='Jesús Espino García',
     author_email='jesus.espino@kaleidos.net',
     url='https://github.com/taigaio/taiga-doc',
-    license='AGPL',
+    license = 'MIT-0',
     packages=[
         "generate_api_documents"
     ],
@@ -31,7 +31,7 @@ setup(
         'Development Status :: 4 - Beta',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU Affero General Public License v3',
+        'License :: OSI Approved :: MIT No Attribution License (MIT-0)',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Internet :: WWW/HTTP',
