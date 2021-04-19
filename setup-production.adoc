@@ -384,7 +384,7 @@ Once everything has been installed, launch all the services and check the result
 $ docker-compose up -d
 ----
 
-Go to `http://localhost:9000` and check your Taiga Platform is available.
+If you're testing it in your own machine, you can access your Taiga Platform in **http://localhost:9000**. If you're deploying in a server, you'll need to configure hosts and nginx as described later.
 
 === Configure the proxy
 
