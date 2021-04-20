@@ -16,7 +16,7 @@ setup(
     keywords='taiga, documentation, api',
     author='Jesús Espino García',
     author_email='jesus.espino@kaleidos.net',
-    url='https://github.com/taigaio/taiga-doc',
+    url='https://github.com/kaleidos-ventures/taiga-doc',
     license = 'MPL-2',
     packages=[
         "generate_api_documents"
