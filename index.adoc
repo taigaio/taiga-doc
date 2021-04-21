@@ -147,7 +147,7 @@ link:https://twitter.com/taigaio[@taigaio] on Twitter or read our link:https://b
 [[license]]
 == License
 
-Every code patch accepted in the Taiga codebase is accepted under the AGPL v3.0 license. It is important
-that you do not include any code which cannot be licensed under AGPL v3.0.
+Every code patch accepted in the Taiga codebase is accepted under the MPL-2 license. It is important
+that you do not include any code which cannot be licensed under MPL-2.
 
 You can see the complete license in the `LICENSE` file in the root of the repository.
