@@ -1,8 +1,8 @@
 # Changelog
 
-## 6.0.7 (unreleased)
+## 6.1.0 (unreleased)
 
-- ...
+- Update github templates
 
 ## 6.0.6 (2021-04-06)
 
