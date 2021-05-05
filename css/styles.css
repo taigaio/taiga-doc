@@ -1,0 +1,64 @@
+
+/*
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+Copyright (c) 2021-present Kaleidos Ventures SL
+*/
+
+/* Taiga styles */
+body {
+    font-family:"Open Sans","DejaVu Sans",sans-serif;
+}
+
+::selection {
+    background: #008AA8;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #008AA8;
+    color: #fff;
+    text-shadow: none;
+}
+
+a {
+    color: #008AA8;
+}
+a:hover {
+    color: #70728F;
+}
+
+.mp-level > ul > li > a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#toctitle {
+    color: #fff;
+}
+
+.header1 {
+    padding: 2rem 1rem 0;
+    text-align: center;
+}
+h2 {
+    color: #1d0b33;
+    text-transform: uppercase;
+}
+h3 {
+    color: #1D0B33;
+}
+h4{
+    color: #474354;
+}
+p {
+    color: #808080;
+}
+td.content>.title, .audioblock>.title, .exampleblock>.title, .imageblock>.title, .listingblock>.title, .literalblock>.title, .stemblock>.title, .openblock>.title, .paragraph>.title, .quoteblock>.title, table.tableblock>.title, .verseblock>.title, .videoblock>.title, .dlist>.title, .olist>.title, .ulist>.title, .qlist>.title, .hdlist>.title {
+    color: #008AA8;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-style: normal;
+}
