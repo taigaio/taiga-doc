@@ -87,7 +87,7 @@ The next step is to download the code from GitHub and install its dependencies:
 cd ~
 git clone https://github.com/kaleidos-ventures/taiga-back.git taiga-back
 cd taiga-back
-git checkout master
+git checkout main
 ----
 
 .Create a new virtualenv, activate it and install taiga-back base requirements
