@@ -16,9 +16,9 @@ cp -r dist /tmp/taiga-doc-dist || exit 1
 git checkout gh-pages || exit 1
 git pull || exit 1
 git reset --hard || exit 1
-rm -rf dist || exit 1
-mv /tmp/taiga-doc-dist dist || exit 1
-git add --all dist || exit 1
+find . ! -path "./.git/*" -a ! -name .git -a ! -name CNAME -delete
+mv /tmp/taiga-doc-dist/* . || exit 1
+git add --all . || exit 1
 git commit -a -m "Update doc" || exit 1
 git push || exit 1
 git checkout main || exit 1
