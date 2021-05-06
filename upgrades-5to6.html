@@ -10,7 +10,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <![endif]-->
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="Asciidoctor 2.0.14" name="generator">
+<meta content="Asciidoctor 2.0.15" name="generator">
 <title>Upgrade from Taiga5 to Taiga6</title>
 <style>/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment @import statement to use as custom stylesheet */
@@ -582,7 +582,7 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 </div>
 </li>
 <li>
-<p>you have access to the Taiga6 server, and have cloned the <a href="https://github.com/taigaio/taiga-docker">taiga-docker</a> repository</p>
+<p>you have access to the Taiga6 server, and have cloned the <a href="https://github.com/kaleidos-ventures/taiga-docker">taiga-docker</a> repository</p>
 </li>
 <li>
 <p>the Taiga6 server has <code>docker</code> and <code>docker-compose</code></p>
@@ -687,7 +687,7 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 <div class="sect2">
 <h3 id="install-taiga6">1.3. Get Taiga6</h3>
 <div class="paragraph">
-<p>Clone <a href="https://github.com/taigaio/taiga-docker">this repository</a> in the Taiga6 server.</p>
+<p>Clone <a href="https://github.com/kaleidos-ventures/taiga-docker">this repository</a> in the Taiga6 server.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -910,7 +910,7 @@ Besides this change in the configuration system, you should check and use the fi
 </div>
 <div class="paragraph">
 <p>If you were already using <code>async tasks</code>, then:
-- update your <code>config.py</code> file with the new environment variables (check <a href="https://github.com/taigaio/taiga-back/blob/stable/settings/confi.py.prod.example">the example</a>)
+- update your <code>config.py</code> file with the new environment variables (check <a href="https://github.com/kaleidos-ventures/taiga-back/blob/stable/settings/confi.py.prod.example">the example</a>)
 - update <code>/etc/systemd/system/taiga-async.service</code> (it was called <code>taiga-celery.service</code>) to have all the options shown at <a href="setup-production.html#expose-taiga-async">these instructions</a>.</p>
 </div>
 <div class="paragraph">
@@ -1031,7 +1031,7 @@ Besides this change in the configuration system, you should check and use the fi
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-04-20 12:11:15 +0200
+Last updated 2021-05-06 12:09:13 +0200
 </div>
 </div>
 </div>

@@ -10,7 +10,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <![endif]-->
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="Asciidoctor 2.0.14" name="generator">
+<meta content="Asciidoctor 2.0.15" name="generator">
 <title>Install Taiga in Production</title>
 <style>/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment @import statement to use as custom stylesheet */
@@ -644,7 +644,7 @@ This document explains how to deploy a full Taiga service for a production envir
 <div class="sect2">
 <h3 id="_get_repository">1.2. Get repository</h3>
 <div class="paragraph">
-<p>Clone <a href="https://github.com/taigaio/taiga-docker">this repository</a>.</p>
+<p>Clone <a href="https://github.com/kaleidos-ventures/taiga-docker">this repository</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -989,7 +989,7 @@ Get these in your profile <a class="bare" href="https://{YOUR-GITLAB}/profile/ap
 </div>
 <div class="paragraph">
 <div class="title">Map a <code>config.py</code> file</div>
-<p>From <a href="https://github.com/taigaio/taiga-back">taiga-back</a> download the file <code>settings/config.py.prod.example</code> and rename it:</p>
+<p>From <a href="https://github.com/kaleidos-ventures/taiga-back">taiga-back</a> download the file <code>settings/config.py.prod.example</code> and rename it:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1023,7 +1023,7 @@ Get these in your profile <a class="bare" href="https://{YOUR-GITLAB}/profile/ap
 </div>
 <div class="paragraph">
 <div class="title">Map a <code>conf.json</code> file</div>
-<p>From <a href="https://github.com/taigaio/taiga-front">taiga-front</a> download the file <code>dist/conf.example.json</code> and rename it:</p>
+<p>From <a href="https://github.com/kaleidos-ventures/taiga-front">taiga-front</a> download the file <code>dist/conf.example.json</code> and rename it:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1256,7 +1256,7 @@ As the password will be used inside the Postgresql URL later, use only web safe 
 <div class="listingblock">
 <div class="title">Get the code:</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span> ~&#x000A;git clone https://github.com/taigaio/taiga-back.git taiga-back&#x000A;<span class="tok-nb">cd</span> taiga-back&#x000A;git checkout stable</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span> ~&#x000A;git clone https://github.com/kaleidos-ventures/taiga-back.git taiga-back&#x000A;<span class="tok-nb">cd</span> taiga-back&#x000A;git checkout stable</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -1274,7 +1274,7 @@ As the password will be used inside the Postgresql URL later, use only web safe 
 <div class="listingblock" id="add_contrib_protected">
 <div class="title">Install taiga-contrib-protected:</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-o">(</span>taiga-back<span class="tok-o">)</span> pip install git+https://github.com/taigaio/taiga-contrib-protected.git@6.0.0#egg<span class="tok-o">=</span>taiga-contrib-protected</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-o">(</span>taiga-back<span class="tok-o">)</span> pip install git+https://github.com/kaleidos-ventures/taiga-contrib-protected.git@6.0.0#egg<span class="tok-o">=</span>taiga-contrib-protected</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1349,7 +1349,7 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 <div class="listingblock">
 <div class="title">Get the code</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span> ~&#x000A;git clone https://github.com/taigaio/taiga-front-dist.git taiga-front-dist&#x000A;<span class="tok-nb">cd</span> taiga-front-dist&#x000A;git checkout stable</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span> ~&#x000A;git clone https://github.com/kaleidos-ventures/taiga-front-dist.git taiga-front-dist&#x000A;<span class="tok-nb">cd</span> taiga-front-dist&#x000A;git checkout stable</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -1382,7 +1382,7 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 <div class="listingblock">
 <div class="title">Get the code:</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span> ~&#x000A;git clone https://github.com/taigaio/taiga-events.git taiga-events&#x000A;<span class="tok-nb">cd</span> taiga-events&#x000A;git checkout stable</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span> ~&#x000A;git clone https://github.com/kaleidos-ventures/taiga-events.git taiga-events&#x000A;<span class="tok-nb">cd</span> taiga-events&#x000A;git checkout stable</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -1415,7 +1415,7 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 <div class="listingblock">
 <div class="title">Get the code:</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span> ~&#x000A;git clone https://github.com/taigaio/taiga-protected.git taiga-protected&#x000A;<span class="tok-nb">cd</span> taiga-protected&#x000A;git checkout stable</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nb">cd</span> ~&#x000A;git clone https://github.com/kaleidos-ventures/taiga-protected.git taiga-protected&#x000A;<span class="tok-nb">cd</span> taiga-protected&#x000A;git checkout stable</code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -1625,7 +1625,7 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-04-20 12:11:13 +0200
+Last updated 2021-05-06 12:09:10 +0200
 </div>
 </div>
 </div>
