@@ -45,6 +45,7 @@ doc:
 	asciidoctor -T custom-html5 -o dist/integrations-bitbucket.html integrations-bitbucket.adoc
 	asciidoctor -T custom-html5 -o dist/integrations-gogs.html integrations-gogs.adoc
 	asciidoctor -T custom-html5 -o dist/integrations-slack.html integrations-slack.adoc
+	asciidoctor -T custom-html5 -o dist/backup-and-restore.html backup-and-restore.adoc
 	cp -r assets/* dist || exit 1
 pdf:
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/index.pdf index.adoc
@@ -65,3 +66,4 @@ pdf:
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-bitbucket.pdf integrations-bitbucket.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-gogs.pdf integrations-gogs.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/integrations-slack.pdf integrations-slack.adoc
+	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/backup-and-restore.pdf backup-and-restore.adoc
