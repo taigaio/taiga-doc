@@ -38,10 +38,6 @@ This section explains how to upgrade your current Taiga to a newer version
 
 This section shows how to keep your link:upgrades-6to6.html[taiga-docker instance up to date] with the new releases.
 
-=== Backup and Restore Taiga6 docker
-
-This section shows how to link:backup-and-restore.html[backup and restore] Taiga6 docker.
-
 === Upgrade from Taiga5 to Taiga6
 
 Update your link:upgrades-5to6.html[Taiga5 instance to a new Taiga6 version].
@@ -54,6 +50,10 @@ This section covers different upgrade scenarios:
 === Older versions
 
 Update between link:upgrades-older.html[versions].
+
+== Backup and Restore Taiga
+
+How to link:backup-and-restore.html#docker[backup and restore] Taiga6.
 
 [[development]]
 == Development
