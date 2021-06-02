@@ -20,15 +20,6 @@ First, create a directory on the host where you want to store your backups in an
 :/# cd taiga-backup
 ----
 
-We have to find the container ID of the database container. To get a list of all running containers including their IDs, run
-
-[source,bash]
-----
-:/# docker ps -a
-----
-
-Search for the container with "taiga-docker_taiga-db" in the name and copy the ID.
-
 Export the database contents from the database container into your backup directory on your host machine via sql dump.
 
 [source,bash]
@@ -51,6 +42,13 @@ Copy them out of the container into the taiga-backup directory on your host.
 ----
 
 Anyone should only need to backup the database and the media files but exclude the static files, because they are recollected anytime with Django collectstatic.
+
+Finally, delete the media backup archive inside the taiga-back container.
+
+[source,bash]
+----
+:/# docker exec taiga-docker_taiga-back_1 rm taiga-media-backup.tar.gz
+----
 
 [[restore-docker]]
 == Recommended restore process for Taiga6 docker
