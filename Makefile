@@ -47,6 +47,7 @@ doc:
 	asciidoctor -T custom-html5 -o dist/integrations-slack.html integrations-slack.adoc
 	asciidoctor -T custom-html5 -o dist/backup-and-restore.html backup-and-restore.adoc
 	cp -r assets/* dist || exit 1
+	cp Caddyfile dist || exit 1
 pdf:
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/index.pdf index.adoc
 	asciidoctor -a allow-uri-read -r asciidoctor-pdf -b pdf -o dist/pdfs/setup-production.pdf setup-production.adoc

@@ -733,8 +733,8 @@ cp ~/taiga-protected/env.sample ~/taiga-protected/.env
 
 The `SECRET_KEY` value in `.env` must be the same as the `SECRET_KEY` in `~/taiga-back/settings/config.py`.
 
-[[start-and-expose]]
-=== Start and Expose Taiga
+[[start-taiga]]
+=== Start Taiga
 
 Now it's time to create the different systemd services to serve different modules of Taiga.
 
@@ -883,6 +883,11 @@ sudo systemctl enable taiga-protected
 sudo systemctl status taiga-protected
 ----
 
+[[expose-taiga-nginx]]
+=== Expose Taiga with NGINX
+
+The recommended way to serve Taiga is to use NGINX proxy server.
+
 [[nginx]]
 .Remove the default NGINX config file to avoid collision with Taiga:
 [source,bash]
@@ -1007,6 +1012,22 @@ sudo systemctl restart 'taiga*'
 ----
 
 **Now you should have the service up and running on: `https://example.com/`**
+
+[[expose-taiga-other]]
+=== Other methods to expose Taiga
+
+.Caddy server
+It's possible to serve Taiga with Caddy as well, following the next guides:
+
+- install caddy >= 2.4.1
+- create a symlink from `media` to `_protected`
+[source,bash]
+----
+cd ~/taiga-back
+ln -s media/ _protected
+----
+- use a Caddyfile based on link:Caddyfile[this]
+
 
 [[extend-taiga]]
 === Extend Taiga
