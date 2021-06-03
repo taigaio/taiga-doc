@@ -1,0 +1,117 @@
+= Backup and restore Taiga
+:toc: left
+:toclevels: 1
+:numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
+
+[[backup-docker]]
+== Recommended backup process for Taiga6 docker
+
+This is the recommended backup process, as using Taiga6 with docker is the recommended way to run Taiga in production. This tutorial assumes that you have a Taiga6 docker instance running.
+
+This tutorial has been tested with link:https://github.com/kaleidos-ventures/taiga-docker[the official Taiga6 docker image].
+
+First, create a directory on the host where you want to store your backups in and switch into it. For this example we're going to use
+
+[source,bash]
+----
+:/# mkdir taiga-backup
+:/# cd taiga-backup
+----
+
+Export the database contents from the database container into your backup directory on your host machine via sql dump.
+
+[source,bash]
+----
+:/# docker exec taiga-docker_taiga-db_1 pg_dump -U taiga taiga > taiga-db-backup.sql
+----
+
+Then tar the media files inside the taiga-back container.
+
+[source,bash]
+----
+:/# docker exec taiga-docker_taiga-back_1 tar czf taiga-media-backup.tar.gz media
+----
+
+Copy them out of the container into the taiga-backup directory on your host.
+
+[source,bash]
+----
+:/# docker cp taiga-docker_taiga-back_1:/taiga-back/taiga-media-backup.tar.gz .
+----
+
+Anyone should only need to backup the database and the media files but exclude the static files, because they are recollected anytime with Django collectstatic.
+
+Finally, delete the media backup archive inside the taiga-back container.
+
+[source,bash]
+----
+:/# docker exec taiga-docker_taiga-back_1 rm taiga-media-backup.tar.gz
+----
+
+[[restore-docker]]
+== Recommended restore process for Taiga6 docker
+
+This tutorial assumes that you have fresh server running and you want to restore your backed up Taiga6 data. You installed all the preriquisities, cloned the Taiga6 docker repository and moved into it.
+
+Follow these steps:
+[source,bash]
+----
+# Run only the database to avoid migrations
+$ docker-compose up -d taiga-db
+
+# Copy the dump inside the container:
+$ docker cp taiga-db-backup.sql taiga-docker_taiga-db_1:/taiga-db-backup.sql
+
+# Access the container
+$ docker exec -ti taiga-docker_taiga-db_1 /bin/bash
+----
+
+And inside the container, load the dump:
+[source,bash]
+----
+:/# psql -U taiga taiga < taiga-db-backup.sql
+----
+
+Check that the data have been properly migrated. Delete the taiga-db-backup.sql file and exit the container.
+
+=== Migrate the database
+
+Next step is to run Taiga6 backend so the database can be migrated to the new schema:
+[source,bash]
+----
+$ docker-compose up -d taiga-back
+----
+
+=== Migrate the media files
+
+With the backend up and running, copy the taiga-media-backup.tar.gz file inside the backend container and access the container:
+[source,bash]
+----
+$ docker cp taiga-media-backup.tar.gz taiga-docker_taiga-back_1:/taiga-media-backup.tar.gz
+$ docker exec -ti taiga-docker_taiga-back_1 /bin/bash
+----
+
+And inside the container, remove the old media and extract the files:
+[source,bash]
+----
+:/# mv /taiga-media-backup.tar.gz /taiga-back/media
+:/# cd /taiga-back/media
+:/# tar -xzvf taiga-media-backup.tar.gz --strip 1
+:/# rm taiga-media-backup.tar.gz
+:/# chown -R taiga:taiga *
+----
+
+Exit the container after you're finished.
+
+=== Run Taiga6
+
+Once everything has been migrated, launch all the services and check the result:
+
+[source,bash]
+----
+$ docker-compose up -d
+----
+
+Go to `http://localhost:9000` where everything should be migrated and available.

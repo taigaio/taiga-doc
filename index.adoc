@@ -51,6 +51,10 @@ This section covers different upgrade scenarios:
 
 Update between link:upgrades-older.html[versions].
 
+== Backup and Restore Taiga
+
+How to link:backup-and-restore.html#docker[backup and restore] Taiga6.
+
 [[development]]
 == Development
 

@@ -7,7 +7,7 @@
 
 This section details the way to keep your Taiga docker instance up to date with the new releases.
 
-[[taiga6dckr-defaultprocess]]
+[[taiga6dckr-upgrade-process]]
 == Default Upgrade Process
 
 Every new Taiga release generates new images available from link:https://hub.docker.com/u/taigaio[Docker Hub]. So the procedure to update them consists of:
@@ -28,3 +28,4 @@ $ docker-compose up -d
 ----
 
 This will take care of new static and the database migrations, if any. This process means a little downtime so choose the better moment to perfom it. After this process the instance will be updated and running.
+
