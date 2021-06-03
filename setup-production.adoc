@@ -358,14 +358,14 @@ Map the file into `/taiga-back/settings/config.py`. Have in mind that you have t
 
 .Map a `conf.json` file
 
-From https://github.com/kaleidos-ventures/taiga-front[taiga-front] download the file `dist/conf.example.json` and rename it:
+From https://github.com/kaleidos-ventures/taiga-front[taiga-front] download the file `conf/conf.example.json` and rename it:
 
 [source,bash]
 ----
-mv dist/conf.example.json dist/conf.json
+mv conf/conf.example.json conf/conf.json
 ----
 
-Edit it with your own configuration and map the file into `/taiga-front/dist/config.py`.
+Edit it with your own configuration and map the file into `/taiga-front/conf/config.py`.
 
 === Configure an admin user
 
