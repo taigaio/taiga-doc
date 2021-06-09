@@ -1046,7 +1046,7 @@ With this installation, you have access to a fair amount of features of Taiga. H
 - `/etc/systemd/system/taiga-protected.service`
 - `/home/taiga/taiga-back/settings/config.py`
 - `/home/taiga/taiga-front-dist/dist/conf.json`
-- `/home/taiga/taiga-events/config.json`
+- `/home/taiga/taiga-events/.env`
 - `/home/taiga/taiga-protected/.venv`
 - The result of command `sudo systemctl status 'taiga*'`
 
