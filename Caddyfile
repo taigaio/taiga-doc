@@ -1,0 +1,45 @@
+local.taiga.io {
+
+    # backend admin and api
+	@taiga-back path /admin* /api*
+	handle @taiga-back {
+		reverse_proxy 127.0.0.1:8001
+	}
+
+    # events
+	handle /events* {
+		reverse_proxy 127.0.0.1:8888
+	}
+
+    # static and frontend
+	handle {
+		root /static/* /home/taiga/taiga-back
+		root * /home/taiga/taiga-front-dist/dist
+
+		try_files {path} {path}/ /index.html
+		file_server
+	}
+
+    # unprotected section
+	handle /media/exports/* {
+		header Content-disposition "attachment"
+		root * /home/taiga/taiga-back
+		file_server
+	}
+
+    # protected section
+	handle_path /media/* {
+		reverse_proxy localhost:8003 {
+			@accel header X-Accel-Redirect *
+			handle_response @accel {
+				root * /home/taiga/taiga-back
+				header Content-Disposition "attachment"
+				rewrite {http.reverse_proxy.header.X-Accel-Redirect}
+				file_server
+			}
+		}
+	}
+
+    # TLS, log, etc
+    # Configure your TLS following the best practices inside your company
+}

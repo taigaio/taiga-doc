@@ -596,13 +596,19 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 <a href="#install-protected">2.10. Taiga protected Setup</a>
 </li>
 <li>
-<a href="#start-and-expose">2.11. Start and Expose Taiga</a>
+<a href="#start-taiga">2.11. Start Taiga</a>
 </li>
 <li>
-<a href="#extend-taiga">2.12. Extend Taiga</a>
+<a href="#expose-taiga-nginx">2.12. Expose Taiga with NGINX</a>
 </li>
 <li>
-<a href="#troubleshooting">2.13. Troubleshooting</a>
+<a href="#expose-taiga-other">2.13. Other methods to expose Taiga</a>
+</li>
+<li>
+<a href="#extend-taiga">2.14. Extend Taiga</a>
+</li>
+<li>
+<a href="#troubleshooting">2.15. Troubleshooting</a>
 </li>
 </ul>
 </div>
@@ -1441,7 +1447,7 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="start-and-expose">2.11. Start and Expose Taiga</h3>
+<h3 id="start-taiga">2.11. Start Taiga</h3>
 <div class="paragraph">
 <p>Now it&#8217;s time to create the different systemd services to serve different modules of Taiga.</p>
 </div>
@@ -1525,6 +1531,12 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 <pre class="pygments highlight"><code data-lang="bash"><span></span>sudo systemctl status taiga-protected</code></pre>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="expose-taiga-nginx">2.12. Expose Taiga with NGINX</h3>
+<div class="paragraph">
+<p>The recommended way to serve Taiga is to use NGINX proxy server.</p>
+</div>
 <div class="listingblock" id="nginx">
 <div class="title">Remove the default NGINX config file to avoid collision with Taiga:</div>
 <div class="content">
@@ -1568,13 +1580,42 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="extend-taiga">2.12. Extend Taiga</h3>
+<h3 id="expose-taiga-other">2.13. Other methods to expose Taiga</h3>
+<div class="paragraph">
+<div class="title">Caddy server</div>
+<p>It&#8217;s possible to serve Taiga with Caddy as well, following the next guides:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>install caddy &gt;= 2.4.1</p>
+</li>
+<li>
+<p>create a symlink from <code>media</code> to <code>_protected</code></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cd ~/taiga-back&#x000A;ln -s media/ _protected</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>use a Caddyfile based on <a href="Caddyfile">this</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="extend-taiga">2.14. Extend Taiga</h3>
 <div class="paragraph">
 <p>With this installation, you have access to a fair amount of features of Taiga. However, you may want to extend it with other functionalities or plugins, such Slack integration or login with Github. To extend Taiga, check all the available options at <a class="bare" href="https://resources.taiga.io/extend/how-to-extend-taiga/">https://resources.taiga.io/extend/how-to-extend-taiga/</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="troubleshooting">2.13. Troubleshooting</h3>
+<h3 id="troubleshooting">2.15. Troubleshooting</h3>
 <div class="ulist">
 <div class="title">If you face any issue during or after installing Taiga, please check the content of the following files:</div>
 <ul>
@@ -1600,7 +1641,7 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 <p><code>/home/taiga/taiga-front-dist/dist/conf.json</code></p>
 </li>
 <li>
-<p><code>/home/taiga/taiga-events/config.json</code></p>
+<p><code>/home/taiga/taiga-events/.env</code></p>
 </li>
 <li>
 <p><code>/home/taiga/taiga-protected/.venv</code></p>
@@ -1625,7 +1666,7 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-06-02 16:53:14 +0200
+Last updated 2021-06-09 16:45:42 +0200
 </div>
 </div>
 </div>
