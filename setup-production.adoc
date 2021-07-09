@@ -106,14 +106,7 @@ SESSION_COOKIE_SECURE: "False"
 CSRF_COOKIE_SECURE: "False"
 ----
 
-More info about those variables can be found [here](https://docs.djangoproject.com/en/3.1/ref/settings/#csrf-cookie-secure).
-
-**Service: taiga-back**
-[source, bash]
-----
-SESSION_COOKIE_SECURE: "False"
-CSRF_COOKIE_SECURE: "False"
-----
+More info about those variables can be found link:https://docs.djangoproject.com/en/3.1/ref/settings/#csrf-cookie-secure[here].
 
 .Email Settings
 
