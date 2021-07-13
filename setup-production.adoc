@@ -11,7 +11,9 @@
 This is the easiest and *recommended* way to run Taiga in production.
 This document explains how to deploy a full Taiga service for a production environment with `docker`.
 
-=== Requirements and caveats
+**Note** If you're updating from serving taiga6 in subdomain to subpath, check the specific instructions at the end of this tutorial.
+
+=== Requirements
 
 Prior to start the installation, ensure you have installed:
 
@@ -33,7 +35,7 @@ $ git checkout stable
 
 This configuration is likely to suit what you need. Edit environment variables in `docker-compose.yml` and `docker-compose-inits.yml`. Have in mind that some of the variables are in both files, and you need to edit both.
 
-**Configuration** variables are in `docker-compose.yml` with default values that we strongly recommend that you change. Those variables are needed to run Taiga. Apart from this configuration, you can have some **customisation** in Taiga, that add features that are disabled by default. Find those variables in **Customisation** section and add the corresponding environment variables whenever you want to enable them.
+**Configuration** variables are in `docker-compose.yml` with default values that we strongly recommend that you change or review. Those variables are needed to run Taiga. Apart from this configuration, you can have some **customisation** in Taiga, that add features which are disabled by default. Find those variables in **Customisation** section and add the corresponding environment variables whenever you want to enable them.
 
 === Configuration
 
@@ -64,40 +66,64 @@ Additionally, you can also configure `POSTGRES_PORT` in `taiga-back`. Defaults t
 .Taiga Settings
 
 **Service: taiga-back**
+
+The default configuration assumes Taiga is being served in a **subdomain**:
 [source, bash]
 ----
-TAIGA_SECRET_KEY: taiga-back-secret-key
-TAIGA_SITES_SCHEME: http
-TAIGA_SITES_DOMAIN: localhost:9000
+TAIGA_SECRET_KEY: "taiga-back-secret-key"
+TAIGA_SITES_SCHEME: "https"
+TAIGA_SITES_DOMAIN: "taiga.mycompany.com"
+TAIGA_SUBPATH: ""
+----
+
+If Taiga is being served in a **subpath** instead of a subdomain, the configuration should be something like:
+[source, bash]
+----
+TAIGA_SECRET_KEY: "taiga-back-secret-key"
+TAIGA_SITES_SCHEME: "https"
+TAIGA_SITES_DOMAIN: "mycompany.com"
+TAIGA_SUBPATH: "/taiga"
+----
+
+In this case, it's necessary to do some configurations in `taiga-front` as well.
+
+**Service: taiga-front**
+
+The default configuration assumes Taiga is being served in a **subdomain**:
+[source, bash]
+----
+TAIGA_URL: "https://taiga.mycompany.com"
+TAIGA_WEBSOCKETS_URL: "wss://taiga.mycompany.com"
+TAIGA_SUBPATH: ""
+----
+
+If Taiga is being served in a **subpath** instead of a subdomain, the configuration should be something like:
+[source, bash]
+----
+TAIGA_URL: "https://mycompany.com"
+TAIGA_WEBSOCKETS_URL: "wss://mycompany.com"
+TAIGA_SUBPATH: "/taiga"
 ----
 
 **Service: taiga-events**
 [source, bash]
 ----
-TAIGA_SECRET_KEY: taiga-back-secret-key
+TAIGA_SECRET_KEY: "taiga-back-secret-key"
 ----
 
 **Service: taiga-protected**
 [source, bash]
 ----
-TAIGA_SECRET_KEY: taiga-back-secret-key
+SECRET_KEY: "taiga-back-secret-key"
 ----
 
-**Service: taiga-front**
-[source, bash]
-----
-TAIGA_URL: "http://localhost:9000"
-TAIGA_WEBSOCKETS_URL: "ws://localhost:9000"
-----
-
-`TAIGA_SECRET_KEY` is the secret key of Taiga. Should be the same as this var in `taiga-back`, `taiga-events` and `taiga-protected`.
-`TAIGA_URL` is where this Taiga instance should be served. It should be the same as `TAIGA_SITES_SCHEME`://`TAIGA_SITES_DOMAIN`.
-`TAIGA_WEBSOCKETS_URL` is used to connect to the events. This should have the same value as `TAIGA_SITES_DOMAIN`, ie: ws://taiga.mycompany.com.
-
+`TAIGA_SECRET_KEY` or `SECRET_KEY` is the secret key of Taiga. Should be the same as this var in `taiga-back`, `taiga-events` and `taiga-protected`.
+`TAIGA_URL` in front service is where this Taiga instance should be served. It should be the same as `TAIGA_SITES_SCHEME://TAIGA_SITES_DOMAIN`.
+`TAIGA_WEBSOCKETS_URL` is used to connect to the events. This should have the same value as `wss://TAIGA_SITES_DOMAIN`, ie: wss://taiga.mycompany.com.
 
 .Session Settings
 
-Taiga doesn't use session cookies in its API as it stateless. However, the Django Admin (`/admin/`) uses session cookie for authentication. By default, Taiga is configured to work behind HTTPS. If you're using HTTP (despite de strong recommendations against it), you'll need to configure the following environment variables so you can access the Admin:
+Taiga doesn't use session cookies in its API as it stateless. However, the Django Admin (`/admin/`) uses session cookie for authentication. By default, Taiga is configured to work behind HTTPS. If you're using HTTP (despite the strong recommendations against it), you'll need to configure the following environment variables so you can access the Admin:
 
 **Service: taiga-back**
 [source, bash]
@@ -116,8 +142,8 @@ By default, email is configured with the *console* backend, which means that the
 [source, bash]
 ----
 EMAIL_BACKEND: "django.core.mail.backends.smtp.EmailBackend"
-DEFAULT_FROM_EMAIL: "no-reply@example.com"
-EMAIL_HOST: "smtp.host.example.com"
+DEFAULT_FROM_EMAIL: "no-reply@mycompany.com"
+EMAIL_HOST: "smtp.host.mycompany.com"
 EMAIL_PORT: 587
 EMAIL_HOST_USER: "user"
 EMAIL_HOST_PASSWORD: "password"
@@ -349,12 +375,31 @@ From https://github.com/kaleidos-ventures/taiga-back[taiga-back] download the fi
 mv settings/config.py.prod.example settings/config.py
 ----
 
-Edit it with your own configuration:
+Edit `config.py` with your own configuration:
 
-- connection to PostgreSQL
-- connection to RabbitMQ for `taiga-events` and `taiga-async`
-- credentials for email
-- Enable/disable anonymous telemetry
+- Taiga secret key: **it's important** to change it. It must have the same value as the secret key in `taiga-events` and `taiga-protected`
+- Taiga urls: configure where Taiga would be served using `TAIGA_URL`, `SITES` and `FORCE_SCRIPT_NAME` (see examples below)
+- Connection to PostgreSQL; check `DATABASES` section in the file
+- Connection to RabbitMQ for `taiga-events`; check "EVENTS" section in the file
+- Connection to RabbitMQ for `taiga-async`; check "TAIGA ASYNC" section in the file
+- Credentials for email; check "EMAIL" section in the file
+- Enable/disable anonymous telemetry; check "TELEMETRY" section in the file
+
+Example to configure Taiga in **subdomain**:
+[source, bash]
+----
+TAIGA_SITES_SCHEME = "https"
+TAIGA_SITES_DOMAIN = "taiga.mycompany.com"
+FORCE_SCRIPT_NAME = ""
+----
+
+Example to configure Taiga in **subpath**:
+[source, bash]
+----
+TAIGA_SITES_SCHEME = "https"
+TAIGA_SITES_DOMAIN = "taiga.mycompany.com"
+FORCE_SCRIPT_NAME = "/taiga"
+----
 
 Check as well the rest of the configuration if you need to enable some advanced features.
 
@@ -369,7 +414,33 @@ From https://github.com/kaleidos-ventures/taiga-front[taiga-front] download the 
 mv dist/conf.example.json dist/conf.json
 ----
 
-Edit it with your own configuration and map the file into `/taiga-front/dist/config.py`.
+Edit it with your own configuration:
+
+- Taiga urls: configure where Taiga would be served using `api`, `eventsUrl` and `baseHref` (see examples below)
+
+Example to configure Taiga in **subdomain**:
+[source, bash]
+----
+# conf.json
+{
+    "api": "https://taiga.mycompany.com/api/v1/",
+    "eventsUrl": "wss://taiga.mycompany.com/events",
+    "baseHref": "/",
+----
+
+Example to configure Taiga in **subpath**:
+[source, bash]
+----
+# conf.json
+{
+    "api": "https://mycompany.com/taiga/api/v1/",
+    "eventsUrl": "wss://mycompany.com/taiga/events",
+    "baseHref": "/taiga/",
+----
+
+Check as well the rest of the configuration if you need to enable some advanced features.
+
+Map the file into `/taiga-front/dist/config.py`.
 
 === Configure an admin user
 
@@ -388,17 +459,15 @@ Once everything has been installed, launch all the services and check the result
 $ docker-compose up -d
 ----
 
-If you're testing it in your own machine, you can access your Taiga Platform in **http://localhost:9000**. If you're deploying in a server, you'll need to configure hosts and nginx as described later.
-
 === Configure the proxy
 
-Your host configuration needs to make a proxy to `http://localhost:9000`. Example:
+Your host configuration needs to make a proxy to `http://localhost:9000`.
 
+If Taiga is being served in a **subdomain**:
+[source,bash]
 ----
 server {
   server_name taiga.mycompany.com;
-
-  ...
 
   location / {
     proxy_set_header Host $http_host;
@@ -421,8 +490,48 @@ server {
       proxy_send_timeout 7d;
       proxy_read_timeout 7d;
   }
+
+  # TLS: Configure your TLS following the best practices inside your company
+  # Logs and other configurations
 }
 ----
+
+If Taiga is being served in a **subpath** instead of a subdomain, the configuration should be something like:
+[source,bash]
+----
+server {
+  server_name mycompany.com;
+
+  location /taiga/ {
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Scheme $scheme;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_redirect off;
+    proxy_pass http://localhost:9000/;
+  }
+
+  # Events
+  location /taiga/events {
+      proxy_pass http://localhost:9000/events;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection "upgrade";
+      proxy_set_header Host $host;
+      proxy_connect_timeout 7d;
+      proxy_send_timeout 7d;
+      proxy_read_timeout 7d;
+  }
+
+  # TLS: Configure your TLS following the best practices inside your company
+  # Logs and other configurations
+}
+----
+
+=== Change between subpath and subdomain
+
+If you're changing Taiga configuration from default subdomain (https://taiga.mycompany.com) to subpath (http://mycompany.com/subpath) or vice versa, on top of adjusting the configuration as said above, you should consider changing the TAIGA_SECRET_KEY so the refresh works properly for the end user.
 
 [[setup-prod-from-source-code]]
 == From source code
@@ -453,7 +562,7 @@ Each module can be run on a unique machine or all of them can be installed to a 
 During the tutorial, the following conditions are assumed:
 
 - **IP:** `80.88.23.45`
-- **Hostname:** `example.com` (which points to 80.88.23.45)
+- **Hostname:** `taiga.mycompany.com` (which points to 80.88.23.45)
 - **Username:** `taiga`
 - **Working directory:** `/home/taiga/` (default for user `taiga`)
 
@@ -578,15 +687,33 @@ Create a `settings/config.py` file based on the example provided:
 ----
 cp settings/config.py.prod.example settings/config.py
 ----
-Edit the file and configure:
+Edit `config.py` and configure:
 
-- connection to PostgreSQL
-- connection to RabbitMQ for `taiga-events` and `taiga-async`
-- credentials for email
-- Enable/disable anonymous telemetry
-- Enable/disable public registration
+- Taiga secret key: **it's important** to change it. It must have the same value as the secret key in `taiga-events` and `taiga-protected`
+- Taiga urls: configure where Taiga would be served using `TAIGA_URL`, `SITES` and `FORCE_SCRIPT_NAME` (see examples below)
+- Connection to PostgreSQL; check `DATABASES` section in the file
+- Connection to RabbitMQ for `taiga-events`; check "EVENTS" section in the file
+- Connection to RabbitMQ for `taiga-async`; check "TAIGA ASYNC" section in the file
+- Credentials for email; check "EMAIL" section in the file
+- Enable/disable anonymous telemetry; check "TELEMETRY" section in the file
 
-Check as well the rest of the configuration if you need to enable some adavanced features.
+Example to configure Taiga in **subdomain**:
+[source, bash]
+----
+TAIGA_SITES_SCHEME = "https"
+TAIGA_SITES_DOMAIN = "taiga.mycompany.com"
+FORCE_SCRIPT_NAME = ""
+----
+
+Example to configure Taiga in **subpath**:
+[source, bash]
+----
+TAIGA_SITES_SCHEME = "https"
+TAIGA_SITES_DOMAIN = "taiga.mycompany.com"
+FORCE_SCRIPT_NAME = "/taiga"
+----
+
+Check as well the rest of the configuration if you need to enable some advanced features.
 
 .Execute all migrations to populate the database with basic necessary initial data:
 [source,bash]
@@ -641,26 +768,41 @@ git checkout stable
 cp ~/taiga-front-dist/dist/conf.example.json ~/taiga-front-dist/dist/conf.json
 ----
 
-.Edit the example configuration following the pattern below (replace with your own details):
-[source,json]
+.Edit with your own configuration:
+
+- Taiga urls: configure where Taiga would be served using `api`, `eventsUrl` and `baseHref` (see examples below)
+
+Example to configure Taiga in **subdomain**:
+[source, bash]
 ----
 {
-	"api": "https://example.com/api/v1/",
-	"eventsUrl": "wss://example.com/events",
-	"debug": "true",
-	"publicRegisterEnabled": true,
-	"feedbackEnabled": true,
-	"privacyPolicyUrl": null,
-	"termsOfServiceUrl": null,
-	"GDPRUrl": null,
-	"maxUploadFileSize": null,
-	"contribPlugins": []
-}
+    "api": "https://taiga.mycompany.com/api/v1/",
+    "eventsUrl": "wss://taiga.mycompany.com/events",
+    "baseHref": "/",
 ----
 
-Having **taiga-front-dist** downloaded and configured is insufficient. The next step is to expose the code (in **dist** directory) under a static file web server.
+Example to configure Taiga in **subpath**:
+[source, bash]
+----
+{
+    "api": "https://mycompany.com/taiga/api/v1/",
+    "eventsUrl": "wss://mycompany.com/taiga/events",
+    "baseHref": "/taiga/",
+----
 
-In this tutorial We use **NGINX** as a static file web server and reverse-proxy. The configuration of NGINX is explained later.
+If you're using Taiga in **subpath**, you need to edit `index.html` as well; from:
+[source, bash]
+----
+<base href="/" />
+----
+
+To:
+[source, bash]
+----
+<base href="/taiga/" />
+----
+
+Check as well the rest of the configuration if you need to enable some advanced features.
 
 [[taiga-events]]
 === Events Setup
@@ -735,7 +877,26 @@ source .venv/bin/activate
 cp ~/taiga-protected/env.sample ~/taiga-protected/.env
 ----
 
-The `SECRET_KEY` value in `.env` must be the same as the `SECRET_KEY` in `~/taiga-back/settings/config.py`.
+Example to configure Taiga in **subdomain**:
+
+[source, bash]
+----
+MAX_AGE=360
+SECRET_KEY="taiga-back-secret-key"
+TAIGA_SUBPATH=""
+----
+
+Example to configure Taiga in **subpath**:
+
+[source, bash]
+----
+MAX_AGE=360
+SECRET_KEY="taiga-back-secret-key"
+TAIGA_SUBPATH="/taiga"
+----
+
+The `SECRET_KEY` value in `.env` must be the same as the `TAIGA_SECRET_KEY` in `~/taiga-back/settings/config.py`.
+The attachments will be accesible with a token during MAX_AGE (in seconds). After that, the token will expire.
 
 [[start-taiga]]
 === Start Taiga
@@ -905,18 +1066,20 @@ sudo rm /etc/nginx/sites-enabled/default
 mkdir -p ~/logs
 ----
 
-.To configure a new NGINX virtualhost for Taiga, create and edit the `/etc/nginx/conf.d/taiga.conf` file, as follows:
+Create and edit the `/etc/nginx/conf.d/taiga.conf` file as follows, choosing between serving Taiga in a **subdomain** or in a **subpath**.
+
+.Configure NGINX for Taiga **in a subdomain**,
 [source,nginx]
 ----
 server {
     listen 80 default_server;
-    server_name _;
+    server_name taiga.mycompany.com;
     return 301 https://$server_name$request_uri;
 }
 
 server {
     listen 443 default_server;
-    server_name _;  #  See http://nginx.org/en/docs/http/server_names.html
+    server_name taiga.mycompany.com;  #  See http://nginx.org/en/docs/http/server_names.html
 
     large_client_header_buffers 4 32k;
     client_max_body_size 50M;
@@ -925,53 +1088,57 @@ server {
     access_log /home/taiga/logs/nginx.access.log;
     error_log /home/taiga/logs/nginx.error.log;
 
+    # TLS: Configure your TLS following the best practices inside your company
+    # Other configurations
+
     # Frontend
     location / {
-        root /home/taiga/taiga-front-dist/dist/;
-        try_files $uri $uri/ /index.html;
+        alias /home/taiga/taiga-front-dist/;
+        index index.html;
+        try_files $uri $uri/ index.html =404;
     }
 
-    # Backend
-    location /api {
+    # API
+    location /api/ {
         proxy_set_header Host $http_host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Scheme $scheme;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://127.0.0.1:8001/api;
+        proxy_pass http://127.0.0.1:8001/api/;
         proxy_redirect off;
     }
 
-    # Admin access (/admin/)
-    location /admin {
+    # Admin
+    location /admin/ {
         proxy_set_header Host $http_host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Scheme $scheme;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_pass http://127.0.0.1:8001$request_uri;
+        proxy_pass http://127.0.0.1:8001/admin/;
         proxy_redirect off;
     }
 
     # Static files
-    location /static {
-        alias /home/taiga/taiga-back/static;
+    location /static/ {
+        alias /home/taiga/taiga-back/static/;
     }
 
     # Media
-    location /_protected {
+    location /_protected/ {
         internal;
         alias /home/taiga/taiga-back/media/;
         add_header Content-disposition "attachment";
     }
 
     # Unprotected section
-    location /media/exports {
+    location /media/exports/ {
         alias /home/taiga/taiga-back/media/exports/;
         add_header Content-disposition "attachment";
     }
 
-    location /media {
+    location /media/ {
         proxy_set_header Host $http_host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Scheme $scheme;
@@ -983,17 +1150,109 @@ server {
 
     # Events
     location /events {
-        proxy_pass http://127.0.0.1:8888/events;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
         proxy_connect_timeout 7d;
         proxy_send_timeout 7d;
         proxy_read_timeout 7d;
+        proxy_pass http://127.0.0.1:8888/events;
     }
 
-    # TLS
-    # Configure your TLS following the best practices inside your company
+}
+----
+
+.Configure NGINX for Taiga **in a subpath**,
+[source,nginx]
+----
+server {
+    listen 80 default_server;
+    server_name mycompany.com;
+    return 301 https://$server_name$request_uri;
+}
+
+server {
+    listen 443 default_server;
+    server_name mycompany.com;  #  See http://nginx.org/en/docs/http/server_names.html
+
+    large_client_header_buffers 4 32k;
+    client_max_body_size 50M;
+    charset utf-8;
+
+    access_log /home/taiga/logs/nginx.access.log;
+    error_log /home/taiga/logs/nginx.error.log;
+
+    # TLS: Configure your TLS following the best practices inside your company
+    # Other configurations
+
+    # Frontend
+    location /taiga/ {
+        alias /home/taiga/taiga-front-dist/;
+        index index.html;
+        try_files $uri $uri/ index.html =404;
+    }
+
+    # API
+    location /taiga/api/ {
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8001/api/;
+        proxy_redirect off;
+    }
+
+    # Admin
+    location /taiga/admin/ {
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8001/admin/;
+        proxy_redirect off;
+    }
+
+    # Static files
+    location /taiga/static/ {
+        alias /home/taiga/taiga-back/static/;
+    }
+
+    # Media
+    location /taiga/_protected/ {
+        internal;
+        alias /home/taiga/taiga-back/media/;
+        add_header Content-disposition "attachment";
+    }
+
+    # Unprotected section
+    location /taiga/media/exports/ {
+        alias /home/taiga/taiga-back/media/exports/;
+        add_header Content-disposition "attachment";
+    }
+
+    location /taiga/media/ {
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Scheme $scheme;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://127.0.0.1:8003/;
+        proxy_redirect off;
+    }
+
+    # Events
+    location /taiga/events {
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_connect_timeout 7d;
+        proxy_send_timeout 7d;
+        proxy_read_timeout 7d;
+        proxy_pass http://127.0.0.1:8888/events;
+    }
+
 }
 ----
 
@@ -1015,13 +1274,13 @@ sudo systemctl restart nginx
 sudo systemctl restart 'taiga*'
 ----
 
-**Now you should have the service up and running on: `https://example.com/`**
+Now you should have the service up and running on: `https://taiga.mycompany.com/` or `https://mycompany.com/taiga`.
 
 [[expose-taiga-other]]
 === Other methods to expose Taiga
 
 .Caddy server
-It's possible to serve Taiga with Caddy as well, following the next guides:
+It's possible to serve Taiga (in a subdomain) with Caddy as well, following the next guides:
 
 - install caddy >= 2.4.1
 - create a symlink from `media` to `_protected`
