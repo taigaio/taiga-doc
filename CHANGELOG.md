@@ -2,6 +2,10 @@
 
 ## 6.3.0 (unreleased)
 
+- ...
+
+## 6.2.2 (2021-07-15)
+
 - Improve documentation about login with Github and Gitlab
 
 ## 6.2.1 (2021-06-22)
