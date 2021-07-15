@@ -218,38 +218,48 @@ If you want to allow a public register, configure this variable to "True". By de
 .Github settings
 
 Used for login with Github.
-Get these in your profile https://github.com/settings/apps or in your organization profile https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications
 
-**Note** `ENABLE_GITHUB_AUTH` and `GITHUB_CLIENT_ID` should have the same value in `taiga-back` and `taiga-front` services.
+Follow the link:https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app[documentation] in Github, when save application Github displays the ID and Secret.
 
+Set variables in docker-compose.yml:
+
+**Note** `ENABLE_GITHUB_AUTH` and `GITHUB_API_CLIENT_ID / GITHUB_CLIENT_ID` should have the same value in `taiga-back` and `taiga-front` services.
+
+**Service: taiga-back**
 [source, bash]
 ----
 ENABLE_GITHUB_AUTH: "True"
-GITHUB_API_CLIENT_ID: "github-api-client-id"
-GITHUB_API_CLIENT_SECRET: "github-api-client-secret"
+GITHUB_API_CLIENT_ID: "github-client-id"
+GITHUB_API_CLIENT_SECRET: "github-client-secret"
+PUBLIC_REGISTER_ENABLED: "True"
 ----
 
 **Service: taiga-front**
 [source, bash]
 ----
 ENABLE_GITHUB_AUTH: "true"
-GITHUB_API_CLIENT_ID: "github-api-client-id"
+GITHUB_CLIENT_ID: "github-client-id"
+PUBLIC_REGISTER_ENABLED: "true"
 ----
 
 .Gitlab settings
 
 Used for login with GitLab.
-Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications
 
-**Note** `ENABLE_GITLAB_AUTH`, `GITLAB_CLIENT_ID` and `GITLAB_URL` should have the same value in `taiga-back` and `taiga-front` services.
+Follow the link:https://docs.gitlab.com/ee/integration/oauth_provider.html[documentation] in Gitlab, when save application GitLab displays the ID and Secret.
+
+Set variables in docker-compose.yml:
+
+**Note** `ENABLE_GITLAB_AUTH`, `GITLAB_API_CLIENT_ID / GITLAB_CLIENT_ID` and `GITLAB_URL` should have the same value in `taiga-back` and `taiga-front` services.
 
 **Service: taiga-back**
 [source, bash]
 ----
 ENABLE_GITLAB_AUTH: "True"
-GITLAB_API_CLIENT_ID: "gitlab-api-client-id"
-GITLAB_API_CLIENT_SECRET: "gitlab-api-client-secret"
+GITLAB_API_CLIENT_ID: "gitlab-client-id"
+GITLAB_API_CLIENT_SECRET: "gitlab-client-secret"
 GITLAB_URL: "gitlab-url"
+PUBLIC_REGISTER_ENABLED: "True"
 ----
 
 **Service: taiga-front**
@@ -258,6 +268,7 @@ GITLAB_URL: "gitlab-url"
 ENABLE_GITLAB_AUTH: "true"
 GITLAB_CLIENT_ID: "gitlab-client-id"
 GITLAB_URL: "gitlab-url"
+PUBLIC_REGISTER_ENABLED: "true"
 ----
 
 .Slack Settings
