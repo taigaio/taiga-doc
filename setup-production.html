@@ -746,15 +746,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p>More info about those variables can be found [here](<a class="bare" href="https://docs.djangoproject.com/en/3.1/ref/settings/#csrf-cookie-secure">https://docs.djangoproject.com/en/3.1/ref/settings/#csrf-cookie-secure</a>).</p>
-</div>
-<div class="paragraph">
-<p><strong>Service: taiga-back</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>SESSION_COOKIE_SECURE: <span class="tok-s2">&quot;False&quot;</span>&#x000A;CSRF_COOKIE_SECURE: <span class="tok-s2">&quot;False&quot;</span></code></pre>
-</div>
+<p>More info about those variables can be found <a href="https://docs.djangoproject.com/en/3.1/ref/settings/#csrf-cookie-secure">here</a>.</p>
 </div>
 <div class="paragraph">
 <div class="title">Email Settings</div>
@@ -873,39 +865,23 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 <div class="paragraph">
 <div class="title">Github settings</div>
-<p>Used for login with Github.
-Get these in your profile <a class="bare" href="https://github.com/settings/apps">https://github.com/settings/apps</a> or in your organization profile <a class="bare" href="https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications">https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications</a></p>
+<p>Used for login with Github.</p>
 </div>
 <div class="paragraph">
-<p><strong>Note</strong> <code>ENABLE_GITHUB_AUTH</code> and <code>GITHUB_CLIENT_ID</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITHUB_AUTH: <span class="tok-s2">&quot;True&quot;</span>&#x000A;GITHUB_API_CLIENT_ID: <span class="tok-s2">&quot;github-api-client-id&quot;</span>&#x000A;GITHUB_API_CLIENT_SECRET: <span class="tok-s2">&quot;github-api-client-secret&quot;</span></code></pre>
-</div>
+<p>Follow the <a href="https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app">documentation</a> in Github, when save application Github displays the ID and Secret.</p>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-front</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITHUB_AUTH: <span class="tok-s2">&quot;true&quot;</span>&#x000A;GITHUB_API_CLIENT_ID: <span class="tok-s2">&quot;github-api-client-id&quot;</span></code></pre>
-</div>
+<p>Set variables in docker-compose.yml:</p>
 </div>
 <div class="paragraph">
-<div class="title">Gitlab settings</div>
-<p>Used for login with GitLab.
-Get these in your profile <a class="bare" href="https://{YOUR-GITLAB}/profile/applications">https://{YOUR-GITLAB}/profile/applications</a> or in your organization profile <a class="bare" href="https://{YOUR-GITLAB}/admin/applications">https://{YOUR-GITLAB}/admin/applications</a></p>
-</div>
-<div class="paragraph">
-<p><strong>Note</strong> <code>ENABLE_GITLAB_AUTH</code>, <code>GITLAB_CLIENT_ID</code> and <code>GITLAB_URL</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p>
+<p><strong>Note</strong> <code>ENABLE_GITHUB_AUTH</code> and <code>GITHUB_API_CLIENT_ID / GITHUB_CLIENT_ID</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p>
 </div>
 <div class="paragraph">
 <p><strong>Service: taiga-back</strong></p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITLAB_AUTH: <span class="tok-s2">&quot;True&quot;</span>&#x000A;GITLAB_API_CLIENT_ID: <span class="tok-s2">&quot;gitlab-api-client-id&quot;</span>&#x000A;GITLAB_API_CLIENT_SECRET: <span class="tok-s2">&quot;gitlab-api-client-secret&quot;</span>&#x000A;GITLAB_URL: <span class="tok-s2">&quot;gitlab-url&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITHUB_AUTH: <span class="tok-s2">&quot;True&quot;</span>&#x000A;GITHUB_API_CLIENT_ID: <span class="tok-s2">&quot;github-client-id&quot;</span>&#x000A;GITHUB_API_CLIENT_SECRET: <span class="tok-s2">&quot;github-client-secret&quot;</span>&#x000A;PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;True&quot;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -913,7 +889,36 @@ Get these in your profile <a class="bare" href="https://{YOUR-GITLAB}/profile/ap
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITLAB_AUTH: <span class="tok-s2">&quot;true&quot;</span>&#x000A;GITLAB_CLIENT_ID: <span class="tok-s2">&quot;gitlab-client-id&quot;</span>&#x000A;GITLAB_URL: <span class="tok-s2">&quot;gitlab-url&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITHUB_AUTH: <span class="tok-s2">&quot;true&quot;</span>&#x000A;GITHUB_CLIENT_ID: <span class="tok-s2">&quot;github-client-id&quot;</span>&#x000A;PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;true&quot;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">Gitlab settings</div>
+<p>Used for login with GitLab.</p>
+</div>
+<div class="paragraph">
+<p>Follow the <a href="https://docs.gitlab.com/ee/integration/oauth_provider.html">documentation</a> in Gitlab, when save application GitLab displays the ID and Secret.</p>
+</div>
+<div class="paragraph">
+<p>Set variables in docker-compose.yml:</p>
+</div>
+<div class="paragraph">
+<p><strong>Note</strong> <code>ENABLE_GITLAB_AUTH</code>, <code>GITLAB_API_CLIENT_ID / GITLAB_CLIENT_ID</code> and <code>GITLAB_URL</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p>
+</div>
+<div class="paragraph">
+<p><strong>Service: taiga-back</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITLAB_AUTH: <span class="tok-s2">&quot;True&quot;</span>&#x000A;GITLAB_API_CLIENT_ID: <span class="tok-s2">&quot;gitlab-client-id&quot;</span>&#x000A;GITLAB_API_CLIENT_SECRET: <span class="tok-s2">&quot;gitlab-client-secret&quot;</span>&#x000A;GITLAB_URL: <span class="tok-s2">&quot;gitlab-url&quot;</span>&#x000A;PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;True&quot;</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Service: taiga-front</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITLAB_AUTH: <span class="tok-s2">&quot;true&quot;</span>&#x000A;GITLAB_CLIENT_ID: <span class="tok-s2">&quot;gitlab-client-id&quot;</span>&#x000A;GITLAB_URL: <span class="tok-s2">&quot;gitlab-url&quot;</span>&#x000A;PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;true&quot;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1666,7 +1671,7 @@ Stop the developtment server (Ctrl+C) before continuing.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-06-22 12:42:51 +0200
+Last updated 2021-07-15 17:35:56 +0200
 </div>
 </div>
 </div>
