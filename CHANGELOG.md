@@ -2,7 +2,7 @@
 
 ## 6.3.0 (unreleased)
 
-- ...
+- New Auth module, add /api/v1/auth/refresh API endpoint (history #tg-4625, issue #tgg-626))
 
 ## 6.2.2 (2021-07-15)
 
