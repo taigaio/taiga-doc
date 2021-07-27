@@ -6,6 +6,10 @@ include::../login/normal-login.adoc[]
 === Github login
 include::../login/github-login.adoc[]
 
+[[auth-refresh]]
+=== Refresh auth token
+include::../login/refresh.adoc[]
+
 [[auth-public-registry]]
 === Public registry
 include::../login/public-registry.adoc[]

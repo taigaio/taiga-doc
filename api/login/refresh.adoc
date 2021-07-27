@@ -1,0 +1,7 @@
+To refresh the auth token send a POST request containing the following data:
+
+- *refresh* (required): the refresh token
+
+include::../generated/refresh-cmd.adoc[]
+
+When the refresh is successful, the HTTP response is a 200 OK and the response body is a JSON link:#object-auth-refresh-detail[refresh token detail object]

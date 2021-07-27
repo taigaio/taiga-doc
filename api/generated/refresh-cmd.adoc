@@ -1,0 +1,10 @@
+
+[source,bash]
+----
+curl -X POST \
+-H "Content-Type: application/json" \
+-d '{
+        "refresh": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYyNzI5OTQzMiwianRpIjoiMmNkMmNhNzQwYjRiNGZkNzk0ZDlmMDlmNWYwNzAwMTkiLCJ1c2VyX2lkIjo1fQ.vez_-n6y9yQo2uFgXTPB5YdJHFKUIAsCrNVJ29_T3wM"
+    }' \
+-s http://localhost:8000/api/v1/auth/refresh
+----

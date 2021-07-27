@@ -71,6 +71,8 @@ fi
 AUTH_TOKEN=$( echo ${USER_AUTH_DETAIL} | grep -Po '"auth_token":.*?[^\\]",' | cut -d\" -f4 )
 ----
 
+This token has an expiration time so you must update it with a link:#auth-normal-login[refresh API call].
+
 
 ==== Application token authentication
 

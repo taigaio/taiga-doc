@@ -352,6 +352,10 @@ include::generated/users-contacts-output.adoc[]
 ===  User authentication-detail
 include::generated/normal-login-output.adoc[]
 
+[[object-auth-refresh-detail]]
+===  Refresh authentication code
+include::generated/refresh-output.adoc[]
+
 [[object-user-stats-detail]]
 ===  User stats detail
 include::generated/users-stats-output.adoc[]
