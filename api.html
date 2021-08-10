@@ -10,7 +10,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <![endif]-->
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="Asciidoctor 2.0.15" name="generator">
+<meta content="Asciidoctor 2.0.10" name="generator">
 <title>Taiga REST API</title>
 <style>/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment @import statement to use as custom stylesheet */
@@ -51,7 +51,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 *,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -66,8 +66,10 @@ img{-ms-interpolation-mode:bicubic}
 img,object,svg{display:inline-block;vertical-align:middle}
 textarea{height:auto;min-height:50px}
 select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
 .subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
-div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
 a{color:#2156a5;text-decoration:underline;line-height:inherit}
 a:hover,a:focus{color:#1d4b8f}
 a img{border:0}
@@ -98,28 +100,28 @@ dl dd{margin-bottom:1.25em}
 abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
 abbr{text-transform:none}
 blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
 blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
 @media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
 h1{font-size:2.75em}
 h2{font-size:2.3125em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
 h4{font-size:1.4375em}}
-table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede;word-wrap:normal}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
 table thead,table tfoot{background:#f7f8f7}
 table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
 table tr.even,table tr.alt{background:#f8f8f7}
-table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
-.center{margin-left:auto;margin-right:auto}
-.stretch{width:100%}
 .clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
 .clearfix::after,.float-group::after{clear:both}
-:not(pre).nobreak{word-wrap:normal}
-:not(pre).nowrap{white-space:nowrap}
-:not(pre).pre-wrap{white-space:pre-wrap}
-:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
 pre>code{display:block}
@@ -184,7 +186,7 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
 #content #toc>:first-child{margin-top:0}
 #content #toc>:last-child{margin-bottom:0}
-#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
 #footer-text{color:rgba(255,255,255,.8);line-height:1.44}
 #content{margin-bottom:.625em}
 .sect1{padding-bottom:.625em}
@@ -207,7 +209,7 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 .admonitionblock>table td.icon{text-align:center;width:80px}
 .admonitionblock>table td.icon img{max-width:none}
 .admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
-.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
 .exampleblock>.content>:first-child{margin-top:0}
@@ -217,7 +219,7 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 .sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
 .exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
-.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
@@ -262,21 +264,22 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
 .quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
-.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
 p.tableblock:last-child{margin-bottom:0}
-td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
 td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
 table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
-table.grid-all>*>tr>*{border-width:1px}
-table.grid-cols>*>tr>*{border-width:0 1px}
-table.grid-rows>*>tr>*{border-width:1px 0}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
 table.frame-all{border-width:1px}
-table.frame-ends{border-width:1px 0}
 table.frame-sides{border-width:0 1px}
-table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
-table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
-table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
-table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
 table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
 th.halign-left,td.halign-left{text-align:left}
 th.halign-right,td.halign-right{text-align:right}
@@ -285,7 +288,7 @@ th.valign-top,td.valign-top{vertical-align:top}
 th.valign-bottom,td.valign-bottom{vertical-align:bottom}
 th.valign-middle,td.valign-middle{vertical-align:middle}
 table thead th,table tfoot th{font-weight:bold}
-tbody tr th{background:#f7f8f7}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
 tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
 p.tableblock>code:only-child{background:none;padding:0}
 p.tableblock{font-size:1em}
@@ -314,7 +317,6 @@ ol.lowergreek{list-style-type:lower-greek}
 .hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
 td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
 td.hdlist1{font-weight:bold;padding-bottom:1.25em}
-td.hdlist2{word-wrap:anywhere}
 .literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
 .colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
 .colist td:not([class]):first-child img{max-width:none}
@@ -387,7 +389,7 @@ a span.icon>.fa{cursor:inherit}
 .admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
 .admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
 .admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
-.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:50%;border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
 .conum[data-value] *{color:#fff!important}
 .conum[data-value]+b{display:none}
 .conum[data-value]::after{content:attr(data-value)}
@@ -414,7 +416,6 @@ thead{display:table-header-group}
 svg{max-width:100%}
 p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
 h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
-#header,#content,#footnotes,#footer{max-width:none}
 #toc,.sidebarblock,.exampleblock>.content{background:none!important}
 #toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
 body.book #header{text-align:center}
@@ -703,10 +704,13 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 <a href="#auth-github-login">3.2. Github login</a>
 </li>
 <li>
-<a href="#auth-public-registry">3.3. Public registry</a>
+<a href="#auth-refresh">3.3. Refresh auth token</a>
 </li>
 <li>
-<a href="#auth-private-registry">3.4. Private registry</a>
+<a href="#auth-public-registry">3.4. Public registry</a>
+</li>
+<li>
+<a href="#auth-private-registry">3.5. Private registry</a>
 </li>
 </ul>
 </div>
@@ -2015,13 +2019,16 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 <a href="#object-auth-user-detail">47.7. User authentication-detail</a>
 </li>
 <li>
-<a href="#object-user-stats-detail">47.8. User stats detail</a>
+<a href="#object-auth-refresh-detail">47.8. Refresh authentication code</a>
 </li>
 <li>
-<a href="#object-search-results-detail">47.9. Search results detail</a>
+<a href="#object-user-stats-detail">47.9. User stats detail</a>
 </li>
 <li>
-<a href="#object-user-storage-detail">47.10. User storage data</a>
+<a href="#object-search-results-detail">47.10. Search results detail</a>
+</li>
+<li>
+<a href="#object-user-storage-detail">47.11. User storage data</a>
 </li>
 </ul>
 </div>
@@ -2393,6 +2400,9 @@ instead of  <em><a class="bare" href="http://localhost:8000/api/v1">http://local
 <pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">AUTH_TOKEN</span><span class="tok-o">=</span><span class="tok-k">$(</span> <span class="tok-nb">echo</span> <span class="tok-si">${</span><span class="tok-nv">USER_AUTH_DETAIL</span><span class="tok-si">}</span> <span class="tok-p">|</span> grep -Po <span class="tok-s1">&#39;&quot;auth_token&quot;:.*?[^\\]&quot;,&#39;</span> <span class="tok-p">|</span> cut -d<span class="tok-se">\&quot;</span> -f4 <span class="tok-k">)</span></code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>This token has an expiration time so you must update it with a <a href="#auth-normal-login">refresh API call</a>.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_application_token_authentication">1.1.2. Application token authentication</h4>
@@ -2648,6 +2658,11 @@ limit.</p>
   <td class="tableblock halign-left valign-top"><p class="tableblock">/api/v1/auth</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">POST</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#auth-normal-login">Login</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">/api/v1/auth/refresh</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">POST</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#auth-refresh">Refresh auth token</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">/api/v1/auth/register</p></td>
@@ -5400,7 +5415,28 @@ Developers - API - OAuth - Web Application Flow</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="auth-public-registry">3.3. Public registry</h3>
+<h3 id="auth-refresh">3.3. Refresh auth token</h3>
+<div class="paragraph">
+<p>To refresh the auth token send a POST request containing the following data:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>refresh</strong> (required): the refresh token</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>curl -X POST <span class="tok-se">\</span>&#x000A;-H <span class="tok-s2">&quot;Content-Type: application/json&quot;</span> <span class="tok-se">\</span>&#x000A;-d <span class="tok-s1">&#39;{</span>&#x000A;<span class="tok-s1">        &quot;refresh&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYyNzI5OTQzMiwianRpIjoiMmNkMmNhNzQwYjRiNGZkNzk0ZDlmMDlmNWYwNzAwMTkiLCJ1c2VyX2lkIjo1fQ.vez_-n6y9yQo2uFgXTPB5YdJHFKUIAsCrNVJ29_T3wM&quot;</span>&#x000A;<span class="tok-s1">    }&#39;</span> <span class="tok-se">\</span>&#x000A;-s http://localhost:8000/api/v1/auth/refresh</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When the refresh is successful, the HTTP response is a 200 OK and the response body is a JSON <a href="#object-auth-refresh-detail">refresh token detail object</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="auth-public-registry">3.4. Public registry</h3>
 <div class="paragraph">
 <p>To register a user without invitation send a POST request containing the following data:</p>
 </div>
@@ -5436,7 +5472,7 @@ Developers - API - OAuth - Web Application Flow</a>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="auth-private-registry">3.4. Private registry</h3>
+<h3 id="auth-private-registry">3.5. Private registry</h3>
 <div class="paragraph">
 <p>To add a user into a project via invitation send a POST request containing the following data:</p>
 </div>
@@ -12727,12 +12763,20 @@ This API will only work if your instance has system stats enabled
 <h3 id="object-auth-user-detail">47.7. User authentication-detail</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="json"><span></span><span class="tok-p">{</span>&#x000A;    <span class="tok-nt">&quot;accepted_terms&quot;</span><span class="tok-p">:</span> <span class="tok-kc">true</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;auth_token&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxNn0:1jrHFG:QR38NU7tHvPzl_s7BvgWEgnoxIc&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;big_photo&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;bio&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;color&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;#c9f5fe&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;date_joined&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;2020-07-03T08:40:29.738Z&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;email&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;test-register@email.com&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;full_name&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;test&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;full_name_display&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;test&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;gravatar_id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;1ec29e4d0732b571e9a975e258a7e9b5&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">16</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;is_active&quot;</span><span class="tok-p">:</span> <span class="tok-kc">true</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;lang&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;max_memberships_private_projects&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;max_memberships_public_projects&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;max_private_projects&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;max_public_projects&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;photo&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;read_new_terms&quot;</span><span class="tok-p">:</span> <span class="tok-kc">false</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;roles&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>&#x000A;        <span class="tok-s2">&quot;Front&quot;</span>&#x000A;    <span class="tok-p">],</span>&#x000A;    <span class="tok-nt">&quot;theme&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;timezone&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;total_private_projects&quot;</span><span class="tok-p">:</span> <span class="tok-mi">0</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;total_public_projects&quot;</span><span class="tok-p">:</span> <span class="tok-mi">0</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;username&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;test-username&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;uuid&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;c30015cc735e4b33b008139b58f13791&quot;</span>&#x000A;<span class="tok-p">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="json"><span></span><span class="tok-p">{</span>&#x000A;    <span class="tok-nt">&quot;accepted_terms&quot;</span><span class="tok-p">:</span> <span class="tok-kc">true</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;auth_token&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxNn0:1jrHFG:QR38NU7tHvPzl_s7BvgWEgnoxIc&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;big_photo&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;bio&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;color&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;#c9f5fe&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;date_joined&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;2020-07-03T08:40:29.738Z&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;email&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;test-register@email.com&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;full_name&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;test&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;full_name_display&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;test&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;gravatar_id&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;1ec29e4d0732b571e9a975e258a7e9b5&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">16</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;is_active&quot;</span><span class="tok-p">:</span> <span class="tok-kc">true</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;lang&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;max_memberships_private_projects&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;max_memberships_public_projects&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;max_private_projects&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;max_public_projects&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;photo&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;read_new_terms&quot;</span><span class="tok-p">:</span> <span class="tok-kc">false</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;refresh&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYyNzI5OTQzMiwianRpIjoiMmNkMmNhNzQwYjRiNGZkNzk0ZDlmMDlmNWYwNzAwMTkiLCJ1c2VyX2lkIjo1fQ.vez_-n6y9yQo2uFgXTPB5YdJHFKUIAsCrNVJ29_T3wM&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;roles&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>&#x000A;        <span class="tok-s2">&quot;Front&quot;</span>&#x000A;    <span class="tok-p">],</span>&#x000A;    <span class="tok-nt">&quot;theme&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;timezone&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;total_private_projects&quot;</span><span class="tok-p">:</span> <span class="tok-mi">0</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;total_public_projects&quot;</span><span class="tok-p">:</span> <span class="tok-mi">0</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;username&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;test-username&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;uuid&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;c30015cc735e4b33b008139b58f13791&quot;</span>&#x000A;<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="object-user-stats-detail">47.8. User stats detail</h3>
+<h3 id="object-auth-refresh-detail">47.8. Refresh authentication code</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="json"><span></span><span class="tok-p">{</span>&#x000A;    <span class="tok-nt">&quot;auth_token&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;eyJ1c2VyX2F1dGhlbnRpY2F0aW9uX2lkIjoxNn0:1jrHFF:0lezpY0AUIQ0klewdxTHXjRPAdA&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;refresh&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTYyNzI5OTQzMiwianRpIjoiMmNkMmNhNzQwYjRiNGZkNzk0ZDlmMDlmNWYwNzAwMTkiLCJ1c2VyX2lkIjo1fQ.vez_-n6y9yQo2uFgXTPB5YdJHFKUIAsCrNVJ29_T3wM&quot;</span>&#x000A;<span class="tok-p">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="object-user-stats-detail">47.9. User stats detail</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="json"><span></span><span class="tok-p">{</span>&#x000A;    <span class="tok-nt">&quot;roles&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>&#x000A;        <span class="tok-s2">&quot;Design&quot;</span><span class="tok-p">,</span>&#x000A;        <span class="tok-s2">&quot;Front&quot;</span><span class="tok-p">,</span>&#x000A;        <span class="tok-s2">&quot;UX&quot;</span><span class="tok-p">,</span>&#x000A;        <span class="tok-s2">&quot;Product Owner&quot;</span>&#x000A;    <span class="tok-p">],</span>&#x000A;    <span class="tok-nt">&quot;total_num_closed_userstories&quot;</span><span class="tok-p">:</span> <span class="tok-mi">2</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;total_num_contacts&quot;</span><span class="tok-p">:</span> <span class="tok-mi">11</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;total_num_projects&quot;</span><span class="tok-p">:</span> <span class="tok-mi">11</span>&#x000A;<span class="tok-p">}</span></code></pre>
@@ -12740,7 +12784,7 @@ This API will only work if your instance has system stats enabled
 </div>
 </div>
 <div class="sect2">
-<h3 id="object-search-results-detail">47.9. Search results detail</h3>
+<h3 id="object-search-results-detail">47.10. Search results detail</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="json"><span></span><span class="tok-p">{</span>&#x000A;    <span class="tok-nt">&quot;count&quot;</span><span class="tok-p">:</span> <span class="tok-mi">31</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;epics&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">15</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">2</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">65</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Experimental: modular file types&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">15</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">64</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">4</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Added file copying and processing of images (resizing)&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">6</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">6</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">69</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">2</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Experimental: modular file types&quot;</span>&#x000A;        <span class="tok-p">}</span>&#x000A;    <span class="tok-p">],</span>&#x000A;    <span class="tok-nt">&quot;issues&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">14</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">20</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">61</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">7</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Fixing templates for Django 1.6.&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">9</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">42</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Migrate to Python 3 and milk a beautiful cow&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">13</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">54</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">6</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Create testsuite with matrix builds&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">12</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">14</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">55</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">6</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Create the html template&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">3</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">44</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">4</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Patching subject&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">12</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">10</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">51</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">6</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Experimental: modular file types&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">8</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">12</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">53</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">7</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Add setting to allow regular users to create folders at the root level.&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">6</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">8</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">49</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">7</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Lighttpd x-sendfile support&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">9</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">50</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">3</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Create testsuite with matrix builds&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">12</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">6</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">47</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">2</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Implement the form&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">2</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">43</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Added file copying and processing of images (resizing)&quot;</span>&#x000A;        <span class="tok-p">}</span>&#x000A;    <span class="tok-p">],</span>&#x000A;    <span class="tok-nt">&quot;tasks&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">6</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">15</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">20</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">4</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Added file copying and processing of images (resizing)&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">6</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">4</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">2</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Experimental: modular file types&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">7</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Fixing templates for Django 1.6.&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">15</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">8</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">11</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Create testsuite with matrix builds&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">7</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">7</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">9</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;get_actions() does not check for &#39;delete_selected&#39; in actions&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;assigned_to&quot;</span><span class="tok-p">:</span> <span class="tok-mi">14</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">24</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">33</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">3</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Lighttpd support&quot;</span>&#x000A;        <span class="tok-p">}</span>&#x000A;    <span class="tok-p">],</span>&#x000A;    <span class="tok-nt">&quot;userstories&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">12</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_name&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_slug&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">36</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;get_actions() does not check for &#39;delete_selected&#39; in actions&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;total_points&quot;</span><span class="tok-p">:</span> <span class="tok-mf">31.0</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">10</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_name&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_slug&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">34</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">4</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Experimental: modular file types&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;total_points&quot;</span><span class="tok-p">:</span> <span class="tok-mf">18.0</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">4</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_name&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Sprint 2020-5-23&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_slug&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;sprint-2020-5-23&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">13</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">3</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Support for bulk actions&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;total_points&quot;</span><span class="tok-p">:</span> <span class="tok-mf">110.0</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">8</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_name&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Sprint 2020-5-23&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_slug&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;sprint-2020-5-23&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">30</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Add setting to allow regular users to create folders at the root level.&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;total_points&quot;</span><span class="tok-p">:</span> <span class="tok-mf">25.0</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">16</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_name&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_slug&quot;</span><span class="tok-p">:</span> <span class="tok-kc">null</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">40</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">3</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Added file copying and processing of images (resizing)&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;total_points&quot;</span><span class="tok-p">:</span> <span class="tok-mf">10.0</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_name&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Sprint 2020-5-8&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;milestone_slug&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;sprint-2020-5-8&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;ref&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;status&quot;</span><span class="tok-p">:</span> <span class="tok-mi">4</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;subject&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Patching subject&quot;</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;total_points&quot;</span><span class="tok-p">:</span> <span class="tok-mf">44.0</span>&#x000A;        <span class="tok-p">}</span>&#x000A;    <span class="tok-p">],</span>&#x000A;    <span class="tok-nt">&quot;wikipages&quot;</span><span class="tok-p">:</span> <span class="tok-p">[</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">5</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;slug&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;amet&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">4</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;slug&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;fugit-sint&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">2</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;slug&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;numquam&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">3</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;slug&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;perspiciatis&quot;</span>&#x000A;        <span class="tok-p">},</span>&#x000A;        <span class="tok-p">{</span>&#x000A;            <span class="tok-nt">&quot;id&quot;</span><span class="tok-p">:</span> <span class="tok-mi">1</span><span class="tok-p">,</span>&#x000A;            <span class="tok-nt">&quot;slug&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;home&quot;</span>&#x000A;        <span class="tok-p">}</span>&#x000A;    <span class="tok-p">]</span>&#x000A;<span class="tok-p">}</span></code></pre>
@@ -12748,7 +12792,7 @@ This API will only work if your instance has system stats enabled
 </div>
 </div>
 <div class="sect2">
-<h3 id="object-user-storage-detail">47.10. User storage data</h3>
+<h3 id="object-user-storage-detail">47.11. User storage data</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="pygments highlight"><code data-lang="json"><span></span><span class="tok-p">{</span>&#x000A;    <span class="tok-nt">&quot;created_date&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;2020-07-03T08:40:53.885Z&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;key&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;favorite-forest&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;modified_date&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;2020-07-03T08:40:53.921Z&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;value&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;Russian Taiga&quot;</span>&#x000A;<span class="tok-p">}</span></code></pre>
@@ -13522,7 +13566,7 @@ API endpoints, and has its own documentation.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-07-15 17:36:00 +0200
+Last updated 2021-08-10 08:51:42 +0200
 </div>
 </div>
 </div>
