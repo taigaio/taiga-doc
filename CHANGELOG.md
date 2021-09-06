@@ -4,10 +4,13 @@
 
 - ...
 
+## 6.4.0 (2021-09-06)
+
+- Serve Taiga in subpath
+
 ## 6.3.0 (2021-08-10)
 
 - New Auth module, add /api/v1/auth/refresh API endpoint (history #tg-4625, issue #tgg-626)
-- Serve Taiga in subpath
 
 ## 6.2.2 (2021-07-15)
 
