@@ -1093,7 +1093,7 @@ server {
 
     # Frontend
     location / {
-        alias /home/taiga/taiga-front-dist/;
+        alias /home/taiga/taiga-front-dist/dist/;
         index index.html;
         try_files $uri $uri/ index.html =404;
     }
@@ -1187,7 +1187,7 @@ server {
 
     # Frontend
     location /taiga/ {
-        alias /home/taiga/taiga-front-dist/;
+        alias /home/taiga/taiga-front-dist/dist/;
         index index.html;
         try_files $uri $uri/ index.html =404;
     }
