@@ -35,9 +35,9 @@ C compiler and development headers.
 
 [source,bash]
 ----
-sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
-sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
-sudo apt-get install -y automake libtool libffi-dev libssl-dev curl git tmux gettext
+apt install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
+apt install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
+apt install -y automake libtool libffi-dev libssl-dev curl git tmux gettext
 ----
 
 === Setup a database
@@ -48,8 +48,8 @@ Install postgresql:
 
 [source,bash]
 ----
-sudo apt-get install -y postgresql postgresql-contrib
-sudo apt-get install -y postgresql-doc postgresql-server-dev-all
+apt install -y postgresql postgresql-contrib
+apt install -y postgresql-doc postgresql-server-dev-all
 ----
 
 And setup the initial user, database, and permissions:
@@ -69,8 +69,8 @@ libraries. As a first step, start installing python:
 
 [source,bash]
 ----
-sudo apt-get install -y python3 python3-pip python3-virtualenv python-dev python3-dev python-pip python-virtualenv
-sudo apt-get install libxml2-dev libxslt-dev
+apt install -y python3 python3-pip python3-virtualenv python-dev python3-dev python-pip python-virtualenv
+apt install libxml2-dev libxslt-dev
 ----
 
 [NOTE]
@@ -163,7 +163,7 @@ Install `rabbitmq-server` and `redis-server`:
 
 [source,bash]
 ----
-sudo apt-get install -y rabbitmq-server redis-server
+apt install -y rabbitmq-server redis-server
 ----
 
 To run celery with Taiga you have to include the following line in your local.py:
@@ -195,7 +195,7 @@ Otherwise, you must build Python 3.6 from source (see https://www.python.org/dow
 When building from source, if the bz2 development libraries are not already present on your system, then you must first:
 [source,bash]
 ----
-sudo apt-get install libbz2-dev
+apt install libbz2-dev
 ----
 Or else Python will build without the bz2 module necessary for some pip installed requirements.
 
@@ -204,7 +204,7 @@ the official Postgresql apt repositories, however:
 [source,bash]
 ----
 echo "deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main" | sudo tee -a /etc/apt/sources.list
-sudo apt-get update
+apt update
 ----
 
 
@@ -228,7 +228,7 @@ NodeJS is used to execute **gulp**, a task execution tool used mainly for execut
 .Install nodejs
 [source,bash]
 ----
-sudo apt-get install -y nodejs npm
+apt install -y nodejs npm
 ----
 
 .Make sure your bash responds to the node command to have a smooth installation of gulp
@@ -276,12 +276,12 @@ echo "deb http://ftp.us.debian.org/debian wheezy-backports main" | sudo tee -a /
 Then, after a:
 [source,bash]
 ----
-sudo apt-get update
+apt update
 ----
 You can:
 [source,bash]
 ----
-sudo apt-get install nodejs
+apt install nodejs
 ----
 
 Note that Debian installs the executable as nodejs not node, so you will need to provide this alias by issuing the following command:

@@ -27,7 +27,7 @@ To provide an example, the following can be used within a Bash script running on
 
 [source,bash]
 ----
-$ sudo apt-get install jq
+$ apt install jq
 ----
 
 - Bash snippet:

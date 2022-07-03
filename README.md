@@ -130,7 +130,7 @@ For notifications to work properly:
 
 For example, on a Debian-based system:
 
-    $ sudo apt-get install libnotify-bin
+    $ apt install libnotify-bin
 
 Or in Arch
 
