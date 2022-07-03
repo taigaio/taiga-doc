@@ -583,11 +583,11 @@ Install the following dependencies:
 [source,bash]
 ----
 apt update
-apt install build-essential binutils-doc autoconf flex bison libjpeg-dev -y
-apt install libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev -y
-apt install automake libtool curl git tmux gettext -y
-apt install nginx -y
-apt install rabbitmq-server -y
+apt install build-essential binutils-doc autoconf flex bison libjpeg-dev \
+    libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev \
+    automake libtool curl git tmux gettext \
+    nginx \
+    rabbitmq-server -y
 ----
 
 Install PostgreSQL and remember to start the database server:
