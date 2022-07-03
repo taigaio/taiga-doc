@@ -35,9 +35,9 @@ C compiler and development headers.
 
 [source,bash]
 ----
-apt install build-essential binutils-doc autoconf flex bison libjpeg-dev -y
-apt install libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev -y
-apt install automake libtool libffi-dev libssl-dev curl git tmux gettext -y
+apt install build-essential binutils-doc autoconf flex bison libjpeg-dev \
+    libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev \
+    automake libtool libffi-dev libssl-dev curl git tmux gettext -y
 ----
 
 === Setup a database
