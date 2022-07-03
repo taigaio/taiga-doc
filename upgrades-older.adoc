@@ -207,8 +207,8 @@ $ sudo do-release-upgrade -p
 Then you have to upgrade to the new postgres version maintaining the old data:
 [source, txt]
 ----
-$ apt install -y postgresql-9.5 postgresql-contrib-9.5
-$ apt install -y postgresql-doc-9.5 postgresql-server-dev-9.5
+$ apt install postgresql-9.5 postgresql-contrib-9.5 -y
+$ apt install postgresql-doc-9.5 postgresql-server-dev-9.5 -y
 $ sudo pg_dropcluster 9.5 main --stop
 $ sudo pg_upgradecluster 9.3 main
 $ sudo reboot

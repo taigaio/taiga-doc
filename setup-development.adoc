@@ -35,9 +35,9 @@ C compiler and development headers.
 
 [source,bash]
 ----
-apt install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
-apt install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
-apt install -y automake libtool libffi-dev libssl-dev curl git tmux gettext
+apt install build-essential binutils-doc autoconf flex bison libjpeg-dev -y
+apt install libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev -y
+apt install automake libtool libffi-dev libssl-dev curl git tmux gettext -y
 ----
 
 === Setup a database
@@ -48,8 +48,8 @@ Install postgresql:
 
 [source,bash]
 ----
-apt install -y postgresql postgresql-contrib
-apt install -y postgresql-doc postgresql-server-dev-all
+apt install postgresql postgresql-contrib -y
+apt install postgresql-doc postgresql-server-dev-all -y
 ----
 
 And setup the initial user, database, and permissions:
@@ -59,7 +59,7 @@ And setup the initial user, database, and permissions:
 sudo -u postgres psql -c "CREATE ROLE taiga LOGIN PASSWORD 'changeme';"
 sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 --template=template0
 echo 'local all taiga peer' | sudo -u postgres tee -a $(sudo -u postgres psql -t -P format=unaligned -c 'show hba_file') > /dev/null
-sudo service postgresql reload
+service postgresql reload
 ----
 
 === Setup python environment
@@ -69,7 +69,7 @@ libraries. As a first step, start installing python:
 
 [source,bash]
 ----
-apt install -y python3 python3-pip python3-virtualenv python-dev python3-dev python-pip python-virtualenv
+apt install python3 python3-pip python3-virtualenv python-dev python3-dev python-pip python-virtualenv -y
 apt install libxml2-dev libxslt-dev
 ----
 
@@ -163,7 +163,7 @@ Install `rabbitmq-server` and `redis-server`:
 
 [source,bash]
 ----
-apt install -y rabbitmq-server redis-server
+apt install rabbitmq-server redis-server -y
 ----
 
 To run celery with Taiga you have to include the following line in your local.py:
@@ -228,7 +228,7 @@ NodeJS is used to execute **gulp**, a task execution tool used mainly for execut
 .Install nodejs
 [source,bash]
 ----
-apt install -y nodejs npm
+apt install nodejs npm -y
 ----
 
 .Make sure your bash responds to the node command to have a smooth installation of gulp
@@ -247,7 +247,7 @@ sudo update-alternatives --install /usr/bin/node nodejs /usr/bin/nodejs 100
 .Install **gulp** using the recently installed npm
 [source,bash]
 ----
-sudo npm install -g gulp
+npm install -g gulp
 ----
 
 .Download the code
@@ -357,15 +357,15 @@ Taiga events needs rabbitmq (the message broker) to be installed
 .Installing rabbitmq
 [source,bash]
 ----
-sudo  apt-get install rabbitmq-server
+apt install rabbitmq-server -y
 ----
 
 .Creating a rabbitmquser named `taiga` and virtualhost for rabbitmq
 [source,bash]
 ----
-sudo rabbitmqctl add_user rabbitmquser rabbitmqpassword
-sudo rabbitmqctl add_vhost taiga
-sudo rabbitmqctl set_permissions -p taiga rabbitmquser ".*" ".*" ".*"
+rabbitmqctl add_user rabbitmquser rabbitmqpassword
+rabbitmqctl add_vhost taiga
+rabbitmqctl set_permissions -p taiga rabbitmquser ".*" ".*" ".*"
 ----
 
 .Update your taiga-back settings to include the following lines in your local.py:
@@ -389,7 +389,7 @@ cd taiga-events
 [source,bash]
 ----
 npm install
-sudo npm install -g coffee-script
+npm install -g coffee-script
 ----
 
 .Copy config.example.json to config.json and edit it to update the values for your rabbitmq uri and secret key.

@@ -583,33 +583,33 @@ Install the following dependencies:
 [source,bash]
 ----
 apt update
-apt install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
-apt install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
-apt install -y automake libtool curl git tmux gettext
-apt install -y nginx
-apt install -y rabbitmq-server
+apt install build-essential binutils-doc autoconf flex bison libjpeg-dev -y
+apt install libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev -y
+apt install automake libtool curl git tmux gettext -y
+apt install nginx -y
+apt install rabbitmq-server -y
 ----
 
 Install PostgreSQL and remember to start the database server:
 [source,bash]
 ----
-apt install -y postgresql-12 postgresql-contrib-12 postgresql-doc-12 postgresql-server-dev-12
-sudo pg_ctlcluster 12 main start
+apt install postgresql-12 postgresql-contrib-12 postgresql-doc-12 postgresql-server-dev-12 -y
+pg_ctlcluster 12 main start
 ----
 
 .Python 3 must be installed along with a few third-party libraries:
 [source,bash]
 ----
-apt install -y python3 python3-pip python3-dev python3-venv
-apt install -y libxml2-dev libxslt-dev
-apt install -y libssl-dev libffi-dev
+apt install python3 python3-pip python3-dev python3-venv -y
+apt install libxml2-dev libxslt-dev -y
+apt install libssl-dev libffi-dev -y
 ----
 
 .Install Node.js
 [source,bash]
 ----
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-apt install -y nodejs
+apt install nodejs -y
 ----
 
 === Create a user `taiga`
@@ -617,9 +617,9 @@ apt install -y nodejs
 .Create a user with root privileges named `taiga`:
 [source,bash]
 ----
-sudo adduser taiga
-sudo adduser taiga sudo
-sudo su taiga
+adduser taiga
+adduser taiga sudo
+su taiga
 cd ~
 ----
 
@@ -638,9 +638,9 @@ sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 
 .Create a rabbitmquser named `taiga` and a virtualhost for RabbitMQ (taiga-events and async tasks)
 [source,bash]
 ----
-sudo rabbitmqctl add_user rabbitmquser rabbitmqpassword
-sudo rabbitmqctl add_vhost taiga
-sudo rabbitmqctl set_permissions -p taiga rabbitmquser ".*" ".*" ".*"
+rabbitmqctl add_user rabbitmquser rabbitmqpassword
+rabbitmqctl add_vhost taiga
+rabbitmqctl set_permissions -p taiga rabbitmquser ".*" ".*" ".*"
 ----
 
 [NOTE]
@@ -929,15 +929,15 @@ Reload the systemd daemon and start the `taiga` service:
 
 [source,bash]
 ----
-sudo systemctl daemon-reload
-sudo systemctl start taiga
-sudo systemctl enable taiga
+systemctl daemon-reload
+systemctl start taiga
+systemctl enable taiga
 ----
 
 .To verify that the service is running, execute the following command:
 [source,bash]
 ----
-sudo systemctl status taiga
+systemctl status taiga
 ----
 
 [[expose-taiga-async]]
@@ -967,15 +967,15 @@ Reload the systemd daemon and start the `taiga-async` service:
 
 [source,bash]
 ----
-sudo systemctl daemon-reload
-sudo systemctl start taiga-async
-sudo systemctl enable taiga-async
+systemctl daemon-reload
+systemctl start taiga-async
+systemctl enable taiga-async
 ----
 
 .To verify that the service is running, execute the following command:
 [source,bash]
 ----
-sudo systemctl status taiga-async
+systemctl status taiga-async
 ----
 
 [[expose-taiga-events]]
@@ -1001,15 +1001,15 @@ Reload the systemd daemon and start the `taiga-events` service:
 
 [source,bash]
 ----
-sudo systemctl daemon-reload
-sudo systemctl start taiga-events
-sudo systemctl enable taiga-events
+systemctl daemon-reload
+systemctl start taiga-events
+systemctl enable taiga-events
 ----
 
 .To verify that the service is running, execute the following command:
 [source,bash]
 ----
-sudo systemctl status taiga-events
+systemctl status taiga-events
 ----
 
 [[expose-taiga-protected]]
@@ -1037,15 +1037,15 @@ Reload the systemd daemon and start the `taiga-protected` service:
 
 [source,bash]
 ----
-sudo systemctl daemon-reload
-sudo systemctl start taiga-protected
-sudo systemctl enable taiga-protected
+systemctl daemon-reload
+systemctl start taiga-protected
+systemctl enable taiga-protected
 ----
 
 .To verify that the service is running, execute the following command:
 [source,bash]
 ----
-sudo systemctl status taiga-protected
+systemctl status taiga-protected
 ----
 
 [[expose-taiga-nginx]]
@@ -1057,7 +1057,7 @@ The recommended way to serve Taiga is to use NGINX proxy server.
 .Remove the default NGINX config file to avoid collision with Taiga:
 [source,bash]
 ----
-sudo rm /etc/nginx/sites-enabled/default
+rm /etc/nginx/sites-enabled/default
 ----
 
 .Create the logs folder (mandatory)
@@ -1259,19 +1259,19 @@ server {
 .Execute the following command to verify the NGINX configuration and to track any error in the service:
 [source,bash]
 ----
-sudo nginx -t
+nginx -t
 ----
 
 Finally, restart the `nginx` service:
 [source,bash]
 ----
-sudo systemctl restart nginx
+systemctl restart nginx
 ----
 
 .Restart all Taiga services after updating the configuration:
 [source,bash]
 ----
-sudo systemctl restart 'taiga*'
+systemctl restart 'taiga*'
 ----
 
 Now you should have the service up and running on: `https://taiga.mycompany.com/` or `https://mycompany.com/taiga`.
@@ -1311,14 +1311,14 @@ With this installation, you have access to a fair amount of features of Taiga. H
 - `/home/taiga/taiga-front-dist/dist/conf.json`
 - `/home/taiga/taiga-events/.env`
 - `/home/taiga/taiga-protected/.venv`
-- The result of command `sudo systemctl status 'taiga*'`
+- The result of command `systemctl status 'taiga*'`
 
 .Execute the following commands to check the status of services used by Taiga:
 [source,bash]
 ----
-sudo systemctl status nginx
-sudo systemctl status rabbitmq-server
-sudo systemctl status postgresql
+systemctl status nginx
+systemctl status rabbitmq-server
+systemctl status postgresql
 ----
 
 Check If you see any error in the service statuses and make sure all service status is `Active: active (running)`.

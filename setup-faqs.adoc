@@ -76,14 +76,14 @@ To restart any application use the `systemctl` command:
 
 [source,bash]
 ----
-sudo systemctl restart taiga
+systemctl restart taiga
 ----
 
 And finally restart the taiga-async service:
 
 [source,bash]
 ----
-sudo systemctl restart taiga-async
+systemctl restart taiga-async
 ----
 
 

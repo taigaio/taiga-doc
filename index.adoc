@@ -10,6 +10,11 @@ image::imgs/logo.png[Taiga Agile]
 
 Version: 6 Lynx lynx
 
+[[Note]]
+== Note
+
+If you not logged in as root, you must add *sudo* bevor every operation...
+
 [[installation-guide]]
 == Installation Guide
 
