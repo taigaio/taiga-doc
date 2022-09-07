@@ -102,4 +102,4 @@ And you have to enable in your dist/conf.json in taiga-front adding it to import
 }
 ----
 
-After that, you have to configure your Jira instance to allow to connect using this certificates, you can get more information about it in https://resources.taiga.io/extend/importer-jira/
+After that, you have to configure your Jira instance to allow to connect using this certificates, you can get more information about it in https://community.taiga.io/t/migrate-from-jira-to-taiga/164

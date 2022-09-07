@@ -1295,7 +1295,7 @@ ln -s media/ _protected
 [[extend-taiga]]
 === Extend Taiga
 
-With this installation, you have access to a fair amount of features of Taiga. However, you may want to extend it with other functionalities or plugins, such Slack integration or login with Github. To extend Taiga, check all the available options at https://resources.taiga.io/extend/how-to-extend-taiga/.
+With this installation, you have access to a fair amount of features of Taiga. However, you may want to extend it with other functionalities or plugins, such Slack integration or login with Github. To extend Taiga, check all the available options at https://community.taiga.io/t/how-to-extend-taiga/160.
 
 [[troubleshooting]]
 === Troubleshooting

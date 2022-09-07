@@ -1,4 +1,4 @@
-# Taiga documentation source #
+# Taiga documentation source
 
 [![Managed with Taiga.io](https://img.shields.io/badge/managed%20with-TAIGA.io-709f14.svg)](https://tree.taiga.io/project/taiga/ "Managed with Taiga.io")
 
@@ -86,7 +86,7 @@ Now regenerate the taiga-back database with the sample data:
     $ python manage.py runserver
 
 And finally, in a new terminal, run the `generate_api_examples`
- django command:
+django command:
 
     $ cd taiga-back
     $ workon taiga
@@ -116,14 +116,16 @@ The result will appear in the `dist` directory.
 This step is optional but highly recommended in order to ease the process of editing AsciiDoc files, by rendering the HTML from the source `.adoc` file as soon as any modifications are saved - allowing for instant preview in the browser.
 
 The following instructions are based on:
-* The Asciidoctor page: [Editing AsciiDoc with Live Preview][1]
-* The Guard README: [Guard: README.md][5]
+
+- The Asciidoctor page: [Editing AsciiDoc with Live Preview][1]
+- The Guard README: [Guard: README.md][5]
 
 #### Installation
 
 If the `bundler` install completed successfully, all of the gems will already be in place (including both Guard and the shell file monitor).
 
 For notifications to work properly:
+
 > You have to install the libnotify-bin package with your favorite package manager
 >
 > -- [Guard: System notifications - Libnotify][6]
@@ -147,9 +149,9 @@ Confirm that `Guardfile` is in the base `taiga-doc` directory and then start Gua
     $ cd taiga-doc
     $ bundle exec guard
 
-* Open `index.adoc` in a text editor, make a minor modification and then save the file
-* If Guard is working properly, `dist/index.html` will be created/updated automatically
-* If `libnotify` is configured correctly, a notification will be shown confirming that `index.adoc` has been found and rendered accordingly
+- Open `index.adoc` in a text editor, make a minor modification and then save the file
+- If Guard is working properly, `dist/index.html` will be created/updated automatically
+- If `libnotify` is configured correctly, a notification will be shown confirming that `index.adoc` has been found and rendered accordingly
 
 #### Configure live preview in the browser
 
@@ -159,23 +161,23 @@ Simply use a browser that has auto-reload built-in or install a relevant browser
 
 Examples include:
 
-* [Web][3] web browser (formerly Epiphany web browser) - has built-in auto-reload functionality
-* Firefox + [Auto Reload][4] add-on
-* _[Please add other working configurations here]_
+- [Web][3] web browser (formerly Epiphany web browser) - has built-in auto-reload functionality
+- Firefox + [Auto Reload][4] add-on
+- _[Please add other working configurations here]_
 
 #### Test live preview
 
-* Open `dist/index.html` in the browser
-* As before, save a modification to `index.adoc`
-* Once Guard has rendered the new copy of `dist/index.html`, the browser will auto-reload the page
+- Open `dist/index.html` in the browser
+- As before, save a modification to `index.adoc`
+- Once Guard has rendered the new copy of `dist/index.html`, the browser will auto-reload the page
 
 #### Working with live preview
 
 Some tips/notes about working with live preview:
 
-* Position the text editor and web browser windows side-by-side (or on different screens!), save changes and see the result in the browser almost immediately
-* Changes to any of the `.adoc` files within the `api/` directory or its sub-dirs will render `dist/api.html` - since many `.adoc` files are combined to render the single HTML file, there is a slight lag in the live preview as the conversion process completes
-* Otherwise, there is a 1:1 relationship between the `.adoc` file and its rendered `.html` file - changes to these are displayed almost instantaneously
+- Position the text editor and web browser windows side-by-side (or on different screens!), save changes and see the result in the browser almost immediately
+- Changes to any of the `.adoc` files within the `api/` directory or its sub-dirs will render `dist/api.html` - since many `.adoc` files are combined to render the single HTML file, there is a slight lag in the live preview as the conversion process completes
+- Otherwise, there is a 1:1 relationship between the `.adoc` file and its rendered `.html` file - changes to these are displayed almost instantaneously
 
 ## Documentation
 
@@ -183,7 +185,7 @@ Currently, we have authored three main documentation hubs:
 
 - **[API](https://docs.taiga.io/api.html)**: Our API documentation and reference for developing from Taiga API.
 - **[Documentation](https://docs.taiga.io/)**: If you need to install Taiga on your own server, this is the place to find some guides.
-- **[Taiga Resources](https://resources.taiga.io)**: This page is intended to be the support reference page for the users.
+- **[Taiga Community](https://community.taiga.io/)**: This page is intended to be the support reference page for the users.
 
 ## Bug reports
 
@@ -206,7 +208,7 @@ If you want to be up to date about announcements of releases, important changes 
 
 ## Contribute to Taiga
 
-There are many different ways to contribute to Taiga's platform, from patches, to documentation and UI enhancements, just find the one that best fits with your skills. Check out our detailed [contribution guide](https://resources.taiga.io/extend/how-can-i-contribute)
+There are many different ways to contribute to Taiga's platform, from patches, to documentation and UI enhancements, just find the one that best fits with your skills. Check out our detailed [contribution guide](https://community.taiga.io/t/how-can-i-contribute/159)
 
 ## Code of Conduct
 
@@ -217,7 +219,6 @@ Help us keep the Taiga Community open and inclusive. Please read and follow our 
 Every code patch accepted in Taiga codebase is licensed under [MPL 2.0](LICENSE). You must be careful to not include any code that can not be licensed under this license.
 
 Please read carefully [our license](LICENSE) and ask us if you have any questions as well as the [Contribution policy](https://github.com/kaleidos-ventures/taiga-doc/blob/main/CONTRIBUTING.md).
-
 
 [1]: http://asciidoctor.org/docs/editing-asciidoc-with-live-preview/
 [2]: http://feedback.livereload.com/knowledgebase/articles/86181-failed-to-start-port-occupied

@@ -73,7 +73,7 @@ _Taiga_ has a complete REST API (the one used by the web app), check the full AP
 [[importers]]
 == Importers
 
-Checkout the documentation about how to import a project link:https://resources.taiga.io/extend/importer-github/[from Github], link:https://resources.taiga.io/extend/importer-jira/[from Jira], or link:https://resources.taiga.io/extend/importer-trello/[from Trello].
+Checkout the documentation about how to import a project link:https://community.taiga.io/t/migrate-sync-from-github-to-taiga/167[from Github], link:https://community.taiga.io/t/migrate-from-jira-to-taiga/164[from Jira], or link:https://community.taiga.io/t/migrate-from-trello-to-taiga/166[from Trello].
 
 If you're using a self-hosted _Taiga_, check the link:importers.html[documentation] to integrate them in your instance.
 
@@ -103,12 +103,12 @@ You can integrate _Taiga_ with:
 [[how-to-contribute]]
 == Contribute to Taiga
 
-Because _Taiga_ is an open source project, we gratefully accept contributions in various forms. There are many different ways to contribute to Taiga's platform, from patches, to documentation and UI enhancements, just find the one that best fits with your skills. Check out our link:https://resources.taiga.io/extend/how-can-i-contribute[detailed contribution guide] if you'd like to support Taiga.
+Because _Taiga_ is an open source project, we gratefully accept contributions in various forms. There are many different ways to contribute to Taiga's platform, from patches, to documentation and UI enhancements, just find the one that best fits with your skills. Check out our link:https://community.taiga.io/t/how-can-i-contribute/159[detailed contribution guide] if you'd like to support Taiga.
 
 [[contrib-plugins]]
 == Contrib Plugins
 
-Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of link:https://resources.taiga.io/extend/contributions[contributions] as well as a link:https://resources.taiga.io/extend/how-to-extend-taiga[detailed tutorial] on the many ways to extend Taiga.
+Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of link:https://community.taiga.io/t/how-can-i-contribute/159[contributions] as well as a link:https://community.taiga.io/t/how-to-extend-taiga/160[detailed tutorial] on the many ways to extend Taiga.
 
 [[themes]]
 == Themes
