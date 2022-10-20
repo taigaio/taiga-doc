@@ -468,7 +468,9 @@ If Taiga is being served in a **subdomain**:
 ----
 server {
   server_name taiga.mycompany.com;
-
+  
+  client_max_body_size 100M;
+  
   location / {
     proxy_set_header Host $http_host;
     proxy_set_header X-Real-IP $remote_addr;
