@@ -1,6 +1,7 @@
 = Taiga Documentation
 :toc: left
 :toclevels: 1
+:icons: font
 
 Free. Open Source. Powerful. _Taiga_ is a project management platform for startups
 and agile developers & designers who want a simple, beautiful tool that makes work
@@ -17,13 +18,17 @@ This section details everything you need to know to get _Taiga_ up and running i
 
 === Setup Production Environment with Docker [Recommended]
 
-link:setup-production.html#setup-prod-with-docker[This document contains the complete tutorial for installation with docker] of how
-to properly setup _Taiga_ for a low traffic production environment.
+link:setup-production.html#setup-prod-with-docker[This document contains the complete tutorial for installation with docker] of how to properly setup _Taiga_ for a low traffic production environment.
+
+[NOTE]
+.Previous installation guide
+====
+You can access the link:setup-production.old.html#setup-prod-with-docker-old[older docker installation guide] for documentation purposes, intended just for earlier versions of Taiga (prior to ver. 6.6.0)
+====
 
 === Setup Production Environment from Source Code
 
-link:setup-production.html#setup-prod-from-source-code[This document contains the complete, step by step tutorial] of how
-to properly setup _Taiga_ for a low traffic production environment.
+link:setup-production.html#setup-prod-from-source-code[This document contains the complete, step by step tutorial] of how to properly setup _Taiga_ for a low traffic production environment.
 
 === Setup FAQs and common Bugs
 
@@ -32,13 +37,15 @@ You can view a list of common FAQs and bugs related to the setup process link:se
 [[upgrading-guide]]
 == Upgrading Guide
 
-This section explains how to upgrade your current Taiga to a newer version
+This section links different upgrade methods depending on your Taiga:
 
-=== Upgrade Taiga6 docker
+=== [Docker] Upgrade Taiga6
 
 This section shows how to keep your link:upgrades-6to6.html[taiga-docker instance up to date] with the new releases.
 
-=== Upgrade from Taiga5 to Taiga6
+**Recommended** If you're already using taiga-docker, follow this link:upgrades-docker-migrate.html[migration guide] to use the new `.env` based deployment.
+
+=== [Source code] Upgrade from Taiga5 to Taiga6
 
 Update your link:upgrades-5to6.html[Taiga5 instance to a new Taiga6 version].
 This section covers different upgrade scenarios:
@@ -47,7 +54,7 @@ This section covers different upgrade scenarios:
 - from Taiga5 in docker to Taiga6 in docker
 - from Taiga5 source code to Taiga6 source code
 
-=== Older versions
+=== [Source code] Older versions
 
 Update between link:upgrades-older.html[versions].
 

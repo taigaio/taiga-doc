@@ -2,7 +2,8 @@
 
 ## 6.6.0 (Unreleased)
 
-- ...
+- New .env based guide and migration guide
+- Fix a compiling issue
 
 ## 6.5.0 (2022-01-24)
 
