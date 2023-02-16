@@ -1,0 +1,60 @@
+= Migrate to new docker settings
+:toc: left
+:toclevels: 1
+:numbered:
+:source-highlighter: pygments
+:pygments-style: friendly
+
+While `taiga-docker` has been a pretty successful way for many people to have a Taiga self-hosted, the Taiga team receives a bunch of questions about the docker configuration. We have released a new `taiga-docker` version with the main settings based in an `.env` file. The main goal behind this change is to make it way easier to have a basic Taiga up and running.
+
+For those of you who already have a self-hosted Taiga running with docker, this tutorial will guide you through the steps of the migration.
+
+[[taigadckr-to-taigadckr]]
+== Summary
+
+If you are familiar with docker and docker compose, this is the sensible summary:
+
+- save the modifications made in the `docker-compose.yml` and `docker-compose-inits.yml` files
+- update the repository `taiga-docker`
+- add the configuration values to the `.env` file
+- add the link:setup-production.html#customization[customization values] to the `docker-compose.yml` file
+- launch all services again
+
+That's it!
+
+== Step by step
+
+If you are not so familiar with docker or git, these are the comprehensive steps.
+
+=== Get and save your current configurations
+
+Make sure to save all the modifications to the `docker-compose.yml` and `docker-compose-inits.yml` files. Tipically, you'll be using the file in the repository, so a `git diff` will show you all the modifications.
+
+If you have any other modification, trace them as well.
+
+=== Update the repository
+
+Download the new version with `git fetch && git reset --hard origin/main`. Make sure you have now an `.env` file.
+
+=== Add the configuration values to the `.env` file
+
+Open the `.env` file and fill the values with the ones you stored previously:
+
+- Taiga URL
+- Taiga secret key
+- Postgres connection
+- Email configuration
+- RabbitMQ configuration
+- Attachments' token expiration
+- Enable telemetry: we use this anonymous telemetry to improve Taiga. You may want to enable this to help us shape future Taiga.
+
+=== Add the customization values to the `docker-file.yml` file
+
+link:setup-production.html#customization[Customizations] are still in the `docker-compose.yml` file, for instance:
+
+- GitLat Auth
+- GitHub Importer
+
+=== Launch Taiga again
+
+Run `docker-compose up -d` (you may have a slightly different way for this command) and check every service is up and running.
