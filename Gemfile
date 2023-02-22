@@ -9,5 +9,5 @@ group :development do
   gem 'rb-inotify'
   gem 'libnotify'
   gem 'thread_safe'
-  gem 'haml'
+  gem 'haml', '~>5.2.1'
 end
