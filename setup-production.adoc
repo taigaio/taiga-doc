@@ -12,13 +12,13 @@
 This is the easiest and *recommended* way to run Taiga in production.
 This document explains how to deploy a full Taiga service for a production environment with `docker`.
 
-**Note** If you're updating from serving taiga6 in subdomain to subpath, check the specific instructions at the end of this tutorial.
-
 [NOTE]
 .Previous installation guide
 ====
 You can access the link:setup-production.old.html#setup-prod-with-docker-old[older docker installation guide] for documentation purposes, intended just for earlier versions of Taiga (prior to ver. 6.6.0)
 ====
+
+**Note** If you're updating from serving taiga6 in subdomain to subpath, check the specific instructions at the end of this tutorial.
 
 === Requirements
 
