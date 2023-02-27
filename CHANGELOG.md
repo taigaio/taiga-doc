@@ -5,6 +5,7 @@
 - New .env based guide and migration guide
 - Fix a compiling issue
 - Fix documentation thanks to @alfredosola
+- Fix documentation thanks to @kaostheory1
 
 ## 6.5.0 (2022-01-24)
 
