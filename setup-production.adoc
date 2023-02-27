@@ -355,11 +355,11 @@ Map the file into `/taiga-back/settings/config.py`. Have in mind that you have t
 
 .**Map a `conf.json` file**
 
-From https://github.com/kaleidos-ventures/taiga-front[taiga-front] download the file `dist/conf.example.json` and rename it:
+From https://github.com/kaleidos-ventures/taiga-front[taiga-front] download the file `conf/conf.example.json` and rename it:
 
 [source,bash]
 ----
-mv dist/conf.example.json dist/conf.json
+mv conf.example.json conf.json
 ----
 
 Edit it with your own configuration:
@@ -388,7 +388,7 @@ Example to configure Taiga in **subpath**:
 
 Check as well the rest of the configuration if you need to enable some advanced features.
 
-Map the file into `/taiga-front/dist/config.py`.
+Map the file into `/usr/share/nginx/html/conf.json`.
 
 === Configure an admin user
 
