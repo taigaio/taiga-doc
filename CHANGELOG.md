@@ -1,6 +1,10 @@
 # Changelog
 
-## 6.6.0 (Unreleased)
+## 6.6.1 (Unreleased)
+
+- ...
+
+## 6.6.0 (2023-03-06)
 
 - New .env based guide and migration guide
 - Fix a compiling issue
