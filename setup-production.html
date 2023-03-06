@@ -10,7 +10,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <![endif]-->
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="Asciidoctor 2.0.17" name="generator">
+<meta content="Asciidoctor 2.0.18" name="generator">
 <title>Install Taiga in Production</title>
 <style>/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment the following line when using as a custom stylesheet */
@@ -88,10 +88,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -438,6 +438,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer{background:none}
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <style>pre.pygments .hll { background-color: #ffffcc }
 pre.pygments { background: #f0f0f0; }
 pre.pygments .tok-c { color: #60a0b0; font-style: italic } /* Comment */
@@ -533,16 +534,16 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 <a href="#_get_repository">1.2. Get repository</a>
 </li>
 <li>
-<a href="#_configuration_and_customisation_with_environment_variables">1.3. Configuration and Customisation with Environment Variables</a>
+<a href="#_configuration">1.3. Configuration</a>
 </li>
 <li>
-<a href="#_configuration">1.4. Configuration</a>
+<a href="#_basic_configuration">1.4. Basic Configuration</a>
 </li>
 <li>
-<a href="#_customisation">1.5. Customisation</a>
+<a href="#customization">1.5. Additional customization</a>
 </li>
 <li>
-<a href="#_advanced_configuration_and_customisation">1.6. Advanced configuration and customisation</a>
+<a href="#_advanced_configuration">1.6. Advanced configuration</a>
 </li>
 <li>
 <a href="#_configure_an_admin_user">1.7. Configure an admin user</a>
@@ -627,6 +628,21 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 <p>This is the easiest and <strong>recommended</strong> way to run Taiga in production.
 This document explains how to deploy a full Taiga service for a production environment with <code>docker</code>.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
+<div class="title">Previous installation guide</div>
+<div class="paragraph">
+<p>You can access the <a href="setup-production.old.html#setup-prod-with-docker-old">older docker installation guide</a> for documentation purposes, intended just for earlier versions of Taiga (prior to ver. 6.6.0)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p><strong>Note</strong> If you&#8217;re updating from serving taiga6 in subdomain to subpath, check the specific instructions at the end of this tutorial.</p>
 </div>
@@ -638,15 +654,12 @@ This document explains how to deploy a full Taiga service for a production envir
 <div class="ulist">
 <ul>
 <li>
-<p><code>docker</code>: version &gt;= 17.09.0+</p>
-</li>
-<li>
-<p><code>docker-compose</code>: version &gt;= 1.27.0+</p>
+<p><code>docker</code>: version &gt;= 19.03.0+</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Additionally, it&#8217;s necessary to have familiarity with Docker, docker-compose and Docker repositories.</p>
+<p>Additionally, it&#8217;s necessary to have familiarity with Docker, docker compose and Docker repositories.</p>
 </div>
 </div>
 <div class="sect2">
@@ -661,111 +674,119 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="sect2">
-<h3 id="_configuration_and_customisation_with_environment_variables">1.3. Configuration and Customisation with Environment Variables</h3>
+<h3 id="_configuration">1.3. Configuration</h3>
 <div class="paragraph">
-<p>This configuration is likely to suit what you need. Edit environment variables in <code>docker-compose.yml</code> and <code>docker-compose-inits.yml</code>. Have in mind that some of the variables are in both files, and you need to edit both.</p>
+<p>We&#8217;ve exposed the <strong> Basic configuration </strong> settings in Taiga to an <code>.env</code> file. We strongly recommend you to change it, or at least review its content, to avoid using the default values.</p>
 </div>
 <div class="paragraph">
-<p><strong>Configuration</strong> variables are in <code>docker-compose.yml</code> with default values that we strongly recommend that you change or review. Those variables are needed to run Taiga. Apart from this configuration, you can have some <strong>customisation</strong> in Taiga, that add features which are disabled by default. Find those variables in <strong>Customisation</strong> section and add the corresponding environment variables whenever you want to enable them.</p>
+<p>Both <code>docker-compose.yml</code> and <code>docker-compose-inits.yml</code> will read from this file to populate their environment variables, so, initially you don&#8217;t need to change them. Edit these files just in case you require to enable <strong>Additional customization</strong>, or an <strong>Advanced configuration</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Refer to these sections for further information.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_configuration">1.4. Configuration</h3>
+<h3 id="_basic_configuration">1.4. Basic Configuration</h3>
 <div class="paragraph">
-<div class="title">Database configuration</div>
-<p>These vars will be used to create the database for Taiga and connect to it.</p>
+<p>You will find basic <strong>configuration variables</strong> in the <code>.env</code> file. As stated before, we encourage you to edit these values, especially those affecting the security.</p>
 </div>
 <div class="paragraph">
-<p><strong>Important</strong>: these vars should have the same values in <code>taiga-back</code> and <code>taiga-db</code>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Service: taiga-db</strong></p>
+<div class="title"><strong>Database settings</strong></div>
+<p>These vars are used to create the database for Taiga and connect to it.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>POSTGRES_DB: taiga&#x000A;POSTGRES_USER: taiga&#x000A;POSTGRES_PASSWORD: taiga</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">POSTGRES_USER</span><span class="tok-o">=</span>taiga  <span class="tok-c1"># user to connect to PostgreSQL</span>&#x000A;<span class="tok-nv">POSTGRES_PASSWORD</span><span class="tok-o">=</span>taiga  <span class="tok-c1"># database user&#39;s password</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-back</strong></p>
+<div class="title"><strong>URLs settings</strong></div>
+<p>These vars set where your Taiga instance should be served, and the security protocols to use in the communication layer.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>POSTGRES_DB: taiga&#x000A;POSTGRES_USER: taiga&#x000A;POSTGRES_PASSWORD: taiga</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">TAIGA_SCHEME</span><span class="tok-o">=</span>http  <span class="tok-c1"># serve Taiga using &quot;http&quot; or &quot;https&quot; (secured) connection</span>&#x000A;<span class="tok-nv">TAIGA_DOMAIN</span><span class="tok-o">=</span>localhost:9000  <span class="tok-c1"># Taiga&#39;s base URL</span>&#x000A;<span class="tok-nv">SUBPATH</span><span class="tok-o">=</span><span class="tok-s2">&quot;&quot;</span>  <span class="tok-c1"># it&#39;ll be appended to the TAIGA_DOMAIN (use either &quot;&quot; or a &quot;/subpath&quot;)</span>&#x000A;<span class="tok-nv">WEBSOCKETS_SCHEME</span><span class="tok-o">=</span>ws  <span class="tok-c1"># events connection protocol (use either &quot;ws&quot; or &quot;wss&quot;)</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Additionally, you can also configure <code>POSTGRES_PORT</code> in <code>taiga-back</code>. Defaults to '5432'.</p>
-</div>
-<div class="paragraph">
-<div class="title">Taiga Settings</div>
-<p><strong>Service: taiga-back</strong></p>
-</div>
-<div class="paragraph">
-<p>The default configuration assumes Taiga is being served in a <strong>subdomain</strong>:</p>
+<p>The default configuration assumes Taiga is being served in a <strong>subdomain</strong>. For example:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>TAIGA_SECRET_KEY: <span class="tok-s2">&quot;taiga-back-secret-key&quot;</span>&#x000A;TAIGA_SITES_SCHEME: <span class="tok-s2">&quot;https&quot;</span>&#x000A;TAIGA_SITES_DOMAIN: <span class="tok-s2">&quot;taiga.mycompany.com&quot;</span>&#x000A;TAIGA_SUBPATH: <span class="tok-s2">&quot;&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">TAIGA_SCHEME</span><span class="tok-o">=</span>https&#x000A;<span class="tok-nv">TAIGA_DOMAIN</span><span class="tok-o">=</span>taiga.mycompany.com&#x000A;<span class="tok-nv">SUBPATH</span><span class="tok-o">=</span><span class="tok-s2">&quot;&quot;</span>&#x000A;<span class="tok-nv">WEBSOCKETS_SCHEME</span><span class="tok-o">=</span>wss</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>If Taiga is being served in a <strong>subpath</strong> instead of a subdomain, the configuration should be something like:</p>
+<p>If Taiga is being served in a <strong>subpath</strong>, instead of a subdomain, the configuration should be something like this:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>TAIGA_SECRET_KEY: <span class="tok-s2">&quot;taiga-back-secret-key&quot;</span>&#x000A;TAIGA_SITES_SCHEME: <span class="tok-s2">&quot;https&quot;</span>&#x000A;TAIGA_SITES_DOMAIN: <span class="tok-s2">&quot;mycompany.com&quot;</span>&#x000A;TAIGA_SUBPATH: <span class="tok-s2">&quot;/taiga&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">TAIGA_SCHEME</span><span class="tok-o">=</span>https&#x000A;<span class="tok-nv">TAIGA_DOMAIN</span><span class="tok-o">=</span>mycompany.com&#x000A;<span class="tok-nv">SUBPATH</span><span class="tok-o">=</span><span class="tok-s2">&quot;/taiga&quot;</span>&#x000A;<span class="tok-nv">WEBSOCKETS_SCHEME</span><span class="tok-o">=</span>wss</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>In this case, it&#8217;s necessary to do some configurations in <code>taiga-front</code> as well.</p>
-</div>
-<div class="paragraph">
-<p><strong>Service: taiga-front</strong></p>
-</div>
-<div class="paragraph">
-<p>The default configuration assumes Taiga is being served in a <strong>subdomain</strong>:</p>
+<div class="title"><strong>Secret Key settings</strong></div>
+<p>This variable allows you to set the secret key in Taiga, used in the cryptographic signing.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>TAIGA_URL: <span class="tok-s2">&quot;https://taiga.mycompany.com&quot;</span>&#x000A;TAIGA_WEBSOCKETS_URL: <span class="tok-s2">&quot;wss://taiga.mycompany.com&quot;</span>&#x000A;TAIGA_SUBPATH: <span class="tok-s2">&quot;&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">SECRET_KEY</span><span class="tok-o">=</span><span class="tok-s2">&quot;taiga-secret-key&quot;</span>  <span class="tok-c1"># Please, change it to an unpredictable value!</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>If Taiga is being served in a <strong>subpath</strong> instead of a subdomain, the configuration should be something like:</p>
+<div class="title"><strong>Email settings</strong></div>
+<p>By default, emails will be printed in the standard output (<code>EMAIL_BACKEND=<strong>console</strong></code>). If you have your own SMTP service, change it to <code>EMAIL_BACKEND=<strong>smtp</strong></code> and configure the rest of these variables with the values supplied by your SMTP provider:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>TAIGA_URL: <span class="tok-s2">&quot;https://mycompany.com&quot;</span>&#x000A;TAIGA_WEBSOCKETS_URL: <span class="tok-s2">&quot;wss://mycompany.com&quot;</span>&#x000A;TAIGA_SUBPATH: <span class="tok-s2">&quot;/taiga&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">EMAIL_BACKEND</span><span class="tok-o">=</span>console  <span class="tok-c1"># use an SMTP server or display the emails in the console (either &quot;smtp&quot; or &quot;console&quot;)</span>&#x000A;<span class="tok-nv">EMAIL_HOST</span><span class="tok-o">=</span>smtp.host.example.com  <span class="tok-c1"># SMTP server address</span>&#x000A;<span class="tok-nv">EMAIL_PORT</span><span class="tok-o">=</span><span class="tok-m">587</span>   <span class="tok-c1"># default SMTP port</span>&#x000A;<span class="tok-nv">EMAIL_HOST_USER</span><span class="tok-o">=</span>user  <span class="tok-c1"># user to connect the SMTP server</span>&#x000A;<span class="tok-nv">EMAIL_HOST_PASSWORD</span><span class="tok-o">=</span>password  <span class="tok-c1"># SMTP user&#39;s password</span>&#x000A;<span class="tok-nv">EMAIL_DEFAULT_FROM</span><span class="tok-o">=</span>changeme@example.com  <span class="tok-c1"># email address for the automated emails</span>&#x000A;&#x000A;<span class="tok-c1"># EMAIL_USE_TLS/EMAIL_USE_SSL are mutually exclusive (only set one of those to True)</span>&#x000A;<span class="tok-nv">EMAIL_USE_TLS</span><span class="tok-o">=</span>True  <span class="tok-c1"># use TLS (secure) connection with the SMTP server</span>&#x000A;<span class="tok-nv">EMAIL_USE_SSL</span><span class="tok-o">=</span>False  <span class="tok-c1"># use implicit TLS (secure) connection with the SMTP server</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-events</strong></p>
+<div class="title"><strong>Queue manager settings</strong></div>
+<p>These variables are used to leave messages in the rabbitmq services.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>TAIGA_SECRET_KEY: <span class="tok-s2">&quot;taiga-back-secret-key&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">RABBITMQ_USER</span><span class="tok-o">=</span>taiga  <span class="tok-c1"># user to connect to RabbitMQ</span>&#x000A;<span class="tok-nv">RABBITMQ_PASS</span><span class="tok-o">=</span>taiga  <span class="tok-c1"># RabbitMQ user&#39;s password</span>&#x000A;<span class="tok-nv">RABBITMQ_VHOST</span><span class="tok-o">=</span>taiga  <span class="tok-c1"># RabbitMQ container name</span>&#x000A;<span class="tok-nv">RABBITMQ_ERLANG_COOKIE</span><span class="tok-o">=</span>secret-erlang-cookie  <span class="tok-c1"># unique value shared by any connected instance of RabbitMQ</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-protected</strong></p>
+<div class="title"><strong>Attachments settings</strong></div>
+<p>You can configure how long the attachments will be accessible by changing the token expiration timer. After that amount of seconds the token will expire, but you can always get a new attachment url with an active token.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>SECRET_KEY: <span class="tok-s2">&quot;taiga-back-secret-key&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">ATTACHMENTS_MAX_AGE</span><span class="tok-o">=</span><span class="tok-m">360</span>  <span class="tok-c1"># token expiration date (in seconds)</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p><code>TAIGA_SECRET_KEY</code> or <code>SECRET_KEY</code> is the secret key of Taiga. Should be the same as this var in <code>taiga-back</code>, <code>taiga-events</code> and <code>taiga-protected</code>.
-<code>TAIGA_URL</code> in front service is where this Taiga instance should be served. It should be the same as <code>TAIGA_SITES_SCHEME://TAIGA_SITES_DOMAIN</code>.
-<code>TAIGA_WEBSOCKETS_URL</code> is used to connect to the events. This should have the same value as <code>wss://TAIGA_SITES_DOMAIN</code>, ie: wss://taiga.mycompany.com.</p>
+<div class="title"><strong>Telemetry settings</strong></div>
+<p>Telemetry anonymous data is collected in order to learn about the use of Taiga and improve the platform based on real scenarios. You may want to enable this to help us shape future Taiga.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">ENABLE_TELEMETRY</span><span class="tok-o">=</span>True</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<div class="title">Session Settings</div>
+<p>You can opt out by setting this variable to False. By default, it&#8217;s True.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="customization">1.5. Additional customization</h3>
+<div class="paragraph">
+<p>All these customization options are by default disabled and require you to edit <code>docker-compose.yml</code>.</p>
+</div>
+<div class="paragraph">
+<p>You should add the corresponding environment variables in the proper services with a valid value in order to enable them. Please, do not modify it unless you know what you’re doing.</p>
+</div>
+<div class="paragraph">
+<div class="title"><strong>Session cookies in Django Admin</strong></div>
 <p>Taiga doesn&#8217;t use session cookies in its API as it stateless. However, the Django Admin (<code>/admin/</code>) uses session cookie for authentication. By default, Taiga is configured to work behind HTTPS. If you&#8217;re using HTTP (despite the strong recommendations against it), you&#8217;ll need to configure the following environment variables so you can access the Admin:</p>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-back</strong></p>
+<p>Service: <code>taiga-back</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -776,100 +797,11 @@ This document explains how to deploy a full Taiga service for a production envir
 <p>More info about those variables can be found <a href="https://docs.djangoproject.com/en/3.1/ref/settings/#csrf-cookie-secure">here</a>.</p>
 </div>
 <div class="paragraph">
-<div class="title">Email Settings</div>
-<p>By default, email is configured with the <strong>console</strong> backend, which means that the emails will be shown in the stdout. If you have an smtp service, uncomment the "Email settings" section in <code>docker-compose.yml</code> and configure those environment variables:</p>
+<div class="title"><strong>Public registration</strong></div>
+<p>If you want to allow a public register, configure this variable to "True". By default it&#8217;s "False". The value should be the same in <code>taiga-front</code> and <code>taiga-back</code>.</p>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-back</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>EMAIL_BACKEND: <span class="tok-s2">&quot;django.core.mail.backends.smtp.EmailBackend&quot;</span>&#x000A;DEFAULT_FROM_EMAIL: <span class="tok-s2">&quot;no-reply@mycompany.com&quot;</span>&#x000A;EMAIL_HOST: <span class="tok-s2">&quot;smtp.host.mycompany.com&quot;</span>&#x000A;EMAIL_PORT: <span class="tok-m">587</span>&#x000A;EMAIL_HOST_USER: <span class="tok-s2">&quot;user&quot;</span>&#x000A;EMAIL_HOST_PASSWORD: <span class="tok-s2">&quot;password&quot;</span>&#x000A;EMAIL_USE_TLS: <span class="tok-s2">&quot;True&quot;</span>&#x000A;EMAIL_USE_SSL: <span class="tok-s2">&quot;True&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Uncomment <code>EMAIL_BACKEND</code> variable, but do not modify unless you know what you&#8217;re doing.</p>
-</div>
-<div class="paragraph">
-<div class="title">Telemetry Settings</div>
-<p>Telemetry anonymous data is collected in order to learn about the use of Taiga and improve the platform based on real scenarios.</p>
-</div>
-<div class="paragraph">
-<p><strong>Service: taiga-back</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_TELEMETRY: <span class="tok-s2">&quot;True&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You can opt out by setting this variable to "False". By default is "True".</p>
-</div>
-<div class="paragraph">
-<div class="title">Rabbit settings</div>
-<p>These variables are used to leave messages in the rabbitmq services. These variables should be the same as in <code>taiga-back</code>, <code>taiga-async</code>, <code>taiga-events</code>, <code>taiga-async-rabbitmq</code> and <code>taiga-events-rabbitmq</code>.</p>
-</div>
-<div class="paragraph">
-<p><strong>Service: taiga-back</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>RABBITMQ_USER: taiga&#x000A;RABBITMQ_PASS: taiga</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Two other variables <code>EVENTS_PUSH_BACKEND_URL</code> and <code>CELERY_BROKER_URL</code> can also be used to set the events push backend URL and celery broker URL.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>EVENTS_PUSH_BACKEND_URL: <span class="tok-s2">&quot;amqp://taiga:taiga@taiga-events-rabbitmq:5672/taiga&quot;</span>&#x000A;CELERY_BROKER_URL: <span class="tok-s2">&quot;amqp://taiga:taiga@taiga-async-rabbitmq:5672/taiga&quot;</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Service: taiga-events</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>RABBITMQ_USER: taiga&#x000A;RABBITMQ_PASS: taiga</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Service: taiga-async-rabbitmq</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie&#x000A;RABBITMQ_DEFAULT_USER: taiga&#x000A;RABBITMQ_DEFAULT_PASS: taiga&#x000A;RABBITMQ_DEFAULT_VHOST: taiga</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>Service: taiga-events-rabbitmq</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie&#x000A;RABBITMQ_DEFAULT_USER: taiga&#x000A;RABBITMQ_DEFAULT_PASS: taiga&#x000A;RABBITMQ_DEFAULT_VHOST: taiga</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<div class="title">Taiga protected settings</div>
-<p><strong>Service: taiga-protected</strong></p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>MAX_AGE: <span class="tok-m">360</span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The attachments will be accesible with a token during MAX_AGE (in seconds). After that, the token will expire.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_customisation">1.5. Customisation</h3>
-<div class="paragraph">
-<p>All these features are disabled by default. You should add the corresponding environment variables with a proper value to enable them.</p>
-</div>
-<div class="paragraph">
-<div class="title">Registration Settings</div>
-<p><strong>Service: taiga-back</strong></p>
+<p>Service: <code>taiga-back</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -877,7 +809,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-front</strong></p>
+<p>Service: <code>taiga-front</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -885,13 +817,10 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p>If you want to allow a public register, configure this variable to "True". By default is "False". Should be the same as this var in <code>taiga-front</code> and <code>taiga-back</code>.</p>
-</div>
-<div class="paragraph">
 <p><strong>Important</strong>: Taiga (in its default configuration) disables both Gitlab or Github oauth buttons whenever the public registration option hasn&#8217;t been activated. To be able to use Github/ Gitlab login/registration, make sure you have public registration activated on your Taiga instance.</p>
 </div>
 <div class="paragraph">
-<div class="title">Github settings</div>
+<div class="title"><strong>GitHub OAuth login</strong></div>
 <p>Used for login with Github.</p>
 </div>
 <div class="paragraph">
@@ -904,7 +833,7 @@ This document explains how to deploy a full Taiga service for a production envir
 <p><strong>Note</strong> <code>ENABLE_GITHUB_AUTH</code> and <code>GITHUB_API_CLIENT_ID / GITHUB_CLIENT_ID</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-back</strong></p>
+<p>Service: <code>taiga-back</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -912,7 +841,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-front</strong></p>
+<p>Service: <code>taiga-front</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -920,7 +849,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<div class="title">Gitlab settings</div>
+<div class="title"><strong>Gitlab OAuth login</strong></div>
 <p>Used for login with GitLab.</p>
 </div>
 <div class="paragraph">
@@ -933,7 +862,7 @@ This document explains how to deploy a full Taiga service for a production envir
 <p><strong>Note</strong> <code>ENABLE_GITLAB_AUTH</code>, <code>GITLAB_API_CLIENT_ID / GITLAB_CLIENT_ID</code> and <code>GITLAB_URL</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-back</strong></p>
+<p>Service: <code>taiga-back</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -941,7 +870,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-front</strong></p>
+<p>Service: <code>taiga-front</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -949,8 +878,11 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<div class="title">Slack Settings</div>
-<p><strong>Service: taiga-back</strong></p>
+<div class="title"><strong>Slack integration</strong></div>
+<p>Enable Slack integration in your Taiga instance. By default, it&#8217;s "False". Should have the same value as this variable in <code>taiga-front</code> and <code>taiga-back</code>.</p>
+</div>
+<div class="paragraph">
+<p>Service: <code>taiga-back</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -958,7 +890,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-front</strong></p>
+<p>Service: <code>taiga-front</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -966,11 +898,8 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p>Enable Slack integration in your Taiga instance. By default is "False". Should have the same value as this variable in <code>taiga-front</code> and <code>taiga-back</code>.</p>
-</div>
-<div class="paragraph">
-<div class="title">Github importer</div>
-<p><strong>Service: taiga-back</strong></p>
+<div class="title"><strong>GitHub importer</strong></div>
+<p>Service: <code>taiga-back</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -978,7 +907,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-front</strong></p>
+<p>Service: <code>taiga-front</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -986,8 +915,8 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<div class="title">Jira importer</div>
-<p><strong>Service: taiga-back</strong></p>
+<div class="title"><strong>Jira importer</strong></div>
+<p>Service: <code>taiga-back</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -995,7 +924,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-front</strong></p>
+<p>Service: <code>taiga-front</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1003,8 +932,8 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<div class="title">Trello importer</div>
-<p><strong>Service: taiga-back</strong></p>
+<div class="title"><strong>Trello importer</strong></div>
+<p>Service: <code>taiga-back</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1012,7 +941,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Service: taiga-front</strong></p>
+<p>Service: <code>taiga-front</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1021,12 +950,15 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 </div>
 <div class="sect2">
-<h3 id="_advanced_configuration_and_customisation">1.6. Advanced configuration and customisation</h3>
+<h3 id="_advanced_configuration">1.6. Advanced configuration</h3>
 <div class="paragraph">
-<p>In an advanced configuration, you ignore the environment variables in <code>docker-compose.yml</code> or <code>docker-compose-inits.yml</code>.</p>
+<p>The advanced configuration <strong>will ignore</strong> the environment variables in <code>docker-compose.yml</code> or <code>docker-compose-inits.yml</code>. Skip this section if you&#8217;re using env vars.</p>
 </div>
 <div class="paragraph">
-<div class="title">Map a <code>config.py</code> file</div>
+<p>It requires you to map the configuration files of <code>taiga-back</code> and <code>taiga-front</code> services to local files in order to unlock further configuration options.</p>
+</div>
+<div class="paragraph">
+<div class="title"><strong>Map a <code>config.py</code> file </strong></div>
 <p>From <a href="https://github.com/kaleidos-ventures/taiga-back">taiga-back</a> download the file <code>settings/config.py.prod.example</code> and rename it:</p>
 </div>
 <div class="listingblock">
@@ -1075,7 +1007,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">TAIGA_SITES_SCHEME</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;https&quot;</span>&#x000A;<span class="tok-nv">TAIGA_SITES_DOMAIN</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;taiga.mycompany.com&quot;</span>&#x000A;<span class="tok-nv">FORCE_SCRIPT_NAME</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;/taiga&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="python"><span></span><span class="tok-n">TAIGA_SITES_SCHEME</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;https&quot;</span>&#x000A;<span class="tok-n">TAIGA_SITES_DOMAIN</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;taiga.mycompany.com&quot;</span>&#x000A;<span class="tok-n">FORCE_SCRIPT_NAME</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;/taiga&quot;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1085,12 +1017,12 @@ This document explains how to deploy a full Taiga service for a production envir
 <p>Map the file into <code>/taiga-back/settings/config.py</code>. Have in mind that you have to map it both in <code>docker-compose.yml</code> and <code>docker-compose-inits.yml</code>. You can check the <code>x-volumes</code> section in docker-compose.yml with an example.</p>
 </div>
 <div class="paragraph">
-<div class="title">Map a <code>conf.json</code> file</div>
-<p>From <a href="https://github.com/kaleidos-ventures/taiga-front">taiga-front</a> download the file <code>dist/conf.example.json</code> and rename it:</p>
+<div class="title"><strong>Map a <code>conf.json</code> file</strong></div>
+<p>From <a href="https://github.com/kaleidos-ventures/taiga-front">taiga-front</a> download the file <code>conf/conf.example.json</code> and rename it:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>mv dist/conf.example.json dist/conf.json</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span>mv conf.example.json conf.json</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1123,14 +1055,14 @@ This document explains how to deploy a full Taiga service for a production envir
 <p>Check as well the rest of the configuration if you need to enable some advanced features.</p>
 </div>
 <div class="paragraph">
-<p>Map the file into <code>/taiga-front/dist/config.py</code>.</p>
+<p>Map the file into <code>/usr/share/nginx/html/conf.json</code>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_configure_an_admin_user">1.7. Configure an admin user</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>$ docker-compose up -d&#x000A;&#x000A;$ docker-compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser</code></pre>
+<pre class="pygments highlight"><code data-lang="sh"><span></span>$ docker compose up -d&#x000A;&#x000A;$ docker compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser</code></pre>
 </div>
 </div>
 </div>
@@ -1141,7 +1073,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>$ docker-compose up -d</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span>$ docker compose up -d</code></pre>
 </div>
 </div>
 </div>
@@ -1318,7 +1250,7 @@ This document explains how to deploy a full Taiga service for a production envir
 <table>
 <tr>
 <td class="icon">
-<div class="title"></div>
+<i class="fa icon-note"></i>
 </td>
 <td class="content">
 Do <strong>not</strong> change back to the root user (<code>uid=0</code>) at this point. Taiga deployment must be finished with the <code>taiga</code> user!
@@ -1345,7 +1277,7 @@ Do <strong>not</strong> change back to the root user (<code>uid=0</code>) at thi
 <table>
 <tr>
 <td class="icon">
-<div class="title"></div>
+<i class="fa icon-note"></i>
 </td>
 <td class="content">
 As the password will be used inside the Postgresql URL later, use only web safe characters: a-z, A-Z, 0-9, and  - . _ ~
@@ -1725,13 +1657,13 @@ The attachments will be accesible with a token during MAX_AGE (in seconds). Afte
 <div class="listingblock">
 <div class="title">Configure NGINX for Taiga <strong>in a subdomain</strong>,</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="nginx"><span></span><span class="tok-k">server</span> <span class="tok-p">{</span>&#x000A;    <span class="tok-kn">listen</span> <span class="tok-mi">80</span> <span class="tok-s">default_server</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">server_name</span> <span class="tok-s">taiga.mycompany.com</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">return</span> <span class="tok-mi">301</span> <span class="tok-s">https://</span><span class="tok-nv">$server_name$request_uri</span><span class="tok-p">;</span>&#x000A;<span class="tok-p">}</span>&#x000A;&#x000A;<span class="tok-k">server</span> <span class="tok-p">{</span>&#x000A;    <span class="tok-kn">listen</span> <span class="tok-mi">443</span> <span class="tok-s">default_server</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">server_name</span> <span class="tok-s">taiga.mycompany.com</span><span class="tok-p">;</span>  <span class="tok-c1">#  See http://nginx.org/en/docs/http/server_names.html</span>&#x000A;&#x000A;    <span class="tok-kn">large_client_header_buffers</span> <span class="tok-mi">4</span> <span class="tok-mi">32k</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">client_max_body_size</span> <span class="tok-s">50M</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">charset</span> <span class="tok-s">utf-8</span><span class="tok-p">;</span>&#x000A;&#x000A;    <span class="tok-kn">access_log</span> <span class="tok-s">/home/taiga/logs/nginx.access.log</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">error_log</span> <span class="tok-s">/home/taiga/logs/nginx.error.log</span><span class="tok-p">;</span>&#x000A;&#x000A;    <span class="tok-c1"># TLS: Configure your TLS following the best practices inside your company</span>&#x000A;    <span class="tok-c1"># Other configurations</span>&#x000A;&#x000A;    <span class="tok-c1"># Frontend</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-front-dist/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">index</span> <span class="tok-s">index.html</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">try_files</span> <span class="tok-nv">$uri</span> <span class="tok-nv">$uri/</span> <span class="tok-s">index.html</span> <span class="tok-p">=</span><span class="tok-mi">404</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># API</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/api/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8001/api/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Admin</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/admin/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8001/admin/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Static files</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/static/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/static/</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Media</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/_protected/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">internal</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/media/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">add_header</span> <span class="tok-s">Content-disposition</span> <span class="tok-s">&quot;attachment&quot;</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Unprotected section</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/media/exports/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/media/exports/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">add_header</span> <span class="tok-s">Content-disposition</span> <span class="tok-s">&quot;attachment&quot;</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/media/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8003/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Events</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/events</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_http_version</span> <span class="tok-mi">1</span><span class="tok-s">.1</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Upgrade</span> <span class="tok-nv">$http_upgrade</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Connection</span> <span class="tok-s">&quot;upgrade&quot;</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_connect_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_send_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_read_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8888/events</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;<span class="tok-p">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="nginx"><span></span><span class="tok-k">server</span> <span class="tok-p">{</span>&#x000A;    <span class="tok-kn">listen</span> <span class="tok-mi">80</span> <span class="tok-s">default_server</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">server_name</span> <span class="tok-s">taiga.mycompany.com</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">return</span> <span class="tok-mi">301</span> <span class="tok-s">https://</span><span class="tok-nv">$server_name$request_uri</span><span class="tok-p">;</span>&#x000A;<span class="tok-p">}</span>&#x000A;&#x000A;<span class="tok-k">server</span> <span class="tok-p">{</span>&#x000A;    <span class="tok-kn">listen</span> <span class="tok-mi">443</span> <span class="tok-s">default_server</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">server_name</span> <span class="tok-s">taiga.mycompany.com</span><span class="tok-p">;</span>  <span class="tok-c1">#  See http://nginx.org/en/docs/http/server_names.html</span>&#x000A;&#x000A;    <span class="tok-kn">large_client_header_buffers</span> <span class="tok-mi">4</span> <span class="tok-mi">32k</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">client_max_body_size</span> <span class="tok-s">50M</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">charset</span> <span class="tok-s">utf-8</span><span class="tok-p">;</span>&#x000A;&#x000A;    <span class="tok-kn">access_log</span> <span class="tok-s">/home/taiga/logs/nginx.access.log</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">error_log</span> <span class="tok-s">/home/taiga/logs/nginx.error.log</span><span class="tok-p">;</span>&#x000A;&#x000A;    <span class="tok-c1"># TLS: Configure your TLS following the best practices inside your company</span>&#x000A;    <span class="tok-c1"># Other configurations</span>&#x000A;&#x000A;    <span class="tok-c1"># Frontend</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-front-dist/dist/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">index</span> <span class="tok-s">index.html</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">try_files</span> <span class="tok-nv">$uri</span> <span class="tok-nv">$uri/</span> <span class="tok-s">index.html</span> <span class="tok-p">=</span><span class="tok-mi">404</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># API</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/api/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8001/api/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Admin</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/admin/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8001/admin/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Static files</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/static/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/static/</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Media</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/_protected/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">internal</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/media/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">add_header</span> <span class="tok-s">Content-disposition</span> <span class="tok-s">&quot;attachment&quot;</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Unprotected section</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/media/exports/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/media/exports/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">add_header</span> <span class="tok-s">Content-disposition</span> <span class="tok-s">&quot;attachment&quot;</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/media/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8003/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Events</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/events</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_http_version</span> <span class="tok-mi">1</span><span class="tok-s">.1</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Upgrade</span> <span class="tok-nv">$http_upgrade</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Connection</span> <span class="tok-s">&quot;upgrade&quot;</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_connect_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_send_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_read_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8888/events</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">Configure NGINX for Taiga <strong>in a subpath</strong>,</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="nginx"><span></span><span class="tok-k">server</span> <span class="tok-p">{</span>&#x000A;    <span class="tok-kn">listen</span> <span class="tok-mi">80</span> <span class="tok-s">default_server</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">server_name</span> <span class="tok-s">mycompany.com</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">return</span> <span class="tok-mi">301</span> <span class="tok-s">https://</span><span class="tok-nv">$server_name$request_uri</span><span class="tok-p">;</span>&#x000A;<span class="tok-p">}</span>&#x000A;&#x000A;<span class="tok-k">server</span> <span class="tok-p">{</span>&#x000A;    <span class="tok-kn">listen</span> <span class="tok-mi">443</span> <span class="tok-s">default_server</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">server_name</span> <span class="tok-s">mycompany.com</span><span class="tok-p">;</span>  <span class="tok-c1">#  See http://nginx.org/en/docs/http/server_names.html</span>&#x000A;&#x000A;    <span class="tok-kn">large_client_header_buffers</span> <span class="tok-mi">4</span> <span class="tok-mi">32k</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">client_max_body_size</span> <span class="tok-s">50M</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">charset</span> <span class="tok-s">utf-8</span><span class="tok-p">;</span>&#x000A;&#x000A;    <span class="tok-kn">access_log</span> <span class="tok-s">/home/taiga/logs/nginx.access.log</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">error_log</span> <span class="tok-s">/home/taiga/logs/nginx.error.log</span><span class="tok-p">;</span>&#x000A;&#x000A;    <span class="tok-c1"># TLS: Configure your TLS following the best practices inside your company</span>&#x000A;    <span class="tok-c1"># Other configurations</span>&#x000A;&#x000A;    <span class="tok-c1"># Frontend</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-front-dist/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">index</span> <span class="tok-s">index.html</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">try_files</span> <span class="tok-nv">$uri</span> <span class="tok-nv">$uri/</span> <span class="tok-s">index.html</span> <span class="tok-p">=</span><span class="tok-mi">404</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># API</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/api/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8001/api/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Admin</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/admin/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8001/admin/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Static files</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/static/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/static/</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Media</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/_protected/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">internal</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/media/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">add_header</span> <span class="tok-s">Content-disposition</span> <span class="tok-s">&quot;attachment&quot;</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Unprotected section</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/media/exports/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/media/exports/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">add_header</span> <span class="tok-s">Content-disposition</span> <span class="tok-s">&quot;attachment&quot;</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/media/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8003/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Events</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/events</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_http_version</span> <span class="tok-mi">1</span><span class="tok-s">.1</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Upgrade</span> <span class="tok-nv">$http_upgrade</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Connection</span> <span class="tok-s">&quot;upgrade&quot;</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_connect_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_send_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_read_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8888/events</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;<span class="tok-p">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="nginx"><span></span><span class="tok-k">server</span> <span class="tok-p">{</span>&#x000A;    <span class="tok-kn">listen</span> <span class="tok-mi">80</span> <span class="tok-s">default_server</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">server_name</span> <span class="tok-s">mycompany.com</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">return</span> <span class="tok-mi">301</span> <span class="tok-s">https://</span><span class="tok-nv">$server_name$request_uri</span><span class="tok-p">;</span>&#x000A;<span class="tok-p">}</span>&#x000A;&#x000A;<span class="tok-k">server</span> <span class="tok-p">{</span>&#x000A;    <span class="tok-kn">listen</span> <span class="tok-mi">443</span> <span class="tok-s">default_server</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">server_name</span> <span class="tok-s">mycompany.com</span><span class="tok-p">;</span>  <span class="tok-c1">#  See http://nginx.org/en/docs/http/server_names.html</span>&#x000A;&#x000A;    <span class="tok-kn">large_client_header_buffers</span> <span class="tok-mi">4</span> <span class="tok-mi">32k</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">client_max_body_size</span> <span class="tok-s">50M</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">charset</span> <span class="tok-s">utf-8</span><span class="tok-p">;</span>&#x000A;&#x000A;    <span class="tok-kn">access_log</span> <span class="tok-s">/home/taiga/logs/nginx.access.log</span><span class="tok-p">;</span>&#x000A;    <span class="tok-kn">error_log</span> <span class="tok-s">/home/taiga/logs/nginx.error.log</span><span class="tok-p">;</span>&#x000A;&#x000A;    <span class="tok-c1"># TLS: Configure your TLS following the best practices inside your company</span>&#x000A;    <span class="tok-c1"># Other configurations</span>&#x000A;&#x000A;    <span class="tok-c1"># Frontend</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-front-dist/dist/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">index</span> <span class="tok-s">index.html</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">try_files</span> <span class="tok-nv">$uri</span> <span class="tok-nv">$uri/</span> <span class="tok-s">index.html</span> <span class="tok-p">=</span><span class="tok-mi">404</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># API</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/api/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8001/api/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Admin</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/admin/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8001/admin/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Static files</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/static/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/static/</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Media</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/_protected/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">internal</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/media/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">add_header</span> <span class="tok-s">Content-disposition</span> <span class="tok-s">&quot;attachment&quot;</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Unprotected section</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/media/exports/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">alias</span> <span class="tok-s">/home/taiga/taiga-back/media/exports/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">add_header</span> <span class="tok-s">Content-disposition</span> <span class="tok-s">&quot;attachment&quot;</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/media/</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Host</span> <span class="tok-nv">$http_host</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Real-IP</span> <span class="tok-nv">$remote_addr</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Scheme</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-Proto</span> <span class="tok-nv">$scheme</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">X-Forwarded-For</span> <span class="tok-nv">$proxy_add_x_forwarded_for</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8003/</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_redirect</span> <span class="tok-no">off</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;    <span class="tok-c1"># Events</span>&#x000A;    <span class="tok-kn">location</span> <span class="tok-s">/taiga/events</span> <span class="tok-p">{</span>&#x000A;        <span class="tok-kn">proxy_http_version</span> <span class="tok-mi">1</span><span class="tok-s">.1</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Upgrade</span> <span class="tok-nv">$http_upgrade</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_set_header</span> <span class="tok-s">Connection</span> <span class="tok-s">&quot;upgrade&quot;</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_connect_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_send_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_read_timeout</span> <span class="tok-s">7d</span><span class="tok-p">;</span>&#x000A;        <span class="tok-kn">proxy_pass</span> <span class="tok-s">http://127.0.0.1:8888/events</span><span class="tok-p">;</span>&#x000A;    <span class="tok-p">}</span>&#x000A;&#x000A;<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
@@ -1790,7 +1722,7 @@ The attachments will be accesible with a token during MAX_AGE (in seconds). Afte
 <div class="sect2">
 <h3 id="extend-taiga">2.14. Extend Taiga</h3>
 <div class="paragraph">
-<p>With this installation, you have access to a fair amount of features of Taiga. However, you may want to extend it with other functionalities or plugins, such Slack integration or login with Github. To extend Taiga, check all the available options at <a class="bare" href="https://resources.taiga.io/extend/how-to-extend-taiga/">https://resources.taiga.io/extend/how-to-extend-taiga/</a>.</p>
+<p>With this installation, you have access to a fair amount of features of Taiga. However, you may want to extend it with other functionalities or plugins, such Slack integration or login with Github. To extend Taiga, check all the available options at <a class="bare" href="https://community.taiga.io/t/how-to-extend-taiga/160">https://community.taiga.io/t/how-to-extend-taiga/160</a>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1845,7 +1777,7 @@ The attachments will be accesible with a token during MAX_AGE (in seconds). Afte
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-20 13:10:16 +0100
+Last updated 2023-03-06 14:11:13 +0100
 </div>
 </div>
 </div>

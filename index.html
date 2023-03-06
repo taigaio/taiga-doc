@@ -10,7 +10,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <![endif]-->
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="Asciidoctor 2.0.17" name="generator">
+<meta content="Asciidoctor 2.0.18" name="generator">
 <title>Taiga Documentation</title>
 <style>/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment the following line when using as a custom stylesheet */
@@ -88,10 +88,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -438,6 +438,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer{background:none}
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <link href="css/menu.css" rel="stylesheet">
 <link href="css/icons.css" rel="stylesheet">
@@ -525,15 +526,28 @@ truly enjoyable.</p>
 <div class="sect2">
 <h3 id="_setup_production_environment_with_docker_recommended">Setup Production Environment with Docker [Recommended]</h3>
 <div class="paragraph">
-<p><a href="setup-production.html#setup-prod-with-docker">This document contains the complete tutorial for installation with docker</a> of how
-to properly setup <em>Taiga</em> for a low traffic production environment.</p>
+<p><a href="setup-production.html#setup-prod-with-docker">This document contains the complete tutorial for installation with docker</a> of how to properly setup <em>Taiga</em> for a low traffic production environment.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
+<div class="title">Previous installation guide</div>
+<div class="paragraph">
+<p>You can access the <a href="setup-production.old.html#setup-prod-with-docker-old">older docker installation guide</a> for documentation purposes, intended just for earlier versions of Taiga (prior to ver. 6.6.0)</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_setup_production_environment_from_source_code">Setup Production Environment from Source Code</h3>
 <div class="paragraph">
-<p><a href="setup-production.html#setup-prod-from-source-code">This document contains the complete, step by step tutorial</a> of how
-to properly setup <em>Taiga</em> for a low traffic production environment.</p>
+<p><a href="setup-production.html#setup-prod-from-source-code">This document contains the complete, step by step tutorial</a> of how to properly setup <em>Taiga</em> for a low traffic production environment.</p>
 </div>
 </div>
 <div class="sect2">
@@ -548,16 +562,19 @@ to properly setup <em>Taiga</em> for a low traffic production environment.</p>
 <h2 id="upgrading-guide">Upgrading Guide</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This section explains how to upgrade your current Taiga to a newer version</p>
+<p>This section links different upgrade methods depending on your Taiga:</p>
 </div>
 <div class="sect2">
-<h3 id="_upgrade_taiga6_docker">Upgrade Taiga6 docker</h3>
+<h3 id="_docker_upgrade_taiga6">[Docker] Upgrade Taiga6</h3>
 <div class="paragraph">
 <p>This section shows how to keep your <a href="upgrades-6to6.html">taiga-docker instance up to date</a> with the new releases.</p>
 </div>
+<div class="paragraph">
+<p><strong>Recommended</strong> If you&#8217;re already using taiga-docker, follow this <a href="upgrades-docker-migrate.html">migration guide</a> to use the new <code>.env</code> based deployment.</p>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_upgrade_from_taiga5_to_taiga6">Upgrade from Taiga5 to Taiga6</h3>
+<h3 id="_source_code_upgrade_from_taiga5_to_taiga6">[Source code] Upgrade from Taiga5 to Taiga6</h3>
 <div class="paragraph">
 <p>Update your <a href="upgrades-5to6.html">Taiga5 instance to a new Taiga6 version</a>.
 This section covers different upgrade scenarios:</p>
@@ -577,7 +594,7 @@ This section covers different upgrade scenarios:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_older_versions">Older versions</h3>
+<h3 id="_source_code_older_versions">[Source code] Older versions</h3>
 <div class="paragraph">
 <p>Update between <a href="upgrades-older.html">versions</a>.</p>
 </div>
@@ -618,7 +635,7 @@ This section covers different upgrade scenarios:</p>
 <h2 id="importers">Importers</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Checkout the documentation about how to import a project <a href="https://resources.taiga.io/extend/importer-github/">from Github</a>, <a href="https://resources.taiga.io/extend/importer-jira/">from Jira</a>, or <a href="https://resources.taiga.io/extend/importer-trello/">from Trello</a>.</p>
+<p>Checkout the documentation about how to import a project <a href="https://community.taiga.io/t/migrate-sync-from-github-to-taiga/167">from Github</a>, <a href="https://community.taiga.io/t/migrate-from-jira-to-taiga/164">from Jira</a>, or <a href="https://community.taiga.io/t/migrate-from-trello-to-taiga/166">from Trello</a>.</p>
 </div>
 <div class="paragraph">
 <p>If you&#8217;re using a self-hosted <em>Taiga</em>, check the <a href="importers.html">documentation</a> to integrate them in your instance.</p>
@@ -677,7 +694,7 @@ This section covers different upgrade scenarios:</p>
 <h2 id="how-to-contribute">Contribute to Taiga</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Because <em>Taiga</em> is an open source project, we gratefully accept contributions in various forms. There are many different ways to contribute to Taiga&#8217;s platform, from patches, to documentation and UI enhancements, just find the one that best fits with your skills. Check out our <a href="https://resources.taiga.io/extend/how-can-i-contribute">detailed contribution guide</a> if you&#8217;d like to support Taiga.</p>
+<p>Because <em>Taiga</em> is an open source project, we gratefully accept contributions in various forms. There are many different ways to contribute to Taiga&#8217;s platform, from patches, to documentation and UI enhancements, just find the one that best fits with your skills. Check out our <a href="https://community.taiga.io/t/how-can-i-contribute/159">detailed contribution guide</a> if you&#8217;d like to support Taiga.</p>
 </div>
 </div>
 </div>
@@ -685,7 +702,7 @@ This section covers different upgrade scenarios:</p>
 <h2 id="contrib-plugins">Contrib Plugins</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of <a href="https://resources.taiga.io/extend/contributions">contributions</a> as well as a <a href="https://resources.taiga.io/extend/how-to-extend-taiga">detailed tutorial</a> on the many ways to extend Taiga.</p>
+<p>Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of <a href="https://community.taiga.io/t/how-can-i-contribute/159">contributions</a> as well as a <a href="https://community.taiga.io/t/how-to-extend-taiga/160">detailed tutorial</a> on the many ways to extend Taiga.</p>
 </div>
 </div>
 </div>
@@ -767,7 +784,7 @@ that you do not include any code which cannot be licensed under MPL-2.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-01-20 13:10:16 +0100
+Last updated 2023-03-06 14:11:13 +0100
 </div>
 </div>
 </div>
