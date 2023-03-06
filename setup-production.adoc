@@ -24,10 +24,9 @@ You can access the link:setup-production.old.html#setup-prod-with-docker-old[old
 
 Prior to start the installation, ensure you have installed:
 
-* `docker`: version >= 17.09.0+
-* `docker-compose`: version >= 1.27.0+
+* `docker`: version >= 19.03.0+
 
-Additionally, it's necessary to have familiarity with Docker, docker-compose and Docker repositories.
+Additionally, it's necessary to have familiarity with Docker, docker compose and Docker repositories.
 
 === Get repository
 
@@ -393,9 +392,9 @@ Map the file into `/usr/share/nginx/html/conf.json`.
 === Configure an admin user
 
 ```sh
-$ docker-compose up -d
+$ docker compose up -d
 
-$ docker-compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser
+$ docker compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser
 ```
 
 === Up and running
@@ -404,7 +403,7 @@ Once everything has been installed, launch all the services and check the result
 
 [source,bash]
 ----
-$ docker-compose up -d
+$ docker compose up -d
 ----
 
 === Configure the proxy

@@ -24,7 +24,7 @@ $ docker pull taigaio/taiga-protected:latest
 * Relaunch the services so it starts with the new images:
 [source,bash]
 ----
-$ docker-compose up -d
+$ docker compose up -d
 ----
 
 This will take care of new static and the database migrations, if any. This process means a little downtime so choose the better moment to perfom it. After this process the instance will be updated and running.

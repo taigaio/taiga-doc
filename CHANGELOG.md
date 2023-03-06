@@ -6,6 +6,7 @@
 - Fix a compiling issue
 - Fix documentation thanks to @alfredosola
 - Fix documentation thanks to @kaostheory1
+- Fix documentation thanks to @ralfyang
 
 ## 6.5.0 (2022-01-24)
 
@@ -42,7 +43,7 @@
 ## 6.0.6 (2021-04-06)
 
 - Improve docker configuration with POSTGRES_PORT variable
-- Add minimum version for docker and docker-compose
+- Add minimum version for docker
 
 ## 6.0.5 (2021-03-09)
 

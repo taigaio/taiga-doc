@@ -59,7 +59,7 @@ Follow these steps:
 [source,bash]
 ----
 # Run only the database to avoid migrations
-$ docker-compose up -d taiga-db
+$ docker compose up -d taiga-d
 
 # Copy the dump inside the container:
 $ docker cp taiga-db-backup.sql taiga-docker_taiga-db_1:/taiga-db-backup.sql
@@ -81,7 +81,7 @@ Check that the data have been properly migrated. Delete the taiga-db-backup.sql 
 Next step is to run Taiga6 backend so the database can be migrated to the new schema:
 [source,bash]
 ----
-$ docker-compose up -d taiga-back
+$ docker compose up -d taiga-back
 ----
 
 === Migrate the media files
@@ -111,7 +111,7 @@ Once everything has been migrated, launch all the services and check the result:
 
 [source,bash]
 ----
-$ docker-compose up -d
+$ docker compose up -d
 ----
 
 Go to `http://localhost:9000` where everything should be migrated and available.

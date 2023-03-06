@@ -1,4 +1,4 @@
-= Migrate to new docker settings
+= Migrate to new docker settings (v 6.6.0+)
 :toc: left
 :toclevels: 1
 :numbered:
@@ -8,6 +8,14 @@
 While `taiga-docker` has been a pretty successful way for many people to have a Taiga self-hosted, the Taiga team receives a bunch of questions about the docker configuration. We have released a new `taiga-docker` version with the main settings based in an `.env` file. The main goal behind this change is to make it way easier to have a basic Taiga up and running.
 
 For those of you who already have a self-hosted Taiga running with docker, this tutorial will guide you through the steps of the migration.
+
+[NOTE]
+.Upgrade to Docker Compose V2
+====
+Taiga uses the new Docker Compose V2, because from the end of June 2023 Compose V1 won’t be supported anymore.
+
+Please ensure you have installed docker **version 19.03.0+**. Now you should be able to use `docker compose` instead of the old `docker-compose` command.
+====
 
 [[taigadckr-to-taigadckr]]
 == Summary
@@ -57,4 +65,4 @@ link:setup-production.html#customization[Customizations] are still in the `docke
 
 === Launch Taiga again
 
-Run `docker-compose up -d` (you may have a slightly different way for this command) and check every service is up and running.
+Run `docker compose up -d` (you may have a slightly different way for this command) and check every service is up and running.
