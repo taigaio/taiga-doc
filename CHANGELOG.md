@@ -2,7 +2,8 @@
 
 ## 6.6.1 (Unreleased)
 
-- ...
+- Update Slack integration
+- Change mailing list links to our new community.
 
 ## 6.6.0 (2023-03-06)
 

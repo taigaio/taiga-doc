@@ -149,11 +149,11 @@ After that, you should be able to update your theme from your user profile in yo
 
 If you create public themes, please share it with the community. Share the link in social media and ping link:http://twitter.com/taigaio/[@taigaio].
 
+
 [[community]]
 == Community
 
-link:http://groups.google.com/d/forum/taigaio[Taiga has a mailing list]. Feel free to join it
-and ask any questions you may have.
+You can always get in touch with our community through our link:https://community.taiga.io/[community space]. Feel free to join it and ask any questions you may have.
 
 To subscribe for announcements of releases, important changes and so on, please follow
 link:https://twitter.com/taigaio[@taigaio] on Twitter or read our link:https://blog.taiga.io[blog].

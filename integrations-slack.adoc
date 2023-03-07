@@ -8,28 +8,36 @@
 
 First things first, Slack is a huge platform with lots of features. Integration will always take time so please be patient. If you need a specific integration and you feel ready to get out your machete and start cutting into the taiga, please review our link:http://docs.taiga.io/api.html[API Docs].
 
-If you need help with a specific feature, you can always get in touch with our community through our link:https://groups.google.com/forum/#!forum/taigaio[mailing list].
+If you need help with a specific feature, you can always get in touch with our community through our link:https://community.taiga.io/[community space].
 
 
 == Configure Slack
 
 Go to your slack app
 
-* Go to *Configure Integrations*.
+* Select *Browser Slack > Apps*.
 
-image::imgs/slack-integration-1.png[Slack Integration Step 1]
+image::imgs/slack-integration-v2-0.png[Slack Integration Step 1]
 
-* Add a new "Incoming WebHooks" integration.
+* Type *webhook* and click *Add* of *Incoming WebHook* app.
 
-image::imgs/slack-integration-2.png[Slack Integration Step 2]
+image::imgs/slack-integration-v2-1.png[Slack Integration Step 1]
+
+* Click *Configuration*.
+
+image::imgs/slack-integration-v2-2.png[Slack Integration Step 1]
+
+* Click *Add to Slack*.
+
+image::imgs/slack-integration-v2-3.png[Slack Integration Step 1]
 
 * Choose a channel and click *Add Incoming WebHooks Integration*.
 
-image::imgs/slack-integration-3.png[Slack Integration Step 3]
+image::imgs/slack-integration-v2-4.png[Slack Integration Step 1]
 
-* Copy your *Webhook URL*.
+* Copy your *Webhook URL*. You can change other settings here if you want.
 
-image::imgs/slack-integration-4.png[Slack Integration Step 4]
+image::imgs/slack-integration-v2-5.png[Slack Integration Step 1]
 
 
 == Configure Taiga

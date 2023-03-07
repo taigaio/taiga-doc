@@ -32,7 +32,7 @@ Currently GitLab offers a limitation on its webhooks system that must be conside
 [WARNING]
 ====
 Integration will always take time so please be patient. If you need a specific integration and you feel ready to get a machete and get into the Taiga, please review our link:http://docs.taiga.io/api.html[API Docs] and our section in `Taiga` resources about link:https://community.taiga.io/t/how-can-i-contribute/159["How you can contribute?"].
-If you need help with a specific feature, you can always get in touch with our community through our link:https://groups.google.com/forum/#!forum/taigaio[mailing list].
+If you need help with a specific feature, you can always get in touch with our community through our link:https://community.taiga.io/[community space].
 ====
 
 == Configure the integration module in Taiga
