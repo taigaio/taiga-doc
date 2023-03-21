@@ -779,18 +779,18 @@ This document explains how to deploy a full Taiga service for a production envir
 <p>All these customization options are by default disabled and require you to edit <code>docker-compose.yml</code>.</p>
 </div>
 <div class="paragraph">
-<p>You should add the corresponding environment variables in the proper services with a valid value in order to enable them. Please, do not modify it unless you know what you’re doing.</p>
+<p>You should add the corresponding environment variables in the proper services (or in <code>&amp;default-back-environment</code> group) with a valid value in order to enable them. Please, do not modify it unless you know what you’re doing.</p>
 </div>
 <div class="paragraph">
 <div class="title"><strong>Session cookies in Django Admin</strong></div>
 <p>Taiga doesn&#8217;t use session cookies in its API as it stateless. However, the Django Admin (<code>/admin/</code>) uses session cookie for authentication. By default, Taiga is configured to work behind HTTPS. If you&#8217;re using HTTP (despite the strong recommendations against it), you&#8217;ll need to configure the following environment variables so you can access the Admin:</p>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-back</code></p>
+<p>Add to <code>&amp;default-back-environment</code> environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>SESSION_COOKIE_SECURE: <span class="tok-s2">&quot;False&quot;</span>&#x000A;CSRF_COOKIE_SECURE: <span class="tok-s2">&quot;False&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>SESSION_COOKIE_SECURE: &quot;False&quot;&#x000A;CSRF_COOKIE_SECURE: &quot;False&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -798,154 +798,305 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 <div class="paragraph">
 <div class="title"><strong>Public registration</strong></div>
-<p>If you want to allow a public register, configure this variable to "True". By default it&#8217;s "False". The value should be the same in <code>taiga-front</code> and <code>taiga-back</code>.</p>
+<p>Public registration is disabled by default. If you want to allow a public register, you have to enable public registration on both, frontend and backend.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Be careful with the upper and lower case in these settiings. We will use 'True' for the backend and 'true' for the frontend (this is not a typo, otherwise it won&#8217;t work).</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-back</code></p>
+<p>Add to <code>&amp;default-back-environment</code> environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;True&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>PUBLIC_REGISTER_ENABLED: &quot;True&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-front</code></p>
+<p>Add to <code>taiga-front</code> service environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;true&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>PUBLIC_REGISTER_ENABLED: &quot;true&quot;</code></pre>
 </div>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p><strong>Important</strong>: Taiga (in its default configuration) disables both Gitlab or Github oauth buttons whenever the public registration option hasn&#8217;t been activated. To be able to use Github/ Gitlab login/registration, make sure you have public registration activated on your Taiga instance.</p>
+<p>Taiga (in its default configuration) disables both Gitlab or Github oauth buttons whenever the public registration option hasn&#8217;t been activated. To be able to use Github/ Gitlab login/registration, make sure you have public registration activated on your Taiga instance.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <div class="title"><strong>GitHub OAuth login</strong></div>
-<p>Used for login with Github.</p>
+<p>Used for login with Github. This feature is disabled by default.</p>
 </div>
 <div class="paragraph">
-<p>Follow the <a href="https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app">documentation</a> in Github, when save application Github displays the ID and Secret.</p>
+<p>Follow the documentation (<a href="https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app">GitHub - Creating an OAuth App</a>) in Github, when save application Github displays the ID and Secret.</p>
 </div>
 <div class="paragraph">
 <p>Set variables in docker-compose.yml:</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p><strong>Note</strong> <code>ENABLE_GITHUB_AUTH</code> and <code>GITHUB_API_CLIENT_ID / GITHUB_CLIENT_ID</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p>
+<p>Be careful with the upper and lower case in these settiings. We will use 'True' for the backend and 'true' for the frontend (this is not a typo, otherwise it won&#8217;t work).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><code>GITHUB_API_CLIENT_ID / GITHUB_CLIENT_ID</code> should have the same value.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-back</code></p>
+<p>Add to <code>&amp;default-back-environment</code> environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITHUB_AUTH: <span class="tok-s2">&quot;True&quot;</span>&#x000A;GITHUB_API_CLIENT_ID: <span class="tok-s2">&quot;github-client-id&quot;</span>&#x000A;GITHUB_API_CLIENT_SECRET: <span class="tok-s2">&quot;github-client-secret&quot;</span>&#x000A;PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;True&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_GITHUB_AUTH: &quot;True&quot;&#x000A;GITHUB_API_CLIENT_ID: &quot;github-client-id&quot;&#x000A;GITHUB_API_CLIENT_SECRET: &quot;github-client-secret&quot;&#x000A;PUBLIC_REGISTER_ENABLED: &quot;True&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-front</code></p>
+<p>Add to <code>taiga-front</code> service environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITHUB_AUTH: <span class="tok-s2">&quot;true&quot;</span>&#x000A;GITHUB_CLIENT_ID: <span class="tok-s2">&quot;github-client-id&quot;</span>&#x000A;PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;true&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_GITHUB_AUTH: &quot;true&quot;&#x000A;GITHUB_CLIENT_ID: &quot;github-client-id&quot;&#x000A;PUBLIC_REGISTER_ENABLED: &quot;true&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <div class="title"><strong>Gitlab OAuth login</strong></div>
-<p>Used for login with GitLab.</p>
+<p>Used for login with GitLab.  This feature is disabled by default.</p>
 </div>
 <div class="paragraph">
-<p>Follow the <a href="https://docs.gitlab.com/ee/integration/oauth_provider.html">documentation</a> in Gitlab, when save application GitLab displays the ID and Secret.</p>
+<p>Follow the documentation (<a href="https://docs.gitlab.com/ee/integration/oauth_provider.html">Configure GitLab as an OAuth 2.0 authentication identity provider</a>) in Gitlab to get the <em>gitlab-client-id</em> and the <em>gitlab-client-secret</em>.</p>
 </div>
 <div class="paragraph">
 <p>Set variables in docker-compose.yml:</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
-<p><strong>Note</strong> <code>ENABLE_GITLAB_AUTH</code>, <code>GITLAB_API_CLIENT_ID / GITLAB_CLIENT_ID</code> and <code>GITLAB_URL</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p>
+<p>Be careful with the upper and lower case in these settiings. We will use 'True' for the backend and 'true' for the frontend (this is not a typo, otherwise it won&#8217;t work).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><code>GITLAB_API_CLIENT_ID / GITLAB_CLIENT_ID</code> and <code>GITLAB_URL</code> should have the same value.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-back</code></p>
+<p>Add to <code>&amp;default-back-environment</code> environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITLAB_AUTH: <span class="tok-s2">&quot;True&quot;</span>&#x000A;GITLAB_API_CLIENT_ID: <span class="tok-s2">&quot;gitlab-client-id&quot;</span>&#x000A;GITLAB_API_CLIENT_SECRET: <span class="tok-s2">&quot;gitlab-client-secret&quot;</span>&#x000A;GITLAB_URL: <span class="tok-s2">&quot;gitlab-url&quot;</span>&#x000A;PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;True&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_GITLAB_AUTH: &quot;True&quot;&#x000A;GITLAB_API_CLIENT_ID: &quot;gitlab-client-id&quot;&#x000A;GITLAB_API_CLIENT_SECRET: &quot;gitlab-client-secret&quot;&#x000A;GITLAB_URL: &quot;gitlab-url&quot;&#x000A;PUBLIC_REGISTER_ENABLED: &quot;True&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-front</code></p>
+<p>Add to <code>taiga-front</code> service environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITLAB_AUTH: <span class="tok-s2">&quot;true&quot;</span>&#x000A;GITLAB_CLIENT_ID: <span class="tok-s2">&quot;gitlab-client-id&quot;</span>&#x000A;GITLAB_URL: <span class="tok-s2">&quot;gitlab-url&quot;</span>&#x000A;PUBLIC_REGISTER_ENABLED: <span class="tok-s2">&quot;true&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_GITLAB_AUTH: &quot;true&quot;&#x000A;GITLAB_CLIENT_ID: &quot;gitlab-client-id&quot;&#x000A;GITLAB_URL: &quot;gitlab-url&quot;&#x000A;PUBLIC_REGISTER_ENABLED: &quot;true&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <div class="title"><strong>Slack integration</strong></div>
-<p>Enable Slack integration in your Taiga instance. By default, it&#8217;s "False". Should have the same value as this variable in <code>taiga-front</code> and <code>taiga-back</code>.</p>
+<p>Enable Slack integration in your Taiga instance. This feature is disabled by default.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Be careful with the upper and lower case in these settiings. We will use 'True' for the backend and 'true' for the frontend (this is not a typo, otherwise it won&#8217;t work).</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-back</code></p>
+<p>Add to <code>&amp;default-back-environment</code> environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_SLACK: <span class="tok-s2">&quot;True&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_SLACK: &quot;True&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-front</code></p>
+<p>Add to <code>taiga-front</code> service environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_SLACK: <span class="tok-s2">&quot;true&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_SLACK: &quot;true&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <div class="title"><strong>GitHub importer</strong></div>
-<p>Service: <code>taiga-back</code></p>
+<p>Activating this feature, you will be able to import projects from GitHub.</p>
+</div>
+<div class="paragraph">
+<p>Follow this documentation (<a href="https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app">GitHub - Creating an OAuth App</a>) to obtain the <em>client id</em> and the <em>client secret</em> from GitHun.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Be careful with the upper and lower case in these settiings. We will use 'True' for the backend and 'true' for the frontend (this is not a typo, otherwise it won&#8217;t work).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Add to <code>&amp;default-back-environment</code> environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITHUB_IMPORTER: <span class="tok-s2">&quot;True&quot;</span>&#x000A;GITHUB_IMPORTER_CLIENT_ID: <span class="tok-s2">&quot;client-id-from-github&quot;</span>&#x000A;GITHUB_IMPORTER_CLIENT_SECRET: <span class="tok-s2">&quot;client-secret-from-github&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_GITHUB_IMPORTER: &quot;True&quot;&#x000A;GITHUB_IMPORTER_CLIENT_ID: &quot;client-id-from-github&quot;&#x000A;GITHUB_IMPORTER_CLIENT_SECRET: &quot;client-secret-from-github&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-front</code></p>
+<p>Add to <code>taiga-front</code> service environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_GITHUB_IMPORTER: <span class="tok-s2">&quot;true&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_GITHUB_IMPORTER: &quot;true&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <div class="title"><strong>Jira importer</strong></div>
-<p>Service: <code>taiga-back</code></p>
+<p>Activating this feature, you will be able to import projects from Jira.</p>
+</div>
+<div class="paragraph">
+<p>Follow this documentation (<a href="https://developer.atlassian.com/cloud/jira/platform/jira-rest-api-oauth-authentication/">Jira - OAuth 1.0a for REST APIs</a>) to obtain the <em>consumer key</em> and the <em>public/private certificate key</em>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Be careful with the upper and lower case in these settiings. We will use 'True' for the backend and 'true' for the frontend (this is not a typo, otherwise it won&#8217;t work).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Add to <code>&amp;default-back-environment</code> environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_JIRA_IMPORTER: <span class="tok-s2">&quot;True&quot;</span>&#x000A;JIRA_IMPORTER_CONSUMER_KEY: <span class="tok-s2">&quot;consumer-key-from-jira&quot;</span>&#x000A;JIRA_IMPORTER_CERT: <span class="tok-s2">&quot;cert-from-jira&quot;</span>&#x000A;JIRA_IMPORTER_PUB_CERT: <span class="tok-s2">&quot;pub-cert-from-jira&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_JIRA_IMPORTER: &quot;True&quot;&#x000A;JIRA_IMPORTER_CONSUMER_KEY: &quot;consumer-key-from-jira&quot;&#x000A;JIRA_IMPORTER_CERT: &quot;cert-from-jira&quot;&#x000A;JIRA_IMPORTER_PUB_CERT: &quot;pub-cert-from-jira&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-front</code></p>
+<p>Add to <code>taiga-front</code> service environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_JIRA_IMPORTER: <span class="tok-s2">&quot;true&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_JIRA_IMPORTER: &quot;true&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <div class="title"><strong>Trello importer</strong></div>
-<p>Service: <code>taiga-back</code></p>
+<p>Activating this feature, you will be able to import projects from Trello.</p>
+</div>
+<div class="paragraph">
+<p>For configure Trello, you have two options:
+- go to <a href="https://trello.com/app-key">https://trello.com/app-key</a> (you must login first) and obtaing your development <em>API key</em> and your <em>secret key</em>.
+- or with the new method, <a href="https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/#managing-your-api-key">create a new Power-Up</a> and generate an <em>API key</em> and a <em>secret key</em></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Be careful with the upper and lower case in these settiings. We will use 'True' for the backend and 'true' for the frontend (this is not a typo, otherwise it won&#8217;t work).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Add to <code>&amp;default-back-environment</code> environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_TRELLO_IMPORTER: <span class="tok-s2">&quot;True&quot;</span>&#x000A;TRELLO_IMPORTER_API_KEY: <span class="tok-s2">&quot;api-key-from-trello&quot;</span>&#x000A;TRELLO_IMPORTER_SECRET_KEY: <span class="tok-s2">&quot;secret-key-from-trello&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_TRELLO_IMPORTER: &quot;True&quot;&#x000A;TRELLO_IMPORTER_API_KEY: &quot;api-key-from-trello&quot;&#x000A;TRELLO_IMPORTER_SECRET_KEY: &quot;secret-key-from-trello&quot;</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Service: <code>taiga-front</code></p>
+<p>Add to <code>taiga-front</code> service environments</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>ENABLE_TRELLO_IMPORTER: <span class="tok-s2">&quot;true&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="yml"><span></span>ENABLE_TRELLO_IMPORTER: &quot;true&quot;</code></pre>
 </div>
 </div>
 </div>
@@ -999,7 +1150,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-nv">TAIGA_SITES_SCHEME</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;https&quot;</span>&#x000A;<span class="tok-nv">TAIGA_SITES_DOMAIN</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;taiga.mycompany.com&quot;</span>&#x000A;<span class="tok-nv">FORCE_SCRIPT_NAME</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;&quot;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="python"><span></span><span class="tok-n">TAIGA_SITES_SCHEME</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;https&quot;</span>&#x000A;<span class="tok-n">TAIGA_SITES_DOMAIN</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;taiga.mycompany.com&quot;</span>&#x000A;<span class="tok-n">FORCE_SCRIPT_NAME</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;&quot;</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1040,7 +1191,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-c1"># conf.json</span>&#x000A;<span class="tok-o">{</span>&#x000A;    <span class="tok-s2">&quot;api&quot;</span>: <span class="tok-s2">&quot;https://taiga.mycompany.com/api/v1/&quot;</span>,&#x000A;    <span class="tok-s2">&quot;eventsUrl&quot;</span>: <span class="tok-s2">&quot;wss://taiga.mycompany.com/events&quot;</span>,&#x000A;    <span class="tok-s2">&quot;baseHref&quot;</span>: <span class="tok-s2">&quot;/&quot;</span>,</code></pre>
+<pre class="pygments highlight"><code data-lang="json"><span></span><span class="tok-err">#</span> <span class="tok-err">co</span><span class="tok-kc">nf</span><span class="tok-err">.jso</span><span class="tok-kc">n</span>&#x000A;<span class="tok-p">{</span>&#x000A;    <span class="tok-nt">&quot;api&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://taiga.mycompany.com/api/v1/&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;eventsUrl&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;wss://taiga.mycompany.com/events&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;baseHref&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;/&quot;</span><span class="tok-p">,</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1048,7 +1199,7 @@ This document explains how to deploy a full Taiga service for a production envir
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-c1"># conf.json</span>&#x000A;<span class="tok-o">{</span>&#x000A;    <span class="tok-s2">&quot;api&quot;</span>: <span class="tok-s2">&quot;https://mycompany.com/taiga/api/v1/&quot;</span>,&#x000A;    <span class="tok-s2">&quot;eventsUrl&quot;</span>: <span class="tok-s2">&quot;wss://mycompany.com/taiga/events&quot;</span>,&#x000A;    <span class="tok-s2">&quot;baseHref&quot;</span>: <span class="tok-s2">&quot;/taiga/&quot;</span>,</code></pre>
+<pre class="pygments highlight"><code data-lang="json"><span></span><span class="tok-err">#</span> <span class="tok-err">co</span><span class="tok-kc">nf</span><span class="tok-err">.jso</span><span class="tok-kc">n</span>&#x000A;<span class="tok-p">{</span>&#x000A;    <span class="tok-nt">&quot;api&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;https://mycompany.com/taiga/api/v1/&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;eventsUrl&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;wss://mycompany.com/taiga/events&quot;</span><span class="tok-p">,</span>&#x000A;    <span class="tok-nt">&quot;baseHref&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;/taiga/&quot;</span><span class="tok-p">,</span></code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1062,7 +1213,7 @@ This document explains how to deploy a full Taiga service for a production envir
 <h3 id="_configure_an_admin_user">1.7. Configure an admin user</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="sh"><span></span>$ docker compose up -d&#x000A;&#x000A;$ docker compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span>$ docker compose up -d&#x000A;&#x000A;$ docker compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser</code></pre>
 </div>
 </div>
 </div>
@@ -1777,7 +1928,7 @@ The attachments will be accesible with a token during MAX_AGE (in seconds). Afte
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-03-14 16:17:30 +0100
+Last updated 2023-03-21 13:49:51 +0100
 </div>
 </div>
 </div>
