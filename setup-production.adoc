@@ -161,7 +161,7 @@ You should add the corresponding environment variables in the proper services (o
 Taiga doesn't use session cookies in its API as it stateless. However, the Django Admin (`/admin/`) uses session cookie for authentication. By default, Taiga is configured to work behind HTTPS. If you're using HTTP (despite the strong recommendations against it), you'll need to configure the following environment variables so you can access the Admin:
 
 Add to `&default-back-environment` environments
-[source, yml]
+[source, yaml]
 ----
 SESSION_COOKIE_SECURE: "False"
 CSRF_COOKIE_SECURE: "False"
@@ -179,13 +179,13 @@ Be careful with the upper and lower case in these settiings. We will use 'True' 
 ====
 
 Add to `&default-back-environment` environments
-[source, yml]
+[source, yaml]
 ----
 PUBLIC_REGISTER_ENABLED: "True"
 ----
 
 Add to `taiga-front` service environments
-[source, yml]
+[source, yaml]
 ----
 PUBLIC_REGISTER_ENABLED: "true"
 ----
@@ -213,7 +213,7 @@ Be careful with the upper and lower case in these settiings. We will use 'True' 
 ====
 
 Add to `&default-back-environment` environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_GITHUB_AUTH: "True"
 GITHUB_API_CLIENT_ID: "github-client-id"
@@ -222,7 +222,7 @@ PUBLIC_REGISTER_ENABLED: "True"
 ----
 
 Add to `taiga-front` service environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_GITHUB_AUTH: "true"
 GITHUB_CLIENT_ID: "github-client-id"
@@ -250,7 +250,7 @@ Be careful with the upper and lower case in these settiings. We will use 'True' 
 
 
 Add to `&default-back-environment` environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_GITLAB_AUTH: "True"
 GITLAB_API_CLIENT_ID: "gitlab-client-id"
@@ -260,7 +260,7 @@ PUBLIC_REGISTER_ENABLED: "True"
 ----
 
 Add to `taiga-front` service environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_GITLAB_AUTH: "true"
 GITLAB_CLIENT_ID: "gitlab-client-id"
@@ -278,13 +278,13 @@ Be careful with the upper and lower case in these settiings. We will use 'True' 
 ====
 
 Add to `&default-back-environment` environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_SLACK: "True"
 ----
 
 Add to `taiga-front` service environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_SLACK: "true"
 ----
@@ -301,7 +301,7 @@ Be careful with the upper and lower case in these settiings. We will use 'True' 
 ====
 
 Add to `&default-back-environment` environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_GITHUB_IMPORTER: "True"
 GITHUB_IMPORTER_CLIENT_ID: "client-id-from-github"
@@ -309,7 +309,7 @@ GITHUB_IMPORTER_CLIENT_SECRET: "client-secret-from-github"
 ----
 
 Add to `taiga-front` service environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_GITHUB_IMPORTER: "true"
 ----
@@ -326,7 +326,7 @@ Be careful with the upper and lower case in these settiings. We will use 'True' 
 ====
 
 Add to `&default-back-environment` environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_JIRA_IMPORTER: "True"
 JIRA_IMPORTER_CONSUMER_KEY: "consumer-key-from-jira"
@@ -335,7 +335,7 @@ JIRA_IMPORTER_PUB_CERT: "pub-cert-from-jira"
 ----
 
 Add to `taiga-front` service environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_JIRA_IMPORTER: "true"
 ----
@@ -354,7 +354,7 @@ Be careful with the upper and lower case in these settiings. We will use 'True' 
 ====
 
 Add to `&default-back-environment` environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_TRELLO_IMPORTER: "True"
 TRELLO_IMPORTER_API_KEY: "api-key-from-trello"
@@ -362,7 +362,7 @@ TRELLO_IMPORTER_SECRET_KEY: "secret-key-from-trello"
 ----
 
 Add to `taiga-front` service environments
-[source, yml]
+[source, yaml]
 ----
 ENABLE_TRELLO_IMPORTER: "true"
 ----
@@ -428,21 +428,23 @@ Edit it with your own configuration:
 Example to configure Taiga in **subdomain**:
 [source, json]
 ----
-# conf.json
 {
     "api": "https://taiga.mycompany.com/api/v1/",
     "eventsUrl": "wss://taiga.mycompany.com/events",
     "baseHref": "/",
+    ...
+}
 ----
 
 Example to configure Taiga in **subpath**:
 [source, json]
 ----
-# conf.json
 {
     "api": "https://mycompany.com/taiga/api/v1/",
     "eventsUrl": "wss://mycompany.com/taiga/events",
     "baseHref": "/taiga/",
+    ...
+}
 ----
 
 Check as well the rest of the configuration if you need to enable some advanced features.
