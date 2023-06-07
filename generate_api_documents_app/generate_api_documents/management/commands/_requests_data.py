@@ -10,7 +10,7 @@ from collections import OrderedDict
 from taiga.external_apps.models import Application, ApplicationToken
 from taiga.webhooks.models import Webhook
 from taiga.users.models import User
-from taiga.auth.tokens import get_token_for_user
+from taiga.auth.tokens import CancelToken
 from taiga.projects.epics.models import RelatedUserStory
 from taiga.projects.models import Project, Membership
 from taiga.projects.notifications.models import NotifyPolicy
@@ -2731,7 +2731,7 @@ reqs = OrderedDict([
         "method": "POST",
         "url": "/api/v1/users/cancel",
         "body": {
-          "cancel_token": get_token_for_user(user, "cancel_account")
+          "cancel_token": str(CancelToken.for_user(user))
         }
     }),
     ("importers-trello-auth-url", {
