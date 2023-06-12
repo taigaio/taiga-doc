@@ -1,6 +1,10 @@
 # Changelog
 
-## 6.6.1 (Unreleased)
+## 6.7.1 (Unreleased)
+
+- ...
+
+## 6.7.0 (2023-06-12)
 
 - Update Slack integration
 - Change mailing list links to our new community.
