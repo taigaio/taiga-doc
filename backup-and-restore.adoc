@@ -59,7 +59,7 @@ Follow these steps:
 [source,bash]
 ----
 # Run only the database to avoid migrations
-$ docker compose up -d taiga-d
+$ docker compose up -d taiga-db
 
 # Copy the dump inside the container:
 $ docker cp taiga-db-backup.sql taiga-docker_taiga-db_1:/taiga-db-backup.sql

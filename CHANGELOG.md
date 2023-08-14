@@ -1,8 +1,11 @@
 # Changelog
 
-## 6.7.1 (Unreleased)
+## 6.7.2 (Unreleased)
 
-- ...
+## 6.7.1 (2023-08-14)
+
+- Fix documentation thanks to @hermann-san
+
 
 ## 6.7.0 (2023-06-12)
 

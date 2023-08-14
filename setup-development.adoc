@@ -113,15 +113,14 @@ python -m pip install -r requirements.txt -r requirements-devel.txt
 
 .Adjust Django Configuration
 
-You can tune your own environment configuration by editing a `settings/local.py`
+You can tune your own environment configuration by editing a `settings/config.py`
 configuration file to overwrite any setting in `settings/common.py`.
 
 For a basic configuration that works with these instructions, simply copy
-`settings/local.py.example` to `settings/local.py`
-(but remember to edit your postgresql password, to match what you picked for the
+`settings/config.py.prod.example` to `settings/config.py` (but remember to edit your postgresql password, to match what you picked for the
 `CREATE ROLE taiga LOGIN PASSWORD` command above).
 
-Otherwise, just put this in your own `~/taiga-back/settings/local.py`
+Otherwise, just put this in your own `~/taiga-back/settings/config.py`
 [source,python]
 ----
 from .common import *
@@ -166,7 +165,7 @@ Install `rabbitmq-server` and `redis-server`:
 sudo apt-get install -y rabbitmq-server redis-server
 ----
 
-To run celery with Taiga you have to include the following line in your local.py:
+To run celery with Taiga you have to include the following line in your config.py:
 
 [source,python]
 ----
@@ -367,7 +366,7 @@ sudo rabbitmqctl add_vhost taiga
 sudo rabbitmqctl set_permissions -p taiga rabbitmquser ".*" ".*" ".*"
 ----
 
-.Update your taiga-back settings to include the following lines in your local.py:
+.Update your taiga-back settings to include the following lines in your config.py:
 [source,python]
 ----
 EVENTS_PUSH_BACKEND = "taiga.events.backends.rabbitmq.EventsPushBackend"
