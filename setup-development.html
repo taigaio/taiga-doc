@@ -727,17 +727,16 @@ or <a href="https://pypi.org/project/pew/">pew</a>.
 </div>
 <div class="paragraph">
 <div class="title">Adjust Django Configuration</div>
-<p>You can tune your own environment configuration by editing a <code>settings/local.py</code>
+<p>You can tune your own environment configuration by editing a <code>settings/config.py</code>
 configuration file to overwrite any setting in <code>settings/common.py</code>.</p>
 </div>
 <div class="paragraph">
 <p>For a basic configuration that works with these instructions, simply copy
-<code>settings/local.py.example</code> to <code>settings/local.py</code>
-(but remember to edit your postgresql password, to match what you picked for the
+<code>settings/config.py.prod.example</code> to <code>settings/config.py</code> (but remember to edit your postgresql password, to match what you picked for the
 <code>CREATE ROLE taiga LOGIN PASSWORD</code> command above).</p>
 </div>
 <div class="paragraph">
-<p>Otherwise, just put this in your own <code>~/taiga-back/settings/local.py</code></p>
+<p>Otherwise, just put this in your own <code>~/taiga-back/settings/config.py</code></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -784,7 +783,7 @@ this, you have to configure and install the celery service requirements.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>To run celery with Taiga you have to include the following line in your local.py:</p>
+<p>To run celery with Taiga you have to include the following line in your config.py:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1010,7 +1009,7 @@ dependencies again.
 </div>
 </div>
 <div class="listingblock">
-<div class="title">Update your taiga-back settings to include the following lines in your local.py:</div>
+<div class="title">Update your taiga-back settings to include the following lines in your config.py:</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="python"><span></span><span class="tok-n">EVENTS_PUSH_BACKEND</span> <span class="tok-o">=</span> <span class="tok-s2">&quot;taiga.events.backends.rabbitmq.EventsPushBackend&quot;</span>&#x000A;<span class="tok-n">EVENTS_PUSH_BACKEND_OPTIONS</span> <span class="tok-o">=</span> <span class="tok-p">{</span><span class="tok-s2">&quot;url&quot;</span><span class="tok-p">:</span> <span class="tok-s2">&quot;amqp://rabbitmquser:rabbitmqpassword@rabbitmqhost:5672/taiga&quot;</span><span class="tok-p">}</span></code></pre>
 </div>
@@ -1053,7 +1052,7 @@ dependencies again.
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-06-12 11:39:58 +0200
+Last updated 2023-08-14 13:22:48 +0200
 </div>
 </div>
 </div>

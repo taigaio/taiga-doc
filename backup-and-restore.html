@@ -600,7 +600,7 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-c1"># Run only the database to avoid migrations</span>&#x000A;$ docker compose up -d taiga-d&#x000A;&#x000A;<span class="tok-c1"># Copy the dump inside the container:</span>&#x000A;$ docker cp taiga-db-backup.sql taiga-docker_taiga-db_1:/taiga-db-backup.sql&#x000A;&#x000A;<span class="tok-c1"># Access the container</span>&#x000A;$ docker <span class="tok-nb">exec</span> -ti taiga-docker_taiga-db_1 /bin/bash</code></pre>
+<pre class="pygments highlight"><code data-lang="bash"><span></span><span class="tok-c1"># Run only the database to avoid migrations</span>&#x000A;$ docker compose up -d taiga-db&#x000A;&#x000A;<span class="tok-c1"># Copy the dump inside the container:</span>&#x000A;$ docker cp taiga-db-backup.sql taiga-docker_taiga-db_1:/taiga-db-backup.sql&#x000A;&#x000A;<span class="tok-c1"># Access the container</span>&#x000A;$ docker <span class="tok-nb">exec</span> -ti taiga-docker_taiga-db_1 /bin/bash</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -666,7 +666,7 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-06-12 11:40:10 +0200
+Last updated 2023-08-14 13:22:56 +0200
 </div>
 </div>
 </div>
