@@ -375,11 +375,15 @@ It requires you to map the configuration files of `taiga-back` and `taiga-front`
 
 .**Map a `config.py` file **
 
-From https://github.com/kaleidos-ventures/taiga-back[taiga-back] download the file `settings/config.py.prod.example` and rename it:
+From https://github.com/kaleidos-ventures/taiga-back[taiga-back] download the files:
+
+- https://raw.githubusercontent.com/kaleidos-ventures/taiga-back/main/settings/common.py[settings/common.py]
+- https://raw.githubusercontent.com/kaleidos-ventures/taiga-back/main/settings/config.py.prod.example[settings/config.py.prod.example] - save it as `config.py`:
 
 [source, bash]
 ----
-mv settings/config.py.prod.example settings/config.py
+wget https://raw.githubusercontent.com/kaleidos-ventures/taiga-back/main/settings/common.py
+wget https://raw.githubusercontent.com/kaleidos-ventures/taiga-back/main/settings/config.py.prod.example -O config.py
 ----
 
 Edit `config.py` with your own configuration:
@@ -414,11 +418,11 @@ Map the file into `/taiga-back/settings/config.py`. Have in mind that you have t
 
 .**Map a `conf.json` file**
 
-From https://github.com/kaleidos-ventures/taiga-front[taiga-front] download the file `conf/conf.example.json` and rename it:
+From https://github.com/kaleidos-ventures/taiga-front[taiga-front] download the file https://raw.githubusercontent.com/kaleidos-ventures/taiga-front/main/conf/conf.example.json[conf/conf.example.json] - save it as `conf.json`:
 
 [source,bash]
 ----
-mv conf.example.json conf.json
+wget https://raw.githubusercontent.com/kaleidos-ventures/taiga-front/main/conf/conf.example.json -O conf.json
 ----
 
 Edit it with your own configuration:
