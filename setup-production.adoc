@@ -318,7 +318,7 @@ ENABLE_GITHUB_IMPORTER: "true"
 
 Activating this feature, you will be able to import projects from Jira.
 
-Follow this documentation (link:https://developer.atlassian.com/cloud/jira/platform/jira-rest-api-oauth-authentication/[Jira - OAuth 1.0a for REST APIs]) to obtain the _consumer key_ and the _public/private certificate key_.     
+Follow this documentation (link:https://developer.atlassian.com/cloud/jira/platform/jira-rest-api-oauth-authentication/[Jira - OAuth 1.0a for REST APIs]) to obtain the _consumer key_ and the _public/private certificate key_.
 
 [NOTE]
 ====
@@ -618,7 +618,7 @@ sudo apt-get install -y libssl-dev libffi-dev
 .Install Node.js
 [source,bash]
 ----
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ----
 

@@ -223,9 +223,10 @@ NodeJS and friends
 
 NodeJS is used to execute **gulp**, a task execution tool used mainly for executing deployment and compilation tasks.
 
-.Install nodejs
+.Install nodejs (specific version 16)
 [source,bash]
 ----
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs npm
 ----
 
