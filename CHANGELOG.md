@@ -1,11 +1,16 @@
 # Changelog
 
-## 6.7.2 (Unreleased)
+## 6.8.0 (Unreleased)
+
+- ...
+
+## 6.7.2 (2024-03-08)
+
+- Change the node version for production environments.
 
 ## 6.7.1 (2023-08-14)
 
 - Fix documentation thanks to @hermann-san
-
 
 ## 6.7.0 (2023-06-12)
 
