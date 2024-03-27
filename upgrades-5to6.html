@@ -10,7 +10,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <![endif]-->
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="Asciidoctor 2.0.20" name="generator">
+<meta content="Asciidoctor 2.0.21" name="generator">
 <title>Upgrade from Taiga5 to Taiga6</title>
 <style>/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment the following line when using as a custom stylesheet */
@@ -144,7 +144,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -166,6 +166,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -331,7 +332,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -575,7 +576,7 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 </div>
 </li>
 <li>
-<p>you have access to the Taiga6 server, and have cloned the <a href="https://github.com/kaleidos-ventures/taiga-docker">taiga-docker</a> repository</p>
+<p>you have access to the Taiga6 server, and have cloned the <a href="https://github.com/taigaio/taiga-docker">taiga-docker</a> repository</p>
 </li>
 <li>
 <p>the Taiga6 server has <code>docker</code> and <code>docker-compose</code></p>
@@ -680,7 +681,7 @@ pre.pygments .tok-il { color: #40a070 } /* Literal.Number.Integer.Long */</style
 <div class="sect2">
 <h3 id="install-taiga6">1.3. Get Taiga6</h3>
 <div class="paragraph">
-<p>Clone <a href="https://github.com/kaleidos-ventures/taiga-docker">this repository</a> in the Taiga6 server.</p>
+<p>Clone <a href="https://github.com/taigaio/taiga-docker">this repository</a> in the Taiga6 server.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -903,7 +904,7 @@ Besides this change in the configuration system, you should check and use the fi
 </div>
 <div class="paragraph">
 <p>If you were already using <code>async tasks</code>, then:
-- update your <code>config.py</code> file with the new environment variables (check <a href="https://github.com/kaleidos-ventures/taiga-back/blob/stable/settings/confi.py.prod.example">the example</a>)
+- update your <code>config.py</code> file with the new environment variables (check <a href="https://github.com/taigaio/taiga-back/blob/stable/settings/confi.py.prod.example">the example</a>)
 - update <code>/etc/systemd/system/taiga-async.service</code> (it was called <code>taiga-celery.service</code>) to have all the options shown at <a href="setup-production.html#expose-taiga-async">these instructions</a>.</p>
 </div>
 <div class="paragraph">
@@ -1024,7 +1025,7 @@ Besides this change in the configuration system, you should check and use the fi
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-03-08 13:55:30 +0100
+Last updated 2024-03-27 11:43:40 +0100
 </div>
 </div>
 </div>
