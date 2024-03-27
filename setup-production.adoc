@@ -30,7 +30,7 @@ Additionally, it's necessary to have familiarity with Docker, docker compose and
 
 === Get repository
 
-Clone link:https://github.com/kaleidos-ventures/taiga-docker[this repository].
+Clone link:https://github.com/taigaio/taiga-docker[this repository].
 [source,bash]
 ----
 $ cd taiga-docker/
@@ -375,7 +375,7 @@ It requires you to map the configuration files of `taiga-back` and `taiga-front`
 
 .**Map a `config.py` file **
 
-From https://github.com/kaleidos-ventures/taiga-back[taiga-back] download the file `settings/config.py.prod.example` and rename it:
+From https://github.com/taigaio/taiga-back[taiga-back] download the file `settings/config.py.prod.example` and rename it:
 
 [source, bash]
 ----
@@ -414,7 +414,7 @@ Map the file into `/taiga-back/settings/config.py`. Have in mind that you have t
 
 .**Map a `conf.json` file**
 
-From https://github.com/kaleidos-ventures/taiga-front[taiga-front] download the file `conf/conf.example.json` and rename it:
+From https://github.com/taigaio/taiga-front[taiga-front] download the file `conf/conf.example.json` and rename it:
 
 [source,bash]
 ----
@@ -665,7 +665,7 @@ This section describes the installation and configuration of the *taiga-back* an
 [source,bash]
 ----
 cd ~
-git clone https://github.com/kaleidos-ventures/taiga-back.git taiga-back
+git clone https://github.com/taigaio/taiga-back.git taiga-back
 cd taiga-back
 git checkout stable
 ----
@@ -688,7 +688,7 @@ source .venv/bin/activate
 .Install taiga-contrib-protected:
 [source, bash]
 ----
-(taiga-back) pip install git+https://github.com/kaleidos-ventures/taiga-contrib-protected.git@stable#egg=taiga-contrib-protected
+(taiga-back) pip install git+https://github.com/taigaio/taiga-contrib-protected.git@stable#egg=taiga-contrib-protected
 ----
 
 .Settings file:
@@ -767,7 +767,7 @@ This section describes the installation and configuration of the *taiga-front* m
 [source,bash]
 ----
 cd ~
-git clone https://github.com/kaleidos-ventures/taiga-front-dist.git taiga-front-dist
+git clone https://github.com/taigaio/taiga-front-dist.git taiga-front-dist
 cd taiga-front-dist
 git checkout stable
 ----
@@ -825,7 +825,7 @@ The **taiga-events** module is the Taiga websocket server which allows **taiga-f
 [source,bash]
 ----
 cd ~
-git clone https://github.com/kaleidos-ventures/taiga-events.git taiga-events
+git clone https://github.com/taigaio/taiga-events.git taiga-events
 cd taiga-events
 git checkout stable
 ----
@@ -862,7 +862,7 @@ This section describes the installation and configuration of the *taiga-protecte
 [source,bash]
 ----
 cd ~
-git clone https://github.com/kaleidos-ventures/taiga-protected.git taiga-protected
+git clone https://github.com/taigaio/taiga-protected.git taiga-protected
 cd taiga-protected
 git checkout stable
 ----

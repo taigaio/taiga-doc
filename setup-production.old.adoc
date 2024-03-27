@@ -37,7 +37,7 @@ Additionally, it's necessary to have familiarity with Docker, docker-compose and
 
 === Get repository
 
-Clone link:https://github.com/kaleidos-ventures/taiga-docker[this repository].
+Clone link:https://github.com/taigaio/taiga-docker[this repository].
 [source,bash]
 ----
 $ cd taiga-docker/
@@ -322,7 +322,7 @@ It requires you to map the configuration files of `taiga-back` and `taiga-front`
 
 .**Map a `config.py` file **
 
-From https://github.com/kaleidos-ventures/taiga-back[taiga-back] download the file `settings/config.py.prod.example` and rename it:
+From https://github.com/taigaio/taiga-back[taiga-back] download the file `settings/config.py.prod.example` and rename it:
 
 [source, bash]
 ----
@@ -361,7 +361,7 @@ Map the file into `/taiga-back/settings/config.py`. Have in mind that you have t
 
 .**Map a `conf.json` file**
 
-From https://github.com/kaleidos-ventures/taiga-front[taiga-front] download the file `dist/conf.example.json` and rename it:
+From https://github.com/taigaio/taiga-front[taiga-front] download the file `dist/conf.example.json` and rename it:
 
 [source,bash]
 ----

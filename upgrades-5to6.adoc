@@ -25,7 +25,7 @@ Prior to start the migration, ensure:
 * you have access to the Taiga5 server and its configuration:
 ** in a source code installation, a `local.py` file
 ** in a docker installation, the `docker-compose.yml` file
-* you have access to the Taiga6 server, and have cloned the link:https://github.com/kaleidos-ventures/taiga-docker[taiga-docker] repository
+* you have access to the Taiga6 server, and have cloned the link:https://github.com/taigaio/taiga-docker[taiga-docker] repository
 * the Taiga6 server has `docker` and `docker-compose`
 
 Besides, have in mind that:
@@ -94,7 +94,7 @@ Move these two files to the server where Taiga6 will be.
 [[install-taiga6]]
 === Get Taiga6
 
-Clone link:https://github.com/kaleidos-ventures/taiga-docker[this repository] in the Taiga6 server.
+Clone link:https://github.com/taigaio/taiga-docker[this repository] in the Taiga6 server.
 [source,bash]
 ----
 $ cd taiga-docker/
@@ -282,7 +282,7 @@ If you are not using the `async tasks` service, we strongly recommend you to do:
 - Create the systemd unit following link:setup-production.html#expose-taiga-async[these instructions]
 
 If you were already using `async tasks`, then:
-- update your `config.py` file with the new environment variables (check link:https://github.com/kaleidos-ventures/taiga-back/blob/stable/settings/confi.py.prod.example[the example])
+- update your `config.py` file with the new environment variables (check link:https://github.com/taigaio/taiga-back/blob/stable/settings/confi.py.prod.example[the example])
 - update `/etc/systemd/system/taiga-async.service` (it was called `taiga-celery.service`) to have all the options shown at link:setup-production.html#expose-taiga-async[these instructions].
 
 Restart taiga-async service.

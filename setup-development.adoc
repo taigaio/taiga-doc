@@ -85,7 +85,7 @@ The next step is to download the code from GitHub and install its dependencies:
 [source,bash]
 ----
 cd ~
-git clone https://github.com/kaleidos-ventures/taiga-back.git taiga-back
+git clone https://github.com/taigaio/taiga-back.git taiga-back
 cd taiga-back
 git checkout main
 ----
@@ -253,7 +253,7 @@ sudo npm install -g gulp
 [source,bash]
 ----
 cd ~
-git clone https://github.com/kaleidos-ventures/taiga-front.git taiga-front
+git clone https://github.com/taigaio/taiga-front.git taiga-front
 cd taiga-front
 git checkout stable
 ----
@@ -380,7 +380,7 @@ The next step is downloading the code from GitHub and installing the dependencie
 [source,bash]
 ----
 cd ~
-git clone https://github.com/kaleidos-ventures/taiga-events.git taiga-events
+git clone https://github.com/taigaio/taiga-events.git taiga-events
 cd taiga-events
 ----
 

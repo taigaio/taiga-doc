@@ -10,7 +10,7 @@
 
 This is the recommended backup process, as using Taiga6 with docker is the recommended way to run Taiga in production. This tutorial assumes that you have a Taiga6 docker instance running.
 
-This tutorial has been tested with link:https://github.com/kaleidos-ventures/taiga-docker[the official Taiga6 docker image].
+This tutorial has been tested with link:https://github.com/taigaio/taiga-docker[the official Taiga6 docker image].
 
 First, create a directory on the host where you want to store your backups in and switch into it. For this example we're going to use
 
