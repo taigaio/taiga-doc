@@ -1,8 +1,13 @@
 # Changelog
 
-## 6.8.0 (Unreleased)
+## 6.8.1 (Unreleased)
 
 - ...
+
+## 6.8.0 (2024-04-03)
+
+- Compatible with Taiga 6.8.0
+- Changed the namespace of the repositories, from kaleidos-ventures to taigaio
 
 ## 6.7.2 (2024-03-08)
 
