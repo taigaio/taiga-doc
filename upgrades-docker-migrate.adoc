@@ -60,7 +60,7 @@ Open the `.env` file and fill the values with the ones you stored previously:
 
 link:setup-production.html#customization[Customizations] are still in the `docker-compose.yml` file, for instance:
 
-- GitLat Auth
+- GitLab Auth
 - GitHub Importer
 
 === Launch Taiga again
