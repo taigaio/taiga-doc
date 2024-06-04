@@ -115,7 +115,7 @@ Because _Taiga_ is an open source project, we gratefully accept contributions in
 [[contrib-plugins]]
 == Contrib Plugins
 
-Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of link:https://community.taiga.io/t/how-can-i-contribute/159[contributions] as well as a link:https://community.taiga.io/t/how-to-extend-taiga/160[detailed tutorial] on the many ways to extend Taiga.
+Taiga supports the inclusion of contrib plugins, and the community has developed a fair bunch of them, adding different functionalities round Taiga. You can check the list of link:https://community.taiga.io/t/ways-to-contribute-to-taiga-s-platform/158[contributions] as well as a link:https://community.taiga.io/t/how-to-extend-taiga/160[detailed tutorial] on the many ways to extend Taiga.
 
 [[themes]]
 == Themes
