@@ -16,7 +16,7 @@ from django.core.management.base import BaseCommand
 from django.db import connection
 
 from taiga.users.models import User
-from taiga.auth.tokens import get_token_for_user
+from taiga.auth.tokens import AccessToken
 
 from ._requests_data import USER_ID, reqs as _reqs
 
@@ -72,13 +72,12 @@ class Command(BaseCommand):
         user.new_email = "test@sample-email.com"
         user.save()
 
-        user_token = get_token_for_user(user, "authentication")
-        admin_token = get_token_for_user(admin, "authentication")
+        user_token = str(AccessToken.for_user(user))
+        admin_token = str(AccessToken.for_user(admin))
         os.environ["AUTH_TOKEN"] = user_token
         os.environ["ADMIN_AUTH_TOKEN"] = admin_token
 
         host = "http://localhost:8000"
-
         for (key, req) in reqs.items():
             print("Generate", key)
 
@@ -110,7 +109,10 @@ class Command(BaseCommand):
                 if result.stdout == b'':
                     response_data = None
                 else:
-                    response_data = json.loads(result.stdout.decode('utf-8'))
+                    try:
+                        response_data = json.loads(result.stdout.decode('utf-8'))
+                    except Exception as e:
+                        print("ERROR on key: ", key)
                     if req.get('index', None) is not None:
                         response_data = response_data[req['index']]
 
