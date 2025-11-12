@@ -485,11 +485,11 @@ include::generated/user-stories-filter-data-output.adoc[]
 
 [[object-userstory-voter-detail]]
 ===  User story voter detail
-inlcude::generated/user-stories-get-voters-output.adoc[]
+include::generated/user-stories-get-voters-output.adoc[]
 
 [[object-userstory-watcher-detail]]
 ===  User story watcher detail
-inlcude::generated/user-stories-get-watchers-output.adoc[]
+include::generated/user-stories-get-watchers-output.adoc[]
 
 [[object-userstory-status-detail]]
 === User story status detail
