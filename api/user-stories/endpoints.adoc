@@ -34,7 +34,7 @@
 
 | /api/v1/userstories/bulk_create
 | POST
-| link:#user-stories-bulk-create[Create user stories un bulk mode]
+| link:#user-stories-bulk-create[Create user stories in bulk mode]
 
 | /api/v1/userstories/bulk_update_backlog_order
 | POST
