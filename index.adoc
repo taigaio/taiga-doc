@@ -149,6 +149,12 @@ After that, you should be able to update your theme from your user profile in yo
 
 If you create public themes, please share it with the community. Share the link in social media and ping link:http://twitter.com/taigaio/[@taigaio].
 
+[[user-guide]]
+== User Guide
+
+This section contains user‑oriented documentation that explains how to use Taiga’s core features that adhere to the Scrum project workflow, including backlog management and sprint execution.
+
+* link:user-guide.html[Taiga User Guide]
 
 [[community]]
 == Community
